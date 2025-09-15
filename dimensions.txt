@@ -1,0 +1,13 @@
+height = 745mm
+21 parts (zones)
+
+each zone is 745/21 = 35.47 (average, exact measurements to be taken)
+base diameter of 20 cm at its widest point
+thickness = 0.6 mm
+
+
+start with zone 14
+height (pad) = 35.47mm
+thickness =
+diameter = 200mm
+

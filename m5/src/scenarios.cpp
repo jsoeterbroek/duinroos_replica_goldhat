@@ -33,7 +33,7 @@ int register_scenario(const char *title, scenario_fn_t fn) {
 void draw_header(const char *title, int index, int total) {
   display.startWrite();
   display.fillScreen(TFT_WHITE);
-  display.setTextSize(3);
+  display.setTextSize(2);
   display.setTextDatum(textdatum_t::middle_center);
   display.setTextColor(TFT_BLACK, TFT_WHITE);
   display.drawCentreString(title, display.width() / 2, 18, nullptr);

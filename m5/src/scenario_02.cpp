@@ -16,7 +16,7 @@ static void scenario_2_metonic_19_years_impl() {
   int y = 44;
   int line_h = 20;
   char buf[128];
-  snprintf(buf, sizeof(buf), "Years: %d", years);
+  snprintf(buf, sizeof(buf), loc_scn_years(), years);
   display.drawString(buf, 8, y);
   y += line_h;
 
@@ -24,7 +24,7 @@ static void scenario_2_metonic_19_years_impl() {
   display.drawString(buf, 8, y);
   y += line_h;
 
-  snprintf(buf, sizeof(buf), "Total days: %.2f", total_days);
+  snprintf(buf, sizeof(buf), loc_scn_total_days(), total_days);
   display.drawString(buf, 8, y);
 
   draw_footer(1, 3);

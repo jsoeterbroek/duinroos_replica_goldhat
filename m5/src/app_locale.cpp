@@ -32,6 +32,9 @@ const char *loc_scn_title_1() {
 const char *loc_scn_months() {
   return (current == AppLocale::DE) ? "Monate:" : "Months:";
 }
+const char *loc_scn_years() {
+  return (current == AppLocale::DE) ? "Jahre:" : "Years:";
+}
 const char *loc_scn_total_days() {
   return (current == AppLocale::DE) ? "Gesamttage:" : "Total days:";
 }

@@ -21,6 +21,7 @@ const char *loc_touch_instructions();
 // Scenario titles and labels
 const char *loc_scn_title_1();
 const char *loc_scn_months();
+const char *loc_scn_years();
 const char *loc_scn_total_days();
 const char *loc_scn_years_and_daysrem();
 

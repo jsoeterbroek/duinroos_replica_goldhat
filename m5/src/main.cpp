@@ -4,6 +4,7 @@
 #include "M5Unified.h"
 #include "app_locale.h"
 #include "config.h"
+#include "leds.h"
 #include "scenarios.h"
 
 uint32_t updateTime = 0; // time for next update

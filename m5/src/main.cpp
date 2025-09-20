@@ -16,6 +16,10 @@ uint32_t _timeoutMS = millis();
 
 M5GFX display;
 
+#ifndef APP_VERSION
+#define APP_VERSION "0.0.unknown"
+#endif
+
 void setup() {
   M5.begin();
   Serial.begin(115200);
@@ -24,13 +28,18 @@ void setup() {
   display.fillScreen(TFT_WHITE);
   display.endWrite();
 
-  // Simple splash screen: centered "Berlin Goldhat"
+  // Simple splash screen: centered "Berlin Goldhat" with version
   display.startWrite();
   display.setTextSize(3); // large text
   display.setTextDatum(textdatum_t::middle_center);
   display.setTextColor(TFT_BLACK, TFT_WHITE);
-  display.drawCentreString("Berlin Goldhat", display.width() / 2,
-                           display.height() / 2, nullptr);
+  int cx = display.width() / 2;
+  int cy = display.height() / 2;
+  display.drawCentreString("Berlin Goldhat", cx, cy - 8, nullptr);
+  // smaller version text under the title
+  display.setTextSize(1);
+  display.setTextDatum(textdatum_t::middle_center);
+  display.drawCentreString("v" APP_VERSION, cx, cy + 18, nullptr);
   display.endWrite();
 
   delay(1500); // show splash for 1.5s

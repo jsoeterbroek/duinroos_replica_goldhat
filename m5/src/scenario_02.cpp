@@ -29,6 +29,7 @@ static void scenario_2_metonic_19_years_impl() {
   draw_footer(1, 3);
 }
 
-extern "C" void scenario_2_metonic_19_years() {
+static void scenario_2_metonic_19_years() {
   scenario_2_metonic_19_years_impl();
 }
+STATIC_REGISTER_SCENARIO("Metonic: 19 years", scenario_2_metonic_19_years);

@@ -31,6 +31,8 @@ static void scenario_3_century_lunar_estimate_impl() {
   draw_footer(2, 3);
 }
 
-extern "C" void scenario_3_century_lunar_estimate() {
+static void scenario_3_century_lunar_estimate() {
   scenario_3_century_lunar_estimate_impl();
 }
+STATIC_REGISTER_SCENARIO("Century estimate: 100y",
+                         scenario_3_century_lunar_estimate);

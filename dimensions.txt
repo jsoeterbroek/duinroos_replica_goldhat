@@ -5,9 +5,18 @@ each zone is 745/21 = 35.47 (average, exact measurements to be taken)
 base diameter of 20 cm at its widest point
 thickness = 0.6 mm
 
-
 start with zone 14
 height (pad) = 35.47mm
 thickness =
 diameter = 200mm
 
+
+# symbols
+- symbol 12 - 3 rings = value 3
+- symbol 13 - 4 rings = value 4
+- symbol 14 - 5 rings = value 5
+
+# ring calculations
+- zone 11 - 20 x 3 (symbol12) = value 60
+- zone 12 - 20 x 5 (symbol14) = value 100 
+- zone 13 - 20 x 3 (symbol12) = value 60

@@ -38,7 +38,7 @@ void draw_header(const char *title, int index, int total) {
   display.setTextColor(TFT_BLACK, TFT_WHITE);
   display.drawCentreString(title, display.width() / 2, 18, nullptr);
   // separator line
-  int y = 36;
+  int y = 40;
   display.drawFastHLine(4, y, display.width() - 8, TFT_BLACK);
   display.setTextSize(2);
   display.setTextDatum(textdatum_t::top_left);

@@ -1,7 +1,7 @@
 # Project Treasurehunt
 
 ## Hardware
-- Lilygo T-QT-Pro
+- M5stack CoreS3
 
 ## Core Requirements
 

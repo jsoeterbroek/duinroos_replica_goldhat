@@ -2,6 +2,7 @@
    ABOUTME: Computes and displays an approximate 100-year lunar months estimate.
  */
 
+#include "app_locale.h"
 #include "scenarios.h"
 
 static void scenario_3_century_lunar_estimate_impl() {
@@ -11,12 +12,12 @@ static void scenario_3_century_lunar_estimate_impl() {
   double total_days = years * days_per_year;
   double months = total_days / synodic_days;
 
-  draw_header("Century estimate: 100y", 2, 3);
+  draw_header(loc_scn_title_3(), 2, 3);
 
   display.setTextColor(TFT_BLACK, TFT_WHITE);
   int y = 44;
   int line_h = 20;
-  char buf[64];
+  char buf[128];
   snprintf(buf, sizeof(buf), "Years: %d", years);
   display.drawString(buf, 8, y);
   y += line_h;
@@ -25,7 +26,7 @@ static void scenario_3_century_lunar_estimate_impl() {
   display.drawString(buf, 8, y);
   y += line_h;
 
-  snprintf(buf, sizeof(buf), "Approx months: %.2f", months);
+  snprintf(buf, sizeof(buf), loc_scn_approx_months(), months);
   display.drawString(buf, 8, y);
 
   draw_footer(2, 3);

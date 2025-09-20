@@ -1,6 +1,7 @@
 /* ABOUTME: Scenario 02 - Metonic 19 years
    ABOUTME: Computes and displays Metonic 19-year cycle summary. */
 
+#include "app_locale.h"
 #include "scenarios.h"
 
 static void scenario_2_metonic_19_years_impl() {
@@ -9,17 +10,17 @@ static void scenario_2_metonic_19_years_impl() {
   const int months = 235; // Metonic: 19 solar years ~= 235 synodic months
   double total_days = synodic_days * months;
 
-  draw_header("Metonic: 19 years", 1, 3);
+  draw_header(loc_scn_title_2(), 1, 3);
 
   display.setTextColor(TFT_BLACK, TFT_WHITE);
   int y = 44;
   int line_h = 20;
-  char buf[64];
+  char buf[128];
   snprintf(buf, sizeof(buf), "Years: %d", years);
   display.drawString(buf, 8, y);
   y += line_h;
 
-  snprintf(buf, sizeof(buf), "Months (approx): %d", months);
+  snprintf(buf, sizeof(buf), loc_scn_months_approx(), months);
   display.drawString(buf, 8, y);
   y += line_h;
 

@@ -63,19 +63,57 @@ bool load_goldhat_layout(const char *path) {
     }
   }
 
-  // Parse JSON using ArduinoJson; prefer SPIFFS content if available
-  DynamicJsonDocument doc(4096);
+  // Parse JSON using ArduinoJson; prefer SPIFFS content if available.
+  // We allocate a DynamicJsonDocument sized according to the input to
+  // avoid spurious parse failures. If SPIFFS parsing fails, try the
+  // embedded layout as a fallback and provide detailed Serial logs.
+  DynamicJsonDocument *pdoc = nullptr;
   DeserializationError err;
+  JsonArray arr;
+
   if (usedEmbedded) {
-    err = deserializeJson(doc, goldhat_layout_json);
+    pdoc = new DynamicJsonDocument(4096);
+    err = deserializeJson(*pdoc, goldhat_layout_json);
+    if (err) {
+      Serial.printf("led_mapper: embedded JSON parse error: %s\n", err.c_str());
+      delete pdoc;
+      return false;
+    }
+    arr = pdoc->as<JsonArray>();
   } else {
-    err = deserializeJson(doc, jsonBuf);
+    // Calculate a reasonable JSON document capacity from the file size.
+    size_t bufLen = jsonBuf.length();
+    size_t cap = bufLen * 11 / 10 + 1024; // ~10% overhead + margin
+    if (cap < 4096)
+      cap = 4096;
+    if (cap > 65536)
+      cap = 65536; // avoid unbounded allocation
+
+    pdoc = new DynamicJsonDocument(cap);
+    err = deserializeJson(*pdoc, jsonBuf);
+    if (err) {
+      Serial.printf("led_mapper: JSON parse error (SPIFFS %s): %s\n",
+                    path ? path : "/goldhat_layout.json", err.c_str());
+      // Print a short snippet of the file to aid debugging (first 200 chars)
+      size_t snippet = jsonBuf.length() > 200 ? 200 : jsonBuf.length();
+      Serial.printf("led_mapper: SPIFFS content (first %d chars):\n%.*s\n",
+                    (int)snippet, (int)snippet, jsonBuf.c_str());
+
+      // Attempt to fall back to the embedded layout
+      delete pdoc;
+      pdoc = new DynamicJsonDocument(4096);
+      DeserializationError err2 = deserializeJson(*pdoc, goldhat_layout_json);
+      if (err2) {
+        Serial.printf("led_mapper: embedded fallback parse also failed: %s\n",
+                      err2.c_str());
+        delete pdoc;
+        return false;
+      }
+      Serial.println("led_mapper: parsed embedded fallback successfully after "
+                     "SPIFFS parse error");
+    }
+    arr = pdoc->as<JsonArray>();
   }
-  if (err) {
-    Serial.printf("led_mapper: JSON parse error: %s\n", err.c_str());
-    return false;
-  }
-  JsonArray arr = doc.as<JsonArray>();
   for (JsonObject obj : arr) {
     zone_t zt;
     zt.zone = obj["zone"] | 0;

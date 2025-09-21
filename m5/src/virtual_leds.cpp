@@ -12,6 +12,7 @@ static int v_width = 0;
 static int v_height = 0;
 static std::vector<rgb_t> vbuf;
 static int total_leds = 0;
+static bool overlay_visible = false;
 
 void vled_init(int width, int height) {
   v_width = width;
@@ -53,6 +54,29 @@ void vled_render() {
       display.fillCircle(x, y, 4, color);
     }
   }
+
+  // Draw overlay with zone numbers and start..end indices if enabled
+  if (overlay_visible) {
+    display.setTextSize(1);
+    display.setTextColor(TFT_BLACK, TFT_WHITE);
+    int ox = 6;
+    int oy = 6;
+    int lineh = 12;
+    display.drawString("Zone : start-end", ox, oy);
+    oy += lineh;
+    for (auto &z : get_zones()) {
+      char buf[64];
+      snprintf(buf, sizeof(buf), "%2d   : %4d - %4d", z.zone, z.start_index,
+               z.end_index);
+      display.drawString(buf, ox, oy);
+      oy += lineh;
+      // avoid running off the screen
+      if (oy > v_height - 12) {
+        display.drawString("...", ox, oy);
+        break;
+      }
+    }
+  }
   display.endWrite();
 }
 
@@ -76,3 +100,7 @@ bool vled_pulse_range(const std::vector<std::pair<int, int>> &ranges,
   vled_render();
   return true; // always active
 }
+
+void vled_show_overlay(bool show) { overlay_visible = show; }
+
+bool vled_overlay_visible() { return overlay_visible; }

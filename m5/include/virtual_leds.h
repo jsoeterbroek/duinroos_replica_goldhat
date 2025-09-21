@@ -27,3 +27,7 @@ bool vled_pulse_range(const std::vector<std::pair<int, int>> &ranges,
 
 // Clear all virtual LEDs
 void vled_clear();
+
+// Toggle or query zone-index overlay (shows zone numbers and LED index ranges)
+void vled_show_overlay(bool show);
+bool vled_overlay_visible();

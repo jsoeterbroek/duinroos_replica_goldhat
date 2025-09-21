@@ -55,6 +55,12 @@ void draw_footer(int index, int total) {
 void scenarios_init() {
   scenario_start_ms = millis();
   current_scenario = 0; // start with first registered scenario
+  // Debug: print loaded scenarios to Serial
+  auto &reg = get_registry();
+  Serial.printf("scenarios: loaded %d scenarios\n", (int)reg.size());
+  for (size_t i = 0; i < reg.size(); ++i) {
+    Serial.printf("scenarios: [%zu] %s\n", i, reg[i].title);
+  }
 }
 
 void scenarios_update() {

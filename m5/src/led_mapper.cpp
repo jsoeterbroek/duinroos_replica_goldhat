@@ -5,8 +5,8 @@
 #include "led_mapper.h"
 #include "M5Unified.h"
 #include "goldhat_layout.h"
-#include <ArduinoJson.h>
 #include <Arduino.h>
+#include <ArduinoJson.h>
 #include <FS.h>
 #include <SPIFFS.h>
 
@@ -16,9 +16,61 @@ static std::vector<zone_t> zones;
 // {"zone":n,"count":m})
 bool load_goldhat_layout(const char *path) {
   zones.clear();
-  // Parse JSON using ArduinoJson from embedded string
+  // If a path is provided, attempt to read the layout from SPIFFS first.
+  String jsonBuf;
+  bool usedEmbedded = false;
+  if (path != nullptr) {
+    if (!SPIFFS.begin(true)) {
+      Serial.println("led_mapper: SPIFFS.begin failed, using embedded layout");
+      usedEmbedded = true;
+    } else {
+      if (SPIFFS.exists(path)) {
+        File f = SPIFFS.open(path, "r");
+        if (f) {
+          size_t sz = f.size();
+          jsonBuf.reserve(sz + 1);
+          while (f.available())
+            jsonBuf += (char)f.read();
+          f.close();
+        } else {
+          Serial.printf("led_mapper: failed to open %s, using embedded\n",
+                        path);
+          usedEmbedded = true;
+        }
+      } else {
+        Serial.printf("led_mapper: %s not found on SPIFFS, using embedded\n",
+                      path);
+        usedEmbedded = true;
+      }
+    }
+  } else {
+    // No path given => try the default file on SPIFFS; if missing, use embedded
+    if (SPIFFS.begin(true) && SPIFFS.exists("/goldhat_layout.json")) {
+      File f = SPIFFS.open("/goldhat_layout.json", "r");
+      if (f) {
+        size_t sz = f.size();
+        jsonBuf.reserve(sz + 1);
+        while (f.available())
+          jsonBuf += (char)f.read();
+        f.close();
+      } else {
+        Serial.println(
+            "led_mapper: failed to open /goldhat_layout.json, using embedded");
+        usedEmbedded = true;
+      }
+    } else {
+      usedEmbedded = true;
+    }
+  }
+
+  // Parse JSON using ArduinoJson; prefer SPIFFS content if available
   DynamicJsonDocument doc(4096);
-  DeserializationError err = deserializeJson(doc, goldhat_layout_json);
+  DeserializationError err;
+  if (usedEmbedded) {
+    err = deserializeJson(doc, goldhat_layout_json);
+  } else {
+    err = deserializeJson(doc, jsonBuf);
+  }
   if (err) {
     Serial.printf("led_mapper: JSON parse error: %s\n", err.c_str());
     return false;
@@ -49,7 +101,8 @@ bool load_goldhat_layout(const char *path) {
 
 int zone_value(const zone_t &z) {
   int base = z.count * (z.multiplier > 0 ? z.multiplier : 1);
-  if (z.special_value != 0) base += z.special_value;
+  if (z.special_value != 0)
+    base += z.special_value;
   return base;
 }
 

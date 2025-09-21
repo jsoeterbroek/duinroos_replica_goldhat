@@ -6,11 +6,11 @@
 #include <vector>
 
 struct zone_t {
-  int zone;        // 1..21
-  int count;       // number of symbols
-  int start_index; // first LED index in global LED array (inclusive)
-  int end_index;   // last LED index (inclusive)
-  int multiplier;  // rings multiplier (default 1)
+  int zone;          // 1..21
+  int count;         // number of symbols
+  int start_index;   // first LED index in global LED array (inclusive)
+  int end_index;     // last LED index (inclusive)
+  int multiplier;    // rings multiplier (default 1)
   int special_value; // optional fixed value for special symbols (0=none)
 };
 

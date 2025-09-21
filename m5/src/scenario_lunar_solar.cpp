@@ -82,7 +82,8 @@ void scenario_lunar_solar() {
   vled_pulse_range(ranges, 0x00ff00, 1500);
   // overlay intercalaries in red (no pulse for simplicity)
   for (auto &rg : inter_ranges) {
-    for (int i=rg.first;i<=rg.second;i++) vled_set(i, {255,0,0});
+    for (int i = rg.first; i <= rg.second; i++)
+      vled_set(i, {255, 0, 0});
   }
   vled_render();
 

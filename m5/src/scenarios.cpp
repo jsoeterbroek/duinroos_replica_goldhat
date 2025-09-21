@@ -30,7 +30,7 @@ int register_scenario(const char *title, scenario_fn_t fn) {
 }
 
 // layout helpers
-void draw_header(const char *title, int index, int total) {
+void draw_header(const char *title) {
   display.startWrite();
   display.fillScreen(TFT_WHITE);
   display.setTextSize(2);
@@ -44,11 +44,37 @@ void draw_header(const char *title, int index, int total) {
   display.setTextDatum(textdatum_t::top_left);
 }
 
-void draw_footer(int index, int total) {
+void draw_footer() {
+  auto &reg = get_registry();
+  int total = (int)reg.size();
+  int index = current_scenario;
+  if (total <= 0) {
+    display.endWrite();
+    return;
+  }
+  // Draw index/total
   char buf[16];
   snprintf(buf, sizeof(buf), "%d/%d", index + 1, total);
   display.setTextDatum(textdatum_t::bottom_right);
-  display.drawString(buf, display.width() - 6, display.height() - 6);
+  display.drawString(buf, display.width() - 6, display.height() - 18);
+
+  // // Draw a small progress bar showing position within the scenario duration
+  // uint32_t now = millis();
+  // uint32_t elapsed = (now - scenario_start_ms) % scenario_duration_ms;
+  // float pct = (float)elapsed / (float)scenario_duration_ms;
+  // int bar_w = display.width() - 24;
+  // int bar_h = 6;
+  // int bx = 12;
+  // int by = display.height() - 10;
+  // // outline
+  // display.drawRect(bx - 1, by - 1, bar_w + 2, bar_h + 2, TFT_BLACK);
+  // // fill bg
+  // display.fillRect(bx, by, bar_w, bar_h, TFT_LIGHTGREY);
+  // // filled portion
+  // int fw = (int)(bar_w * pct);
+  // if (fw > 0)
+  //   display.fillRect(bx, by, fw, bar_h, TFT_BLACK);
+
   display.endWrite();
 }
 

@@ -10,7 +10,7 @@ static void scenario_2_metonic_19_years_impl() {
   const int months = 235; // Metonic: 19 solar years ~= 235 synodic months
   double total_days = synodic_days * months;
 
-  draw_header(loc_scn_title_2(), 1, 3);
+  draw_header(loc_scn_title_2());
 
   display.setTextColor(TFT_BLACK, TFT_WHITE);
   int y = 44;
@@ -27,7 +27,7 @@ static void scenario_2_metonic_19_years_impl() {
   snprintf(buf, sizeof(buf), loc_scn_total_days(), total_days);
   display.drawString(buf, 8, y);
 
-  draw_footer(3, 5);
+  draw_footer();
 }
 
 static void scenario_2_metonic_19_years() {

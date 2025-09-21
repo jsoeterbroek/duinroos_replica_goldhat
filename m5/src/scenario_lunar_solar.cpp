@@ -40,7 +40,7 @@ static void highlight_ranges(const std::vector<std::pair<int, int>> &ranges,
 
 void scenario_lunar_solar() {
   // Draw header
-  draw_header("Lunar↔Solar conversion", 0, 1);
+  draw_header("Lunar↔Solar conversion");
 
   // Ensure layout loaded
   static bool layout_loaded = false;
@@ -87,5 +87,5 @@ void scenario_lunar_solar() {
   }
   vled_render();
 
-  draw_footer(1, 5);
+  draw_footer();
 }

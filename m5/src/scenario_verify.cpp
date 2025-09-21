@@ -22,7 +22,7 @@ static void show_result(bool ok, const char *msg) {
 }
 
 void scenario_verify() {
-  draw_header("Verify: canonical examples", 0, 1);
+  draw_header("Verify: canonical examples");
   static bool layout_loaded = false;
   if (!layout_loaded) {
     load_goldhat_layout("/berlin.json");
@@ -46,5 +46,5 @@ void scenario_verify() {
     show_result(false, buf);
   }
 
-  draw_footer(0, 5);
+  draw_footer();
 }

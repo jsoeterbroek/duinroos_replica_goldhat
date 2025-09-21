@@ -11,7 +11,7 @@ static void scenario_1_lunar_54_months_impl() {
   int years = (int)(total_days / 365.25);
   int days_rem = (int)round(total_days - years * 365.25);
 
-  draw_header(loc_scn_title_1(), 0, 3);
+  draw_header(loc_scn_title_1());
 
   display.setTextColor(TFT_BLACK, TFT_WHITE);
   int y = 44; // start below separator
@@ -27,7 +27,7 @@ static void scenario_1_lunar_54_months_impl() {
   snprintf(buf, sizeof(buf), loc_scn_years_and_daysrem(), years, days_rem);
   display.drawString(buf, 8, y);
 
-  draw_footer(4, 5);
+  draw_footer();
 }
 
 // register scenario automatically

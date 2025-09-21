@@ -13,8 +13,8 @@ void scenarios_init();
 void scenarios_update();
 
 // Layout helpers used by scenario implementations
-void draw_header(const char *title, int index, int total);
-void draw_footer(int index, int total);
+void draw_header(const char *title);
+void draw_footer();
 
 // Automatic registration API
 // A scenario is a void function with no args that draws its view.

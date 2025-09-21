@@ -12,7 +12,7 @@ static void scenario_3_century_lunar_estimate_impl() {
   double total_days = years * days_per_year;
   double months = total_days / synodic_days;
 
-  draw_header(loc_scn_title_3(), 2, 3);
+  draw_header(loc_scn_title_3());
 
   display.setTextColor(TFT_BLACK, TFT_WHITE);
   int y = 44;
@@ -29,7 +29,7 @@ static void scenario_3_century_lunar_estimate_impl() {
   snprintf(buf, sizeof(buf), loc_scn_approx_months(), months);
   display.drawString(buf, 8, y);
 
-  draw_footer(2, 5);
+  draw_footer();
 }
 
 static void scenario_3_century_lunar_estimate() {

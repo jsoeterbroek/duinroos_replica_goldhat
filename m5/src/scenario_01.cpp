@@ -27,7 +27,7 @@ static void scenario_1_lunar_54_months_impl() {
   snprintf(buf, sizeof(buf), loc_scn_years_and_daysrem(), years, days_rem);
   display.drawString(buf, 8, y);
 
-  draw_footer(0, 3);
+  draw_footer(4, 5);
 }
 
 // register scenario automatically

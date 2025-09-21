@@ -27,7 +27,7 @@ static void scenario_2_metonic_19_years_impl() {
   snprintf(buf, sizeof(buf), loc_scn_total_days(), total_days);
   display.drawString(buf, 8, y);
 
-  draw_footer(1, 3);
+  draw_footer(3, 5);
 }
 
 static void scenario_2_metonic_19_years() {

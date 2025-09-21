@@ -45,17 +45,19 @@ bool load_goldhat_layout(const char *path) {
     }
   } else {
     // No path given => try the default file on SPIFFS; if missing, use embedded
-    if (SPIFFS.begin(true) && SPIFFS.exists("/goldhat_layout.json")) {
-      File f = SPIFFS.open("/goldhat_layout.json", "r");
+    if (SPIFFS.begin(true) && SPIFFS.exists("/berlin.json")) {
+      File f = SPIFFS.open("/berlin.json", "r");
       if (f) {
         size_t sz = f.size();
         jsonBuf.reserve(sz + 1);
         while (f.available())
           jsonBuf += (char)f.read();
         f.close();
+        Serial.println("led_mapper: loaded layout from "
+                       "/berlin.json on SPIFFS");
       } else {
-        Serial.println(
-            "led_mapper: failed to open /goldhat_layout.json, using embedded");
+        Serial.println("led_mapper: failed to open "
+                       "/berlin.json, using embedded");
         usedEmbedded = true;
       }
     } else {
@@ -73,7 +75,7 @@ bool load_goldhat_layout(const char *path) {
 
   if (usedEmbedded) {
     pdoc = new DynamicJsonDocument(4096);
-    err = deserializeJson(*pdoc, goldhat_layout_json);
+    err = deserializeJson(*pdoc, berlin_goldhat_layout_json);
     if (err) {
       Serial.printf("led_mapper: embedded JSON parse error: %s\n", err.c_str());
       delete pdoc;
@@ -84,16 +86,18 @@ bool load_goldhat_layout(const char *path) {
     // Calculate a reasonable JSON document capacity from the file size.
     size_t bufLen = jsonBuf.length();
     size_t cap = bufLen * 11 / 10 + 1024; // ~10% overhead + margin
-    if (cap < 4096)
+    if (cap < 4096) {
       cap = 4096;
-    if (cap > 65536)
+    }
+    if (cap > 65536) {
       cap = 65536; // avoid unbounded allocation
+    }
 
     pdoc = new DynamicJsonDocument(cap);
     err = deserializeJson(*pdoc, jsonBuf);
     if (err) {
       Serial.printf("led_mapper: JSON parse error (SPIFFS %s): %s\n",
-                    path ? path : "/goldhat_layout.json", err.c_str());
+                    path ? path : "/berlin.json", err.c_str());
       // Print a short snippet of the file to aid debugging (first 200 chars)
       size_t snippet = jsonBuf.length() > 200 ? 200 : jsonBuf.length();
       Serial.printf("led_mapper: SPIFFS content (first %d chars):\n%.*s\n",
@@ -102,7 +106,8 @@ bool load_goldhat_layout(const char *path) {
       // Attempt to fall back to the embedded layout
       delete pdoc;
       pdoc = new DynamicJsonDocument(4096);
-      DeserializationError err2 = deserializeJson(*pdoc, goldhat_layout_json);
+      DeserializationError err2 =
+          deserializeJson(*pdoc, berlin_goldhat_layout_json);
       if (err2) {
         Serial.printf("led_mapper: embedded fallback parse also failed: %s\n",
                       err2.c_str());

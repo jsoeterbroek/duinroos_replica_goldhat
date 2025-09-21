@@ -29,7 +29,7 @@ static void scenario_3_century_lunar_estimate_impl() {
   snprintf(buf, sizeof(buf), loc_scn_approx_months(), months);
   display.drawString(buf, 8, y);
 
-  draw_footer(2, 3);
+  draw_footer(2, 5);
 }
 
 static void scenario_3_century_lunar_estimate() {

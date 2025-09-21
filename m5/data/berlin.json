@@ -1,0 +1,23 @@
+[
+  {"zone":1,"count":0}, 
+  {"zone":2,"count":44}, 
+  {"zone":3,"count":42}, 
+  {"zone":4,"count":75},
+  {"zone":5,"count":38}, 
+  {"zone":6,"count":90}, 
+  {"zone":7,"count":57}, 
+  {"zone":8,"count":105},
+  {"zone":9,"count":57}, 
+  {"zone":10,"count":95}, 
+  {"zone":11,"count":60}, 
+  {"zone":12,"count":100},
+  {"zone":13,"count":60}, 
+  {"zone":14,"count":105}, 
+  {"zone":15,"count":90}, 
+  {"zone":16,"count":38},
+  {"zone":17,"count":66}, 
+  {"zone":18,"count":126}, 
+  {"zone":19,"count":138}, 
+  {"zone":20,"count":162},
+  {"zone":21,"count":235}
+]

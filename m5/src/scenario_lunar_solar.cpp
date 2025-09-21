@@ -45,7 +45,7 @@ void scenario_lunar_solar() {
   // Ensure layout loaded
   static bool layout_loaded = false;
   if (!layout_loaded) {
-    load_goldhat_layout("/goldhat_layout.json");
+    load_goldhat_layout("/berlin.json");
     layout_loaded = true;
   }
 
@@ -87,5 +87,5 @@ void scenario_lunar_solar() {
   }
   vled_render();
 
-  draw_footer(0, 1);
+  draw_footer(1, 5);
 }

@@ -7,3 +7,4 @@
   ISBN 9783795422714
   Sold by Antiquariat Bergische Bücherstube Mewes, Overath, Germany
   * besteld via www.der-philo-soph.de
+- Gold und Kult der Bronzezeit. (Ausstellungskatalog). Germanisches Nationalmuseum, Nürnberg 2003. ISBN 3-926982-95-0

@@ -17,6 +17,7 @@ diameter = 200mm
 - symbol 14 - 5 rings = value 5
 
 # ring calculations
+- zone 10   19 x 5 (symbol14) = value 95 
 - zone 11 - 20 x 3 (symbol12) = value 60
 - zone 12 - 20 x 5 (symbol14) = value 100 
 - zone 13 - 20 x 3 (symbol12) = value 60

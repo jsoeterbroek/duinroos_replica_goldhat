@@ -13,7 +13,9 @@
 #define DATA_PIN PORTA_PIN_1 // Port A, pin mapped in include/config.h (G2)
 #define LED_TYPE SK6812
 #define COLOR_ORDER GRB
-#define BRIGHTNESS 64
+#define BRIGHTNESS_LOW 64
+#define BRIGHTNESS_HIGH 128
+#define BRIGHTNESS_MAX 255
 
 static void scenario_led_strip_impl() {
   static bool initialized = false;
@@ -22,7 +24,7 @@ static void scenario_led_strip_impl() {
   if (!initialized) {
     FastLED.addLeds<LED_TYPE, DATA_PIN, COLOR_ORDER>(leds, NUM_LEDS)
         .setCorrection(TypicalLEDStrip);
-    FastLED.setBrightness(BRIGHTNESS);
+    FastLED.setBrightness(BRIGHTNESS_LOW);
     initialized = true;
     Serial.printf("scenario_led_strip: initialized data_pin=%d num=%d\n",
                   DATA_PIN, NUM_LEDS);
@@ -32,29 +34,77 @@ static void scenario_led_strip_impl() {
   Serial.println(
       "scenario_led_strip: entering continuous demo (touch or BtnA to exit)");
   while (true) {
-    // All red
+
+    // All red low brightness
     fill_solid(leds, NUM_LEDS, CRGB::Red);
+    FastLED.setBrightness(BRIGHTNESS_LOW);
     FastLED.show();
-    Serial.println("scenario_led_strip: color=RED");
+    Serial.println("scenario_led_strip: color=RED, brightness=LOW");
     for (int ms = 0; ms < 5000; ms += 200) {
-      M5.update();
-      if (M5.Touch.getCount() > 0) {
-        Serial.println("scenario_led_strip: exit requested (touch)");
-        goto LED_STRIP_EXIT;
-      }
       delay(200);
     }
-
-    // All blue
+    // All blue low brightness
     fill_solid(leds, NUM_LEDS, CRGB::Blue);
+    FastLED.setBrightness(BRIGHTNESS_LOW);
     FastLED.show();
-    Serial.println("scenario_led_strip: color=BLUE");
+    Serial.println("scenario_led_strip: color=BLUE, brightness=LOW");
     for (int ms = 0; ms < 5000; ms += 200) {
-      M5.update();
-      if (M5.Touch.getCount() > 0) {
-        Serial.println("scenario_led_strip: exit requested (touch)");
-        goto LED_STRIP_EXIT;
-      }
+      delay(200);
+    }
+    // All green low brightness
+    fill_solid(leds, NUM_LEDS, CRGB::Green);
+    FastLED.setBrightness(BRIGHTNESS_LOW);
+    FastLED.show();
+    Serial.println("scenario_led_strip: color=GREEN, brightness=LOW");
+    for (int ms = 0; ms < 5000; ms += 200) {
+      delay(200);
+    }
+    // All red high brightness
+    fill_solid(leds, NUM_LEDS, CRGB::Red);
+    FastLED.setBrightness(BRIGHTNESS_HIGH);
+    FastLED.show();
+    Serial.println("scenario_led_strip: color=RED, brightness=HIGH");
+    for (int ms = 0; ms < 5000; ms += 200) {
+      delay(200);
+    }
+    // All blue high brightness
+    fill_solid(leds, NUM_LEDS, CRGB::Blue);
+    FastLED.setBrightness(BRIGHTNESS_HIGH);
+    FastLED.show();
+    Serial.println("scenario_led_strip: color=BLUE, brightness=HIGH");
+    for (int ms = 0; ms < 5000; ms += 200) {
+      delay(200);
+    }
+    // All green high brightness
+    fill_solid(leds, NUM_LEDS, CRGB::Green);
+    FastLED.setBrightness(BRIGHTNESS_HIGH);
+    FastLED.show();
+    Serial.println("scenario_led_strip: color=GREEN, brightness=HIGH");
+    for (int ms = 0; ms < 5000; ms += 200) {
+      delay(200);
+    }
+    // All red max brightness
+    fill_solid(leds, NUM_LEDS, CRGB::Red);
+    FastLED.setBrightness(BRIGHTNESS_MAX);
+    FastLED.show();
+    Serial.println("scenario_led_strip: color=RED, brightness=MAX");
+    for (int ms = 0; ms < 5000; ms += 200) {
+      delay(200);
+    }
+    // All blue max brightness
+    fill_solid(leds, NUM_LEDS, CRGB::Blue);
+    FastLED.setBrightness(BRIGHTNESS_MAX);
+    FastLED.show();
+    Serial.println("scenario_led_strip: color=BLUE, brightness=MAX");
+    for (int ms = 0; ms < 5000; ms += 200) {
+      delay(200);
+    }
+    // All green max brightness
+    fill_solid(leds, NUM_LEDS, CRGB::Green);
+    FastLED.setBrightness(BRIGHTNESS_MAX);
+    FastLED.show();
+    Serial.println("scenario_led_strip: color=GREEN, brightness=MAX");
+    for (int ms = 0; ms < 5000; ms += 200) {
       delay(200);
     }
   }

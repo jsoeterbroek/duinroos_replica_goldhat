@@ -1,6 +1,7 @@
 /* ABOUTME: Scenario - Hardware LED strip test
    ABOUTME: Drives an SK6812 strip (30 LEDs) connected to Port A data pin (G2).
-   ABOUTME: Cycles all LEDs red for 5s, then blue for 5s, repeating a few times.
+   ABOUTME: Cycles all LEDs red for 5s, then blue for 5s, green for 5s,
+   repeating a few times at different brightness levels.
  */
 
 #include "M5Unified.h"
@@ -31,35 +32,35 @@ static void scenario_led_strip_impl() {
   }
 
   // Run continuously until user intervenes (touch or button A)
-  Serial.println(
-      "scenario_led_strip: entering continuous demo (touch or BtnA to exit)");
+  Serial.println("scenario_led_strip: entering continuous demo");
   while (true) {
 
-    // All red low brightness
-    fill_solid(leds, NUM_LEDS, CRGB::Red);
-    FastLED.setBrightness(BRIGHTNESS_LOW);
-    FastLED.show();
-    Serial.println("scenario_led_strip: color=RED, brightness=LOW");
-    for (int ms = 0; ms < 5000; ms += 200) {
-      delay(200);
-    }
-    // All blue low brightness
-    fill_solid(leds, NUM_LEDS, CRGB::Blue);
-    FastLED.setBrightness(BRIGHTNESS_LOW);
-    FastLED.show();
-    Serial.println("scenario_led_strip: color=BLUE, brightness=LOW");
-    for (int ms = 0; ms < 5000; ms += 200) {
-      delay(200);
-    }
-    // All green low brightness
-    fill_solid(leds, NUM_LEDS, CRGB::Green);
-    FastLED.setBrightness(BRIGHTNESS_LOW);
-    FastLED.show();
-    Serial.println("scenario_led_strip: color=GREEN, brightness=LOW");
-    for (int ms = 0; ms < 5000; ms += 200) {
-      delay(200);
-    }
-    // All red high brightness
+    // // All red low brightness
+    // fill_solid(leds, NUM_LEDS, CRGB::Red);
+    // FastLED.setBrightness(BRIGHTNESS_LOW);
+    // FastLED.show();
+    // Serial.println("scenario_led_strip: color=RED, brightness=LOW");
+    // for (int ms = 0; ms < 5000; ms += 200) {
+    //   delay(200);
+    // }
+    // // All blue low brightness
+    // fill_solid(leds, NUM_LEDS, CRGB::Blue);
+    // FastLED.setBrightness(BRIGHTNESS_LOW);
+    // FastLED.show();
+    // Serial.println("scenario_led_strip: color=BLUE, brightness=LOW");
+    // for (int ms = 0; ms < 5000; ms += 200) {
+    //   delay(200);
+    // }
+    // // All green low brightness
+    // fill_solid(leds, NUM_LEDS, CRGB::Green);
+    // FastLED.setBrightness(BRIGHTNESS_LOW);
+    // FastLED.show();
+    // Serial.println("scenario_led_strip: color=GREEN, brightness=LOW");
+    // for (int ms = 0; ms < 5000; ms += 200) {
+    //   delay(200);
+    // }
+
+    // All red HIGH brightness
     fill_solid(leds, NUM_LEDS, CRGB::Red);
     FastLED.setBrightness(BRIGHTNESS_HIGH);
     FastLED.show();
@@ -67,7 +68,7 @@ static void scenario_led_strip_impl() {
     for (int ms = 0; ms < 5000; ms += 200) {
       delay(200);
     }
-    // All blue high brightness
+    // All blue HIGH brightness
     fill_solid(leds, NUM_LEDS, CRGB::Blue);
     FastLED.setBrightness(BRIGHTNESS_HIGH);
     FastLED.show();
@@ -75,7 +76,7 @@ static void scenario_led_strip_impl() {
     for (int ms = 0; ms < 5000; ms += 200) {
       delay(200);
     }
-    // All green high brightness
+    // All green HIGH brightness
     fill_solid(leds, NUM_LEDS, CRGB::Green);
     FastLED.setBrightness(BRIGHTNESS_HIGH);
     FastLED.show();
@@ -83,7 +84,7 @@ static void scenario_led_strip_impl() {
     for (int ms = 0; ms < 5000; ms += 200) {
       delay(200);
     }
-    // All red max brightness
+    // All red MAX brightness
     fill_solid(leds, NUM_LEDS, CRGB::Red);
     FastLED.setBrightness(BRIGHTNESS_MAX);
     FastLED.show();
@@ -91,7 +92,7 @@ static void scenario_led_strip_impl() {
     for (int ms = 0; ms < 5000; ms += 200) {
       delay(200);
     }
-    // All blue max brightness
+    // All blue MAX brightness
     fill_solid(leds, NUM_LEDS, CRGB::Blue);
     FastLED.setBrightness(BRIGHTNESS_MAX);
     FastLED.show();
@@ -99,7 +100,7 @@ static void scenario_led_strip_impl() {
     for (int ms = 0; ms < 5000; ms += 200) {
       delay(200);
     }
-    // All green max brightness
+    // All green MAX brightness
     fill_solid(leds, NUM_LEDS, CRGB::Green);
     FastLED.setBrightness(BRIGHTNESS_MAX);
     FastLED.show();

@@ -5,6 +5,56 @@ each zone is 745/21 = 35.47 (average, exact measurements to be taken)
 base diameter of 20 cm at its widest point
 thickness = 0.6 mm
 
+zone1 - circumference = 166
+zone5 - circumference = 275
+
+heights:
+z1 = 61
+tb1 = 7
+z2 = 8.5
+tb2 = 7
+z3 = 14
+tb3 = 8
+z4 = 22
+tb4 = 8
+z5 = 24.5
+tb5 = 8
+z6 = 25
+tb6 = 9
+z7 = 29
+tb7 = 9
+z8 = 29
+tb8 = 9
+z9 = 34
+tb9 = 9
+z10 = 34
+tb10 = 9
+z11 = 34
+tb11 = 9
+z12 = 34
+tb12 = 9
+z13 = 34
+tb13 = 9
+z14 = 34
+tb14 = 9
+z15 = 38
+tb15 = 9
+z16 = 19
+tb16 = 9
+tussenstuk = 20
+z17 = 15
+tb17 = 9
+z18 = 38
+tb18 = 9
+z19 = 38
+tb19 = 9
+
+tussenstuk = 20
+z20
+z21
+
+
+
 start with zone 14
 height (pad) = 35.47mm
 thickness =

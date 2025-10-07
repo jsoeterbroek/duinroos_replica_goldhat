@@ -10,7 +10,8 @@
 #include <FastLED.h>
 
 // Adjust these if your strip differs
-#define NUM_LEDS 30
+// #define NUM_LEDS 30
+#define NUM_LEDS 20
 #define DATA_PIN PORTA_PIN_1 // Port A, pin mapped in include/config.h (G2)
 #define LED_TYPE SK6812
 #define COLOR_ORDER GRB

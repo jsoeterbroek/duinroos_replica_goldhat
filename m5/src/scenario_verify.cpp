@@ -8,7 +8,7 @@
 #include <Arduino.h>
 
 static void scenario_verify();
-STATIC_REGISTER_SCENARIO("Verify canonical sums", scenario_verify);
+// STATIC_REGISTER_SCENARIO("Verify canonical sums", scenario_verify);
 
 static void show_result(bool ok, const char *msg) {
   display.startWrite();

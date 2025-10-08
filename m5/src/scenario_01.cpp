@@ -32,4 +32,4 @@ static void scenario_1_lunar_54_months_impl() {
 
 // register scenario automatically
 static void scenario_1_lunar_54_months() { scenario_1_lunar_54_months_impl(); }
-STATIC_REGISTER_SCENARIO("Lunar: 54 months", scenario_1_lunar_54_months);
+// STATIC_REGISTER_SCENARIO("Lunar: 54 months", scenario_1_lunar_54_months);

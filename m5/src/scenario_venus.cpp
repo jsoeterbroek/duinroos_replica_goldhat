@@ -26,4 +26,4 @@ static void scenario_venus_impl() {
 }
 
 static void scenario_venus() { scenario_venus_impl(); }
-STATIC_REGISTER_SCENARIO("Venus day (2025-05-22)", scenario_venus);
+// STATIC_REGISTER_SCENARIO("Venus day (2025-05-22)", scenario_venus);

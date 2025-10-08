@@ -25,4 +25,4 @@ static void scenario_zone_impl() {
 }
 
 static void scenario_zone() { scenario_zone_impl(); }
-STATIC_REGISTER_SCENARIO("Goldhat zone (2025-05-22)", scenario_zone);
+// STATIC_REGISTER_SCENARIO("Goldhat zone (2025-05-22)", scenario_zone);

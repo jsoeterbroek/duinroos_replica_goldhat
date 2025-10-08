@@ -10,7 +10,7 @@
 #include <vector>
 
 static void scenario_lunar_solar();
-STATIC_REGISTER_SCENARIO("Lunar↔Solar: conversion", scenario_lunar_solar);
+// STATIC_REGISTER_SCENARIO("Lunar↔Solar: conversion", scenario_lunar_solar);
 
 // canonical intercalary zones per gold_hat.md
 static const std::vector<int> intercalary_zones = {5, 16, 17};

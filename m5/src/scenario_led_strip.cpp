@@ -11,13 +11,39 @@
 
 // Adjust these if your strip differs
 // #define NUM_LEDS 30
-#define NUM_LEDS 20
+#define NUM_LEDS 15
 #define DATA_PIN PORTA_PIN_1 // Port A, pin mapped in include/config.h (G2)
 #define LED_TYPE SK6812
 #define COLOR_ORDER GRB
 #define BRIGHTNESS_LOW 64
 #define BRIGHTNESS_HIGH 128
 #define BRIGHTNESS_MAX 255
+
+// Zone definitions: first 7 LEDs are zone 4, remaining 8 are zone 5
+struct LedZone {
+  const char *name;
+  uint16_t start;  // inclusive start index
+  uint16_t length; // number of LEDs in zone
+};
+
+static const LedZone zone4 = {"zone4", 0, 7};
+static const LedZone zone5 = {"zone5", 7, (uint16_t)(NUM_LEDS - 7)};
+
+// Helper: set all LEDs in a zone to a color
+static void setZoneColor(CRGB leds[], const LedZone &z, const CRGB &color) {
+  for (uint16_t i = z.start; i < z.start + z.length && i < NUM_LEDS; ++i) {
+    leds[i] = color;
+  }
+}
+
+// Helper: clear a zone (set to black)
+static void clearZone(CRGB leds[], const LedZone &z) {
+  for (uint16_t i = z.start; i < z.start + z.length && i < NUM_LEDS; ++i) {
+    leds[i] = CRGB::Black;
+  }
+}
+
+// (No touch-to-exit) demo runs until scenario is interrupted by the app
 
 static void scenario_led_strip_impl() {
   static bool initialized = false;
@@ -32,82 +58,38 @@ static void scenario_led_strip_impl() {
                   DATA_PIN, NUM_LEDS);
   }
 
-  // Run continuously until user intervenes (touch or button A)
-  Serial.println("scenario_led_strip: entering continuous demo");
+  // Run continuously until user intervenes (touch)
+  Serial.println(
+      "scenario_led_strip: entering zone-based demo (parallel zones)");
   while (true) {
+    // Define the sequence of colors and brightness levels to cycle per zone
+    const CRGB colors[] = {CRGB::Red, CRGB::Blue, CRGB::Green};
+    const uint8_t brightness_levels[] = {BRIGHTNESS_HIGH, BRIGHTNESS_MAX};
+    const size_t n_colors = sizeof(colors) / sizeof(colors[0]);
+    const size_t n_brights =
+        sizeof(brightness_levels) / sizeof(brightness_levels[0]);
 
-    // // All red low brightness
-    // fill_solid(leds, NUM_LEDS, CRGB::Red);
-    // FastLED.setBrightness(BRIGHTNESS_LOW);
-    // FastLED.show();
-    // Serial.println("scenario_led_strip: color=RED, brightness=LOW");
-    // for (int ms = 0; ms < 5000; ms += 200) {
-    //   delay(200);
-    // }
-    // // All blue low brightness
-    // fill_solid(leds, NUM_LEDS, CRGB::Blue);
-    // FastLED.setBrightness(BRIGHTNESS_LOW);
-    // FastLED.show();
-    // Serial.println("scenario_led_strip: color=BLUE, brightness=LOW");
-    // for (int ms = 0; ms < 5000; ms += 200) {
-    //   delay(200);
-    // }
-    // // All green low brightness
-    // fill_solid(leds, NUM_LEDS, CRGB::Green);
-    // FastLED.setBrightness(BRIGHTNESS_LOW);
-    // FastLED.show();
-    // Serial.println("scenario_led_strip: color=GREEN, brightness=LOW");
-    // for (int ms = 0; ms < 5000; ms += 200) {
-    //   delay(200);
-    // }
+    // Cycle both zones in parallel. Start zone5 one step ahead so they differ.
+    for (size_t b = 0; b < n_brights; ++b) {
+      FastLED.setBrightness(brightness_levels[b]);
+      size_t idx4 = 0;
+      size_t idx5 = (n_colors > 1) ? 1 : 0; // offset so colors differ initially
+      // Perform enough cycles to show each color in both zones
+      for (size_t step = 0; step < n_colors; ++step) {
+        setZoneColor(leds, zone4, colors[idx4]);
+        setZoneColor(leds, zone5, colors[idx5]);
+        FastLED.show();
+        Serial.printf(
+            "scenario_led_strip: zone4 color=%d zone5 color=%d brightness=%d\n",
+            (int)idx4, (int)idx5, (int)brightness_levels[b]);
 
-    // All red HIGH brightness
-    fill_solid(leds, NUM_LEDS, CRGB::Red);
-    FastLED.setBrightness(BRIGHTNESS_HIGH);
-    FastLED.show();
-    Serial.println("scenario_led_strip: color=RED, brightness=HIGH");
-    for (int ms = 0; ms < 5000; ms += 200) {
-      delay(200);
-    }
-    // All blue HIGH brightness
-    fill_solid(leds, NUM_LEDS, CRGB::Blue);
-    FastLED.setBrightness(BRIGHTNESS_HIGH);
-    FastLED.show();
-    Serial.println("scenario_led_strip: color=BLUE, brightness=HIGH");
-    for (int ms = 0; ms < 5000; ms += 200) {
-      delay(200);
-    }
-    // All green HIGH brightness
-    fill_solid(leds, NUM_LEDS, CRGB::Green);
-    FastLED.setBrightness(BRIGHTNESS_HIGH);
-    FastLED.show();
-    Serial.println("scenario_led_strip: color=GREEN, brightness=HIGH");
-    for (int ms = 0; ms < 5000; ms += 200) {
-      delay(200);
-    }
-    // All red MAX brightness
-    fill_solid(leds, NUM_LEDS, CRGB::Red);
-    FastLED.setBrightness(BRIGHTNESS_MAX);
-    FastLED.show();
-    Serial.println("scenario_led_strip: color=RED, brightness=MAX");
-    for (int ms = 0; ms < 5000; ms += 200) {
-      delay(200);
-    }
-    // All blue MAX brightness
-    fill_solid(leds, NUM_LEDS, CRGB::Blue);
-    FastLED.setBrightness(BRIGHTNESS_MAX);
-    FastLED.show();
-    Serial.println("scenario_led_strip: color=BLUE, brightness=MAX");
-    for (int ms = 0; ms < 5000; ms += 200) {
-      delay(200);
-    }
-    // All green MAX brightness
-    fill_solid(leds, NUM_LEDS, CRGB::Green);
-    FastLED.setBrightness(BRIGHTNESS_MAX);
-    FastLED.show();
-    Serial.println("scenario_led_strip: color=GREEN, brightness=MAX");
-    for (int ms = 0; ms < 5000; ms += 200) {
-      delay(200);
+        // show for 5s
+        delay(5000);
+
+        // advance indices
+        idx4 = (idx4 + 1) % n_colors;
+        idx5 = (idx5 + 1) % n_colors;
+      }
     }
   }
 

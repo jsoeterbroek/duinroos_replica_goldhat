@@ -11,7 +11,7 @@
 
 // Adjust these if your strip differs
 // #define NUM_LEDS 30
-#define NUM_LEDS 15
+#define NUM_LEDS 25
 #define DATA_PIN PORTA_PIN_1 // Port A, pin mapped in include/config.h (G2)
 #define LED_TYPE SK6812
 #define COLOR_ORDER GRB
@@ -27,7 +27,9 @@ struct LedZone {
 };
 
 static const LedZone zone4 = {"zone4", 0, 7};
-static const LedZone zone5 = {"zone5", 7, (uint16_t)(NUM_LEDS - 7)};
+// static const LedZone zone5 = {"zone5", 7, (uint16_t)(NUM_LEDS - 7)};
+static const LedZone zone5 = {"zone5", 7, 15};
+static const LedZone zone6 = {"zone6", 15, 25};
 
 // Helper: set all LEDs in a zone to a color
 static void setZoneColor(CRGB leds[], const LedZone &z, const CRGB &color) {
@@ -74,14 +76,19 @@ static void scenario_led_strip_impl() {
       FastLED.setBrightness(brightness_levels[b]);
       size_t idx4 = 0;
       size_t idx5 = (n_colors > 1) ? 1 : 0; // offset so colors differ initially
+      size_t idx6 = (n_colors > 1) ? 1 : 0; // offset so colors differ initially
       // Perform enough cycles to show each color in both zones
       for (size_t step = 0; step < n_colors; ++step) {
         setZoneColor(leds, zone4, colors[idx4]);
         setZoneColor(leds, zone5, colors[idx5]);
+        setZoneColor(leds, zone6, colors[idx6]);
         FastLED.show();
-        Serial.printf(
-            "scenario_led_strip: zone4 color=%d zone5 color=%d brightness=%d\n",
-            (int)idx4, (int)idx5, (int)brightness_levels[b]);
+        Serial.printf("scenario_led_strip: zone4 color=%d brightness=%d\n",
+                      (int)idx4, (int)brightness_levels[b]);
+        Serial.printf("scenario_led_strip: zone5 color=%d brightness=%d\n",
+                      (int)idx5, (int)brightness_levels[b]);
+        Serial.printf("scenario_led_strip: zone6 color=%d brightness=%d\n",
+                      (int)idx6, (int)brightness_levels[b]);
 
         // show for 5s
         delay(5000);

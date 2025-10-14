@@ -27,7 +27,6 @@ struct LedZone {
 };
 
 static const LedZone zone4 = {"zone4", 0, 7};
-// static const LedZone zone5 = {"zone5", 7, (uint16_t)(NUM_LEDS - 7)};
 static const LedZone zone5 = {"zone5", 7, 15};
 static const LedZone zone6 = {"zone6", 15, 25};
 
@@ -45,8 +44,6 @@ static void clearZone(CRGB leds[], const LedZone &z) {
   }
 }
 
-// (No touch-to-exit) demo runs until scenario is interrupted by the app
-
 static void scenario_led_strip_impl() {
   static bool initialized = false;
   static CRGB leds[NUM_LEDS];
@@ -60,23 +57,24 @@ static void scenario_led_strip_impl() {
                   DATA_PIN, NUM_LEDS);
   }
 
-  // Run continuously until user intervenes (touch)
+  // Run continuously
   Serial.println(
       "scenario_led_strip: entering zone-based demo (parallel zones)");
   while (true) {
     // Define the sequence of colors and brightness levels to cycle per zone
     const CRGB colors[] = {CRGB::Red, CRGB::Blue, CRGB::Green};
-    const uint8_t brightness_levels[] = {BRIGHTNESS_HIGH, BRIGHTNESS_MAX};
+    // const uint8_t brightness_levels[] = {BRIGHTNESS_HIGH, BRIGHTNESS_MAX};
+    const uint8_t brightness_levels[] = {BRIGHTNESS_MAX};
     const size_t n_colors = sizeof(colors) / sizeof(colors[0]);
     const size_t n_brights =
         sizeof(brightness_levels) / sizeof(brightness_levels[0]);
 
-    // Cycle both zones in parallel. Start zone5 one step ahead so they differ.
+    // Cycle all zones in parallel.
     for (size_t b = 0; b < n_brights; ++b) {
       FastLED.setBrightness(brightness_levels[b]);
       size_t idx4 = 0;
-      size_t idx5 = (n_colors > 1) ? 1 : 0; // offset so colors differ initially
-      size_t idx6 = (n_colors > 1) ? 1 : 0; // offset so colors differ initially
+      size_t idx5 = 1;
+      size_t idx6 = 2;
       // Perform enough cycles to show each color in both zones
       for (size_t step = 0; step < n_colors; ++step) {
         setZoneColor(leds, zone4, colors[idx4]);
@@ -96,6 +94,7 @@ static void scenario_led_strip_impl() {
         // advance indices
         idx4 = (idx4 + 1) % n_colors;
         idx5 = (idx5 + 1) % n_colors;
+        idx6 = (idx6 + 1) % n_colors;
       }
     }
   }

@@ -11,7 +11,7 @@
 
 // Adjust these if your strip differs
 // #define NUM_LEDS 30
-#define NUM_LEDS 37
+#define NUM_LEDS 50
 #define DATA_PIN PORTA_PIN_1 // Port A, pin mapped in include/config.h (G2)
 #define LED_TYPE SK6812
 #define COLOR_ORDER GRB
@@ -26,10 +26,11 @@ struct LedZone {
   uint16_t length; // number of LEDs in zone
 };
 
-static const LedZone zone4 = {"zone4", 0, 7};
-static const LedZone zone5 = {"zone5", 7, 15};
-static const LedZone zone6 = {"zone6", 15, 25};
-static const LedZone zone7 = {"zone7", 25, 37};
+static const LedZone zone4 = {"zone4", 0, 7};   // 7
+static const LedZone zone5 = {"zone5", 7, 15};  // 8
+static const LedZone zone6 = {"zone6", 15, 25}; // 10
+static const LedZone zone7 = {"zone7", 25, 37}; // 12
+static const LedZone zone8 = {"zone8", 37, 50}; // 13
 
 // Helper: set all LEDs in a zone to a color
 static void setZoneColor(CRGB leds[], const LedZone &z, const CRGB &color) {
@@ -42,6 +43,7 @@ static void setZoneColor(CRGB leds[], const LedZone &z, const CRGB &color) {
 static void clearZone(CRGB leds[], const LedZone &z) {
   for (uint16_t i = z.start; i < z.start + z.length && i < NUM_LEDS; ++i) {
     leds[i] = CRGB::Black;
+    ;
   }
 }
 
@@ -77,12 +79,14 @@ static void scenario_led_strip_impl() {
       size_t idx5 = 1;
       size_t idx6 = 2;
       size_t idx7 = 0;
+      size_t idx8 = 1;
       // Perform enough cycles to show each color in both zones
       for (size_t step = 0; step < n_colors; ++step) {
         setZoneColor(leds, zone4, colors[idx4]);
         setZoneColor(leds, zone5, colors[idx5]);
         setZoneColor(leds, zone6, colors[idx6]);
         setZoneColor(leds, zone7, colors[idx7]);
+        setZoneColor(leds, zone8, colors[idx8]);
         FastLED.show();
         Serial.printf("scenario_led_strip: zone4 color=%d brightness=%d\n",
                       (int)idx4, (int)brightness_levels[b]);
@@ -92,6 +96,8 @@ static void scenario_led_strip_impl() {
                       (int)idx6, (int)brightness_levels[b]);
         Serial.printf("scenario_led_strip: zone7 color=%d brightness=%d\n",
                       (int)idx7, (int)brightness_levels[b]);
+        Serial.printf("scenario_led_strip: zone8 color=%d brightness=%d\n",
+                      (int)idx8, (int)brightness_levels[b]);
 
         // Also draw the zone status to the display: label + small colored
         // circle
@@ -135,6 +141,13 @@ static void scenario_led_strip_impl() {
             display.color565(colors[idx7].r, colors[idx7].g, colors[idx7].b);
         display.fillCircle(ox + 6, y + 6, 5, col7);
         display.drawString("zone 7", ox + 16, y);
+        y += lineh;
+
+        // zone8
+        uint16_t col8 =
+            display.color565(colors[idx8].r, colors[idx8].g, colors[idx8].b);
+        display.fillCircle(ox + 6, y + 6, 5, col8);
+        display.drawString("zone 8", ox + 16, y);
 
         draw_footer();
         display.endWrite();
@@ -147,6 +160,7 @@ static void scenario_led_strip_impl() {
         idx5 = (idx5 + 1) % n_colors;
         idx6 = (idx6 + 1) % n_colors;
         idx7 = (idx7 + 1) % n_colors;
+        idx8 = (idx8 + 1) % n_colors;
       }
     }
   }

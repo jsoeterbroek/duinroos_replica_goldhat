@@ -2,6 +2,7 @@
    ABOUTME: Maps logical gold-hat zones and symbols to LED indices. */
 #pragma once
 
+#include <FastLED.h>
 #include <stdint.h>
 #include <vector>
 
@@ -30,3 +31,34 @@ int sum_intercalaries(const std::vector<int> &zones);
 // Map a zone range to LED index ranges (pairs of start,end) for animation
 std::vector<std::pair<int, int>> map_zone_range_to_led_ranges(int start_zone,
                                                               int end_zone);
+
+struct LedZone {
+  const char *name;
+  uint16_t start;  // inclusive start index
+  uint16_t length; // number of LEDs in zone
+};
+
+// Adjust these if your strip differs
+static const LedZone zone4 = {"zone4", 0, 7};   // 7
+static const LedZone zone5 = {"zone5", 7, 15};  // 8
+static const LedZone zone6 = {"zone6", 15, 25}; // 10
+static const LedZone zone7 = {"zone7", 25, 37}; // 12
+static const LedZone zone8 = {"zone8", 37, 50}; // 13
+static const LedZone zone9 = {"zone9", 50, 64}; // 14
+
+// #define NUM_LEDS 30
+#define NUM_LEDS 64
+#define DATA_PIN PORTA_PIN_1 // Port A, pin mapped in include/config.h (G2)
+#define LED_TYPE SK6812
+#define COLOR_ORDER GRB
+#define BRIGHTNESS_LOW 64
+#define BRIGHTNESS_HIGH 128
+#define BRIGHTNESS_MAX 255
+
+void setZoneColor(CRGB leds[], const LedZone &z, const CRGB &color);
+void clearZone(CRGB leds[], const LedZone &z);
+
+// Convenience API: set/clear by numeric zone id (zone numbers as in layout)
+// Returns true if the zone id was found and the operation applied.
+bool setZoneColorById(int zoneId, CRGB leds[], const CRGB &color);
+bool clearZoneById(int zoneId, CRGB leds[]);

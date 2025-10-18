@@ -181,3 +181,47 @@ std::vector<std::pair<int, int>> map_zone_range_to_led_ranges(int start_zone,
   }
   return ranges;
 }
+
+// Helper: set all LEDs in a zone to a color
+void setZoneColor(CRGB leds[], const LedZone &z, const CRGB &color) {
+  for (uint16_t i = z.start; i < z.start + z.length && i < NUM_LEDS; ++i) {
+    leds[i] = color;
+  }
+}
+
+// Helper: clear a zone (set to black)
+void clearZone(CRGB leds[], const LedZone &z) {
+  for (uint16_t i = z.start; i < z.start + z.length && i < NUM_LEDS; ++i) {
+    leds[i] = CRGB::Black;
+    ;
+  }
+}
+
+// Convenience: set zone by numeric zone id (matches zone_t.zone)
+bool setZoneColorById(int zoneId, CRGB leds[], const CRGB &color) {
+  for (auto &z : zones) {
+    if (z.zone == zoneId) {
+      if (z.start_index < 0 || z.end_index < z.start_index)
+        return false;
+      for (int i = z.start_index; i <= z.end_index && i < NUM_LEDS; ++i) {
+        leds[i] = color;
+      }
+      return true;
+    }
+  }
+  return false;
+}
+
+bool clearZoneById(int zoneId, CRGB leds[]) {
+  for (auto &z : zones) {
+    if (z.zone == zoneId) {
+      if (z.start_index < 0 || z.end_index < z.start_index)
+        return false;
+      for (int i = z.start_index; i <= z.end_index && i < NUM_LEDS; ++i) {
+        leds[i] = CRGB::Black;
+      }
+      return true;
+    }
+  }
+  return false;
+}

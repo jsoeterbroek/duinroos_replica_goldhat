@@ -6,46 +6,9 @@
 
 #include "M5Unified.h"
 #include "config.h"
+#include "led_mapper.h"
 #include "scenarios.h"
 #include <FastLED.h>
-
-struct LedZone {
-  const char *name;
-  uint16_t start;  // inclusive start index
-  uint16_t length; // number of LEDs in zone
-};
-
-// Adjust these if your strip differs
-static const LedZone zone4 = {"zone4", 0, 7};   // 7
-static const LedZone zone5 = {"zone5", 7, 15};  // 8
-static const LedZone zone6 = {"zone6", 15, 25}; // 10
-static const LedZone zone7 = {"zone7", 25, 37}; // 12
-static const LedZone zone8 = {"zone8", 37, 50}; // 13
-static const LedZone zone9 = {"zone9", 50, 64}; // 14
-
-// #define NUM_LEDS 30
-#define NUM_LEDS 64
-#define DATA_PIN PORTA_PIN_1 // Port A, pin mapped in include/config.h (G2)
-#define LED_TYPE SK6812
-#define COLOR_ORDER GRB
-#define BRIGHTNESS_LOW 64
-#define BRIGHTNESS_HIGH 128
-#define BRIGHTNESS_MAX 255
-
-// Helper: set all LEDs in a zone to a color
-static void setZoneColor(CRGB leds[], const LedZone &z, const CRGB &color) {
-  for (uint16_t i = z.start; i < z.start + z.length && i < NUM_LEDS; ++i) {
-    leds[i] = color;
-  }
-}
-
-// Helper: clear a zone (set to black)
-static void clearZone(CRGB leds[], const LedZone &z) {
-  for (uint16_t i = z.start; i < z.start + z.length && i < NUM_LEDS; ++i) {
-    leds[i] = CRGB::Black;
-    ;
-  }
-}
 
 static void scenario_led_strip_impl() {
   static bool initialized = false;

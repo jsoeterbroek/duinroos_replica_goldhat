@@ -32,6 +32,14 @@ int sum_intercalaries(const std::vector<int> &zones);
 std::vector<std::pair<int, int>> map_zone_range_to_led_ranges(int start_zone,
                                                               int end_zone);
 
+#define NUM_LEDS 64
+#define DATA_PIN PORTA_PIN_1 // Port A, pin mapped in include/config.h (G2)
+#define LED_TYPE SK6812
+#define COLOR_ORDER GRB
+#define BRIGHTNESS_LOW 64
+#define BRIGHTNESS_HIGH 128
+#define BRIGHTNESS_MAX 255
+
 struct LedZone {
   const char *name;
   uint16_t start;  // inclusive start index
@@ -45,15 +53,6 @@ static const LedZone zone6 = {"zone6", 15, 25}; // 10
 static const LedZone zone7 = {"zone7", 25, 37}; // 12
 static const LedZone zone8 = {"zone8", 37, 50}; // 13
 static const LedZone zone9 = {"zone9", 50, 64}; // 14
-
-// #define NUM_LEDS 30
-#define NUM_LEDS 64
-#define DATA_PIN PORTA_PIN_1 // Port A, pin mapped in include/config.h (G2)
-#define LED_TYPE SK6812
-#define COLOR_ORDER GRB
-#define BRIGHTNESS_LOW 64
-#define BRIGHTNESS_HIGH 128
-#define BRIGHTNESS_MAX 255
 
 void setZoneColor(CRGB leds[], const LedZone &z, const CRGB &color);
 void clearZone(CRGB leds[], const LedZone &z);

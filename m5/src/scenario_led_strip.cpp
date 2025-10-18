@@ -1,7 +1,6 @@
 /* ABOUTME: Scenario - Hardware LED strip test
-   ABOUTME: Drives an SK6812 strip (30 LEDs) connected to Port A data pin (G2).
-   ABOUTME: Cycles all LEDs red for 5s, then blue for 5s, green for 5s,
-   repeating a few times at different brightness levels.
+   ABOUTME: Drives an SK6812 strip connected to Port A data pin (G2).
+   ABOUTME: Cycles all LEDs red for 5s, then blue for 5s, green for 5s.
  */
 
 #include "M5Unified.h"

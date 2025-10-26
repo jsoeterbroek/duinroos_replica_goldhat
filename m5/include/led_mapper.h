@@ -32,7 +32,7 @@ int sum_intercalaries(const std::vector<int> &zones);
 std::vector<std::pair<int, int>> map_zone_range_to_led_ranges(int start_zone,
                                                               int end_zone);
 
-#define NUM_LEDS 64
+#define NUM_LEDS 19
 #define DATA_PIN PORTA_PIN_1 // Port A, pin mapped in include/config.h (G2)
 #define LED_TYPE SK6812
 #define COLOR_ORDER GRB
@@ -47,12 +47,14 @@ struct LedZone {
 };
 
 // Adjust these if your strip differs
-static const LedZone zone4 = {"zone4", 0, 7};   // 7
-static const LedZone zone5 = {"zone5", 7, 15};  // 8
-static const LedZone zone6 = {"zone6", 15, 25}; // 10
-static const LedZone zone7 = {"zone7", 25, 37}; // 12
-static const LedZone zone8 = {"zone8", 37, 50}; // 13
-static const LedZone zone9 = {"zone9", 50, 64}; // 14
+static const LedZone zone3 = {"zone3", 0, 7};  // 7
+static const LedZone zone6 = {"zone6", 7, 19}; // 12   TEST
+// static const LedZone zone4 = {"zone4", 0, 7};   // 7
+// static const LedZone zone5 = {"zone5", 7, 15};  // 8
+// static const LedZone zone6 = {"zone6", 15, 25}; // 10
+// static const LedZone zone7 = {"zone7", 25, 37}; // 12
+// static const LedZone zone8 = {"zone8", 37, 50}; // 13
+// static const LedZone zone9 = {"zone9", 50, 64}; // 14
 
 void setZoneColor(CRGB leds[], const LedZone &z, const CRGB &color);
 void clearZone(CRGB leds[], const LedZone &z);

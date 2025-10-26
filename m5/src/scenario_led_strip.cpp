@@ -37,33 +37,37 @@ static void scenario_led_strip_impl() {
     // Cycle all zones in parallel.
     for (size_t b = 0; b < n_brights; ++b) {
       FastLED.setBrightness(brightness_levels[b]);
+      size_t idx3 = 0;
       size_t idx4 = 0;
       size_t idx5 = 1;
       size_t idx6 = 2;
       size_t idx7 = 0;
       size_t idx8 = 1;
       size_t idx9 = 2;
-      // Perform enough cycles to show each color in both zones
+      // Perform enough cycles to show each color in all zones
       for (size_t step = 0; step < n_colors; ++step) {
-        setZoneColor(leds, zone4, colors[idx4]);
-        setZoneColor(leds, zone5, colors[idx5]);
+        setZoneColor(leds, zone3, colors[idx3]);
+        // setZoneColor(leds, zone4, colors[idx4]);
+        // setZoneColor(leds, zone5, colors[idx5]);
         setZoneColor(leds, zone6, colors[idx6]);
-        setZoneColor(leds, zone7, colors[idx7]);
-        setZoneColor(leds, zone8, colors[idx8]);
-        setZoneColor(leds, zone9, colors[idx9]);
+        // setZoneColor(leds, zone7, colors[idx7]);
+        // setZoneColor(leds, zone8, colors[idx8]);
+        // setZoneColor(leds, zone9, colors[idx9]);
         FastLED.show();
-        Serial.printf("scenario_led_strip: zone4 color=%d brightness=%d\n",
-                      (int)idx4, (int)brightness_levels[b]);
-        Serial.printf("scenario_led_strip: zone5 color=%d brightness=%d\n",
-                      (int)idx5, (int)brightness_levels[b]);
+        Serial.printf("scenario_led_strip: zone3 color=%d brightness=%d\n",
+                      (int)idx3, (int)brightness_levels[b]);
+        // Serial.printf("scenario_led_strip: zone4 color=%d brightness=%d\n",
+        //               (int)idx4, (int)brightness_levels[b]);
+        // Serial.printf("scenario_led_strip: zone5 color=%d brightness=%d\n",
+        //               (int)idx5, (int)brightness_levels[b]);
         Serial.printf("scenario_led_strip: zone6 color=%d brightness=%d\n",
                       (int)idx6, (int)brightness_levels[b]);
-        Serial.printf("scenario_led_strip: zone7 color=%d brightness=%d\n",
-                      (int)idx7, (int)brightness_levels[b]);
-        Serial.printf("scenario_led_strip: zone8 color=%d brightness=%d\n",
-                      (int)idx8, (int)brightness_levels[b]);
-        Serial.printf("scenario_led_strip: zone9 color=%d brightness=%d\n",
-                      (int)idx9, (int)brightness_levels[b]);
+        // Serial.printf("scenario_led_strip: zone7 color=%d brightness=%d\n",
+        //               (int)idx7, (int)brightness_levels[b]);
+        // Serial.printf("scenario_led_strip: zone8 color=%d brightness=%d\n",
+        //               (int)idx8, (int)brightness_levels[b]);
+        // Serial.printf("scenario_led_strip: zone9 color=%d brightness=%d\n",
+        //               (int)idx9, (int)brightness_levels[b]);
 
         // Also draw the zone status to the display: label + small colored
         // circle
@@ -81,46 +85,53 @@ static void scenario_led_strip_impl() {
         int y = oy;
         const int lineh = 14;
 
-        // zone4
-        uint16_t col4 =
-            display.color565(colors[idx4].r, colors[idx4].g, colors[idx4].b);
-        display.fillCircle(ox + 6, y + 6, 5, col4);
-        display.drawString("zone 4", ox + 16, y);
+        // zone3
+        uint16_t col3 =
+            display.color565(colors[idx3].r, colors[idx3].g, colors[idx3].b);
+        display.fillCircle(ox + 6, y + 6, 5, col3);
+        display.drawString("zone 3", ox + 16, y);
         y += lineh;
 
-        // zone5
-        uint16_t col5 =
-            display.color565(colors[idx5].r, colors[idx5].g, colors[idx5].b);
-        display.fillCircle(ox + 6, y + 6, 5, col5);
-        display.drawString("zone 5", ox + 16, y);
-        y += lineh;
+        // // zone4
+        // uint16_t col4 =
+        //     display.color565(colors[idx4].r, colors[idx4].g, colors[idx4].b);
+        // display.fillCircle(ox + 6, y + 6, 5, col4);
+        // display.drawString("zone 4", ox + 16, y);
+        // y += lineh;
+
+        // // zone5
+        // uint16_t col5 =
+        //     display.color565(colors[idx5].r, colors[idx5].g, colors[idx5].b);
+        // display.fillCircle(ox + 6, y + 6, 5, col5);
+        // display.drawString("zone 5", ox + 16, y);
+        // y += lineh;
 
         // zone6
         uint16_t col6 =
             display.color565(colors[idx6].r, colors[idx6].g, colors[idx6].b);
         display.fillCircle(ox + 6, y + 6, 5, col6);
         display.drawString("zone 6", ox + 16, y);
-        y += lineh;
+        // y += lineh;
 
-        // zone7
-        uint16_t col7 =
-            display.color565(colors[idx7].r, colors[idx7].g, colors[idx7].b);
-        display.fillCircle(ox + 6, y + 6, 5, col7);
-        display.drawString("zone 7", ox + 16, y);
-        y += lineh;
+        // // zone7
+        // uint16_t col7 =
+        //     display.color565(colors[idx7].r, colors[idx7].g, colors[idx7].b);
+        // display.fillCircle(ox + 6, y + 6, 5, col7);
+        // display.drawString("zone 7", ox + 16, y);
+        // y += lineh;
 
-        // zone8
-        uint16_t col8 =
-            display.color565(colors[idx8].r, colors[idx8].g, colors[idx8].b);
-        display.fillCircle(ox + 6, y + 6, 5, col8);
-        display.drawString("zone 8", ox + 16, y);
-        y += lineh;
+        // // zone8
+        // uint16_t col8 =
+        //     display.color565(colors[idx8].r, colors[idx8].g, colors[idx8].b);
+        // display.fillCircle(ox + 6, y + 6, 5, col8);
+        // display.drawString("zone 8", ox + 16, y);
+        // y += lineh;
 
-        // zone9
-        uint16_t col9 =
-            display.color565(colors[idx9].r, colors[idx9].g, colors[idx9].b);
-        display.fillCircle(ox + 6, y + 6, 5, col9);
-        display.drawString("zone 9", ox + 16, y);
+        // // zone9
+        // uint16_t col9 =
+        //     display.color565(colors[idx9].r, colors[idx9].g, colors[idx9].b);
+        // display.fillCircle(ox + 6, y + 6, 5, col9);
+        // display.drawString("zone 9", ox + 16, y);
 
         draw_footer();
         display.endWrite();
@@ -129,12 +140,13 @@ static void scenario_led_strip_impl() {
         delay(5000);
 
         // advance indices
-        idx4 = (idx4 + 1) % n_colors;
-        idx5 = (idx5 + 1) % n_colors;
+        idx3 = (idx3 + 1) % n_colors;
+        // idx4 = (idx4 + 1) % n_colors;
+        // idx5 = (idx5 + 1) % n_colors;
         idx6 = (idx6 + 1) % n_colors;
-        idx7 = (idx7 + 1) % n_colors;
-        idx8 = (idx8 + 1) % n_colors;
-        idx9 = (idx9 + 1) % n_colors;
+        // idx7 = (idx7 + 1) % n_colors;
+        // idx8 = (idx8 + 1) % n_colors;
+        // idx9 = (idx9 + 1) % n_colors;
       }
     }
   }

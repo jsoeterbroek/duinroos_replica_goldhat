@@ -48,7 +48,7 @@ static void scenario_led_strip_impl() {
       for (size_t step = 0; step < n_colors; ++step) {
         setZoneColor(leds, zone3, colors[idx3]);
         setZoneColor(leds, zone4, colors[idx4]);
-        // setZoneColor(leds, zone5, colors[idx5]);
+        setZoneColor(leds, zone5, colors[idx5]);
         // setZoneColor(leds, zone6, colors[idx6]);
         // setZoneColor(leds, zone7, colors[idx7]);
         // setZoneColor(leds, zone8, colors[idx8]);
@@ -58,8 +58,8 @@ static void scenario_led_strip_impl() {
                       (int)idx3, (int)brightness_levels[b]);
         Serial.printf("scenario_led_strip: zone4 color=%d brightness=%d\n",
                       (int)idx4, (int)brightness_levels[b]);
-        // Serial.printf("scenario_led_strip: zone5 color=%d brightness=%d\n",
-        //               (int)idx5, (int)brightness_levels[b]);
+        Serial.printf("scenario_led_strip: zone5 color=%d brightness=%d\n",
+                      (int)idx5, (int)brightness_levels[b]);
         // Serial.printf("scenario_led_strip: zone6 color=%d brightness=%d\n",
         //              (int)idx6, (int)brightness_levels[b]);
         // Serial.printf("scenario_led_strip: zone7 color=%d brightness=%d\n",
@@ -99,12 +99,12 @@ static void scenario_led_strip_impl() {
         display.drawString("zone 4", ox + 16, y);
         y += lineh;
 
-        // // zone5
-        // uint16_t col5 =
-        //     display.color565(colors[idx5].r, colors[idx5].g, colors[idx5].b);
-        // display.fillCircle(ox + 6, y + 6, 5, col5);
-        // display.drawString("zone 5", ox + 16, y);
-        // y += lineh;
+        // zone5
+        uint16_t col5 =
+            display.color565(colors[idx5].r, colors[idx5].g, colors[idx5].b);
+        display.fillCircle(ox + 6, y + 6, 5, col5);
+        display.drawString("zone 5", ox + 16, y);
+        y += lineh;
 
         // zone6
         // uint16_t col6 =
@@ -142,7 +142,7 @@ static void scenario_led_strip_impl() {
         // advance indices
         idx3 = (idx3 + 1) % n_colors;
         idx4 = (idx4 + 1) % n_colors;
-        // idx5 = (idx5 + 1) % n_colors;
+        idx5 = (idx5 + 1) % n_colors;
         // idx6 = (idx6 + 1) % n_colors;
         // idx7 = (idx7 + 1) % n_colors;
         // idx8 = (idx8 + 1) % n_colors;

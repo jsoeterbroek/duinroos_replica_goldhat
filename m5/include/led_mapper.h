@@ -46,10 +46,10 @@ struct LedZone {
 };
 
 // Adjust these if your strip differs
-#define NUM_LEDS 14
-static const LedZone zone3 = {"zone3", 0, 7};  // 7
-static const LedZone zone4 = {"zone4", 7, 14}; // 7
-// static const LedZone zone5 = {"zone5", 7, 15};  // 8
+#define NUM_LEDS 22
+static const LedZone zone3 = {"zone3", 0, 7};   // 7 LEDs
+static const LedZone zone4 = {"zone4", 7, 14};  // 7 LEDs
+static const LedZone zone5 = {"zone5", 14, 22}; // 8 LEDs
 // static const LedZone zone6 = {"zone6", 15, 25}; // 10
 // static const LedZone zone7 = {"zone7", 25, 37}; // 12
 // static const LedZone zone8 = {"zone8", 37, 50}; // 13

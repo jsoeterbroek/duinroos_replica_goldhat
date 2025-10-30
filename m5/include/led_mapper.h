@@ -32,7 +32,6 @@ int sum_intercalaries(const std::vector<int> &zones);
 std::vector<std::pair<int, int>> map_zone_range_to_led_ranges(int start_zone,
                                                               int end_zone);
 
-#define NUM_LEDS 14
 #define DATA_PIN PORTA_PIN_1 // Port A, pin mapped in include/config.h (G2)
 #define LED_TYPE SK6812
 #define COLOR_ORDER GRB
@@ -47,6 +46,7 @@ struct LedZone {
 };
 
 // Adjust these if your strip differs
+#define NUM_LEDS 14
 static const LedZone zone3 = {"zone3", 0, 7};  // 7
 static const LedZone zone4 = {"zone4", 7, 14}; // 7
 // static const LedZone zone5 = {"zone5", 7, 15};  // 8

@@ -13,7 +13,7 @@ The goal of this project is to provide a 1-to-1 replica of the Berlin Goldhat:
   - A esp32 dev kit to drive the scenarios lighting up different sections
   - A screen to display information and calculation of the scenario 
 - separate STL files for 3D printing
-- The real live object consists of muliple 'bands' or 'slices' (see dimensions.md).
+- The real live object consists of muliple 'bands' or 'slices' (see dimensions.txt).
 - Each band should be a separate 3D-printable STL file with the object to stack each on top of the other to create the complete model
 - Each band should show the correct symbols and decorations as the real object (but without the real dents and bruises), the model should be a stylised model of the real object, not a copy of the actual surface irregularities
 - An earlier attempt was made to create this, but was abandoned, see folder reference/
@@ -22,7 +22,7 @@ The goal of this project is to provide a 1-to-1 replica of the Berlin Goldhat:
 Important files on the background of the object:
 - gold_hat.md - explains the object Berlin Goldhat and theory behind it 
 - sources.md - sources used (physical books)
-- dimensions.md - approximation of the dimensions (from Menghin, Wilfried); use as  an important source, but do check if correct (don't take these numbers blindly for granted)
+- dimensions.txt - approximation of the dimensions (from Menghin, Wilfried); use as  an important source, but do check if correct (don't take these numbers blindly for granted)
 
 ## Commands
 AI Model in PI <--->  MCP  <---> Freecad running MCP server

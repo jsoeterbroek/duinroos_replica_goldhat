@@ -3,7 +3,7 @@
   "_unit": "days",
   "_definition": "day_value[zone] = boss_count * concentric_rings; zones 1 and 5 are special",
   "_verified": "exactly reproduced from data/zones.json by scripts/verify_calendar.py",
-  "_copy_of": "reference/m5/data/berlin.json (which is byte-identical to berlin_meghin.json - that duplicate is redundant)",
+  "_copy_of": "reference/m5/data/berlin.json - the only remaining copy; berlin_meghin.json was byte-identical and has been deleted",
   "day_value": [
     {
       "zone": 1,

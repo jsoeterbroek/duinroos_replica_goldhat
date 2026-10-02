@@ -8,6 +8,7 @@ Menghin identity in IMPLEMENTATION_PLAN.md sections 2.1 / 2.2 / 3 stops holding.
 """
 import json
 import pathlib
+import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 load = lambda p: json.loads((ROOT / p).read_text())
@@ -155,11 +156,41 @@ def check_schmidt_kaler_separate():
     print("  Schmidt-Kaler's 651 kept separate from Menghin's 1783  OK")
 
 
+def check_dimensions_txt_agrees():
+    """dimensions.txt is the primary dimension source, but only its height table.
+
+    Its other sections are the prior attempt's own guesses and are known wrong:
+    'base diameter of 20 cm at its widest point' (Menghin: 307 x 295 mm);
+    'thickness = 0.6 mm' (unprintable - the plan uses 2.0 mm); and
+    'symbol 13 - 4 rings = value 4' (Menghin: Nr. 13 has TWO rings, and a ring
+    count of 4 occurs in no zone at all).  A 4-ring Nr. 13 would make zone 16
+    19 x 4 = 76 instead of 38 and the total 1821 instead of 1783, so that line
+    must never be imported.  Only the z/tb heights are read here.
+    """
+    txt = (ROOT / "dimensions.txt").read_text()
+    # two entries per line: "z1 = 61, tb1 = 7";  ids are z1..z19 here, z01..z19 in this repo
+    got = {f"{p}{int(n)}": float(h) for p, n, h in
+           re.findall(r"\b(z|tb)0*(\d+)\s*=\s*(\d+(?:\.\d+)?)", txt)}
+    assert got, "dimensions.txt: no z/tb heights parsed - has the format changed?"
+    assert "tussenstuk" in txt, "dimensions.txt no longer mentions the two spacers"
+    for r in hat["rings"]:
+        if r["kind"] not in ("zone", "trennband"):
+            continue  # the cuff and the Krempe rise are derived, not in dimensions.txt
+        k = re.sub(r"0+(\d+)$", r"\1", r["id"])  # z01 -> z1
+        assert k in got, f"dimensions.txt has no row for {k}"
+        assert got[k] == r["h"], \
+            f"{k}: dimensions.txt says {got[k]}, data says {r['h']}"
+    assert got.get("tb19") == 9.0, "tb19 must still be present in dimensions.txt"
+    assert len([k for k in got if k.startswith("tb")]) == 19, \
+        "dimensions.txt should list tb1..tb19"
+    print("  dimensions.txt z/tb heights == data/hat_parameters.json (tb19 present, dropped)  OK")
+
+
 if __name__ == "__main__":
     print("verify_calendar.py")
     for fn in (check_zone_count, check_day_values, check_ring_counts,
                check_menghin_identities, check_tools_used_once, check_all_zones_covered,
                check_height_budget, check_zone_attribution, check_profile,
-               check_schmidt_kaler_separate):
+               check_schmidt_kaler_separate, check_dimensions_txt_agrees):
         fn()
     print("all checks passed")

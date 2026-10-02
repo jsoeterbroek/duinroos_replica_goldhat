@@ -135,7 +135,7 @@ This gives us a hard arithmetic test for any symbol layout we produce (§12).
 | — | 8-rayed star on dotted triangles | — | — | z1 |
 
 Ring counts are **{2, 3, 5, 6} — never 4**, exactly as Menghin says („featuring two, three, five, or six concentric rings"). Nos. 9, 11 and 13 appear in exactly **one** zone each — which is what Menghin's Fig. 23 key means by „Disc symbols appearing **only once** in the ornamental canon: Green" (`text/menghin_page30.txt`), a third independent check on the per-zone table above.
-(`berlin_meghin.json` is a byte-identical duplicate of `berlin.json` — one of the two should go.)
+Its byte-identical duplicate `berlin_meghin.json` has been deleted (it was referenced nowhere).
 
 ### 2.2 The sectioned profile — **derived from Menghin** ✅ *(Q5 resolved by this section)*
 
@@ -287,7 +287,7 @@ Four different numbers were circulating. Menghin's text disambiguates all of the
 |---|---|---|
 | **418** | disc bosses (Buckelscheiben, tools Nr. 8–15) over the 18 disc-bearing zones, excluding the star, zone 2's double-circles and zone 5's special signs | Menghin; **fully derived zone-by-zone in §2.1** ✅ |
 | **1701** | concentric rings summed over those 418 bosses | Menghin; **fully derived in §2.1**: `1783 − 44 − 38` ✅ |
-| **1783** | Menghin's **day-value** sum = Σ(count × rings) over all 21 zones | `berlin.json`, verified above |
+| **1783** | Menghin's **day-value** sum = Σ(count × rings) over all 21 zones | derived from Menghin's prose (§2.1), and independently matched by `reference/m5/data/berlin.json` |
 | **~651** | *all* punched ornaments incl. the small filler punches (Perlpunkte, Punktkreise, Ringkreise) and the radial spandrel patterns | Schmidt-Kaler's per-zone table |
 | ~~~3,393~~ | **not a count of anything.** No per-zone table in the repo sums to it and Menghin contradicts it. Treat as garbled. | `gold_hat.md` (Wikipedia-derived) |
 
@@ -584,7 +584,7 @@ P0 and P1 are cheap and de-risk everything. P2 is the long pole and the only rea
 
 Runnable, no frameworks, assert-based.
 
-**`scripts/verify_calendar.py`** — ✅ **exists and passes** (`python3 scripts/verify_calendar.py`, stdlib only, no FreeCAD). It reads `data/*.json` and runs these ten checks. These are **derivations from Menghin's own per-zone counts × ring counts**, not fits:
+**`scripts/verify_calendar.py`** — ✅ **exists and passes** (`python3 scripts/verify_calendar.py`, stdlib only, no FreeCAD), 11 checks. It reads `data/*.json` and `dimensions.txt` and runs these. These are **derivations from Menghin's own per-zone counts × ring counts**, not fits:
 ```
 zone_count                                    ==   21
 zones are exactly 1..21, in order, non-empty z-ranges        [check_zone_count]
@@ -610,6 +610,7 @@ all 21 zones inside the right one of the 5 physical sections     [check_zone_att
 profile_interp == "pchip"  (never a slope constant)
 max(r) == r(745) == 150.5     (the Krempenrand is the widest point)
 Schmidt-Kaler's 651 != Menghin's 1783 and is flagged 'NOT a day count'
+dimensions.txt z/tb heights == data/hat_parameters.json, tb1..tb19 all present
 ```
 The two `1701` routes, the `418`, and the `1739` are the strongest check available: they are Menghin's own statements, and they agree only if the per-zone counts *and* the ring multipliers are both right — and **none of the five was fitted to make them agree**. See §2.1.
 
@@ -662,36 +663,87 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 
 ## 14. Immediate next actions
 
-1. Fix the `dimensions.txt` reference (Q1) — 1 minute. The two `tussenstuk` rows are deleted: they are unattested and the 745 mm budget reconciles without them (§2.2).
+1. ~~Fix the `dimensions.txt` reference (Q1).~~ ✅ **Done.** The two `tussenstuk` rows are dropped from the model — they are unattested and the 745 mm budget reconciles without them (§2.2). They **stay in `dimensions.txt`**, which is the primary source and is not edited.
 2. **Refine the profile** — `scripts/measure_silhouette.py` already exists (PIL+numpy; `cv2` is not installed and must not be added). It needs per-image tuning before it can report `r(z)` in mm; do that, then refine the interpolated Schaft curve between Menghin's four anchors. Budget half a day. **This is the only remaining geometric unknown in the whole plan**: topology, total height, all four anchors, the cuff flare and the cap are fixed by Menghin.
+
+   ⚠️ Do **not** reach for the prior attempt's per-zone diameters as a cross-check. `reference/cad/calculate_bands_dimensions.py` carries ⌀60/64, 68/72, 76/80, 84/88, 92/96, 100/104, 108/112 mm for z03–z09 — a **synthetic +4 mm arithmetic ladder**, not measurements (Appendix A.4). Our own numbers already disagree with it at z05's top (⌀87.5 from anchor B vs its ⌀80).
 3. ~~**Implement `verify_calendar.py` first** (§12) — it needs no geometry and it locks 418/1701/1739/1783/745 in place before a single line of `build_goldhat.py` exists.~~ ✅ **Done** — it exists, it is stdlib-only, and it passes. Run it before starting P3, and re-run it after every data edit.
 4. **Settle the two residual data questions** (non-blocking): (a) does `tb19` exist? — zone 19 ends at 738 and the Krempe begins there, so the 109 mm reading uses `tb17`+`tb18` only and `tb19` is **not** needed; (b) is zone 9's 34.9 cm measured at its lower edge? — assumed yes, z = 312; anchor D is consistent with the A–B–C curve either way.
 5. Confirm Option **A** for the STL decomposition (§4), Option **C** for the motif form (§6.3), and the **Krempe 3-sector split** (§2.3 — note 2 sectors do *not* fit: the bbox is still 301 mm wide).
-6. Then start P2 (motif catalogue), which is the long pole.
+6. Then start P2 (motif catalogue): the 8 primitives as code, then per-zone placement. The **counting** half of P2 is already done (`data/zones.json`, verified); the long pole is now the primitives plus placement, not the research.
 
 ---
 
 ## Appendix A — inventory of what exists
 
+### A.1 This project's own files
+
+| Path | What it is | Status |
+|---|---|---|
+| `IMPLEMENTATION_PLAN.md` | this document | 1st draft, for review |
+| `AGENTS.md`, `README.md` | project instructions; repo readme | — |
+| `open_questions.md` | the Q1–Q5 questions and the user's answers | **authoritative for scope** — Q2/Q3 are now closed from the primary source, see the note below |
+| `gold_hat.md` | Menghin + Schmidt-Kaler + Wikipedia digest | **secondary** — superseded by `assets/menghin/text/` for every number |
+| `dimensions.txt` | the prior attempt's height table, **but only its z/tb height section is Menghin** — confirmed to *be* Menghin's own per-zone table (§2.2); the two unattested `tussenstuk` rows are dropped from the model but stay in the file | ⚠️ **three known-bad lines elsewhere in the file, all the prior attempt's, none of them to be imported:** `base diameter of 20 cm at its widest point` (Menghin: 307 × 295 mm); `thickness = 0.6 mm` (unprintable — the plan uses 2.0 mm); and `symbol 13 - 4 rings = value 4` (**Menghin: Nr. 13 has two rings**, and a ring count of 4 occurs in no zone at all — a 4-ring Nr. 13 would give zone 16 = 19 × 4 = 76 instead of 38 and the total 1821 instead of 1783). `verify_calendar.py` reads **only** the z/tb heights, and asserts them against `data/hat_parameters.json` |
+| `sources.md` | 3 physical books | bibliographic verification for P0 |
+| `data/hat_parameters.json` | profile, 40 zone boundaries, 39 rings, cuff, Krempe | ✅ **created** |
+| `data/symbols.json` | 8 primitives + the 24-tool catalogue | ✅ **created** |
+| `data/zones.json` | 21 zones × (tool, count, rings, day_value, fillers) | ✅ **created** |
+| `data/readings/menghin.json` | day-value per zone | ✅ **created**, verified |
+| `data/readings/schmidt_kaler.json` | ornament count per zone | ✅ **created**, explicitly *not* a day count |
+| `scripts/verify_calendar.py` | 11 assertions over the above, stdlib only | ✅ **created, passing** |
+| `scripts/build_goldhat.py` | the FreeCAD geometry kernel | to create (P3) |
+| `scripts/verify_geometry.py` | STL-level assertions | to create (P3) |
+| `stl/berlin_goldhat_{z01..z19,krempe_a..c}.stl` | 22 printed parts | to create (P4) |
+
+⚠️ `open_questions.md` Q2 asked for ~20 mm spacers between Z9–Z10 and Z16–Z17. **The resolved 745 mm budget says they do not exist** (§2.2): they belong to the prior attempt's table, not to Menghin. The file is left as written because it records what was asked.
+
+### A.2 Assets
+
 | Path | What it is | Use |
 |---|---|---|
-| `gold_hat.md` | Menghin + Schmidt-Kaler + Wikipedia digest | **primary theory source** |
-| `dimensions.txt` | prior attempt's height table | **primary dimension source** — now confirmed to *be* Menghin's own per-zone table (§2.2); only the two unattested `tussenstuk` rows are dropped |
-| `sources.md` | 3 physical books | bibliographic verification for P0 |
-| `assets/berliner_goldhut_abrollung.jpg` | unrolled surface view | **primary motif + profile source** |
-| `assets/Berlín_Goldhut_01.JPG` (800×1873) | front-on photo | silhouette profile validation |
-| `assets/Berlín_Goldhut_04.JPG` | detail photo | motif cross-check |
-| `assets/Berlin_Gold_hat_calendar.jpg` | Menghin's calendar diagram | zone grouping / intercalary confirmation |
-| `assets/tb_detail.jpg` (88×83) | Trennband detail | Trennband motif design |
-| `assets/berlin_golden_hat-paper-replika.com.pdf` | paper-replica build | practical assembly reference |
-| `reference/cad/*` | abandoned attempt: FCStd, 3MF, 38 STLs, unrolled-frustum SVGs | **reference only — do not recycle** (`AGENTS.md`) |
-| `reference/m5/*` | abandoned attempt: ESP32 firmware + scenario doc | **Stage-2 reference only** |
-| `scripts/analyze_cone.py` | OpenCV cone-measurement script (from prior attempt) | **not runnable — `cv2` is not installed and will not be added.** Superseded by `scripts/measure_silhouette.py` (PIL+numpy) |
-| `scripts/measure_silhouette.py` | PIL+numpy silhouette/profiler written for this plan | working helper; recovers outline + bottom flare, needs per-image tuning before it can report mm |
-| `assets/menghin/menghin_page{20..25,27..31}.jpeg` | 11 photos of Menghin (2010) pp. 18–29 (page 26 not photographed; pages 21/22/23/24/28 are plates, 30 is Fig. 23) | **primary source for Q2/Q3 — now OCR'd *and* transcribed** |
-| `assets/menghin/text/menghin_page{20..31}.txt` | **hand transcription / English translation, 12 files, 16,904 B** | **authoritative text tier** — wins on every conflict. Supplies the four circumference anchors, all 21 zone widths, the Fig. 21 tool legend, the alloy analyses, the Fig. 22 plate captions and the Fig. 23 key |
-| `assets/menghin/ocr/menghin_page*.txt` | German OCR of the above (tesseract 5.5.3, `deu`+`osd`, `--psm 1`), 11 files, 21,847 B | the German verbatim quoted in §2.1/§2.2, and the witness that exposed the psm-1 digit-dropping failure. **Never the route for a number.** |
-| `reference/m5/data/berlin.json` | Menghin's per-zone day-values | **now fully re-derivable** from Menghin's prose (§2.1) — it agrees exactly. `berlin_meghin.json` is a byte-identical duplicate |
+| `assets/menghin/text/menghin_page{20..31}.txt` | **hand transcription / English translation, 12 files, 16,904 B** (page 26 is a 16-byte "page skipped" stub — the book has no such page) | **THE authoritative text tier.** Wins on every conflict. Supplies the four circumference anchors, all 21 zone widths, the Fig. 21 tool legend, the Fig. 22 plate captions, the Fig. 23 key and the alloy analyses |
+| `assets/menghin/ocr/menghin_page*.txt` | German OCR of the above (tesseract 5.5.3, `deu`+`osd`, `--psm 1`), 11 files, 21,847 B | the German verbatim quoted in §2.1/§2.2 **and** the witness that exposed the psm-1 digit-dropping failure. **Never the route for a number** |
+| `assets/menghin/menghin_page{20..25,27..31}.jpeg` | 11 phone photos of pp. 18–29 (pp. 21–24 and 28 are plates; p. 30 is Fig. 23) | the source itself; **all 11 are rotated 90°** (OSD `Orientation=270`) |
+| `assets/berliner_goldhut_abrollung.jpg` (648×800) | unrolled surface view | **primary motif *position* source** for P2 |
+| `assets/Berlín_Goldhut_01.JPG` (800×1873) | front-on photo | silhouette validation for the P1 profile |
+| `assets/Berlín_Goldhut_04.JPG` (800×1200) | detail photo | motif cross-check |
+| `assets/Berlin_Gold_hat_calendar.jpg` (1008×626) | Menghin's calendar diagram | zone grouping / intercalary confirmation |
+| `assets/tb_detail.jpg` (88×83) | Trennband detail | Trennband lip design |
+| `assets/berlin_golden_hat-paper-replika.com.pdf` | paper-replica build report | practical assembly reference |
+| `assets/cone_debug.png` (648×800) | the prior attempt's cone-fit render | **superseded** — kept only to compare against |
+| `assets/Cappello_d'oro_di_berlino,_1000_ac_ca._01.jpg` (800×1581) | Wikimedia, black background | spare silhouette view |
+| `assets/goldhat.jpg` (250×494) | Wikimedia, black background | too small to measure |
+| `assets/cover_issue_5778_de_DE.jpg` (300×453) | journal cover | provenance colour |
+
+Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan needs the 11 page photos, but the nine other images and the PDF are convenience copies that could move to a release asset or LFS if repo size matters.
+
+### A.3 Scripts
+
+| Path | What it is | Status |
+|---|---|---|
+| `scripts/analyze_cone.py` | OpenCV cone-measurement script, from the prior attempt | **not runnable** — `cv2` is not installed and will not be added. Delete when the P1 profile is done |
+| `scripts/measure_silhouette.py` | PIL + numpy silhouette profiler, written for this plan | **working helper** — recovers the outline and the bottom flare, but needs per-image tuning (the interior shadow breaks naive thresholding) before it can report `r(z)` in mm |
+| `scripts/verify_calendar.py` | the data-layer assertions | ✅ passing |
+
+### A.4 `reference/` — the abandoned attempt (94 MB, **do not recycle**, `AGENTS.md`)
+
+| Path | What it is | Note |
+|---|---|---|
+| `reference/cad/*.FCStd` | 15 FreeCAD files: the assembly, the zone set, the symbol set, `berlin_goldhut_bands` and per-zone `z01`…`z09` | |
+| `reference/cad/freecad_export/` | 38 STLs (16 × `zNN`, 9 × `tbN`, 7 × `bandNN`, 5 × `symbol*`, 1 test) | the prior attempt's **printing split, not its geometry** |
+| `reference/cad/3mf/` | 28 3MF files | |
+| `reference/cad/svg/` | 18 SVGs — flat unrolled-frustum strips (`zNN_strip.svg`) and traced/rebuilt symbols | papercraft output |
+| `reference/cad/freecad_import/` | import staging | |
+| `reference/cad/calculate_bands_dimensions.py` | the script that generated those SVGs. **Kept for provenance; not used.** | ⚠️ Its per-zone diameters (⌀60/64, 68/72, 76/80, 84/88, 92/96, 100/104, 108/112 mm for z03–z09) are a **synthetic arithmetic ladder, +4 mm per zone**, not measurements — do *not* use them as an independent check on the P1 profile |
+| `reference/m5/` | abandoned ESP32 firmware + `gold_hat_scenarios.md` + `VERIFY_README.md` | Stage-2 reference only |
+| `reference/m5/include/led_mapper.h` | `struct zone_t {zone, count, start_index, end_index, multiplier, special_value}` + `load_goldhat_layout()`, `zone_value()`, `map_zone_range_to_led_ranges()` | **the Stage-2 interface to beat.** Its schema is lossy: one `multiplier` per zone cannot express zone 12's Ringkreis-Nr.‑7 interleaved between the Nr.‑14 discs — `data/zones.json` carries a `fillers` list instead |
+| `reference/m5/include/goldhat_layout.h` | the same table embedded as a C string, as SPIFFS fallback | |
+| `reference/m5/data/berlin.json` | Menghin's per-zone day-values | **now fully re-derived** from Menghin's prose (§2.1); it agrees exactly, so it is a *check*, not an input |
+| `reference/m5/data/goldhat_layout.json` | Schmidt-Kaler's per-zone ornament counts (651) | the name is misleading — it is a count table, not a layout. `VERIFY_README.md` uploads it to SPIFFS under that name, so the name stays |
+| `reference/m5/data/flag_{de,uk}.png` | UI flags | Stage 2 |
+**Three byte-identical duplicates were deleted** in this round: `reference/m5/data/berlin_meghin.json` (≡ `berlin.json`), `reference/m5/data/berlin_schmidtkaler.json` (≡ `goldhat_layout.json`) and `scripts/calculate_bands_dimensions.py` (≡ `reference/cad/calculate_bands_dimensions.py`). In each pair the surviving copy is the one something actually references.
+
 
 ## Appendix B — numbers used in this plan, and where they come from
 

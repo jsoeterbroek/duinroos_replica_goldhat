@@ -1,5 +1,5 @@
 {
-  "_source": "Schmidt-Kaler, as compiled in reference/m5/data/berlin_schmidtkaler.json",
+  "_source": "Schmidt-Kaler, as compiled in reference/m5/data/goldhat_layout.json (berlin_schmidtkaler.json was byte-identical and has been deleted)",
   "_unit": "ornaments",
   "_definition": "ALL punched ornaments per zone incl. fillers; NOT a day count and must not be summed with Menghin's",
   "_status": "unverified against the primary source - reference material only",

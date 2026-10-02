@@ -1,0 +1,439 @@
+{
+  "_source": "Menghin, W. (2010) Der Berliner Goldhut, Ornamentanalyse. assets/menghin/text/ is authoritative.",
+  "_derivation": "IMPLEMENTATION_PLAN.md sections 2.2 and 3 (Q2). sum(ring h) == 745.0 is asserted by scripts/verify_calendar.py.",
+  "height_total_mm": 745.0,
+  "profile": [
+    {
+      "z": 0.0,
+      "r": 0.0
+    },
+    {
+      "z": 61.0,
+      "r": 26.42
+    },
+    {
+      "z": 160.0,
+      "r": 43.77
+    },
+    {
+      "z": 312.0,
+      "r": 55.55
+    },
+    {
+      "z": 445.0,
+      "r": 59.05
+    },
+    {
+      "z": 510.0,
+      "r": 62.5
+    },
+    {
+      "z": 611.0,
+      "r": 54.0
+    },
+    {
+      "z": 629.0,
+      "r": 63.5
+    },
+    {
+      "z": 738.0,
+      "r": 94.5
+    },
+    {
+      "z": 745.0,
+      "r": 150.5
+    }
+  ],
+  "profile_anchors": {
+    "A_zone1_base": {
+      "z": 61.0,
+      "circ_mm": 166.0,
+      "source": "text/menghin_page27.txt"
+    },
+    "B_zone5_lower_edge": {
+      "z": 160.0,
+      "circ_mm": 275.0,
+      "source": "text/menghin_page28.txt"
+    },
+    "D_zone9": {
+      "z": 312.0,
+      "circ_mm": 349.0,
+      "source": "text/menghin_page31.txt",
+      "note": "z is assumed at the zone's lower edge; +-5 mm"
+    },
+    "C_collar_below_z12": {
+      "z": 445.0,
+      "circ_mm": 371.0,
+      "source": "text/menghin_page29.txt"
+    }
+  },
+  "profile_interp": "pchip",
+  "_profile_warning": "Between the four anchors the shape is INTERPOLATED and is the only open geometric unknown (plan P1). Do not treat r(312) as measured to better than +-5 mm.",
+  "zone_boundaries_mm": [
+    0.0,
+    61.0,
+    68.0,
+    76.5,
+    83.5,
+    97.5,
+    105.5,
+    127.5,
+    135.5,
+    160.0,
+    168.0,
+    193.0,
+    202.0,
+    231.0,
+    240.0,
+    269.0,
+    278.0,
+    312.0,
+    321.0,
+    355.0,
+    364.0,
+    398.0,
+    407.0,
+    441.0,
+    450.0,
+    484.0,
+    493.0,
+    527.0,
+    536.0,
+    574.0,
+    583.0,
+    602.0,
+    611.0,
+    629.0,
+    644.0,
+    653.0,
+    691.0,
+    700.0,
+    738.0,
+    745.0
+  ],
+  "wall_thickness_mm": 2.0,
+  "wall_thickness_tb_mm": 3.0,
+  "symbol_relief_mm": 0.8,
+  "window_ligature_min_mm": 3.0,
+  "registration_lip_mm": 6.0,
+  "registration_clearance_mm": 0.25,
+  "sections": [
+    {
+      "name": "apex",
+      "z_mm": [
+        0.0,
+        68.0
+      ],
+      "zones": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "schaft",
+      "z_mm": [
+        68.0,
+        611.0
+      ],
+      "zones": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "name": "cuff",
+      "z_mm": [
+        611.0,
+        629.0
+      ],
+      "zones": []
+    },
+    {
+      "name": "kalotte",
+      "z_mm": [
+        629.0,
+        738.0
+      ],
+      "zones": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "name": "krempe",
+      "z_mm": [
+        738.0,
+        745.0
+      ],
+      "zones": [
+        20,
+        21
+      ]
+    }
+  ],
+  "ornamental_partition": {
+    "note": "7+7+7, offset from the physical sections; Menghin p31",
+    "groups": [
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    ]
+  },
+  "krempe": {
+    "r_inner_mm": 94.5,
+    "r_outer_mm": 150.5,
+    "z_inner_mm": 738.0,
+    "z_outer_mm": 745.0,
+    "sectors": 3,
+    "sector_deg": 120.0,
+    "rings": [
+      {
+        "zone": 20,
+        "r_mid_mm": 107.0
+      },
+      {
+        "zone": 21,
+        "r_mid_mm": 132.0
+      }
+    ],
+    "rim_bead_r_mm": [
+      144.5,
+      150.5
+    ],
+    "rim_wire": "twisted square-section bronze wire with clasp, gold sheet folded up around it"
+  },
+  "rings": [
+    {
+      "id": "z01",
+      "kind": "zone",
+      "h": 61.0
+    },
+    {
+      "id": "tb1",
+      "kind": "trennband",
+      "h": 7.0
+    },
+    {
+      "id": "z02",
+      "kind": "zone",
+      "h": 8.5
+    },
+    {
+      "id": "tb2",
+      "kind": "trennband",
+      "h": 7.0
+    },
+    {
+      "id": "z03",
+      "kind": "zone",
+      "h": 14.0
+    },
+    {
+      "id": "tb3",
+      "kind": "trennband",
+      "h": 8.0
+    },
+    {
+      "id": "z04",
+      "kind": "zone",
+      "h": 22.0
+    },
+    {
+      "id": "tb4",
+      "kind": "trennband",
+      "h": 8.0
+    },
+    {
+      "id": "z05",
+      "kind": "zone",
+      "h": 24.5
+    },
+    {
+      "id": "tb5",
+      "kind": "trennband",
+      "h": 8.0
+    },
+    {
+      "id": "z06",
+      "kind": "zone",
+      "h": 25.0
+    },
+    {
+      "id": "tb6",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "z07",
+      "kind": "zone",
+      "h": 29.0
+    },
+    {
+      "id": "tb7",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "z08",
+      "kind": "zone",
+      "h": 29.0
+    },
+    {
+      "id": "tb8",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "z09",
+      "kind": "zone",
+      "h": 34.0
+    },
+    {
+      "id": "tb9",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "z10",
+      "kind": "zone",
+      "h": 34.0
+    },
+    {
+      "id": "tb10",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "z11",
+      "kind": "zone",
+      "h": 34.0
+    },
+    {
+      "id": "tb11",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "z12",
+      "kind": "zone",
+      "h": 34.0
+    },
+    {
+      "id": "tb12",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "z13",
+      "kind": "zone",
+      "h": 34.0
+    },
+    {
+      "id": "tb13",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "z14",
+      "kind": "zone",
+      "h": 34.0
+    },
+    {
+      "id": "tb14",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "z15",
+      "kind": "zone",
+      "h": 38.0
+    },
+    {
+      "id": "tb15",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "z16",
+      "kind": "zone",
+      "h": 19.0
+    },
+    {
+      "id": "tb16",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "cuff",
+      "kind": "cuff",
+      "h": 18.0
+    },
+    {
+      "id": "z17",
+      "kind": "zone",
+      "h": 15.0
+    },
+    {
+      "id": "tb17",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "z18",
+      "kind": "zone",
+      "h": 38.0
+    },
+    {
+      "id": "tb18",
+      "kind": "trennband",
+      "h": 9.0
+    },
+    {
+      "id": "z19",
+      "kind": "zone",
+      "h": 38.0
+    },
+    {
+      "id": "krempe",
+      "kind": "krempe",
+      "h": 7.0
+    }
+  ]
+}

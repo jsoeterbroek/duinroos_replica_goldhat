@@ -1,0 +1,526 @@
+{
+  "_source": "Menghin (2010) Ornamentanalyse, assets/menghin/text/. Derived in IMPLEMENTATION_PLAN.md section 2.1.",
+  "_purpose": "One row per decorative zone: what is punched, how many, how many rings. day_value = count * rings.",
+  "_status": "counts / rings / day values are DERIVED and verified. Placement (start angle, ornament-group offset) is a design choice still open.",
+  "zones": [
+    {
+      "zone": 1,
+      "section": "apex",
+      "z_mm": [
+        0.0,
+        61.0
+      ],
+      "count": 0,
+      "rings": 0,
+      "day_value": 0,
+      "tool": null,
+      "name": "eight-rayed star",
+      "primitive": "star8",
+      "fillers": [],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 2,
+      "section": "apex",
+      "z_mm": [
+        68.0,
+        76.5
+      ],
+      "count": 22,
+      "rings": 2,
+      "day_value": 44,
+      "tool": 6,
+      "name": "Doppelkreispunkt (double-circle punch)",
+      "primitive": "ring_dot",
+      "fillers": [
+        {
+          "tool": 4,
+          "where": "band"
+        }
+      ],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 3,
+      "section": "schaft",
+      "z_mm": [
+        83.5,
+        97.5
+      ],
+      "count": 14,
+      "rings": 3,
+      "day_value": 42,
+      "tool": 8,
+      "name": "Scheibenbuckel 12/3",
+      "primitive": "ring_dot",
+      "fillers": [],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 4,
+      "section": "schaft",
+      "z_mm": [
+        105.5,
+        127.5
+      ],
+      "count": 15,
+      "rings": 5,
+      "day_value": 75,
+      "tool": 10,
+      "name": "Scheibenbuckel 13/5",
+      "primitive": "ring_dot",
+      "fillers": [],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 5,
+      "section": "schaft",
+      "z_mm": [
+        135.5,
+        160.0
+      ],
+      "count": 38,
+      "rings": 1,
+      "day_value": 38,
+      "tool": null,
+      "name": "special signs (crescent + eye)",
+      "primitive": "crescent+oval",
+      "fillers": [],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      },
+      "motifs": [
+        {
+          "tool": 16,
+          "count": 19,
+          "name": "crescent with central dot"
+        },
+        {
+          "tool": 17,
+          "count": 19,
+          "name": "eye / almond"
+        }
+      ]
+    },
+    {
+      "zone": 6,
+      "section": "schaft",
+      "z_mm": [
+        168.0,
+        193.0
+      ],
+      "count": 18,
+      "rings": 5,
+      "day_value": 90,
+      "tool": 10,
+      "name": "Scheibenbuckel 13/5",
+      "primitive": "ring_dot",
+      "fillers": [],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 7,
+      "section": "schaft",
+      "z_mm": [
+        202.0,
+        231.0
+      ],
+      "count": 19,
+      "rings": 3,
+      "day_value": 57,
+      "tool": 11,
+      "name": "Scheibenbuckel 14/3",
+      "primitive": "ring_dot",
+      "fillers": [],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 8,
+      "section": "schaft",
+      "z_mm": [
+        240.0,
+        269.0
+      ],
+      "count": 21,
+      "rings": 5,
+      "day_value": 105,
+      "tool": 10,
+      "name": "Scheibenbuckel 13/5",
+      "primitive": "ring_dot",
+      "fillers": [],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 9,
+      "section": "schaft",
+      "z_mm": [
+        278.0,
+        312.0
+      ],
+      "count": 19,
+      "rings": 3,
+      "day_value": 57,
+      "tool": 12,
+      "name": "Scheibenbuckel 15/3",
+      "primitive": "ring_dot",
+      "fillers": [
+        {
+          "tool": 4,
+          "where": "top border"
+        },
+        {
+          "tool": 7,
+          "where": "bottom border"
+        },
+        {
+          "tool": 7,
+          "where": "interstice"
+        }
+      ],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 10,
+      "section": "schaft",
+      "z_mm": [
+        321.0,
+        355.0
+      ],
+      "count": 19,
+      "rings": 5,
+      "day_value": 95,
+      "tool": 14,
+      "name": "Scheibenbuckel 15/5",
+      "primitive": "ring_dot",
+      "fillers": [
+        {
+          "tool": 7,
+          "where": "interstice"
+        }
+      ],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 11,
+      "section": "schaft",
+      "z_mm": [
+        364.0,
+        398.0
+      ],
+      "count": 20,
+      "rings": 3,
+      "day_value": 60,
+      "tool": 12,
+      "name": "Scheibenbuckel 15/3",
+      "primitive": "ring_dot",
+      "fillers": [
+        {
+          "tool": 7,
+          "where": "interstice"
+        }
+      ],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 12,
+      "section": "schaft",
+      "z_mm": [
+        407.0,
+        441.0
+      ],
+      "count": 20,
+      "rings": 5,
+      "day_value": 100,
+      "tool": 14,
+      "name": "Scheibenbuckel 15/5",
+      "primitive": "ring_dot",
+      "fillers": [
+        {
+          "tool": 7,
+          "where": "interleaved between the Nr.14 discs",
+          "note": "the prior attempt's {zone,count,multiplier} schema could not represent this"
+        },
+        {
+          "tool": 7,
+          "where": "interstice"
+        }
+      ],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 13,
+      "section": "schaft",
+      "z_mm": [
+        450.0,
+        484.0
+      ],
+      "count": 20,
+      "rings": 3,
+      "day_value": 60,
+      "tool": 12,
+      "name": "Scheibenbuckel 15/3",
+      "primitive": "ring_dot",
+      "fillers": [
+        {
+          "tool": 7,
+          "where": "interstice"
+        }
+      ],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 14,
+      "section": "schaft",
+      "z_mm": [
+        493.0,
+        527.0
+      ],
+      "count": 21,
+      "rings": 5,
+      "day_value": 105,
+      "tool": 14,
+      "name": "Scheibenbuckel 15/5",
+      "primitive": "ring_dot",
+      "fillers": [
+        {
+          "tool": 7,
+          "where": "interstice"
+        }
+      ],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 15,
+      "section": "schaft",
+      "z_mm": [
+        536.0,
+        574.0
+      ],
+      "count": 15,
+      "rings": 6,
+      "day_value": 90,
+      "tool": 15,
+      "name": "Scheibenbuckel 21/6",
+      "primitive": "ring_dot",
+      "fillers": [
+        {
+          "tool": 6,
+          "where": "interstices"
+        }
+      ],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 16,
+      "section": "schaft",
+      "z_mm": [
+        583.0,
+        602.0
+      ],
+      "count": 19,
+      "rings": 2,
+      "day_value": 38,
+      "tool": 13,
+      "name": "Scheibenbuckel 15/2",
+      "primitive": "ring_dot",
+      "fillers": [
+        {
+          "tool": 7,
+          "where": "interstice"
+        }
+      ],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 17,
+      "section": "kalotte",
+      "z_mm": [
+        629.0,
+        644.0
+      ],
+      "count": 33,
+      "rings": 2,
+      "day_value": 66,
+      "tool": 9,
+      "name": "Scheibenbuckel 12/2",
+      "primitive": "ring_dot",
+      "fillers": [],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 18,
+      "section": "kalotte",
+      "z_mm": [
+        653.0,
+        691.0
+      ],
+      "count": 21,
+      "rings": 6,
+      "day_value": 126,
+      "tool": 15,
+      "name": "Scheibenbuckel 21/6",
+      "primitive": "ring_dot",
+      "fillers": [
+        {
+          "tool": 6,
+          "where": "interstices"
+        }
+      ],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 19,
+      "section": "kalotte",
+      "z_mm": [
+        700.0,
+        738.0
+      ],
+      "count": 23,
+      "rings": 6,
+      "day_value": 138,
+      "tool": 15,
+      "name": "Scheibenbuckel 21/6",
+      "primitive": "ring_dot",
+      "fillers": [
+        {
+          "tool": 6,
+          "where": "interstices"
+        }
+      ],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      }
+    },
+    {
+      "zone": 20,
+      "section": "krempe",
+      "z_mm": [
+        738.0,
+        745.0
+      ],
+      "count": 54,
+      "rings": 3,
+      "day_value": 162,
+      "tool": 8,
+      "name": "Scheibenbuckel 12/3",
+      "primitive": "ring_dot",
+      "fillers": [],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      },
+      "krempe_ring_r_mid_mm": 107.0,
+      "z_note": "z is the Krempe rise (738->745); this zone has no stacked height - it is a concentric ring on the brim plate"
+    },
+    {
+      "zone": 21,
+      "section": "krempe",
+      "z_mm": [
+        738.0,
+        745.0
+      ],
+      "count": 47,
+      "rings": 5,
+      "day_value": 235,
+      "tool": 14,
+      "name": "Scheibenbuckel 15/5",
+      "primitive": "ring_dot",
+      "fillers": [
+        {
+          "tool": 7,
+          "where": "band"
+        }
+      ],
+      "placement": {
+        "layout": "even",
+        "start_angle_deg": 0,
+        "note": "start angles are a placement choice, not a measurement; the ornament-group offset is set by the 3x7 partition"
+      },
+      "krempe_ring_r_mid_mm": 132.0,
+      "z_note": "z is the Krempe rise (738->745); this zone has no stacked height - it is a concentric ring on the brim plate"
+    }
+  ],
+  "_reconciliation": {
+    "total_zones": 21,
+    "disc_bearing_zones": 18,
+    "excluded": [
+      1,
+      2,
+      5
+    ],
+    "note": "21 total; 19 excluding the tip (zones 1+2, per Menghin); 18 disc-bearing (21 minus star, zone 2, zone 5)."
+  }
+}

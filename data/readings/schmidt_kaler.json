@@ -1,0 +1,93 @@
+{
+  "_source": "Schmidt-Kaler, as compiled in reference/m5/data/berlin_schmidtkaler.json",
+  "_unit": "ornaments",
+  "_definition": "ALL punched ornaments per zone incl. fillers; NOT a day count and must not be summed with Menghin's",
+  "_status": "unverified against the primary source - reference material only",
+  "count": [
+    {
+      "zone": 1,
+      "ornaments": 17
+    },
+    {
+      "zone": 2,
+      "ornaments": 19
+    },
+    {
+      "zone": 3,
+      "ornaments": 29
+    },
+    {
+      "zone": 4,
+      "ornaments": 33
+    },
+    {
+      "zone": 5,
+      "ornaments": 34
+    },
+    {
+      "zone": 6,
+      "ornaments": 29
+    },
+    {
+      "zone": 7,
+      "ornaments": 33
+    },
+    {
+      "zone": 8,
+      "ornaments": 34
+    },
+    {
+      "zone": 9,
+      "ornaments": 33
+    },
+    {
+      "zone": 10,
+      "ornaments": 34
+    },
+    {
+      "zone": 11,
+      "ornaments": 33
+    },
+    {
+      "zone": 12,
+      "ornaments": 34
+    },
+    {
+      "zone": 13,
+      "ornaments": 33
+    },
+    {
+      "zone": 14,
+      "ornaments": 34
+    },
+    {
+      "zone": 15,
+      "ornaments": 33
+    },
+    {
+      "zone": 16,
+      "ornaments": 34
+    },
+    {
+      "zone": 17,
+      "ornaments": 33
+    },
+    {
+      "zone": 18,
+      "ornaments": 34
+    },
+    {
+      "zone": 19,
+      "ornaments": 33
+    },
+    {
+      "zone": 20,
+      "ornaments": 34
+    },
+    {
+      "zone": 21,
+      "ornaments": 21
+    }
+  ],
+  "total_ornaments": 651
+}

@@ -1,0 +1,397 @@
+{
+  "_source": "Menghin (2010) Fig. 21 tool legend, via assets/menghin/text/",
+  "_rule": "Ring counts are 2, 3, 5 or 6 - NEVER 4. Menghin: 'zwei, drei, fuenf oder sechs konzentrischen Ringen'.",
+  "tool_count": 24,
+  "disc_tool_count": 8,
+  "disc_diameters_mm": {
+    "12": [
+      3,
+      2
+    ],
+    "13": [
+      5
+    ],
+    "14": [
+      3
+    ],
+    "15": [
+      3,
+      2,
+      5
+    ],
+    "21": [
+      6
+    ]
+  },
+  "primitives": [
+    {
+      "id": "ring",
+      "params": [
+        "r",
+        "count"
+      ],
+      "covers": "concentric-circle motifs"
+    },
+    {
+      "id": "disc",
+      "params": [
+        "r"
+      ],
+      "covers": "plain punched dot"
+    },
+    {
+      "id": "ring_dot",
+      "params": [
+        "r_outer",
+        "count",
+        "r_dot"
+      ],
+      "covers": "Scheibenbuckel: disc inside N concentric rings"
+    },
+    {
+      "id": "circle_row",
+      "params": [
+        "r_dot",
+        "n"
+      ],
+      "covers": "Perlpunktbaender, Punktkreise"
+    },
+    {
+      "id": "zigzag",
+      "params": [
+        "teeth",
+        "amplitude"
+      ],
+      "covers": "Trennband / Kerbwulst motifs"
+    },
+    {
+      "id": "crescent",
+      "params": [
+        "a",
+        "b",
+        "rotation"
+      ],
+      "covers": "Mondsicheln (sparse)"
+    },
+    {
+      "id": "oval",
+      "params": [
+        "a",
+        "b",
+        "rotation"
+      ],
+      "covers": "Augensymbole (sparse)"
+    },
+    {
+      "id": "star8",
+      "params": [
+        "r",
+        "points"
+      ],
+      "covers": "zone 1 tip star"
+    }
+  ],
+  "tools": [
+    {
+      "no": 1,
+      "primitive": null,
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "unattributed",
+      "note": "Fig. 21 lists 24 tools; Nos. 1-3 and 18-24 are not attributed by the transcribed text."
+    },
+    {
+      "no": 2,
+      "primitive": null,
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "unattributed",
+      "note": null
+    },
+    {
+      "no": 3,
+      "primitive": null,
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "unattributed",
+      "note": null
+    },
+    {
+      "no": 4,
+      "primitive": "circle_row",
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "Perlpunkt (beaded dot)",
+      "note": "Trennband filler; borders the TOP of zone 9"
+    },
+    {
+      "no": 5,
+      "primitive": "disc",
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "Punktkreis (dot in circle)",
+      "note": "filler punch"
+    },
+    {
+      "no": 6,
+      "primitive": "ring_dot",
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "Doppelkreispunkt (dot in double circle)",
+      "note": "interstices of zones 15, 18, 19; main motif of zone 2"
+    },
+    {
+      "no": 7,
+      "primitive": "ring",
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "Ringkreis (annulet)",
+      "note": "interstices of zones 9-14 and 16; bands at z9-bottom, z10-top, z11, z21"
+    },
+    {
+      "no": 8,
+      "primitive": "ring_dot",
+      "rings": 3,
+      "diameter_mm": 12,
+      "zones": [
+        {
+          "zone": 3,
+          "count": 14
+        },
+        {
+          "zone": 20,
+          "count": 54
+        }
+      ],
+      "note": "zone 20 is on the Krempe; Menghin: 'appears elsewhere only in Zone 20, on the brim'"
+    },
+    {
+      "no": 9,
+      "primitive": "ring_dot",
+      "rings": 2,
+      "diameter_mm": 12,
+      "zones": [
+        {
+          "zone": 17,
+          "count": 33
+        }
+      ],
+      "note": "appears in exactly one zone (Fig. 23 green key)"
+    },
+    {
+      "no": 10,
+      "primitive": "ring_dot",
+      "rings": 5,
+      "diameter_mm": 13,
+      "zones": [
+        {
+          "zone": 4,
+          "count": 15
+        },
+        {
+          "zone": 6,
+          "count": 18
+        },
+        {
+          "zone": 8,
+          "count": 21
+        }
+      ],
+      "note": "Menghin: 'identical to those in Zones 4 and 6'"
+    },
+    {
+      "no": 11,
+      "primitive": "ring_dot",
+      "rings": 3,
+      "diameter_mm": 14,
+      "zones": [
+        {
+          "zone": 7,
+          "count": 19
+        }
+      ],
+      "note": "appears in exactly one zone (Fig. 23 green key)"
+    },
+    {
+      "no": 12,
+      "primitive": "ring_dot",
+      "rings": 3,
+      "diameter_mm": 15,
+      "zones": [
+        {
+          "zone": 9,
+          "count": 19
+        },
+        {
+          "zone": 11,
+          "count": 20
+        },
+        {
+          "zone": 13,
+          "count": 20
+        }
+      ],
+      "note": "Menghin: 'identical to those found in Zones 9 and 11'"
+    },
+    {
+      "no": 13,
+      "primitive": "ring_dot",
+      "rings": 2,
+      "diameter_mm": 15,
+      "zones": [
+        {
+          "zone": 16,
+          "count": 19
+        }
+      ],
+      "note": "appears in exactly one zone (Fig. 23 green key)"
+    },
+    {
+      "no": 14,
+      "primitive": "ring_dot",
+      "rings": 5,
+      "diameter_mm": 15,
+      "zones": [
+        {
+          "zone": 10,
+          "count": 19
+        },
+        {
+          "zone": 12,
+          "count": 20
+        },
+        {
+          "zone": 14,
+          "count": 21
+        },
+        {
+          "zone": 21,
+          "count": 47
+        }
+      ],
+      "note": "zone 21 is on the Krempe; 'the same pattern punch'"
+    },
+    {
+      "no": 15,
+      "primitive": "ring_dot",
+      "rings": 6,
+      "diameter_mm": 21,
+      "zones": [
+        {
+          "zone": 15,
+          "count": 15
+        },
+        {
+          "zone": 18,
+          "count": 21
+        },
+        {
+          "zone": 19,
+          "count": 23
+        }
+      ],
+      "note": null
+    },
+    {
+      "no": 16,
+      "primitive": "crescent",
+      "rings": 1,
+      "diameter_mm": null,
+      "length_mm": 11,
+      "zones": [
+        {
+          "zone": 5,
+          "count": 19
+        }
+      ],
+      "name": "crescent with central dot",
+      "note": "zone 5 special symbols; 19 of each of Nos. 16 and 17",
+      "_typo_warning": "The Fig. 21 legend as transcribed reads 'No. 16, eye pattern'. No. 16 is the crescent; the eye is No. 17. Fig. 21 legend typo, per plan Appendix C."
+    },
+    {
+      "no": 17,
+      "primitive": "oval",
+      "rings": 1,
+      "diameter_mm": null,
+      "length_mm": 11,
+      "zones": [
+        {
+          "zone": 5,
+          "count": 19
+        }
+      ],
+      "name": "eye / almond",
+      "note": null
+    },
+    {
+      "no": 18,
+      "primitive": null,
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "unattributed",
+      "note": null
+    },
+    {
+      "no": 19,
+      "primitive": null,
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "unattributed",
+      "note": null
+    },
+    {
+      "no": 20,
+      "primitive": null,
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "unattributed",
+      "note": null
+    },
+    {
+      "no": 21,
+      "primitive": null,
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "unattributed",
+      "note": null
+    },
+    {
+      "no": 22,
+      "primitive": null,
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "unattributed",
+      "note": null
+    },
+    {
+      "no": 23,
+      "primitive": null,
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "unattributed",
+      "note": null
+    },
+    {
+      "no": 24,
+      "primitive": null,
+      "rings": null,
+      "diameter_mm": null,
+      "zones": [],
+      "name": "unattributed",
+      "note": null
+    }
+  ]
+}

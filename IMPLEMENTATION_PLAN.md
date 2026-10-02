@@ -16,7 +16,7 @@ A 1:1, stylised replica of the Berlin Gold Hat, printed in segments that stack i
 | D3 | Generator: `scripts/build_goldhat.py` (standalone, `freecadcmd`-runnable) | repo |
 | D4 | One STL per band: `stl/berlin_goldhat_z01.stl` … `z19.stl`, plus `krempe_a/b/c.stl` for the ⌀301 mm brim plate, which exceeds the print bed (§2.3). **22 files.** | repo |
 | D5 | Assembly/stacking doc + registration scheme, incl. the Krempe sector joints | `docs/` |
-| D6 | Verification script: `scripts/verify_geometry.py` + `scripts/verify_calendar.py` | repo |
+| D6 | Verification scripts: `scripts/verify_calendar.py` ✅ (created, passing) + `scripts/verify_geometry.py` (P3, needs geometry) | repo |
 
 Explicit non-goals for Stage 1: dents, creases, foil-thickness realism, museum-accurate surface irregularity.
 
@@ -453,7 +453,9 @@ Instead: for each motif, build a prism in a local frame tangent to the cone at t
 
 ⚠️ The obvious automatic route does not work yet: naive thresholding fails because a large part of the gold surface is *darker* than the background in these photos (interior shadow), so per-row extents pick up background instead of the object. `scripts/measure_silhouette.py` (PIL + numpy — **`cv2` is not installed and must not be added as a dependency**) is a working helper that already recovers the *outline* and the bottom flare, but it must be tuned per image (background subtraction, or manual landmark clicking) before it can report a profile in mm. Budget half a day for this, not an hour.
 
-Then transcribe, band by band, the motif type + count into `data/zones.json` (21 rows — a manual job with a magnifier, not CV). CV/contour tracing is a fallback, not a plan.
+Then read the per-zone motif type + count into `data/zones.json`. **This part is already done** — §2.1 derives all 21 zones' tool, count and ring count from Menghin's own sentences, and `scripts/verify_calendar.py` reproduces his 418 / 1701 / 1783 from them. What remains for `zones.json` is only **placement**: start angle per zone and the ornament-group offset set by the 3×7 partition. That is a design choice (with a magnifier, not CV), not a measurement.
+
+⚠️ The obvious automatic route does not work yet: naive thresholding fails because a large part of the gold surface is *darker* than the background in these photos (interior shadow), so per-row extents pick up background instead of the object. `scripts/measure_silhouette.py` (PIL + numpy — **`cv2` is not installed and must not be added as a dependency**) is a working helper that already recovers the *outline* and the bottom flare, but it must be tuned per image (background subtraction, or manual landmark clicking) before it can report a profile in mm. Budget half a day for this, not an hour. CV/contour tracing is a fallback, not a plan.
 
 ### 6.2 Motif primitives — parameterised, not traced
 The prior attempt has SVG/bitmap traces (`symbol12_bitmap_traced.svg` etc.). Do **not** recycle them: they are hand-fitted circles, and the requirement is explicitly stylised. Define a small set of primitives:
@@ -505,13 +507,16 @@ Recommend **C**. Add an optional inner diffuser sleeve later (Stage 2) without t
 
 | File | Contents | Status |
 |---|---|---|
-| `data/hat_parameters.json` | heights, diameters, wall/relief/registration params | to create |
-| `data/symbols.json` | motif catalogue: id, primitive, params, ring count | to create |
-| `data/zones.json` | per zone: ordered motif placement (type, count, counted/ornament, start angle), Trennband motif | to create — **the real research work** |
-| `data/readings/menghin.json` | day-value per zone (verified, §2.1) | copy from `reference/m5/data/berlin.json` |
-| `data/readings/schmidt_kaler.json` | motif count per zone | copy from `reference/m5/data/goldhat_layout.json` |
+| `data/hat_parameters.json` | heights, diameters, wall/relief/registration params | ✅ **created** — profile, 40 zone boundaries, 39 rings, the Krempe block. `sum(ring h) == 745.0` asserted |
+| `data/symbols.json` | motif catalogue: 8 primitives + 24 tools (Nos. 8–15 = the 8 disc diameters) | ✅ **created** — complete for Nos. 4–17; Nos. 1–3 and 18–24 are marked `unattributed`, not invented |
+| `data/zones.json` | per zone: which tool, how many, how many rings, `day_value`, attested `fillers` | ✅ **created** — counts/rings/day-values **derived, not transcribed**; `placement` (start angle, ornament offset) is the still-open part |
+| `data/readings/menghin.json` | day-value per zone (verified, §2.1) | ✅ **created** — reproduces `reference/m5/data/berlin.json` exactly |
+| `data/readings/schmidt_kaler.json` | ornament count per zone | ✅ **created** — marked *not a day count*, must never be summed with Menghin's |
+| `scripts/verify_calendar.py` | asserts every identity above | ✅ **created & passing** — `python3 scripts/verify_calendar.py`, stdlib only, no FreeCAD |
 
-Note the schema in `data/zones.json` must carry **both** the motif count and the ring multiplier per motif, because Menghin's day-value = Σ(count × rings). The prior attempt's schema (`{zone, count, multiplier, special_value}`) is a lossy summary — it collapses a whole zone to one multiplier, which cannot represent zone 12 (20 × symbol-14 with 5 rings **plus** ornament motifs between them). One level deeper is needed.
+The JSON is the source of truth; this plan's §5.1 block is only its *spec* and is deliberately left as pseudo-JSON (it ends in `... ]`). Edit the files, not the plan, and let `verify_calendar.py` tell you if you broke something.
+
+Note the schema in `data/zones.json` carries **both** the motif count and the ring multiplier per motif, because Menghin's day-value = Σ(count × rings). The prior attempt's schema (`{zone, count, multiplier, special_value}`) is a lossy summary — it collapses a whole zone to one multiplier, which cannot represent zone 12 (20 × symbol-14 with 5 rings **plus** Ringkreis-Nr.‑7 motifs interleaved between them). One level deeper is needed, and that is what `fillers` is for. `data/readings/menghin.json` is a *copy of the derived day-values*, not the input — the input is `zones.json`, and `verify_calendar.py` proves the two agree.
 
 ---
 
@@ -565,7 +570,7 @@ Nothing below is implemented now; these are the interfaces Stage 1 must leave op
 |---|---|---|
 | **P0 — resolve blockers** | Q1 doc rename; **Q2 height reconciliation (done — exact 745, §2.2)**; **Q3 motif arithmetic (done — 418/1701 derived, §2.1)**; Q5 geometry (done — §2.2) | height table sums to 745 mm; sectioned profile in `hat_parameters.json` |
 | **P1 — profile extraction** | Abrollung calibration → refine `r(z)` between Menghin's **four** anchors (A 166 mm @ 61, B 275 mm @ 160, **D 349 mm @ 312**, C 371 mm @ 445); validate against photo silhouette | `r(z)` within ±2 mm of the photo at 10 sample heights |
-| **P2 — motif catalogue** | Count and classify motifs from the Abrollung → `symbols.json` + `zones.json`; implement primitives. **Menghin's per-zone tool-and-count table (§2.1) and the Fig. 22.1–22.4 per-zone plate set (`text/menghin_page28/29.txt`) already give this** — the Abrollung now only has to confirm positions within a zone | `verify_calendar.py` reproduces every Menghin zone value (1783 total, 1739, 142, 1597, 1701×2, 418, 21 zones) |
+| **P2 — motif catalogue** | Count and classify motifs from the Abrollung → `symbols.json` + `zones.json`; implement primitives. **Menghin's per-zone tool-and-count table (§2.1) and the Fig. 22.1–22.4 per-zone plate set (`text/menghin_page28/29.txt`) have already given the *counting* half** — `data/symbols.json` and `data/zones.json` exist and verify. What is left is (a) the 8 primitives as code, (b) per-zone **placement** (start angle, ornament offset), with the Abrollung only confirming positions within a zone | `verify_calendar.py` reproduces every Menghin zone value (1783 total, 1739, 1701×2, 418, 21 zones, 745) |
 | **P3 — geometry kernel** | `build_goldhat.py`; one band end-to-end (start with z13) | an STL that visually matches the Abrollung strip for that zone |
 | **P4 — full generation** | zones 1–19 + the Krempe plate split into 3 sectors → `stl/` | all 22 STLs watertight, `verify_geometry.py` passes |
 | **P5 — print & fit** | 3-band fit test, then full print, assembly | stacked cone is straight, 745 mm ± 3 mm, joints tight |
@@ -579,27 +584,36 @@ P0 and P1 are cheap and de-risk everything. P2 is the long pole and the only rea
 
 Runnable, no frameworks, assert-based.
 
-**`scripts/verify_calendar.py`** — the layout must reproduce the source arithmetic. These are **derivations from Menghin's own per-zone counts × ring counts**, not fits:
+**`scripts/verify_calendar.py`** — ✅ **exists and passes** (`python3 scripts/verify_calendar.py`, stdlib only, no FreeCAD). It reads `data/*.json` and runs these ten checks. These are **derivations from Menghin's own per-zone counts × ring counts**, not fits:
 ```
-day_value = [0,44,42,75,38,90,57,105,57,95,60,100,60,105,90,38,66,126,138,162,235]
-sum(day_value[1..21])                        == 1783
-sum(day_value[3..21])                       == 1739
-sum(day_value[3..21]) - day_value[5]
-  - day_value[16] - day_value[17]            == 1701   <-- derived
-sum(day_value[3..21])
-  - day_value[2] - day_value[5]              == 1701   <-- same number, other route
-sum(bosses[zones excluding 1,2,5])            ==  418   <-- derived
-sum(bosses[all 21 zones])                    ==  440
-sum(rings[zones excluding 1,2,5])            == 1701
-zone_count                                   ==   21
-disc_bearing_zone_count                      ==   18   <-- 21 - {1,2,5}
-day_value[5] + day_value[16] + day_value[17] ==  142
-day_value[5]+16+17 over 54 synodic months     == 1597   (1594.65 exact)
-zone_height_sum                              ==  745
-owned_width_zones == [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
-tool_used_once == [9, 11, 13]                <-- matches Fig. 23's green key
+zone_count                                    ==   21
+zones are exactly 1..21, in order, non-empty z-ranges        [check_zone_count]
+disc_bearing_zone_count                       ==   18   <-- 21 - {1,2,5}
+disc_bearing_zone_set                         ==   set(1..21) - {1,2,5}
+day_value[zone] == count[zone] * rings[zone]  for all 21 zones    [check_day_values]
+sum(day_value)                                == 1783
+derived day-values == data/readings/menghin.json   (no drift from the copy)
+ring_counts subset of {2,3,5,6}                (never 4)          [check_ring_counts]
+zone's ring count == its tool's ring count in symbols.json
+sum(bosses[zones excluding 1,2,5])            ==  418   <-- derived   [check_menghin_identities]
+sum(day_value[zones excluding 1,2,5])         == 1701   <-- derived, route A
+1783 - day_value[2] - day_value[5]            == 1701   <-- route B, same number
+sum(day_value[3..21])                        == 1739
+tool_used_once == [9, 11, 13]                <-- matches Fig. 23's green key  [check_tools_used_once]
+zone_height_sum                              ==  745              [check_height_budget]
+769 - 40(2 x tussenstuk) - 9(tb19) + 18(cuff) + 7(rise) == 745
+len(zone_boundaries_mm) == len(rings) + 1 and boundaries contiguous
+611+18+109+7 == 611+18+100+16 == 745   (Menghin's two readings of the top 116 mm)
+every tool's zone list in symbols.json == zones.json's attribution  [check_all_zones_covered]
+all 21 zones inside the right one of the 5 physical sections     [check_zone_attribution]
+2*pi*r(anchor) == anchor circumference +- 3 mm  for A, B, C and D  [check_profile]
+profile_interp == "pchip"  (never a slope constant)
+max(r) == r(745) == 150.5     (the Krempenrand is the widest point)
+Schmidt-Kaler's 651 != Menghin's 1783 and is flagged 'NOT a day count'
 ```
-The two `1701` lines, the `418`, and the `1739` are the strongest check available: they are Menghin's own statements, and they agree only if the per-zone counts *and* the ring multipliers are both right — and **none of the five was fitted to make them agree**. See §2.1.
+The two `1701` routes, the `418`, and the `1739` are the strongest check available: they are Menghin's own statements, and they agree only if the per-zone counts *and* the ring multipliers are both right — and **none of the five was fitted to make them agree**. See §2.1.
+
+⚠️ An earlier draft of this section listed `sum(day_value[3..21]) - day_value[5] - day_value[16] - day_value[17] == 1701`. That is **wrong** — it evaluates to 1739 − 38 − 38 − 66 = **1597**, which is a *different* Menghin claim (his figure for 54 synodic months, cross-checked against 54 × 29.53059 = 1594.65, 0.15 % off). Keep the two apart: **1597 is a lunisolar period count and is not a sum over the 21 zones.**
 
 **`scripts/verify_geometry.py`** — on the exported STLs:
 ```
@@ -650,7 +664,7 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 
 1. Fix the `dimensions.txt` reference (Q1) — 1 minute. The two `tussenstuk` rows are deleted: they are unattested and the 745 mm budget reconciles without them (§2.2).
 2. **Refine the profile** — `scripts/measure_silhouette.py` already exists (PIL+numpy; `cv2` is not installed and must not be added). It needs per-image tuning before it can report `r(z)` in mm; do that, then refine the interpolated Schaft curve between Menghin's four anchors. Budget half a day. **This is the only remaining geometric unknown in the whole plan**: topology, total height, all four anchors, the cuff flare and the cap are fixed by Menghin.
-3. **Implement `verify_calendar.py` first** (§12) — it needs no geometry and it locks 418/1701/1739/1783/745 in place before a single line of `build_goldhat.py` exists. Half an hour, and it is the test the whole P2 catalogue is built against.
+3. ~~**Implement `verify_calendar.py` first** (§12) — it needs no geometry and it locks 418/1701/1739/1783/745 in place before a single line of `build_goldhat.py` exists.~~ ✅ **Done** — it exists, it is stdlib-only, and it passes. Run it before starting P3, and re-run it after every data edit.
 4. **Settle the two residual data questions** (non-blocking): (a) does `tb19` exist? — zone 19 ends at 738 and the Krempe begins there, so the 109 mm reading uses `tb17`+`tb18` only and `tb19` is **not** needed; (b) is zone 9's 34.9 cm measured at its lower edge? — assumed yes, z = 312; anchor D is consistent with the A–B–C curve either way.
 5. Confirm Option **A** for the STL decomposition (§4), Option **C** for the motif form (§6.3), and the **Krempe 3-sector split** (§2.3 — note 2 sectors do *not* fit: the bbox is still 301 mm wide).
 6. Then start P2 (motif catalogue), which is the long pole.
@@ -717,6 +731,8 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 | Day-value total | **1783** | **derived from Menghin's prose, all 21 zones, §2.1** ✅ |
 | Ornamental partition | 3 sections × 7 zones (1–7, 8–14, **15–21**) — offset from the 4 physical sections | **Menghin, verbatim ✅** (p25) |
 | Printed parts | 22 (Option A: 19 bands + 3 Krempe sectors) or 40+ (Option B) | §4 |
+| Data layer | `data/hat_parameters.json`, `symbols.json`, `zones.json`, `readings/{menghin,schmidt_kaler}.json` — **all created** | §§5.1, 7 |
+| Verification | `scripts/verify_calendar.py` — 10 checks, stdlib only, passing | §12 |
 
 ---
 
@@ -730,7 +746,9 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 |---|---|---|
 | **1 — transcription (authoritative)** | `assets/menghin/text/menghin_page{20..31}.txt` — 12 files, 16,904 B | **Hand-transcribed English translation of Menghin. Wins on every conflict.** |
 | 2 — machine OCR | `assets/menghin/ocr/menghin_page{20,21,22,23,24,25,27,28,29,30,31}.txt` — 11 files, 21,847 B | `tesseract -l deu --psm 1`. Kept: it supplies the **German verbatim** quoted throughout this plan, and it is the independent witness that caught the psm-1 number-dropping failure. |
+| 2 — the human transcriptions | `assets/menghin/text/menghin_page{20..31}.txt` (12 files, 16,904 B; **page 26 does not exist** — the book skips it) | **THE authoritative tier.** Where it and the OCR disagree, this wins. All numbers in this plan come from here |
 | 3 — the photos | `assets/menghin/*.jpeg` | ground truth for *shapes and layouts*, not for text. Still needed for P1/P2 (Abrollung, per-zone motif positions). |
+| 4 — the derived data | `data/*.json` + `scripts/verify_calendar.py` | **created** — the machine-readable form of tier 2, with tier 2's arithmetic as a runnable assertion. If tier 2 is ever re-transcribed, re-run the script; it will tell you which zone broke |
 
 `assets/menghin/text/menghin_page26.txt` is a single line, „Page 26 skipped" — page 26 was not photographed. Pages 21, 22 and 28 are **pure plates** (OCR yields ~0 text) — expected, not an OCR failure. `page23` is the Fig. 18 bottom-view plate, `page24` is the Fig. 19 vertical-half plate (`text/`: „Vertical half. Blue: Spandrel pattern. Green: Switch zones"), and `page30` is the Fig. 23 combination-table legend.
 

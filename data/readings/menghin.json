@@ -1,0 +1,94 @@
+{
+  "_source": "Menghin, W. (2010) Der Berliner Goldhut - Ornamentanalyse, via assets/menghin/text/",
+  "_unit": "days",
+  "_definition": "day_value[zone] = boss_count * concentric_rings; zones 1 and 5 are special",
+  "_verified": "exactly reproduced from data/zones.json by scripts/verify_calendar.py",
+  "_copy_of": "reference/m5/data/berlin.json (which is byte-identical to berlin_meghin.json - that duplicate is redundant)",
+  "day_value": [
+    {
+      "zone": 1,
+      "days": 0
+    },
+    {
+      "zone": 2,
+      "days": 44
+    },
+    {
+      "zone": 3,
+      "days": 42
+    },
+    {
+      "zone": 4,
+      "days": 75
+    },
+    {
+      "zone": 5,
+      "days": 38
+    },
+    {
+      "zone": 6,
+      "days": 90
+    },
+    {
+      "zone": 7,
+      "days": 57
+    },
+    {
+      "zone": 8,
+      "days": 105
+    },
+    {
+      "zone": 9,
+      "days": 57
+    },
+    {
+      "zone": 10,
+      "days": 95
+    },
+    {
+      "zone": 11,
+      "days": 60
+    },
+    {
+      "zone": 12,
+      "days": 100
+    },
+    {
+      "zone": 13,
+      "days": 60
+    },
+    {
+      "zone": 14,
+      "days": 105
+    },
+    {
+      "zone": 15,
+      "days": 90
+    },
+    {
+      "zone": 16,
+      "days": 38
+    },
+    {
+      "zone": 17,
+      "days": 66
+    },
+    {
+      "zone": 18,
+      "days": 126
+    },
+    {
+      "zone": 19,
+      "days": 138
+    },
+    {
+      "zone": 20,
+      "days": 162
+    },
+    {
+      "zone": 21,
+      "days": 235
+    }
+  ],
+  "total_days": 1783
+}

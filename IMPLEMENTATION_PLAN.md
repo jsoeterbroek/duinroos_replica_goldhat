@@ -1,6 +1,16 @@
 # Implementation Plan — Berlin Gold Hat Replica
 
-**Status:** 1st draft, for review. Nothing here is built yet. Sections marked **[DECISION]** need an answer before geometry work starts.
+**Status:** 1st draft mostly resolved. Nothing here is built yet. The blocker list has shrunk to one item, and it is a print-and-look, not a research question:
+
+| Was | Now |
+|---|---|
+| Q1 doc rename | ✅ fixed |
+| Q2 height reconciliation | ✅ exact 745 mm, §2.2 |
+| Q3 motif arithmetic | ✅ 418 / 1701 ×2 / 1783 derived, §2.1 |
+| Q5 Kalotte/Krempe geometry | ✅ resolved, §2.2 |
+| Assembly unit (22 vs 40+ files) | ✅ **Option A, 22 files** |
+| **Motif physical form (R / W / RW)** | ⏸ **deferred to a 3-coupon print test at P3.5, §6.3** |
+| Q4 which scholarly reading drives the demo | open, Stage 2 only — does not block geometry, §3 |
 **Scope of this plan:** Stage 1 (static, printable replica). Stage 2 (LED + M5 demo) is only planned as far as it constrains Stage-1 geometry (§10).
 
 ---
@@ -17,6 +27,7 @@ A 1:1, stylised replica of the Berlin Gold Hat, printed in segments that stack i
 | D4 | One STL per band: `stl/berlin_goldhat_z01.stl` … `z19.stl`, plus `krempe_a/b/c.stl` for the ⌀301 mm brim plate, which exceeds the print bed (§2.3). **22 files.** | repo |
 | D5 | Assembly/stacking doc + registration scheme, incl. the Krempe sector joints | `docs/` |
 | D6 | Verification scripts: `scripts/verify_calendar.py` ✅ (created, passing) + `scripts/verify_geometry.py` (P3, needs geometry) | repo |
+| D7 | **Motif-form test coupons** — 3 single-band STLs, one per candidate motif form (§6.3), for the deferred print-and-look decision. Not part of the object. | `stl/test/` |
 
 Explicit non-goals for Stage 1: dents, creases, foil-thickness realism, museum-accurate surface irregularity.
 
@@ -265,7 +276,7 @@ Result: **22 STL files** = zones 1–19 (19 files) + `krempe_a/b/c` (3 files). T
 
 ## 3. Discrepancies and open questions
 
-### Q1 — `dimensions.md` does not exist **[DECISION / doc fix]**
+### Q1 — `dimensions.md` does not exist — ✅ **FIXED** (doc fix)
 `AGENTS.md` references `dimensions.md`; the repo has `dimensions.txt`. Rename one or the other. Low cost, do it first so future readers aren't sent to a missing file.
 
 ### Q2 — The height table over-sums the total height by 24 mm — **RESOLVED** ✅
@@ -297,7 +308,7 @@ Four different numbers were circulating. Menghin's text disambiguates all of the
 
 See Appendix C for the zone-by-zone citations.
 
-### Q4 — Which scholarly reading drives the demo? **[DECISION]**
+### Q4 — Which scholarly reading drives the demo? — **[Stage 2 — open, does not block geometry]**
 Menghin (lunisolar) and Schmidt-Kaler (Venus) use *different* band groupings on the same motifs. Stage 1 geometry is unaffected (motifs are motifs), but the LED *zoning* and the displayed arithmetic differ. Recommendation: build the geometry reading-agnostic, make the interpretation a runtime data file (already how `goldhat_layout.json` vs `berlin.json` are split in the prior attempt).
 
 ### Q5 — Kalotte + Krempe: is the Berlin hat a plain cone? — **RESOLVED** ✅ *(answer: no, and Menghin gives the dimensions)*
@@ -366,14 +377,14 @@ The „alternating 3-and-5-ring rhythm, strictly maintained up to Zone 14" (Meng
 
 **Decomposition** — 21 decorative zones. Of these, **zones 1–19 are stacked bands** (each carrying its Trennband as a fused lip) and **zones 20–21 are two concentric motif rings on the single flat Krempe plate**. The 18 Trennbands of `dimensions.txt` (`tb1`…`tb18`) are fused as lips; the `tb19` row and the two unattested spacers are dropped (§3 Q2) — and the 745 mm budget confirms that `tb17` and `tb18` *are* needed while `tb19` is *not*, since zone 19 ends exactly where the Krempe begins.
 
-**Assembly unit [DECISION]:** the requirement says "each band = one STL". Two readings:
+**Assembly unit — ✅ CONFIRMED: Option A, 22 files.** The requirement says "each band = one STL"; the two candidate readings were:
 
 | Option | STL count | Pros | Cons |
 |---|---|---|---|
-| **A (recommended)** | **22** — 19 stacked bands (z01…z19, each with its Trennband fused as a lip at the band's lower edge) + 3 Krempe sectors | fewest joints, fewest files, Trennband is a *relief* not a load-bearing ring, better stacking accuracy; the Krempe is a genuinely separate plate anyway (§2.3) | Trennband cannot be swapped/adjusted independently; 2 glued Krempe seams |
-| B | 40+ — zone and Trennband separate | matches `dimensions.txt` 1:1; Trennband colour/finish can differ | 40 joints × tolerance stack; 40 print jobs |
+| **A — ✅ CHOSEN** | **22** — 19 stacked bands (z01…z19, each with its Trennband fused as a lip at the band's lower edge) + 3 Krempe sectors | fewest joints, fewest files, Trennband is a *relief* not a load-bearing ring, better stacking accuracy; the Krempe is a genuinely separate plate anyway (§2.3) | Trennband cannot be swapped/adjusted independently; 2 glued Krempe seams |
+| B — rejected | 40+ — zone and Trennband separate | matches `dimensions.txt` 1:1; Trennband colour/finish can differ | 40 joints × tolerance stack; 40 print jobs |
 
-Recommend **A**. Revisit if the Trennbands must be a different material or colour.
+Re-open only if the Trennbands turn out to need a different colour or material — and even then the cheapest fix is to print the *lip* in a second filament on the same machine, not to split the parts.
 
 ---
 
@@ -410,6 +421,10 @@ Recommend **A**. Revisit if the Trennbands must be a different material or colou
   "wall_thickness_mm": 2.0,        // NOT 0.06 — the real foil is unprintable
   "wall_thickness_tb_mm": 3.0,     // Trennbands read as a thicker ridge
   "symbol_relief_mm": 0.8,         // emboss/engrave depth        (see §6)
+  "motif_form": "TBD",            // "relief" | "window" | "relief_window"
+                                    //   NOT a guess and NOT a default: the generator must
+                                    //   accept all three from day one, because the choice is
+                                    //   deliberately deferred to a physical test (§6.3).
   "registration_lip_mm": 6.0,      // inner lap ring for stacking
   "registration_clearance_mm": 0.25,
   "krempe": { "r_inner_mm": 94.5, "r_outer_mm": 150.5, "z_inner_mm": 738.0,
@@ -429,7 +444,7 @@ Expected derived values, asserted by `verify_geometry.py`: surface area ≈ **0.
 ### 5.2 Band as a solid
 Each *stacked* band (zones 1–19, TBs fused as lips) = `outer_frustum/frustum-band − inner offset` (an open ring with a non-linear outer profile), plus:
 - a **registration lip**: a 6 mm tall, wall-thickness ring on the inside of the lower edge, sized to slip into the band below (0.25 mm clearance). Axis-vertical printing makes this support-free.
-- a **Trennband ridge** at its lower edge (Option A), 1 mm proud, 9 mm tall — the relief that separates zones visually.
+- a **Trennband ridge** at its lower edge (§4 Option A), 1 mm proud, 9 mm tall — the relief that separates zones visually.
 - **symbol features** (§6) on the outer surface.
 
 The **Krempe** is a different primitive: `annular_disc(r_inner=94.5, r_outer=150.5, z=738→745)` — a 56 mm radial ribbon rising only 7 mm (7.1°), so it prints flat in its own plane with no supports — with zones 20 and 21 as **concentric** motif rings rather than stacked ones, split into **3 radial sectors** (§2.3). Its two motif rings sit at r ≈ 107 mm (zone 20, 54 × ⌀12 mm, circumference 672 mm) and r ≈ 132 mm (zone 21, 47 × ⌀15 mm, circumference 829 mm), with the twisted bronze rim wire occupying r 144.5–150.5 mm.
@@ -490,16 +505,49 @@ Each is a handful of `Part.makeCircle` / `makePolygon` calls. No SVG import path
 
 These ⌀ values against the local cone circumference give the motif pitch (≈ `πD / count`), which is a free second check on every per-zone count — and it passes for all 19 zones (see §3, "Do the motif counts fit"). Note also which tools appear in **only one** zone: **Nr. 9 (z17), Nr. 11 (z7), Nr. 13 (z16)** — exactly the three Menghin's Fig. 23 key flags as „Disc symbols appearing **only once** in the ornamental canon: Green". A third independent confirmation of the layout.
 
-### 6.3 Physical form of a motif — **[DECISION]**
-This is the single decision that ties Stage 1 to Stage 2.
+### 6.3 Physical form of a motif — **DEFERRED to a physical test**
 
-| Option | Stage 1 look | Stage 2 | Verdict |
+This is the single decision that ties Stage 1 to Stage 2, and it is the one thing that cannot be settled from the sources. **Decision (operator, this round): do not decide from text — 3D-print one band in each candidate form and look at it.** Leaning **R**, because the requirement is that the symbols are *physically present on the outside and visible with the LEDs off*.
+
+The options are named **R / W / RW** rather than A / B / C, because §4 already uses "Option A/B" for the assembly unit and one namespace collision in a plan is one too many.
+
+| Form | Stage 1 — what you see, LEDs off | Stage 2 — light path | Cost |
 |---|---|---|---|
-| **C (recommended)** — motif is a **through-window** in the band wall | motif reads as a crisp silhouette; held to a light it already glows | literally satisfies "LED behind the outer surface behind the symbols"; one LED per window | smallest geometry, one print per band |
-| B — motif embossed/engraved on a solid wall | closest to repoussé relief | needs re-cutting every band to add windows | rejects the second stage for the first |
-| A — opaque outer skin + inner translucent diffuser sleeve | best looking | needs per-symbol baffles or light bleeds across the whole zone | twice the printing, alignment risk, deferred |
+| **R — relief** (`relief`) | closest to the real repoussé: raised discs, raised rings, shadow lines in raking light | **none.** A solid wall has no window; Stage 2 would have to re-cut every band | cheapest possible |
+| **W — window** (`window`) | crisp flat silhouette; a hole, not a feature. Reads as a stencil | one LED per window, exactly "LED behind the outer surface behind the symbols" | cheapest possible |
+| **RW — relief-carved light channel** (`relief_window`) | **R's look**: the raised profile is still there — what is *cut through* is the recessed field *inside* the motif, so the raised rings and rims stay intact and cast shadow | **W's light path**: the light exits through the motif's own recessed field; the raised parts of the motif become the light *modulators* | same as W. ⚠️ leaves a thin fin where a raised ring borders an open slot — must be measured on the coupon |
 
-Recommend **C**. Add an optional inner diffuser sleeve later (Stage 2) without touching the bands — that is the "A" benefit at no Stage-1 cost. Note the structural consequence: at ~480 main motifs on 0.292 m² (§2.2) — about **1 window per 6 cm²** — windows occupy a small fraction of the shell; keep a minimum 3 mm ligature between neighbouring windows, and add interior ribs if any zone's windows exceed ~40 % of its surface. The 418-boss figure (§3 Q3) plus each boss's Menghin punch diameter (⌀12–21 mm) fixes the per-zone window count and size directly — no counting from scratch needed.
+**R and W are not two points on a spectrum; they are the two ends of one axis, and RW is the whole reason the axis exists.** RW is what the real object does: a boss is pressed out from *behind*, so the outward relief and the light path are the same feature seen from two sides. Judge RW first.
+
+> On the previous draft's "A = opaque skin + inner translucent diffuser sleeve": that is **not** a Stage-1 form. It is W (or RW) plus a Stage-2 sleeve, and the sleeve can be slipped in later **without reprinting a single band**. It was mis-sorted as a third alternative; a diffuser is an accessory, not a form.
+
+**The test, to be run at P3.5 — exactly three coupons, one band each.**
+
+- **Band: `z15`.** Chosen because it is the worst case for R and the best case for judging: 15 × **tool 15 = ⌀21 mm with 6 rings**, the largest and most layered motif on the object, with tool 7 annulets and tool 6 fillers in the interstices — so **two motif scales** are judged on one coupon at once. The ⌀21 / 6-ring disc is also the family that dominates the object (zones 8–19 are all disc zones), so this tests the typical case, not a corner case. And z15 is already in the P5 fit-test trio, so it prints on a known-good setup with no supports.
+- **Three STLs, identical except for the motif form:** `stl/test/z15_relief.stl`, `z15_window.stl`, `z15_relief_window.stl`. Same profile, same placement, same wall — **only the motif form may differ**, or the comparison is worthless.
+- **Print them together in one job, in matte PLA (not silk — silk hides exactly the dimensional differences being judged), and the fit-test trio in the same session.** ~10 g each.
+
+**Judge each coupon on these five, in this order.** 1 and 2 are why R is leading; 3 is the fact that decides whether R survives at all.
+
+| # | Question | How | Pass looks like |
+|---|---|---|---|
+| 1 | Does the motif read with the LEDs off? | daylight, 1 m, and again at 3 m | R and RW: yes. W: a stencil, not a symbol |
+| 2 | Does it read *as gold* rather than as a hole? | raking light along the wall, and a finger | R and RW show a profile; W has none |
+| 3 | **Does each motif light individually, without bleeding into its neighbours?** | phone torch held *inside* the band, dark room | W and RW: 15 separate lit motifs, dark wall between. **R: nothing lights. This is the one that can eliminate R.** |
+| 4 | Is RW's thin fin (raised ring next to an open slot) sound? | flex the coupon; then measure the fin with calipers | no crackling, fin ≥ 0.8 mm, wall still stiff enough to stack |
+| 5 | What does it cost? | slicer estimate | recorded, not a tiebreaker |
+
+**Then write the winner into `data/hat_parameters.json` as `motif_form` and delete the two losing coupons.** The generator carries all three forms behind one switch (§5.1) so this costs a data edit, not a code change — and so that the *same* band can be regenerated if the sleeve or the LED layout later argues for a different form.
+
+The 418-boss figure (§3 Q3) plus each boss's Menghin punch diameter (⌀12–21 mm) fixes the per-zone window count and size directly — no counting from scratch needed, and it is form-independent: R, W and RW all place the same motifs at the same coordinates; only the material inside the motif's outline differs.
+
+### 6.4 Are there enough motifs to matter, and enough wall to hold them?
+
+Worth stating before anyone prints a coupon, because it bounds how much this decision can even matter. At ~480 main motifs on ≈0.292 m² of shell (§2.2) that is about **one motif per 6 cm²** — motifs occupy a small fraction of the surface, and the wall between them dominates. Two consequences, both live for W and RW and irrelevant for R:
+
+- keep a **minimum 3 mm ligature** between neighbouring windows, or the wall delaminates at the thinnest point when the band is squeezed onto the one below. This is asserted by `verify_geometry.py` (§12) and is the constraint most likely to force a motif smaller than Menghin's punch diameter — in which case shrink the *window*, not the relief.
+- if any single zone's windows exceed ~**40 %** of its own surface, that zone needs **interior ribs** to stop the band ovalising under the lap joint. Zones 10, 12 and 14 (19–21 motifs at ⌀13–15 mm) are the ones to check first; zones 17–19 on the Kalotte are the other candidates, since they add the cuff and bronze-band curvature.
+- for **RW**, the raised ring bordering an open slot *is* the ligature in the radial direction, so RW is not automatically weaker than W — but its thinnest section is a fin, not a wall, and that is judgement #4 on the coupon.
 
 ---
 
@@ -549,13 +597,15 @@ data/*.json  ──►  scripts/build_goldhat.py  ──►  stl/*.stl
 
 **Fit test first:** print z13 + z14 + z15 (a plain repeating stretch) 1:1 and check that the stack is straight and the lap joint doesn't wobble. Only then print the rest. The top zone (z1) and the Krempe print last — they are the least forgiving parts and benefit from a calibrated machine.
 
+**Print the motif-form coupons in the same session** (§6.3, P3.5): z15 in all three of `relief` / `window` / `relief_window`, matte PLA, ~10 g each. The fit test and the coupon test are two different asks — one for tolerance, one for looks — but they need the same calibrated machine, so do them together and keep the silk out of both. The coupon verdict is a prerequisite for P4: generating 22 bands before the form is chosen means regenerating them all.
+
 ---
 
 ## 10. Stage-2 constraints this plan must respect
 
 Nothing below is implemented now; these are the interfaces Stage 1 must leave open.
 
-1. **Window per motif** (§6.3, Option C) — each motif is a light channel.
+1. **One light channel per motif** (§6.3) — the motif's recessed field is the channel. **The form (R / W / RW) is deliberately still open**, and `motif_form` in `data/hat_parameters.json` is the single switch. ⚠️ If the coupon test selects **R**, Stage 2 stops working as literally specified ("LED behind the outer surface behind the symbols") — there is no light path at all. R therefore cannot be the answer on its own; if R's *look* wins, the answer is **RW**, and if only R's look plus W's light path are wanted, that is what RW already is.
 2. **Interior cavity**: the lap joint leaves a natural annular gap; keep ≥ 8 mm of clear radial depth behind a band so an LED PCB can be slipped in, and leave a **20 × 6 mm cable notch** in each lap lip at a common clock angle (recommend θ = 0°, i.e. the hat's "front"), so a single wiring spine runs up the inside.
 3. **Modular Z-addressability**: zones are already separate parts, so per-zone LED segments need no extra geometry.
 4. **LED budget** is now **~480 main motifs** (≈5 A), not 3,393 (≈61 A) — §3 Q3 is closed. The `gold_hat_scenarios.md` power budget is wrong by ~6× and must be rewritten, not just revised.
@@ -572,6 +622,7 @@ Nothing below is implemented now; these are the interfaces Stage 1 must leave op
 | **P1 — profile extraction** | Abrollung calibration → refine `r(z)` between Menghin's **four** anchors (A 166 mm @ 61, B 275 mm @ 160, **D 349 mm @ 312**, C 371 mm @ 445); validate against photo silhouette | `r(z)` within ±2 mm of the photo at 10 sample heights |
 | **P2 — motif catalogue** | Count and classify motifs from the Abrollung → `symbols.json` + `zones.json`; implement primitives. **Menghin's per-zone tool-and-count table (§2.1) and the Fig. 22.1–22.4 per-zone plate set (`text/menghin_page28/29.txt`) have already given the *counting* half** — `data/symbols.json` and `data/zones.json` exist and verify. What is left is (a) the 8 primitives as code, (b) per-zone **placement** (start angle, ornament offset), with the Abrollung only confirming positions within a zone | `verify_calendar.py` reproduces every Menghin zone value (1783 total, 1739, 1701×2, 418, 21 zones, 745) |
 | **P3 — geometry kernel** | `build_goldhat.py`; one band end-to-end (start with z13) | an STL that visually matches the Abrollung strip for that zone |
+| **P3.5 — motif-form test** | emit the same band three ways (`relief` / `window` / `relief_window`), print all three, **look at them** (§6.3). ⚠️ **Do not wait for the full P3 catalogue to do this** — the coupon needs exactly one primitive (tool 15, the ⌀21 / 6-ring disc) and one zone's placement. Build those two things first and the coupons exist while the other 23 tools are still unwritten. | motif form chosen; `data/hat_parameters.json` `motif_form` set to a real value |
 | **P4 — full generation** | zones 1–19 + the Krempe plate split into 3 sectors → `stl/` | all 22 STLs watertight, `verify_geometry.py` passes |
 | **P5 — print & fit** | 3-band fit test, then full print, assembly | stacked cone is straight, 745 mm ± 3 mm, joints tight |
 | **P6 — (later) Stage 2** | LEDs, M5 firmware | out of scope here |
@@ -782,9 +833,10 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 | Physical ornaments incl. fillers | ~651 | Schmidt-Kaler table, §3 Q3 |
 | Day-value total | **1783** | **derived from Menghin's prose, all 21 zones, §2.1** ✅ |
 | Ornamental partition | 3 sections × 7 zones (1–7, 8–14, **15–21**) — offset from the 4 physical sections | **Menghin, verbatim ✅** (p25) |
-| Printed parts | 22 (Option A: 19 bands + 3 Krempe sectors) or 40+ (Option B) | §4 |
+| Printed parts | **22, confirmed** (19 bands + 3 Krempe sectors) | §4 ✅ |
+| Motif physical form | **deferred to a 3-coupon print test** | §6.3 |
 | Data layer | `data/hat_parameters.json`, `symbols.json`, `zones.json`, `readings/{menghin,schmidt_kaler}.json` — **all created** | §§5.1, 7 |
-| Verification | `scripts/verify_calendar.py` — 10 checks, stdlib only, passing | §12 |
+| Verification | `scripts/verify_calendar.py` — 11 checks, stdlib only, passing | §12 |
 
 ---
 

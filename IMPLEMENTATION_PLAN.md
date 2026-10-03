@@ -688,7 +688,7 @@ Nothing below is implemented now; these are the interfaces Stage 1 must leave op
 | **P1 — profile extraction** | Abrollung calibration → refine `r(z)` between Menghin's **four** anchors (A 166 mm @ 61, B 275 mm @ 160, **D 349 mm @ 312**, C 371 mm @ 445); validate against photo silhouette | ✅ **CLOSED.** The Abrollung route is **disproved** (not a development, §6.1); the profile is the **9 documentary constraints + `pchip`**, and the photo only corroborates it. Criterion restated in §12 |
 | **P2 — motif catalogue** | Count and classify motifs from the Abrollung → `symbols.json` + `zones.json`; implement primitives. **Menghin's per-zone tool-and-count table (§2.1) and the Fig. 22.1–22.4 per-zone plate set (`text/menghin_page28/29.txt`) have already given the *counting* half** — `data/symbols.json` and `data/zones.json` exist and verify. What is left is (a) the 8 primitives as code, (b) per-zone **placement** (start angle, ornament offset), with the Abrollung only confirming positions within a zone | `verify_calendar.py` reproduces every Menghin zone value (1783 total, 1739, 1701×2, 418, 21 zones, 745) |
 | **P3 — geometry kernel** | `build_goldhat.py`; one band end-to-end (start with z13) | ✅ **CLOSED.** `scripts/band_geometry.py` (profile, section, projection — no FreeCAD needed, self-checking) + `scripts/build_goldhat.py` (OCCT). **z13 builds as one valid closed solid**: vol 33,429 mm³, ⌀123.0 × 43.1 mm, and every section radius matches `r(z)` to 0.01 mm. Two bugs found and fixed on the way — see below |
-| **P3.5 — motif-form test** | emit the same band three ways (`relief` / `window` / `relief_window`), print all three, **look at them** (§6.3). ⚠️ **Do not wait for the full P3 catalogue to do this** — the coupon needs exactly one primitive (tool 15, the ⌀21 / 6-ring disc) and one zone's placement. Build those two things first and the coupons exist while the other 23 tools are still unwritten. | motif form chosen; `data/hat_parameters.json` `motif_form` set to a real value |
+| **P3.5 — motif-form test** | emit the same band three ways (`relief` / `window` / `relief_window`), print all three, **look at them** (§6.3). ⚠️ **Do not wait for the full P3 catalogue to do this** — the coupon needs exactly one primitive (tool 15, the ⌀21 / 6-ring disc) and one zone's placement. Build those two things first and the coupons exist while the other 23 tools are still unwritten. | motif form chosen; `data/hat_parameters.json` ✅ **COUPONS BUILT, print verdict pending.** `scripts/motif_features.py` + `scripts/build_coupons.py` emit `stl/test/z15_{relief,window,relief_window}.stl` plus the fit-test trio, all three single valid solids and measurably different (§11.2). What remains is the **physical print and the five judgements** in §6.3. |
 | **P4 — full generation** | zones 1–19 + the Krempe plate split into 3 sectors → `stl/` | all 22 STLs watertight, `verify_geometry.py` passes |
 | **P5 — print & fit** | 3-band fit test, then full print, assembly | stacked cone is straight, 745 mm ± 3 mm, joints tight |
 | **P6 — (later) Stage 2** | LEDs, M5 firmware | out of scope here |
@@ -704,6 +704,35 @@ P0 and P1 are cheap and de-risk everything. P2 is the long pole and the only rea
 > **Reusable rule for the whole generator: every added feature must OVERLAP the wall, never butt it.** A butt joint is a line contact, and OCCT will silently return a multi-solid shape that `isValid()` still calls valid.
 
 **3. The first STL was 23 MB for one band — ~500 MB across 22.** Two causes: the section was 96 segments, and `Shape.exportStl()` takes no tolerance argument, so OCCT fell back to its default circle resolution (≈478 segments around a ⌀123 ring). Now `n=48` plus an explicit `tessellate(0.05)`: **91,704 → 24,754 facets and 23 MB → 1.2 MB**, with the volume unchanged to 0.001 % (33,429.2 vs 33,429.0 mm³), so no geometry was lost. At a 0.16 mm layer a 0.05 mm chord deviation is invisible. `stl/` is **gitignored** — the data files already describe the geometry, so committed binaries would be churn, not provenance.
+
+### 11.2 P3.5 results — the coupons exist, and four bugs died on the way
+
+`scripts/motif_features.py` (the three forms, placement → prisms) and `scripts/build_coupons.py` (the headless build) produce the three z15 coupons and the fit-test trio. All three coupons are **single valid closed solids** and are genuinely, measurably different:
+
+| coupon | volume | vs bare shell | relief depth measured on the surface |
+|---|---|---|---|
+| **`relief`** | 33,709.4 | **+5,874.0** | 1.136 mm — raised rim **with recessed ring troughs** |
+| **`window`** | 22,439.6 | **−5,395.9** | 0.930 mm — an open field, rim only |
+| **`relief_window`** | 24,608.1 | **−3,227.3** | **2.618 mm** — raised rim *and* a through field |
+
+The measured radial profile across one motif (`.`=low, `@`=high, ` `=no material) is the proof the forms differ in *kind*, not just in volume:
+
+```
+relief          [ #@%##*++=======++*##%@# ]   stepped rings, symmetric
+window          [@%*+=-:..       ..:-=+*%@]   flat open field
+relief_window   [+@:...             ...:@+]   widest open span, rim retained
+```
+
+**Four bugs found, and three were the same bug wearing different hats:**
+
+1. **A feature that BUTTS the wall does not fuse.** The relief prisms started at depth 0.0 — exactly on the surface — so the common volume was **0.03 mm³** and the fuse returned **31 disjoint solids** that `isValid()` still called valid. This is the *identical* defect as the Trennband ridge and the registration lip (§11.1). All three are now fixed by embedding (`embed=0.6` mm). **The rule has earned its place: every added feature must overlap the wall, never butt it.**
+2. **"Add the rings" buries the rings.** `motifs.py` returns the **troughs** (six 0.35 mm bands), not the ridges. Adding the disc and then re-adding each band *inside* it put the rings under the boss, so the first relief coupon rendered as a **flat plain disc**. The correct construction is **add the disc, then recess each trough, then restore the inner ring** — 1 add + 6 cuts + 6 adds per motif, and the order is load-bearing.
+3. **Sign inference cannot separate an add from a cut.** A through-cut spans `−1.0..+0.8` and an embedded relief spans `−0.6..+0.8` — "does it cross zero?" gives the same answer for both, so `split_add_subtract` mis-classified RW's core. Fixed by **tagging each prism with `op`** instead of inferring it.
+4. **A per-vertex projected polygon is not planar.** `Part.Face` rejects it: *"Failed to create face from wire"*. The whole ring is a curve on the cone. Fixed by building each prism flat in the **tangent plane** at the motif centre and rotating it into place, which also keeps every boolean a plane-plane intersection.
+
+**Performance and process, both learned the hard way.** Fusing z15's 345 prisms by looping pairwise `fuse()` is O(n²) and wedged FreeCAD's GUI thread for **245 s+** (the RPC server reported state `stuck`) — twice in one session, each needing a restart. Two fixes: `shape.multiFuse([...])` (note: a **method on a shape**, not `Part.multiFuse`), and batching by **operation tier** rather than per motif. Relief went **1256 s → 218 s**.
+
+⚠️ **Use `freecadcmd`, not the MCP bridge, for anything non-interactive.** The MCP bridge enforces a ~90 s transport limit; real OCCT boolean work exceeds it, and every timeout wedges the session. `freecadcmd scripts/build_coupons.py` has no GUI thread and no such limit, and it is now the documented route for P4. Two traps in that route, both hit: (a) a script passed as a **file argument** gets `__name__` set to its **basename**, not `"__main__"`, so a plain guard silently does nothing **and freecadcmd still exits 0** — a failure that looks like success; (b) FreeCADCmd prints a `(0 %) … (99 %)` progress bar per export that must be filtered out of any pipe.
 
 ⚠️ **Operating note — an OCCT call can wedge FreeCAD without crashing it.** A `makeShapeFromMesh` on that 23 MB mesh left FreeCAD's MCP RPC thread blocked: the socket accepted connections and never answered, while the process stayed alive with no coredump and no journal entry. Recovery was `kill` + relaunch, and it was safe only because nothing unsaved was open (verified first — no `.FCStd` written for 6 h). Diagnosis, if it happens again: `ss -ltnp | grep 9875` tells “process gone” from “RPC thread busy”. The kernel returns a `Part.Shape`, so screenshots and checks need **no STL round-trip at all** — that was the mistake.
 
@@ -884,6 +913,8 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 | ~~`scripts/analyze_cone.py`~~ | OpenCV cone-measurement script, from the prior attempt | ✅ **deleted when P1 closed** — `cv2` is not installed and will not be added; `measure_silhouette.py` replaced it |
 | `scripts/measure_silhouette.py` | PIL + numpy silhouette profiler — **the P1 tool** | ✅ **working and finished.** Border-median segmentation, per-row envelope with despiking, `--dump` (ASCII mask, for a model that cannot accept image content), `--project` (tilt-recovered forward check). See §12 |
 | `scripts/verify_calendar.py` | the data-layer assertions | ✅ passing |
+| `scripts/motif_features.py` | **the three motif forms** (`relief` / `window` / `relief_window`) as ordered prism operations on the cone; `placed_motifs`, `motif_prism_polygons`, `build_motif_ops`, `fuse_all` | ✅ new, self-checking without FreeCAD |
+| `scripts/build_coupons.py` | the P3.5 coupon build — **run under `freecadcmd`**, not the MCP bridge | ✅ emits the 3 coupons + fit-test trio |
 | `scripts/motifs.py` | **the P2 motif primitives and placement** — 2D (u,v) polygons for all 8 boss discs, the Nos. 4–7 fillers and the specials; `for_tool()`, `build()`, `clearance()`, `zone_layout()`, `spandrel_offset()`, `development_svg()` | ✅ **new, self-checking.** `python3 scripts/motifs.py` runs two suites: the primitive checks (ring rule, diameters, nozzle clearance, Menghin's no-overlap constraint) and the **placement checks** (one disc row per zone, one interstice filler per gap at exactly half a pitch, the spandrel lift clearing both neighbours, and `gcd(counts)=1` proving the phase is unconstrained). No FreeCAD, no PIL, no scipy — it runs anywhere |
 
 ### A.4 `reference/` — the abandoned attempt (94 MB, **do not recycle**, `AGENTS.md`)

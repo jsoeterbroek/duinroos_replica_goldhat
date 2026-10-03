@@ -518,6 +518,26 @@ The prior attempt has SVG/bitmap traces (`symbol12_bitmap_traced.svg` etc.). Do 
 
 Each is a handful of `Part.makeCircle` / `makePolygon` calls. No SVG import path, no bitmap tracing, no 17 hand-made files.
 
+**Implemented and verified — `scripts/motifs.py` (P2, first half).** All 8 boss discs, the 4 fillers (Nos. 4–7) and the 4 specials (Fig. 21 Nos. 16/17, the eye, the tip star, the notched ridge) are built as **2D (arc-length, height) polygons**, deliberately FreeCAD-free so they are testable and so the same code serves both the band generator and an unrolled development render. `python3 scripts/motifs.py` runs the self-check:
+
+- **the ring rule** — every tool's ring count ∈ {2, 3, 5, 6}; a 4 would fail the assert;
+- **every tool the zones use is buildable** — `for_tool()` raises on an unattributed number, so a `zones.json` edit that introduces tool 23 fails loudly rather than silently drawing nothing;
+- **the built diameter equals Menghin's stated diameter** for all 8 discs (exact to 1e-6 mm), and the built ring count equals the legend's;
+- **printability of the smallest feature.** This one caught a real defect: Nr. 10 packs **5 rings into a ⌀13 disc**, and a fixed 0.45 mm ridge left only a **0.36 mm** trough between rings — below what a 0.4 mm nozzle resolves. The ridge width is now `min(0.45, 0.30 × ring pitch)`, which puts every trough at **0.575–1.912 mm**. ⚠️ This is a **stylisation choice, not a measurement**: the Fig. 22 photo cannot resolve a sub-half-millimetre ridge (an autocorrelation of a phone photo of a printed page returns the ridge repeat and the disc repeat at comparable strength and cannot separate them). The trough width is therefore set by the **printer**, which is the honest constraint, not by a number we cannot read.
+- **NO OVERLAP** — Menghin's own stated constraint („The arrangement ensures there is no overlap between the disc and circular motifs"), evaluated on the **pchip** profile rather than a straight cone. **All 19 disc zones clear**, tightest at **z17 +0.6 mm** and **z21 +0.5 mm**.
+
+**The disc-to-pitch ratio is the useful number this produces**, and it is not uniform:
+
+| zones | ratio | reading |
+|---|---|---|
+| shaft, z3–z16 | **0.79–0.86** | comfortable, ~2.3–4.0 mm gaps |
+| z17 (33 × ⌀12) | **0.95** | 0.59 mm gap — saturated |
+| z18 (21 × ⌀21) | **0.97** | 0.75 mm gap — saturated |
+| z19 (23 × ⌀21) | 0.92 | 1.76 mm gap |
+| z20/z21 (brim) | — | 729.9 mm circumference, +1.5 / +0.5 mm |
+
+That saturation at z17/z18 is exactly what §2.2 predicted from the other direction ("the two tightest come out at +3.0 mm and +0.9 mm margin"), and it is why the cuff **must** flare to ⌀127 within 18 mm: Menghin's own ornament counts leave almost no room. The profile and the motif counts constrain each other, which is a far stronger statement than either alone.
+
 **Ring counts are 2, 3, 5 or 6 — never 4.** Menghin: „Hauptzierelemente sind acht verschiedene Scheibenbuckel unterschiedlicher Größe mit **zwei, drei, fünf oder sechs** konzentrischen Ringen." The prior attempt's "symbol 13 = 4 rings" is not attested. Menghin's tool legend gives the diameters the primitives must hit:
 
 | Tool | Rings | ⌀ (Fig. 21 legend) | Zones Menghin attributes explicitly |
@@ -837,6 +857,7 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 | ~~`scripts/analyze_cone.py`~~ | OpenCV cone-measurement script, from the prior attempt | ✅ **deleted when P1 closed** — `cv2` is not installed and will not be added; `measure_silhouette.py` replaced it |
 | `scripts/measure_silhouette.py` | PIL + numpy silhouette profiler — **the P1 tool** | ✅ **working and finished.** Border-median segmentation, per-row envelope with despiking, `--dump` (ASCII mask, for a model that cannot accept image content), `--project` (tilt-recovered forward check). See §12 |
 | `scripts/verify_calendar.py` | the data-layer assertions | ✅ passing |
+| `scripts/motifs.py` | **the P2 motif primitives** — 2D (u,v) polygons for all 8 boss discs, the Nos. 4–7 fillers and the specials; `for_tool()`, `build()`, `clearance()`, `development_svg()` | ✅ **new, self-checking.** `python3 scripts/motifs.py` asserts the ring rule, the diameters, the nozzle clearance and Menghin's no-overlap constraint. No FreeCAD, no PIL, no scipy — it runs anywhere |
 
 ### A.4 `reference/` — the abandoned attempt (94 MB, **do not recycle**, `AGENTS.md`)
 
@@ -912,8 +933,14 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 | **1 — transcription (authoritative)** | `assets/menghin/text/menghin_page{20..31}.txt` — 12 files, 16,904 B | **Hand-transcribed English translation of Menghin. Wins on every conflict.** |
 | 2 — machine OCR | `assets/menghin/ocr/menghin_page{20,21,22,23,24,25,27,28,29,30,31}.txt` — 11 files, 21,847 B | `tesseract -l deu --psm 1`. Kept: it supplies the **German verbatim** quoted throughout this plan, and it is the independent witness that caught the psm-1 number-dropping failure. |
 | 2 — the human transcriptions | `assets/menghin/text/menghin_page{20..31}.txt` (12 files, 16,904 B; **page 26 does not exist** — the book skips it) | **THE authoritative tier.** Where it and the OCR disagree, this wins. All numbers in this plan come from here |
-| 3 — the photos | `assets/menghin/*.jpeg` | ground truth for *shapes and layouts*, not for text. Still needed for **P2** (what the motifs look like). **P1 has used them and is done** — and the one that was believed to be an Abrollung turned out not to be (§6.1). |
-| 4 — the derived data | `data/*.json` + `scripts/verify_calendar.py` | **created** — the machine-readable form of tier 2, with tier 2's arithmetic as a runnable assertion. If tier 2 is ever re-transcribed, re-run the script; it will tell you which zone broke |
+| 3 — the photos | `assets/menghin/*.jpeg` | ground truth for *shapes and layouts*, not for text. **P2 has now used them** — read directly as images (see the note below), which is what confirmed the primitive forms and caught the Fig. 21 legend's `diam. 15 mm` omission for Nr. 13. **P1 used and closed** — and the one believed to be an Abrollung turned out not to be (§6.1). |
+| 4 — the derived data | `data/*.json` + `scripts/verify_calendar.py` + `scripts/motifs.py` | **created** — the machine-readable form of tier 2, with tier 2's arithmetic *and* its geometry as runnable assertions. If tier 2 is ever re-transcribed, re-run both; they will tell you which zone or which tool broke |
+
+**⚠️ Tier 3 note — the plate pages are now readable as images.** `menghin_page28/29.jpeg` (Fig. 22's ornament photographs) and `menghin_page30.jpeg` (Fig. 23's combination table) are **rotated 90°**; rotating by **−90°** puts them right way up. Read this way they are directly informative **about shape**: Fig. 22's close-ups showed the disc structure (central boss + N concentric ridges, with the small annulets No. 7 between discs) that `motifs.py` implements, and Fig. 23's table makes the alternating **three-and-five-circle structure of the shaft** visually obvious — which is the pattern §2.1 derives numerically and `verify_calendar.py` asserts.
+
+**But the numbers still come from tier 1, and this was tested rather than assumed.** Reading Fig. 23's „K / A" columns off the image and comparing them against `data/zones.json` gave a **row-for-row disagreement**, and on inspection my reading of the plate was off by one row — i.e. the error was in **reading the image**, not in the data. Fig. 23 is a printed table photographed at an angle: its rows are legible as *structure* and unreliable as *values*. So the tier-3 role is **confirmatory for shape and topology only**. A number must come from tier 1, and `verify_calendar.py` is what proves it.
+
+**Second caveat, also learned the hard way:** a model reading these images **mis-identified the object** as the *Golden Hat of Schifferstadt* — a different object in the same family of four. Vision is useful here, and needs the same discipline as OCR: it proposes, the transcription disposes.
 
 `assets/menghin/text/menghin_page26.txt` is a single line, „Page 26 skipped" — page 26 was not photographed. Pages 21, 22 and 28 are **pure plates** (OCR yields ~0 text) — expected, not an OCR failure. `page23` is the Fig. 18 bottom-view plate, `page24` is the Fig. 19 vertical-half plate (`text/`: „Vertical half. Blue: Spandrel pattern. Green: Switch zones"), and `page30` is the Fig. 23 combination-table legend.
 

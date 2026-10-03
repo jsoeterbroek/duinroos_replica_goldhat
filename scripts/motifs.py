@@ -401,11 +401,10 @@ def _selfcheck():
                   (z["zone"], z["count"], 2 * math.pi * r,
                    "%+.1f mm" % cl if z["count"] else "n/a"))
 
-    print("primitives self-check: all passed")
+    print("primitive checks passed")
 
 
-if __name__ == "__main__":
-    _selfcheck()
+
 
 
 # --- development renderer (visual check, no FreeCAD) --------------------------
@@ -489,3 +488,230 @@ def development_svg(zone_filter=None, out="/tmp/plates/development.svg"):
     open(out, "w").write(svg)
     print("wrote %s  (%d zones, %.0f x %.0f mm unrolled)" % (out, len(zone_filter or []), w, y))
     return out
+
+
+# --- placement -----------------------------------------------------------------
+#
+# Two rules, and both come from the evidence rather than from taste.
+#
+# RULE 1 -- the discs sit on ONE ring, centred in their zone. Every zone's
+#   height is greater than its disc diameter (14.0 mm zone vs a d12 disc is the
+#   tightest, z17), and the Fig. 22 plates show a single row per zone. So the
+#   only placement freedom is the angular phase.
+#
+# RULE 2 -- a filler "in the interstice(s)" means ONE per gap, angularly
+#   midway between adjacent discs. Menghin page29: "identical rings (No. 7) in
+#   the radial intersecting sections" -- sections, plural. Confirmed on the
+#   Fig. 22 plates for z9/z10/z13/z14.
+#
+# RULE 2b -- **the interstice filler is NOT on the disc centreline.** This was a
+#   real finding, not an assumption. At the discs' mid-height the gap between
+#   two neighbours is only `pitch - disc_dia`, which for z9 is **3.12 mm**
+#   (18.12 mm pitch - 15 mm disc), while the Nr. 7 annulet is **\u22484.85 mm**
+#   across -- so it *cannot* physically sit level with the discs; it would
+#   overlap them. The Fig. 22 plate (menghin_page29.jpeg, Z14) shows what
+#   actually happens: the annulets sit in the **spandrel**, vertically offset
+#   from the disc centreline into the lens-shaped notch where two neighbouring
+#   circles part company. `spandrel_offset()` computes that height rather than
+#   guessing it: it is where the two adjacent disc outlines are exactly one
+#   annulet diameter apart.
+#
+# WHAT IS *NOT* CONSTRAINED: the angular phase. The shaft disc counts are
+#   14,15,18,19,21,19,19,20,20,20,21,15,19,33,21,23 and gcd(...) == 1, so no
+#   rotation makes all zones align -- there is no "correct" phase to discover.
+#   The Fig. 22 plates do show z13 and z14 staggered rather than stacked, which
+#   is the one appearance rule worth encoding; everything else is declared.
+
+def spandrel_offset(pitch_mm, disc_dia, filler_dia):
+    """
+    Vertical offset of an interstice filler from the disc centreline, mm.
+
+    Geometry. Two neighbouring discs of radius R, centres `pitch_mm` apart on
+    the centreline (y = 0). The midpoint between them is at x = pitch/2. The
+    distance from a disc centre to the point (pitch/2, y) is
+
+        d(y) = sqrt((pitch/2)^2 + y^2)
+
+    so the filler clears the disc once d(y) >= R + filler_dia/2, i.e.
+
+        y >= sqrt((R + rf)^2 - (pitch/2)^2)
+
+    When the discs already have a gap at the centreline (pitch - 2R > filler
+    diameter) no lift is needed and this returns 0. Returns 0.0 as well when
+    the discs would OVERLAP (pitch < 2R), because that is a violation the
+    no-overlap check reports separately -- silently inventing a lift there
+    would hide a real error.
+    """
+    R = disc_dia / 2.0
+    rf = filler_dia / 2.0
+    half_pitch = pitch_mm / 2.0
+    if pitch_mm - disc_dia >= filler_dia:
+        return 0.0                       # room at the centreline; sit level
+    inner = (R + rf) ** 2 - half_pitch ** 2
+    if inner <= 0:
+        return 0.0                       # discs overlap; let that check shout
+    return math.sqrt(inner)
+
+def stagger_deg(zone_index):
+    """
+    Angular phase for a zone, in degrees.
+
+    The Fig. 22 plates show vertically adjacent disc zones staggered by roughly
+    half a pitch (z13 vs z14, menghin_page29.jpeg), which is what stops the
+    discs reading as continuous vertical columns. Half a pitch is not constant
+    in degrees -- pitch = 360/n differs per zone -- so the stagger is applied
+    per zone as half of that zone's own angular pitch.
+
+    A deterministic index is used rather than a random one so that the STL is
+    reproducible: a random phase would make two runs of the generator produce
+    different files, and would make verify_geometry.py non-deterministic.
+    """
+    return 180.0 if (zone_index % 2) else 0.0   # 180 deg = half of one motif
+
+
+def zone_layout(zone, r_at_z):
+    """
+    Resolve one zone into absolute angular positions.
+
+    Returns dict with:
+      pitch_deg    angular pitch of the discs
+      discs[]      (angle_deg, u_mm) for each motif
+      fillers[]    (angle_deg, u_mm, tool, v_offset_mm) for each interstitial filler
+      rows[]       (tool, v_offset_mm, kind) for border/band filler rows
+
+    Angles are measured from the zone's start meridian, counter-clockwise seen
+    from outside. u_mm is arc length, so the same list drives both the 2D
+    development and the 3D placement.
+    """
+    circ = 2 * math.pi * r_at_z
+    n = zone["count"]
+    z0, z1 = zone["z_mm"]
+    h = z1 - z0
+    out = {"pitch_deg": (360.0 / n if n else 0.0), "discs": [], "fillers": [], "rows": []}
+    if not n:
+        return out
+
+    phase = stagger_deg(zone["zone"])
+    pitch = 360.0 / n
+    pitch_mm = circ / n
+
+    for i in range(n):
+        a = (phase + i * pitch) % 360.0
+        out["discs"].append((a, a / 360.0 * circ))
+
+    for f in zone.get("fillers", []):
+        tool = f["tool"]
+        where = f["where"]
+        if "interstice" in where:
+            # one per gap, midway between discs, lifted into the spandrel
+            disc_dia = DISC_TOOLS[zone["tool"]][1] if zone.get("tool") in DISC_TOOLS else 0.0
+            filler_dia = 2 * for_tool(tool)[0][0][0]
+            dv = spandrel_offset(pitch_mm, disc_dia, filler_dia)
+            for i in range(n):
+                a = (phase + (i + 0.5) * pitch) % 360.0
+                out["fillers"].append((a, a / 360.0 * circ, tool, dv))
+        elif "border" in where:
+            # a horizontal row at a zone edge; a continuous band, no fixed count
+            v = -h / 2.0 + 2.0 if "top" in where else h / 2.0 - 2.0
+            out["rows"].append((tool, v, where))
+        elif where == "band":
+            out["rows"].append((tool, 0.0, where))
+    return out
+
+
+def _placement_selfcheck():
+    """Placement rules, checked rather than asserted in prose."""
+    here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    hp = json.load(open(os.path.join(here, "data", "hat_parameters.json")))
+    zj = json.load(open(os.path.join(here, "data", "zones.json")))
+    profile = hp["profile"]
+
+    # RULE 1: every disc fits its zone height on a single ring
+    print("  zone  h_mm  dia   1 row?")
+    for z in zj["zones"]:
+        if not z.get("tool") or z["zone"] in (1, 2, 5, 20, 21):
+            continue
+        h = z["z_mm"][1] - z["z_mm"][0]
+        dia = DISC_TOOLS[z["tool"]][1]
+        print("  z%-3d  %-5.1f %-5.0f %s" % (z["zone"], h, dia, "yes" if h >= dia else "NO"))
+        assert h >= dia, "zone %d is only %.1f mm tall for a %.0f mm disc" % (z["zone"], h, dia)
+
+    # RULE 2: interstice fillers are one-per-gap and never collide with a disc
+    print("\n  zone  discs  interstice fillers   offset_deg  ok")
+    for z in zj["zones"]:
+        if not z.get("tool") or z["zone"] in (1, 2, 5, 20, 21):
+            continue
+        r = _pchip_r(sum(z["z_mm"]) / 2.0, profile)
+        lay = zone_layout(z, r)
+        n_inter = len(lay["fillers"])
+        has_inter = any("interstice" in f["where"] for f in z.get("fillers", []))
+        if has_inter:
+            assert n_inter == z["count"], \
+                "zone %d: %d fillers for %d discs" % (z["zone"], n_inter, z["count"])
+            offs = sorted((f[0] - lay["discs"][0][0]) % lay["pitch_deg"]
+                          for f in lay["fillers"])
+            # the offsets are all exactly half a pitch; compare unrounded, and
+            # also require them to be IDENTICAL to each other (one per gap)
+            assert abs(offs[0] - lay["pitch_deg"] / 2.0) < 1e-9, \
+                "zone %d fillers are not midway between discs" % z["zone"]
+            assert max(offs) - min(offs) < 1e-9, \
+                "zone %d fillers are not evenly placed" % z["zone"]
+            # the filler must CLEAR the discs. At the centreline the gap is
+            # pitch - disc_dia; if the filler is bigger than that it has to be
+            # lifted into the spandrel, and this asserts the lift is enough.
+            pitch_mm = 2 * math.pi * r / z["count"]
+            disc_dia = DISC_TOOLS[z["tool"]][1]
+            f_dia = 2 * for_tool(z["fillers"][0]["tool"])[0][0][0]
+            dv = lay["fillers"][0][3]
+            centre_gap = pitch_mm - disc_dia
+            if f_dia > centre_gap:
+                assert dv > 0, \
+                    "zone %d filler %.2f mm does not fit the %.2f mm centreline gap" \
+                    % (z["zone"], f_dia, centre_gap)
+            # at height dv the centre-to-centre distance to the nearest disc
+            # centre is sqrt((pitch/2)^2 + dv^2); it must exceed R + r_filler
+            need = disc_dia / 2.0 + f_dia / 2.0
+            got = math.hypot(pitch_mm / 2.0, dv)
+            assert got >= need - 1e-9, \
+                "zone %d filler still overlaps: needs %.3f mm, has %.3f" \
+                % (z["zone"], need, got)
+            print("  z%-3d  %-6d %-20d %-11.3f yes  (lift %5.2f mm, clearance %5.2f >= %5.2f)"
+                  % (z["zone"], z["count"], n_inter, offs[0], dv, got, need))
+        else:
+            print("  z%-3d  %-6d %-20d %-11s -" % (z["zone"], z["count"], 0, "-"))
+
+    # the phase is a declared choice -- prove it is not constrained
+    counts = [z["count"] for z in zj["zones"]
+              if z.get("tool") and z["zone"] not in (1, 2, 5, 20, 21)]
+    g = 0
+    for c in counts:
+        g = math.gcd(g, c)
+    print("\n  gcd of all shaft disc counts = %d  -> %s"
+          % (g, "no common alignment exists; the phase is a free choice"
+             if g == 1 else "a symmetric alignment EXISTS and the phase is physical"))
+    assert g == 1
+
+    # every disc and filler must land inside one full turn, no duplicates
+    for z in zj["zones"]:
+        if not z.get("tool") or z["zone"] in (1, 2, 5, 20, 21):
+            continue
+        r = _pchip_r(sum(z["z_mm"]) / 2.0, profile)
+        lay = zone_layout(z, r)
+        angs = [a for a, _ in lay["discs"]]
+        assert len(angs) == z["count"]
+        assert len(set(round(a, 6) for a in angs)) == z["count"], \
+            "zone %d has coincident discs" % z["zone"]
+        assert all(0 <= a < 360 for a in angs)
+
+    print("placement self-check: all passed")
+
+
+def _all():
+    """Entry point: primitives first, then placement (both must pass)."""
+    _selfcheck()
+    print()
+    _placement_selfcheck()
+
+
+if __name__ == "__main__":
+    _all()

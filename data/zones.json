@@ -1,7 +1,7 @@
 {
   "_source": "Menghin (2010) Ornamentanalyse, assets/menghin/text/. Derived in IMPLEMENTATION_PLAN.md section 2.1.",
   "_purpose": "One row per decorative zone: what is punched, how many, how many rings. day_value = count * rings.",
-  "_status": "counts / rings / day values are DERIVED and verified. Placement (start angle, ornament-group offset) is a design choice still open.",
+  "_status": "counts / rings / day values are DERIVED and verified by scripts/verify_calendar.py. Placement is implemented and verified by scripts/motifs.py: one disc row per zone, one interstice filler per gap at half a pitch, lifted into the spandrel (see spandrel_offset). The angular phase is a declared choice -- gcd of the disc counts is 1, so no rotation aligns the zones and none is privileged.",
   "zones": [
     {
       "zone": 1,

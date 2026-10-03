@@ -1,6 +1,6 @@
 # Implementation Plan — Berlin Gold Hat Replica
 
-**Status:** 1st draft mostly resolved. Nothing here is built yet. The blocker list has shrunk to one item, and it is a print-and-look, not a research question:
+**Status:** nothing here is built yet. The blocker list is down to **two items, and they are different in kind:** the **motif form** is a *choice* deliberately deferred to a print (P3.5, §6.3), and the **profile `r(z)`** is the only remaining *unknown* (P1).
 
 | Was | Now |
 |---|---|
@@ -9,8 +9,17 @@
 | Q3 motif arithmetic | ✅ 418 / 1701 ×2 / 1783 derived, §2.1 |
 | Q5 Kalotte/Krempe geometry | ✅ resolved, §2.2 |
 | Assembly unit (22 vs 40+ files) | ✅ **Option A, 22 files** |
-| **Motif physical form (R / W / RW)** | ⏸ **deferred to a 3-coupon print test at P3.5, §6.3** |
+| **Motif physical form (R / W / RW)** | ⏸ deferred to a 3-coupon print test at P3.5, §6.3 |
 | Q4 which scholarly reading drives the demo | open, Stage 2 only — does not block geometry, §3 |
+
+**And the one item that actually blocks geometry — P1, the profile:**
+
+| Was | Now |
+|---|---|
+| Menghin's four circumference anchors (A 166 mm @ 61, B 275 mm @ 160, D 349 mm @ 312, C 371 mm @ 445) | ✅ in `data/hat_parameters.json` |
+| the profile *between* the anchors — the interpolation and the shape of the Schaft | ❌ **not yet extracted.** `profile_interp` is fixed to `pchip` and the 10 control points exist, but they are interpolations, not measurements. Menghin's own figure is the growth rate varying ~6× along the shaft, so this is the one curve in the model that cannot be read off a single number. |
+
+Everything else is a choice or a print; this is the only **unknown**. Exit criterion (§11 P1): `r(z)` within ±2 mm of the Abrollung/photo silhouette at 10 sample heights, via `scripts/measure_silhouette.py` (exists; needs per-image tuning; `cv2` is not installed and must not be added — PIL + numpy only).
 **Scope of this plan:** Stage 1 (static, printable replica). Stage 2 (LED + M5 demo) is only planned as far as it constrains Stage-1 geometry (§10).
 
 ---

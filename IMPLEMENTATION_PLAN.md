@@ -184,8 +184,8 @@ Menghin's own summary of the three body sections is „Schaft, Kalotte und [Krem
 | Section | Content | Shape | Half-angle from vertical |
 |---|---|---|---|
 | **Schaft** | zones 1–16 | long, gently *concave* frustum — ⌀ 53 → 125 → 108; the ⌀108 foot is *not* a mid-shaft waist, it is a tuck-in over the last 100 mm | **+23.4°** at the apex → **+9.9°** → **+4.4°** → **+1.5°** (z≈375, flattest) → **+3.0°** → **−4.8°** at the foot |
-| **cuff** | 18 mm, between z16 and z17 | **strongly flared**, `vertikal gefältelt`; ⌀ 108 → 127 | **≈27.8°** (steepest wall in the object, still 17° under the 45° overhang limit) |
-| **Kalotte** | zones 17–19, „100 mm hohe Kalotte" | flared helmet/dome, ⌀ 127 → 189 | **≈15.9°** |
+| **cuff** | 18 mm, between z16 and z17 | **strongly flared**, `vertikal gefältelt`; ⌀ 108 → 127 | **≈27.8°** *as a chord* (611→629) — see the correction below |
+| **Kalotte** | zones 17–19, „100 mm hohe Kalotte" | flared helmet/dome, ⌀ 127 → 189 | **≈15.9°** *as a chord* (629→738) |
 | **Krempe** | zones 20–21, „52–55 mm schmale **horizontale** Krempe" | near-flat annular brim, ⌀ 189 → 301, seen from above concave | **7.1°** from horizontal |
 
 The **18 mm cuff is the key to the whole upper profile**: Menghin calls it `vertikal gefältelt` (vertically pleated) precisely *because* pleating is how a ⌀108 neck opens into a ⌀189 dome in 18 mm of height. It is not a decorative ring — it is the flare. §"Do the motif counts fit" below shows that this flare is not merely plausible but *forced* by Menghin's own motif counts.
@@ -465,6 +465,15 @@ The **Krempe** is a different primitive: `annular_disc(r_inner=94.5, r_outer=150
 ### 5.3 Symbol projection — the one non-obvious bit
 Do **not** try to bend a flat pattern onto the cone (the prior attempt's unrolled-frustum SVG route, `reference/cad/svg/z04_strip.svg` — an annular sector 795 mm across, which cannot be mapped back onto a cone in FreeCAD without a bend feature).
 
+⚠️ **Correction, measured by `scripts/band_geometry.py` — the steepest wall is NOT the cuff.** The angles in that table are **chords between control points** (dr/dz over a whole segment), and a chord *understates* a locally steep curve. The kernel measures the **local `pchip` derivative**, which is what actually governs overhang, and it disagrees in two places:
+
+| Where | chord (table above) | **local max** | why |
+|---|---|---|---|
+| cuff, 611–629 | 27.8° | **35.5°** (z≈622) | the curve must leave the ⌀108 foot *and* turn into the Kalotte, so it steepens mid-segment |
+| **Kalotte bottom, z→738** | 15.9° | **38.9°** (at z=738) | the pchip must reach ⌀189 *while* the profile is about to turn 83° into the Krempe, so it steepens right at the joint |
+
+**38.9° at z=738 is the steepest wall in the object, and it is not an artefact**: r(z) is monotone to the last control point (max 150.14 at z=744.96, no overshoot), and the 82.9° direction change at z=738 is physical — that is where the Krempe attaches. Consequences: (a) „the cuff is steepest, still 17° under the limit" was **optimistic** — the real margin at z19 is **6.1°**, not 17°; (b) **z18 and z19 are the bands to watch at P5**, not only the cuff; (c) if a future profile revision deepens that corner, z19 is the first band to exceed 45° and need supports. All 39 rings still pass `< 45°`, so the print strategy is unchanged — but the margin is thin and now known rather than assumed.
+
 Instead: for each motif, build a prism in a local frame tangent to the cone at the motif's (θ, z), and boolean it radially. The visible shape on the outer skin is then the correct radial projection — which is exactly what you want for an LED light window anyway. Chord error for a 25 mm motif on a 100 mm radius is 0.8 mm; acceptable for a stylised model, and it shrinks toward the top. Motif placement maths: `r(z)` from the piecewise profile; motif angular pitch `Δθ = 360° / n_zone`. **The tilt must be per-motif, not a global constant**: it runs **+23.4°** at the apex, flattens to **+1.5°** in mid-shaft, turns to **−4.8°** at the foot (the wall leans *inward* there), then jumps to **+27.8°** across the 18 mm cuff and relaxes to **+15.9°** down the Kalotte. A single tilt constant would visibly shear the windows in the apex, the foot, and the cuff — three of the twenty-one zones. For the Krempe, motifs are placed on *concentric circles in a horizontal plane* instead — the prism axis is vertical, i.e. the light windows become drillings, which is the easiest possible LED geometry and a bonus for Stage 2.
 
 ---
@@ -678,13 +687,25 @@ Nothing below is implemented now; these are the interfaces Stage 1 must leave op
 | **P0 — resolve blockers** | Q1 doc rename; **Q2 height reconciliation (done — exact 745, §2.2)**; **Q3 motif arithmetic (done — 418/1701 derived, §2.1)**; Q5 geometry (done — §2.2) | height table sums to 745 mm; sectioned profile in `hat_parameters.json` |
 | **P1 — profile extraction** | Abrollung calibration → refine `r(z)` between Menghin's **four** anchors (A 166 mm @ 61, B 275 mm @ 160, **D 349 mm @ 312**, C 371 mm @ 445); validate against photo silhouette | ✅ **CLOSED.** The Abrollung route is **disproved** (not a development, §6.1); the profile is the **9 documentary constraints + `pchip`**, and the photo only corroborates it. Criterion restated in §12 |
 | **P2 — motif catalogue** | Count and classify motifs from the Abrollung → `symbols.json` + `zones.json`; implement primitives. **Menghin's per-zone tool-and-count table (§2.1) and the Fig. 22.1–22.4 per-zone plate set (`text/menghin_page28/29.txt`) have already given the *counting* half** — `data/symbols.json` and `data/zones.json` exist and verify. What is left is (a) the 8 primitives as code, (b) per-zone **placement** (start angle, ornament offset), with the Abrollung only confirming positions within a zone | `verify_calendar.py` reproduces every Menghin zone value (1783 total, 1739, 1701×2, 418, 21 zones, 745) |
-| **P3 — geometry kernel** | `build_goldhat.py`; one band end-to-end (start with z13) | an STL that visually matches the Abrollung strip for that zone |
+| **P3 — geometry kernel** | `build_goldhat.py`; one band end-to-end (start with z13) | ✅ **CLOSED.** `scripts/band_geometry.py` (profile, section, projection — no FreeCAD needed, self-checking) + `scripts/build_goldhat.py` (OCCT). **z13 builds as one valid closed solid**: vol 33,429 mm³, ⌀123.0 × 43.1 mm, and every section radius matches `r(z)` to 0.01 mm. Two bugs found and fixed on the way — see below |
 | **P3.5 — motif-form test** | emit the same band three ways (`relief` / `window` / `relief_window`), print all three, **look at them** (§6.3). ⚠️ **Do not wait for the full P3 catalogue to do this** — the coupon needs exactly one primitive (tool 15, the ⌀21 / 6-ring disc) and one zone's placement. Build those two things first and the coupons exist while the other 23 tools are still unwritten. | motif form chosen; `data/hat_parameters.json` `motif_form` set to a real value |
 | **P4 — full generation** | zones 1–19 + the Krempe plate split into 3 sectors → `stl/` | all 22 STLs watertight, `verify_geometry.py` passes |
 | **P5 — print & fit** | 3-band fit test, then full print, assembly | stacked cone is straight, 745 mm ± 3 mm, joints tight |
 | **P6 — (later) Stage 2** | LEDs, M5 firmware | out of scope here |
 
 P0 and P1 are cheap and de-risk everything. P2 is the long pole and the only real research effort.
+
+### 11.1 P3 results — three things the first band changed
+
+**1. The steepest wall is not the cuff — it is the Kalotte's bottom edge (38.9° at z=738).** Measured by the kernel's local-derivative check (see the §2.2 correction). The print strategy previously said the cuff was steepest at 27.8° with „17° of margin“; the real margin is **6.1°**, and it is at **z19**, not the cuff. Still support-free — but now known rather than assumed, and **z18/z19 become the bands to watch at P5**.
+
+**2. A 1 mm-proud Trennband ridge cannot simply butt against the wall.** The first build produced **two disjoint solids**. A collar whose inner end stops exactly on the outer surface meets the band along a **single circle** — a line contact, which OCCT cannot fuse into one solid and which would be a knife-edge joint on the print regardless. Fix: `embed=0.6` mm carries the ring *into* the wall so the fuse sees a real overlapping face. The registration lip had the identical defect for the identical reason (its outer face sits only 0.25 mm inside the wall), and the same fix.
+
+> **Reusable rule for the whole generator: every added feature must OVERLAP the wall, never butt it.** A butt joint is a line contact, and OCCT will silently return a multi-solid shape that `isValid()` still calls valid.
+
+**3. The first STL was 23 MB for one band — ~500 MB across 22.** Two causes: the section was 96 segments, and `Shape.exportStl()` takes no tolerance argument, so OCCT fell back to its default circle resolution (≈478 segments around a ⌀123 ring). Now `n=48` plus an explicit `tessellate(0.05)`: **91,704 → 24,754 facets and 23 MB → 1.2 MB**, with the volume unchanged to 0.001 % (33,429.2 vs 33,429.0 mm³), so no geometry was lost. At a 0.16 mm layer a 0.05 mm chord deviation is invisible. `stl/` is **gitignored** — the data files already describe the geometry, so committed binaries would be churn, not provenance.
+
+⚠️ **Operating note — an OCCT call can wedge FreeCAD without crashing it.** A `makeShapeFromMesh` on that 23 MB mesh left FreeCAD's MCP RPC thread blocked: the socket accepted connections and never answered, while the process stayed alive with no coredump and no journal entry. Recovery was `kill` + relaunch, and it was safe only because nothing unsaved was open (verified first — no `.FCStd` written for 6 h). Diagnosis, if it happens again: `ss -ltnp | grep 9875` tells “process gone” from “RPC thread busy”. The kernel returns a `Part.Shape`, so screenshots and checks need **no STL round-trip at all** — that was the mistake.
 
 ---
 

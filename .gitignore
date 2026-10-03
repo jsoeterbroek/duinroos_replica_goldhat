@@ -1,3 +1,9 @@
 *.FCBak
 __pycache__/
 *.pyc
+
+# Generated geometry. Reproducible from data/ + scripts/ in seconds:
+#   python3 scripts/build_goldhat.py
+# Committing 22 bands x ~1.2 MB of binary that the data already describes is
+# churn, not provenance.
+stl/

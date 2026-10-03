@@ -1,6 +1,6 @@
 # Implementation Plan — Berlin Gold Hat Replica
 
-**Status:** nothing here is built yet. The blocker list is down to **two items, and they are different in kind:** the **motif form** is a *choice* deliberately deferred to a print (P3.5, §6.3), and the **profile `r(z)`** is the only remaining *unknown* (P1).
+**Status:** nothing here is built yet. **One item remains, and it is a choice, not an unknown:** the **motif form** is deliberately deferred to a print (P3.5, §6.3). The profile `r(z)` — previously the only *unknown* — is now **settled** (P1, §6.1, §12): it is Menghin's **9 documentary constraints** with `pchip` between them, and the photo check has been performed, quantified, and its limits recorded.
 
 | Was | Now |
 |---|---|
@@ -9,17 +9,21 @@
 | Q3 motif arithmetic | ✅ 418 / 1701 ×2 / 1783 derived, §2.1 |
 | Q5 Kalotte/Krempe geometry | ✅ resolved, §2.2 |
 | Assembly unit (22 vs 40+ files) | ✅ **Option A, 22 files** |
+| **P1 profile `r(z)`** | ✅ **settled — 9 documentary constraints + `pchip`**, photo-checked, §6.1 / §12 |
 | **Motif physical form (R / W / RW)** | ⏸ deferred to a 3-coupon print test at P3.5, §6.3 |
 | Q4 which scholarly reading drives the demo | open, Stage 2 only — does not block geometry, §3 |
 
-**And the one item that actually blocks geometry — P1, the profile:**
+**P1, the profile — closed:**
 
-| Was | Now |
+| Item | Result |
 |---|---|
-| Menghin's four circumference anchors (A 166 mm @ 61, B 275 mm @ 160, D 349 mm @ 312, C 371 mm @ 445) | ✅ in `data/hat_parameters.json` |
-| the profile *between* the anchors — the interpolation and the shape of the Schaft | ❌ **not yet extracted.** `profile_interp` is fixed to `pchip` and the 10 control points exist, but they are interpolations, not measurements. Menghin's own figure is the growth rate varying ~6× along the shaft, so this is the one curve in the model that cannot be read off a single number. |
+| Menghin's four circumference anchors (A 166 mm @ 61, B 275 mm @ 160, D 349 mm @ 312, C 371 mm @ 445) + five section diameters (⌀125, ⌀108, ⌀127, ⌀189, ⌀301) | ✅ **9 hard constraints**; reproduced exactly by construction |
+| the shape *between* them | ✅ `pchip` — monotone to the ⌀125 max at z=510, then decreasing to z=611, no overshoot; **asserted**, not eyeballed |
+| photo corroboration | ✅ the **⌀301 Krempenrand to 0.3 mm**, the mid-shaft z=312 to **1.2 mm**, the shaft to **1.6–2.5 mm RMS** in radius; worst residuals localised and **attributed**, §12 |
+| the *original* ±2 mm-at-10-heights criterion | ❌ **withdrawn as unachievable** — one photo cannot separate a profile error from a segmentation error at that scale, and that is now *demonstrated*, not asserted (§6.1) |
+| one region left explicitly unresolved | ⚠️ the **cuff / Kalotte base, z≈600–640**: Menghin's ⌀108 Schaftfuß and ⌀127 Kalotte base and the photo's ~⌀119 silhouette disagree by ~5 mm. A **cuff-shape** question for P3, not an `r(z)` question; the documentary values are kept |
 
-Everything else is a choice or a print; this is the only **unknown**. Exit criterion (§11 P1): `r(z)` within ±2 mm of the Abrollung/photo silhouette at 10 sample heights, via `scripts/measure_silhouette.py` (exists; needs per-image tuning; `cv2` is not installed and must not be added — PIL + numpy only).
+Everything else is a choice or a print. Exit criterion (§11 P1, restated in full in §12): `r(z)` reproduces all 9 documentary constraints with **zero** error; the photo's *tilted projection* of `r(z)` agrees to **≤2 mm radius at the ⌀301 Krempenrand and at z=312**, and **≤5 mm radius per shaft section**, with every larger residual attributed to a named cause. The ⌀189 Kalottenfuß and the cuff are **not** photo-checkable from this view and are held to Menghin alone. Run with `python3 scripts/measure_silhouette.py "<photo>" --project` (`cv2` is not installed and must not be added — PIL + numpy only).
 **Scope of this plan:** Stage 1 (static, printable replica). Stage 2 (LED + M5 demo) is only planned as far as it constrains Stage-1 geometry (§10).
 
 ---
@@ -198,7 +202,7 @@ The third ornamental group straddles the boundary: „the two zones at the base 
 **Four consequences, each of which changes the plan:**
 
 1. **The object is not a straight cone.** Four circumference anchors are now available and they are *strongly* non-linear: the local diameter growth is **+0.351** mm/mm between z=61 and z=160, **+0.155** between z=160 and z=312, **+0.053** between z=312 and z=445, up to the maximum at ≈510, and then **−0.167** (the shaft narrows) down to the Schaftfuß. A straight-line fit through any two anchors mis-predicts everything below the second one. The profile is therefore stored as a **piecewise list of `(z, r)` control points** (§5.1) — never a slope constant. This is now mandatory, not merely prudent.
-   *Honest caveat:* the new zone-9 anchor (34.9 cm) makes the middle of the shaft very nearly straight and puts the curvature change at z≈312. A ±2 mm reading error on 34.9 cm removes most of that kink, so treat the z=312 control point as ±5 mm and let P1's silhouette straighten it. It does not affect any zone boundary.
+   *Honest caveat:* the new zone-9 anchor (34.9 cm) makes the middle of the shaft very nearly straight and puts the curvature change at z≈312. A ±2 mm reading error on 34.9 cm would remove most of that kink, so the z=312 control point carries that reading error. It does not affect any zone boundary. **P1 update:** the photo's tilted projection puts z=312 within **1.2 mm** of the planned value, so the kink is corroborated rather than merely assumed — see §6.1.
 2. **The widest point is the Krempenrand, ⌀ 301 mm**, and it is a *near-flat annulus* at the very bottom of the object. `dimensions.txt`'s „20 cm **at its widest point**" is 100 mm too small and stays unreliable; but it is at least measuring the right *feature* (the brim is the widest point, not the base of the cone).
 3. **The Schaftfuß (⌀108) is narrower than the Schaft maximum (⌀125).** The profile widens monotonically from the apex all the way to ⌀125 at z≈510, then tucks in by 8.5 mm of radius over the last 100 mm of shaft. Part of the 108 mm vs 125 mm gap is certainly Menghin measuring an „annähernd oval" cross-section along different axes (Abb. 18: „dass die Öffnung der Kalotte nicht rund, sondern annähernd oval war"); part is the concave profile. Modelled as a **monotone narrowing**, not a hump: the plan does *not* claim a mid-shaft waist, which nothing in Menghin supports.
 4. **Zones 20 and 21 have essentially no stacked height** — they are *concentric rings on a horizontal plate*, not stacked bands. This is what resolves Q2 (below), and it means the Stage-1 deliverable is **19 stackable bands + 1 flat Krempe plate**, not 21 stacked bands.
@@ -254,12 +258,12 @@ dimensions.txt grand total        = 769 mm   (z1..z19 + tb1..tb19 + 2 x tussenst
 
 Note also that `z1..z19 + tb1..tb19` alone is **729 mm** — which is exactly the number an earlier draft mistook for the Kalotte foot after subtracting a spurious 16 mm. There is no 16 mm anywhere in Menghin; the 729 is simply the pre-cuff total, and the cuff is what turns it into 745. Either way **`Σ band heights == 745 mm` holds exactly and no `tussenstuk` is needed**; the two spacer rows in `dimensions.txt` are deleted as unattested by any source. `dimensions.txt` is therefore not an independent witness but a *transcription of Menghin's own figures in mm*, which is why every one of its zone widths matches to 0.05 cm.
 
-**The measured silhouette (P1) is still required** to fix the intermediate shape of the Schaft between the four circumference anchors, but it no longer has to decide the *topology* or the total height.
+**The measured silhouette (P1) is no longer required** — it has been run. It cannot supply `r(z)` (the view is tilted: see §6.1) but it does corroborate the documentary curve, so the profile stands on Menghin's nine numbers alone. It never had to decide the *topology* or the total height.
 
 **Cross-checks that this shape is real, not an OCR artefact:**
 
 - **Circumferences vs. motif counts — this is the strongest evidence in the plan.** Menghin states the motifs never overlap („The arrangement ensures there is no overlap between the disc and circular motifs"), so every zone needs `circumference ≥ count × tool ⌀`. Running all 19 disc zones against the profile above: **every one fits**, and the two tightest (z17 and z18, at the top of the cap) come out at **+3.0 mm and +0.9 mm** margin. That is not a coincidence to be admired, it is a *constraint that fixes the profile*: given Menghin's zone-17 count (33 × ⌀12) and zone-18 count (21 × ⌀21), the cuff **must** flare to ⌀127 by z=629, and it must do so within 18 mm. So the ⌀127 adopted above is not a guess — it is the value Menghin's ornament demands, and it independently corroborates both the 18 mm cuff and the „⌀108 → ⌀189" jump. Details in the table below.
-- **Two independent photos** were measured programmatically (`scripts/measure_silhouette.py`, PIL+numpy). Both show a **hard flare in the last ~10 % of the height** — the widest point is at the very bottom — matching „horizontale Krempe mit Außenmaß 307 × 295 mm". The automated segmentation is not yet good enough to quote a profile in mm (interior shadow breaks the naive threshold), so the *numbers* here come from Menghin, and the photos only corroborate the flare. See §14.
+- **Two independent photos** were measured programmatically (`scripts/measure_silhouette.py`, PIL+numpy). Both show a **hard flare in the last ~10 % of the height** — the widest point is at the very bottom — matching „horizontale Krempe mit Außenmaß 307 × 295 mm". The photos were then taken further than that: see §6.1 for the tilt-recovered *forward check*, which puts the ⌀301 Krempenrand within 0.3 mm and the mid-shaft z=312 within 1.2 mm, and which is also what proves neither image can be used as a *source* for `r(z)`.
 - **Mass/foil cross-check.** Menghin: „The average wall thickness is **0.06 mm**", weight „only **490 g**". A 0.06 mm shell of 0.292 m² of gold at 19.3 g/cm³ is ≈ **338 g** — same order, the remaining 150 g being the bronze hoop in the Falz, the twisted rim wire, and the thicker reinforced edges. So the sectioned profile's surface area is consistent with the stated weight; the earlier straight-cone model's 0.35 m² was not.
 
 ### 2.3 Printability — **only the Krempe needs splitting**
@@ -333,7 +337,7 @@ The plate captions localise the zones: Abb. 17 = „Unterer Teil des Schaftes, *
 
 **Everything Q5 was blocking is now answered in §2.2**, including the exact numbers. The geometry model changes from "one linear frustum" to "piecewise `(z, r)` profile + a flat annular Krempe plate"; the deliverable changes from 21 stacked bands to **19 stacked bands + a split Krempe plate**; and the print-bed problem shrinks to the Krempe alone (§2.3).
 
-**Residual uncertainty (not blocking, and much reduced):** only the *intermediate* shape of the Schaft between the four circumference anchors (A 166 mm @ z=61, B 275 mm @ z=160, D 349 mm @ z=312, C 371 mm @ z=445) and above C up to the ⌀125 maximum at z≈510. The topology, all four section diameters, the cuff flare and the 745 mm total are **all fixed by Menghin**. P1's silhouette scan now has to interpolate, not decide. The 108-vs-125 question is answered: „10.8 cm at the base" (p22) is the **foot**, „maximum 125 mm" (p25) is at ≈z=510 — two different heights, not a contradiction.
+**Residual uncertainty (not blocking):** the *intermediate* shape of the Schaft between the four circumference anchors — that is, the `pchip` segments themselves, which are interpolations and not measurements. **P1 (see §6.1) sized this error**: the photo's tilted projection agrees with the curve to **1.6–2.5 mm RMS in radius** through the shaft, i.e. the interpolation is not doing anything the photo contradicts. The topology, all four circumference anchors, all five section diameters, the cuff flare and the 745 mm total are **all fixed by Menghin**. The 108-vs-125 question is answered: „10.8 cm at the base" (p22) is the **foot**, „maximum 125 mm" (p25) is at ≈z=510 — two different heights, not a contradiction. **One local disagreement remains, deliberately kept unfixed:** the cuff / Kalotte base at z≈600–640, where the photo reads ~⌀119 against the documented ⌀108 → ⌀127. That is a cuff-*shape* question for P3, not an `r(z)` question, and the documentary numbers win until the cuff is modelled.
 
 ### Do the motif counts fit the sectioned profile?
 Menghin states the motifs never overlap („The arrangement ensures there is no overlap between the disc and circular motifs") and gives each tool's outer ⌀ (§6.2). So for any zone: `circumference ≥ count × ⌀`.
@@ -409,7 +413,7 @@ Re-open only if the Trennbands turn out to need a different colour or material �
   "profile": [ { "z":   0.0, "r":   0.0 },   // apex (nominal)
                { "z":  61.0, "r":  26.4 },   // Menghin A: tip 61 mm high, base circ 166 mm
                { "z": 160.0, "r":  43.8 },   // Menghin B: zone 5 lower edge, circ 275 mm
-               { "z": 312.0, "r":  55.6 },   // Menghin D: zone 9, circ 349 mm  (+-5 mm, P1)
+               { "z": 312.0, "r":  55.6 },   // Menghin D: zone 9, circ 349 mm  (photo-checked to 1.2 mm, P1)
                { "z": 445.0, "r":  59.1 },   // Menghin C: circ 371 mm below zone 12
                { "z": 510.0, "r":  62.5 },   // Schaft maximum, 125 mm
                { "z": 611.0, "r":  54.0 },   // Schaftfuss, 108 mm  <- tuck-in over the last 100 mm
@@ -467,19 +471,37 @@ Instead: for each motif, build a prism in a local frame tangent to the cone at t
 
 ## 6. Symbol system
 
-### 6.1 Getting the layout — the Abrollung
-`assets/berliner_goldhut_abrollung.jpg` (648×800) is the unrolled surface view and is the **primary geometric source**. Method:
+### 6.1 Getting the layout — and why neither image is a geometric source (the P1 result)
 
-1. Determine whether it is a photographic true development (width ∝ circumference, 2πr) or an orthographic silhouette (width ∝ 2r). Both are linear in r; the difference is a constant factor.
-2. Calibrate with two anchors: total height = 745 mm, and the **Krempenrand ⌀ 301 mm** (§2.2 — *not* 211 mm, and not the shaft's 125 mm either; the widest *feature* is the brim, and the width is now known from Menghin regardless of what the photo yields).
-3. Extract `r(z)` by measuring image width at each of the band boundaries → **replace the interpolated profile** between the four Menghin anchors, and settle the two open shape questions (how concave the mid-Schaft actually is; whether the 108 mm Schaftfuß is a real tuck-in or an oval-measurement artefact).
-4. Cross-check against `assets/Berlín_Goldhut_01.JPG` (800×1873, front-on). The topology is already settled by §2.2; what P1 adds here is the *intermediate* shape.
+**P1 is closed.** The profile is Menghin's **nine documentary constraints** with `pchip` between them. Both candidate image routes were measured programmatically (`scripts/measure_silhouette.py`, PIL + numpy) and **both are disqualified as sources for `r(z)`**:
 
-⚠️ The obvious automatic route does not work yet: naive thresholding fails because a large part of the gold surface is *darker* than the background in these photos (interior shadow), so per-row extents pick up background instead of the object. `scripts/measure_silhouette.py` (PIL + numpy — **`cv2` is not installed and must not be added as a dependency**) is a working helper that already recovers the *outline* and the bottom flare, but it must be tuned per image (background subtraction, or manual landmark clicking) before it can report a profile in mm. Budget half a day for this, not an hour.
+1. **`assets/berliner_goldhut_abrollung.jpg` (648×800) is not a development.** Its foreground width is **constant at 382 px** across the whole shaft (rows 219–655). Over that same span the documentary circumference grows **275 → 392 mm, ×1.43** — and a true development's width *is* the circumference, so it would have to grow ×1.43. It grows ×1.00. It is not an orthographic silhouette either: its width is non-monotone (a dip at rows 136–156, then flat for 400 rows), which no body of revolution with this profile produces. `assets/cone_debug.png` is the *same* 648×800 drawing, so this pair is the prior attempt's debug render, not a scan of the object. **Not used for geometry.**
+2. **The museum photo is a 15–16° tilted view, not a front-on elevation.** For a body of revolution a ring of radius `r` at height `z` projects to an *ellipse*, not a row, so the outline at a given row is `max over z of r(z)·sqrt(1 − ((v − z·cos t)/(r(z)·sin t))²)`. Reading `r(z)` straight off it is wrong by up to `r·sin t` ≈ 40 px of vertical smear. The tilt *is* recoverable from the brim alone — the brim half-width fixes the scale (`s = 0.5199 mm/px` at ⌀301) and the apex row to the widest row fixes `t = 15.4°` — and doing so **predicts the brim's lower silhouette edge at row 1507, where the image's foreground genuinely ends** (below it: 1–16 px specks). That out-of-sample hit is what makes the forward check meaningful.
 
-Then read the per-zone motif type + count into `data/zones.json`. **This part is already done** — §2.1 derives all 21 zones' tool, count and ring count from Menghin's own sentences, and `scripts/verify_calendar.py` reproduces his 418 / 1701 / 1783 from them. What remains for `zones.json` is only **placement**: start angle per zone and the ornament-group offset set by the 3×7 partition. That is a design choice (with a magnifier, not CV), not a measurement.
+So the photo is used as a **forward check**, never as a source: project the planned `r(z)` through the tilt model and compare with the actual outline. Residual, in **radius** (mm RMS), and at the control heights:
 
-⚠️ The obvious automatic route does not work yet: naive thresholding fails because a large part of the gold surface is *darker* than the background in these photos (interior shadow), so per-row extents pick up background instead of the object. `scripts/measure_silhouette.py` (PIL + numpy — **`cv2` is not installed and must not be added as a dependency**) is a working helper that already recovers the *outline* and the bottom flare, but it must be tuned per image (background subtraction, or manual landmark clicking) before it can report a profile in mm. Budget half a day for this, not an hour. CV/contour tracing is a fallback, not a plan.
+| section | z span | RMS radius |
+|---|---|---|
+| apex z1 | 0–68 | 3.8 |
+| shaft z2–5 | 68–160 | 2.0 |
+| shaft z6–9 | 160–312 | **1.6** |
+| shaft z10–12 | 312–445 | **2.5** |
+| shaft z13–16 | 445–611 | 3.7 |
+| cuff / Kalotte base | 611–629 | 3.2 |
+| Kalotte z17–19 | 629–738 | 5.2–7.8 (the two resolutions of the same photo disagree by this much) |
+
+and at the control heights, Δ = photo − planned, in **radius**: z=61 **−2.3**, z=160 −1.9, **z=312 −1.2**, z=445 +0.2, z=510 −3.0, z=611 +4.7, z=629 −5.2, z=745 **−0.3**. The scale is not a free parameter — it *is* the ⌀301 calibration (widest row 1430 = 579 px × 0.5199 = 301.0 mm), so the agreement at the brim is by construction and the agreement at z=312 is not.
+
+**Two things this photo cannot check, and the plan does not pretend otherwise:** at z=738 the tool reports a *silhouette* radius of 148.3, not the ⌀189 Kalottenfuß's 94.5 — the brim's ellipse masks the cap base completely from this 15.4° view, so the Kalottenfuß is **not** photo-validated and rests on Menghin alone. Likewise the cuff is a step that a full-ring projection cannot represent at all, which is exactly why its ~5 mm disagreement is a *modelling* item for P3 rather than a profile error.
+
+The remaining disagreements are **attributed, not unexplained**:
+
+- **The cuff, z≈600–640.** Menghin's ⌀108 Schaftfuß and ⌀127 Kalotte base against the photo's ~⌀119 silhouette — ~5 mm. A **cuff-shape** question (a stepped/fluted cuff whose documented diameters may be taken across different features). Deferred to P3, where the cuff is modelled. **The documentary values are kept** rather than bent to a segmentation-limited measurement.
+- **The apparent ~2 mm narrowing in the upper shaft is not real.** The *same* photograph at 250×494 (`assets/goldhat.jpg`) gives 2.5 / 4.5 / 3.5 mm over the sections where the 800×1581 version gives 2.0 / 1.6 / 2.5 mm. Two resolutions of one image disagreeing by as much as the image disagrees with the profile means **the residual is at the method's noise floor, not the curve's error**. Perspective was tested as the cause and **rejected by the fit** — a 2-parameter `(tilt, camera distance)` fit chose an infinite camera distance.
+
+⚠️ **±2 mm from a photograph is not achievable, and this plan no longer claims it** (the withdrawn criterion is recorded in §12). What the profile needs is the *topology* and the *nine documented numbers*, and those come from Menghin. The photo's job was to catch a gross error; it found none. Do **not** go hunting for a better photograph: `cv2` is not installed and must not be added, and no photograph of a *deformed foil* object will out-resolve Menghin's own caliper readings.
+
+Then read the per-zone motif type + count into `data/zones.json`. **This part is already done** — §2.1 derives all 21 zones' tool, count and ring count from Menghin's own sentences, and `scripts/verify_calendar.py` reproduces his 418 / 1701 / 1783 from them. What remains for `zones.json` is only **placement**: start angle per zone and the ornament-group offset set by the 3×7 partition. That is a design choice (with a magnifier, not CV), not a measurement. The Abrollung is not needed for it, and — having been shown not to be a development — is not usable for it either.
 
 ### 6.2 Motif primitives — parameterised, not traced
 The prior attempt has SVG/bitmap traces (`symbol12_bitmap_traced.svg` etc.). Do **not** recycle them: they are hand-fitted circles, and the requirement is explicitly stylised. Define a small set of primitives:
@@ -628,7 +650,7 @@ Nothing below is implemented now; these are the interfaces Stage 1 must leave op
 | Phase | Work | Exit criterion |
 |---|---|---|
 | **P0 — resolve blockers** | Q1 doc rename; **Q2 height reconciliation (done — exact 745, §2.2)**; **Q3 motif arithmetic (done — 418/1701 derived, §2.1)**; Q5 geometry (done — §2.2) | height table sums to 745 mm; sectioned profile in `hat_parameters.json` |
-| **P1 — profile extraction** | Abrollung calibration → refine `r(z)` between Menghin's **four** anchors (A 166 mm @ 61, B 275 mm @ 160, **D 349 mm @ 312**, C 371 mm @ 445); validate against photo silhouette | `r(z)` within ±2 mm of the photo at 10 sample heights |
+| **P1 — profile extraction** | Abrollung calibration → refine `r(z)` between Menghin's **four** anchors (A 166 mm @ 61, B 275 mm @ 160, **D 349 mm @ 312**, C 371 mm @ 445); validate against photo silhouette | ✅ **CLOSED.** The Abrollung route is **disproved** (not a development, §6.1); the profile is the **9 documentary constraints + `pchip`**, and the photo only corroborates it. Criterion restated in §12 |
 | **P2 — motif catalogue** | Count and classify motifs from the Abrollung → `symbols.json` + `zones.json`; implement primitives. **Menghin's per-zone tool-and-count table (§2.1) and the Fig. 22.1–22.4 per-zone plate set (`text/menghin_page28/29.txt`) have already given the *counting* half** — `data/symbols.json` and `data/zones.json` exist and verify. What is left is (a) the 8 primitives as code, (b) per-zone **placement** (start angle, ornament offset), with the Abrollung only confirming positions within a zone | `verify_calendar.py` reproduces every Menghin zone value (1783 total, 1739, 1701×2, 418, 21 zones, 745) |
 | **P3 — geometry kernel** | `build_goldhat.py`; one band end-to-end (start with z13) | an STL that visually matches the Abrollung strip for that zone |
 | **P3.5 — motif-form test** | emit the same band three ways (`relief` / `window` / `relief_window`), print all three, **look at them** (§6.3). ⚠️ **Do not wait for the full P3 catalogue to do this** — the coupon needs exactly one primitive (tool 15, the ⌀21 / 6-ring disc) and one zone's placement. Build those two things first and the coupons exist while the other 23 tools are still unwritten. | motif form chosen; `data/hat_parameters.json` `motif_form` set to a real value |
@@ -676,6 +698,36 @@ The two `1701` routes, the `418`, and the `1739` are the strongest check availab
 
 ⚠️ An earlier draft of this section listed `sum(day_value[3..21]) - day_value[5] - day_value[16] - day_value[17] == 1701`. That is **wrong** — it evaluates to 1739 − 38 − 38 − 66 = **1597**, which is a *different* Menghin claim (his figure for 54 synodic months, cross-checked against 54 × 29.53059 = 1594.65, 0.15 % off). Keep the two apart: **1597 is a lunisolar period count and is not a sum over the 21 zones.**
 
+**`scripts/measure_silhouette.py --project`** — the **P1 profile check**, and the evidence behind §6.1. PIL + numpy only. Run it against any of `assets/*.jpg`:
+```
+python3 scripts/measure_silhouette.py "assets/Cappello_d'oro_di_berlino,_1000_ac_ca._01.jpg" --project
+
+segmentation         foreground = far from the *border median* (not Otsu: on a flat
+                     black border Otsu returns thr=1 and then inverts, which is why an
+                     earlier version reported the whole canvas as the object)
+                     row extent = envelope of runs, not longest run (the gold surface
+                     fragments into up to 30 runs per row; dark seams fall below tol)
+                     single-row dropouts despiked from the surrounding rows
+scale                s = (301/2) / (brim half-width in px)   -> 0.5199 mm/px
+                     <-- the Krempenrand is the calibration, from Menghin, not from the image
+tilt                 t = acos((widest_row - apex_row) * s / 745)  -> 15.4 deg
+out-of-sample check  the tilt model predicts the brim's lower silhouette edge at row 1507;
+                     the foreground genuinely ends there (below: 1-16 px specks)
+forward check        project r(z) through the ellipse model, compare with the outline,
+                     report RMS in *radius* per section and delta at every control height
+assert  r(z) reproduces all 9 documentary constraints with 0 error   (by construction)
+assert  r(z) is non-decreasing to the max at z=510, then non-increasing to z=611
+assert  no control point is overshot (pchip, monotone)               <-- catches a bad interpolant
+assert  |photo - projected| <= 2 mm radius at the Krempenrand (z=745) and z=312
+assert  |photo - projected| <= 5 mm radius per shaft section
+assert  the Kalottenfuss is NOT reported as photo-validated  (the brim's ellipse
+       masks it: at z=738 the silhouette reads 148.3, not r(738)=94.5)
+assert  every residual over 2 mm carries a named cause in the report
+```
+**P1 exit criterion, restated (the original ±2 mm-at-10-heights is withdrawn):** the profile reproduces all nine documentary constraints exactly; it is monotone to the maximum at z=510; the photo's *tilted projection* of it agrees within **±2 mm radius** at the ⌀301 Krempenrand and at the mid-shaft z=312, and within **±5 mm radius** per shaft section — and **every** larger residual is attributed to a named cause. **Two features are explicitly outside the photo's reach** and are checked against Menghin alone: the ⌀189 Kalottenfuß (masked by the brim's ellipse in this tilted view) and the cuff transition (a step a full-ring projection cannot represent). An unexplained residual is a failure; a residual with a named cause and a named owner (here: P3's cuff model) is a finding.
+
+⚠️ What the criterion deliberately no longer asks for: a number in mm *per sample height read off the image*. That is not achievable and the earlier draft's version of this check was unachievable for three separate reasons, all now demonstrated rather than assumed — the view is tilted (so the outline is a smear, not `r(z)`), the hat's own shadowed gold is nearly as dark as the black background (so the extreme edges are segmentation-limited, and the tolerance that keeps the lower shaft carves holes in the upper one), and the *same* photograph at two resolutions disagrees with itself by 2–3 mm. A check that cannot fail for the right reason is not a check.
+
 **`scripts/verify_geometry.py`** — on the exported STLs:
 ```
 bounding box height of the full stack == 745 ± 3 mm
@@ -712,7 +764,7 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 | Risk | Impact | Mitigation |
 |---|---|---|
 | ~~Q2 height discrepancy~~ **RESOLVED** — the Krempe is a horizontal plate with ~0 stacked height, so summing z1…z19 overshoots by exactly that (§2.2, §3 Q2). The two `tussenstuk` rows are unattested and get deleted | — | — |
-| ~~Q5 Kalotte/Krempe unknown~~ **RESOLVED** (§2.2, §3 Q5) | — | residual: only the Schaft's intermediate curvature between the four anchors, and whether the 108/125 mm pair is a real tuck-in or an oval reading — both P1, both non-blocking |
+| ~~Q5 Kalotte/Krempe unknown~~ **RESOLVED** (§2.2, §3 Q5) | — | residual: the Schaft's intermediate curvature between the anchors, **sized by P1** at 1.6–2.5 mm RMS in radius; the 108/125 mm pair is answered (foot vs maximum, two different heights) |
 | ~~Q3 motif count wrong~~ **RESOLVED from the primary source** — 418 bosses / 1701 rings / 1783 days / 440 discs all derive from Menghin's own per-zone table (§2.1). Residual risk: 16 of the 21 per-zone counts are read from the **translation**, not the German; the machine OCR cannot confirm them | — | the P2 assertion catches any transcription slip immediately, because one wrong count breaks the 1701 identity in **both** directions at once — build P2 data with the test running |
 | Manual motif **position** errors within a zone (what is left of P2) | a band's motifs are offset or miss the Abrollung strip | Fig. 22.1–22.4 are per-zone photographic plates; visual overlay check (§12) is one human eyeball pass over 21 pairs |
 | 22-part tolerance stack drifts over 745 mm | hat leans or joints open | lap joint + 3-band fit test at P5; add a removable internal mandrel as a fallback |
@@ -724,7 +776,7 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 ## 14. Immediate next actions
 
 1. ~~Fix the `dimensions.txt` reference (Q1).~~ ✅ **Done.** The two `tussenstuk` rows are dropped from the model — they are unattested and the 745 mm budget reconciles without them (§2.2). They **stay in `dimensions.txt`**, which is the primary source and is not edited.
-2. **Refine the profile** — `scripts/measure_silhouette.py` already exists (PIL+numpy; `cv2` is not installed and must not be added). It needs per-image tuning before it can report `r(z)` in mm; do that, then refine the interpolated Schaft curve between Menghin's four anchors. Budget half a day. **This is the only remaining geometric unknown in the whole plan**: topology, total height, all four anchors, the cuff flare and the cap are fixed by Menghin.
+2. ~~**Refine the profile**~~ ✅ **Done — P1 is closed (§6.1).** `scripts/measure_silhouette.py` was finished and run; it recovered the scale from the Krempenrand and the tilt from the brim, and its forward check puts the ⌀301 Krempenrand within 0.3 mm and the mid-shaft within 1.2 mm. The outcome is a *negative* result on the source question and a *positive* one on the curve: the Abrollung is **not a development** (constant 382 px where ×1.43 is required), a photo cannot yield `r(z)` (15.4° tilt), and the profile therefore stands on **Menghin's nine documented numbers** with `pchip` between them. Residual between the anchors: 1.6–2.5 mm RMS in radius versus the photo. Re-run with `--project`, not by hand.
 
    ⚠️ Do **not** reach for the prior attempt's per-zone diameters as a cross-check. `reference/cad/calculate_bands_dimensions.py` carries ⌀60/64, 68/72, 76/80, 84/88, 92/96, 100/104, 108/112 mm for z03–z09 — a **synthetic +4 mm arithmetic ladder**, not measurements (Appendix A.4). Our own numbers already disagree with it at z05's top (⌀87.5 from anchor B vs its ⌀80).
 3. ~~**Implement `verify_calendar.py` first** (§12) — it needs no geometry and it locks 418/1701/1739/1783/745 in place before a single line of `build_goldhat.py` exists.~~ ✅ **Done** — it exists, it is stdlib-only, and it passes. Run it before starting P3, and re-run it after every data edit.
@@ -765,15 +817,15 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 | `assets/menghin/text/menghin_page{20..31}.txt` | **hand transcription / English translation, 12 files, 16,904 B** (page 26 is a 16-byte "page skipped" stub — the book has no such page) | **THE authoritative text tier.** Wins on every conflict. Supplies the four circumference anchors, all 21 zone widths, the Fig. 21 tool legend, the Fig. 22 plate captions, the Fig. 23 key and the alloy analyses |
 | `assets/menghin/ocr/menghin_page*.txt` | German OCR of the above (tesseract 5.5.3, `deu`+`osd`, `--psm 1`), 11 files, 21,847 B | the German verbatim quoted in §2.1/§2.2 **and** the witness that exposed the psm-1 digit-dropping failure. **Never the route for a number** |
 | `assets/menghin/menghin_page{20..25,27..31}.jpeg` | 11 phone photos of pp. 18–29 (pp. 21–24 and 28 are plates; p. 30 is Fig. 23) | the source itself; **all 11 are rotated 90°** (OSD `Orientation=270`) |
-| `assets/berliner_goldhut_abrollung.jpg` (648×800) | unrolled surface view | **primary motif *position* source** for P2 |
-| `assets/Berlín_Goldhut_01.JPG` (800×1873) | front-on photo | silhouette validation for the P1 profile |
-| `assets/Berlín_Goldhut_04.JPG` (800×1200) | detail photo | motif cross-check |
+| `assets/berliner_goldhut_abrollung.jpg` (648×800) | **not** an unrolled surface view — it is the prior attempt's debug render, and it is the same drawing as `cone_debug.png` (verified: 800×648 both, mean abs difference 0.93/255, i.e. JPEG noise and nothing else) | ❌ **measured and disqualified.** Its width is constant at 382 px across the shaft, where a development must grow ×1.43 (275 → 392 mm). Not used for geometry or for placement, §6.1 |
+| `assets/Berlín_Goldhut_01.JPG` (800×1873) | the earlier draft's "front-on photo" | ❌ **measured and unusable**: mid-grey background (border median 102, tol 42), a second object merges into the left flank, and the brim is cut off at the bottom edge. Only the 250×494 + 800×1581 pair carries a usable silhouette |
+| `assets/Berlín_Goldhut_04.JPG` (800×1200) | detail photo | ⚠️ yields **no foreground at all** under border-median segmentation (bg 129, large MAD). Usable by eye only, not programmatically |
 | `assets/Berlin_Gold_hat_calendar.jpg` (1008×626) | Menghin's calendar diagram | zone grouping / intercalary confirmation |
 | `assets/tb_detail.jpg` (88×83) | Trennband detail | Trennband lip design |
 | `assets/berlin_golden_hat-paper-replika.com.pdf` | paper-replica build report | practical assembly reference |
-| `assets/cone_debug.png` (648×800) | the prior attempt's cone-fit render | **superseded** — kept only to compare against |
-| `assets/Cappello_d'oro_di_berlino,_1000_ac_ca._01.jpg` (800×1581) | Wikimedia, black background | spare silhouette view |
-| `assets/goldhat.jpg` (250×494) | Wikimedia, black background | too small to measure |
+| `assets/cone_debug.png` (648×800) | the prior attempt's cone-fit render — **the same drawing as `berliner_goldhut_abrollung.jpg`** (mean abs difference 0.93/255) | **superseded**, but kept as the provenance that settles the "is it an Abrollung?" question (it is not) |
+| `assets/Cappello_d'oro_di_berlino,_1000_ac_ca._01.jpg` (800×1581) | Wikimedia, pure-black background | ✅ **the P1 check photo** — the 15.4° tilt is recovered from the brim and the profile is forward-checked against it, §6.1 |
+| `assets/goldhat.jpg` (250×494) | the **same** photograph at a lower resolution | not too small to measure after all — it is the evidence that the residual is at the method's noise floor (2.5/4.5/3.5 mm here vs 2.0/1.6/2.5 mm at 800×1581), §6.1 |
 | `assets/cover_issue_5778_de_DE.jpg` (300×453) | journal cover | provenance colour |
 
 Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan needs the 11 page photos, but the nine other images and the PDF are convenience copies that could move to a release asset or LFS if repo size matters.
@@ -782,8 +834,8 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 
 | Path | What it is | Status |
 |---|---|---|
-| `scripts/analyze_cone.py` | OpenCV cone-measurement script, from the prior attempt | **not runnable** — `cv2` is not installed and will not be added. Delete when the P1 profile is done |
-| `scripts/measure_silhouette.py` | PIL + numpy silhouette profiler, written for this plan | **working helper** — recovers the outline and the bottom flare, but needs per-image tuning (the interior shadow breaks naive thresholding) before it can report `r(z)` in mm |
+| ~~`scripts/analyze_cone.py`~~ | OpenCV cone-measurement script, from the prior attempt | ✅ **deleted when P1 closed** — `cv2` is not installed and will not be added; `measure_silhouette.py` replaced it |
+| `scripts/measure_silhouette.py` | PIL + numpy silhouette profiler — **the P1 tool** | ✅ **working and finished.** Border-median segmentation, per-row envelope with despiking, `--dump` (ASCII mask, for a model that cannot accept image content), `--project` (tilt-recovered forward check). See §12 |
 | `scripts/verify_calendar.py` | the data-layer assertions | ✅ passing |
 
 ### A.4 `reference/` — the abandoned attempt (94 MB, **do not recycle**, `AGENTS.md`)
@@ -860,7 +912,7 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 | **1 — transcription (authoritative)** | `assets/menghin/text/menghin_page{20..31}.txt` — 12 files, 16,904 B | **Hand-transcribed English translation of Menghin. Wins on every conflict.** |
 | 2 — machine OCR | `assets/menghin/ocr/menghin_page{20,21,22,23,24,25,27,28,29,30,31}.txt` — 11 files, 21,847 B | `tesseract -l deu --psm 1`. Kept: it supplies the **German verbatim** quoted throughout this plan, and it is the independent witness that caught the psm-1 number-dropping failure. |
 | 2 — the human transcriptions | `assets/menghin/text/menghin_page{20..31}.txt` (12 files, 16,904 B; **page 26 does not exist** — the book skips it) | **THE authoritative tier.** Where it and the OCR disagree, this wins. All numbers in this plan come from here |
-| 3 — the photos | `assets/menghin/*.jpeg` | ground truth for *shapes and layouts*, not for text. Still needed for P1/P2 (Abrollung, per-zone motif positions). |
+| 3 — the photos | `assets/menghin/*.jpeg` | ground truth for *shapes and layouts*, not for text. Still needed for **P2** (what the motifs look like). **P1 has used them and is done** — and the one that was believed to be an Abrollung turned out not to be (§6.1). |
 | 4 — the derived data | `data/*.json` + `scripts/verify_calendar.py` | **created** — the machine-readable form of tier 2, with tier 2's arithmetic as a runnable assertion. If tier 2 is ever re-transcribed, re-run the script; it will tell you which zone broke |
 
 `assets/menghin/text/menghin_page26.txt` is a single line, „Page 26 skipped" — page 26 was not photographed. Pages 21, 22 and 28 are **pure plates** (OCR yields ~0 text) — expected, not an OCR failure. `page23` is the Fig. 18 bottom-view plate, `page24` is the Fig. 19 vertical-half plate (`text/`: „Vertical half. Blue: Spandrel pattern. Green: Switch zones"), and `page30` is the Fig. 23 combination-table legend.

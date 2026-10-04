@@ -1,5 +1,13 @@
 # Berlin Gold Hat — Demonstration Scenarios (Menghin 2000, 2010)
 
+> ⚠️ **SUPERSEDED — do not use for Stage 2.** This was the *prior attempt's* proposal.
+> It assumes ~3,400 individually-lit LEDs (≈61 A), a `zone→count` table that is
+> Schmidt-Kaler's 651 **ornament tally, not Menghin's day-values**, and the old
+> `5,16,17` intercalary set. Menghin's own scenario system (2010, pp. 47–63,
+> Figs 61.1–64.4) is transcribed into **`data/scenarios.json`** and checked by
+> **`scripts/verify_scenarios.py`** (see `IMPLEMENTATION_PLAN.md` §10.1). Stage 2
+> reads that file, not this one. Kept only as a record of the abandoned design.
+
 This document translates the descriptive material in `gold_hat.md` into actionable demonstration scenarios for a life-size Berlin Gold Hat replica with individually addressable LEDs for every symbol in all 21 zones. Each scenario ties directly to Wilfried Menghin's calendrical interpretation and shows how the hat could be used as a lunisolar counting device. The goal is to have the microcontroller application (the `m5` project) drive the LED array and display calculated results and explanation text on-screen at the same time.
 
 Assumptions

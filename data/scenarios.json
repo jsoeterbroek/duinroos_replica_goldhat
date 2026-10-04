@@ -1,0 +1,780 @@
+{
+ "_source": "Menghin (2010), 'Zahlensymbolik und Rechensystem', assets/menghin/text/menghin_pages47-63.txt and assets/menghin/menghin_page60..63.jpeg (Figs 61.1-64.4).",
+ "_status": "HYPOTHESIS. Menghin's own interpretive model, transcribed from pp 60-63. The zone COLOURING is what the Stage-2 LEDs show; the day values are Menghin's, not the naive sum of the coloured zones (see 61.1).",
+ "_colour_legend": {
+  "red": "solar block",
+  "blue": "lunar block",
+  "green": "intercalary / excised zone (SZ)",
+  "off": "not part of this time block"
+ },
+ "_intercalary_zones": [
+  7,
+  16,
+  17
+ ],
+ "_intercalary_rule": "Every green zone is one of {7,16,17} -- the zones whose stamps (Nr. 11, 13, 9) occur exactly once in the canon (verify_calendar.check_tools_used_once).",
+ "_count_unit": "1 concentric ring = 1 day. Count a zone block only as the source states it; see each state's solar/lunar identity.",
+ "_open": "61.2 has no zone arithmetic in the source; 64.4's lunar block is stated as 1739 although green zone 7 lies inside it -- both are flagged rather than forced.",
+ "states": [
+  {
+   "id": "61.1",
+   "quarter_years": 4,
+   "lunations": 12,
+   "title": "1 year / 12 lunations",
+   "display": {
+    "solar": [
+     [
+      4,
+      8
+     ]
+    ],
+    "lunar": [
+     [
+      9,
+      19
+     ]
+    ],
+    "intercalary": [
+     16,
+     17
+    ]
+   },
+   "solar": {
+    "include": [
+     [
+      4,
+      8
+     ]
+    ],
+    "exclude": [],
+    "value": 365
+   },
+   "lunar": {
+    "include": [
+     [
+      15,
+      15
+     ],
+     [
+      18,
+      19
+     ]
+    ],
+    "exclude": [],
+    "value": 354
+   },
+   "delta_days": 11,
+   "intercalation": false,
+   "note": "354 is read from stamp No.15 in zones 15/18/19, not from the whole blue block"
+  },
+  {
+   "id": "61.2",
+   "quarter_years": 5,
+   "lunations": 15,
+   "title": "1 year + 1 quarter / 15 lunations",
+   "display": {
+    "solar": [
+     [
+      12,
+      19
+     ]
+    ],
+    "lunar": [
+     [
+      3,
+      8
+     ]
+    ],
+    "intercalary": [
+     7
+    ]
+   },
+   "solar": null,
+   "lunar": null,
+   "delta_days": 16,
+   "intercalation": false,
+   "note": "no zone arithmetic in the source: 5/4 J = 458 d vs 15 L = 442 d (absolute), deviates +-2 d"
+  },
+  {
+   "id": "61.3",
+   "quarter_years": 6,
+   "lunations": 18,
+   "title": "1.5 years / 18 lunations",
+   "display": {
+    "solar": [
+     [
+      10,
+      15
+     ]
+    ],
+    "lunar": [
+     [
+      17,
+      20
+     ]
+    ],
+    "intercalary": []
+   },
+   "solar": {
+    "include": [
+     [
+      10,
+      15
+     ]
+    ],
+    "exclude": [],
+    "value": 510
+   },
+   "lunar": {
+    "include": [
+     [
+      17,
+      20
+     ]
+    ],
+    "exclude": [],
+    "value": 492
+   },
+   "delta_days": 18,
+   "intercalation": false,
+   "note": ""
+  },
+  {
+   "id": "61.4",
+   "quarter_years": 7,
+   "lunations": 21,
+   "title": "1.75 years / 21 lunations",
+   "display": {
+    "solar": [
+     [
+      4,
+      8
+     ]
+    ],
+    "lunar": [
+     [
+      13,
+      14
+     ]
+    ],
+    "intercalary": [
+     7
+    ]
+   },
+   "solar": {
+    "include": [
+     [
+      4,
+      6
+     ]
+    ],
+    "exclude": [
+     7
+    ],
+    "value": 146
+   },
+   "lunar": {
+    "include": [
+     [
+      13,
+      14
+     ]
+    ],
+    "exclude": [],
+    "value": 165
+   },
+   "delta_days": 19,
+   "intercalation": false,
+   "note": "source reads zones 4-6 (203) minus intercalary zone 7 (57) = 146"
+  },
+  {
+   "id": "62.1",
+   "quarter_years": 8,
+   "lunations": 24,
+   "title": "2 years / 24 lunations",
+   "display": {
+    "solar": [
+     [
+      8,
+      8
+     ]
+    ],
+    "lunar": [
+     [
+      18,
+      18
+     ]
+    ],
+    "intercalary": [
+     17
+    ]
+   },
+   "solar": {
+    "include": [
+     [
+      8,
+      8
+     ]
+    ],
+    "exclude": [],
+    "value": 105
+   },
+   "lunar": {
+    "include": [
+     [
+      18,
+      18
+     ]
+    ],
+    "exclude": [],
+    "value": 126
+   },
+   "delta_days": 21,
+   "intercalation": false,
+   "note": ""
+  },
+  {
+   "id": "62.2",
+   "quarter_years": 9,
+   "lunations": 27,
+   "title": "2.25 years / 27 lunations",
+   "display": {
+    "solar": [
+     [
+      6,
+      15
+     ]
+    ],
+    "lunar": [
+     [
+      9,
+      18
+     ]
+    ],
+    "intercalary": [
+     16,
+     17
+    ]
+   },
+   "solar": {
+    "include": [
+     [
+      6,
+      8
+     ]
+    ],
+    "exclude": [],
+    "value": 252
+   },
+   "lunar": {
+    "include": [
+     [
+      16,
+      18
+     ]
+    ],
+    "exclude": [],
+    "value": 230
+   },
+   "delta_days": 22,
+   "intercalation": false,
+   "note": "counted as 6-8 vs 16-18; 16,17 are used here, not excluded"
+  },
+  {
+   "id": "62.3",
+   "quarter_years": 10,
+   "lunations": 30,
+   "title": "2.5 years / 30 lunations",
+   "display": {
+    "solar": [
+     [
+      4,
+      16
+     ]
+    ],
+    "lunar": [
+     [
+      12,
+      20
+     ]
+    ],
+    "intercalary": [
+     7
+    ]
+   },
+   "solar": {
+    "include": [
+     [
+      4,
+      16
+     ]
+    ],
+    "exclude": [
+     7
+    ],
+    "value": 913
+   },
+   "lunar": {
+    "include": [
+     [
+      12,
+      20
+     ]
+    ],
+    "exclude": [],
+    "value": 885
+   },
+   "delta_days": 28,
+   "intercalation": true,
+   "note": "first intercalation due at the latest after the 30th lunation"
+  },
+  {
+   "id": "62.4",
+   "quarter_years": 11,
+   "lunations": 34,
+   "title": "2.75 years / 34 lunations",
+   "display": {
+    "solar": [
+     [
+      8,
+      19
+     ]
+    ],
+    "lunar": [
+     [
+      10,
+      20
+     ]
+    ],
+    "intercalary": [
+     16
+    ]
+   },
+   "solar": {
+    "include": [
+     [
+      8,
+      19
+     ]
+    ],
+    "exclude": [
+     16
+    ],
+    "value": 1002
+   },
+   "lunar": {
+    "include": [
+     [
+      10,
+      20
+     ]
+    ],
+    "exclude": [
+     16
+    ],
+    "value": 1002
+   },
+   "delta_days": 0,
+   "intercalation": false,
+   "note": "intercalation phase: balanced 1002 = 1002"
+  },
+  {
+   "id": "63.1",
+   "quarter_years": 12,
+   "lunations": 37,
+   "title": "3 years / 37 lunations",
+   "display": {
+    "solar": [
+     [
+      7,
+      19
+     ]
+    ],
+    "lunar": [
+     [
+      6,
+      19
+     ]
+    ],
+    "intercalary": [
+     7,
+     16
+    ]
+   },
+   "solar": {
+    "include": [
+     [
+      7,
+      19
+     ]
+    ],
+    "exclude": [],
+    "value": 1097
+   },
+   "lunar": {
+    "include": [
+     [
+      6,
+      19
+     ]
+    ],
+    "exclude": [
+     7,
+     16
+    ],
+    "value": 1092
+   },
+   "delta_days": 5,
+   "intercalation": false,
+   "note": ""
+  },
+  {
+   "id": "63.2",
+   "quarter_years": 13,
+   "lunations": 40,
+   "title": "3.25 years / 40 lunations",
+   "display": {
+    "solar": [
+     [
+      6,
+      19
+     ]
+    ],
+    "lunar": [
+     [
+      3,
+      19
+     ]
+    ],
+    "intercalary": [
+     7,
+     16,
+     17
+    ]
+   },
+   "solar": {
+    "include": [
+     [
+      6,
+      19
+     ]
+    ],
+    "exclude": [],
+    "value": 1187
+   },
+   "lunar": {
+    "include": [
+     [
+      3,
+      19
+     ]
+    ],
+    "exclude": [
+     7,
+     16,
+     17
+    ],
+    "value": 1181
+   },
+   "delta_days": 6,
+   "intercalation": false,
+   "note": ""
+  },
+  {
+   "id": "63.3",
+   "quarter_years": 14,
+   "lunations": 43,
+   "title": "3.5 years / 43 lunations",
+   "display": {
+    "solar": [
+     [
+      3,
+      8
+     ]
+    ],
+    "lunar": [
+     [
+      20,
+      21
+     ]
+    ],
+    "intercalary": []
+   },
+   "solar": {
+    "include": [
+     [
+      3,
+      8
+     ]
+    ],
+    "exclude": [],
+    "value": 407
+   },
+   "lunar": {
+    "include": [
+     [
+      20,
+      21
+     ]
+    ],
+    "exclude": [],
+    "value": 397
+   },
+   "delta_days": 10,
+   "intercalation": false,
+   "note": ""
+  },
+  {
+   "id": "63.4",
+   "quarter_years": 15,
+   "lunations": 46,
+   "title": "3.75 years / 46 lunations",
+   "display": {
+    "solar": [
+     [
+      8,
+      21
+     ]
+    ],
+    "lunar": [
+     [
+      4,
+      20
+     ]
+    ],
+    "intercalary": [
+     16,
+     17
+    ]
+   },
+   "solar": {
+    "include": [
+     [
+      8,
+      21
+     ]
+    ],
+    "exclude": [
+     17
+    ],
+    "value": 1371
+   },
+   "lunar": {
+    "include": [
+     [
+      4,
+      20
+     ]
+    ],
+    "exclude": [
+     16,
+     17
+    ],
+    "value": 1358
+   },
+   "delta_days": 13,
+   "intercalation": false,
+   "note": "lunar lags: source states d = -13 (lunar - solar)"
+  },
+  {
+   "id": "64.1",
+   "quarter_years": 16,
+   "lunations": 49,
+   "title": "4 years / 49 lunations",
+   "display": {
+    "solar": [
+     [
+      6,
+      21
+     ]
+    ],
+    "lunar": [
+     [
+      3,
+      20
+     ]
+    ],
+    "intercalary": [
+     7,
+     17
+    ]
+   },
+   "solar": {
+    "include": [
+     [
+      6,
+      21
+     ]
+    ],
+    "exclude": [
+     7,
+     17
+    ],
+    "value": 1461
+   },
+   "lunar": {
+    "include": [
+     [
+      3,
+      20
+     ]
+    ],
+    "exclude": [
+     7
+    ],
+    "value": 1447
+   },
+   "delta_days": 14,
+   "intercalation": false,
+   "note": ""
+  },
+  {
+   "id": "64.2",
+   "quarter_years": 17,
+   "lunations": 52,
+   "title": "4.25 years / 52 lunations",
+   "display": {
+    "solar": [
+     [
+      4,
+      4
+     ]
+    ],
+    "lunar": [
+     [
+      7,
+      7
+     ],
+     [
+      16,
+      16
+     ]
+    ],
+    "intercalary": []
+   },
+   "solar": {
+    "include": [
+     [
+      4,
+      4
+     ]
+    ],
+    "exclude": [],
+    "value": 75
+   },
+   "lunar": {
+    "include": [
+     [
+      7,
+      7
+     ],
+     [
+      16,
+      16
+     ]
+    ],
+    "exclude": [],
+    "value": 95
+   },
+   "delta_days": 20,
+   "intercalation": false,
+   "note": "zones 7 and 16 count here, they are not intercalary-excluded"
+  },
+  {
+   "id": "64.3",
+   "quarter_years": 18,
+   "lunations": 55,
+   "title": "4.5 years / 55 lunations",
+   "display": {
+    "solar": [
+     [
+      3,
+      21
+     ]
+    ],
+    "lunar": [
+     [
+      5,
+      21
+     ]
+    ],
+    "intercalary": [
+     7,
+     16
+    ]
+   },
+   "solar": {
+    "include": [
+     [
+      3,
+      21
+     ]
+    ],
+    "exclude": [
+     7,
+     16
+    ],
+    "value": 1644
+   },
+   "lunar": {
+    "include": [
+     [
+      5,
+      21
+     ]
+    ],
+    "exclude": [],
+    "value": 1622
+   },
+   "delta_days": 22,
+   "intercalation": true,
+   "note": "second intercalation (+1 month)"
+  },
+  {
+   "id": "64.4",
+   "quarter_years": 19,
+   "lunations": 59,
+   "title": "4.75 years / 59 lunations (full Metonic quarter)",
+   "display": {
+    "solar": [
+     [
+      3,
+      21
+     ]
+    ],
+    "lunar": [
+     [
+      3,
+      21
+     ]
+    ],
+    "intercalary": [
+     7
+    ]
+   },
+   "solar": {
+    "include": [
+     [
+      3,
+      21
+     ]
+    ],
+    "exclude": [],
+    "value": 1739
+   },
+   "lunar": {
+    "include": [
+     [
+      3,
+      21
+     ]
+    ],
+    "exclude": [],
+    "value": 1739
+   },
+   "delta_days": 0,
+   "intercalation": false,
+   "note": "cycle reset: 1 quarter of the 19-year cycle; source notes a 3 d residual vs 1742"
+  }
+ ]
+}

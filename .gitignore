@@ -7,3 +7,4 @@ __pycache__/
 # Committing 22 bands x ~1.2 MB of binary that the data already describes is
 # churn, not provenance.
 stl/
+.DS_Store

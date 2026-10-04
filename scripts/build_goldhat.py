@@ -62,7 +62,24 @@ def export_stl(shape, path, defl=0.05):
     return mesh.CountFacets
 
 
-def make_trennband_ridge(profile, z0, h, wall_mm, proud=1.0, embed=0.6):
+def _revolve_section(pts):
+    """Revolve a closed (r, z) polygon about the Z axis."""
+    vecs = [FreeCAD.Vector(r, 0.0, z) for r, z in pts]
+    vecs.append(vecs[0])
+    face = Part.Face(Part.makePolygon(vecs))
+    return face.revolve(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1), 360.0)
+
+
+# The Trennband collar's inner face, measured inward from the outer profile.
+# It is the surface the registration lip rides against; both this and the lip
+# are built as polylines FOLLOWING r(z) so the clearance stays constant all
+# the way down a tapering collar (a straight chord would wander by the pchip
+# sagitta and eat into the 0.25 mm clearance).
+COLLAR_INSET = 0.6
+
+
+def make_trennband_ridge(profile, z0, h, wall_mm, proud=1.0, embed=COLLAR_INSET,
+                         lap=1.0, n=16):
     """
     The Trennband ridge at a band's lower edge: a 1 mm proud collar.
 
@@ -70,50 +87,67 @@ def make_trennband_ridge(profile, z0, h, wall_mm, proud=1.0, embed=0.6):
     polyline, so the ridge stays a swappable design detail (plan section 4
     Option A) and the band section stays a clean two-surface wall.
 
-    `embed` makes the ring overlap the wall instead of butting against it.
-    A collar that ends exactly on the outer surface touches the band along a
-    single circle -- a LINE contact, which OCCT cannot fuse into one solid
-    (it returns two disjoint solids) and which is also a knife-edge joint on
-    the print. Carrying the ring `embed` mm inward into the wall gives a
-    real overlapping face, so the fuse is solid and the joint is printable.
+    `embed` makes the ring overlap the wall radially instead of butting it:
+    a collar whose inner face stopped exactly on the outer surface would meet
+    the band along a single circle (a LINE contact that OCCT cannot fuse).
+
+    `lap` carries the ring `lap` mm PAST the joint plane and into the band's
+    own wall, tapering from `proud` back to the profile so there is no ledge.
+    A butt at a single plane is a FACE contact -- two coincident annuli -- and
+    OCCT returns it as two disjoint solids even though the faces match (this
+    is why the first fit-test trio reported `solids=2`).  The lap gives the
+    fuse a real volume and the collar a 1 mm blend into the wall.
     """
-    r_outer = profile(z0) + proud
-    r_outer_hi = profile(z0 + h) + proud
-    r_embed = profile(z0) - embed
-    r_embed_hi = profile(z0 + h) - embed
-    pts = [(r_embed, z0),
-           (r_outer, z0),
-           (r_outer_hi, z0 + h),
-           (r_embed_hi, z0 + h)]
-    vecs = [FreeCAD.Vector(r, 0.0, z) for r, z in pts]
-    vecs.append(vecs[0])
-    face = Part.Face(Part.makePolygon(vecs))
-    return face.revolve(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1), 360.0)
+    z_join = z0 + h
+    z_end = z_join + lap
+    zs = [z0 + (h + lap) * i / n for i in range(n + 1)]
+
+    def outer_r(z):
+        if z <= z_join:
+            return profile(z) + proud
+        f = (z - z_join) / lap              # 0 -> 1 across the blend
+        return profile(z) + proud * (1.0 - f)
+
+    outer = [(outer_r(z), z) for z in zs]
+    inner = [(profile(z) - embed, z) for z in reversed(zs)]
+    return _revolve_section(outer + inner)
 
 
-def make_registration_lip(profile, z0, wall_mm, lip_h=6.0, clearance=0.25):
+def make_registration_lip(profile, z_edge, wall_mm, lip_h=6.0, clearance=0.25,
+                          collar_inset=COLLAR_INSET, embed=2.0, n=16):
     """
-    A ring on the INSIDE of the lower edge that slips into the band below.
+    The registration spigot: a ring on the INSIDE of the band's LOWER edge
+    that slips into the Trennband collar of the band below.
 
-    Sized to the OUTER radius at z0 minus the clearance, so it enters the band
-    below's bore. It grows inward-and-down from the band's own wall.
+    `z_edge` is the band's LOWER edge -- the larger-z end, i.e. the plane
+    where this band meets the band below.  (The zone loop hands `z0` first,
+    but z increases DOWNWARD on this object: z0 is the apex side.  The lip
+    must be at z1.)
 
-    Like the Trennband ridge this OVERLAPS the wall rather than butting it:
-    the lip's outer face is only `clearance` inside the wall's own surface, so
-    it would otherwise meet the shell along a line and fail to fuse.
+    Sizing is the whole point, and it is NOT "the wall, minus the clearance":
+
+      * the band below carries its own Trennband collar across this joint,
+        and that collar's inner face sits `collar_inset` (0.6 mm) inside the
+        outer profile -- so the neighbour's bore here is profile(z) - 0.6,
+        not profile(z) - wall (2.0).
+      * the lip must ride just inside that bore:
+            r_outer(z) = profile(z) - collar_inset - clearance
+        Because collar_inset < wall, this is FATTER than this band's own bore
+        (profile - wall).  That is deliberate and is what makes the lip
+        overlap this band's own wall (a real fuse, not a line contact) while
+        still clearing the collar of the band below.
+      * it follows r(z) rather than being a cylinder, so it cannot wedge on
+        the tapering Schaft (r falls ~0.6-1.2 mm across a 9 mm collar).
+
+    The lip starts `embed` mm ABOVE z_edge, inside this band's own wall, and
+    runs `lip_h` mm BELOW it, into the neighbour's collar hollow.  `lip_h`
+    is kept under the collar height so the lip does not reach the neighbour's
+    narrower zone bore.
     """
-    r_outer = profile(z0) - clearance          # sits just inside the band below
-    r_inner = r_outer - wall_mm
-    # start the lip ABOVE z0 so it is truly embedded in the shell, and run it
-    # down past z0 so it protrudes below where it must mate
-    z_top = z0 + lip_h
-    z_bot = z0 - lip_h / 2.0
-    pts = [(r_outer, z_bot), (r_outer, z_top),
-           (r_inner, z_top), (r_inner, z_bot)]
-    vecs = [FreeCAD.Vector(r, 0.0, z) for r, z in pts]
-    vecs.append(vecs[0])
-    face = Part.Face(Part.makePolygon(vecs))
-    return face.revolve(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1), 360.0)
+    zs = [z_edge - embed + (embed + lip_h) * i / n for i in range(n + 1)]
+    outer = [(profile(z) - collar_inset - clearance, z) for z in zs]
+    inner = [(r - wall_mm, z) for r, z in reversed(outer)]
+    return _revolve_section(outer + inner)
 
 
 def build(band_id="z13", out_dir=None, verbose=True):
@@ -137,18 +171,21 @@ def build(band_id="z13", out_dir=None, verbose=True):
         ridge = make_trennband_ridge(profile, zb, tb["h"], wall, proud=1.0)
         parts.append(ridge)
         if verbose:
-            print("  + Trennband ridge tb%d: z %.1f .. %.1f, 1.0 mm proud"
-                  % (idx - 1, zb, z0))
+            print("  + Trennband ridge tb%d: z %.1f .. %.1f, 1.0 mm proud (1 mm lap)"
+                  % (idx - 1, zb, zb + tb["h"] + 1.0))
 
-    # --- registration lip, inside the lower edge
-    if idx > 1:
-        lip = make_registration_lip(profile, z0, wall,
+    # --- registration lip, inside the LOWER edge (z1 -- see make_registration_lip)
+    if idx > 1 and tb is not None:
+        lip = make_registration_lip(profile, z1, wall,
                                    lip_h=hp["registration_lip_mm"],
                                    clearance=hp["registration_clearance_mm"])
         parts.append(lip)
         if verbose:
-            print("  + registration lip: %s, %s clearance"
-                  % (hp["registration_lip_mm"], hp["registration_clearance_mm"]))
+            r_out = profile(z1) - COLLAR_INSET - hp["registration_clearance_mm"]
+            print("  + registration lip: z %.1f..%.1f, outer r %.3f (d %.2f), "
+                  "%s clearance into tb%d"
+                  % (z1 - 2.0, z1 + hp["registration_lip_mm"], r_out, 2 * r_out,
+                     hp["registration_clearance_mm"], idx))
 
     band = parts[0]
     for p in parts[1:]:

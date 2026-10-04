@@ -39,7 +39,7 @@ A 1:1, stylised replica of the Berlin Gold Hat, printed in segments that stack i
 | D3 | Generator: `scripts/build_goldhat.py` (standalone, `freecadcmd`-runnable) | repo |
 | D4 | One STL per band: `stl/berlin_goldhat_z01.stl` … `z19.stl`, plus `krempe_a/b/c.stl` for the ⌀301 mm brim plate, which exceeds the print bed (§2.3). **22 files.** | repo |
 | D5 | Assembly/stacking doc + registration scheme, incl. the Krempe sector joints | `docs/` |
-| D6 | Verification scripts: `scripts/verify_calendar.py` ✅ (created, passing) + `scripts/verify_geometry.py` (P3, needs geometry) | repo |
+| D6 | Verification scripts: `scripts/verify_calendar.py` ✅ (created, passing) + `scripts/verify_scenarios.py` ✅ (Stage-2 colouring + day values) + `scripts/verify_geometry.py` (P3, needs geometry) | repo |
 | D7 | **Motif-form test coupons** — 3 single-band STLs, one per candidate motif form (§6.3), for the deferred print-and-look decision. Not part of the object. | `stl/test/` |
 
 Explicit non-goals for Stage 1: dents, creases, foil-thickness realism, museum-accurate surface irregularity.
@@ -131,12 +131,11 @@ So the decode rule is **`day_value(zone) = Σ (count × rings)`**, with zone 1 (
 **`berlin.json` is confirmed ground truth for Menghin.**
 
 ```
-zones 3..21            = 1739   ← matches gold_hat.md exactly
-intercalary 5 + 16 + 17 =  142   ← matches gold_hat.md exactly
-1739 − 142              = 1597   ← gold_hat.md's 54-synodic-month result
-54 × 29.5305            = 1594.65
+zones 3..21             = 1739   ← 418 discs' 1701 rings + zone 5's 38 special signs
+intercalary 7 + 16 + 17 =  161   ← the three once-only DISC stamps (Nr. 11/13/9)
 ```
-This gives us a hard arithmetic test for any symbol layout we produce (§12).
+
+⚠️ **Correction — Menghin pp. 47–63 (added later) supersede the intercalary reading above.** An earlier draft here carried `intercalary 5 + 16 + 17 = 142 → 1597`, taken from `gold_hat.md`. That is wrong on the **zone set**: the intercalary ("Schalt") zones are the zones whose *disc* stamp occurs exactly once in the canon — Nr. 11 in zone 7, Nr. 13 in zone 16, Nr. 9 in zone 17 (independently asserted by `verify_calendar.check_tools_used_once`). **Zone 5 is not a single-use *disc* stamp**: it carries the 38 *special signs* (recumbent crescent + eye, tools Nr. 16/17, 2 × 19) that are counted separately and never enter the 418/1701 disc totals. ⚠️ Its status is itself unstable in Menghin's own corpus: pp. 47's running text and the earlier Menghin (2000, *Acta Praehistorica* 32 — see the Wikipedia transcript) group it with the *Schaltzonen* (`{5,7,16,17}`, giving the 54-month example `1739 − 142 = 1597`), while the 2010 Figs 61.1–64.4 colour only **{7,16,17}** green and place zone 5 inside the red solar blocks. See `CALENDAR_HYPOTHESIS.md` §6, Result 4. This is not a bookkeeping detail: the intercalary set is the free parameter that makes the arithmetic close, so its instability is a real weakness of the hypothesis. The `1597`/54-lunation example came from the earlier `gold_hat.md` summary and does **not** occur in pp. 47–63, which instead read the 19 zones as **1739 ≈ 1735 d** (57 solar months / 19 quarter-years) or **1742 d** (59 lunations); §10.1. The plan keeps the *derived* identity `1739 = 1701 + 38` as the hard test, not the interpretive period.
 
 **Tool catalogue — all 24 punches.** Menghin's Fig. 21 legend (`text/menghin_page27.txt`) gives the full set; the eight disc bosses (Nos. 8–15) are the ones that carry the calendar arithmetic, and the legend fixes their size, which is what the motif primitives must scale to (§6.2):
 
@@ -626,7 +625,9 @@ Worth stating before anyone prints a coupon, because it bounds how much this dec
 | `data/zones.json` | per zone: which tool, how many, how many rings, `day_value`, attested `fillers` | ✅ **created** — counts/rings/day-values **derived, not transcribed**; `placement` (start angle, ornament offset) is the still-open part |
 | `data/readings/menghin.json` | day-value per zone (verified, §2.1) | ✅ **created** — reproduces `reference/m5/data/berlin.json` exactly |
 | `data/readings/schmidt_kaler.json` | ornament count per zone | ✅ **created** — marked *not a day count*, must never be summed with Menghin's |
+| `data/scenarios.json` | the 16 Stage-2 lighting blocks (Figs 61.1–64.4): per state, the red/blue/green zone colouring and Menghin's stated solar/lunar day values | ✅ **created** — transcription of Menghin pp. 47–63; see §10.1 |
 | `scripts/verify_calendar.py` | asserts every identity above | ✅ **created & passing** — `python3 scripts/verify_calendar.py`, stdlib only, no FreeCAD |
+| `scripts/verify_scenarios.py` | checks the scenario colouring + 30 stated zone-sums | ✅ **created & passing** — `python3 scripts/verify_scenarios.py`, stdlib only |
 
 The JSON is the source of truth; this plan's §5.1 block is only its *spec* and is deliberately left as pseudo-JSON (it ends in `... ]`). Edit the files, not the plan, and let `verify_calendar.py` tell you if you broke something.
 
@@ -677,6 +678,31 @@ Nothing below is implemented now; these are the interfaces Stage 1 must leave op
 4. **LED budget** is now **~480 main motifs** (≈5 A), not 3,393 (≈61 A) — §3 Q3 is closed. The `gold_hat_scenarios.md` power budget is wrong by ~6× and must be rewritten, not just revised.
 5. **Kalotte/Krempe (Q5) — RESOLVED** (§2.2, §3 Q5). Zones 17–19 are the Kalotte (⌀127→189, 15.9° half-angle) and 20–21 the near-horizontal Krempe (⌀189→301, **7 mm** rise over 56 mm radial, i.e. 7.1°). Both are *easy* for Stage 2: the Kalotte's windows still face radially outward, and the Krempe's windows become vertical drillings in a horizontal plate, so an LED strip can be laid underneath it — that zone pair (54 + 47 motifs) is actually the simplest to light in the whole model.
 6. **M5 Core S3 + display** sits outside the hat; plan a base plinth/cradle (a separate later model) that hides the electronics and holds the cone upright. **New constraint from §2.2:** the hat does *not* stand on its own — its contact ring is the Krempenrand at ⌀301 mm, with a hollow interior of ⌀189 behind it (and ⌀108 further up). The cradle must therefore support the Krempe from below, which is convenient: the space under the brim is exactly where the M5, the PSU and the wiring spine can live, invisible from outside.
+
+### 10.1 Stage-2 lighting scenarios are now data (Menghin pp. 47–63)
+
+The scenario system the LEDs will run comes from Menghin (2010) *Zahlensymbolik und Rechensystem*, pp. 47–63, Figs 61.1–64.4 (`assets/menghin/menghin_page60..63.jpeg`). For each of **16 time blocks** (4…19 quarter-years / 12…59 lunations) the figures colour the hat:
+
+| colour | meaning | LED meaning |
+|---|---|---|
+| **red** | solar block | light these zones in warm red |
+| **blue** | lunar block | light these zones in blue |
+| **green** | intercalary zone (`SZ`) | the zones to add/remove from a block |
+| off | not part of this time block | dark |
+
+The three green zones are always **{7, 16, 17}** — the once-only disc stamps (Nr. 11/13/9), the same set `verify_calendar.py` derives independently. Zone 5 is not coloured green by the figures (it is the 38 special signs), though Menghin's earlier 2000 work also treats it as intercalary — the set is unstable across his publications, see §2.1 and `CALENDAR_HYPOTHESIS.md` §6. This colouring **is** the LED command set, so it is transcribed into `data/scenarios.json` and checked by `scripts/verify_scenarios.py`:
+
+- all 16 states present; every referenced zone ∈ 3…21;
+- every green zone is within {7,16,17} = the single-use disc stamps;
+- **30** of Menghin's stated solar/lunar zone-sums reproduce from `data/zones.json` (his arithmetic, re-run on our data);
+- `|solar − lunar|` equals each state's stated day difference;
+- anchors run monotonically 4…19 QY / 12…59 L and the full cycle closes on **1739**.
+
+**Kept honest, not papered over:** 61.2 has only a calendar target (the source gives no zone arithmetic for it), and 64.4's lunar block is stated as 1739 although green zone 7 lies inside it — both are flagged in the data and printed by the verifier rather than forced to balance.
+
+⚠️ The prior attempt's `reference/m5/gold_hat_scenarios.md` is **superseded**: it assumes ~3,400 individually-lit LEDs, a `zone→count` table that is Schmidt-Kaler's ornament tally (651) rather than Menghin's day-values, and the old `5,16,17` intercalary set. Stage 2 reads `data/scenarios.json`, not that file.
+
+**Is the hypothesis actually true?** The full reasoning — the counting-unit selectivity test, the Monte-Carlo null, the cross-hat attempt against Ezelsdorf-Buch, and the confidence levels — is in **`CALENDAR_HYPOTHESIS.md`**. Short version: the *counts* are solid, the *calendar reading* is a legitimate but unproven hypothesis (provisional confidence in the strong claim ≈ 20–30 %), and the demo must label it as such.
 
 ---
 
@@ -735,6 +761,35 @@ relief_window   [+@:...             ...:@+]   widest open span, rim retained
 ⚠️ **Use `freecadcmd`, not the MCP bridge, for anything non-interactive.** The MCP bridge enforces a ~90 s transport limit; real OCCT boolean work exceeds it, and every timeout wedges the session. `freecadcmd scripts/build_coupons.py` has no GUI thread and no such limit, and it is now the documented route for P4. Two traps in that route, both hit: (a) a script passed as a **file argument** gets `__name__` set to its **basename**, not `"__main__"`, so a plain guard silently does nothing **and freecadcmd still exits 0** — a failure that looks like success; (b) FreeCADCmd prints a `(0 %) … (99 %)` progress bar per export that must be filtered out of any pipe.
 
 ⚠️ **Operating note — an OCCT call can wedge FreeCAD without crashing it.** A `makeShapeFromMesh` on that 23 MB mesh left FreeCAD's MCP RPC thread blocked: the socket accepted connections and never answered, while the process stayed alive with no coredump and no journal entry. Recovery was `kill` + relaunch, and it was safe only because nothing unsaved was open (verified first — no `.FCStd` written for 6 h). Diagnosis, if it happens again: `ss -ltnp | grep 9875` tells “process gone” from “RPC thread busy”. The kernel returns a `Part.Shape`, so screenshots and checks need **no STL round-trip at all** — that was the mistake.
+
+### 11.3 P5 pre-flight — the registration lip never engaged (and two fuse bugs fell out)
+
+**The first printed fit trio did not fit.** The hand measurements matched the model (⌀123.7 / ⌀119.7 at z14's lower edge, ⌀125.7 / ⌀122.5 at z15's upper edge, 2.0 mm wall), so the profile and the printer were both fine — the *joint* was broken. Slicing the STLs showed the registration lip at z 533–542 on `z15`, i.e. six millimetres **below** the z=527 joint plane and entirely inside `z15`'s own wall: it never reached `z14`. The two bands only met on a **0.60 mm-wide annulus** and had zero registration.
+
+**Root cause — three defects, all in the lip:**
+
+1. **Wrong end.** `z` increases *downward* on this object (z=0 apex, z=745 brim), so `z0` handed out by `band_span` is the band's **upper** edge. The lip was built at `z0`; it must be at `z1` (the lower edge, where the band meets the one below).
+2. **Wrong reference surface.** `r_outer = profile(z0) − clearance` is the band's own **outer** profile. The neighbour's mating surface is its **Trennband collar bore**, `profile(z) − COLLAR_INSET` (0.6), so the lip was ~2 mm too fat.
+3. **Cylindrical on a tapering shaft.** A straight lip gains ~0.6–1.2 mm of interference across a 9 mm collar on the narrowing Schaft.
+
+The fix (`make_registration_lip`) sizes the lip to the collar it enters and follows `r(z)`:
+
+```
+r_outer(z) = profile(z) − COLLAR_INSET(0.6) − clearance(0.25)
+```
+
+Because `COLLAR_INSET (0.6) < wall (2.0)`, this radius is *fatter* than the band's own bore (`profile − wall`). That is the point: it **overlaps the band's own wall** (so the fuse is volumetric and solid) while still clearing the collar of the band below by exactly the clearance. The lip starts `embed=2` mm above `z1` inside the wall and runs `lip_h=6` mm below it, staying inside the 7–9 mm collar.
+
+**Two more fuse defects surfaced while regenerating:**
+
+- **The Trennband collar still butted the wall at a single plane** (face contact, two coincident annuli). OCCT returned it as **two disjoint solids** — the original code had the same failure; it was masked by a butt that OCCT happened to glue. `make_trennband_ridge` now **laps 1 mm past the joint** into the wall and tapers `proud → profile`, so the fuse has real volume. This strengthens the §11.2 rule: it is not only *line* contacts that fail — a shared **face with identical coincident boundaries** can too. **Overlap in a third dimension.**
+- The lip's own fuse into the wall is now measurable: **≈830–910 mm³** of overlap per band.
+
+**Verification.** z13/z14/z15 each build as **one valid solid**; re-sliced from the exported STLs the joint gap is a **0.238 mm radial** (diametral 0.476 mm) — nominal 0.25, the 0.01 mm being tessellation. Files: `stl/test/{z13,z14,z15}_fit.stl`.
+
+⚠️ **Before the next print, calibrate the clearance.** 0.25 mm radial is optimistic for FDM and is currently *believed*, not measured. Rather than print 400 g of trio at three clearances, `scripts/build_clearance_coupon.py` emits `stl/test/clearance_ladder.stl` — a ~16 g plate of three independent socket/spigot pairs at **0.15 / 0.25 / 0.35 mm**, each reproducing the joint's *local taper* (`dr/dz = −0.0707` at z=527) rather than a straight cylinder. Row order left→right is 0.15, 0.25, 0.35. It deliberately does **not** put three clearances on three arcs of one band: the lip enters a uniform collar axially, so the tightest arc alone decides whether the band enters — the sectors would not be independent. Keep the loosest pair that still holds, set `registration_clearance_mm` from it, and rebuild.
+
+**Still open at this end:** the same lip logic must be re-checked at the cuff (611–629) and the Kalottenfuß, where the profile turns and `drdz` swings sign — the profile-following form handles it, but the `z1`-adjacency of those rings should be asserted by `verify_geometry.py` before P4.
 
 ---
 
@@ -915,6 +970,7 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 | `scripts/verify_calendar.py` | the data-layer assertions | ✅ passing |
 | `scripts/motif_features.py` | **the three motif forms** (`relief` / `window` / `relief_window`) as ordered prism operations on the cone; `placed_motifs`, `motif_prism_polygons`, `build_motif_ops`, `fuse_all` | ✅ new, self-checking without FreeCAD |
 | `scripts/build_coupons.py` | the P3.5 coupon build — **run under `freecadcmd`**, not the MCP bridge | ✅ emits the 3 coupons + fit-test trio |
+| `scripts/build_clearance_coupon.py` | the lap-joint radial-clearance ladder (⌀35 mm, real joint taper, 0.15/0.25/0.35 mm) | ✅ emits `stl/test/clearance_ladder.stl` (~16 g); see §11.3 |
 | `scripts/motifs.py` | **the P2 motif primitives and placement** — 2D (u,v) polygons for all 8 boss discs, the Nos. 4–7 fillers and the specials; `for_tool()`, `build()`, `clearance()`, `zone_layout()`, `spandrel_offset()`, `development_svg()` | ✅ **new, self-checking.** `python3 scripts/motifs.py` runs two suites: the primitive checks (ring rule, diameters, nozzle clearance, Menghin's no-overlap constraint) and the **placement checks** (one disc row per zone, one interstice filler per gap at exactly half a pitch, the spandrel lift clearing both neighbours, and `gcd(counts)=1` proving the phase is unconstrained). No FreeCAD, no PIL, no scipy — it runs anywhere |
 
 ### A.4 `reference/` — the abandoned attempt (94 MB, **do not recycle**, `AGENTS.md`)

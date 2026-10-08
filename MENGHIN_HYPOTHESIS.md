@@ -120,7 +120,8 @@ therefore underdetermined: the system finds the number first and the block secon
    reading {5, 16, 17} to {7, 16, 17} in pp. 47–63. A hypothesis whose central knob is
    negotiable between its own statements is fragile.
 3. **Competing readings of the same object.** Schmidt-Kaler reads a Venus calendar
-   (584 d) into the same ornament; others read pure ritual/decoration. When one artefact
+   (584 d) into the same ornament (a full treatment and side-by-side comparison is in
+   `SCHMIDT_KALER_ASSESSMENT.md`); others read pure ritual/decoration. When one artefact
    supports several numerological systems, confidence in any single one drops.
 4. **Anachronism risk.** 235 lunations ≈ 19 years is a true astronomical fact, but the
    *precise intercalation rule* is a 5th-century-BC Greek/Babylonian construct. The hat is

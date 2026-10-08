@@ -379,7 +379,7 @@ The Berlin/Ezelsdorf hats encode complex cycles (Metonic, perhaps Saros), Schiff
 
 The differences in complexity could reflect their age, local calendrical needs, or ritual status (teaching tool vs. “priestly” master copy).
 
-Note: See also CALENDAR_HYPOTHESIS.md
+Note: See also MENGHIN_HYPOTHESIS.md
 
 ## Supporting Scholarly References & Sources used:
 - The Golden Hat of Schifferstadt - Equinox Publishing,  DOI: https://doi.org/10.1558/jsa.18113

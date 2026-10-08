@@ -111,14 +111,6 @@ To determine a 54 month cycle in the lunar system, the numerical values of the g
 Schmidt-Kaler (2012)
 ====================
 
-> **See `SCHMIDT_KALER_ASSESSMENT.md`** for a critical assessment of this hypothesis,
-> a side-by-side comparison with Menghin (2010), and a reproducible check
-> (`scripts/verify_venus_hypothesis.py`). Note that this digest differs from the primary
-> source in places: Schmidt-Kaler's hat-specific numbers are 57 + 235 = 292, 42 + 38 + 66
-> = 146 (×2 = 292, ×4 = 584) and 42 + 75 = 117 for Mercury — all read from Menghin's
-> day-values — whereas the "1,184 = 2 × 592" below is not a sum the paper actually
-> derives (1184/2 = 592, not 584).
-
 The document titled Ein Venus-Kalender auf dem Berliner Goldhut by T. Schmidt-Kaler (2012) presents a compelling hypothesis that the decorative patterns on the Berlin Gold Hat—a Late Bronze Age artifact—encode a sophisticated calendar system based on the synodic cycle of Venus.
 
 ## Key Insights
@@ -386,7 +378,7 @@ The Berlin/Ezelsdorf hats encode complex cycles (Metonic, perhaps Saros), Schiff
 
 The differences in complexity could reflect their age, local calendrical needs, or ritual status (teaching tool vs. “priestly” master copy).
 
-Note: See also MENGHIN_HYPOTHESIS.md
+Note: See also CALENDAR_HYPOTHESIS.md and SCHMIDT_KALER_ASSESMENT.md
 
 ## Supporting Scholarly References & Sources used:
 - The Golden Hat of Schifferstadt - Equinox Publishing,  DOI: https://doi.org/10.1558/jsa.18113

@@ -23,7 +23,9 @@ The goal of this project is to provide a 1-to-1 replica of the Berlin Goldhat:
 
 ## Background
 Important files on the background of the object:
-- gold_hat.md - explains the object Berlin Goldhat and theory behind it 
+- research/CASE.md - the research question, scoped, with the sources, controls and plan (entry point)
+- research/theories/ - the competing calendar readings (Menghin lunisolar, Schmidt-Kaler Venus, Fuls, Lorenz, ...)
+- research/sources/ - one recipe per primary source
 - sources.md - sources used (physical books)
 - dimensions.txt - approximation of the dimensions (from Menghin, Wilfried); use as  an important source, but do check if correct (don't take these numbers blindly for granted)
 

@@ -20,7 +20,9 @@ The goal of this project is to provide a 1-to-1 replica of the Berlin Goldhat:
 
 ## Background
 Important files on the background of the object:
-- gold_hat.md - explains the object Berlin Goldhat and theory behind it 
+- research/CASE.md - the research question, scoped, with the sources, controls and plan (entry point)
+- research/theories/ - the competing calendar readings (Menghin lunisolar, Schmidt-Kaler Venus, Fuls, Lorenz, ...)
+- research/sources/ - one recipe per primary source
 - sources.md - sources used (physical books)
 - dimensions.txt - approximation of the dimensions (from Menghin, Wilfried); use as  an important source, but do check if correct (don't take these numbers blindly for granted)
 
@@ -379,15 +381,21 @@ The Berlin/Ezelsdorf hats encode complex cycles (Metonic, perhaps Saros), Schiff
 
 The differences in complexity could reflect their age, local calendrical needs, or ritual status (teaching tool vs. “priestly” master copy).
 
-Note: See also MENGHIN_HYPOTHESIS.md
+Note: See also research/theories/menghin_lunisolar.md (and its companion
+research/theories/schmidt_kaler_venus.md). The full, source-by-source research
+state is in research/CASE.md.
 
 ## Supporting Scholarly References & Sources used:
-- The Golden Hat of Schifferstadt - Equinox Publishing,  DOI: https://doi.org/10.1558/jsa.18113
-- Maß und Mythos, Zahl und Zauber - Gesellschaft für Archäoastronomie, July 1, 2018
+- **Amendola (2021):** Golden Hat of Schifferstadt — An Astronomically Significant Deposit Location. *Journal of Skyscape Archaeology* 7. DOI: https://doi.org/10.1558/jsa.18113
+- **Maß und Mythos, Zahl und Zauber** - Gesellschaft für Archäoastronomie, July 1, 2018
 - **Schmidt-Kaler (2012):** Ein Venus Kalender auf dem Berliner Goldhut (2012), https://www.quantenbit.physik.uni-mainz.de/files/2020/03/Goldhut-TSchmidtKaler-2012.pdf
-- **Spurk, Gebhard, Schauer, et al.:** Analyses show relationships between band/symbol counts and astronomical cycles.
-- **Wolfgang Schlosser (2004, 2012):** Argues for a systematic calendrical interpretation for all hats, with regional adaptations.
-- **I. Mathieson, "The Golden Hat Calendar" (2010):** PDF – offers detailed calculations for several hats.
+- **Fuls (2004, 2008):** the statistical null test. Fuls 2004, *ORDO ET MENSURA VIII*, 39–57; Fuls 2008, *Nuncius Hamburgensis* 8, 113–129. Only Schifferstadt is statistically selective; Berlin's hit-rate is ≈ random. Recipes: `research/sources/fuls_2004.md`, `research/sources/fuls_2008.md`.
+- **Lorenz (2010/2011, 2nd ed.):** an independent modern Metonic reading of the Berlin hat (19 line-bands, 12+7 friezes, 235). `research/sources/lorenz_2011.md`.
+- **Schlosser (2003):** Wolfhard Schlosser, *Einige Anmerkungen zur Realität bronzezeitlicher Mondkalender*, JSMV 86. DOI: https://doi.org/10.11588/jsmv.2003.1.89612. Note: the name is **Wolfhard**, not "Wolfgang".
+- **Peter-Röcher (2023):** a critique of the archaeoastronomical construct; BUFM 106, 127–141.
+- ~~Spurk, Gebhard, Schauer, et al.~~ — **no such joint study found**; treat the citation as garbled (`research/sources/phantom_references.md`).
+- ~~Wolfgang Schlosser (2004, 2012)~~ — name error; see Schlosser (2003) above.
+- ~~I. Mathieson, "The Golden Hat Calendar" (2010)~~ — **not found in any index**; treat as unverified (`research/sources/phantom_references.md`).
 - Wikipedia, https://en.wikipedia.org/wiki/Berlin_Gold_Hat
 - Menghin, Wilfried, Der Berliner Goldhut und die goldenen Kalendarien der alteuropäischen Bronzezeit. 
   Acta Praehistorica et Archaeologica 32/2000, 32-37.

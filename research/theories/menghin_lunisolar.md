@@ -1,3 +1,10 @@
+<!-- Consolidated 2026-10-10: moved from research/MENGHIN_HYPOTHESIS.md into
+theories/ per research/AGENTS.md. Content unchanged apart from updated
+cross-references. Scripts it cites are still at scripts/verify_calendar.py and
+scripts/verify_scenarios.py. External corroboration and the Fuls (2004, 2008)
+statistical result are now in theories/fuls_correction_cycles.md and
+sources/fuls_2008.md. -->
+
 # Is Menghin's calendar reading of the Berlin Gold Hat correct?
 
 **A provisional assessment — a reasoned opinion about a hypothesis, NOT evidence, and NOT a result.**
@@ -121,7 +128,7 @@ therefore underdetermined: the system finds the number first and the block secon
    negotiable between its own statements is fragile.
 3. **Competing readings of the same object.** Schmidt-Kaler reads a Venus calendar
    (584 d) into the same ornament (a full treatment and side-by-side comparison is in
-   `SCHMIDT_KALER_ASSESSMENT.md`); others read pure ritual/decoration. When one artefact
+   `theories/schmidt_kaler_venus.md`); others read pure ritual/decoration. When one artefact
    supports several numerological systems, confidence in any single one drops.
 4. **Anachronism risk.** 235 lunations ≈ 19 years is a true astronomical fact, but the
    *precise intercalation rule* is a 5th-century-BC Greek/Babylonian construct. The hat is
@@ -165,7 +172,7 @@ apex:  10-ray star (no count)
 total: 499 stamped symbols across ~19 zones
 ```
 
-**Result 1 — the repo's own earlier “corroboration” is false.** `gold_hat.md`'s comparison
+**Result 1 — the repo's own earlier “corroboration” is false.** `theories/secondary_digest_2026-10-08.md`'s comparison
 table asserted Ezelsdorf-Buch has **“~1,739 symbols in 23 bands”** — the *same* 1739 as
 Berlin. The real figure is **~499 symbols in ~19 zones**. That was not independent evidence;
 it looks like a summary that copied Berlin's total onto the other hat. A caution about the

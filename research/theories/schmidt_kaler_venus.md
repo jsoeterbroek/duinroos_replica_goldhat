@@ -1,10 +1,16 @@
+<!-- Consolidated 2026-10-10: moved from research/SCHMIDT_KALER_ASSESSMENT.md into
+theories/ per research/AGENTS.md. Content unchanged apart from updated
+cross-references. Script cited: scripts/verify_venus_hypothesis.py. Fuls (2004,
+2008) tested the same Venus/Mercury/Saturn/Jupiter periods statistically and
+found no selectivity for Berlin — see sources/fuls_2008.md. -->
+
 # Is Schmidt-Kaler's Venus reading of the Berlin Gold Hat correct?
 
 **A provisional assessment of the Schmidt-Kaler (2012) hypothesis, and a side-by-side
 comparison with Menghin (2010). A reasoned opinion about a hypothesis, NOT evidence,
 and NOT a result.**
 
-> ⚠️ **Status: provisional.** This is the companion to `MENGHIN_HYPOTHESIS.md`. That
+> ⚠️ **Status: provisional.** This is the companion to `theories/menghin_lunisolar.md`. That
 > document weighs Menghin's lunisolar reading; this one weighs Theodor Schmidt-Kaler's
 > alternative Venus reading and asks which of the two is more likely. It proves nothing
 > about the Bronze Age or about either scholar. Treat every "conclusion" below as an
@@ -100,7 +106,7 @@ numerology.
 
 `scripts/verify_venus_hypothesis.py` reproduces every sum Schmidt-Kaler states, then
 measures how much information each number carries. The point of the second step is the
-same as in `MENGHIN_HYPOTHESIS.md` §2: with ~19 zone values, a number that can be hit
+same as in `theories/menghin_lunisolar.md` §2: with ~19 zone values, a number that can be hit
 in many ways is weak evidence of design; a number that can be hit in one way is strong.
 
 **Reproduced exactly** (all assert-passing):
@@ -281,7 +287,7 @@ story is the part most likely to be wrong.
   other hats, then apply it to Schifferstadt / Ezelsdorf-Buch / Avanton. If a hat with
   different zone counts independently yields 292/584 by the same rule, the Venus case
   rises sharply. This is the same cross-hat test that is still blocked for Menghin
-  (`MENGHIN_HYPOTHESIS.md` §6): the raw per-zone ring counts and zone order for the other
+  (`theories/menghin_lunisolar.md` §6): the raw per-zone ring counts and zone order for the other
   hats are not available in the accessible sources.
 - **Independent per-zone counts.** Any dataset that counts the Berlin rings without
   going through Menghin would let the Venus and lunisolar readings be tested against each
@@ -312,7 +318,7 @@ day-values (seed 1, so it is repeatable). The primary-source quotations and zone
 are from a machine OCR of the scanned 2012 PDF and should be checked against the scan
 (`assets/` or the source URL) before being quoted as exact.
 
-**Cross-references.** `MENGHIN_HYPOTHESIS.md` §2 (Menghin selectivity), §4.3 (competing
+**Cross-references.** `theories/menghin_lunisolar.md` §2 (Menghin selectivity), §4.3 (competing
 readings), §6 (cross-hat test, blocked / non-selective); `AGENTS.md` and `README.md`
 Schmidt-Kaler digest; `data/readings/schmidt_kaler.json` (the 651 ornament table, flagged
 *not a day count*); `IMPLEMENTATION_PLAN.md` §10 (why the two readings must stay separate).

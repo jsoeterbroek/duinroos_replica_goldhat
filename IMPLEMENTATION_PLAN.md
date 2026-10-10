@@ -98,7 +98,7 @@ Derived totals, computed from the 21 rows above (asserted in §12):
 Σ discs, zones {3,4,6..21}  (excl. 2 and 5)  = 440 − 22 = 418   ← Menghin's "418"
 Σ rings, all 21 zones                        = 1783          ← berlin.json total
 Σ rings over those 418 discs                 = 1783 − 44 − 38 = 1701  ← Menghin's "1701"
-Σ day-values zones 3..21                     = 1739          ← gold_hat.md
+Σ day-values zones 3..21                     = 1739          ← research/theories/secondary_digest_2026-10-08.md
 ```
 
 So `berlin.json` **reproduces exactly** from Menghin's prose, zone by zone, with no fitting: `[0,44,42,75,38,90,57,105,57,95,60,100,60,105,90,38,66,126,138,162,235]`. **This is the strongest single piece of evidence in the plan** — a decode rule (`Σ count × rings`) confirmed on 21 out of 21 zones by four arithmetic identities that were never fitted to each other.
@@ -135,7 +135,7 @@ zones 3..21             = 1739   ← 418 discs' 1701 rings + zone 5's 38 special
 intercalary 7 + 16 + 17 =  161   ← the three once-only DISC stamps (Nr. 11/13/9)
 ```
 
-⚠️ **Correction — Menghin pp. 47–63 (added later) supersede the intercalary reading above.** An earlier draft here carried `intercalary 5 + 16 + 17 = 142 → 1597`, taken from `gold_hat.md`. That is wrong on the **zone set**: the intercalary ("Schalt") zones are the zones whose *disc* stamp occurs exactly once in the canon — Nr. 11 in zone 7, Nr. 13 in zone 16, Nr. 9 in zone 17 (independently asserted by `verify_calendar.check_tools_used_once`). **Zone 5 is not a single-use *disc* stamp**: it carries the 38 *special signs* (recumbent crescent + eye, tools Nr. 16/17, 2 × 19) that are counted separately and never enter the 418/1701 disc totals. ⚠️ Its status is itself unstable in Menghin's own corpus: pp. 47's running text and the earlier Menghin (2000, *Acta Praehistorica* 32 — see the Wikipedia transcript) group it with the *Schaltzonen* (`{5,7,16,17}`, giving the 54-month example `1739 − 142 = 1597`), while the 2010 Figs 61.1–64.4 colour only **{7,16,17}** green and place zone 5 inside the red solar blocks. See `MENGHIN_HYPOTHESIS.md` §6, Result 4. This is not a bookkeeping detail: the intercalary set is the free parameter that makes the arithmetic close, so its instability is a real weakness of the hypothesis. The `1597`/54-lunation example came from the earlier `gold_hat.md` summary and does **not** occur in pp. 47–63, which instead read the 19 zones as **1739 ≈ 1735 d** (57 solar months / 19 quarter-years) or **1742 d** (59 lunations); §10.1. The plan keeps the *derived* identity `1739 = 1701 + 38` as the hard test, not the interpretive period.
+⚠️ **Correction — Menghin pp. 47–63 (added later) supersede the intercalary reading above.** An earlier draft here carried `intercalary 5 + 16 + 17 = 142 → 1597`, taken from the earlier secondary digest (`research/theories/secondary_digest_2026-10-08.md`). That is wrong on the **zone set**: the intercalary ("Schalt") zones are the zones whose *disc* stamp occurs exactly once in the canon — Nr. 11 in zone 7, Nr. 13 in zone 16, Nr. 9 in zone 17 (independently asserted by `verify_calendar.check_tools_used_once`). **Zone 5 is not a single-use *disc* stamp**: it carries the 38 *special signs* (recumbent crescent + eye, tools Nr. 16/17, 2 × 19) that are counted separately and never enter the 418/1701 disc totals. ⚠️ Its status is itself unstable in Menghin's own corpus: pp. 47's running text and the earlier Menghin (2000, *Acta Praehistorica* 32 — see the Wikipedia transcript) group it with the *Schaltzonen* (`{5,7,16,17}`, giving the 54-month example `1739 − 142 = 1597`), while the 2010 Figs 61.1–64.4 colour only **{7,16,17}** green and place zone 5 inside the red solar blocks. See `research/theories/menghin_lunisolar.md` §6, Result 4. This is not a bookkeeping detail: the intercalary set is the free parameter that makes the arithmetic close, so its instability is a real weakness of the hypothesis. The `1597`/54-lunation example came from the earlier secondary digest and does **not** occur in pp. 47–63, which instead read the 19 zones as **1739 ≈ 1735 d** (57 solar months / 19 quarter-years) or **1742 d** (59 lunations); §10.1. The plan keeps the *derived* identity `1739 = 1701 + 38` as the hard test, not the interpretive period.
 
 **Tool catalogue — all 24 punches.** Menghin's Fig. 21 legend (`text/menghin_page27.txt`) gives the full set; the eight disc bosses (Nos. 8–15) are the ones that carry the calendar arithmetic, and the legend fixes their size, which is what the motif primitives must scale to (§6.2):
 
@@ -312,7 +312,7 @@ Four different numbers were circulating. Menghin's text disambiguates all of the
 | **1701** | concentric rings summed over those 418 bosses | Menghin; **fully derived in §2.1**: `1783 − 44 − 38` ✅ |
 | **1783** | Menghin's **day-value** sum = Σ(count × rings) over all 21 zones | derived from Menghin's prose (§2.1), and independently matched by `reference/m5/data/berlin.json` |
 | **~651** | *all* punched ornaments incl. the small filler punches (Perlpunkte, Punktkreise, Ringkreise) and the radial spandrel patterns | Schmidt-Kaler's per-zone table |
-| ~~~3,393~~ | **not a count of anything.** No per-zone table in the repo sums to it and Menghin contradicts it. Treat as garbled. | `gold_hat.md` (Wikipedia-derived) |
+| ~~~3,393~~ | **not a count of anything.** No per-zone table in the repo sums to it and Menghin contradicts it. Treat as garbled. | `research/theories/secondary_digest_2026-10-08.md` (Wikipedia-derived) |
 
 **Consequence for Stage 2:** the physical main motifs are ~480 (418 bosses + 22 double-circle punches + 38 special signs + star), reaching ~650 only if every filler punch also gets an LED. Worst case **~650 LEDs ≈ 5 A** at full white, not 3,393 / 61 A. The `gold_hat_scenarios.md` power budget is wrong by ~6× — and it is no longer a constraint on the LED design.
 
@@ -690,7 +690,7 @@ The scenario system the LEDs will run comes from Menghin (2010) *Zahlensymbolik 
 | **green** | intercalary zone (`SZ`) | the zones to add/remove from a block |
 | off | not part of this time block | dark |
 
-The three green zones are always **{7, 16, 17}** — the once-only disc stamps (Nr. 11/13/9), the same set `verify_calendar.py` derives independently. Zone 5 is not coloured green by the figures (it is the 38 special signs), though Menghin's earlier 2000 work also treats it as intercalary — the set is unstable across his publications, see §2.1 and `MENGHIN_HYPOTHESIS.md` §6. This colouring **is** the LED command set, so it is transcribed into `data/scenarios.json` and checked by `scripts/verify_scenarios.py`:
+The three green zones are always **{7, 16, 17}** — the once-only disc stamps (Nr. 11/13/9), the same set `verify_calendar.py` derives independently. Zone 5 is not coloured green by the figures (it is the 38 special signs), though Menghin's earlier 2000 work also treats it as intercalary — the set is unstable across his publications, see §2.1 and `research/theories/menghin_lunisolar.md` §6. This colouring **is** the LED command set, so it is transcribed into `data/scenarios.json` and checked by `scripts/verify_scenarios.py`:
 
 - all 16 states present; every referenced zone ∈ 3…21;
 - every green zone is within {7,16,17} = the single-use disc stamps;
@@ -702,7 +702,7 @@ The three green zones are always **{7, 16, 17}** — the once-only disc stamps (
 
 ⚠️ The prior attempt's `reference/m5/gold_hat_scenarios.md` is **superseded**: it assumes ~3,400 individually-lit LEDs, a `zone→count` table that is Schmidt-Kaler's ornament tally (651) rather than Menghin's day-values, and the old `5,16,17` intercalary set. Stage 2 reads `data/scenarios.json`, not that file.
 
-**Is the hypothesis actually true?** The full reasoning — the counting-unit selectivity test, the Monte-Carlo null, the cross-hat attempt against Ezelsdorf-Buch, and the confidence levels — is in **`MENGHIN_HYPOTHESIS.md`**. Short version: the *counts* are solid, the *calendar reading* is a legitimate but unproven hypothesis (provisional confidence in the strong claim ≈ 20–30 %), and the demo must label it as such.
+**Is the hypothesis actually true?** The full reasoning — the counting-unit selectivity test, the Monte-Carlo null, the cross-hat attempt against Ezelsdorf-Buch, and the confidence levels — is in **`research/theories/menghin_lunisolar.md`**. Short version: the *counts* are solid, the *calendar reading* is a legitimate but unproven hypothesis (provisional confidence in the strong claim ≈ 20–30 %), and the demo must label it as such.
 
 ---
 
@@ -926,7 +926,7 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 | `IMPLEMENTATION_PLAN.md` | this document | 1st draft, for review |
 | `AGENTS.md`, `README.md` | project instructions; repo readme | — |
 | `open_questions.md` | the Q1–Q5 questions and the user's answers | **authoritative for scope** — Q2/Q3 are now closed from the primary source, see the note below |
-| `gold_hat.md` | Menghin + Schmidt-Kaler + Wikipedia digest | **secondary** — superseded by `assets/menghin/text/` for every number |
+| `research/theories/secondary_digest_2026-10-08.md` | Menghin + Schmidt-Kaler + Wikipedia digest (was `gold_hat.md`) | **secondary** — superseded by `assets/menghin/text/` for every number, and by `research/theories/` for the readings |
 | `dimensions.txt` | the prior attempt's height table, **but only its z/tb height section is Menghin** — confirmed to *be* Menghin's own per-zone table (§2.2); the two unattested `tussenstuk` rows are dropped from the model but stay in the file | ⚠️ **three known-bad lines elsewhere in the file, all the prior attempt's, none of them to be imported:** `base diameter of 20 cm at its widest point` (Menghin: 307 × 295 mm); `thickness = 0.6 mm` (unprintable — the plan uses 2.0 mm); and `symbol 13 - 4 rings = value 4` (**Menghin: Nr. 13 has two rings**, and a ring count of 4 occurs in no zone at all — a 4-ring Nr. 13 would give zone 16 = 19 × 4 = 76 instead of 38 and the total 1821 instead of 1783). `verify_calendar.py` reads **only** the z/tb heights, and asserts them against `data/hat_parameters.json` |
 | `sources.md` | 3 physical books | bibliographic verification for P0 |
 | `data/hat_parameters.json` | profile, 40 zone boundaries, 39 rings, cuff, Krempe | ✅ **created** |

@@ -1,3 +1,42 @@
+<!-- Consolidated 2026-10-10: moved from research/gold_hat.md into theories/ per
+research/AGENTS.md. This is a SECONDARY, MACHINE-WRITTEN digest (ChatGPT, 2026-10-08).
+It is kept for provenance and for its object description, NOT as evidence.
+The verification round found the following errors in it; do not quote the
+flagged passages. See research/lessons.md and sources/phantom_references.md. -->
+
+# Secondary AI digest (2026-10-08) — UNTRUSTED, corrected below
+
+**Status:** secondary. Not a source, not a finding. Every number must be checked
+against a primary source before use.
+
+> ⚠️ **Corrections applied 2026-10-10** (this round). The passages and citations
+> flagged here were **not** verified against any page. Where the text below
+> conflicts with a `theories/` or `sources/` file, the latter wins.
+>
+> 1. **Ezelsdorf-Buch total.** This digest says Ezelsdorf has “≈ 1,739 symbols in
+>    23 bands”. The real figure is ≈ **499 symbols in ≈ 19 zones**. The 1739 was
+>    Berlin's total, copied onto the other hat. Any “the other hats match too”
+>    claim is therefore unsupported. See `theories/secondary_digest` →
+>    `theories/menghin_lunisolar.md` §6, Result 1.
+> 2. **Phantom citations.** “Spurk, Gebhard, Schauer, et al.”, “Wolfgang Schlosser
+>    (2004, 2012)” and “I. Mathieson, *The Golden Hat Calendar* (2010)” could not
+>    be found in Crossref, OpenAlex, library catalogues or the open web. The real
+>    author is **Wolfhard** Schlosser, and his relevant work is on Bronze Age lunar
+>    calendars, not the gold hats. See `sources/phantom_references.md`.
+> 3. **Superseded numbers.** The digest's Schmidt-Kaler table (zones 1–21 =
+>    17,19,29,33,34,…,21) is an ornament/“Kreissymbol” count, **not** a day count,
+>    and must not be summed with Menghin's day-values. See
+>    `data/readings/schmidt_kaler.json` and `theories/schmidt_kaler_venus.md`.
+> 4. **Now verified and missing from this digest:** Fuls 2004/2008 (statistical
+>    null; only Schifferstadt significant), Amendola 2021 (Schifferstadt landscape),
+>    Lorenz 2010/2011 (modern metonic reading), Schlosser 2003 and Peter-Röcher
+>    2023 (critique). See `sources/`.
+>
+> The object description and the plain Menghin arithmetic in this digest agree
+> with the primary sources and are usable with that caveat.
+
+---
+
 Gold Hat Calendar
 =================
 

@@ -1,0 +1,21 @@
+# HANDOFF — research
+
+Start here. Keep this current enough that a fresh session can continue.
+
+## Where we are
+
+Case created 2026-10-10. Nothing has run yet. Plan is in `CASE.md`.
+
+## Running now
+
+Nothing.
+
+## Next
+
+Work doc item #1 in `CASE.md` with the human (scope), then continue through
+the plan without waiting to be asked. Pause only for the decisions listed in
+`AGENTS.md`.
+
+## Gotchas
+
+<!-- things that will bite the next session -->

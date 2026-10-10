@@ -1,0 +1,36 @@
+# research
+
+**Status:** new — 2026-10-10
+
+## Question
+
+The Berlin Gold Hat
+
+## Why it matters
+
+Research into the possible use of the Berlin Gold Hat - Could it have been used to encode a calendar?
+
+## Sources
+
+<!-- one line per source, each with a recipe in sources/<name>.md -->
+
+## Controls
+
+<!-- known events the pipeline must re-find; details in controls/ -->
+
+## Plan
+
+Doc items. Say which one you are on in every update.
+
+1. **Scope.** Confirm period, place and what counts as a hit. Write it under
+   Question above and in `AGENTS.md`.
+2. **First source.** Pick the source most likely to hold the answer. Write
+   its recipe in `sources/` from `templates/source.md`.
+3. **Control.** Pick one known, already-published event the pipeline must
+   re-find. Write it in `controls/`.
+4. **Retrieve.** Keyword regex plus semantic search over the source; configs
+   in `queries/`. Confirm the control is in the candidates.
+5. **Sort, read, verify.** Cheap judge, then reader, then page images.
+   Log counts and cost in `runs/`.
+6. **Novelty and write-up.** Check `catalogues/`, save evidence, write the
+   finding, add a beat to `NARRATIVE.md`.

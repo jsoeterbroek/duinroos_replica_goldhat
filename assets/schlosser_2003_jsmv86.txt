@@ -1,0 +1,660 @@
+
+===== PAGE 1 =====
+Einige Anmerkungen zur Realitat 
+bronzezeitlicher Mondkalender
+Wolfhard Schlosser
+Einleitung
+Die Mehrzahl der Verdffentlichungen uber prahistorische Kalender stammt aus der 
+Feder von Archaologen - weniger von Astronomen. Die Himmelskundler scheuen sich 
+meist, zu einem solch komplexen Gebiet wie dem vorzeitlicher Kalender Stellung zu 
+nehmen, da die Datenbasis schmal ist - besonders bei den Mondkalendern. Wahrend die 
+Astronomen die Orientierung von Newgrange zur Wintersonnenwende und die von Stone­
+henge zur Sommersonnenwende durchaus akzeptieren (und damit auch die Existenz 
+eines Sonnenkalenders), halten sie sich mit Deutungen bezuglich des Mondlaufs zurtick. 
+Der Mondlauf ist im Wortsinne »launisch«, was bekanntlich aus lat. »luna« fur »Mond« 
+abgeleitet ist. So ware es fur den bronzezeitlichen Menschen frustrierend gewesen, die 
+354 Buckel einer Bronzeamphore Tag fur Tag nacheinander einzufarben, wie es May 
+und Zumpe (2002, 173 ff.) vorschlagen, um dann am Ende beispielsweise eines Mondjah- 
+res feststellen zu mussen, daE ein Buckel zuviel oder einer zuwenig auf dem kostbaren 
+Stuck angebracht war. Anders als das Sonnenjahr ist das Mondjahr namlich von variab- 
+ler Lange. Selbstverstandlich war der Mond seit der Steinzeit bekannt und wurde zum 
+Messen der Zeit benutzt. Das belegt die Indogermanistik, welche die Wurzel des Wortes 
+»Mond« mit »messen« in Verbindung bringt. Nur: wie man maE, und ob es regional 
+unterschiedliche Kalender gab - dariiber verraten uns weder der Schild von Herzsprung, 
+Ldkr. Ostprignitz-Ruppin, noch die Bronzeamphore von Rorbaek (Danemark) etwas.
+DaE unser so einfacher abendlandischer Kalender das Ergebnis einer jahrtausende- 
+langen Entwicklung ist und in der Praktikabilitat zunehmend Vorrang vor dem Naturge- 
+schehen gewann, ist kaum bekannt. Das Wort »Kalender« kommt von lat. calare = ausru- 
+fen. Im alten Rom wurde das erstmalige Erscheinen der jungen Mondsichel am 
+westlichen Abendhimmel ausgerufen, in islamischen Landern ist dies teilweise heute 
+noch der Fall. Die mangelnde Kommensurabilitat zum Sonnenjahr hatte viele Reaktions- 
+muster zur Folge. Am einfachsten reagierte der Islam. Sein reiner Mondkalender nimmt 
+auf den Sonnenlauf keine Riicksicht und bewegt sich ruckwarts durch unser Sonnen- 
+jahr. Die Sonne ist von Bedeutung nur fur die Tageszeiten. Im alten Agypten wiederum 
+gait ein reiner Sonnenkalender - gesteuert uber den Friihaufgang des Sirius. Im antiken 
+Griechenland wurde mit Schaltmonaten ein Ausgleich versucht (Tetra-, Oktaeteris). Der 
+moderne westliche Kalender schlieElich ist ein reiner Sonnenkalender, der eine Unter- 
+teilung namens »Monat« mitfuhrt - allerdings ohne Fixierung an die Mondphasen.
+Jahresschrift fur mitteldeutsche Vorgeschichte / Band 86 / 2003
+
+
+===== PAGE 2 =====
+46 WOLFHARD SCHLOSSER
+Diese Vielfalt von Kalendersystemen hat es moglicherweise auch bereits in der Vorzeit 
+gegeben und sollte eine Warnung fur alle sein, die in den Zahlen 29 oder 354 auf einem 
+prahistorischen Fund sofort einen Hinweis auf einen Mondkalender sehen.
+Monat und Jahr
+Schaut man in ein Nachschlagewerk zum Thema »Jahreslange« oder »Monatslange«, so 
+findet man erstaunlich prazise Angaben dariiber. Ein Blick in die astronomische Fachli- 
+teratur zeigt, dab sich diese Prazision noch steigern labt. Danach hat das Jahr 
+365,2421896698 Tage, der Monat 29,5305888531 Tage, jedenfalls am 1. Januar 2000. Die 
+Astronomen kennen diese beiden wichtigen Werte offenbar auf Bruchteile einer 
+Sekunde genau. Jahr ftir Jahr, Monat fur Monat scheinen diese beiden Perioden prazise 
+nebeneinander abzurollen. Dies mag manchen dazu verleiten, sich iiber die Anzahl der 
+Punzen auf den Goldenen Hiiten (Menghin 2000) oder die Buckel auf den Bronzevasen 
+seine Gedanken zu machen.
+Leider gibt es dabei einen Haken: Die genannten Zahlen stehen zu den Naturphano- 
+menen »Monat« und »Jahr« nur in recht loser Beziehung. Mathematisch gesehen sind es 
+lediglich zwei Konstanten unter hunderten in einem Formelverhau, das sich fiber viele 
+Seiten mit ungezahlten Sinus-Termen hinzieht. Oder einfacher: Es sind im wesentlichen 
+die Mittelwerte iiber die Monats- und Jahreslangen seit den alten Babyloniern bis heute.
+Um wenigstens eine ungefahre Vorstellung davon zu vermitteln, dab die Dinge doch 
+etwas komplexer sind, seien hier die Grundziige der Berechnung von Sonnen- und 
+Mondpositionen erlautert. Sonne und Monel wandern im wesentlichen entlang der 
+Ekliptik, einem sogenannten Grobkreis an der Himmelskugel, den man sich etwa durch 
+den Erdaquator veranschaulichen kann. Ihre Koordinaten am Himmel werden durch 
+ihre ekliptikalen Liingen X ausgedriickt, die der geographischen Lange auf der Erde ent- 
+sprechen. Sie halten sich stets so nahe an der Ekliptik (=dem Aquator) auf, dab ihre 
+zweite Koordinate (die ekliptikale Breite [3, entspricht der geographischen Breite) hier 
+nicht naher erwahnt werden mub.
+Die ekliptikalen Liingen A wachsen mit der Zeit t, und es gilt ftir das Jahr 2002
+fur die Sonne 
+fur den Mond
+XS- 27949° 
+AM= 110,50°
++ 0,9856474°! 
++13,17640°!
++ 1,9i5°-sin(356,523° + 0,985600°!) 
++ 6,29°-sin(3O5,8i° + 13,06499°!)
++... 
++ i,27°-sin( 76,19°+ 11,31651°!)
++...
+(nach The Astronomical Almanac 2002, modifiziert und korrigiert vom Verfasser)
+t bedeutet den Tag im Jahr 2002 (mit dezimalem Tagesbruch). Hier sind nur die ersten 
+Terme ausgeschrieben, die Beitrage grober als ein Grad liefern. 1st X^ - Xg = 0°, so ist 
+Neumond, bei 90° erstes Viertel, usw. Die untereinandergeschriebenen Terme haben die 
+nachfolgend beschriebenen Eigenschaften.
+Jahresschrift fur mitteldeutsche Vorgeschichte / Band 86 / 2003
+
+
+===== PAGE 3 =====
+ANMERKUNGEN ZUR REALITAT B R O N Z E Z E I T L I C H E R MONDKALENDER 47
+Die erste Konstante (279,49° bzw. 110,50°) beschreibt grob die Stellung des Gestirns 
+zum Jahresanfang. Sie andert sich beim Mond von Jahr zu Jahr um etwa 133°, bei der 
+Sonne fast nicht.
+Die Konstante in der zweiten Zeile beschreibt fur jedes Gestirn dessen mittlere Bewe- 
+gung pro Tag. Es ist diese Zahl (genauer: die Differenz beider Konstanten fiir Sonne und 
+Mond), die zum synodischen Monat und zur Lange des Mondjahres zu 354,37 Tagen 
+fuhrt. Auf dieser Zahl bauen die Spekulationen uber Mondkalender auf.
+Die Terme in der dritten und vierten Zeile modifizieren diesen Wert aber deutlich. Es 
+sei daran erinnert, daft die Sinusfunktion zwischen +1 und -1 variiert. Mit den entspre- 
+chenden Vorfaktoren kann also der Mond der Sonne im Extremfall 6,29° + 1,27° + 1,92° = 
+9,48° vorauseilen, oder um den gleichen Wert zuriickbleiben. Damit ist die Lange des 
+Mondjahres variabel. Es gibt nicht 'das' Mondjahr schlechthin, und die Zahl 354 macht 
+nur im Mittel Sinn - nicht im Einzelfall!
+Zur Verdeutlichung dieser Ausfiihrungen zeigt die nachfolgende Tabelle die tatsachli- 
+chen Langen des Mondjahres fiir die Jahre 1967 bis 2003. Es wurden jeweils die 13 Haupt- 
+mondphasen verglichen, die als erste voll im Jahr liegen (N: Neumond, E: erstes Viertel, 
+V: Vollmond, L: letztes Viertel).
+Jahr
+Phase
+Januartermin
+Dezembertermin
+Differenz
+Anmerkung
+(Tag, Stunde, Minute)
+(Tag, Stunde, Minute)
+in Tagen
+1967
+L
+3
+14
+19
+24
+10
+48
+354,85
+1968
+E
+7
+14
+23
+26
+!5
+353,99
+*
+1969
+V
+3
+18
+28
+23
+17
+36
+353,96
+*
+1970
+N
+7
+20
+36
+28
+10
+43
+354,59
+1971
+E
+4
+04
+56
+25
+01
+36
+354,86
+Max.
+1972
+L
+8
+31
+27
+10
+27
+353,87
+*
+1973
+N
+4
+15
+42
+24
+15
+07
+353,98
+*
+1974
+E
+1
+18
+06
+21
+19
+43
+354,07
+1975
+L
+4
+19
+04
+25
+14
+52
+354,83
+1976
+N
+1
+14
+40
+21
+02
+08
+354,48
+1977
+V
+5
+12
+10
+25
+12
+49
+354,02
+1978
+L
+2
+12
+07
+22
+17
+04
+354,21
+1979
+E
+5
+11
+15
+26
+05
+11
+354,75
+1980
+V
+2
+09
+02
+21
+18
+08
+354,38
+1981
+N
+6
+07
+24
+26
+10
+10
+354D2
+1982
+E
+3
+04
+45
+23
+14
+17
+354,40
+1983
+L
+6
+04
+00
+26
+18
+52
+354,62
+1984
+N
+3
+05
+16
+22
+11
+47
+354,27
+1985
+V
+7
+02
+16
+27
+07
+30
+354,22
+1986
+L
+3
+!9
+47
+24
+09
+17
+354,56
+1987
+E
+6
+22
+34
+27
+10
+01
+354,48
+1988
+V
+4
+01
+40
+23
+05
+29
+354,16
+1989
+N
+7
+!9
+22
+28
+03
+20
+354,33
+1990
+E
+4
+10
+40
+25
+03
+16
+354,69
+Jahresschrift fur mitteldeutsche Vorgeschichte / Band 86 / 2003
+
+
+===== PAGE 4 =====
+48 WOLFHARD SCHLOSSER
+1991
+L
+7
+18
+35
+28
+01
+55
+35431
+1992
+N
+4
+23
+10
+24
+00
+43
+354^6
+1993
+E
+1
+03
+38
+20
+22
+26
+35378
+* Min.
+1994
+L
+5
+00
+00
+25
+19
+06
+354z8o
+1995 N
+1
+10
+56
+22
+02
+22
+354'64
+1996 V
+5
+20
+5i
+24
+20
+4i
+353'99
+*
+1997
+L
+2
+01
+45
+21
+21
+43
+353'83
+*
+1998
+E
+5
+14
+18
+26
+10
+46
+354'85
+1999 V
+2
+02
+49
+22
+17
+3i
+354'61
+2000 N
+6
+18
+14
+25
+17
+22
+353'96
+*
+2001
+E
+2
+22
+3i
+22
+20
+56
+353'93
+*
+2002
+L
+6
+03
+55
+27
+00
+31
+354'86
+Max.
+2003 N
+2
+20
+23
+23
+09
+43
+354'56
+Diese Tabelle ist recht lehrreich. Sie zeigt zunachst (Spalte »Anmerkung«: Min., Max.), 
+daE das Mondjahr innerhalb von 26 Stunden variabel ist, also um mehr als einen Tag 
+schwankt. Weiterhin bemerkt man (Sternchen), daft Mondjahreslangen mit einer 353 
+vor dem Komma gelegentlich gehauft auftreten, so zwischen 1968 und 1973 sowie 1993 
+und 2001. In den neun Jahren des letzteren Zeitraums hatte der bronzezeitliche Mensch 
+fiinf »Frustrationen« beim Buckelbemalen erlebt, wenn man dies auf eine entspre- 
+chende Haufungsperiode in seiner Zeit iibertragt. Da niitzt auch kein Hinweis auf »kor- 
+rektes Runden« etwas (wenn es das in der Vorgeschichte iiberhaupt gab). Wenn man das 
+Minimum auf 354 aufrundet, so auch das Maximum auf 355. Stets ist eine Punze oder 
+ein Buckel zuviel oder zuwenig.
+Es ist also schon von den astronomischen Grundlagen her eine Schwankung der 
+Lange des Mondjahres von iiber einem Tag zu beobachten. Hinzu kommen noch weitere 
+Schwierigkeiten. Neumond und Vollmond sind als Anzeiger des Mondjahres denkbar 
+ungeeignet. Der Neumond ist grundsatzlich unsichtbar - es sei denn, eine Sonnenfin- 
+sternis tritt ein. Der Vollmond ist zwar sichtbar, andert aber iiber mehr als einen Tag fast 
+nicht seine Phase (Ausnahme: Mondfinsternis). Die Mondviertel sind hingegen sehr 
+geeignet, da sie eine Phasenanderung im Bereich weniger Stunden erkennen lassen. Lei- 
+der stehen sie zur angegebenen Zeit in der Halfte der Faile unter dem Horizont, was ihre 
+Nutzbarkeit einschrankt. Hinzu kommen die Witterungsumstande.
+DaE diese Zeitunscharfe auch fur die einzelnen Mondphasen gilt, zeigt das Jahr 1972. 
+Die erste Hauptmondphase (Letztes Viertel) fand am 8. Januar um 13.31 Uhr statt. Der 
+Vollmond zuvor war am 31. Dezember um 20.20 Uhr. Damals betrug die Mondwoche 
+also fast acht Tage (genau: 7,72), was der bronzezeitliche Kalendermann vielleicht zu 
+einer Monatslange von 4 x 7,72 = 31 Tagen hatte hochrechnen kbnnen. Das hatte ihn an 
+seinem Beruf verzweifeln lassen - hatte er am Schreibtisch gesessen und nicht die Natur 
+beobachtet. So wird er aber die nachsten Mondphasen abgewartet (die kiirzer aufeinan- 
+der folgten) und befriedigt festgestellt haben, daE der nachste Vollmond 29,6 Tage spa- 
+ter folgte, etwa wie erwartet.
+Die obige Liste erlaubt auch die Einschatzung der Giite der Metonischen Regel, nach der 
+nach 19 Jahren die Mondphase wieder auf den gleichen Tag im Jahr fallt. Betrachtet man 
+die Januartermine, so stimmt sie fur die erste mdgliche Paarung (1967/1986, 3. Januar).
+Jahresschrift fur mitteldeutsche Vorgeschichte / Band 86 / 2003
+
+
+===== PAGE 5 =====
+ANMERKUNGEN ZUR REALITAT B R O N Z E Z E I T L I C H E R MONDKALENDER 49
+Bereits fur die nachste Paarung 1968/1987 gilt sie jedoch nicht mehr. Insgesamt ist die 
+Regel zu 2/3 zutreffend, zu einem Drittel aber nicht. Von »exakt« kann somit nicht die 
+Rede sein (Menghin 2000, 90 Anm. 102).
+Beim Sonnenjahr hingegen sind die zeitlichen Variationen denkbar gering. Der 
+Grund fur die hohe Konstanz des Sonnenjahres liegt an der Ahnlichkeit der beiden Fak- 
+toren vor dem t, die bis zur vierten Nachkommadezimale ubereinstimmen. Das bedeutet, 
+daE die durchaus merklichen Schwankungen im Sonnenlauf Jahr fiir Jahr (und Jahres- 
+zeit fiir Jahreszeit) praktisch identisch eintreten und daher nicht auffallen. Beim Mond 
+sind diese Vorfaktoren hingegen sehr unterschiedlich und bewirken die grohen Abwei- 
+chungen.
+Die nachfolgende Tabelle zeigt die Variation der Lange des Sonnenjahres, ermittelt 
+aus den Sommersonnenwenden 1993 bis 2003.
+Sommersonnenwende
+Differenz zum vorigen Jahr 
+(Tage, Stunden, Minuten)
+Zeitpunkt Juni 21 
+(Stunde, Minute)
+1993
+09 OO
+-
+1994
+14 48
+365 05 48
+1995
+20 34
+365 05 46
+1996
+02 24
+365 05 50
+1997
+08 20
+365 05 56
+1998
+14 03
+365 05 43
+1999
+19 49
+365 05 46
+2000
+01 48
+365 05 59
+2001
+07 38
+365 05 50
+2002
+13 24
+365 05 46
+2003
+19 10
+365 05 46
+Man erkennt, dafi die Lange des Sonnenjahres recht konstant ist. Sie schwankt im 
+betrachteten Zeitraum um 16 Minuten, betragt also nur ein Hundertstel der Schwan- 
+kung des Mondjahres. Line solch geringe Differenz war fiir den vorzeitlichen Menschen 
+nicht feststellbar - ganz anders als beim stark variierenden Mondjahr.
+Datengewinnung und Interpretation
+Es gibt drei eiserne Regeln fiir die Datengewinnung:
+1. Trage alles Material zusammen, welches fiir die Bestatigung oder Widerlegung der 
+Vermutung relevant ist!
+2. Widerstehe der Versuchung, Daten wegzulassen, die nicht in die Reihe passen, 
+und hore mit der Datensammlung nicht vor dem gesetzten Ziel auf!
+3. Denke daran, dab ein auf Vollstandigkeit angelegter Datensatz auch dann fiir die 
+Wissenschaft wertvoll ist, wenn die urspriingliche Vermutung widerlegt werden 
+sollte I
+Jahresschrift fur mitteldeutsche Vorgeschichte / Band 86 / 2003
+
+
+===== PAGE 6 =====
+50 WOLFHARD SCHLOSSER
+Diese Regeln setzen naturlich ein interpretierbares Datenmaterial voraus. Bereits dies ist 
+aber im Faile des Schildes Herzsprung i (May/Zumpe 1998, 573 Abb. 1) nicht gegeben. 
+Die Abbildung fiihrt 152, 167, 185 und 203 Buckel in vier konzentrischen Kreisen auf. 
+Die Frage ist, wie diese Zahlen ermittelt wurden. Das zugrunde liegende Objekt ist stark 
+beschadigt geborgen worden, so dab etwa am auEeren Kreis ein Viertel des Materials 
+fehlt. Hatten die Buckel auf dem unbeschadigten Teil des Schildes gleiche Abstande, so 
+kbnnte man eine Interpolation versuchen. Man beobachtet jedoch merkliche Abstands- 
+variationen (bis zu 10%, vgl. Sprockhoff 1930, n. S.24 Taf. 5). Da also ein Viertel der 
+etwa 200 auEersten Buckel (somit rund 50) gar nicht mehr vorhanden ist und somit eine 
+exakte Zahl der Buckel nicht mehr ermittelt werden kann, sind diese Zahlen alienfalls 
+plausible Schatzwerte, mehr nicht. Bei einer Interpretation als Mondkalender kommt es 
+jedoch auf die genaue Zahl an, und die ist im vorliegenden Faile nicht gewahrleistet.
+Addiert man je zwei dieser vier Zahlen, so hat man sechs Mdglichkeiten. Es ergeben 
+sich: 319, 337, 352, 355, 370 und 388. Ausgewahlt wurden nur drei (352, 355, 388), die 
+restlichen paEten wohl nicht. Und warum laEt man die Zahlen nicht ungeandert (152, 
+167, 185, 203), oder summiert je drei (504, 522, 540, 555)? Kurz: aus der Ftille der Mdg­
+lichkeiten wurden -ohne ersichtlichem, dem Schild selbst zu entnehmenden Grund- 
+genau die ausgewahlt, die sich in das vorgefaEte Konzept »Mondkalender« einfiigten. 
+Das ist eine unzulassige Vorgehensweise und ein VerstoE gegen die obigen Regeln 1) 
+und 2) fur wissenschaftliches Arbeiten.
+Die gleiche Kntik laEt sich an der kalendarischen Deutung der Goldhiite iiben (Menghin 
+2000), die hier nicht detailliert durchgefiihrt werden soli. Statt dessen nur ein Zitat (Meng­
+hin 2000,71; kursiv von Verfasser): »Dariiber hinaus hat schon das Abzahlen der Kreis- 
+ringe ... gezeigt, dass plausible und als Zahl interpretierbare Rechenprodukte nur bei/Ze- 
+xibler Handhabung der weiter oben defmierten »Schaltzonen« erwartet werden kdnnen. 
+In zahllosen Rechenversuchen mit der Numerik der Muster ...«
+Der Verfasser dieser Zeilen hat sich versucht vorzustellen, welches MaE an »Flexibi- 
+litat« aufgebracht werden muEte, und wieviel Papier bei all den »zahllosen Rechenversu- 
+chen« in den Papierkorb wanderte, bis das Ergebnis prasentabel schien. Kein Zweifel, 
+die zitierten Arbeiten demonstrieren eher die Intelligenz und Findigkeit ihrer Autoren 
+als die astronomischen Kenntnisse der Menschen der Bronzezeit.
+SchluEfolgerungen
+Zweck dieses Artikels ist es, den Archaologen eine Hilfestellung bei einer sauberen Her- 
+ausarbeitung astronomisch/kalendarischer Kenntnisse der Vorzeit zu geben. Es sind 
+eigentlich zwei Selbstverstandlichkeiten:
+1. Es ist ratsam, bei derartigen Unternehmungen einen Astronomen hinzuzuziehen. 
+Er bewahrt vor den Fallgruben der nur scheinbar so elementaren Astronomic. 
+Weiterhin kann er auch maneb guten Ratschlag zur statistischen Signifikanz der 
+Ergebnisse geben.
+2. Ein moderner Kalender ist praktikabel. Wenige Blicke geniigen, und man weiE, 
+wann etwa Ostern ist. Das diirfte in der Vorzeit nicht anders gewesen sein. Ein 
+Kalender, der sich nur nach langeren Rechenoperationen mit komplizierten Vor- 
+schriften erschlieEt, hatte damals wie heute keinen Nutzer gefunden.
+'Jahresschrift fur mitteldeutsche Vorgeschichte / Band 86 / 2003
+
+
+===== PAGE 7 =====
+ANMERKUNGEN ZUR REALITAT B R O N Z E Z E 1 T L I C H E R MONDKALENDER 51
+Summary
+Some remarks on the reality of Bronze Age lunar calendars
+Announcements to the existence of Bronze Age lunar calendars usually pay only insuffi­
+cient attention to astronomical facts. The lunar year (on average 35437 days) varies in 
+isolated cases by more than a day. A prehistoric find with 354 markings can therefore 
+have hardly been used as a current calendar. Additionally, either the poor state of preser­
+vation of the excavated finds makes it no longer possible to establish the exact number 
+of markings, or these have been selected in an inadmissable manner. The author pleads 
+for the consultancy of an astronomer in future examinations of this kind. Only he can 
+safeguard against the snares of what appears to be elementary astronomy.
+Literaturverzeichnis
+Astronomical Almanac 2002
+The Astronomical Almanac 2002. Her Majesty's 
+Nautical Almanac Office (London 2000).
+May/Zumpe 1998
+J.May/R.Zumpe, Kalendarien in der jiingeren Bron- 
+zezeit im nordlichen Mitteleuropa. Ein Beitrag zur 
+Interpretation buckelverzierter Amphoren und 
+Schilde. In: B.Hansel (Hrsg.), Mensch und Umwelt 
+in der Bronzezeit Europas. Die Bronzezeit: das 
+erste goldene Zeitalter Europas. Abschlufitagung 
+der Kampagne des Europarates: Die Bronzezeit: 
+das erste goldene Zeitalter Europas an der Freien 
+Universitat Berlin, 17.-19. Marz 1997 (Kiel 1998) 
+571-574-
+May/Zumpe 2002
+RGA2 XX (2002) 167-177 s. v. Mond (J.May/ 
+R.Zumpe).
+Menghin 2000
+W.Menghin mit einem Anhang von H.Born/J.Rie- 
+derer/C.Eluere, Der Berliner Goldhut und die golde- 
+nen Kalendarien der alteuropaischen Bronzezeit.
+Acta Praehist. et Arch. 32, 2000, 31-108.
+Sprockhoff1930
+E.Sprockhoff, Zur Handelsgeschichte der germani- 
+schen Bronzezeit. Vorgesch. Forsch. 7 (Berlin 
+1930).
+Anschrift
+Prof. Dr. Wolfhard Schlosser 
+Ruhr-Universitat Bochum 
+Astronomisches Institut 
+Universitatsstr. 150 
+D-44780 Bochum
+Institut for Ur- unci Frahqeschlchts
+O RG ESC H 1 C H r E ' B A N D 86 
+200 3
+an der U wersitat
+Heidelberg
+

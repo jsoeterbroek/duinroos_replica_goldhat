@@ -1,8 +1,8 @@
 # FINDING_2026-10-10_berlin-counts-solid
 
 **Status:** verified
-**Source:** Menghin 2010, pp. 47–63 (`assets/menghin/text/`, scans
-`assets/menghin/menghin_page47..63.jpeg`)
+**Source:** Menghin 2010, pp. 47–63 (`assets/menghin/2010/text/`, scans
+`assets/menghin/2010/jpg/menghin_page47..63.jpeg`)
 **Subject:** the non-interpretive counts of the Berlin Gold Hat
 
 ## Verbatim / numbers
@@ -22,7 +22,7 @@
 ## Evidence
 
 `data/zones.json`, `data/readings/menghin.json`, `data/hat_parameters.json`;
-`assets/menghin/*.jpeg`. Control: `controls/C1_menghin_counts.md`.
+`assets/menghin/2010/jpg/*.jpeg`. Control: `controls/C1_menghin_counts.md`.
 
 ## Open questions
 

@@ -1,5 +1,5 @@
 {
-  "_source": "Menghin, W. (2010) Der Berliner Goldhut, Ornamentanalyse. assets/menghin/text/ is authoritative.",
+  "_source": "Menghin, W. (2010) Der Berliner Goldhut, Ornamentanalyse. assets/menghin/2010/text/ is authoritative.",
   "_derivation": "IMPLEMENTATION_PLAN.md sections 2.2 and 3 (Q2). sum(ring h) == 745.0 is asserted by scripts/verify_calendar.py.",
   "height_total_mm": 745.0,
   "profile": [

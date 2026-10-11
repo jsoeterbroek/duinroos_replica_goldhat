@@ -16,8 +16,8 @@ Rejects keep a reason. Full run: `../runs/RUN_2026-10-10_consolidation.md`.
 | Fuls 2007, Astron. Nachr. abstract | abstract | read | one-page summary of Fuls 2008 |
 | Amendola 2021, JSA 7 | primary analysis | sorted (abstract) | Schifferstadt **place**; full text paywalled |
 | Lorenz 2010/2011 + 2nd-ed. afterword | secondary analysis | **verified** | 19 line-bands, 12+7 friezes, Metonic |
-| Schlosser 2003, JSMV 86 | critique | sorted (metadata) | PDF behind Anubis → `todo/T1` |
-| Peter-Röcher 2023, BUFM 106 | critique | sorted (ToC sample) | article CAPTCHA/paywall → `todo/T1` |
+| Schlosser 2003, JSMV 86 | critique | **held (PDF + text)** | read 2026-10-11 → finding |
+| Peter-Röcher 2023, BUFM 106 | critique | **held (PDF + text)** | read 2026-10-11 → finding |
 | Randsborg 2006, Acta Archaeol. 77 | context | sorted (metadata) | paywalled |
 | Hansen & Rink 2008, Nuncius 8 | context/alternative | **new, held inside Fuls PDF** | extract → `todo/T3` |
 | Wikipedia "Berlin Gold Hat" / "Gold hat" | secondary | read (search-inside) | source of the repo's errors |

@@ -44,3 +44,13 @@ The narrative for the write-up, in order, with credits for who had which idea.
   reaches the same conclusion the project's own scripts did: the Berlin hat's
   numbers are not demonstrably different from chance. The replica therefore shows
   the hypotheses *labelled as hypotheses*.
+- **2026-10-11 — the critique arrives from the source floor.** The two critical
+  papers that the first round could only see behind paywalls/JS walls were obtained
+  and read in full. **Wolfhard Schlosser (2003)** supplies the missing astronomy:
+  the synodic lunar year averages 354.37 d but **varies by more than 26 hours**
+  year to year, so 354 is a mean and not a per-year count, and the Metonic rule holds
+  only ~2/3 of the time. **Heidi Peter-Röcher (2023)** supplies the archaeology:
+  the calculation could **not be transferred to the other three hats**, and — quoting
+  Menghin's own words — "gerechnet wird also immer ausgehend vom gewünschten
+  Ergebnis". The cross-hat test is now recorded as *failing in print*, not merely
+  blocked here. Credit: the *project author* obtained both PDFs (T1).

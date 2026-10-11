@@ -3,7 +3,7 @@
 **What it is:** the reference set of Menghin's own counts, so that any "new"
 number can be checked against it before being called a find.
 
-**How checked:** **full read** of `assets/menghin/text/menghin_pages47-63.txt`
+**How checked:** **full read** of `assets/menghin/2010/text/menghin_pages47-63.txt`
 and the derived `data/zones.json` / `data/readings/menghin.json`, re-verified by
 `scripts/verify_calendar.py` and `scripts/verify_scenarios.py`.
 

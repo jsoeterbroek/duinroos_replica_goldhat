@@ -1,0 +1,1955 @@
+
+===== PAGE 1 =====
+Sonderdruck aus: 
+Beiträge zur Ur- und Frühgeschichte 
+Mitteleuropas 106 
+  
+ 
+ 
+ 
+Soziale Hierarchien 
+zwischen Tradition und Innovation 
+in der Bronzezeit Europas 
+ 
+ 
+Beiträge der Sitzungen der AG Bronzezeit 
+im Rahmen der 83. Tagung des NWVA vom 12.–15. September 
+2018 in Heide (Holstein) und der 85. Jahrestagung des WSVA 
+und des MOVA vom 1.–5. April 2019 in Würzburg 
+ 
+Herausgegeben von 
+Ken Massy, Jan-Heinrich Bunnefeld und Christian Horn 
+BEIER & BERAN. ARCHÄOLOGISCHE FACHLITERATUR 
+LANGENWEISSBACH 2023
+
+
+===== PAGE 2 =====
+Es ist nicht gestattet, diese Arbeit ohne Zustimmung von Verlag, Autoren und 
+Herausgebern ganz oder auszugsweise nachzudrucken, zu kopieren oder auf 
+sonst irgendeine Art zu vervielfältigen! 
+ 
+ 
+ 
+Die Deutsche Nationalbibliothek - CIP-Einheitsaufnahme 
+ 
+ 
+Bibliographische Information der Deutschen Nationalbibliothek: 
+Die Deutsche Nationalbibliothek verzeichnet diese Publikation 
+in der Deutschen Nationalbibliographie; detaillierte bibliographische 
+Daten sind im Internet über <http://dnb.ddb.de> abrufbar. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Impressum 
+ 
+Verlag: 
+Beier & Beran. Archäologische Fachliteratur 
+Thomas-Müntzer-Str. 103, Weißbach, D-08134 Langenweißbach 
+Redaktion: 
+Herausgeber 
+Satz/Layout:  
+ 
+ Lektorat Susanne Kubenz, Halle/Sa. 
+Gesamtherstellung: 
+winterwork, Borsdorf 
+Vertrieb: 
+ 
+ 
+ Verlag 
+oder jede andere Buchhandlung 
+online unter www.archaeologie-und-buecher.de 
+ 
+© Copyright und V. i. S. d. P. für den Inhalt liegen bei den jeweiligen Autoren 
+ 
+ISBN 978-3-95741-195-2 
+ 
+hergestellt in der Bundesrepublik Deutschland / printed in Germany 
+ 
+ 
+
+
+===== PAGE 3 =====
+Inhalt
+Jan-Heinrich Bunnefeld, Christian Horn und Ken Massy . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  7–17
+Innovationen, Traditionen und Hierarchien in der Bronzezeit – einleitende Gedanken
+Florian Klimscha . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  19–36
+Innovationsprozesse in der Bronzezeit: Das Beispiel des Scheibenrades
+Christian Horn . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  37–48
+Die feinen Unterschiede – Tradition und Innovation im Waffendesign 
+der nordischen Frühbronzezeit
+Jan-Heinrich Bunnefeld . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  49–75
+Offen für Neues!? Innovationen und Traditionen in der Bewaffnung des 
+nordischen Kreises in der älteren Bronzezeit
+Ken Massy . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  77–107
+Traditionen und Veränderungen endneolithischer und frühbronzezeitlicher 
+Gesellschaftsstrukturen in Süddeutschland – eine bioarchäologische 
+Neubewertung aus dem Lechtal
+Martin Bartelheim . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  109–126
+Rekonstruktion prähistorischer Gesellschaftsstrukturen – Konzeptionelle 
+Betrachtungen zur Frühbronzezeit Mittel- und Südwesteuropas
+Heidi Peter-Röcher .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 127–141
+Astronomische Forschungen und staatliche Strukturen in der Bronzezeit Europas? 
+Anmerkungen zu einem populärwissenschaftlichen Konstrukt 
+Matthias Jung . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  143–153
+Wider den Elitenzwang. Sozialarchäologische Perspektiven jenseits von 
+Hierarchie und Stratifizierung
+Christian Horn . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  155–173
+Versteinerte Hierarchien
+Tobias Mörtz . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  175–197
+Kämpfer und Krieger der späten Bronzezeit Nordwesteuropas
+Stefan Gridling, Gerhard Tomedi . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  199–208
+Holzfäller oder Beilkrieger? Zur Funktionsbestimmung der Beile im 
+mittelbronzezeitlichen Depot am Piller, Gem. Fließ, Nordtirol
+Sebastian Schultrich . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  209–231
+Hort oder Grab? Zur Entwicklung und sozialen Bedeutung der räumlich 
+voneinander getrennten Deponierungsstrategien im Spätneolithikum Norddeutschlands
+Frank Falkenstein .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 233–260
+Steinkistengräber und Sozialhierarchien in der süddeutschen Hügelgräber- 
+und Urnenfelderkultur
+Ralph Großmann . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  261–277
+Das Gräberfeld von Singen am Hohentwiel – Eine chronologische und 
+soziostrukturelle Neubetrachtung
+
+
+===== PAGE 4 =====
+Andy Reymann . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  279–296
+Ein Königreich für eine Burg! Überlegungen zu bronzezeitlichen Siedlungs-
+hierarchien auf der Basis ethnographischer Quellen zu indigenen Befestigungen
+Ondřej Chvojka, Petr Menšík, Tereza Šálková . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  297–308
+Hierarchie der bronzezeitlichen Siedlungen in Südböhmen
+Sabrina Kutscher . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  309–332
+Die frühe Bronzezeit zwischen Isar und Inn im Erdinger Land (Oberbayern) – 
+Untersuchungen zum Spangenbarrenhort von Oberding und der 
+Siedlungslandschaft im direkten Umfeld
+Jessica Keil . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  333–349
+Der Buchberg bei Wiesing in der Bronzezeit – Siedlungsentwicklung und 
+Kupferversorgung in Nordtirol
+Benedikt Biederer . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  351–362
+Individuelle und kollektive Strategien der Vorratshaltung in der späten 
+Bronzezeit Mitteleuropas
+Peter Ettel, Enrico Paust, Wolfgang Haak, Marie Himmel, 
+Patrick Roberts und Jana Ilgner . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  363–376
+Die Kuckenburg bei Esperstedt und ihre Toten – Bioarchäologische 
+Untersuchungen an Sonderbestattungen aus einer spätbronzezeitlichen Höhensiedlung
+Nils Ostermeier . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  377–411
+Der Stadtberg von Neuburg an der Donau – Neue Forschungen zu einer 
+Höhensiedlung der Urnenfelder- bis Frühlatènezeit im oberbayerischen Donauraum
+Sarah-Julie Wittmann . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  413–425
+Peitschen als bronzezeitliche Innovationen? – Hauspferde und Wagenfahrtzubehör 
+als Bausteine von Narrativen zur frühen und mittleren Bronzezeit in Zentraleuropa
+Matthias Schubert, Johann Friedrich Tolksdorf und Christiane Hemker . .  .  .  .  .  .  .  .  .  .  .  .  .  .  427–441
+Bronzezeitlicher Seifenbergbau auf Zinn im Erzgebirge
+Marie Philippe . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  443–450
+Ceramic technical traditions in the Upper Rhine Valley between the 10th and the 
+8th centuries B.C. Test of an automated partitioning tool for chaînes opératoires (PACO)
+
+
+===== PAGE 5 =====
+127
+mit bloßem Auge erkennbare Konstellation kei­
+neswegs exakt so am Himmel erscheint oder 
+erschien2, kann es sich nicht, wie gerne konsta­
+tiert, um eine wissenschaftlich nüchterne bzw. 
+die bisher älteste konkrete Himmelsdarstellung 
+ohne mythologische Elemente handeln3, zumal 
+auch die anderen Goldplättchen/Sterne nicht 
+so verteilt sind, wie sie es bei einer realistischen 
+Darstellung sein müssten4. Die Lesung der 
+Scheibe ist spekulativ: Ob mit dem Haufen aus 
+sieben Punkten die Plejaden gemeint sind oder 
+irgendetwas anderes, steht gewissermaßen in 
+den Sternen, ebenso wie die Lesung aller ande­
+ren Motive, für die es inzwischen bereits zahlrei­
+che Versionen gibt, was schon an sich gegen die 
+jeweils postulierte Eindeutigkeit spricht. In der 
+Regel wird jedoch davon ausgegangen, dass es 
+sich um eine nüchterne wissenschaftliche Abbil­
+dung handelt, die, so eine inzwischen ebenfalls 
+verbreitete Lesart, die Schaltregel für einen exak­
+ten lunisolaren Kalender darstellen soll5. 
+Aus ethnographischen Beispielen wird hin­
+gegen ersichtlich, dass es durchaus vergleich­
+bare Darstellungsformen gibt, die weder mit 
+einem Kalender in Zusammenhang stehen, noch 
+einen wissenschaftlich korrekten Realismus 
+anstreben6. Insofern sind sie vergleichbar mit 
+babylonischen Darstellungen auf Rollsiegeln 
+u. ä.7. Nicht immer spielen Sonne und Mond 
+dabei eine Rolle, Sonnendarstellungen erschei­
+nen aber gerne mit eindeutigem Strahlenkranz. 
+Hinzuweisen ist auch darauf, dass die Mond­
+Einleitung
+Wurde in prähistorischer Zeit Astronomie als 
+Wissenschaft betrieben? Gab es Kalender im 
+heutigen Sinn, d. h. eine exakte Bestimmung 
+der Tage innerhalb eines Jahres mit taggenauer 
+Bestimmung 
+astronomischer 
+Phänomene?1. 
+Wären derartige Kalender überhaupt sinnvoll 
+und denkbar gewesen? Diesen Fragen gelten die 
+folgenden Ausführungen. Dabei genügt es nicht, 
+nur einen Blick in die Bronzezeit zu werfen, auch 
+Vorstellungen zur Astronomie im Paläolithikum 
+und Neolithikum sowie in der Eisenzeit werden 
+Berücksichtigung finden, um das Phänomen 
+besser ausleuchten zu können.
+Insbesondere die Vorstellungen und Inter­
+pretationen zur sogenannten Himmelsscheibe 
+von Nebra beherrschen die Diskussion hinsicht­
+lich der Theorien zum Wissenschaftsverständnis 
+und zur Staatenbildung in prähistorischer Zeit. 
+Die Scheibe gilt als Sensationsfund und sorgt 
+bis heute für zahllose Schlagzeilen, vermutlich 
+nur noch übertroffen von der Anlage von Stone­
+henge, die weltweit am bekanntesten sein dürfte, 
+nicht zuletzt aufgrund der frühesten Spekulati­
+onen über die astronomische Bedeutung derar­
+tiger Monumente, die bereits aus dem 18. Jahr­
+hundert stammen. 
+Anmerkungen zur Himmelsscheibe 
+von Nebra
+Eine wichtige Rolle bei der „Lesung“ der Motive 
+der Bronzescheibe von Nebra spielt neben der 
+potentiellen Darstellung von Sonne und/oder 
+Mond ein Haufen aus sieben mehr oder weni­
+ger kreisförmig angeordneten Punkten, der sich 
+aus den anderen meist als Sterne gedeuteten 
+Punkten auf der Scheibe heraushebt und gerne 
+mit den Plejaden identifiziert wird. Da diese 
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+Astronomische Forschungen und staatliche Strukturen in der Bronzezeit 
+Europas? Anmerkungen zu einem populärwissenschaftlichen Konstrukt
+Heidi Peter-Röcher
+1	
+Zur Definition vgl. Rohde 2012, 11.
+2	
+Vgl. neben zahlreichen Aufnahmen der Plejaden, die im 
+Internet leicht zugänglich sind, auch Meller 2010, 60 Abb. 27.
+3	
+Vgl. z. B. Meller 2018, 355.
+4	
+Pásztor 2015, 1351 f. mit Abb.
+5	
+Z. B. Hansen 2006; Herten/Waldmann 2018; Meller 2010; 
+Meller 2018; Meller 2019a; Meller 2019b.
+6	
+Z. B. Pásztor/Roslund 2007; Pásztor 2014, jeweils mit 
+zahlreichen Beispielen.
+7	
+Vgl. z. B. Meller 2002, 16 Abb. 17; Hunger 2010, bes. 972.
+
+
+===== PAGE 6 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+128
+auf dem Mittelberg bei Nebra, angeblich geeig­
+net, um mit den als Horizontbögen gedeuteten 
+Goldapplikationen die Winter- und Sommer­
+sonnenwenden bzw. weitere wichtige Daten 
+bestimmen zu können13. Ob entsprechende 
+Visurlinien überhaupt zur Verfügung standen 
+wurde von Harald Meller ebenso wenig erörtert 
+wie die Beschriftung einer Abbildung, in der der 
+Fundort kurzerhand in einer Sternwarte platziert 
+erscheint14. Ein m. E. wissenschaftlich fragwür­
+diger Versuch der Manipulation des Lesers, denn 
+tatsächlich handelt es sich um einen eisenzeit­
+lichen Ringwall, und auch die Abschnittswälle 
+stammen vermutlich aus dieser Zeit15. Dies ist 
+hinsichtlich einer mit der auf der Bronzescheibe 
+vergleichbaren Darstellung der Plejaden auf 
+einem frühlatènezeitlichen Schwert aus Bayern 
+ein durchaus interessanter Sachverhalt, auf den 
+hier ausdrücklich hingewiesen sein soll16.
+Bis auf das Depot selbst und den Fund einer 
+Zierscheibe haben die Untersuchungen auf dem 
+Mittelberg nichts ergeben, was auf eine früh- 
+oder mittelbronzezeitliche Besiedlung oder gar 
+ein prähistorisches „Forschungszentrum“ hin­
+deuten würde, und auch eine Landschaftsre­
+konstruktion steht m. W. noch aus. Sie könnte 
+zur Frage nach damaligen Visurmöglichkeiten 
+beitragen.
+Deutung und Datierung der Nebra-Scheibe 
+werden dennoch sehr präzise vorgenommen, 
+auch wenn lediglich die verschiedenen Umar­
+beitungen, vor allem durch unterschiedliche 
+Zusammensetzungen der verwendeten Materia­
+lien, plausibel gemacht werden können. Ob sich 
+diese Phasen über zwei Jahrhunderte, eine Gene­
+ration oder auch nur über Monate oder Wochen 
+erstreckten, lässt sich hingegen nicht bestimmen. 
+Es könnten auch mehrere Handwerker beteiligt 
+gewesen sein, oder/und das verwendete Mate­
+rial mag generell aus unterschiedlichen Quellen 
+bezogen worden sein.
+Die von Harald Meller vorgenommene Datie­
+rung der sogenannten Urscheibe in die Früh­
+bronzezeit des 18. Jahrhunderts v. Chr. ist also 
+rein hypothetisch und dürfte von dem Wunsch 
+geleitet sein, sie mit dem sogenannten Fürsten­
+grabhorizont des mitteldeutschen Raums zu 
+verknüpfen. Zu dieser Zeit soll es sich um ein 
+mehrfach codiertes geheimes Regelwerk für die 
+Herstellung eines Lunisolarkalenders gehan­
+delt haben – geschaltet werden muss bei dicker 
+sichel in der Regel nicht als Neulicht, also dünn, 
+dargestellt ist, d. h. die Dicke der Sichel auf der 
+Nebra-Scheibe, die in einigen Interpretationen 
+eine Rolle spielt, muss schlicht als normale Dar­
+stellung gesehen werden.
+Bezüglich der Nebra-Scheibe lässt sich fest­
+halten: Wir wissen nicht, was genau und warum 
+dargestellt ist, auch wenn wir Sonne, Mond und 
+Sterne oder zumindest Mond und Sterne als 
+wahrscheinlich akzeptieren können. Für das an 
+beiden Längsseiten „gefiederte“, durch zwei 
+Rillen gegliederte bogenförmige Objekt gibt es 
+unterschiedliche Deutungen, die von Schiff über 
+Sichel bis hin zur Milchstraße reichen8. Emília 
+Pásztor zufolge könnte es sich auch um einen 
+Regenbogen handeln, während die beiden soge­
+nannten Horizontbögen den östlichen und west­
+lichen Horizont kurz vor dem Sonnenauf- bzw. 
+kurz nach dem Sonnenuntergang symbolisieren9.
+Die Scheibe von Nebra ist ein Einzelstück ohne 
+Vergleiche und deshalb schwer einzuordnen, da­- 
+rüber hinaus sind und bleiben die Fundumstände 
+und die Datierung problematisch.
+Es handelt sich um einen bereits 1999 von 
+Sondengängern bzw. Raubgräbern dem Boden 
+entrissenen Fund, der erst 2002 nach abenteuer­
+lichen, strafrechtlich relevanten und inzwischen 
+wohlbekannten Begebenheiten an das sachsen-
+anhaltische Landesmuseum in Halle gelangt 
+ist10. Nach anfänglichen Bedenken wird die 
+Echtheit heute kaum mehr angezweifelt11, und 
+nach Auskunft der Raubgräber konnte auch 
+der Deponierungsort lokalisiert werden. Zwei 
+Schwerter, ebenfalls außergewöhnliche Stücke 
+mit Goldauflagen, zwei Beile, ein Meißel und 
+die Ringe bzw. Armspiralen sollen zusammen 
+mit der Scheibe gefunden worden sein; sie datie­
+ren den Depotfund grob um 1600 v. Chr. Die 
+Scheibe selbst lässt sich nicht datieren. Ob tat­
+sächlich alle Gegenstände zusammen gefunden 
+worden sind, ob es sich um einen oder meh­
+rere Befunde gehandelt hat, ob stratigraphische 
+Beobachtungen hätten gemacht werden können 
+– all diese Fragen lassen sich heute nicht mehr 
+beantworten12.
+Der oder zumindest ein Fundort liegt nach 
+Auskunft der Raubgräber sowie archäologischen 
+und naturwissenschaftlichen Untersuchungen 
+8	
+Vgl. z. B. Meller 2002; Gleirscher 2007.
+9	
+Pásztor 2014, 4; Pásztor 2015.
+10	 Vgl. z. B. Meller 2010, 24–35.
+11	 Vgl. z. B. Pernicka u. a. 2008 zu den durchgeführten 
+Untersuchungen.
+12	 H. Meller zufolge sind Fundort und Fundumstände 
+zwar inzwischen völlig unstrittig (z. B. Meller 2018, 355; 
+ebenso aber bereits Meller 2002, 18), was jedoch gar nicht 
+der Fall sein kann. Genaueres zu dieser Problematik und 
+den unterschiedlichen, jeweils den Umständen angepassten 
+Aussagen der Raubgräber: Gebhard/Krause 2016.
+13	 Z. B. Schlosser 2002; Schlosser 2004.
+14	 Meller 2010, 38 Abb. 7; vgl. bereits Schlosser 2004, Abb. 
+Seite 45, mit der Beschriftung „Lage der Himmelsscheibe in 
+der Sternwarte“.
+15	 Meller 2010, 39 Abb. 8a; 43 f.
+16	 Vgl. David 2010, 481; Kurzmann 2016.
+
+
+===== PAGE 7 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+129
+zezeit degenerierte zum Mythos. Zugleich ging 
+der bis vor kurzem noch unbekannte, den vor­
+derasiatischen und ägyptischen Reichen eben­
+bürtige mitteldeutsche Staat der Aunjetitzer 
+oder auch Nebraner, wie sie inzwischen gerne 
+genannt werden, sang- und klanglos unter. Ein 
+Staat übrigens, dessen Existenz wiederum mit 
+der angeblich in der Nebra-Scheibe codierten 
+Wissenschaft begründet wurde, also ein klassi­
+scher Zirkelschluss22.
+Er steht nicht allein, werden doch immer 
+wieder Zirkelschlüsse, schlichte Behauptungen 
+sowie Möglichkeiten als sichere Fakten und 
+Beweise dargestellt. Ein Beispiel hierfür sind die 
+menschlichen Überreste aus dem Rondell von 
+Pömmelte-Zackmünde, welches Harald Meller 
+zufolge am Beginn der Aunjetitzer „Königsherr­
+schaft“ steht. Es soll sich bei ihnen, wie vielfach 
+öffentlichkeitswirksam kommuniziert, um Men­
+schenopfer handeln23. Die anthropologische 
+Untersuchung ergab jedoch unterschiedliche 
+Todesumstände bei den Individuen aus den 
+Schachtgruben. Das deutet nicht auf ein Ritual, 
+wie es bei Opferhandlungen vorausgesetzt wer­
+den muss. Marcus Stecher und Kurt W. Alt beto­
+nen daher zu Recht, dass der gewaltsame Tod 
+das Motiv für die Deponierung im Rondell, etwa 
+im Sinne eines „Schlimmen Todes“, gewesen 
+sein könnte24, wir es also mit Bestattungen zu 
+tun haben, nicht mit Deponierungen von Men­
+schenopfern.
+Auch die Ergebnisse der Untersuchungen 
+zur Herkunft der verwendeten Materialien der 
+Bronzescheibe sind nicht so eindeutig wie oft­
+mals dargestellt. Die Herkunft des Kupfers aus 
+den Ostalpen ist keineswegs erwiesen, sondern 
+Mondsichel nahe der Plejaden zu Frühlingsbe­
+ginn. Eine Regel, die entweder aus Mesopota­
+mien, wo sie zu dieser Zeit allerdings noch nicht 
+nachweisbar bekannt war, übernommen, aber 
+viel nüchterner als dort umgesetzt und weiter­
+entwickelt worden sein soll, oder gar aufgrund 
+sehr langer Beobachtungen über mehrere Gene­
+rationen hinweg autochthon entstanden sei17. 
+Es handelt sich dabei um nichts weniger als den 
+neunzehnjährigen sogenannten Meton-Zyklus 
+aus der Mitte des 5. Jahrhunderts v. Chr., ein 
+Zyklus von etwa 6940 Tagen, nach dem Sonnen- 
+und Mondjahr wieder übereinstimmen und ein 
+neuer Zyklus beginnt, denn das Mondjahr ist ca. 
+11 Tage kürzer als das Sonnenjahr. 19 Sonnen­
+jahre entsprechen 235 Mondmonaten zu 29,53 
+Tagen, d. h. 19 Mondjahren plus sieben Monaten, 
+die nach bestimmten Regeln innerhalb der 19 
+Jahre verteilt werden, um Mond- und Sonnen­
+jahr in Übereinstimmung zu halten. 
+Schalten lässt sich jedoch bei Bedarf bzw. 
+nach Sicht, und dies wurde in Babylonien, Rom 
+und anderenorts auch lange getan, d. h., wenn 
+Jahreszeiten und Monate nicht mehr überein­
+stimmten, wurde beispielsweise ein Monat 
+wiederholt, ein auch ethnographisch bekann­
+tes Phänomen18. In Rom führte dies 46 v. Chr. 
+schließlich zur Julianischen Kalenderreform, 
+weil die recht willkürlich vorgenommenen 
+Schaltungen ein ziemliches Chaos angerichtet 
+hatten, ließen sich doch etwa die zuständigen 
+Priester von Amtsinhabern bestechen, die ihr 
+Amt gerne noch etwas länger ausüben wollten, 
+aber dies nur nebenbei – auf Kalender und ihre 
+Vielfalt kann hier nicht eingegangen werden19.
+Zurück also zur Scheibe von Nebra und zum 
+Meton-Zyklus, der hier über 1000 Jahre früher 
+als bisher bekannt und dazu noch im schrift­
+losen Norden aufgetaucht sein soll. Danach ging 
+dieses Wissen, so die Interpretation Harald Mel­
+lers, verloren, und man kehrte angeblich zu viel 
+älteren Vorstellungen zurück, die sich mehrfach 
+wandelten, aber immer im Mythischen verhaftet 
+blieben und sich um die Sonne drehten20. Dem 
+Astronom Rahlf Hansen zufolge, auf den Harald 
+Meller sich beruft, tickten Plejaden, Sonne und 
+Mond irgendwann nicht mehr richtig, daher 
+wandte man sich enttäuscht vom Polytheismus 
+ab und dem Monotheismus zu21. Oder aber, wie 
+Meller meint: Die Wissenschaft der Frühbron­
+17	 U. a. Hansen 2006; Hansen/Rink 2008b, 95–104; Meller 
+2010, 61.
+18	 Vgl. z. B. Rüpke 2006, 39.
+19	 Vgl. Hunger 2010, 971; Rohde 2012, 40–42; zu Kalendern: 
+Ekrutt 1972; Rüpke 2006; von Stuckrad 2007; Holford-Stre­
+vens 2008.
+20	 Meller 2010, 62–68; zusammenfassend Meller 2010, 69 
+Abb. 35.
+21	 Hansen/Rink 2008a, 142 Anm. 47; ferner Hansen 2006; 
+Hansen/Rink 2008b.
+22	 Zuletzt Meller 2019a; Meller 2019b. Gerne wird hier und 
+anderenorts an die Prachtentfaltung altorientalischer Könige 
+erinnert, ohne entsprechende Indizien für einen vergleich­
+baren Staat zu haben. Es werden zwar Armeen anhand von 
+einigen Beilhorten und zwei Langhäusern, davon eines aus 
+Zwenkau, konstruiert, das dürfte jedoch, selbst wenn man 
+der Argumentation folgen möchte, kaum ausreichen, um 
+einen Staat zu postulieren, dem Zentralorte, Herrschersitze, 
+Tempel, spezialisierte Berufsgruppen usw. fehlen würden. 
+Die Befunde der Siedlung von Zwenkau mit zahlreichen 
+Langhäusern, deren größtes, nicht genauer, vermutlich aber 
+spät zu datierendes herausgegriffen wurde, hat Torsten 
+Schunke bearbeitet (Schunke 2009). Seine Analyse ergab eine 
+einfache ländliche Siedlung ohne Hinweise auf Fernhandel 
+und Eliten. Ob es sich bei den Beilen um Waffen oder Werk­
+zeuge handelt, ist umstritten. Als Ausrüstung von Armeen 
+erscheinen sie wenig geeignet, zumal eine entsprechende 
+Nutzung nicht nachgewiesen ist. Es bleiben die wenigen 
+sogenannten Fürstengräber, die jedoch unterschiedlich inter­
+pretierbar sind, vgl. z. B. Kienlin 2008.
+23	 Vgl. z. B. H. Meller in Der Spiegel Nr. 4 vom 18.01.2020, 
+106 f.; Meller 2019b, 25.
+24	 Stecher/Alt 2019, 52.
+
+
+===== PAGE 8 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+130
+von sieben Strichen erscheint durchaus plausibel, 
+in der Mitte des Knochens finden sich jedoch 14 
+Linien unterschiedlicher Längen, nicht 13, in der 
+Summe also 28. Wie dem auch sei, die Ritzun­
+gen gehören zu den ältesten bekannten absicht­
+lich angebrachten Zeichen, die die hohen kogni­
+tiven Fähigkeiten des Homo erectus bezeugen. 
+Was sie jedoch bedeuten, bleibt unbekannt.
+Gleiches gilt für die äußerst vielgestaltigen 
+Ritzungen des Jungpaläolithikums, die insbe­
+sondere Alexander Marshack mit Himmelsbe­
+obachtungen und Kalendern in Verbindung 
+gebracht hat30. Zuweilen wurden auch abstrakte 
+Zählsysteme vermutet, da aber regelhafte Tren­
+nungen fehlen, kann diese Vermutung nicht 
+überzeugen. Vielleicht wurden Sterne beob­
+achtet, vielleicht Jagdtiere vermerkt, vielleicht 
+auch sonstige Beobachtungen wie etwa Vögel 
+am Himmel, vielleicht handelt es sich schlicht 
+um Verzierungen – wir wissen es nicht, und 
+bestimmte Systeme von Aufzeichnungen konn­
+ten bisher noch nicht herausgestellt werden.
+Höhlenmalereien erfuhren ebenfalls entspre­
+chende Deutungen, insbesondere die bekannte 
+Darstellung des sogenannten toten Mannes im 
+Schacht der Höhle von Lascaux. Sie wurden 
+auch gerne einmal aufgrund von Fotografien 
+vorgenommen, auf denen dann Strukturen 
+Beachtung fanden, die gar nicht vorhanden sind, 
+so etwa Mitte der 1980er Jahre durch den Züri­
+cher Ingenieur Amandus Weiss und den Münch­
+ner Astronom Felix Schmeidler31. In jüngerer 
+Zeit sind weitere Felsbilder als Abbildungen des 
+Sternenhimmels bzw. bestimmter Sternbilder 
+gedeutet worden, so beispielsweise Stiere in der 
+Höhle von Lascaux32. Ein genauerer Blick zeigt, 
+wie willkürlich derartige Zuweisungen vorge­
+nommen werden: Irgendetwas passt mehr oder 
+weniger immer, aber leider nicht wiederholt. 
+Auch das bekannte kleine Elfenbeinplätt­
+chen aus dem Geißenklösterle in Baden-Würt­
+temberg wurde als Kalender gedeutet, sowohl 
+von Archäologen als auch von Astronomen. Die 
+Bedeutung der Einkerbungen bleibt letztlich 
+unklar, der Fantasie sind jedoch keine Grenzen 
+mehr gesetzt: Michael Rappenglück interpre­
+tierte ein „Gebilde“ zwischen den Beinen der mit 
+möglich25. Das Gold soll sicher aus Cornwall 
+stammen, u. a. jedoch begründet mit stilistisch-
+archäologischen Ähnlichkeiten26. Ähnlich pro­
+blematisch erscheint das Zinn, dessen Untersu­
+chung zeigte, dass sich die Nebra-Scheibe von 
+anderen Aunjetitzer Bronzen unterscheidet, 
+woraus gefolgert wurde, dass „Cornish tin was 
+utilized for producing the Sky Disk, whereas 
+other source(s) were used to produce bronzes 
+for everyday use“27. Abgesehen von der grund­
+sätzlichen Problematik von Herkunftsbestim­
+mungen wurde eine mögliche andere Datierung 
+der Scheibe nie in Erwägung gezogen, eben weil 
+vorausgesetzt wurde, dass sie mit den anderen 
+Bronzen zusammen gefunden worden ist, was, 
+wie oben dargestellt, möglich, aber nicht sicher 
+erscheint. All das erinnert an die Probleme, die 
+sich bei den naturwissenschaftlichen Analysen 
+am Silberkessel von Gundestrup zeigten, bei 
+dem vorausgesetzt wurde, dass die Produktion 
+in einer Werkstatt mit dort speziell für den Kes­
+sel hergestellten Bestandteilen erfolgte. Weder 
+die Materialzusammensetzungen noch die Datie­
+rungen ließen sich jedoch mit dieser Annahme 
+überzeugend in Übereinstimmung bringen28.
+Für Harald Meller degenerierte die Wissen­
+schaft der Frühbronzezeit, wie bereits erwähnt, 
+zum Mythos, und das Wissen der Nebra-Scheibe 
+ging damit verloren.
+Andere Forscher lassen die Wissenschaft fort­
+dauern bis mindestens an das Ende der Bronze­
+zeit, wo Lunisolarkalender in Goldblechkegeln 
+oder -hüten und weiteren Gegenständen codiert 
+sein sollen. Einige gehen sogar vom Beginn der­
+artiger Kalender im Paläolithikum aus und ver­
+binden sie mit dem europäischen Homo erectus. 
+Kalender im Paläolithikum?
+Eine Art Mondkalender wollte schon Dietrich 
+Mania, der Ausgräber von Bilzingsleben, in 
+den berühmten, etwa 370000 Jahre alten Einrit­
+zungen auf einem Elefantenknochen von die­
+sem Fundort erkennen. Theodor Schmidt-Kaler 
+zufolge soll hier ein siderischer Mondmonat, 
+also ein vollständiger Umlauf des Mondes um 
+die Erde bezogen auf die Fixsterne, verzeichnet 
+sein, nämlich rekonstruiert 7 + 13 + 7 Linien = 27 
+Monate29. Die spiegelsymmetrische Ergänzung 
+25	 Pernicka 2010.
+26	 „Cornwall konnte als wahrscheinlichste Quelle des Gol­
+des der Applikationen der Phasen I und II identifiziert wer­
+den, was sowohl durch geochemische Ähnlichkeit als auch 
+durch lagerstättenkundliche und montanarchäologische 
+Plausibilität sowie stilistisch-archäologische Ähnlichkeiten 
+zwischen Südengland und der Aunjetitzer Kultur Mittel­
+europas untermauert wird“ (Borg/Pernicka 2017, 131).
+27	 Nessel u. a. 2019, 7; vgl. auch Brügmann u. a. 2018, 65 f.
+28	 Dazu ausführlich Peter-Röcher 2013.
+29	 Schmidt-Kaler 2012a, 19–28; 32.
+30	 Z. B. Marshack 1989, mit Literatur; kritisch dazu d’Errico 
+1989; vgl. auch Hayden/Villeneuve 2011, die einen Zusam­
+menhang mit Festen nach dem Vorbild des „potlatch“ der 
+Nordwestküstenindianer in den USA sahen und die Ritzun­
+gen als mögliche Aufzeichnung von Gaben oder Verpflich­
+tungen deuteten.
+31	 Vgl. Drößler 1990, 195–197; Rappenglück 1999; Rappen­
+glück 2008, 194–200.
+32	 Vgl. z. B. Rappenglück 2008, 189–194; Hayden/Ville­
+neuve 2011.
+
+
+===== PAGE 9 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+131
+und Nacht wird es immer, also seit dem Paläo­
+lithikum, gegeben haben, für die jedoch weder 
+genaue und langfristige astronomische Beobach­
+tungen noch Berechnungen erforderlich waren. 
+Vom Paläolithikum bis zur Eisenzeit lässt 
+sich jedenfalls festhalten: Oftmals werden nur 
+Einzelfälle interpretiert, es gibt keine erkennba­
+ren spezifischen Wiederholungen, Regeln oder 
+Systeme, dafür aber gelegentlich zurechtgebo­
+gene Visurlinien, kaum nachvollziehbare kom­
+plizierte Berechnungen und diverse Ausnahmen 
+und Erklärungen, wenn etwas nicht passt. Wir 
+haben es also überwiegend mit Spekulationen 
+und Zahlenspielereien zu tun, die die Wunsch­
+vorstellungen sowie die astronomischen und 
+rechnerischen Fähigkeiten der heutigen For­
+scher widerspiegeln. Trotz der großen zeitlichen 
+Tiefe des Interesses an astronomischen und 
+kalendarischen Aspekten von Monumenten 
+und Gegenständen hat sich bis heute noch keine 
+entsprechende Fachrichtung etabliert. Archäo­
+astronomie wird in der Regel als Hobby oder 
+aus Leidenschaft betrieben, sowohl von Astro­
+nomen, Ingenieuren oder Technikern, die keine 
+ausgebildeten Archäologen sind, als auch von 
+Archäologen, die keine Astronomen sind. 
+Das große Interesse einer breiten Öffentlich­
+keit und der Medien an astronomischen Deu­
+tungen führt zu einem hohen Bekanntheitsgrad 
+der archäologischen Monumente und Objekte, 
+wobei die tatsächlich fundierten wissenschaft­
+lichen Erkenntnisse zuweilen ins Hintertref­
+fen geraten. Als Beispiele können die Scheibe 
+von Nebra mit umfassender Vermarktung, der 
+Berliner Goldhut als Publikumsmagnet im 
+Neuen Museum in Berlin und der Glauberg als 
+„Kalenderbauwerk“ pünktlich zur Eröffnung 
+des Glaubergmuseums dienen. Die genannten 
+Objekte und Monumente sind m. E. jedoch auch 
+ohne derartige Deutungen sensationell, und 
+man fragt sich, ob es wirklich notwendig ist, 
+Archäologie nach einer schlagzeilenträchtigen 
+Presse zu gestalten, der es immer weniger um 
+den eigentlichen Gegenstand geht, wie Stefanie 
+Samida und Manfred Eggert zu Recht beklag­
+ten36. Anders ist ein Artikel wie der 2002 in Der 
+guten Gründen als Löwenmensch ansprechba­
+ren Darstellung als Penis und sah einen Zusam­
+menhang mit Mythen über den Orionnebel, 
+ohne den Erhaltungszustand des Fundstücks zu 
+berücksichtigen. Darüber hinaus soll es sich um 
+einen Lunar- und Schwangerschaftskalender 
+handeln, mit dem Geburtstermine vorhergesagt 
+werden können33.
+Für derartige Spekulationen ist auch die 
+sogenannte Venus von Laussel benutzt wor­
+den, die schon für zahlreiche Interpretationen 
+diverser Art Patin stehen durfte. Bekannt sind 
+vor allem drei unterschiedlich gestaltete Reliefs 
+dicker Frauen mit verschiedenen hornartigen 
+Gegenständen in der Hand, deren Deutung als 
+Schwangere heute als unwahrscheinlich gese­
+hen wird – sie sind einfach nur dick. Es gibt 
+keinen Grund zu der Annahme, es könnte sich 
+bei dem Horn mit 13 Kerben der bekanntes­
+ten Figur, die im 4. Monat schwanger sein soll, 
+um eine Mondsichel bzw. ein mondähnliches 
+Füllhorn handeln, wie Theodor Schmidt-Kaler 
+meinte, der darin zudem ein siderisches Mond­
+jahr und einen Schwangerschaftskalender sah34. 
+Die Bedeutung dieser Kerben ist nicht erschließ­
+bar. Komplizierte Berechnungen dürften zudem 
+weder möglich noch notwendig gewesen sein, 
+um Geburtstermine zu bestimmen. Außerdem 
+fehlen vergleichbare Darstellungen mit Hör­
+nern und Kerben, so dass hier kaum ein System 
+irgendeiner Art codiert worden sein kann.
+Bei all diesen Überlegungen handelt es sich 
+um mehr oder weniger überzeugende Speku­
+lationen, die nicht zu belegen sind und deren 
+Voraussetzungen nicht erörtert werden. Erkenn­
+bare Wiederholungen, Regeln, Systeme kom­
+men, soweit bisher ersichtlich, nicht vor, so 
+dass Sternbilder oder Kalender irgendeiner Art 
+unwahrscheinlich werden. Hinzu kommt das 
+Problem der exakten Datierung der Bilder, die 
+aber für die Berechnung der jeweiligen Sternen­
+konstellationen notwendig ist. 
+Zeitrechnung, Kalender und  
+Vermarktung
+Sicher gehörte auch in vorgeschichtlicher Zeit 
+der Blick in den Himmel ebenso zur Orientie­
+rung wie der Blick auf das Tierverhalten, den 
+Pflanzenwuchs und die Wetterbedingungen. 
+Aufschlussreich erscheinen in diesem Zusam­
+menhang beispielsweise die Monatsbenennun­
+gen der Sioux, bei denen Pflanzen, Tiere und 
+Jahreszeiten eine Rolle spielen35. Eine Zeiteintei­
+lung mit Hilfe von Mond und Sonne und Tag 
+33	 Vgl. Rappenglück 2008, 186–189 u. Abb. 5 u. 6.
+34	 Schmidt-Kaler 2008, 29 f. mit Abb.; vgl. auch Rappen­
+glück 2008, 185 f.
+35	 Monat der Geburt der Kälber (April), … der Erdbeere 
+(Mai), … der reifen Felsbirnen (Juni), … der reifen Kirschen 
+(Juli), … der reifen Pflaumen (August), … der gelben Blät­
+ter (September), … der fallenden Blätter (Oktober), … der 
+haarlosen Kälber (noch ungeboren, November), … des Frosts 
+im Tipi (Dezember), … in dem die Bäume platzen (Januar), 
+… der entzündeten Augen (Februar), … in dem der Samen 
+sprießt (März). Für weitere ethnographische Beispiele s. z. B. 
+Bialas 1998, 29–48.
+36	 Samida/Eggert 2013, 79; vgl. in diesem Zusammenhang 
+auch Frank Siegmunds Rezension zur Ausstellung „Bewegte 
+Zeiten“ (Siegmund 2019).
+
+
+===== PAGE 10 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+132
+Die Ausrichtung nach den Haupthimmels­
+richtungen ist jedoch keineswegs regelhaft der 
+Fall, wie eine Zusammenstellung derartiger 
+Anlagen veranschaulicht42, so dass fraglich 
+bleibt, ob eine ungefähre Ausrichtung über den 
+Sonnenstand erfolgt ist, oder ob etwa bereits 
+der sogenannte Indische Kreis bekannt war, mit 
+dessen Hilfe sich die Richtungen recht genau 
+bestimmen lassen, oder ob andere Aspekte im 
+Vordergrund standen, die nichts mit dem Him­
+mel zu tun hatten. Von einigen Wissenschaftlern 
+werden die Rondelle als Sonnenobservatorien 
+oder Kalenderbauwerke gesehen, also gewis­
+sermaßen als wissenschaftliche Einrichtungen, 
+die zur Bestimmung bestimmter Tage im Jahr 
+gedient haben sollen, v. a. Winter- und Sommer­
+sonnenwenden sowie Tag- und Nachtgleichen. 
+Selbstverständlich müssen diese Beobachtun­
+gen jedoch schon vor Errichtung der Anlagen 
+gemacht worden sein, sonst hätten die Monu­
+mente nicht errichtet werden können, d. h. sie 
+dokumentieren im Grunde nur, dass bestimmte 
+Zeiträume oder Himmelserscheinungen für die 
+Erbauer eine Rolle gespielt haben könnten, was 
+bedeutet, dass wir uns im Bereich der Religion 
+befinden, nicht der Wissenschaft.
+Insbesondere die Sonnenwenden werden als 
+bedeutsam gesehen, wobei immer suggeriert 
+wird, dass es sich um eine taggenaue Bestim­
+mung handeln würde. Eine solche wäre jedoch 
+auch durch noch so ausgefeilte Visurlinien gar 
+nicht möglich, denn die Sonne verbleibt etwa 
+eine Woche vor und eine Woche nach den Son­
+nenwenden an derselben Stelle. Dass dieser 
+Zeitraum, gerade im Winter, eine Rolle spielte 
+und gefeiert wurde, ist sehr gut vorstellbar, 
+bedeutet er doch eine hoffnungsvolle Wende – 
+die Sonne sinkt nicht weiter hinab, sondern sie 
+steigt wieder.
+Diese Beobachtung machten sich möglicher­
+weise auch die Erbauer der Grabanlage von 
+Newgrange in Irland zunutze, deren Inneres in 
+dieser Zeit durch die Sonne beleuchtet wurde, 
+wenn man der modernen Rekonstruktion glau­
+ben kann – der Grabungsbericht ist bezüglich 
+des Eingangs wohl recht unklar43.
+In Stonehenge könnte die Wintersonnen­
+wende ebenfalls bedeutsam gewesen sein, und 
+zwar im Zusammenhang mit Feierlichkeiten für 
+die Verstorbenen, denn es soll sich gemeinsam 
+mit umliegenden Strukturen um Anlagen für 
+den Totenkult gehandelt haben. Eine plausible 
+Spiegel Nr. 48 erschienene „Der Sternenkult der 
+Ur-Germanen: Die Entdeckung einer versun­
+kenen Hochkultur“ (Titelbild) bzw. „Der Kult 
+der Sternenmagier“ (Artikel) nicht zu erklären. 
+Hier werden Neolithikum und Bronzezeit, beide 
+selbstverständlich nicht germanisch, in einen 
+Topf geworfen und zudem neben Nebra auch 
+die Externsteine als prähistorisches Observato­
+rium kartiert, die lediglich vor und vor allem 
+in der Zeit des Nationalsozialismus, und zwar 
+gänzlich ohne entsprechende Belege, als germa­
+nisches Heiligtum und germanische Sternwarte 
+vermarktet worden sind37.
+Die meisten Archäologen schweigen und 
+kümmern sich nicht weiter darum, einerseits zu 
+Recht, da hier viel Fantasie und Wunschdenken 
+eine Rolle spielen, andererseits aber auch zu 
+Unrecht, denn die ganze Thematik ist interes­
+sant und muss kritisch diskutiert werden. Dazu 
+gibt es bisher erst sehr wenige Stimmen38, die 
+zudem gerne ignoriert werden oder gelegent­
+lich auch Zustimmung erfahren, bevor dann wie 
+gehabt weitergemacht, also einerseits fantasiert, 
+andererseits geschwiegen wird. Stefanie Haupt 
+und Dana Schlegelmilch beschreiben diese Ent­
+wicklung folgendermaßen: „Während die Kriti­
+ker der Archäoastronomie immer stiller wurden, 
+äußerten sich die Befürworter umso geballter 
+in fachlichen und populärwissenschaftlichen 
+Publikationen, auf Tagungen und in Ausstellun­
+gen – und zwar im Laufe der Jahre zunehmend 
+in einem Duktus größter Sicherheit in Bezug auf 
+Ausdeutungen und Schlussfolgerungen“39. Die 
+beiden Autorinnen sprechen zu Recht von effekt­
+orientierter Unterhaltungsarchäologie, Desin­
+formation und „low-level-Infotainment“40, eben 
+weil eine archäologische Basis bzw. Begründung 
+für derartige Spekulationen fehlt.
+Kalender im Neolithikum?
+Bereits recht früh wurden die Erdwerke bzw. 
+Rondelle des Mittelneolithikums, die alle nach 
+ähnlichen Mustern errichtet worden sind, mit 
+diversen astronomischen Visuren in Verbindung 
+gebracht, insbesondere mit solchen der Sommer- 
+und Wintersonnenwenden. Wie willkürlich dies 
+erfolgte, verdeutlicht das Rondell von Těšetice 
+in Mähren, dessen Zugänge immerhin nach den 
+Haupthimmelsrichtungen ausgerichtet erschei­
+nen. Weitere vermutete Ausrichtungen sind hin­
+gegen nicht im Befund begründet41.
+37	 Ausführlich zu den Externsteinen: Halle 2002; vgl. auch 
+Seidenspinner 1989; Haupt/Schlegelmilch 2018.
+38	 Vgl. z. B. Schlosser/Čierny 1996; Bialas 1998; Schmidt 
+2002; Rohde 2012; Samida/Eggert 2013.
+39	 Haupt/Schlegelmilch 2018, 511 f.
+40	 Haupt/Schlegelmilch 2018, 513 mit Anm. 7.
+41	 Drößler 1990, 58 f. und Abb. 57, mit der Einzeichnung 
+von Mondwenden u. a. Phänomenen, die aus dem Grundriss 
+nicht ersichtlich sind.
+42	 Trnka 2005, Abb. 1.11. 
+43	 Vgl. Schlosser/Čierny 1996, 88.
+
+
+===== PAGE 11 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+133
+beitete megalithische Yard von 0,829 m findet 
+heute in der Forschung keine Beachtung mehr. 
+1965 erschien das Aufsehen erregende Buch 
+„Stonehenge Decoded“ des in Amerika leben­
+den britischen Astronomen Gerald S. Hawkins, 
+der neben vielen Sonne und Mond betreffenden 
+Visurlinien v. a. die 56 sogenannten Aubrey-
+Löcher als eine Art Computer zur Vorhersage 
+von Sonnen- und Mondfinsternissen heraus­
+stellte, wobei schwarze und weiße Steine regel­
+mäßig zu versetzen waren. In diesem Zusam­
+menhang sei lediglich auf die harsche Kritik des 
+Ausgräbers von Stonehenge, Richard Atkinson, 
+verwiesen, der sie mit „Moonshine on Stone­
+henge“ durchaus doppeldeutig betitelte, steht 
+doch moonshine nicht nur für Mondschein, son­
+dern auch für Unsinn48.
+Kalender und höhere Mathematik
+In der heutigen Zeit, insbesondere nach Bekannt­
+werden der Bronzescheibe von Nebra, wur­
+den und werden all die alten Überlegungen zu 
+Kalendern, Maßen und Rechenkünsten wieder 
+belebt; dabei geht es, wie bereits erwähnt, um 
+lunisolare Kalender, aber auch um die Vorher­
+sage von Mond- und Sonnenfinsternissen, um 
+Venuskalender, Mondzyklen und Steckkalender, 
+sogenannte Parapegmen, um höhere Mathe­
+matik, Geometrie und astronomische Grund­
+lagenforschung49. Archäologen und archäolo­
+gische Laien sind gleichermaßen beteiligt und 
+übertreffen sich geradezu in Spekulationen, bei 
+denen auch Stonehenge wieder eine Rolle spielt, 
+allerdings unter Verwendung von exakten Plä­
+nen, die nur rudimentär auf archäologischen 
+Befunden basieren50. Diese Pläne werden dann 
+mit der Himmelsscheibe von Nebra verglichen, 
+wo übrigens auch eine Maßeinheit verschlüs­
+selt sein soll, die sich mit Thoms megalithi­
+schem Yard in Beziehung setzen lässt, darüber 
+Annahme, zumal auch in Stonehenge selbst sehr 
+viele Bestattungen vorhanden waren, über die 
+jedoch nur wenig bekannt ist44. Ganz neu ist 
+diese Interpretation nicht, hat doch bereits Carl 
+Schuchhardt in der zweiten Ausgabe der Prä­
+historischen Zeitschrift 1910 die Deutung als 
+Sonnentempel, die er schon damals als „euro­
+päischen 
+Glaubenssatz“ 
+bezeichnete, 
+abge­
+lehnt und eine als Grabmal bevorzugt, darin 
+Sir Arthur Evans und Lord Avebury folgend45. 
+Vor allem aber gab er einen Überblick über die 
+ältere Deutungsgeschichte. So scheint etwa die 
+Bezeichnung Heelstone oder Fersenstein bereits 
+aus dem Mittelalter zu stammen, benannt nach 
+dem Fersenabdruck eines neugierigen Mönches, 
+nach dem der Stein geworfen wurde, übrigens 
+von Merlin im Bunde mit dem Teufel. Dann 
+wurde Stonehenge zunächst als römischer Tem­
+pel gesehen, bis John Aubrey 1665 erstmals von 
+einem Tempel der Druiden sprach, den William 
+Stukeley auf 460 v. Chr. datierte – die Avenue 
+sah er nach der Sonne orientiert, das Wissen 
+für die Errichtung der Anlage sei den Druiden 
+durch ägyptische Priester vermittelt worden, die 
+vor dem Perserkönig Kambyses geflohen waren. 
+John Smith zufolge bildeten die fünf vorhande­
+nen und zwei nicht vorhandene Trilithen die 
+sieben Planeten ab, der innere Kreis den Mond­
+monat und der äußere Kreis aus angeblich 30 
+Pfeilern das alte Sonnenjahr: 30 multipliziert mit 
+den 12 Zeichen des Tierkreises = 360. Der Astro­
+nom Sir Norman Lockyer sah in Stonehenge 
+einen Sonnentempel im Zusammenhang mit 
+Sonnenwenden und Tag- und Nachtgleichen 
+und datierte ihn auf 1680 v. Chr., was recht gut 
+mit der letzten Phase übereinstimmt46.
+Heute wird die Errichtung der Anlage in 
+vier bis acht Phasen unterteilt, mit dem Beginn 
+im Neolithikum um 3000 v. Chr. und dem Ende 
+in der ausgehenden Frühbronzezeit um 1600 
+v. Chr. Die Bedeutung dürfte sich im Nutzungs­
+zeitraum mehrfach gewandelt haben, in der 
+Forschung auch des 20. Jahrhunderts nahmen 
+jedoch vor allem astronomische Deutungen eine 
+wichtige Stellung ein – genannt seien insbeson­
+dere der Ingenieur Alexander Thom und sein 
+Sohn, die Mitte des 20. Jahrhunderts zahlreiche 
+megalithische Monumente vermaßen und mit 
+astronomischen Visuren in Verbindung brach­
+ten, wobei auch die Extremstellungen des Mon­
+des eine Rolle spielten47. Das dabei herausgear­
+44	 Parker Pearson u. a. 2009; Thomas u. a. 2009.
+45	 Schuchhardt 1910, 292–296; 323 f.; 339 f.
+46	 Schuchhardt 1910, 292–295.
+47	 Vgl. Baity 1973, 390–400 (Stonehenge); 395 f. (megalithi­
+sches Yard), mit Literatur; kritisch z. B. Daniel 1989, 188, der 
+in diesem Zusammenhang von einer wissenschaftlich ver­
+packten ‚Astronauten-Archäologie‘ sprach; Bialas 1998, 22; 
+Hänel 2008.
+48	 Atkinson 1966. Vgl. in diesem Zusammenhang auch 
+Herten/Waldmann 2018, die die Scheibe von Nebra als 
+„Laptop“ bzw. tragbare Version des Stonehenge-Computers 
+bezeichneten und dabei auch die Löcher am Rand einbezo­
+gen. Für T. Schmidt-Kaler (2008, 18) handelt es sich bei den 
+Randlöchern um einen Steckkalender zur Vorhersage der 
+Mondphasen.
+49	 So werden z. B. auch die jeweils unterschiedlich ver­
+zierten Salzmünder Äxte in diese Überlegungen einbezogen 
+und als Mondkalender gedeutet, vgl. Koneckis/Schmidt-
+Kaler 2008; Schmidt-Kaler/Koneckis 2008, bes. 80, wo betont 
+wurde, dass das angeblich in den Äxten verzeichnete Wissen 
+sogar dasjenige in Mesopotamien und Ägypten der Zeit um 
+1600 v. Chr. übertreffe.
+50	 Z. B. Johnson 2008. Auch für das sogenannte Königsgrab 
+von Seddin und sein Umfeld werden, neben kalendarischen 
+Berechnungen, inzwischen Maße auf zwei Stellen hinter dem 
+Komma genau berechnet, vgl. May 2018.
+
+
+===== PAGE 12 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+134
+derselbe Wert ergab. Durch Multiplizieren, Tei­
+len oder Radizieren der Punzen oder ihrer Ele­
+mente ergeben sich dann für wenige Beispiele 
+Zahlen, die mit Mond oder Sonne in Beziehung 
+gesetzt werden können. Wie Sommerfeld selbst 
+betonte, offenbaren nicht alle zonengegliederten 
+Scheiben ihren astronomischen Hintergrund so 
+schnörkellos wie die Vorgeführten, nicht immer 
+ergebe sich ein schlüssiges Resultat54, womit er 
+seine „Trundholm-Mathematik“ gewisserma­
+ßen selbst ad absurdum geführt hat. Sie gehört 
+in den Bereich der Esoterik und Zahlenmystik, 
+nicht in den der Prähistorischen Archäologie.
+Vielleicht handelt es sich ja auch nur um 
+einen Scherz, wie ihn sich der Astrophysiker 
+Cornelis de Jager 1990 mit seiner Religion der 
+Radosophie oder Cyclosophy geleistet hat, um 
+der 
+pseudowissenschaftlichen 
+Zahlenmystik 
+im Zusammenhang mit den ägyptischen Pyra­
+miden entgegenzutreten55. Diese basierte auf 
+der übersteigerten Ehrfurcht vor zufälligen 
+Übereinstimmungen von Zahlen und der Unter­
+schätzung der möglichen Anzahl mathemati­
+scher Relationen zwischen einfachen Zahlen. Er 
+vermaß verschiedene Durchmesser an seinem 
+Hollandrad, rechnete sie in Heilige-Fahrrad-
+Inches um, und kam zu erstaunlichen Ergeb­
+nissen, waren doch in seinem Rad die Gravita­
+tionskonstante, die Entfernung zwischen Erde 
+und Sonne sowie die Lichtgeschwindigkeit ver­
+schlüsselt, allerdings nicht ganz korrekt, so dass 
+er den Physikern die Neuberechnung nahelegte, 
+denn es erscheine unwahrscheinlich, dass der 
+Fehler bei seinem Fahrrad liege. Scherz beiseite, 
+de Jager betonte, dass er sein Fahrrad zu jeder 
+willkürlich gewählten Zahl in Beziehung set­
+zen könnte. Die meisten Menschen würden die 
+gewaltige Menge möglicher Kombinationen von 
+Zahlen unterschätzen, was es vielen pseudowis­
+senschaftlichen Auffassungen leicht gemacht 
+hätte, sich auszubreiten und allgemeine Aner­
+kennung zu finden56. 
+Begonnen hat die neuerliche astronomisch-
+kalendarische Blütezeit der Zahlenmystik in 
+Deutschland nicht mit Nebra, sondern bereits 
+vor der Jahrtausendwende mit der Idee von Jens 
+May und Reiner Zumpe, die Buckel auf bronze­
+hinaus mit mittelneolithischen Rondellen und 
+mit sämtlichen bronzezeitlichen Objekten, die 
+eine Verzierung tragen. Überall sollen luniso­
+lare Kalender verschlüsselt sein, außerdem die 
+7-Tage-Woche und die Berechnungsgrundlagen 
+für auch heute noch gültige Festtage, veröffent­
+licht in der Zeitschrift „Archäologie in Deutsch­
+land“ und im Katalog zu einer Ausstellung im 
+Federseemuseum, bezeichnenderweise unter 
+dem Titel „Glaubenssachen“51.
+Auch für Christoph Sommerfeld ist in der 
+Scheibe von Nebra erstmals der Meton-Zyklus 
+bekundet, der in prähistorischer Zeit als Offen­
+barung für das Mysterium des Lichtwechsels 
+gelten könne52. Dem Eingeweihten offenbare 
+sich hier die Gotteserkenntnis der bronzezeit­
+lichen Religion. Grundlage sei die von ihm 
+erkannte und auf der astronomischen Grund­
+lagenforschung des Neolithikums basierende 
+„Trundholm-Mathematik“, weshalb es sich bei 
+Nebra auch nicht um eine Fälschung handeln 
+könne. In der Bronzezeit seien die vier Grund­
+rechenarten sowie Potenzieren und Radizieren, 
+also mit sich selbst Malnehmen und Wurzel­
+ziehen, beherrscht worden, eine Annahme, die 
+nicht begründet wird und auch höchst unwahr­
+scheinlich ist, denn gezählt wurde vermutlich 
+nicht abstrakt. Als Grundlage aller Berechnun­
+gen wurde die empirische Beobachtung einer 
+Lunation, eines Mondumlaufs, von 29,53 Tagen 
+vorausgesetzt, die mit sich selbst malgenommen 
+annähernd eine ganze Zahl ergeben, nämlich 
+872. Denn: man rechnete mit ganzen Zahlen. Da 
+eine solche Beobachtung aber praktisch unmög­
+lich ist und daher schon die Voraussetzung für 
+eine derartige Mathematik fehlt, möchte ich 
+da­rauf verzichten, die Berechnungen im Einzel­
+nen zu erläutern.
+Ausgangspunkt für die Kreation der „Trund­
+holm-Mathematik“ war das Sonnenpferd von 
+Trundholm, manchmal auch unzutreffend Son­
+nenwagen genannt, 1902 in einem Moor entdeckt 
+und in das 14. Jahrhundert v. Chr. datiert53. Es 
+symbolisiert wahrscheinlich die Reise der Sonne 
+am Tag- und am Nachthimmel, gezogen von 
+einem Pferd, ein im Norden häufig auftreten­
+des Motiv. Die nur schwer erkenn- und zählba­
+ren Kreispunzen, die auch auf Gürtelscheiben 
+und Hängebecken als Verzierungsmotiv dienen, 
+werden in ganzzahlige sogenannte Tagespro­
+dukte umgerechnet, in der Regel vier- bis sechs­
+stellige, selten auch siebenstellige Zahlen. Für 36 
+Gegenstände sind solche Tagesprodukte errech­
+net worden, wobei sich nur ein einziges Mal 
+51	 Lorenz 2009; Lorenz 2011.
+52	 Sommerfeld 2012.
+53	 Sommerfeld 2010.
+54	 Sommerfeld 2010, 226.
+55	 Vgl. de Jager 2001.
+56	 Bereits 1973 kommentierte D. A. Snow den recht unkriti­
+schen Artikel zur Archäoastronomie von E. C. Baity entspre­
+chend: „To judge from the popular press, it looks as though 
+we might already be moving into another round of Egyptian 
+pyramid numbers magic. (…) Unless this new subdiscipline 
+advances quickly and carefully, there is a good chance that 
+volumes of nonsense will accumulate in our libraries, bury­
+ing and discrediting valid findings“ (Baity 1973, Kommentar 
+auf Seite 438). 
+
+
+===== PAGE 13 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+135
+Zahlen, ebenso der von Avanton, und der von 
+Ezelsdorf soll einen anderen Rhythmus auf­
+weisen, ohne dass sich kalendarische Werte 
+ermitteln ließen. Menghin zufolge sei hier mög­
+licherweise ein noch ausgeklügelteres mathema­
+tisches Wissen ornamental umgesetzt worden, 
+etwa siderische Monate, Sothis-Perioden zur 
+Vorhersage von Finsternissen oder auch Stern­
+zeiten62. Andere gehen davon aus, dass hier wie 
+auch auf anderen Gold- und Bronzeobjekten nur 
+die Kreisbuckel und nicht deren Ringe gezählt 
+werden müssen, oder dass jeweils mehrere Sys­
+teme auf unterschiedliche Art verschlüsselt sein 
+könnten. Man darf gespannt sein, was weitere 
+Rechenversuche noch alles ergeben werden. 
+Bei den Wissenden, die die passenden Zonen 
+kannten, um die Verschiebung der an Mond­
+phasen und Jahreszeiten gebundenen Feste 
+im Jahresablauf zu berechnen, soll es sich um 
+Priesterkönige als Inkarnationen oder Vertre­
+ter astraler Gottheiten gehandelt haben, die auf 
+orakelhaft geheimnisvolle Weise den richtigen 
+Zeitpunkt bestimmten für Aussaat, Pflanzung, 
+Ernte, für die Ablieferung von Abgaben an die 
+Herrschenden und für interkulturelle Verabre­
+dungen. Darüber hinaus konnten sie zukünftige 
+Ereignisse voraussagen, so jedenfalls Meng­
+hin, der damit auch einen Bezug zur babyloni­
+schen Astrologie herstellte, ohne dies näher zu 
+begründen63. Weder für Priesterkönige noch für 
+die Erhebung von Steuern gibt es Hinweise im 
+archäologischen Befund, und die Existenz von 
+Göttern nach altorientalischem Vorbild, wie hier 
+vorausgesetzt und häufig postuliert, ist nicht 
+nachgewiesen.
+Dass für die Bestimmung von Festtagen ein 
+Blick in den Himmel oder in die Natur und 
+die Absprache mit benachbarten Gruppen völ­
+lig ausreicht, ein genauer Kalender hingegen 
+nicht benötigt wird, belegen zahlreiche ethno­
+graphische Beispiele. Bei den dortigen „Herren 
+der Zeit“, deren Wissen nicht jedem zugänglich 
+ist, handelt es sich häufig um alte Männer, die 
+Sonne, Mond oder Sterne beobachten, gegebe­
+nenfalls Stäbe oder Bäume mit Markierung der 
+Schatten als Hilfsmittel verwenden, und dann 
+die richtigen Termine verkünden, sich dabei 
+aber häufig streiten oder um mehrere Tage ver­
+schätzen. Mond- und Sonnenjahr werden bei 
+Bedarf und nach oft langwierigen Diskussionen 
+aufeinander abgestimmt, indem beispielsweise 
+ein Monat wiederholt wird64. Für die Festle­
+zeitlichen Amphoren, später dann auch auf Bron­
+zeschilden und anderen Gegenständen, als Tage 
+zu zählen und irgendwie zu Mond und Sonne 
+in Beziehung zu setzen57. Lage und Anzahl der 
+Buckel sind unterschiedlich, z. T. auch nur rekon­
+struiert, und die Ergebnisse stimmen auch nicht 
+überein, so dass man sich doch fragt, was eigent­
+lich für ein System dahinterstecken sollte. Außer­
+dem wies Wolfhard Schlosser bereits 2003 darauf 
+hin, dass der Mondlauf launisch, ein Mondjahr 
+mal kürzer, mal länger sei, und es für den bronze­
+zeitlichen Menschen daher frustrierend gewesen 
+sein müsse, wenn sich nach sorgfältiger täglicher 
+Einfärbung der Buckel beispielsweise eines Jah­
+res herausgestellt hätte, dass ein Buckel zu viel 
+oder einer zu wenig auf dem kostbaren Gegen­
+stand angebracht worden war. Er monierte da­- 
+rüber hinaus zu Recht, dass aus der Vielzahl 
+der Zahlmöglichkeiten immer diejenigen ausge­
+wählt worden seien, die passen58. 
+Diese Kritik übertrug er auch auf die erstmals 
+im Jahr 2000 publizierte kalendarische Deutung 
+der Goldblechkegel oder Goldblechhüte. Nach 
+zahllosen Rechenversuchen mit der Nume­
+rik der Muster des Berliner Exemplars stellte 
+Wilfried Menghin nämlich fest, dass plausible 
+und als Zahl interpretierbare Rechenprodukte 
+nur bei flexibler Handhabung der sogenannten 
+Schaltzonen erwartet werden könnten. Mal wer­
+den sie hinzugezählt, mal abgezogen, mal nicht 
+beachtet. Gerechnet wird also immer ausge­
+hend vom gewünschten Ergebnis, alle anderen 
+zahllosen Möglichkeiten der Addition finden 
+keine Berücksichtigung, und so verwundert es 
+nicht, dass auch der Meton-Zyklus in irgend­
+einer Weise hier verschlüsselt erscheinen soll59. 
+Warum man die 19 Mondjahre = 228 Mondmo­
+nate in zwei weit voneinander entfernten Zonen, 
+deren Kreispunzen zudem unterschiedlich viele 
+Ringe aufweisen, untergebracht hat60, bleibt ein 
+Geheimnis, oder, um Menghin zu zitieren: „Der 
+Nutzer wusste offenbar, welche Zonen für den 
+Abgleich der solaren und lunaren Zyklen rele­
+vant sind und wann mit den Schaltzonen ope­
+riert werden musste“61.
+Auf die anderen drei bekannten Goldblech­
+kegel, von denen nur der aus Schifferstadt über 
+die mitgefundenen Beile eindeutig datierbar 
+ist, ließen sich die Rechenoperationen leider 
+nicht übertragen; der Schifferstädter zeigte nur 
+wenige kalendarisch annähernd verwertbare 
+57	 May/Zumpe 1998; May/Zumpe 2003.
+58	 Schlosser 2003; kritisch ebenso Uckelmann 2005, 183 f.; 
+vgl. dazu May 2008.
+59	 Vgl. Menghin 2008.
+60	 Menghin 2008, 165 Abb. 9.
+61	 Menghin 2010, 58.
+62	 Menghin 2010, 65–71; vgl. auch Schmidt-Kaler 2012b, 
+der von Venus-Kalendern sprach.
+63	 Menghin 2010, 80. 
+64	 Vgl. z. B. Schlosser/Čierny 1996, 10; Rüpke 2006, 37–39; 
+Villeneuve/Hayden 2011, 338 Tab. 2.
+
+
+===== PAGE 14 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+136
+hen habe, die im Scherner Wald unter einem 
+Stein gefunden worden sein sollte. Ein Gold­
+schmied hätte 500 Mark dafür geboten. Bezzen­
+berger zeigte Interesse, und so kam der Schmied, 
+wiederum durch Vermittlung des Predigers, bei 
+ihm vorbei und beschrieb den Fundort genau. 
+Bezzenberger kaufte die Statuette, den Preis 
+verriet er nicht. Er hielt sie für echt und in der 
+Vorzeit nach Schernen gelangt, denn, so betonte 
+er, dass „das Figürchen in geschichtlicher Zeit 
+nach Schernen gekommen und hier unter einem 
+Steine versteckt sei, wird jeder, der Land und 
+Leute kennt, für ausgeschlossen halten“68. Ein 
+tüchtiger, vielleicht auch vielgereister „Geschäf­
+temacher“ des frühen 20. Jahrhunderts könnte 
+m. E. aber durchaus eine Rolle gespielt haben, 
+so dass dieser Fund doch eher mit Vorsicht zu 
+betrachten ist.
+Eisenzeitliche Kalender?
+Für die Eisenzeit und die Kelten war lange Zeit 
+aus astronomischer oder kalendarischer Sicht 
+nur der 1897 in Bruchstücken aufgefundene und 
+etwa zur Hälfte erhaltene Bronzekalender von 
+Coligny bekannt, bei dem es sich tatsächlich um 
+einen Kalender handelt, und zwar einen luniso­
+laren aus gallorömischer Zeit, wohl dem 1. Jahr­
+hundert v. oder n. Chr., mit gallischen Monats­
+namen in lateinischer Schrift69. Inwieweit er 
+aus römischen Vorbildern abzuleiten, originär 
+keltisch oder beides ist, ist umstritten und wird 
+sich möglicherweise nie klären lassen. Erinnert 
+sei jedoch daran, dass der römische Sonnenka­
+lender erst aus der Julianischen Reform nach 
+der Eroberung Galliens hervorging, und der 
+alte römische Lunisolarkalender auch nach der 
+Reform noch von Bedeutung war. Es gibt hinge­
+gen keinen Grund, die Ursprünge dieses Kalen­
+ders in der Urnenfelderzeit zu suchen, wie dies 
+heutzutage zuweilen geschieht.
+Astronomisch wurden in jüngerer Zeit 
+dann zwei Grabmonumente interpretiert, und 
+zwar zunächst einmal der Glauberg aus der 
+Frühlatènezeit, ein Grabhügel mit einer von 
+Gräben eingefassten sogenannten Prozessions­
+straße und weiteren Gräben und Wallanlagen, 
+die nicht genauer interpretierbar sind. Passend 
+zur Eröffnung des Glaubergmuseums vor Ort 
+wurde die These aufgestellt, es handele sich 
+nicht nur um eine monumentale Grab- und 
+Totenkultanlage, sondern auch um ein astrono­
+misches Observatorium, ein Kalenderbauwerk 
+zur Feststellung von Sonnenwenden, Mond­
+wenden und Festtagen. Bruno Deiss rekonstru­
+gung von landwirtschaftlichen Terminen ist erst 
+recht kein genauer Kalender erforderlich, wor­
+auf Claudia Rohde in ihrer kritischen Erörterung 
+zu Kalendern in der Urgeschichte nachdrücklich 
+hingewiesen hat65. Notwendig sind Kenntnisse 
+der Bodenverhältnisse und der Blick auf die 
+Wetterbedingungen, eher gefährlich wäre die 
+genaue Befolgung eines astronomisch bestimm­
+ten Kalenderdatums.
+Die Rekonstruktion bronzezeitlicher Gesell­
+schaften als Staatswesen mit machtvollen Eliten, 
+Priesterkönigen oder Fürsten an der Spitze basiert 
+vorwiegend auf den von uns als außer­ordentlich 
+kostbar gesehenen Bronze- und Goldfunden die­
+ser Zeit, die wir aus Depotfunden und Gräbern 
+kennen. Die Eliten werden nach dem Vorbild 
+altorientalischer Könige beschrieben, obwohl 
+wir keine überzeugenden Hinweise auf Schrift­
+gebrauch, Stadt- und Tempelanlagen, Militär­
+organisationen, Verwaltungsapparate, Überpro- 
+duktion und Geldwirtschaft haben, auch wenn 
+das eine oder andere immer mal wieder postu­
+liert worden ist. Die Gesellschaften der Bronze­
+zeit in Europa haben wir uns wohl doch eher 
+als mehr oder weniger egalitäre oder als Häupt­
+lingsgesellschaften vorzustellen, in den unter­
+schiedlichen Stufen durchaus auch unterschied­
+lich organisiert. Darauf näher einzugehen ist 
+hier nicht der Raum. Betont werden muss jedoch, 
+dass neben anderen Gegenständen und Motiven 
+auch die Goldblechkegel oder -hüte formal und 
+inhaltlich als Symbol für göttliche und weltliche 
+Macht aus dem östlichen Mittelmeerraum abge­
+leitet werden. 
+Eine Kartierung zeigt allerdings, dass die 
+durchaus sehr unterschiedlichen Gegenstände, 
+Figurinen und Bilder auch unterschiedliche 
+Verbreitungsgebiete haben, so dass direkte Ein­
+flüsse auf den ersten Blick nur schwer nachvoll­
+ziehbar erscheinen66. Einen besonderen Stellen­
+wert nimmt daher der Fund einer bronzenen 
+sogenannten Rescheph-Statuette in Litauen ein, 
+der gerne als Beleg für Beziehungen in den Mit­
+telmeerraum angeführt wird. Dieser Fund ist 
+bis heute der einzige geblieben, und ein Blick 
+in den 1909 erschienenen Bericht von A. Bez­
+zenberger und F. E. Peiser, der alles ist, was 
+wir haben, lässt gewisse Zweifel an der Echt­
+heit des Fundortes aufkommen67: Im Sommer 
+1905 wurde Bezzenberger von einem Prediger 
+namens Dr. Gaigalat mitgeteilt, dass dieser bei 
+einem Schmied eine merkwürdige Figur gese­
+68	 Bezzenberger/Peiser 1909, 425.
+69	 Hansen/Rink 2008a, 155, mit Literatur; Hansen/Rink 
+2008b, 113 Abb. 19; Gropp 2008.
+65	 Rohde 2012, 56 f.
+66	 Sperber o. J. (2008), Karte 1 (Umschlag vorne innen).
+67	 Bezzenberger/Peiser 1909. Der Fund selbst konnte inzwi­
+schen als vermutlich echt klassifiziert werden, vgl. Čivilyté 
+u. a. 2015, 111 (kein Hinweis auf moderne Herstellung).
+
+
+===== PAGE 15 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+137
+Zusammenfassung
+Astronomische und vor allem kalendarische 
+Deutungen übten eine große Faszinationskraft 
+aus, im deutschsprachigen Raum vor allem in 
+den zwanziger und dreißiger, in Großbritannien 
+und Irland vor allem in den sechziger und sieb­
+ziger Jahren des 20. Jahrhunderts. In Deutsch­
+land spielte die Frage nach der Überlegenheit 
+der germanischen Kultur, was auch immer 
+darunter zu verstehen ist, eine wichtige Rolle74. 
+Auch heutzutage, nach der Wiederbelebung 
+entsprechender Deutungen im 21. Jahrhundert, 
+scheint ein zumindest sehr ähnlicher Aspekt 
+wichtig zu sein, wird doch ausgesprochen häu­
+fig betont, dass diese oder jene wissenschaftli­
+che Erkenntnis viel früher im Norden gewon­
+nen wurde als in Mesopotamien oder Ägypten. 
+Zuweilen klingt sogar durch, es hätte ein Wis­
+senstransfer von Nord nach Süd stattgefunden. 
+Stefanie Haupt und Dana Schlegelmilch zufolge 
+hat insbesondere die Flut an Publikationen zur 
+sogenannten Himmelsscheibe von Nebra dazu 
+beigetragen, die archäoastronomischen Positi­
+onen völkischer Prägung (wieder) in der deut­
+schen prähistorischen Fachwissenschaft zu etab­
+lieren75, und zwar weitgehend unreflektiert.
+Es sollte jedoch deutlich geworden sein, 
+dass diese Überlegungen zu frühen europäi­
+schen „Hochkulturen“ und „wissenschaftlichen“ 
+Erkenntnissen eher in den Bereich des Wunsch­
+denkens gehören; weder Kalender im heutigen 
+Sinn noch wissenschaftliche Einrichtungen zur 
+astronomischen Grundlagenforschung lassen 
+sich in vorgeschichtlicher Zeit in Europa verifi­
+zieren. Das Streben nach Erkenntnis, nach Wis­
+sen um des Wissens willen, mithin ein dem heu­
+tigen Wissenschaftsverständnis entsprechendes 
+Handeln dürfte für die damaligen Zeiten keine 
+Rolle gespielt haben. Die Menschen lebten in 
+Gesellschaften, in denen die Welt immer schon 
+bereits erklärt war, auch wenn sie sich ständig 
+veränderte. Sonne, Mond und Sterne wurden 
+entweder als selbstverständlich hingenommen 
+und nicht weiter beachtet oder auch als leben­
+dig und damit manipulierbar gesehen76. Dies 
+schließt Beobachtungen und deren Nutzung 
+für bestimmte Zwecke natürlich keineswegs 
+aus, ganz im Gegenteil, nur lagen ihnen keine 
+wissenschaftlichen Fragestellungen zugrunde, 
+ierte aufgrund einer Visurlinie im November 
+sogar einen achtteiligen Sonnenkalender70. Die 
+Visuren waren nicht immer exakt, ebenso wenig 
+die rekonstruierten Geometrien, die teilweise 
+auch gar nicht erkennbar bzw. vorhanden sind. 
+Die für die Visuren als Peilmarken herangezo­
+genen Pfosten, für die Deutung als Observato­
+rium unverzichtbar, wurden im Gelände wieder 
+aufgestellt, obwohl sie, wie sich herausgestellt 
+hat, gar nicht gleichzeitig sind und es sich auch 
+nicht bei allen Befunden um Pfostenlöcher han­
+delte71. Spätestens mit dieser Erkenntnis dürfte 
+das Thema „Kalenderbauwerk“ wohl ad acta zu 
+legen sein, was natürlich keine Pressemeldung 
+mehr Wert scheint.
+Im Jahr 2010 veröffentlichte dann das 
+Römisch-Germanische Zentralmuseum einen 
+Artikel über den Sternenhimmel vom Magda­
+lenenberg mit dem Untertitel „Kalenderwerk 
+der Hallstattzeit“. Der bekannte große Grabhü­
+gel mit 136 Bestattungen in 126 Gräbern soll als 
+Abbild des Sternenhimmels zur Sommerson­
+nenwende 618 v. Chr. konstruiert worden sein, 
+die Stangensetzungen, die vermutlich der Stabi­
+lisierung beim Bau des Hügels dienten, wurden, 
+sofern sie passten, als Visuren definiert72. Bei 
+Bedarf wurden aber auch die Mitte zwischen 
+zwei Stangensetzungen oder eine ungefähr pas­
+sende Grabenstruktur verwendet. Die anderen 
+Stangensetzungen sollen auch auf irgendwel­
+che astronomischen Konstellationen gezielt 
+haben. 
+Eine Erklärung für die unterschiedlichen Aus­
+richtungen der Bestattungen, nämlich mit und 
+gegen den Uhrzeigersinn, ergibt sich dadurch 
+nicht. Nicht alle Gräber konnten einem Sternbild 
+zugeordnet werden, und darüber hinaus stimmt 
+die Zahl der Gräber pro Himmelskonstellation 
+nicht mit der heute offiziellen Zahl der Sterne 
+eines Sternbilds überein, wie der Autor selbst 
+betonte73. Außerdem wissen wir nicht, wie der 
+Himmel zur damaligen Zeit gesehen wurde, d. h. 
+Sternbilder sind auch oder vor allem kulturell, 
+nicht nur astronomisch bestimmt. Letztlich blei­
+ben nicht viel mehr als schöne Bilder und eine 
+unpassende Schlagzeile, wurde doch der Mag­
+dalenenberg als Stonehenge des Schwarzwalds 
+bezeichnet. 
+70	 Deiss 2008, 286.
+71	 Samida/Eggert 2013, 87. Auch B. Deiss (2008, 290) 
+konnte nicht allen Pfosten eine Funktion als Peilmarke 
+zuweisen, vermutete aber, dass zusätzliche Pfosten dazu 
+gedient haben könnten, schon Tage vor einem Ereignis die­
+ses anzukündigen.
+72	 Mees 2010.
+73	 Mees 2010, 220. Kritisch dazu: Samida/Eggert 2013, 
+78–86; Schlosser 2014; dazu wiederum Mees 2017.
+74	 Vgl. zur Forschungsgeschichte, insbesondere im deutsch­
+sprachigen Raum und hinsichtlich völkisch geprägter Theo­
+rien, ausführlich Haupt/Schlegelmilch 2018, 514–521. 
+75	 Haupt/Schlegelmilch 2018, 522; ausführlich begründet 
+ebd. 522–524 mit Anmerkungen.
+76	 Auch im Mittelalter unterlagen astronomische Beobach­
+tungen der Manipulation, wurden sie doch mit bestimmten 
+Ereignissen in Verbindung gebracht und gegebenenfalls z. B. 
+zeitlich angepasst, vgl. z. B. Härke 2012.
+
+
+===== PAGE 16 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+138
+David 2010 – W. David, Die Zeichen auf der 
+Scheibe von Nebra und das altbronzezeitli­
+che Symbolgut des Mitteldonau-Karpaten­
+raumes. In: H. Meller/F. Bertemes (Hrsg.), 
+Der Griff nach den Sternen. Wie Europas 
+Eliten zu Macht und Reichtum kamen. Inter­
+nationales Symposium in Halle (Saale) 16.–21. 
+Februar 2005. Tagungen des Landesmuse­
+ums für Vorgeschichte Halle 5 (Halle [Saale] 
+2010) 439–486.
+Deiss 2008 – B. Deiss, Zur Struktur und Orien­
+tierung der Grabensysteme um die Fürsten­
+grabhügel am Glauberg. In: G. Schwitalla 
+(Hrsg.), Der Glauberg in keltischer Zeit. Zum 
+neuesten Stand der Forschung. Öffentliches 
+Symposium 14.–16. September 2006 (Bonn 
+2008) 279–294.
+Drößler 1990 – R. Drößler, Astronomie in Stein. 
+Archäologen und Astronomen enträtseln alte 
+Bauwerke und Kultstätten (Leipzig 1990).
+Ekrutt 1972 – J. W. Ekrutt, Der Kalender im 
+Wandel der Zeiten. 5000 Jahre Zeitberech­
+nung (Stuttgart 1972).
+d’Errico 1989 – F. d’Errico, Palaeolithic Lunar 
+Calendars. A Case of Wishful Thinking? Cur­
+rent Anthropology 30, 1989, 117–118.
+Gebhard/Krause 2016 – R. Gebhard/R. Krause, 
+Authentizitätsprüfungen. Methoden, Mög­
+lichkeiten, Grenzen. In: R. Gebhard/R. Krause, 
+Bernstorf. Archäologisch-naturwissenschaft­
+liche Analysen der Gold- und Bernsteinfunde 
+vom Bernstorfer Berg bei Kranzberg, Ober­
+bayern. Bernstorf-Forschungen 1 (München 
+2016) 25–43.
+Gleirscher 2007 – P. Gleirscher, Zum Bildpro­
+gramm der Himmelsscheibe von Nebra. 
+Schiff oder Sichel? Germania 85, 2007, 23–33.
+Gropp 2008 – H. Gropp, Der Kalender von Coli­
+gny. Ein Textzeugnis zur Astronomie der 
+Kelten. Acta Praehistorica et Archaeologica 
+40, 2008, 171–177.
+Hänel 2008 – A. Hänel, Archäologie und Astro­
+nomie. Die Orientierung von Megalithgrä­
+bern in Deutschland. In: F. Verse/B. Knoche/ 
+J. Graefe/M. Hohlbein/K. Schierhold/ 
+C. Siemann/M. Uckelmann/G. Woltermann 
+(Hrsg.), Durch die Zeiten… Festschrift für 
+Albrecht Jockenhövel zum 65. Geburtstag. 
+Internationale Archäologie 28 (Rahden/
+Westf. 2008) 29–43.
+Härke 2012 – H. Härke, Astronomical and 
+Atmospheric Observations in the Anglo-
+Saxon Chronicle and in Bede. The Antiquar­
+ian Astronomer 6, 2012, 3–12.
+Halle 2002 – U. Halle, „Die Externsteine sind 
+bis auf weiteres germanisch!“ Prähistorische 
+Archäologie im Dritten Reich (Bielefeld 2002).
+Hansen 2006 – R. Hansen, Die Himmelsscheibe 
+von Nebra – neu interpretiert. Sonne oder 
+sondern vermutlich mythische bzw. religiöse 
+Vorstellungen. Die ungefähre Ausrichtung neo­
+lithischer Erdwerke nach Sonnenwenden, Tag- 
+und Nachtgleichen oder auch Sternbildern wie 
+etwa den Plejaden und verschiedenen anderen 
+Konstellationen77 verwundert daher ebenso 
+wenig wie die Bevorzugung bestimmter Him­
+melsrichtungen bei der Bestattung der Toten 
+oder beim Hausbau. Exakte Kalender wurden 
+dagegen nicht benötigt, weder für die Landwirt­
+schaft noch für die Bestimmung von Festtagen. 
+Und sie hätten ohne Schrift m. E. auch gar nicht 
+entwickelt werden können.
+Literatur
+Atkinson 1966 – R. J. C. Atkinson, Moonshine on 
+Stonehenge. Antiquity 40, 1966, 212–216.
+Baity 1973 – E. C. Baity, Archaeoastronomy 
+and Ethnoastronomy So Far (+ Comments 
+and Reply). Current Anthropology 14, 1973, 
+389–449.
+Bezzenberger/Peiser 1909 – A. Bezzenberger/ 
+F. E. Peiser, Die Bronzefigur von Schernen, 
+Kr. Memel. Sitzungsberichte der Altertums­
+gesellschaft Prussia 22, 1909, 424–444.
+Bialas 1998 – V. Bialas, Vom Himmelsmythos 
+zum Weltgesetz. Eine Kulturgeschichte der 
+Astronomie (Wien 1998).
+Borg/Pernicka 2017 – G. Borg/E. Pernicka, Gol­
+dene Zeiten? Europäische Goldvorkommen 
+und ihr Bezug zur Himmelsscheibe von 
+Nebra. Jahresschrift für mitteldeutsche Vor­
+geschichte 96, 2017, 111–138.
+Brügmann u. a. 2018 – G. Brügmann/D. Berger/ 
+B. Nessel/E. Pernicka, Chemische Zusam­
+mensetzung und Zinn- und Bleiisotopenver­
+hältnisse in Schwertern des Typs „Apa“ und 
+assoziierten Bronzeobjekten aus Apa, Nebra 
+und Dänemark. Archäometrie und Denk­
+malpflege 2018. Jahrestagung. Kurzfassung 
+der Vorträge und Poster (Hamburg 2018) 
+64–67.
+Čivilyté u. a. 2015 – A. Čivilyté/E. Duberow/ 
+E. Per­nicka, His left foot. A new investiga­
+tion of the oriental Bronze Age figurine from 
+Šernai (Western Lithuania) and the question 
+of its authenticity. Germania 93, 2015, 97–120.
+Daniel 1989 – G. Daniel, Megalithische Monu­
+mente. In: J. Lüning (Hrsg.), Siedlungen der 
+Steinzeit (Heidelberg 1989) 180–191.
+77	 Die Untersuchungen zahlreicher österreichischer Anla­
+gen haben gezeigt, dass diverse Konstellationen eine Rolle 
+gespielt haben könnten, vgl. Zotti/Neubauer 2010. Hier 
+stellt sich dann natürlich wieder die Frage nach Regeln und 
+Systemen.
+
+
+===== PAGE 17 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+139
+(Hrsg.), Körperinszenierung, Objektsamm­
+lung, Monumentalisierung. Totenritual und 
+Grabkult in frühen Gesellschaften. Archäo­
+logische 
+Quellen 
+in 
+kulturwissenschaft­
+licher Perspektive. Tübinger Archäologische 
+Taschenbücher 6 (Münster/München/Berlin 
+2008) 181–206.
+Koneckis/Schmidt-Kaler 2008 – R. Koneckis/ 
+T. Schmidt-Kaler, Neolithische Kalender auf 
+den Prunkäxten der Salzmünder Kultur. In: 
+G. Wolfschmidt (Hrsg.), Prähistorische Ast­
+ronomie und Ethnoastronomie. Proceedings 
+der Tagung am 24. September in Würzburg. 
+Nuncius Hamburgensis 8 (Norderstedt 2008) 
+95–103.
+Kurzmann 2016 – P. Kurzmann, Die Plejaden in 
+Gold auf einem keltischen Schwert. Archäo­
+logische Informationen 39, 2016, 239–246.
+Lorenz 2009 – T. Lorenz, Weltwunder Himmels­
+scheibe. Die Entschlüsselung des Wissens der 
+frühen westlichen Menschheit (Neckarsulm 
+2009).
+Lorenz 2011 – T. Lorenz, Raum, Zeit und Zahl. 
+Kalender und Mathematik in der Bronzezeit. 
+In: R. Baumeister (Hrsg.), Glaubenssachen. 
+Kult und Kunst der Bronzezeit (Federseemu­
+seum Bad Buchau 2011) 95–102.
+Marshack 1989 – A. Marshack, On Wishful 
+Thinking and Lunar „Calendars“. Current 
+Anthropology 30, 1989, 491–500.
+May 2008 – J. May, „Die gefangene Zeit“. Ver­
+gleichende Untersuchungen zu den Kalende­
+ramphoren von Seddin, Herzberg, Rørbæk, 
+Unia und Gevelinghausen. Acta Praehisto­
+rica et Archaeologica 40, 2008, 127–155.
+May 2018 – J. May, Fokussieren, Positionieren, 
+Schritthalten. Aspekte von Raum und Zeit 
+am „Königsgrab“ von Seddin in der Prig­
+nitz. In: M. Aufleger/P. Tutlies (Hrsg.), Das 
+Ganze ist mehr als die Summe seiner Teile. 
+Festschrift für Jürgen Kunow anlässlich sei­
+nes Eintritts in den Ruhestand (Bonn 2018) 
+405–418.
+May/Zumpe 1998 – J. May/R. Zumpe, Kalenda­
+rien der jüngeren Bronzezeit im nördlichen 
+Mitteleuropa. Ein Beitrag zur Interpretation 
+buckelverzierter Amphoren und Schilde. In: 
+B. Hänsel (Hrsg.), Mensch und Umwelt in 
+der Bronzezeit Europas (Kiel 1998) 571–574.
+May/Zumpe 2003 – J. May/R. Zumpe, Ein 
+Buckel – ein Tag. Zur Nutzbarkeit buckelde­
+korierter Schilde, Hängebecken und Ampho­
+ren der jüngeren Bronzezeit als Kalender. In: 
+T. Springer/A. Grebe (Hrsg.), Gold und Kult 
+der Bronzezeit. Ausstellung Germanisches 
+Nationalmuseum Nürnberg 22. Mai bis 7. 
+September 2003 (Nürnberg 2003) 252–265.
+Mees 2010 – A. Mees, Der Sternenhimmel vom 
+Magdalenenberg. Kalenderwerk der Hall­
+Mond? Wie der Mensch der Bronzezeit mit 
+Hilfe der Himmelsscheibe Sonnen- und 
+Mondkalender ausgleichen konnte. Archäo­
+logie in Sachsen-Anhalt 4, 2006, 289–304.
+Hansen/Rink 
+2008a 
+– 
+R. Hansen/C. Rink, 
+Kalender und Finsternisse. Einige Überle­
+gungen zur bronzezeitlichen Astronomie. 
+In: G. Wolfschmidt (Hrsg.), Prähistorische 
+Astro­nomie und Ethnoastronomie. Proceed­
+ings der Tagung am 24. September in Würz­
+burg. Nuncius Hamburgensis 8 (Norderstedt 
+2008) 131–167.
+Hansen/Rink 
+2008b 
+– 
+R. Hansen/C. Rink, 
+Himmelsscheibe, Sonnenwagen und Kalen­
+derhüte. Ein Versuch zur bronzezeitlichen 
+Astro­nomie. Acta Praehistorica et Archaeolo­
+gica 40, 2008, 93–126. 
+Haupt/Schlegelmilch 2018 – S. Haupt/D. Schle­
+gelmilch, Archäoastronomie. Eine wissen­
+schaftshistorische Annäherung. In: L. Eiker­
+mann/S. Haupt/R. Linde/M. Zelle 
+(Hrsg.), 
+Die Externsteine. Zwischen wissenschaftli­
+cher Forschung und völkischer Deutung. Bei­
+träge der Tagung am 6. und 7. März 2015 in 
+Detmold (Münster 2018) 511–531.
+Hayden/Villeneuve 2011 – B. Hayden/S. Ville­
+neuve, Astronomy in the Upper Palaeolithic? 
+Cambridge Archaeological Journal 21, 2011, 
+331–355.
+Herten/Waldmann 2018 – F. Herten/G. Wald­
+mann, Functional principles of early time 
+measurement at Stonehenge and Nebra. 
+Archäologische Informationen 41, 2018, 275–
+288.
+Holford-Strevens 2008 – L. Holford-Strevens, 
+Kleine Geschichte der Zeitrechnung und des 
+Kalenders (Stuttgart 2008).
+Hunger 2010 – H. Hunger, Möglichkeiten und 
+Grenzen früher Astronomie in Mesopota­
+mien. In: H. Meller/F. Bertemes (Hrsg.), Der 
+Griff nach den Sternen. Wie Europas Eliten 
+zu Macht und Reichtum kamen. Internati­
+onales Symposium in Halle (Saale) 16.–21. 
+Februar 2005. Tagungen des Landesmuse­
+ums für Vorgeschichte Halle 5 (Halle [Saale] 
+2010) 969–972.
+de Jager 2001 – C. de Jager, Was ist Radosophie? 
+In: G. von Randow (Hrsg.), Mein paranorma­
+les Fahrrad und andere Anlässe zur Skepsis, 
+entdeckt im „Skeptical Inquirer“ (Reinbek 
+bei Hamburg 2001) 23–30.
+Johnson 2008 – A. Johnson, Solving Stonehenge. 
+The New Key to an Ancient Enigma (London 
+2008).
+Kienlin 2008 – T. L. Kienlin, Der Fürst von Leu­
+bingen. Herausragende Bestattungen der 
+Frühbronzezeit als Bezugspunkt gesellschaft­
+licher Kohärenz und kultureller Identi­
+tät. 
+In: 
+C. Kümmel/B. Schweizer/U. Veit 
+
+
+===== PAGE 18 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+140
+Pásztor 2015 – E. Pásztor, Nebra Disk. In: C. L. N. 
+Ruggles (Hrsg.), Handbook of Archaeoas­
+tronomy and Ethnoastronomy (New York 
+2015) 1349–1356.
+Pásztor/Roslund 2007 – E. Pásztor/K. Roslund, 
+An interpretation of the Nebra disc. Antiquity 
+81, 2007, 267–278.
+Pernicka 2010 – E. Pernicka, Archäometallurgi­
+sche Untersuchungen am und zum Hortfund 
+von Nebra. In: H. Meller/F. Bertemes (Hrsg.), 
+Der Griff nach den Sternen. Wie Europas Eli­
+ten zu Macht und Reichtum kamen. Interna­
+tionales Symposium in Halle (Saale) 16.–21. 
+Februar 2005. Tagungen des Landesmuse­
+ums für Vorgeschichte Halle 5 (Halle [Saale] 
+2010) 719–734.
+Pernicka u. a. 2008 – E. Pernicka/C.-H. Wunder­
+lich/A. Reichenberger/H. Meller/G. Borg, 
+Zur Echtheit der Himmelsscheibe von Nebra. 
+Eine kurze Zusammenfassung der durchge­
+führten Untersuchungen. Archäologisches 
+Korrespondenzblatt 38, 2008, 331–352.
+Peter-Röcher 2013 – H. Peter-Röcher, Der Silber­
+kessel von Gundestrup. Ein Zeugnis kelti­
+scher Religion? Offa 69/70 (Von Sylt bis Kas­
+tanas. Festschrift für Helmut Johannes Kroll), 
+2012/13 (2013) 189–199.
+Rappenglück 1999 – M. A. Rappenglück, Eine 
+Himmelskarte aus der Eiszeit? Ein Beitrag 
+zur Urgeschichte der Himmelskunde und zur 
+paläoastronomischen Methodik, aufgezeigt 
+am Beispiel der Szene in „Le Puits“, Grotte 
+de Lascaux (Com. Montignac, Dép. Dordo­
+gne, Rég. Aquitaine, France) (Frankfurt am 
+Main u. a. 1999).
+Rappenglück 2008 – M. A. Rappenglück, „Astro­
+nomische Ikonographie“ im Jüngeren Paläo­
+lithikum (35.000–9.000 BP). Acta Praehisto­
+rica et Archaeologica 40, 2008, 179–203. 
+Rohde 2012 – C. Rohde, Kalender in der Urge­
+schichte. Fakten und Fiktion. Archäologie 
+und moderne Gesellschaft 3 (Rahden/Westf. 
+2012).
+Rüpke 2006 – J. Rüpke, Zeit und Fest. Eine 
+Kulturgeschichte des Kalenders (München 
+2006).
+Samida/Eggert 
+2013 
+– 
+S. Samida/M. K. H. 
+Eggert, Archäologie als Naturwissenschaft? 
+Eine Streitschrift (Berlin 2013).
+Schlosser 2002 – W. Schlosser, Zur astronomi­
+schen Deutung der Himmelsscheibe von 
+Nebra. Archäologie in Sachsen-Anhalt 1, 
+2002, 21–23.
+Schlosser 2003 – W. Schlosser, Einige Anmer­
+kungen zur Realität bronzezeitlicher Mond­
+kalender. Jahresschrift für mitteldeutsche 
+Vorgeschichte 86, 2003, 45–51.
+Schlosser 2004 – W. Schlosser, Die Himmels­
+scheibe von Nebra. Astronomische Untersu­
+stattzeit. Jahrbuch des Römisch-Germani­
+schen Zentralmuseums Mainz 54, 2007 (2010) 
+217–264.
+Mees 2017 – A. Mees, Der Magdalenenberg und 
+die Orientierung von keltischen Grabhügeln. 
+Eine bevorzugte Ausrichtung zum Mond? 
+In: D. Krausse (Hrsg.), Neue Forschungen 
+zum Magdalenenberg. Archäologische Infor­
+mationen aus Baden-Württemberg 77, 2017, 
+76–123.
+Meller 2002 – H. Meller, Die Himmelsscheibe 
+von Nebra. Ein frühbronzezeitlicher Fund 
+von außergewöhnlicher Bedeutung. Archäo­
+logie in Sachsen-Anhalt 1, 2002, 7–20.
+Meller 2010 – H. Meller, Nebra: vom Logos zum 
+Mythos. Biographie eines Himmelsbildes. In: 
+H. Meller/F. Bertemes (Hrsg.), Der Griff nach 
+den Sternen. Wie Europas Eliten zu Macht 
+und Reichtum kamen. Internationales Sym­
+posium in Halle (Saale) 16.–21. Februar 2005. 
+Tagungen des Landesmuseums für Vorge­
+schichte Halle 5 (Halle [Saale] 2010) 23–73.
+Meller 2018 – H. Meller, Das Wissen um Zeit und 
+Raum. Himmelsdarstellungen in der Bron­
+zezeit. In: M. Wemhoff/M. M. Rind (Hrsg.), 
+Bewegte Zeiten. Archäologie in Deutschland 
+(Berlin 2018) 351–359.
+Meller 2019a – H. Meller, Princes, Armies, Sanc­
+tuaries. The Emergence of Complex Author­
+ity in the Central German Únětice Culture. 
+Acta Archaeologica 90, 2019, 39–79.
+Meller 2019b – H. Meller, Ahnen, Armeen und 
+geheimes Wissen. Eine neue Herrschafts­
+form in Mitteldeutschland. Archäologie in 
+Deutschland 4/2019, 22–25.
+Menghin 2008 – W. Menghin, Zahlensymbolik 
+und digitales Rechnersystem in der Orna­
+mentik des Berliner Goldhutes. Acta Praehis­
+torica et Archaeologica 40, 2008, 157–169.
+Menghin 2010 – W. Menghin, Der Berliner Gold­
+hut. Macht, Magie und Mathematik in der 
+Bronzezeit. Die Sammlungen des Museums 
+für Vor- und Frühgeschichte 2 (Regensburg 
+2010).
+Nessel u. a. 2019 – B. Nessel/G. Brügmann/E. Per- 
+nicka, Tin isotope ratios in early and middle 
+Bronze Age bronzes from Central and South­
+eastern Europe. UISPP The Journal of the 
+International Union for Prehistoric and Pro­
+tohistoric Sciences 2,1, 2019, 1–11.
+Parker Pearson u. a. 2009 – M. Parker Pearson/ 
+A. Chamberlain/M. Jay/P. Marshall/J. Pol­
+lard/C. Richards/J. Thomas/C. Tilley/ 
+K. Welham, Who was buried at Stonehenge? 
+Antiquity 83, 2009, 23–39.
+Pásztor 2014 – E. Pásztor, Hungarian Archaeoas­
+tronomical Research I. Astronomical Relic of 
+the Bronze Age, the Nebra Sky Disk. Hungar­
+ian Archaeology. E-Journal Winter 2014, 1–5.
+
+
+===== PAGE 19 =====
+BUFM 106, Peter-Röcher, „Astronomische Forschungen und staatliche Strukturen?“, 127–141
+141
+Sommerfeld 2010 – C. Sommerfeld, … nach Jahr 
+und Tag. Bemerkungen über die Trundholm-
+Scheiben. Prähistorische Zeitschrift 85, 2010, 
+207–242.
+Sommerfeld 2012 – C. Sommerfeld, … Sterne 
+mal Sterne durch Sonne ist Mond. Bemer­
+kungen über die Nebra-Scheibe. Prähistori­
+sche Zeitschrift 87, 2012, 110–131.
+Sperber o. J. (2008) – L. Sperber, Alt-Europa 
+zur Zeit der goldenen Kegelhüte. In: Der 
+Goldene Hut von Schifferstadt (Speyer o. J. 
+[2008]) 27–29.
+Stecher/Alt 2019 – M. Stecher/K. W. Alt, Anthro­- 
+pologische Untersuchungen an den mensch­
+lichen Überresten aus dem Rondell von Pöm­
+melte-Zackmünde. In: H. Meller/F. Bertemes 
+(Hrsg.), Mensch und Umwelt im Ringheilig­
+tum von Pömmelte-Zackmünde, Salzland­
+kreis. Forschungsberichte des Landesmuse­
+ums für Vorgeschichte Halle 10/III (Halle 
+[Saale] 2019) 9–115.
+von Stuckrad 2007 – K. von Stuckrad, Geschichte 
+der Astrologie. Von den Anfängen bis zur 
+Gegenwart (München 2007).
+Thomas u. a. 2009 – J. Thomas/P. Marshall/M. Par- 
+ker Pearson/J. Pollard/C. Richards/C. Tilley/ 
+K. Welham, The date of the Greater Stone­
+henge Cursus. Antiquity 83, 2009, 40–53.
+Trnka 2005 – G. Trnka, Kreise und Kulturen. 
+Kreisgrabenanlagen in Mitteleuropa. In: 
+F. Daim/W. Neubauer (Hrsg.), Zeitreise Hel­
+denberg. Geheimnisvolle Kreisgräben. Kata­
+log zur Niederösterreichischen Landesaus­
+stellung 2005 (Horn, Wien 2005) 10–18.
+Uckelmann 2005 – M. Uckelmann, Die Schilde von 
+Herzsprung. Bemerkungen zu Herstellung, 
+Funktion und Deutung. Jahresschrift für mit­
+teldeutsche Vorgeschichte 89, 2005, 159–188.
+Zotti/Neubauer 2010 – G. Zotti/W. Neubauer, 
+Astronomische Aspekte der Kreisgrabenan­
+lagen in Niederösterreich. In: P. Melichar/ 
+W. Neubauer (Hrsg.), Mittelneolithische Kreis- 
+grabenanlagen in Niederösterreich. Mittei­
+lungen der Prähistorischen Kommission der 
+Österreichischen Akademie der Wissenschaf­
+ten 71 (Wien 2010) 136–167.
+Prof. Dr. Heidi Peter-Röcher
+Julius-Maximilians-Universität Würzburg
+Institut für Altertumswissenschaften
+Lehrstuhl für Vor- und Frühgeschichtliche 
+Archäologie
+Residenzplatz 2, Tor A
+D - 97070 Würzburg
+heidi.peter-roecher@uni-wuerzburg.de
+chungen. In: H. Meller (Hrsg.), Der geschmie­
+dete Himmel. Die weite Welt im Herzen 
+Europas vor 3600 Jahren. Begleitband zur 
+Sonderausstellung (Stuttgart 2004) 44–47.
+Schlosser 2014 – W. Schlosser, Der Sternenhim­
+mel vom Magdalenenberg. Eine astronomi­
+sche Bewertung. Jahresschrift für mitteldeut­
+sche Vorgeschichte 94, 2014, 569–573.
+Schlosser/Čierny 1996 – W. Schlosser/J. Čierny, 
+Sterne und Steine. Eine praktische Astrono­
+mie der Vorzeit (Darmstadt 1996).
+Schmidt 2002 – M. Schmidt, Von Hüten, Kegeln 
+und Kalendern oder Das blendende Licht 
+des Orients. Ethnographisch-Archäologische 
+Zeitschrift 43, 2002, 499–541.
+Schmidt-Kaler 2008 – T. Schmidt-Kaler, Die Ent­
+wicklung des Kalender-Denkens in Mittel­
+europa vom Paläolithikum bis zur Eisenzeit. 
+Acta Praehistorica et Archaeologica 40, 2008, 
+11–36.
+Schmidt-Kaler 2012a – T. Schmidt-Kaler, Ein 
+Vorläuferstadium des Zählens und Abstra­
+hierens bei Homo erectus: die Knochenarte­
+fakte von Bilzingsleben gedeutet als der 
+Menschheit früheste Aufzeichnungen von 
+Mondbeobachtungen (Paderborn 2012).
+Schmidt-Kaler 2012b – T. Schmidt-Kaler, Ein 
+Venus-Kalender auf dem Berliner Goldhut. 
+Zur Entstehung und Entwicklung der Gold­
+hüte als Kalender-Gerät. In: M. Mergen­
+thaler/M. Klein-Pfeuffer 
+(Hrsg.), 
+Mythos 
+Bullenheimer Berg (Dettelbach 2012) 188–207.
+Schmidt-Kaler/Koneckis 2008 – T. Schmidt-Kaler/ 
+R. Koneckis, Neolithische Kalender auf den 
+Prunkäxten der Salzmünder Kultur. Acta 
+Prae­historica et Archaeologica 40, 2008, 69–83. 
+Schuchhardt 1910 – C. Schuchhardt, Stonehenge. 
+Prähistorische Zeitschrift 2, 1910, 292–340. 
+Schunke 2009 – T. Schunke, Die frühbronzezeit­
+liche Siedlung von Zwenkau, Ldkr. Leipziger 
+Land. Untersuchungen zur Chronologie und 
+Beobachtungen zur Wirtschaftsweise und sozi­
+alen Differenzierung anhand der keramischen 
+Funde. In: M. Bartelheim/H. Stäuble (Hrsg.), 
+Die wirtschaftlichen Grundlagen der Bronze­
+zeit Europas (Rahden/Westf. 2009) 273–319.
+Seidenspinner 1989 – W. Seidenspinner, Germa­
+nische Sternwarten und prähistorische Astro­
+nauten. Von der wissenschaftlichen Spekula­
+tion zur Sage. Fabula 30, 1989, 26–42.
+Siegmund 2019 – F. Siegmund, Rezension zu: 
+„Bewegte Zeiten: Archäologie in Deutsch­
+land“. Museum für Vor- und Frühgeschichte, 
+Staatliche Museen zu Berlin – Gropius Bau, 
+21. Sept. 2018 bis 6. Jan. 2019. Archäologische 
+Informationen 42, Early View, 1–9.
+

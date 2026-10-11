@@ -8,6 +8,7 @@ on the page image.
 | `FINDING_2026-10-10_berlin-counts-solid.md` | verified | Menghin's counts (1739 = 1701 + 38) reproduce |
 | `FINDING_2026-10-10_fuls-statistics.md` | verified | Fuls 2008: only Schifferstadt is statistically selective; Berlin ≈ chance |
 | `FINDING_2026-10-10_ezelsdorf-total-correction.md` | verified | Ezelsdorf has ≈ 499 symbols, not Berlin's 1739 |
+| `FINDING_2026-10-11_schlosser-peter-roecher-critique.md` | verified | Schlosser: the lunar year varies >1 day; Peter-Röcher: the rule does not transfer to the other hats |
 | `FINDING_2026-10-10_phantom-references.md` | rejected (negative) | three brief citations do not exist |
 
 Controls behind these: `../controls/`. Run: `../runs/RUN_2026-10-10_consolidation.md`.

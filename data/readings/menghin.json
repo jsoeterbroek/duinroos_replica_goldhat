@@ -1,5 +1,5 @@
 {
-  "_source": "Menghin, W. (2010) Der Berliner Goldhut - Ornamentanalyse, via assets/menghin/text/",
+  "_source": "Menghin, W. (2010) Der Berliner Goldhut - Ornamentanalyse, via assets/menghin/2010/text/",
   "_unit": "days",
   "_definition": "day_value[zone] = boss_count * concentric_rings; zones 1 and 5 are special",
   "_verified": "exactly reproduced from data/zones.json by scripts/verify_calendar.py",

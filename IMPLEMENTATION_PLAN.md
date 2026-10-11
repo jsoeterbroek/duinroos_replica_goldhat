@@ -53,7 +53,7 @@ These are cross-checks I ran against the existing docs. They are the numeric anc
 ### 2.1 Menghin's day-values — **VERIFIED against the primary source** ✅✅
 `reference/m5/data/berlin.json` is not a symbol count — it is Menghin's **day-value per zone** (symbols × rings).
 
-Menghin's own text (2010, Ornamentanalyse, `assets/menghin/text/`) supplies **four independent arithmetic identities** that `berlin.json` satisfies exactly:
+Menghin's own text (2010, Ornamentanalyse, `assets/menghin/2010/text/`) supplies **four independent arithmetic identities** that `berlin.json` satisfies exactly:
 
 | Menghin's sentence (`text/menghin_page31.txt`) | Arithmetic |
 |---|---|
@@ -162,7 +162,7 @@ Its byte-identical duplicate `berlin_meghin.json` has been deleted (it was refer
 
 ### 2.2 The sectioned profile — **derived from Menghin** ✅ *(Q5 resolved by this section)*
 
-Menghin describes the Berlin hat as **four** sections — „the apex, the conical shaft, the helmet-like cap, and the brim" (`text/menghin_page27.txt`) — and — this is the part the earlier draft of this plan did not have — he gives the diameter of **every** transition between them. All figures below are quoted from the **human transcription** `assets/menghin/text/menghin_page*.txt` (Appendix C), which is authoritative over the machine OCR;
+Menghin describes the Berlin hat as **four** sections — „the apex, the conical shaft, the helmet-like cap, and the brim" (`text/menghin_page27.txt`) — and — this is the part the earlier draft of this plan did not have — he gives the diameter of **every** transition between them. All figures below are quoted from the **human transcription** `assets/menghin/2010/text/menghin_page*.txt` (Appendix C), which is authoritative over the machine OCR;
 
 | Transition | Menghin, verbatim | ⌀ | z |
 |---|---|---|---|
@@ -681,7 +681,7 @@ Nothing below is implemented now; these are the interfaces Stage 1 must leave op
 
 ### 10.1 Stage-2 lighting scenarios are now data (Menghin pp. 47–63)
 
-The scenario system the LEDs will run comes from Menghin (2010) *Zahlensymbolik und Rechensystem*, pp. 47–63, Figs 61.1–64.4 (`assets/menghin/menghin_page60..63.jpeg`). For each of **16 time blocks** (4…19 quarter-years / 12…59 lunations) the figures colour the hat:
+The scenario system the LEDs will run comes from Menghin (2010) *Zahlensymbolik und Rechensystem*, pp. 47–63, Figs 61.1–64.4 (`assets/menghin/2010/jpg/menghin_page60..63.jpeg`). For each of **16 time blocks** (4…19 quarter-years / 12…59 lunations) the figures colour the hat:
 
 | colour | meaning | LED meaning |
 |---|---|---|
@@ -926,7 +926,7 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 | `IMPLEMENTATION_PLAN.md` | this document | 1st draft, for review |
 | `AGENTS.md`, `README.md` | project instructions; repo readme | — |
 | `open_questions.md` | the Q1–Q5 questions and the user's answers | **authoritative for scope** — Q2/Q3 are now closed from the primary source, see the note below |
-| `research/theories/secondary_digest_2026-10-08.md` | Menghin + Schmidt-Kaler + Wikipedia digest (was `gold_hat.md`) | **secondary** — superseded by `assets/menghin/text/` for every number, and by `research/theories/` for the readings |
+| `research/theories/secondary_digest_2026-10-08.md` | Menghin + Schmidt-Kaler + Wikipedia digest (was `gold_hat.md`) | **secondary** — superseded by `assets/menghin/2010/text/` for every number, and by `research/theories/` for the readings |
 | `dimensions.txt` | the prior attempt's height table, **but only its z/tb height section is Menghin** — confirmed to *be* Menghin's own per-zone table (§2.2); the two unattested `tussenstuk` rows are dropped from the model but stay in the file | ⚠️ **three known-bad lines elsewhere in the file, all the prior attempt's, none of them to be imported:** `base diameter of 20 cm at its widest point` (Menghin: 307 × 295 mm); `thickness = 0.6 mm` (unprintable — the plan uses 2.0 mm); and `symbol 13 - 4 rings = value 4` (**Menghin: Nr. 13 has two rings**, and a ring count of 4 occurs in no zone at all — a 4-ring Nr. 13 would give zone 16 = 19 × 4 = 76 instead of 38 and the total 1821 instead of 1783). `verify_calendar.py` reads **only** the z/tb heights, and asserts them against `data/hat_parameters.json` |
 | `sources.md` | 3 physical books | bibliographic verification for P0 |
 | `data/hat_parameters.json` | profile, 40 zone boundaries, 39 rings, cuff, Krempe | ✅ **created** |
@@ -945,9 +945,9 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 
 | Path | What it is | Use |
 |---|---|---|
-| `assets/menghin/text/menghin_page{20..31}.txt` | **hand transcription / English translation, 12 files, 16,904 B** (page 26 is a 16-byte "page skipped" stub — the book has no such page) | **THE authoritative text tier.** Wins on every conflict. Supplies the four circumference anchors, all 21 zone widths, the Fig. 21 tool legend, the Fig. 22 plate captions, the Fig. 23 key and the alloy analyses |
-| `assets/menghin/ocr/menghin_page*.txt` | German OCR of the above (tesseract 5.5.3, `deu`+`osd`, `--psm 1`), 11 files, 21,847 B | the German verbatim quoted in §2.1/§2.2 **and** the witness that exposed the psm-1 digit-dropping failure. **Never the route for a number** |
-| `assets/menghin/menghin_page{20..25,27..31}.jpeg` | 11 phone photos of pp. 18–29 (pp. 21–24 and 28 are plates; p. 30 is Fig. 23) | the source itself; **all 11 are rotated 90°** (OSD `Orientation=270`) |
+| `assets/menghin/2010/text/menghin_page{20..31}.txt` | **hand transcription / English translation, 12 files, 16,904 B** (page 26 is a 16-byte "page skipped" stub — the book has no such page) | **THE authoritative text tier.** Wins on every conflict. Supplies the four circumference anchors, all 21 zone widths, the Fig. 21 tool legend, the Fig. 22 plate captions, the Fig. 23 key and the alloy analyses |
+| `assets/menghin/2010/ocr/menghin_page*.txt` | German OCR of the above (tesseract 5.5.3, `deu`+`osd`, `--psm 1`), 11 files, 21,847 B | the German verbatim quoted in §2.1/§2.2 **and** the witness that exposed the psm-1 digit-dropping failure. **Never the route for a number** |
+| `assets/menghin/2010/jpg/menghin_page{20..25,27..31}.jpeg` | 11 phone photos of pp. 18–29 (pp. 21–24 and 28 are plates; p. 30 is Fig. 23) | the source itself; **all 11 are rotated 90°** (OSD `Orientation=270`) |
 | `assets/berliner_goldhut_abrollung.jpg` (648×800) | **not** an unrolled surface view — it is the prior attempt's debug render, and it is the same drawing as `cone_debug.png` (verified: 800×648 both, mean abs difference 0.93/255, i.e. JPEG noise and nothing else) | ❌ **measured and disqualified.** Its width is constant at 382 px across the shaft, where a development must grow ×1.43 (275 → 392 mm). Not used for geometry or for placement, §6.1 |
 | `assets/Berlín_Goldhut_01.JPG` (800×1873) | the earlier draft's "front-on photo" | ❌ **measured and unusable**: mid-grey background (border median 102, tol 42), a second object merges into the left flank, and the brim is cut off at the bottom edge. Only the 250×494 + 800×1581 pair carries a usable silhouette |
 | `assets/Berlín_Goldhut_04.JPG` (800×1200) | detail photo | ⚠️ yields **no foreground at all** under border-median segmentation (bg 129, large MAD). Usable by eye only, not programmatically |
@@ -1040,14 +1040,14 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 
 ### Source — **two tiers, and the human one wins**
 
-`assets/menghin/menghin_page{20,21,22,23,24,25,27,28,29,30,31}.jpeg` — 11 phone photos of Menghin 2010, book pp. 18–29. Page images are 4032×3024, EXIF orientation 6. **All 11 pages are rotated 90°** (confirmed by `tesseract --psm 0`: every page reports `Orientation in degrees=270 / Rotate=90`); `-auto-orient` handles it.
+`assets/menghin/2010/jpg/menghin_page{20,21,22,23,24,25,27,28,29,30,31}.jpeg` — 11 phone photos of Menghin 2010, book pp. 18–29. Page images are 4032×3024, EXIF orientation 6. **All 11 pages are rotated 90°** (confirmed by `tesseract --psm 0`: every page reports `Orientation in degrees=270 / Rotate=90`); `-auto-orient` handles it.
 
 | Tier | Path | Status |
 |---|---|---|
-| **1 — transcription (authoritative)** | `assets/menghin/text/menghin_page{20..31}.txt` — 12 files, 16,904 B | **Hand-transcribed English translation of Menghin. Wins on every conflict.** |
-| 2 — machine OCR | `assets/menghin/ocr/menghin_page{20,21,22,23,24,25,27,28,29,30,31}.txt` — 11 files, 21,847 B | `tesseract -l deu --psm 1`. Kept: it supplies the **German verbatim** quoted throughout this plan, and it is the independent witness that caught the psm-1 number-dropping failure. |
-| 2 — the human transcriptions | `assets/menghin/text/menghin_page{20..31}.txt` (12 files, 16,904 B; **page 26 does not exist** — the book skips it) | **THE authoritative tier.** Where it and the OCR disagree, this wins. All numbers in this plan come from here |
-| 3 — the photos | `assets/menghin/*.jpeg` | ground truth for *shapes and layouts*, not for text. **P2 has now used them** — read directly as images (see the note below), which is what confirmed the primitive forms and caught the Fig. 21 legend's `diam. 15 mm` omission for Nr. 13. **P1 used and closed** — and the one believed to be an Abrollung turned out not to be (§6.1). |
+| **1 — transcription (authoritative)** | `assets/menghin/2010/text/menghin_page{20..31}.txt` — 12 files, 16,904 B | **Hand-transcribed English translation of Menghin. Wins on every conflict.** |
+| 2 — machine OCR | `assets/menghin/2010/ocr/menghin_page{20,21,22,23,24,25,27,28,29,30,31}.txt` — 11 files, 21,847 B | `tesseract -l deu --psm 1`. Kept: it supplies the **German verbatim** quoted throughout this plan, and it is the independent witness that caught the psm-1 number-dropping failure. |
+| 2 — the human transcriptions | `assets/menghin/2010/text/menghin_page{20..31}.txt` (12 files, 16,904 B; **page 26 does not exist** — the book skips it) | **THE authoritative tier.** Where it and the OCR disagree, this wins. All numbers in this plan come from here |
+| 3 — the photos | `assets/menghin/2010/jpg/*.jpeg` | ground truth for *shapes and layouts*, not for text. **P2 has now used them** — read directly as images (see the note below), which is what confirmed the primitive forms and caught the Fig. 21 legend's `diam. 15 mm` omission for Nr. 13. **P1 used and closed** — and the one believed to be an Abrollung turned out not to be (§6.1). |
 | 4 — the derived data | `data/*.json` + `scripts/verify_calendar.py` + `scripts/motifs.py` | **created** — the machine-readable form of tier 2, with tier 2's arithmetic *and* its geometry as runnable assertions. If tier 2 is ever re-transcribed, re-run both; they will tell you which zone or which tool broke |
 
 **⚠️ Tier 3 note — the plate pages are now readable as images.** `menghin_page28/29.jpeg` (Fig. 22's ornament photographs) and `menghin_page30.jpeg` (Fig. 23's combination table) are **rotated 90°**; rotating by **−90°** puts them right way up. Read this way they are directly informative **about shape**: Fig. 22's close-ups showed the disc structure (central boss + N concentric ridges, with the small annulets No. 7 between discs) that `motifs.py` implements, and Fig. 23's table makes the alternating **three-and-five-circle structure of the shaft** visually obvious — which is the pattern §2.1 derives numerically and `verify_calendar.py` asserts.
@@ -1056,7 +1056,7 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 
 **Second caveat, also learned the hard way:** a model reading these images **mis-identified the object** as the *Golden Hat of Schifferstadt* — a different object in the same family of four. Vision is useful here, and needs the same discipline as OCR: it proposes, the transcription disposes.
 
-`assets/menghin/text/menghin_page26.txt` is a single line, „Page 26 skipped" — page 26 was not photographed. Pages 21, 22 and 28 are **pure plates** (OCR yields ~0 text) — expected, not an OCR failure. `page23` is the Fig. 18 bottom-view plate, `page24` is the Fig. 19 vertical-half plate (`text/`: „Vertical half. Blue: Spandrel pattern. Green: Switch zones"), and `page30` is the Fig. 23 combination-table legend.
+`assets/menghin/2010/text/menghin_page26.txt` is a single line, „Page 26 skipped" — page 26 was not photographed. Pages 21, 22 and 28 are **pure plates** (OCR yields ~0 text) — expected, not an OCR failure. `page23` is the Fig. 18 bottom-view plate, `page24` is the Fig. 19 vertical-half plate (`text/`: „Vertical half. Blue: Spandrel pattern. Green: Switch zones"), and `page30` is the Fig. 23 combination-table legend.
 
 **⚠️ Two source typos found in the transcription**, recorded so nobody re-“fixes” them in the wrong direction:
 1. `text/menghin_page27.txt`: „Zone 6 is **25.0 cm** wide" — must read **2.5 cm**. Confirmed by (a) `dimensions.txt` z6 = 25 mm, (b) the zone order (2.45 cm zone 5 then 2.9 cm zone 7), (c) 25 cm would not fit in a 100 mm cap.
@@ -1074,17 +1074,17 @@ curl -fsSL -o $T/osd.traineddata https://github.com/tesseract-ocr/tessdata_best/
 # osd.traineddata is REQUIRED: --psm 1 (auto page segmentation) fails silently without it
 # and returns 180°-rotated garbage, because the page photos have no usable EXIF rotation applied.
 export TESSDATA_PREFIX=$T
-ls assets/menghin/*.jpeg | sed 's|.*/menghin_||; s|\.jpeg||' | xargs -P 4 -I{} sh -c \
-  "TESSDATA_PREFIX=$T tesseract assets/menghin/menghin_{}.jpeg assets/menghin/ocr/{} -l deu --psm 1"
+ls assets/menghin/2010/jpg/*.jpeg | sed 's|.*/menghin_||; s|\.jpeg||' | xargs -P 4 -I{} sh -c \
+  "TESSDATA_PREFIX=$T tesseract assets/menghin/2010/jpg/menghin_{}.jpeg assets/menghin/2010/ocr/{} -l deu --psm 1"
 ```
 
-Output: `assets/menghin/ocr/menghin_page*.txt` (~22 kB total). Note the page number is repeated in the filename — `ocr/menghin_page27.txt`, not `ocr/page27.txt`.
+Output: `assets/menghin/2010/ocr/menghin_page*.txt` (~22 kB total). Note the page number is repeated in the filename — `ocr/menghin_page27.txt`, not `ocr/page27.txt`.
 
 ⚠️ **Known failure mode — psm 1 silently drops numbers.** On `menghin_page27.txt` the sentence reads „Die Spitze des Goldhutes hat eine Höhe **an** und einen Basisumfang von 16,6 cm" — the `von 6,1 cm` is *gone*, and even `2,45 cm` came out as `2,5 cm`. Body prose is reliable; **any digit, decimal or number-in-a-table must be re-read from the image** before it is used. The failure is worse on `menghin_page25.txt`, where the entire section-diameter sentence (125 / 108 / 203×175 / 307×295) is garbled in the psm-1 text and only appears on a crop re-read. Cheap verification recipe (grayscale + normalize + 150 % + `--psm 6` recovers the two-column text cleanly on a crop):
 
 ```bash
 # single column, top 55 % — recovers the tip dimensions
-magick assets/menghin/menghin_page27.jpeg -auto-orient -crop 100%x55%+0+0 +repage \
+magick assets/menghin/2010/jpg/menghin_page27.jpeg -auto-orient -crop 100%x55%+0+0 +repage \
         -colorspace Gray -normalize -resize 150% /tmp/p27.png
 tesseract /tmp/p27.png stdout -l deu --psm 6 | grep -A2 "Goldhutes"
 # → „Die Spitze des Goldhutes hat eine Höhe von 6,1 cm und einen Basisumfang von 16,6 cm."
@@ -1093,7 +1093,7 @@ tesseract /tmp/p27.png stdout -l deu --psm 6 | grep -A2 "Goldhutes"
 # page 25, top 30 % — recovers ALL FOUR section diameters (§2.2)
 # (this is the only way to see them; they are absent from ocr/menghin_page25.txt)
 for y in 0 25 50; do
-  magick assets/menghin/menghin_page25.jpeg -auto-orient -crop 100%x30%+0+${y}% +repage \
+  magick assets/menghin/2010/jpg/menghin_page25.jpeg -auto-orient -crop 100%x30%+0+${y}% +repage \
           -colorspace Gray -normalize -resize 150% /tmp/p25_$y.png
   tesseract /tmp/p25_$y.png stdout -l deu --psm 6 | grep -nE "307|295|203|175|125|108|Krempe|Schaft|Kalotte"
 done

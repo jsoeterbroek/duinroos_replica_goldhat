@@ -19,7 +19,7 @@ python3 scripts/verify_calendar.py
 ```
 
 **Result 2026-10-10:** ✔ all identities reproduce. Source of truth for the
-numbers is `assets/menghin/text/`; the derived tables are `data/zones.json` and
+numbers is `assets/menghin/2010/text/`; the derived tables are `data/zones.json` and
 `data/readings/menghin.json`.
 
 **If missed:** the zone transcription or the tool/ring table is wrong; fix the

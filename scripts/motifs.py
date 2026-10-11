@@ -19,7 +19,7 @@ The physical form (relief / window / relief_window) is NOT decided here -- see
 IMPLEMENTATION_PLAN.md section 6.3, deferred to the P3.5 print test. These are
 the footprint and hole geometry either way.
 
-Authoritative sources, both in assets/menghin/text/:
+Authoritative sources, both in assets/menghin/2010/text/:
   menghin_page27.txt  Fig. 21 legend: tool -> ring count -> diameter
   menghin_page27..31  per-zone tool attribution
   Fig. 22 plates (menghin_page28/29.jpeg) for the actual FORM

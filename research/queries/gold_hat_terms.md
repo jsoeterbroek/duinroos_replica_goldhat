@@ -5,7 +5,7 @@ PDFs. No embeddings are needed (see `CASE.md` "Pipeline, adapted").
 
 ## Sources to search
 
-`research/data/sources/*.pdf`, `assets/menghin/text/*.txt`, and the `theories/`
+`research/data/sources/*.pdf`, `assets/menghin/2010/text/*.txt`, and the `theories/`
 files (as a secondary corpus to be checked, never trusted).
 
 ## Keyword regex (tolerant of OCR errors)

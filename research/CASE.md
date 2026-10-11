@@ -41,7 +41,7 @@ One recipe per source in `sources/`. Status at 2026-10-10:
 
 | Source | Recipe | Status |
 |---|---|---|
-| Menghin 2000 / 2010 (Berlin, Ornamentanalyse) | `sources/menghin_2000_2010.md` | held (pp. 47–63 text + scans in `assets/menghin/`) |
+| Menghin 2000 / 2010 (Berlin, Ornamentanalyse) | `sources/menghin_2000_2010.md` | held (pp. 47–63 text + scans in `assets/menghin/2010/`) |
 | Menghin 2003 (Golden Calendar Hats, catalogue) | `sources/menghin_2000_2010.md` | print-only |
 | Schauer 1986 (Die Goldblechkegel der Bronzezeit) | `sources/schauer_1986.md` | print-only, not yet obtained |
 | Menghin & Schauer 1983 (Ezelsdorf) | `sources/schauer_1986.md` | print-only |
@@ -61,8 +61,8 @@ One recipe per source in `sources/`. Status at 2026-10-10:
 
 | Source | Recipe | Status |
 |---|---|---|
-| Schlosser 2003 (Realität bronzezeitlicher Mondkalender, JSMV 86) | `sources/schlosser_2003.md` | metadata + abstract held; PDF blocked (Anubis) |
-| Peter-Röcher 2023 (astronomy & state structures, BUFM 106) | `sources/peter_roecher_2023.md` | reading sample held; article paywalled/CAPTCHA |
+| Schlosser 2003 (Realität bronzezeitlicher Mondkalender, JSMV 86) | `sources/schlosser_2003.md` | **held** (PDF + text in `assets/`) |
+| Peter-Röcher 2023 (astronomy & state structures, BUFM 106) | `sources/peter_roecher_2023.md` | **held** (PDF + text in `assets/`) |
 | Randsborg 2006 (Calendars, Acta Archaeologica 77) | `sources/randsborg_2006.md` | metadata held; paywalled |
 | Hansen & Rink 2008 (Kalender und Finsternisse, Nuncius 8) | `sources/hansen_rink_2008.md` | in the Fuls 2008 proceedings volume; chapter not extracted |
 | Wikipedia "Berlin Gold Hat" / "Gold hat" + museum text | `sources/wikipedia_and_museum.md` | held |

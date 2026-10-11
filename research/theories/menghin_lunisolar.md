@@ -20,8 +20,8 @@ sources/fuls_2008.md. -->
   c. 1000–800 BC) deliberately encodes a bound lunisolar calendar — specifically the
   19-year Metonic cycle, with 235 lunations and 228 solar months.
 - **Source of the claim:** W. Menghin, *Der Berliner Goldhut: Ornamentanalyse* (2010),
-  pp. 47–63, in `assets/menghin/text/menghin_pages47-63.txt` and
-  `assets/menghin/menghin_page60..63.jpeg`.
+  pp. 47–63, in `assets/menghin/2010/text/menghin_pages47-63.txt` and
+  `assets/menghin/2010/jpg/menghin_page60..63.jpeg`.
 - **Data used here:** `data/zones.json` (per-zone motif and ring counts) and
   `data/scenarios.json` (the 16 time blocks of Figs 61.1–64.4).
 - **Date of assessment:** written while the P5 fit-test print was running; cross-hat test

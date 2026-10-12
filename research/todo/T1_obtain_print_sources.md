@@ -6,14 +6,21 @@ the raw per-zone ring counts and zone order for Schifferstadt / Ezelsdorf /
 Avanton. Peter-Röcher 2023 now states it *failed* when attempted; we still want the
 raw data to test it ourselves.
 
-**Status of the four items (2026-10-11):**
+**Status of the four items (2026-10-12):**
 
 1. **Peter Schauer, *Die Goldblechkegel der Bronzezeit*, Habelt 1986** —
-   *to get from Leiden University Library.* Still the single most valuable item:
-   it holds the per-zone counts/rings for the non-Berlin hats.
-2. **Menghin 2010, *Der Berliner Goldhut*** and **Menghin 2000, *…goldenen
-   Kalendarien*** — **in the project author's possession in print.** Digitization
-   plan below.
+   *to get from Leiden University Library.* Wanted for the plates and the tool
+   measurements; **no longer the blocker for the counts** (Menghin 2000 reproduces
+   Schauer's per-zone data in Abb. 17, 20 and 27).
+2. **Menghin 2000, *…goldenen Kalendarien*** — ✔ **held COMPLETE** since
+   2026-10-12 (83 page images + text, pp. 31–108 plus front matter, in
+   `assets/menghin/2000/`; four per-zone tables transcribed, control C6).
+   The cross-hat data sits on four figure pages, now on disk and read:
+   **Abb. 14, p. 45** (Berlin), **Abb. 17, p. 50** (Schifferstadt),
+   **Abb. 20, p. 53** (Avanton), **Abb. 27, p. 61** (Ezelsdorf-Buch); each figure
+   carries its own stamp/numbering legend, and the Ezelsdorf ornament patterns are
+   itemised in Abb. 25, p. 59 (numbering after M. Fecht). **Menghin 2010, *Der Berliner Goldhut*** — held in part
+   (pp. 20–31, 47–63); pp. 1–19, 26, 32–46, 64–end still missing.
 3. **Wolfhard Schlosser, JSMV 86 (2003)** — ✔ **held**:
    `assets/89612-Artikeltext-237706-1-10-20220629.pdf` (+ text
    `assets/schlosser_2003_jsmv86.txt`). Read → `findings/FINDING_2026-10-11_…`.
@@ -48,16 +55,19 @@ from images is a convenience for searching, not the source.
 ### Priority order
 
 **A. Menghin 2000 first — it is the comparative study** ("und die goldenen
-Kalendarien der alteuropäischen Bronzezeit", Acta Praehistorica 32, 31–108). Nothing
-of it is digitized yet. It should contain the per-zone tables for *all four* hats.
-Fuls cites these pages:
+Kalendarien der alteuropäischen Bronzezeit", Acta Praehistorica 32, 31–108).
+**✔ digitised complete 2026-10-12.** It does contain the per-zone tables for *all
+four* hats, as expected: the four figure pages are Abb. 14 (Berlin, p. 45),
+Abb. 17 (Schifferstadt, p. 50), Abb. 20 (Avanton, p. 53) and Abb. 27
+(Ezelsdorf-Buch, p. 61). Fuls cites these pages:
 - **p. 50** — Schifferstadt per-zone table (rings/symbols).
 - **p. 53** — Avanton per-zone table.
 - **pp. 74, 77–78** — the numbers/cycles discussion.
 - **pp. 88–93** — Berlin and Ezelsdorf, the 1739 / Metonic discussion.
 
-→ Scan the **whole article if feasible**; if not, scan the TOC, the four per-zone
-tables (pp. 50, 53, and the Berlin/Ezelsdorf tables), pp. 74–93, and all plates.
+→ **Done.** The whole article is digitised (83 page images, pp. 31–108 + front
+matter); the per-zone tables (Abb. 14, 17, 20, 27) are transcribed into
+`data/readings/menghin2000_zones.json`. No further scan of 2000 is needed.
 
 **B. Menghin 2010 gaps.** Already held: pages **20–25, 27–31, 47–63**. Missing:
 - **pp. 1–19** — front matter, find history, material/technique.
@@ -73,17 +83,42 @@ per-zone tables or the other three hats), then the plates.
 
 ### How the digitization is checked
 
-Re-derive a **known-answer control** from each scanned set: the Berlin counts
-(`scripts/verify_calendar.py`, C1) must reproduce from the new 2010 scans, and
-Menghin 2000's stated 54-month arithmetic must reproduce from its own page (C2 /
-C3). A scan whose numbers cannot be read well enough to pass the control is not
-good enough.
+Re-derive a **known-answer control** from each scanned set. Done for Menghin 2000:
+the Berlin counts (`scripts/verify_calendar.py`, C1) reproduce from the 2000 pages,
+and the per-zone tables plus the 54-month arithmetic reproduce zone by zone
+(`scripts/verify_menghin2000.py`, C6). A scan whose numbers cannot be read well
+enough to pass the control is not good enough.
 
 ---
 
-**Progress:** items 3–4 done and read (2026-10-11). Items 1–2 open.
-Owner: project author (has the Menghin prints; Schauer via Leiden).
+**Progress (updated 2026-10-12):**
+
+- **Menghin 2000 — ✔ DONE, complete.** The author digitised the whole article.
+  83 page images + text are in `assets/menghin/2000/`; the four per-zone tables are
+transcribed into `data/readings/menghin2000_zones.json` and verified by control C6
+(`scripts/verify_menghin2000.py`). Readability verdict and page map:
+`sources/menghin_2000_2010.md`. Finding:
+`findings/FINDING_2026-10-12_menghin-2000-ingested.md`. Run:
+`runs/RUN_2026-10-12_ingest_menghin2000.md`.
+- **Menghin 2010 — partly held** (pp. 20–31, 47–63). Still missing pp. 1–19, 26,
+  32–46, 64–end, incl. the table of contents. Priority B below still stands, but is
+  now much less urgent: Menghin 2000 carries the comparative data that 2010 was
+  being scanned for.
+- **Item 1 (Schauer 1986)** and the **2003 catalogue chapter** remain open. Schauer is
+  now a *nice to have*, not the blocker: Menghin 2000 reproduces Schauer's per-zone
+  data for the other three hats (his Abb. 17, 20, 27 are drawn from Schauer's plates).
+- Items 3–4 (Schlosser 2003, Peter-Röcher 2023) done and read on 2026-10-11.
+
+---
+
+## Status of the digitization plan
+
+**A. Menghin 2000 — ✔ complete.** (This was the priority for the cross-hat test.)
 
 **Done when:** for Ezelsdorf at least, a per-zone table of rings-per-stamp and the
 zone order is transcribed into `data/readings/` with a `_source` field, and the
 cross-hat script runs.
+
+**Status 2026-10-12:** the first half is **DONE** — four per-zone tables, all four
+hats, in `data/readings/menghin2000_zones.json`. The second half (the cross-hat
+script) is `todo/T2`, which is no longer blocked.

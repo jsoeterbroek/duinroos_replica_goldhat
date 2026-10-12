@@ -57,8 +57,11 @@ and Peter-Röcher 2023 (the non-transfer to the other hats).
 ## What would confirm the sceptical reading
 
 - The cross-hat test: apply a pre-registered rule blind to Schifferstadt,
-  Ezelsdorf and Avanton and find it fails (blocked until Schauer 1986 / Menghin
-  2010 are obtained).
+  Ezelsdorf and Avanton and find it fails. The **data is now in hand** (Menghin
+  2000's four per-zone tables, `data/readings/menghin2000_zones.json`, control C6),
+  so this is a live script job (`todo/T2`) rather than a blocked one. Until it runs,
+  Peter-Röcher's one-sentence "ließ sich leider nicht übertragen" is a **reported**
+  failure, not a reproduced one.
 - A committed re-run of Fuls's null reproducing his Berlin result.
 - Showing Lorenz's 19/12+7 structure does not hold on the object.
 

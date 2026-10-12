@@ -179,12 +179,25 @@ it looks like a summary that copied Berlin's total onto the other hat. A caution
 source material, and a reason to distrust any “the other hats match too” claim that is not
 backed by raw per-zone data.
 
-**Result 2 — the full replication is blocked, not passed and not failed.** Menghin's unit is
-the *ring*, and both the per-stamp **ring counts** and the **zone order** for Ezelsdorf are in
-print-only sources (`Schauer 1986`, `Menghin 2000`, Acta Praehistorica 32). The plate shows
-the symbol counts but neither the rings per stamp reliably nor the zone sequence. Without
-both, the day-value block sums cannot be rebuilt. **Honest status: not runnable from
-accessible data.** The experiment stays open; absence of corroboration is not refutation.
+**Result 2 — the full replication is no longer blocked.** Menghin's unit is the *ring*,
+and both the per-stamp **ring counts** and the **zone order** for Ezelsdorf were in
+print-only sources (`Schauer 1986`, `Menghin 2000`). **Since 2026-10-12 Menghin 2000 is
+held and read**: its Abb. 27 (p. 61) gives the Ezelsdorf per-zone table — zone order,
+tool per zone, symbols `A`, rings per symbol `K`, rings per zone `SK` — and Abb. 14
+(p. 45), Abb. 17 (p. 50) and Abb. 20 (p. 53) do the same for Berlin, Schifferstadt and
+Avanton. Transcribed to `data/readings/menghin2000_zones.json`, verified by
+`scripts/verify_menghin2000.py` (control C6). The day-value block sums can now be
+rebuilt for **all four hats, here** — the cross-hat experiment is runnable
+(`todo/T2`).
+
+The Kaiser plate's 499 is confirmed exactly by the primary table: its `A` column sums
+to 499 over zones 2–20 (24 small bosses in Z2 + 432 disc symbols in Z3–20 + 22 eye
+motifs in Z15 + 21 wheel motifs in Z17). Menghin's own ring totals are 1463 (Z3–20),
+1694 (Z3–21 with his rebuilt rim) and 1737 "Zeichen" with the rim.
+
+Caveat for the experiment: **Avanton zones 12–14 and Ezelsdorf zone 21 are
+reconstructions** (Avanton's from a 19th-century plaster cast, Ezelsdorf's from
+Menghin's own diameter/ring arithmetic). Hold them out, or report with and without.
 
 **Result 3 — the method is not selective, and that is worse than a failed replication.**
 Running the *identical* finder on Berlin with three different “counting units”:

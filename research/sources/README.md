@@ -7,7 +7,7 @@ copying it.
 
 | Recipe | Source | Held? |
 |---|---|---|
-| `menghin_2000_2010.md` | Menghin, Berlin Gold Hat ornament analysis | partly (`assets/menghin/2010/`) |
+| `menghin_2000_2010.md` | Menghin, Berlin Gold Hat ornament analysis | **held: 2000 complete, 2010 pp. 20–31 + 47–63** |
 | `menghin_2000_2010.md` | Menghin 2003, Golden Calendar Hats | no (print) |
 | `schauer_1986.md` | Schauer 1986; Menghin & Schauer 1983 | no (print) |
 | `schmidt_kaler_2012.md` | Schmidt-Kaler, Venus calendar | yes (scanned PDF) |

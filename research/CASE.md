@@ -1,6 +1,6 @@
 # Berlin Gold Hat — does the ornament encode a calendar?
 
-**Status:** active — 2026-10-10. Consolidation + source augmentation round.
+**Status:** active — 2026-10-12. Source base now includes the full Menghin 2000.
 **Plan item:** #6 (novelty check and write-up) of the CASE plan below, adapted for a
 small scholarly corpus (see "Pipeline, adapted" below).
 
@@ -41,7 +41,8 @@ One recipe per source in `sources/`. Status at 2026-10-10:
 
 | Source | Recipe | Status |
 |---|---|---|
-| Menghin 2000 / 2010 (Berlin, Ornamentanalyse) | `sources/menghin_2000_2010.md` | held (pp. 47–63 text + scans in `assets/menghin/2010/`) |
+| Menghin 2000 (Berlin + the other three hats, Ornamentanalyse) | `sources/menghin_2000_2010.md` | **held — COMPLETE** (83 page images + text, `assets/menghin/2000/`; four per-zone tables transcribed, control C6) |
+| Menghin 2010 (book) | `sources/menghin_2000_2010.md` | held in part (pp. 20–31, 47–63 scans; pp. 32–46 and 64–end still missing) |
 | Menghin 2003 (Golden Calendar Hats, catalogue) | `sources/menghin_2000_2010.md` | print-only |
 | Schauer 1986 (Die Goldblechkegel der Bronzezeit) | `sources/schauer_1986.md` | print-only, not yet obtained |
 | Menghin & Schauer 1983 (Ezelsdorf) | `sources/schauer_1986.md` | print-only |
@@ -83,7 +84,8 @@ per control in `controls/`.
 | C2 | Menghin's 16 scenario blocks and their caveats | `controls/C2_menghin_scenarios.md` | yes (`scripts/verify_scenarios.py`) |
 | C3 | Schmidt-Kaler's sums: 57+235=292, 42+38+66=146, 42+75=117 | `controls/C3_schmidt_kaler_sums.md` | yes (`scripts/verify_venus_hypothesis.py`) |
 | C4 | Fuls 2008's **negative** result: Berlin's hit-rate ≈ random; only Schifferstadt significant | `controls/C4_fuls_null_result.md` | yes — read on the page image (`evidence/…fuls2008_p123_full.jpg`) |
-| C5 | The Ezelsdorf-Buch symbol total is ≈ 499, **not** 1739 | `controls/C5_ezelsdorf_total.md` | yes — corrected in `theories/secondary_digest_2026-10-08.md`; primary count still to obtain |
+| C5 | The Ezelsdorf-Buch symbol total is ≈ 499, **not** 1739 | `controls/C5_ezelsdorf_total.md` | yes — now from the **primary** per-zone table (Menghin 2000, Abb. 27) |
+| C6 | Menghin 2000's four per-zone tables (Berlin, Schifferstadt, Avanton, Ezelsdorf) and their ring identities | `controls/C6_menghin2000_tables.md` | yes (`scripts/verify_menghin2000.py`) |
 
 ## Plan
 
@@ -101,9 +103,9 @@ Doc items. Say which one you are on in every update.
    (Fuls, Amendola, Lorenz, Schlosser, Peter-Röcher, Randsborg, Hansen & Rink),
    check the phantom references, write the findings and the narrative beat.
 
-**Next after #6:** obtain Schauer 1986 and Menghin 2010 full text (print-only);
-extract Hansen & Rink 2008; get the Peter-Röcher 2023 PDF past the CAPTCHA;
-re-run Fuls's combinatorial null independently (a `scripts/` job, pending).
+**Next after #6:** obtain Schauer 1986 and the Menghin 2010 gaps (print-only);
+extract Hansen & Rink 2008; **re-run Fuls's combinatorial null on the per-zone data
+now held for all four hats** (`todo/T2`, no longer blocked).
 
 ## Pipeline, adapted to a small scholarly corpus
 

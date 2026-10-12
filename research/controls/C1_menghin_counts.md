@@ -22,6 +22,16 @@ python3 scripts/verify_calendar.py
 numbers is `assets/menghin/2010/text/`; the derived tables are `data/zones.json` and
 `data/readings/menghin.json`.
 
+**Result 2026-10-12:** ✔ the **primary print** is now held and re-read on the page
+image (Menghin 2000, Abb. 14, p. 45; `assets/menghin/2000/jpg/menghin_page045.jpeg`).
+The 2000 table gives the same 21 zones, the same counts and the same ring values as
+the 2010-derived data — see control **C6** (`C6_menghin2000_tables.md`,
+`scripts/verify_menghin2000.py`).
+
+**One correction to this control:** the 2000 article prints **418** discs on p. 81
+but **399** on pp. 83 and 91; the 2010 text (p. 31) says 418 and the table sums to
+418. 418 is correct; the 399 is a slip in the 2000 running text.
+
 **If missed:** the zone transcription or the tool/ring table is wrong; fix the
 data before continuing. A negative result about the *calendar* is worthless until
 this control passes.

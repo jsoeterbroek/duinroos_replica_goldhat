@@ -1,0 +1,42 @@
+Menghin, Der Berliner Goldhut
+solar
+lunar
+1
+2
+9
+4
+5
+12
+6
+7
+8
+9
+10
+11
+3636 24
+57 54 48 48 36 36 24
+57 54 48 48
+54 57
+36 48 48
+18 24 36
+12
+12
+3
+14
+15
+16
+17
+18
+19
+20
+21
+Legende:
+Schalt- und Sonderzonen
+1,2,3... Nummerierung der Zonen
+9,12... Anzahl der Monate
+Rechnerisch nicht relevant
+Abb. 43,2: Berliner Goldhut. Zahlensysteme und kalendarische Rechenzyklen in synchroner lunarer und solarer Darstellung. Zu
+den Rechenrelationen vgl. Abb. 43.1.
+Hellgrau - Schaltzonen 7, 16, 17 und Zone 5 mit Sondermustern. Dunkelgrau - in den jeweiligen Zyklen rechnerisch nicht
+berücksichtigte Zahlenwerte der Schaltzonen und der Sonderzone 5. Kursive Ziffern - Nummern der Zierzonen; normale Zif-
+fern - Zahl der erfaßten Monate. Graphik K. D. Schwarz.

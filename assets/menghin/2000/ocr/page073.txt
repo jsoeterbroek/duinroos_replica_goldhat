@@ -1,0 +1,33 @@
+solar
+lunar
+1
+2
+3
+366
+4
+365
+365
+5
+6
+355
+7
+8
+9
+10
+11
+12
+13
+14
+15
+354
+16
+17
+18
+19
+20
+21
+Abb. 34: Berliner Goldhut. Graphische Darstellung des Zählschemas für lunare und solare Zeitabschnitte nach der Rhythmik
+der Zonenfolgen am Objekt. Die Schaltzonen (hellgrau) 7, 16 und 17 finden in der Systematik für die lunaren Zyklen keine
+Berücksichtigung, während das Zuschalten von Zone 7 in der Addition der Ringe aus den Zonen 3, 9, 11 und 13 die 366 Tage
+eines Schaltjahres definiert. Vgl. Abb. 33 und zur Nomenklatur Abb. 2. Grafik K. D. Schwarz.
+73

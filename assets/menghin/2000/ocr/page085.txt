@@ -1,0 +1,47 @@
+Menghin, Der Berliner Goldhut
+solar
+lunar
+7
+2
+3
+4
+5
+6
+7
+7
+24
+8
+9
+10
+18
+24
+36 48 36 48 54 57
+48 54 57
+36 48 36
+12
+36
+57 54 48
+57 54 48 36 48 36
+48
+36
+13
+14
+12
+12
+15
+16
+17
+18
+19
+20
+21
+Legende:
+1,2,3... Nummerierung der Zonen
+Schalt- und Sonderzonen
+9,12...Anzahl der Monate
+Rechnerisch nicht relevant
+Abb. 42,2: Goldkegel von Ezelsdorf. Zahlensystem und kalendarische Rechenzyklen in synchroner lunarer und solarer Darstel-
+lung am schematisierten Objekt mit ergänzter Krempe. Zu den Rechenrelationen vgl. Abb. 42,1.
+Kursive Ziffern - Nummerierung der Zierzonen 1 - 21; normale Ziffern - Zahl der erfassten Zonen für die Zeitzyklen in Mona-
+ten; hellgrau - Schaltzonen 5, 6, 19 und Zonen mit Sonderzeichen 15 und 17; dunkelgrau - in den jeweiligen Zyklen rechne-
+risch nicht berücksichtigte Zahlenwerte der Schaltzonen und Zonen mit Sonderzeichen.

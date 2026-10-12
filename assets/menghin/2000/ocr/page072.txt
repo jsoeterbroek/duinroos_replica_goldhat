@@ -1,0 +1,164 @@
+Acta Praehistorica et Archacologica 32, 2000
+SK
+K
+Nr.
+Zone
+Zone Nr.
+K
+SK
+Nr.
+Zone
+SK
+K
+Nr.
+Zone
+Zone Nr.
+42
+3
+Z 3
+8
+75
+75Z3
+5
+10
+Z 4
+75 Z 4
+75
+5
+10
+Z4
+57
+90
+3
+90 Z 7
+11
+Z7
+5
+10
+Z 6
+90 26
+90
+5
+10
+Z 6
+95
+3
+12
+Z9
+5
+Z 10
+105 Z 10
+14
+105
+5
+10
+Z 8
+60
+3
+105 Z 11
+12
+5
+14
+95 Z 14
+5
+14
+Z 10
+60
+3
+12
+Z 13
+90
+6
+15
+Z 15
+366
+365
+365
+SK
+Zone Nr.
+K
+Zone Nr.
+SK
+Zone Nr.
+K
+Nr.
+Zone
+90
+90 2 15
+6
+90
+15
+Z 15
+5
+Z 6
+10
+126
+105 Z 18
+Z 18
+6
+15
+5
+105
+10
+Z 8
+138
+6
+Z 19
+100 Z 19
+15
+100
+5
+14
+Z 12
+60
+Z 13
+12
+354
+355
+Abb. 33: Berliner Goldhut. Rechnerische Darstellung von Sonnen- und Mondjahren nach der Zahl der konzentrischen Kreise in
+der rhythmischen und merkmaltypisch bestimmten Abfolge der Zonen. Z - Zone, Nr. - Anzahl der Kreise des Scheibenbuckels,
+SK - Summe der Kreise pro Zone. Zur Nummerierung und Nomenklatur vgl. Abb. 2 und 6.
+Zonen (18) ergibt 29,555, entsprechend dem Mittel-
+Die Formel kann über die oben beschriebene Auszäh-
+wert eines synodischen Monats [532 : (3x6)18 =
+lung der Buckel der Amphora von Seddin verifiziert
+29,5551.
+werden (Abb. 38):
+Dieser Systematik weiter folgend stellen die 544
+Die Summe der Buckel aus den Zonen 1 bis 4 zuzüg-
+Buckel der Zonen 1 bis 6 (zuzüglich der viermal drei
+lich der zwei mal drei Buckel der Henkelattaschen
+Buckel der Henkelattaschen) 18 solare Monate zu
+beträgt 354. Diese Zahl geteilt durch 12, das heißt das
+durchschnittlich 30,222 Tagen dar [544 : (3x6)18 =
+Dreifache der vier erfassten Zonen, ergibt 29,500, was
+dem Mittelwert der Tage eines synodischen Monats
+30,2221.
+entspricht. Mit den Zonen 1-4 werden also 12 syno-
+Es zeigt sich im Fall von Seddin, dass die Ergebnisse
+dische Monate zu durchschnittlich 29,5 Tagen erfasst,
+der punktuellen Zählung nach der Methode
+wobei der Koeffizient 29,500 der Kontrollwert für die
+May/Zumpe mit den Rechenprodukten nach der
+Richtigkeit des als Zeitzyklus definierten Zonenab-
+oben gegebenen Formel kongruent sind. Daraus kann
+schnitts ist [354 : (3×4) 12 = 29,500].
+Die vier Zonen 3 bis 6 (ohne die vier mal drei Buckel
+aber zugleich geschlossen werden, dass die Produktbil-
+dung aus den Zonen der Goldhüte mit den Koeffizi-
+der Henkelattaschen, welche im System die Funktion
+von „Schaltzonen" haben) weisen 365 Buckel auf.
+enten um 29,5 und 30,4 im Prinzip immer abzählbare
+Zyklen von drei bis im Extremfall 57 Monaten
+Erfasst sind 12 solare Monate mit einem Mittelwert
+beschreiben (Abb. 39).
+von 30,4 Tagen [365 : (3x4) 12 = 30,416].
+Die Formel hat sicher nicht für alle einschlägigen
+Nach diesem Schema gilt für die Zonen 1 bis 6 (ohne
+Zahlenwerke und schon gar nicht absolute Gültigkeit.
+die vier mal drei Buckel aller Henkelattaschen) mit
+Dies zeigt sich z.B. beim Schild von Herzsprung 1, wo
+532 Buckeln, dass ein Zeitzyklus von 18 synodischen
+statt des Faktors 3 die Zahl 6 eingesetzt werden müss-
+Monaten erfasst ist: 532 geteilt durch dreimal sechs
+72

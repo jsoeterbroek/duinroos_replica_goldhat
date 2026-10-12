@@ -1,0 +1,112 @@
+Acta Praehistorica et Archaeologica 32, 2000
+wobei minimal größere Toleranzen auftreten. Die Dif-
+ferenz der Quotienten für einen Mond- bzw. einen
+Sonnenmonat auf der Grundlage von 19 Zonen
+beträgt 30,508 minus 29,508 gleich 1,0. Nach 57
+Monaten ist sie bei 57 und nach 4x57, gleich 228 syn-
+odischen Monaten, bei 228 Tagen angelangt. 228
+Tage können zu 7,72096 synodischen Monaten
+zusammengefaßt werden, wobei 29,508 mal 228
+gleich 6.727,824 plus 228 (die rechnerische Differenz
+zwischen Sonnen- und Mondmonat im Verlauf von
+19 Jahren) 6.955,824 Tage bzw. 235,726 synodische
+Monate zu 29,508 Tagen beträgt. Damit erreicht die
+Berechnung - bis auf ein Mehr von 16,1358 Tagen -
+die astronomischen Vorgaben für den Mondzyklus
+von 19 Jahren, gleich 228 Sonnen- oder 235 synodi-
+schen Monaten (Abb. 43) 102.
+Mit der Berechnung aus 19 Zonen ist das Schema der
+übergreifenden mathematischen Systematik beim Ber-
+liner Goldhut erfasst und damit im Vergleich mit den
+modernen astronomischen Daten dechiffriert. Die
+1644 Ringe aus 18 Zonen (die 57 Zähler in Schalt-
+zone 7 nicht gerechnet) beschreiben einen Zyklus von
+54 solaren Monaten mit 1.644 Tagen, die 1597 Ringe
+aus 18 Zonen (1.701 minus Zähler in Schaltzonen 16
+und 17) einen solchen von 54 synodischen Monaten.
+Daraus folgt die für die praktische Nutzung wesentli-
+che Erkenntnis, dass e i n konzentrischer Kreis aus den
+Scheibensymbolen jeweils einen Zähler für e i n e n
+Tag im Kalendarium bedeutet, was auf einfachere
+Weise schon beim Auszählen der Kreisringe in der
+rhythmischen Abfolge der Zonen (S. 72; Abb. 33-34)
+und der Summierung identischer Stempelabdrücke
+(S. 72; Abb. 35-36) festgestellt wurde.
+Jedenfalls beinhaltet der Goldhut in seiner Vollstän-
+digkeit, gleich seinen drei Vergleichsstücken, zwei
+Systeme - das solare und das lunare -, die sich bei
+schlichter Zählung der Kreisringe zur Zeitmessung
+verwenden lassen, wobei der Kalender durch Multi-
+plikation um das Vierfache seiner Zähler auf 19 Jahre
+und damit, dem Mondzyklus mit 228 Sonnenmona-
+ten entsprechend, auf 235 synodische Monate ausge-
+legt ist:
+1.739x 4 = 6.952 : 30,508 = 227,874 (228) Sonnen-
+monate oder 6.952 : 365 = 19,046 (19) Jahre bzw.
+1.739-57 = 1.682 x 4 = 6.728 : 29,508 = 228,006
+102 Vgl. z. B. J. E. Ekrutt, Der Kalender im Wandel der Zeit (1972);
+R. Dehnke, Vom Bedeutungsinhalt der Zahl Neunzehn (1992) 7:
+„Die scheinbaren Bahnen der beiden Hauptgestirne am irdischen
+Himmel, nach denen im Altertum weitgehend die menschliche Zeit-
+rechnung bemessen wurde, stehen in einem sehr komplizierten Ver-
+hältnis zueinander." - Der sogenannte Mondzyklus dauert exakt 19
+(Sonnen)jahre. Der rhythmische Zusammenhang beider Gestirner-
+scheinungen im 19-Jahre-Zyklus (Meton-Zyklus; vgl. Anm. 110)
+ergibt sich aus der Astronomie: Bestimmte Mondphasen fallen alle 19
+Jahre wieder auf denselben Tag im Sonnenjahr. Z. B.: Vollmond auf
+den Tag der Sommersonnenwende usw.
+90
+(228) Sonnenmonate oder
+6.728 + 228 = 6.956 : 29,508 = 235,733 (235) syn-
+odische Monate.
+Die Genauigkeit der Berechnungen erhöht sich bei
+Reduzierung auf die 18 Zonen mit Kreismustern
+unter Ausschluss der Zone mit den Sondermustern
+(Zone 5). Grundlage sind 3x18 gleich 54 Monate und
+die Einbeziehung der „Schaltzonen" 7, 16 und 17
+(vgl. Abb. 43): Aus 18 Zonen mit 1.701 Ringen =
+1.701 Tage, abzüglich der 57 Ringe in Schaltzone 7,
+ergeben sich 1.644 Tage, entsprechend 54 Sonnenmo-
+naten mit einem Durchschnittswert von 30,444
+Tagen, der exakt den astronomischen Vorgaben ent-
+spricht. Die 54 Monate sind gleich 4,5 Jahre, wobei
+1.644 geteilt durch 4,5 365,333 bzw. 54 mal 30,444
+Tage 1643,976 (1644) Tage ergibt.
+Dagegen folgen aus den 18 Zonen mit Kreisringen
+abzüglich der Schaltzonen 16 und 17 aus 1.597
+Zählern 54 synodische Monate zu 29,574 Tagen.
+1.597 geteilt durch 354 ergibt 4,511 (4,5) Mondjahre
+oder 1.597 geteilt durch 4,511, entsprechend 354
+Tage, gleich ein Mondjahr.
+54 Sonnenmonate zu 30,444 Tagen ergeben 1.644
+Tage und das Vierfache sind 216 Sonnenmonate
+gleich 18 Jahre. 216 mal 30,444 ergibt 6.575,904
+und, zuzüglich 365 (18 plus 1 Jahr), 6.940,905 Tage
+entsprechend 228 Monaten für 19 Jahre des Mondzy-
+klus mit einer Abweichung von nur 1,225 lagen vom
+astronomischen Mittelwert (Abb. 43).
+54 Monate zu 29,574 Tage ergeben die Zahl 1.597,
+entsprechend (1.597:30,444) 52,45697 Sonnenmo-
+naten und das Vierfache 209,82788 Monate oder
+6.388 Tage. Die Differenz aus 216 Sonnenmonaten
+(6.574) und 216 synodischen Monaten (6.388)
+beträgt 187 Tage, gleich 6,353689 synodischen
+Monaten. Das heißt, dass im Zeitraum von 18 Jahren
+222,353 synodische Monate 216 Sonnenmonaten
+entsprechen (Abb. 43).
+Die Erklärung, warum das in der Auflösung simpel
+erscheinende rechnerische Programm, im Vergleich
+etwa mit den bronzenen Gefäßen mit einfacher
+„kalendarischer" Buckelzier (s.o. S. 69), derart ver-
+schlüsselt dargestellt ist, findet sich wahrscheinlich in
+Der synodische Monat bezeichnet die Zeit zwischen zwei aufeinander
+folgenden Vollmonden (Lunation) und hat die (konstante) Länge von
+29 Tagen (d), 12 Stunden (h) und 44 Minuten (m) und 28 Sekunden
+(s) oder, in Dezimalzahlen ausgedrückt, von 29,530588 Tagen. Das
+Sonnenjahr hat 365 Tage (d), 5 Stunden (h), 48 Minuten (m) und
+45,25 Sekunden (s) oder 365,24219 Tage bzw. 12 Monate zu durch-
+schnittlich 30,4369 Tagen.
+19 Sonnenjahre mit 228 Monaten zu durchschnittlich 30, 4369 Tagen
+umfassen insgesamt 6.939,6016 Tage. Dies entspricht der Summie-
+rung von 235 synodischen Monaten zu durchschnittlich 29,530588
+Tagen, welche 6.939,6882 Tage ergibt.

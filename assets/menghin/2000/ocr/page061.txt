@@ -1,0 +1,112 @@
+Menghin, Der Berliner Goldhut
+11 9 12 10 15 13 16 17 8 21 14 7 18 19 20 K
+SK
+Z 1
+1 24 24
+24
+1 24
+Z 2
+24
+57
+: O
+3 19
+19
+Z 3
+TB 1
+135
+5 27
+5 27 135
+27
+24
+2 27
+54
+27
+25
+84
+3 28
+28
+Z 6
+TB 2
+3 22
+66
+Z 7
+22
+78
+2 39
+40
+Z 8
+30 150
+5
+29
+30
+TB 3
+3 32 96
+3 32 96
+32
+Z 10
+5 19
+95
+19
+2 11
+TB 4
+140
+7 20 140
+7 20
+Z 12 20
+1 45 45
+45
+1 45
+Z 13 45
+TB 5
+102
+6 17 102
+6 17
+17
+Z 14
+22
+22
+Z 15
+TB 6
+3 19 57
+Z 16 19
+21
+Z 1721
+TB 7
+14 C
+98
+7 14
+7 14 98
+Z 18
+1 52
+52
+1 52 52
+52
+Z 19
+TB 8
+7 22 154
+7
+154
+22
+22
+Z 20
+.....
+7 33
+7
+231
+|33
+Z 21
+Legende:
+Anzahl der Symbole
+Scheibensymbole
+Kreis-Anzahl im Symbol
+K
+Symbole in Schaltzonen
+SK Summe der Kreise
+Sondersymbole
+• Musterpunzen
+Z Zierzone
+TB Trennband
+Abb. 27: Goldkegel von Ezelsdorf. Der Ornamentkanon in graphischer Darstellung nach der Zonenabfolge in Kombination mit
+der Verteilung identischer Muster. Hellgrau: Ergänzte Zone 21 der Krempe. Zur Nomenklatur und Nummerierung vgl. Abb.
+24-25. Grafik K. D. Schwarz.
+61

@@ -1,0 +1,112 @@
+Acta Praehistorica et Archaeologica 32, 2000
+Dem zu Folge werden mit den 1739 bzw. 1682 Rin-
+gen und Zeichen 57 solare Monate, d. h. vier Jahre
+und neun Monate, bzw. 57 lunare Monate erfasst
+(Abb. 43).
+- Ohne die Sonderzeichen sind mit 18 Zonen (3-4; 6-
+21) viereinhalb Jahre bzw. 54 solare Monate mit dem
+Goldhut darstellbar, wenn die 57 Ringe aus Schalt-
+zone 7 nicht zählen. Die Formel [(1701-57) 1644 :
+(3x18)54) ergibt den Kontrollwert 30,444, der bis auf
+eine Differenz von (+)0,007 der absoluten Durch-
+schnittsdauer eines Sonnenmonats mit 30,437 Tagen
+entspricht. Auf den gesamten Zeitraum von vierein-
+halb Jahren bezogen, bedeutet das eine Abweichung
+von gerade einmal 6,349 Stunden.
+54 lunare Monate beschreiben die 18 Zonen bei Eli-
+mination der 38 und 66 Ringe in den Schaltzonen 16
+und 17. Nach der Formel [1644-(38+66)104 = 1597
+: (3x18) 54] ergibt sich der Faktor 29,574. Der Unter-
+schied zum absoluten Durchschnittswert einer Luna-
+tion von 29,531 Tagen beträgt (+)0,043. Auf die
+Gesamtzeit bezogen sind das ca. 56,4 Stunden (Abb.
+39; 43).
+- Einen Zyklus von 48 solaren Monaten mit absolut
+1461 Tagen umfassen die von den Friesen mit dem
+Stempel Nr. 8 (Zone 3 und 20) an der Spitze und am
+Krempenansatz begrenzten 17 Zonen mit 1.466 Rin-
+gen (vgl. Abb. 14). Die Formel greift in diesem merk-
+maltypisch definierten Abschnitt nur, wenn bei der
+Teilung eine der drei Schaltzonen nominell nicht
+gezählt wird. Es ergibt sich dann [1466 : (3x16)48]
+der Kontrollwert 30,541.
+Mit ähnlicher Toleranz sind im selben Abschnitt, bei
+Abzug der 57 Zähler aus Schaltzone 7, 48 lunare
+Monate mit durchschnittlich [(1466-57)1409 :
+(3x16) 48) 29,353 Tagen zu berechnen (Abb. 39).
+Dieser Zeitzyklus kann auch mit den 16 regulären
+Zonen 4 bis 20 erfasst werden. Die 1424 Kinge erge-
+ben bei Teilung durch 48 den Koeffizienten 29,666.
+Bei Addition der 38 Sonderzeichen aus Zone 5 [1424
++ 38] ergeben sich im selben Abschnitt 1462 Zähler,
+die bis auf einen Punkt der Zahl der Tage für vier
+Jahre entsprechen.
+Noch genauer lassen sich die vier Jahre mit 1461
+Tagen dagegen anhand der 16 Zonen 6 bis 21 darstel-
+len. Sie weisen insgesamt 1584 Ringe auf. Abzüglich
+der Zähler aus den Schaltzonen 7 (57 Kreise) und 17
+(66 Kreise) ergibt sich aus [1584-(57+66)] 1461 :
+(3x16)48] der Durchschnittswert eines solaren
+Monats in der astronomischen Vorgabe von 30.437
+Tagen.
+Wenn von der Gesamtzahl der Zähler im selben
+Abschnitt die Summe der Ringe aller drei Schaltzonen
+7, 16 und 17 abgezogen wird, folgt aus 1423 :
+(3x16)48 der Mittelwert 29,654 für einen synodi-
+schen Monat (Abb. 39).
+82
+- Die Zonen 3 bis 18 enthalten die drei Schaltzonen
+7, 16 und 17. Die übrigen 12 „regulären" Zonen wei-
+sen 1005 Ringe auf und bilden die Basis zur Berech-
+nung eines 36monatigen solaren bzw. lunaren Zyklus.
+Bei „Zuschaltung" der Zone 7 mit 57 Ringen ergeben
+sich [(1005+57)1062 : (3x12)36 = 29,500], bis auf
+eine Divergenz von 0,031, gleich 1,116 Tagen zum
+astronomischen Wert, 36 synodische Monate.
+Werden hingegen zu den 1005 Zählern aus den 12
+regulären Zonen die Ringe aus den Schaltzonen 7 und
+16 addiert, so zeitigt die Formel [1005 + (57+38)95 =
+1100 : (3x12)36] den Kontrollwert 30,555 für 36
+Monate, der bei einer Toleranz von (+)0,118 aller-
+dings eine Ungenauigkeit in der Zählung von 4,268
+Tagen bedeutet (Abb. 39).
+Exakter stellt sich der 36monatige Sonnenzyklus in
+den 12 Zonen 9 bis 20 dar (Abb. 39). Sie zählen 1097
+Kreise und ergeben bei Teilung durch das Dreifache
+der Zonenzahl [1097 : (3x12)36] den Faktor 30,472
+für einen Monat, der damit um nur (+)0,035 vom
+astronomischen Wert abweicht.
+Werden von der Summe die 38 Ringe aus Zone 16
+subtrahiert, folgt aus 1059 geteilt durch 36 das Pro-
+dukt 29,416 für einen synodischen Monat. Die relativ
+große Toleranz von (-)0,115 auf den dreijährigen
+Zyklus entspricht mit einer Fehlzählung von (-)4,14
+Tagen in etwa der Überzahl des solaren Zyklus aus
+den Zonen 3 bis 18 (Abb. 39).
+- Im mittleren Abschnitt des Schaftes lassen sich
+Abschnitte für zweijährige Zyklen definieren. Die acht
+regulären Zonen (6, 8 - 14) zwischen dem Band mit
+dem „Logo" und dem erstmaligen Auftreten von
+Scheiben mit sechs Ringen (Nr. 15) in Zone 15 (vgl.
+Abb. 14) beinhalten 672 Zähler. Bei Ergänzung mit
+den 57 Ringen aus Schaltzone 7 folgt aus der Teilung
+von 729 durch (3x8)24 der Mittelwert 30,375. Dieser
+ist identisch mit demjenigen aus den acht Zonen 8
+bis 15 zwischen den Friesen mit jeweils 19 Symbolen
+(Schaltzonen 7 und 16), wenn dort die Zähler aus der
+Schaltzone 7 addiert werden [(672+57)729 :3x8)24 =
+30,3751.
+Ergänzt man jedoch dieselben acht Zonen mit den 38
+Zählern aus Schaltzone 16 [(672+38)710 : (3x8)24),
+so ergeben sich 24 synodische Monate zu 29,583
+Tagen (Abb. 43).
+- Eindeutig merkmaltypisch definiert sind auch die
+Zonen 10 bis 16 in der unteren Hälfte des Schaftes.
+Sie stehen für einen 18monatigen Zyklus mit absolut
+547,5 Tagen. Die sechs regulären Zonen weisen 510
+Ringe auf. Ergänzt durch die Schaltzone 16 (+38) sind
+es 548 Zähler, die, durch (3x6)18 geteilt, in 18 solare
+Monate zu 30,444 Tagen aufgeschlüsselt werden kön-
+nen (Abb. 43).
+- Im oberen Teil des Schaftes zeigen die drei regulären
+Zonen 3 bis 6 insgesamt 264 Ringe. Bei Teilung nach

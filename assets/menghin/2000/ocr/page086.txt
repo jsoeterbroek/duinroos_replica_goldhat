@@ -1,0 +1,108 @@
+Acta Praehistorica et Archaeologica 32, 2000
+man im System bleibt, dass der Goldkegel von Ezels-
+dorf nicht mit 1701, sondern mit 1694 oder 1695
+Kreisringen zu berechnen ist, wobei hier dem ersten
+Wert der Vorzug zu geben ist.
+Im Vergleich mit der Struktur des Berliner Goldhutes
+wird deutlich, dass die zu errechnenden Kreise auf der
+Krempe des Goldhutes von Ezelsdorf auf nur eine
+Zonen verteilt gewesen sein müssen, weil sonst die
+dem Berliner Beispiel entsprechende Zahl von 19
+Zonen nicht zustande käme (Abb. 42). Daraus folgt
+aber wiederum, dass auch der Goldkegel von Ezels-
+dorf von der Spitze bis zum Krempenrand im voll-
+ständigen Zustand 21 Zonen aufwies. Dass damit
+beim Goldkegel von Ezelsdorf nur 17 Zonen mit
+Kreisringen bestückt sind, ändert jedoch nichts am
+System, weil die fehlende Zone durch eine der beiden
+Zonen 15 und 17 mit den Sondermustern, welche im
+Prinzip und numerisch dem Doppelfries in Zone 5
+mit den Augen- und Mondsichelsymbolen des Berli-
+ner Goldhutes entsprechen, ersetzt wird (Abb. 43).
+Bei der graphischen Rekonstruktion der Krempe des
+Goldkegels von Ezelsdorf ist, im Vergleich mit den
+systematischen Strukturen des Berliner Beispiels, zu
+beachten, dass die zwei für die Ornamentierung der
+beiden Zonen in Frage kommenden Stempel zum
+einen aus dem vorhandenen Musterschatz stammen
+und zum anderen die rhythmischen und arithmeti-
+schen Verbindungen zwischen Schaft und Kalotte
+sowie unterer Schafthälfte und Krempe gewährleisten
+müssen. Weiterhin ist bedeutsam, dass beim Beispiel
+von Ezelsdorf, im Gegensatz zum Berliner Goldhut,
+nur jeweils zwei Zonen ein identisches Stempelmuster
+zeigen, und darüber hinaus, dass das Muster in Zone
+21 entsprechend dem Befund am abgeschnittenen
+Krempenansatz ein Zwickelmuster oder eine Buckel-
+reihung aufweisen muß (Abb. 26).
+Nach empirischer Prüfung aller Kombinationen vom
+Durchmesser der Buckelscheiben zum mittleren
+Umfang der Zone 21 auf der Krempe sowie zu den
+daraus resultierenden Summen der konzentrischen
+Ringe im Vergleich mit den Zahlenvorgaben 231,
+232, 233 und 238 (s. oben) stellt sich heraus, dass, bei
+allen Unwägbarkeiten - wie beispielsweise die analog
+zum Berliner Goldhut angenommene Krempenbreite
+- die virtuelle Rekonstruktion der Krempe mit dem
+Musterstempel Nr. 17 (vgl. Abb. 25) aus Zone 12 (7
+Ringe; Dm. 2,2 cm) die höchste Wahrscheinlichkeit
+hat.
+Dieses Scheibensymbol ist ein Buckel mit sieben kon-
+zentrischen Kreisen und kommt nur einmal in Zone
+12 unterhalb der Mitte des Kegelschaftes vor. Am
+Grat der äußersten Rippe hat es einen Durchmesser
+von 2,2 cm. Zum Scheibendurchmesser werden 0,2
+86
+cm addiert, sodass es zu keinen Überschneidungen
+kommt und die Rechengrundlage damit 2,4 cm bei
+unendlichem Rapport ist.
+Die fiktive Zone 21 auf der Krempe hat einen mittle-
+ren Durchmesser von 24,0 cm [Durchmesser der
+Kalottenbasis plus die halbe Krempenbreite (19,5 +
+5,5)]. Der Umfang von 78,539 cm ist aus 2r x Pi [25
+× 3,14159] zu errechnen. Auf diesen Umfang müssen,
+zentriert und möglichst ohne Überschneidungen, X
+Muster Nr. 17 untergebracht werden können: 78,539
+cm : 2,4 cm = 32,728. Angenähert sind das 33
+Musterstempel Nr. 17 mit sieben Kreisen und damit
+231 Zähler, die damit der niedrigsten vorgegebenen
+Zahl genau entsprechen (Abb. 24). Wie die Krempe
+weiter gestaltet war - in den Kreiszwickeln standen
+nach dem Originalbefund jedenfalls Ringbuckelchen
+aus dem Stempel Nr. 6 (vgl. Abb. 25) - und ob die
+Zone 21, ähnlich wie die Zierzonen auf der Kalotte,
+von Buckelreihen gesäumt war, entzieht sich der Beur-
+teilung.
+Rechnerisch ist mit dieser Rekonstruktion das Pro-
+blem gelöst. Sie ergibt für die Krempe mit der Zone
+21 genau 33 Symbole des Stempels Nr. 17 mit sieben
+Ringen und damit 231 Zählern, sodass beim Goldhut
+von Ezelsdorf mit insgesamt 1737 Zeichen und, im
+Gegensatz zum Berliner Goldhut nicht mit 1701, son-
+dern mit 1694 konzentrischen Kreisen zu rechnen ist
+(Abb. 39).
+Wie beim Berliner Goldhut wird aus der Teilung mit
+dem Dreifachen der 19 Zonen mit Kreissymbolen
+und Sondermustern ein Zeitzyklus von 57 solaren
+[(1463+21+22+231)1737 : (3x19)57 = 30,473] und,
+bei 1737 minus der Kreise aus Schaltzone 5 [(1738-
+54)1683 : (3x19)57 = 29,526)], 57 synodischen
+Monaten erfasst.
+Bei 17 Zonen (3-14; 16; 18-21) ist die Summe der
+Kreisringe 1694. Bei Eliminierung der Schaltzone 19
+verbleiben von den insgesamt 19 Zierzonen 18. Nach
+der Formel [(1694-52)1642 : (3x18)54] ergibt sich
+als Koeffizient 30,407. Wird zusätzlich Schaltzone 5
+herausgerechnet [1694 - (52+54)106 = 1588 :
+(3x18)54], entsteht der Kontrollwert 29,407 für 54
+synodische Monate.
+Die 16 „regulären" Zonen 3 bis 20, d.h. nur diejeni-
+gen mit Buckelkreisen, beinhalten 1463 Ringe.
+Geteilt durch dreimal die Zonenzahl [1463 :
+(3x16)48] werden vier Jahre oder 48 Monate zu
+30,479 Tagen dargestellt (vgl. oben S. 82). Bei Addi-
+tion der 43 Sonderzeichen aus den Zonen 15 und 17
+und Abzug der 84 Zähler aus Schaltzone 6 ergibt sich
+ein Mittelwert von [(1506-84)1422 : (3x16)48]
+29,625 für einen synodischen Monat. Werden dage-
+gen nur die Zonen mit Kreisringen gezählt und die

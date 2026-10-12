@@ -1,0 +1,162 @@
+Acta Praehistorica et Archaeologica 32, 2000
+Toleranz
+Faktor
+Formel Faktor
+Formel
+aZ Rz
+Rz
+aZ
+MZ Zz Abschnitt
+Zz Abschnitt
+MZ
++ 0,036
+(3x19) 57 = 30,473
+1737 :
+1735
+Zone 3 - 21-
+57 Mon.
+19
+- 0,005
+(3x19) 57=29,526
+1683 :
+1683
+- SZ5(54)
+19
+1694
+Zone 3 - 21
+18
+- 0,030
+1643,5 1642 : (3x18) 54=30,407
+(3x18) 54 = 30,407
+1642 :
+1643,5
+- SZ19(52)
+54 Mon.
+1694
+Zone 3 - 21
+18
+- 0,124
+1594,5 1588 : (3×18) 54=29,407
+(3x18) 54 = 29,407
+1588 :
+1594,5
+- (SZ5 + SZ19)
++ 0,042
+(3x16) 48 = 30,479
+1461
+1463 :
+Zone 3 - 20
+16
+- 0,136
+(3x16) 48 = 29,395
+1411 :
+1417,5
+- SZ19(52)
+1448
+Zone 6 - 21
+48 Mon. 16
+1502
++ SZ5(54)
++ 0,010
+(3x16) 48 = 29,541
+1418 :
+1417,5
+- SZ6(84)
+1448
+Zone 6 - 21
+16
+1545
++ (SZ5 + Z15 + Z17)
+‡ 0,000
+(3x16) 48 = 30,437
+1461 :
+1461
+- SZ6(84)
+1145
+Zone 4 - 16
+12
+- 0,132
+(3x12) 36=30,305
+1091 :
+1095
++ (Z15 + Z17) - Z5(54)
+36 Mon.
+1145
+Zone 4 - 16
+12
+- 0,059
+(3x12) 36=29,472
+1061 :
+1063
++ (Z15 + Z17) - Z6(84)
+1070
+Zone 10 - 21
+12
+(3x12) 36 = 29,472
+- 0,059
++ (Z15 + Z17)- SZ19(52) 1063
+1061 :
+1070
+Zone 10 - 21
+12
+- 0,104
+(3x12) 36=30,333
+1092 :
+1095
++ 215
+815
+Zone 3 - 11
++ 0,021
+(3x8) 24 = 30,458
+731 :
+730,5
+- SZ6(84)
+24 Mon.
+- 0,115
+706 :
+(3x8) 24 = 29,416
+709
+Zone 10 - 19
++ 0,191
+(3x6) 18 = 29,722
+535 :
+531,5
+Zone 10 - 16
+18 Mon. 6
+344
+Zone 12 - 16
+4
+- 0,021
+(3x4) 12 = 30,416
+365 :
+365
++ Z17(21) oder
+12 Mon.
++ 0,063
+366 :
+(3x4) 12 = 30,500
+366
++ 215(22)
+4
+302
+Zone 13 - 18
+354 :
+(3×4) 12= 29,500
+- 0,031
+354
++ SZ19(52)
+176 :
+- 0,198
+(3x2) 6 = 29,333
+177
+Zone 15 - 18
+2
+6 Mon.
+Abb. 42,1: Goldkegel von Ezelsdorf. Tabelle zur Berechnung solarer und lunarer kalendarischer Zyklen von 6 bis 57 Monaten
+anhand der „Formel" (vgl. S. 71) im Vergleich zur auf- oder abgerundeten absoluten Zahl der Tage und den astronomischen Mit-
+telwerten für die Dauer eines solaren bzw. synodischen Monats (vgl. Abb. 42,2).
+Mz - Zahl der Monate; Zz - Zonenzahl; Abschnitt - zur Berechnung erfaßte Zonen; aZ - absolute Zahl der Tage eines Zeitzy-
+klus; Rz - Zahl der Ringe und Sonderzeichen im jeweiligen Abschnitt; Faktor - Mittelwert eines Monats (solar oder lunar) aus der
+Berechnung der Zähler eines Abschnitts; Toleranz - Abweichung des Mittelwertes von der astronomischen Vorgabe 30,473 oder
+29,531 für einen solaren bzw. lunaren Monat.
+84

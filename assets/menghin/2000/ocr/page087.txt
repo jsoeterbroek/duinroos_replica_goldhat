@@ -1,0 +1,109 @@
+Menghin, Der Berliner Goldhut
+Lexikon zu entnehmen, dass ein Sonnenmonat durch-
+[(1463-52)1411
+Schaltzone 19 subtrahiert [(1463-52)1411 :
+subtrahiert
+Schaltzone 19
+schnittlich 30,4369 Tage und das Sonnenjahr unge-
+(3x16)48] folgt als Koeffizient 29,395, wobei die
+fähr 365 Tage hat. Das Mondjahr dauert durch-
+Toleranzen auf die absoluten Werte (+) 0,094 bzw. (-)
+schnittlich 354 Tage, der synodische Monat, das heißt
+0,136 betragen.
+die Zeit von Vollmond zu Vollmond, durchschnittlich
+Die 16 Zonen 6 bis 21 zählen mit 1448 konzentri-
+29,5305 Tage. Der Mondzyklus, das heißt die Periode
+schen Kreisen zuzüglich der 54 Ringe aus Schaltzone
+zwischen übereinstimmenden Sonnen- und Mondda-
+5 insgesamt 1502 Ringe. Abzüglich der Schaltzone 6
+ten, dauert 19 Jahre, entsprechend 228 Sonnenmona-
+[1502 - 84] verbleiben in 16 Zonen 1418 Ringe.
+ten bzw. 235 synodischen Monaten mit jeweils insge-
+Geteilt durch dreimal die Zonenzahl 16, ergibt sich
+samt 6.939,6882 Tagen.
+der Durchschnittswert 29,541 für 48 synodische
+Der Bezug dieser astronomischen Daten zu den Zah
+Monate (Abb. 42). Der mathematisch exakte Wert
+lensystemen des Berliner Goldhutes und dem virtuell
+von 30,437 Tagen für einen solaren Monat ergibt sich
+rekonstruierten Goldkegel von Ezelsdorf ist frappie-
+dagegen, wenn zur Gesamtzahl der Ringe die 43 Son-
+rend (Abb. 43).
+derzeichen addiert und die Schaltzone 6 abgezogen
+Das Berliner Exemplar weist in 19 Zonen 1.701
+wird [(1554-84) 1461 : (3x16)48 = 30,437].
+Kreisringe und 38 Sonderzeichen auf. Werden die ins-
+gesamt 1.739 Zähler durch das Dreifache der Zonen-
+Exakt 36 synodische Monate lassen sich aus den 12
+zahl geteilt (1.739:(3x19)57) ergibt sich als Quotient
+Zonen 10 bis 21 zwischen Trennband 3 und Krem-
+30,508. Multipliziert mit dem Vierfachen von den 57
+penrand erschließen. Es sind 1070 Ringe plus die 43
+auf dem Goldhut errechneten Monatswerten zu
+Sonderzeichen und damit 1113 Zähler. Ohne die
+30,508 Tagen, nämlich 228, entsprechend den Son-
+Schaltzone 19 mit 52 Ringen ergibt sich [(1113-
+nenmonaten eines Mondzyklus, ergibt sich ein Wert
+52)1061 : (3x12)36] der Koeffizient 29,472 für einen
+von 6.955,824 mit einer Differenz von (+) 16,1358
+lunaren Monat.
+Tagen auf den astronomischen Wert von 6.939,6882
+Mit derselben Summe der Ringe, ergänzt durch die 22
+Augensymbole [(1071+22) 1093 : (3x12)36], sind 36
+Tagen.
+Werden unter gleichen Voraussetzungen von der
+solare Monate zu 30,361 Tagen darzustellen.
+Gesamtsumme die 57 Zähler aus Schaltzone 7 abge-
+zogen, dann folgt aus 1.682 : (3x19)57 der Quotient
+Im unteren Abschnitt des Goldhutes von Ezelsdorf
+29,508. Multipliziert mit 235, der Zahl der synodi-
+lassen sich, trotz der ergänzten Krempe, wie schon am
+schen Monate eines Mondzyklus, ist das Ergebnis
+Berliner Beispiel festgestellt (s.S. 83), aus der Kombi-
+6.934,561, was einer Differenz von (-)5,119 Tagen
+nation der Numerik im System keine Zeitzyklen
+auf die Dauer des 19jährigen Mondzyklus entspricht
+erschließen, dafür aber stellt sich der Schaft im
+Gesamten variantenreich und in der Zeitbestimmung
+(Abb. 39).
+Ähnlich exakte Daten ergeben sich bei der Berech-
+beinahe mathematisch genau dar (Abb. 42).
+nung aus 18 Lonen mit insgesamt 1.701 Kreisringen.
+Abzüglich der 57 Zähler aus Schaltzone 7 stehen
+Die Stimmigkeit der Rekonstruktion des Goldkegels
+1.644 Einheiten für die Rechnung zur Verfügung
+von Ezelsdorf zu einem Kalenderhut mit entspre-
+geteilt
+Durch das Dreifache von 18 Zonen
+chend hohem Standard wie bei dem Berliner Beispiel,
+zeigt sich auch im Vergleich der auf die Zonen bezo-
+(1.644:(3x18)54) ist der Quotient 30,444. Multipli-
+genen Rechenprodukte und ihrer Toleranzen gegen-
+ziert man diesen mit 228 (den Sonnenmonaten des
+Mondzyklus, entsprechend dem Vierfachen von 57
+Durchschnittswerten eines Sonnen-
+auf dem Hut errechneten Monatswerten zu 30,444
+(30,437) bzw. eines Mondmonats (29,531). Sie bewe-
+gen sich in den rechnerisch relevanten Zonenab-
+Tagen), so ist das Ergebnis 6.941,333, eine Zahl, die
+schnitten in vertretbaren Schwankungsbereichen,
+bis auf eine Differenz von (+) 1,645 mit der Dauer des
+wobei sich im Fall des rekonstruierten Ezelsdorter
+astronomischen Mondzyklus übereinstimmt.
+Bei derselben Berechnung aus 18 Zonen, abzüglich
+Goldhutes die besten Werte in der Kombination des
+der Zähler in den Schaltzonen 16 und 17 (1.701-
+Vorhandenen mit der ergänzten Zone 21 ergeben
+104), ergibt sich bei der Teilung von 1.597 durch 54
+(Abb. 39).
+die Zahl 29,574. In der Vervielfachung mit dem Fak-
+tor 255, der vorgegebenen Lahl synodischer Monate
+ergibt sich aus 29,574 x 235 der Wert 6.949,88, wel-
+Zahlenkombinationen und Kalendersysteme
+cher bis auf eine Differenz von (+) 10,21 Tagen der
+Dauer des 19 jährigen Mondzyklus entspricht.
+Ohne auf die komplexen Probleme von Kalendersy-
+Die Indizien für eine Interpretation als Kalender las-
+stemen eingehen zu wollen, ist jedem einschlägigen
+sen sich auf anderer Rechengrundlage verdichten,
+87

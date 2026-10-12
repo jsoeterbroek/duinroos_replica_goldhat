@@ -1,0 +1,1195 @@
+
+
+===== printed page 073 (pdf page 1) =====
+
+solar
+lunar
+1
+2
+3
+366
+4
+365
+365
+5
+6
+355
+7
+8
+9
+10
+11
+12
+13
+14
+15
+354
+16
+17
+18
+19
+20
+21
+Abb. 34: Berliner Goldhut. Graphische Darstellung des Zählschemas für lunare und solare Zeitabschnitte nach der Rhythmik
+der Zonenfolgen am Objekt. Die Schaltzonen (hellgrau) 7, 16 und 17 finden in der Systematik für die lunaren Zyklen keine
+Berücksichtigung, während das Zuschalten von Zone 7 in der Addition der Ringe aus den Zonen 3, 9, 11 und 13 die 366 Tage
+eines Schaltjahres definiert. Vgl. Abb. 33 und zur Nomenklatur Abb. 2. Grafik K. D. Schwarz.
+73
+
+
+===== printed page 074 (pdf page 2) =====
+
+Acta Praehistorica et Archaeologica 32, 2000
+lunar
+1
+2
+solar
+Nr. 8
+365
+4
+5
+6
+7
+8
+9
+Nr. 10
+365
++
++
+Nr. 12
+177
+Nr. 14
+535
+10
+11
+12
+13
+14
+15
+Nr. 15
+354
+16
++
++
++
+17
+18
+19
+20
+21
+Abb. 35: Berliner Goldhut. Graphische Darstellung der Zählung lunarer und solarer Zyklen mittels Addition stempelgleicher
+Muster am Objekt. Lunare Zyklen ergeben sich mit den Stempelmustern Nr. 12, 14 und 15 ohne Hinzuziehung von Schaltzo-
+nen, während mit den Stempeln Nr. 8 und 10, die jeweils lediglich in zwei bzw. drei Zonen zum Abdruck kamen, nur bei
+Zuschalten der Zonen 7, 16 und 17 ein solarer Jahreszyklus darzustellen ist. Vgl. Abb. 2; 6 und 35. Grafik K. D. Schwarz.
+74
+
+
+===== printed page 075 (pdf page 3) =====
+
+Menghin, Der Berliner Goldhut
+Nr. 12 K3
+Nr. 15 K6
+Nr. 14 K5
+SK
+A
+Z
+SK
+Z
+SK
+Z
+57
+90 Z9
+19
+Z9
+90
+15
+Z 15
+95
+19
+Z 10
+60
+Z 11
+20
+126 Z 11
+126
+21
+100 Z 18
+Z 18
+100
+20
+Z 12
+60
+20
+Z 13
+138 Z 13
+138
+23
+105
+105 Z 19
+Z 19
+21
+Z 14
+235
+47
+Z21
+59
+177
+354
+59
+107
+535
+6 synodische Monate
+12 synodische Monate
+18 synodische Monate
+Nr.8 K5/ K2
+Nr. 10 K5/ K3/2
+SK
+Z
+A
+SK
+A
+Z
+42
+14
+75 Z3
+75 23
+15
+Z4
+162
+54
+90 Z 20
+Z 20
+90
+18
+Z6
+105
+21
+Z 8
+204
+68
+270
+54
+57
+57 + SZ 7
+19
++ SZ 7
+57
+19
++ SZ 7
+38
++ SZ 16
+38 + SZ 16 19
+19
+38
+19
++ SZ 16
+60
++ SZ 17
+33
+365
+139
+92
+365
+12 solare Monate
+12 solare Monate
+Abb. 36: Berliner Goldhut. Darstellung von lunaren und solaren Zeitzyklen mittels Addition der stempelgleichen Muster und
+ihre Ergänzung durch die einmalig in den Schaltzonen vorkommenden Muster. Z - Zone; Nr. - Scheibenbuckel Nr.; A - Anzahl
+der Symbole; K - Zahl der Kreise im Scheibenbuckel; SK - Summe der Kreise pro Zone. Zur Nummerierung und Nomenklatur
+vgl. Abb, 2 u. 6.
+72
+54
+36
+48
+27
+24
+18
+72
+54
+36
+27
+48
+24
+18
+6
+12
+Abb. 37: Der Zahlenrhythmus aus der Sequenz 3 - 6 - 9 bei Doppelung oder Verdreifachung der Numerik als Grundlage der
+Dechiffrierung bronzezeitlicher Rechenzyklen.
+75
+
+
+===== printed page 076 (pdf page 4) =====
+
+Acta Praehistorica et Archaeologica 32, 2000
+solar
+lunar
+1
+80
+2
+87
+18 12
+3
+95
+18
+12 18
+12
+6
+000
+4
+86
+000
+5
+95
+6
+6
+89
+Abb. 38: Bronzeblechamphora von Seddin. Graphische Darstellung des Zahlenschemas und Auflösung des Systems in lunare
+und solare Zyklen von 6, 12 und 18 Monaten nach der Formel: Summe der Kreise (Buckel) aus einem merkmaltypisch definier-
+ten Abschnitt geteilt durch das Dreifache der Anzahl der erfassten Zonen ergibt den Durchschnittswert für einen lunaren oder
+solaren Monat, wobei der Divisor die Zahl der erfassten Monate angibt. Grafik K. D. Schwarz.
+Legende: 1, 2, 3 ... - Nummerierung der Zonen; 9, 12.... - Anzahl der Monate; graue Ziffern - Anzahl der Buckel; graue Raster -
+Schaltzonen.
+Rechensystem: Zone 1 - 4 (80+87+95+86+2x3) 354:(3x4)12 = 29,5 (durchschnittliche Tage eines lunaren Monats).
+Zone 3 - 6 (95+86+95+89) 365:(3x4)12 = 30,416 (durchschnittliche Tage eines solaren Monats).
+Bewertung: In der praktischen Anwendung weiß der Kundige, um den Zeitraum eines lunaren Jahres zu erfassen, muss er die
+Zonen 1 - 4 samt der sechs Buckel auf den oberen Henkelattaschen, und um jenen eines solaren Jahres zu bestimmen, die
+Buckel in den Zonen 3 - 6 ohne Buckel der Henkelattaschen abzählen.
+Die Gesamtzahl der Scheibensymbole in acht Zonen
+te, damit die Formel wirksam würde!°!. Auch bei den
+(2, 5-11) beträgt 266. Werden die Buckel als Haupt-
+vergleichsweise älteren Goldhüten erfordern einzelne
+symbole und die Kreisringe als Doppelung des
+Abschnitte eine Variation im Rechenschema.
+Musters aufgefasst (die 19 Buckel in Zone 2 haben
+keinen konzentrischen Ring), so ergeben sich für die
+Schifferstadt
+sechs Zierzonen mit Kreisornamenten auf Schaft und
+Der Goldene Hut von Schifferstadt mit seiner stump-
+Kalotte die Zahl 311 und in Addition mit den 44
+fen unverzierten Spitze weist auf Schaft und Kalotte
+Sondermustern aus Zonen 3 und 4 die Zahl 355.
+sechs Zonen mit Buckelscheiben, davon in der ober-
+Addiert man hierzu die 202 Zähler aus den 101 Kreis-
+sten Zone eine mit 19 einfachen Buckeln und in den
+mustern der zwei Zonen auf der Krempe, so beträgt
+fünf anderen solche mit einfachem Kreisring sowie in
+zwei Friesen eine Reihung von jeweils 22 einfachen
+die Gesamtsumme 557.
+Das Zahlensystem auf dem Goldhut von Schifferstadt
+Mandelaugenmustern auf. Die Krempe ist in zwei
+weist eine geringe Variationsbreite auf und ist vor
+Zonen mit identischen Ringkreisen verziert (Abb. 40).
+allem nicht einheitlich. Das Schema ist vordergründig
+nur durch vorgegebene Zahlenwerte interpretierbar.
+101 Ebd. 573 f. Abb. 1.
+76
+
+
+===== printed page 077 (pdf page 5) =====
+
+Menghin, Der Berliner Goldhut
+8
+7
+5
+4
+3
+2
++ 0,507
+30,944
+Schifferstadt
+18 =
+557 : (3x6)
+- 0.191
+557
+29,722
+18 =
+2 - 11
+535 : (3x6)
++ 0,052
+535
+29,583
+2 - 11
+12 =
+355 : (3x4)
+4
++ 0,024
+355
+29,555
+2-9
+9 =
+266 : (Xx4)
+4
+- 0,215
+30,222
+266
+9 =
+3 - 8
+272 : (3x3)
+272
+9 - 11
++ 0,302
+29,833
+18 =
+537 : (Xx12)
+Avanton
+12
+- 0,437
+537
+30,000
+3 - 14
+12 =
+(Xx9)
+360 :
+- 0,104
+30,333
+12 =
+3-
+364 : (Xx8)
++ 0,052
+29,583
+6 -
+12 =
+13
+: (Xx6)
+355
++ 0,246
+29,777
+04000
+14
+9 =
+268 : (Xx7)
+268
+- 0,326
+30,111
+- 9
+9 =
+271 : (Xx6)
+271
+- 0,031
+29,500
+6 =
+- 14
+177 : (3x2)
+2
+- 0,104
+177
+30,333
+6 =
+12 - 14
+5
+182 : (Xx5)
+182
+3 - 7
++ 0,036
+30,473
+Ezelsdorf
+57 =
+1737 : (3x19)
+(3x19)
+1737
+19
+- 0,005
+3
+1737
+29,526
+3 - 21
+57 =
+1683 : (3x19)
+19
+3
+- 0,030
+1683
+30,407
+3 - 21
+54 =
+1642 : (3x18)
+18
+- 0,124
+29,407
+1642
+- 21
+54 =
+1642 : (3x18)
++ 0,042
+18
+3
+1588
+30,497
+21
+48 =
+1463 : (3x16)
+- 0,136
+16
+29,395
+1463
+3 - 20
+20
+48
+48 =
+1411 : (3x16)
+16
+3
+20
++ 0,000
+30,437
+1411
+3 - 20
+48 =
+1461 : (3x16)
+16
++ 0,010
+21
+3
+1461
+29,541
+6 -
+48 =
+1418 : (3x16)
+1418 : (3x16)
+3
+- 0,132
+16
+1418
+30,305
+36 =
+1091 : (3x12)
+- 0,059
+29,472
+1091
+4-
+4 - 16
+36 =
+1061 : (3x12)
+- 0,104
+30,333
+1061
+4 - 16
+4 -
+36 =
+12
+1092 : (3x12)
+- 0,059
+10
+1092
+29,472
+21
+10 - 21
+36 =
+12
+1061 : (3x12)
++ 0,021
+30,458
+1061
+10 - 21
+24 =
+731 : (3x8)
+- 0,115
+731
+29,416
+3 - 11
+24 =
+706 : (3x8
+706 :(3×8)
+3
++ 0,191
+29,722
+706
+10 - 19
+18 =
+535 : (3x6)
+- 0,021
+535
+30,416
+12 =
+10 - 16
+(3x4)
+365 :
++ 0,063
+365
+30,500
+12 - 16
+12
+12 =
+366 : (3x4)
+366 :(3x4)
+- 0,031
+12
+29,500
+366
+- 16
+12 =
+354 : (3x4)
+- 0,198
+3
+354
+29,333
+6 =
+- 19
+13
+176 : (3x2)
+2
+3
+176
+16 - 18
++ 0.071
+30,508
+57 =
+Berlin
+1739 : (3x19)
+19
+- 0,023
+1739
+29,508
+3 - 21
+57 =
+1682 : (3x19)
++ 0,007
+19
+30,444
+1682
+54 =
+3 - 21
+1644 : (3x18)
+18
++ 0,043
+1644
+29,574
+54 =
+3 - 21
+1597 : (3x18)
+18
++ 0,021
+30,458
+1597
+3 - 21
+48 =
+1462 : (3x16)
+16
++ 0,135
+29,666
+1462
+48 =
+4 - 20
+1424 : (3x16)
+16
++ 0,000
+1424
+30,437
+48 =
+4 - 20
+1462 : (3x16)
+16
++ 0,114
+3
+29,645
+1461
+6 - 21
+48 =
+1423 : (3x16)
+16
++ 0,118
+30,555
+1423
+36 =
+6 - 21
+1100 : (3x12)
+12
+- 0,031
+29,500
+1100
+36 =
+3 - 18
+1062 : (3x12)
+12
++ 0,035
+1062
+30,472
+36 =
+3 - 18
+1097 : (3x12)
+12
+- 0,115
+29,416
+1097
+36 =
+9 - 20
+1059 : (3x12)
+12
+- 0,062
+30,375
+1059
+24 =
+9 - 20
+729 : (3x8)
++ 0,052
+29,583
+729
+6 - 14
+24 =
+710 : (3x8)
++ 0,007
+710
+30,444
+18 =
+8 - 15
+548 : (3x6)
+- 0,021
+30,416
+548
+10 - 15
+12 =
+365 : (3x4)
++ 0,052
+365
+29,583
+12 =
+4 - 9
+355 : (3x4)
+4
+355
+12 - 15
+Abb. 39: Die goldenen Kalenderhüte der europäischen Bronzezeit. Lunare und solare Rechenzyklen als synchrone Systeme in
+tabellarischer Übersicht. Die „Ringe" geben die Zahl der konzentrischen Kreise in den zusammengefassten Zonen und damit die
+Zahl der Tage an. Der „Divisor" bezeichnet den Zyklus in Monaten. Das „Produkt" ist die durchschnittliche Dauer eines luna-
+ren oder solaren Monats. Je geringer die Abweichung von den Werten 29,531 bzw. 30,437 ist, desto genauer stimmen die Ergeb-
+nisse der Zyklendefinition und die vorzeitliche Rechengrundlage mit den astronomischen Vorgaben überein. Toleranzen über
+0,198 sind bei den Objekten aus Ezelsdorf und Berlin ausgesondert. Vgl. aber Abb. 42 - 43.
+1 - Zonen in den Zyklen; 2 - Zahl der konzentrischen Ringe; 3 - „Faktor"; 4 - Zahl der berechneten Zonen; 5 - „Formel"
+(Summe der Ringe dividiert durch das Dreifache der Zahl der erfaßten Zonen); 6 - „Divisor" (Zahl der Monate im berechneten
+Abschnitt); 7 - „Produkt" (Durchschnittswert eines Monats entsprechend Rechenvorgabe); 8 - Toleranz (Abweichung des Mit-
+telwertes eines Monats auf vorgegebener Rechengrundlage vom astronomischen Wert 30,437 (solar) und 29,531 (lunar)).
+77
+
+
+===== printed page 078 (pdf page 6) =====
+
+Acta Praehistorica et Archaeologica 32, 2000
+Jejos
+lunar
+2
+3
+4
+5
+18
+6
+12 9
+9
+12
+18
+7
+8
+9
+9
+10
+11
+Abb. 40: Goldener Hut von Schifferstadt. Zählsystem und kalendarische Rechenzyklen zu 9, 12 und 18 lunaren und 9 und 18
+solaren Monaten. Vgl. Abb. 39. Legende: 1, 2, 3...- Nummerierung der Zonen, 9, 12....- Anzahl der Monate, hellgrau - Schalt-
+zonen, dunkelgrau - rechnerisch nicht relevant.
+Auffällig ist, dass solare Zeitabschnitte beim Goldenen
+So beinhalten die sechs Zonen 3 bis 8 insgesamt 266
+Hut von Schifferstadt nur mit Hilfe der Kreisringe auf
+Chiffren, die neun synodischen Monaten zu durch-
+der nachträglich umgearbeiteten Krempe zu errech-
+schnittlich (266:9) 29,555 Tagen gleichgesetzt werden
+nen sind. Es kann vermutet werden, dass hier eine
+können. Die acht Zonen 2 bis 9 enthalten 355 Zei-
+Erweiterung des ziemlich ungenauen „Rechners"
+chen, die der Dauer eines Mondjahres entsprechen.
+erfolgte, vor allem, weil auch die Zahl der Scheiben-
+Eine formelhafte Darstellung ist nur möglich, wenn
+symbole in den zwei Zonen auf der Krempe (46 bzw.
+die Schaltzonen 2 und 9 sowie die Zonen mit Son-
+55) mit derjenigen auf der Krempe des viel jüngeren
+derzeichen 3 und 4 nominal nicht berücksichtigt und
+Berliner Goldhutes (54 und 47) nahezu identisch ist
+nur die vier „regulären" Zonen 5 bis 8 mit dem kon-
+stanten Faktor 3 multipliziert werden, sodass 355 :
+(Abb. 14;17).
+Demnach könnte es sich beim Goldenen Hut von
+(3x4)12 das Produkt 29,583 für einen synodischen
+Schifferstadt in seiner ursprünglichen Fassung um
+Monat ergibt.
+einen reinen Mondkalender gehandelt haben. Darauf
+Mit demselben Multiplikator 3 sind mit den neun
+Zonen 2, 4 - 11, von denen sechs als „regulär" gewer-
+weisen möglicherweise das Fehlen eines Sterns an der
+Spitze als Zeichen für die Sonne (s. u.), die dem
+tet werden, aus der Summe von 535 Zählern, dividiert
+Mondjahr mit durchschnittlich 355 Tagen entspre-
+durch das Dreifache der sechs Zonen, 18 synodische
+Monate zu 29,722 Tagen zu errechnen [535 : (3x6)18
+chenden Zähleinheiten auf Schaft und Kalotte sowie
+die 19 Buckel in der obersten Zone hin, welche mit
+= 29,722).
+den 19 Jahren des Mondzyklus in Zusammenhang
+Nach derselben Formel ergibt sich aus der Addition
+stehen könnten. Systemimmanent sind auch die bei
+aller Zeichen aus den Zonen 2 bis 11, bei rechneri-
+scher Berücksichtigung nur der sechs „regulären"
+den Berechnungen stets wiederkehrenden Zahlen
+Zonen, aus 557 Zählern dividiert durch drei mal sechs
+(29,555; 29,583; 29,722; 29,888), welche die Dauer
+eines Mondmonats mit durchschnittlich 29,5 Tagen
+Zonen, der Quotient 30,944 für einen allerdings
+anzeigen. Das Sonnenjahr dagegen hat im Schnitt 365
+überlangen solaren Monat [557 : (3x6)18 = 30,944].
+Mit den drei Zonen 9 bis 11 am Kalottenfuß und auf
+und der Monat 30,5 Tage. Entsprechende Quoten
+(30,222 und 30,944) sind bei der Berechnung am
+der Krempe (Schaltzone 9 ist wahlweise durch die
+reguläre Zone 8 zu ersetzen) sind nach der Formel
+Schifferstadter Goldhut erst mit den zugefügten Kreis-
+ornamenten annähernd zu erreichen, womit der
+neun solare Monate zu durchschnittlich 30,222 Tagen
+Goldhut offenbar zu einem lunisolaren System erwei-
+erfaßt [272 : (3x3)9 = 30,222].
+78
+
+
+===== printed page 079 (pdf page 7) =====
+
+Menghin, Der Berliner Goldhut
+solar
+tert wurde, welches nach derzeitigem Wissensstand
+lunar
+Zyklen zu 9, 12 und 18 lunaren sowie 9 und 18 sola-
+ren Monaten periodisiert (Abb. 39; 40).
+2
+3
+Avanton
+Ein ähnlich inkonsequentes Schema wie beim Golde-
+nen Hut von Schifferstadt ist auch beim Cône
+4
+d'Avanton zu rekonstruieren, von dem nur der Schaft,
+5
+dieser aber offensichtlich in seiner ganzen Länge
+erhalten ist (vgl. Abb. 19). In den 14 Zonen kommen
+12
+6
+18
+insgesamt nur fünf verschiedene Musterpunzen zur
+Anwendung. Sie gliedern den Konus deutlich in die
+7
+Spitze mit dem elfstrahligen Stern und die Zone 2.
+Der Mittelteil ist durch die neun Zonen mit den zwei-
+8
+fach kreisförmig gefassten Buckelmustern gekenn-
+zeichnet. Die beiden Zonen am Kegelfuß mit den
+9
+dreifach gefassten Buckeln sind vom Mittelteil durch
+10
+die Zone 12 mit dem nur einmal vorkommenden
+Muster (6) abgesetzt (vgl. Abb. 20).
+11
+Die Auflösung des Zahlensystems kann nach demsel-
+ben Muster wie beim Beispiel aus Schifferstadt erfol-
+12
+gen, wobei aber durch den fragmentarischen Zustand
+6
+Imponderabilien zu erwarten sind. Die einfachen
+13
+6
+Berechnungen orientieren sich an der Zahl der kon-
+14
+zentrischen Kreise der Scheibensymbole in den verti-
+kal nach Gruppen gegliederten Ornamentzonen (Abb.
+41).
+Die Auflösung des Zahlensystems nach der oben gege-
+benen Formel ist nur im Einzelfall möglich, was wahr-
+scheinlich durch den fragmentarischen Zustand des
+Objekts bedingt ist. Allerdings lassen sich auch hier,
+wie beim Berliner Goldhut (vgl. Abb. 33 - 36), durch
+Legende:
+einfache Addition der Ringe in bestimmten Zonenab-
+1,2,3... Nummerierung der Zonen
+schnitten lunare und solare Zeitzyklen nachweisen
+Anzahl der Monate
+(Abb. 41).
+9,12...
+Die Gesamtzahl der Scheibensymbole in den Zonen 2
+bis 14 beträgt 269. Sie entspricht in etwa derjenigen
+Schaltzonen
+aller 266 Muster auf dem Goldhut von Schifferstadt.
+Rechnerisch nicht relevant
+Die Zahl der konzentrischen Kreise in den 13 hori-
+zontalen Zonen 2 bis 14 von der Spitze bis zum
+Abb. 41: Cône d'Avanton. Zählsystem und kalendarische
+Schaftfuß beträgt 583, welche wiederum den 557
+Rechenzyklen zu 6 und 18 lunaren sowie 6 und 12 solaren
+Zählern des Beispiels aus Schifferstadt nahe kommt.
+Monaten. In der Toleranz sind nur die 6 solaren und lunaren
+Die neun Zonen 3 bis 11 im Mittelteil des Schaftes -
+Monate aus den Zonen 11 bis 14 akzeptabel. Zu den
+Rechenrelationen vgl. Abb. 40. Legende vgl. Abb. 40. Grafik
+Zone 2 gehört zur Spitze - weisen zusammen 360
+Zähler auf. Wie im Fall von Schifferstadt muß die
+K. D. Schwarz.
+numerisch auffällige Zahl durch 12 geteilt werden,
+um zum plausiblen Ergebnis 30,0 und damit auf die
+gen anscheinend einen Zeitraum von sechs solaren
+12 Monate eines Sonnenjahres zu kommen [360 :
+Monaten bestimmen [182 : (XxX)6 = 30,333], oder
+(XxX)12 = 30,0]. Die 537 Ringe aus allen 12 Zonen
+die Zonen 3 bis 9, die mit 268 Zählern neun lunare
+des Schaftes dagegen umschreiben offensichtlich
+Monate erfassen [268 : (XxX)9 = 29,777].
+einen lunaren Zyklus von 18 Monaten, der allerdings
+Im Mittel- und Unterteil des Schaftes umschreiben
+nicht mit der Formel, sondern durch bloßes Abzählen
+die Zonen 9 bis 14 mit 271 Ringen neun solare
+bzw. durch die Teilung der Summe mit 18 darstellbar
+Monate [271 : (XxX)9 = 30,111] und die Zonen 8 bis
+ist [537 : (XxX) 18 = 29,777].
+14 mit 355 Zählern ein Mondjahr [355 : (XxX)12 =
+Dasselbe gilt für die Zonen 3 bis 7, die mit 182 Rin-
+79
+
+
+===== printed page 080 (pdf page 8) =====
+
+Acta Praehistorica et Archaeologica 32, 2000
+Ezelsdorf
+29,583]. Die 364 Tage eines Sonnenjahres beinhalten
+Der Goldkegel von Ezelsdorf ist, bis auf die fehlende
+die Kreissymbole in den acht Zonen 6 bis 13 [364 :
+Krempe, vollständig erhalten. Die Spitze zeigt einen
+(XxX) 12= 30,333].
+zehnstrahligen Stern über einem Fries aus 24 kleinen
+Die Teilbarkeit der Kreismusterzahl durch das Dreifa-
+Buckelkreisen (Stempel Nr.G), die sonst nur als
+che der erfassten Zonen funktioniert beim Cône
+Zwickelmuster in den Ornamentzonen vorkommen.
+d'Avanton nur in den letzten drei Friesen (Zonen 12 -
+Diese Zone 2 wird zur Spitze gerechnet und ist im
+14) am Schaftfuß mit ihren insgesamt 177 Ringen.
+Zählschema nicht berücksichtigt (Abb. 24).
+Dabei wird die „Schaltzone" 12 nicht in Ansatz
+In 16 Zierzonen treten Scheibenmotive aus 13 ver-
+gebracht, sondern nur mit den zwei „regulären"
+schiedenen Stempeln auf, welche sich in horizontaler
+Zonen 13 und 14 gerechnet (Abb. 41). Sie erfassen
+Reihung teils tangieren oder aber auch überschneiden.
+exakt einen Zyklus von sechs Lunationen [177 :
+Die Zonen 5 und 6 sind ein doppelter Fries aus Schei-
+(3x2)6 = 29,51.
+bensymbolen. Aufgrund dieser Besonderheit fungie-
+Andere Rechenmöglichkeiten, wie sie sich beispiels-
+ren sie als „Schaltzonen". Die Musterstempel 11, 15
+weise in der graphischen Gliederung des Konus, etwa
+und 18 (Abb. 25) kommen in rhythmischen Abstän-
+mit den Zonen 3 bis 5, 6 bis 11 oder 6 bis 14 andeu-
+den jeweils in zwei Zonen vor. Zone 15 zeigt ein Band
+ten, bleiben ohne sinnvolles Ergebnis, wahrscheinlich
+aus Augenmustern, die, wie die Radmotive in Zone
+weil der Anschluss zu Kalotte und Krempe fehlt und
+17, im Ornamentkanon eine Sonderrolle haben. Auf-
+damit das Zahlensystem unvollständig ist. Ob der
+fällig ist auch der einfach gefaßte Stempel Nr. 7 in
+„Code" des Stückes aus Avanton wegen der aufgezeig-
+Zone 19 auf der Kalotte, welche, wie die Zonen 5 und
+ten Übereinstimmung im Wesentlichen demjenigen
+6 im Oberteil des Schaftes, ebenfalls eine Schaltfunk-
+von Schifferstadt entspricht, kann bei den beschränk-
+tion hat (Abb. 27).
+ten Daten nicht entschieden werden. Unklar bleibt
+Schaft und Kalotte sind von Zone 3 bis 20 mit insge-
+auch, wie die rhythmisch wiederkehrenden Zahlen 19
+samt 474 Zeichen, darunter 432 Kreissymbole (ohne
+und, speziell im Fall von Avanton, 23 im Gesamtzu-
+die kleinen Kreisbuckelstempel Nr. 6 in Zone 2 und die
+sammenhang des Zählmechanismus zu interpretieren
+Zwickel der Scheibensymbole in Zone 18), verziert.
+sind und welche Funktion der elfstrahlige Stern an der
+Die Zahl der Kreisringe aus den 16 Zonen 3 bis 20
+Spitze hat (Abb. 20).
+beträgt 1463. Sie beschreiben damit sehr exakt einen
+Im Vergleich zwischen den beiden bis hier behandel-
+Zeitraum von 48 solaren Monaten bzw. vier Jahren,
+ten Zahlensystemen fällt auf, dass die Gesamtzahl der
+da aus 1463 : (3x16)48 der Kontrollwert 30,479 folgt,
+Muster in den Zonen 3 bis 11 des Konus von Avan-
+welcher vom astronomischen Mittelwert eines solaren
+ton mit 360 etwa den 355 auf Schaft und Kalotte des
+Monats mit 30,437 Tagen um nur 0.042 Punkte
+Goldenen Hutes von Schifferstadt entspricht, wobei
+abweicht. In gleicher Weise bestätigen sich 48 lunare
+die eine mit dem Sonnen- bzw. die andere mit dem
+Monate, wenn man von den 1463 Zählern die 52
+Mondjahr in Zusammenhang stehen dürfte, und die
+Ringe aus Schaltzone 19 abzieht [(1463-52)1411 :
+Zähler von Zone 3 bis 14 des auf eine weitaus größere
+(3x16)48], mit dem Koeffizienten 29,395. Er kommt
+Zahlenmenge angelegten Avantoner Kegels mit 537
+der durchschnittlichen Dauer einer Lunation mit
+den insgesamt 557 des Schifferstadter Goldhutes
+absolut 29,531 Tagen bei einer Divergenz von (-)
+angenähert sind.
+0,136 ziemlich nahe (Abb. 39; 42).
+Es hat den Anschein, als ob der Fund aus Frankreich,
+Weniger exakt als für die demonstrierten vier Jahre
+zumindest gegenüber dem vermutlich älteren Gold-
+lassen sich die solaren Zyklen von 36 Monaten in den
+hut aus der Pfalz in seiner ursprünglichen Fassung, ein
+12 Zonen 4 bis 16 mit insgesamt 1.102 Zählern
+weiterentwickeltes System vertritt, das aber wegen sei-
+berechnen, die durch Zierfriese mit jeweils 19 Schei-
+ner Unvollständigkeit nicht in Gänze zu beurteilen ist.
+eindeutig
+merkmaltypischer
+Festzuhalten bleibt aber, dass es sich auch hier ver-
+bensymbolen
+bensymbolen eindeutig als merkmaltypischer
+Abschnitt definiert sind. Bei Addition der 43 Sonder-
+mutlich um ein lunisolares Kalenderwerk handelt, mit
+zeichen aus den Zonen 15 und 17 und Subtraktion
+dem, ohne die Muster auf Kalotte und Krempe, mit
+der 54 Ringe aus Schaltzone 5 ergibt sich nach der
+relativ großen Toleranzen zyklische Berechnungen bis
+zu 18 Mond- und 12 Sonnenmonaten möglich sind
+Formel [(1145-54)1091 : (3x12)36] ein Mittelwert
+von 30,305 für einen solaren Monat. Werden hinge-
+(Abb. 41). Inwieweit den Zahlen 17, 19, 23 und 55
+gen von derselben Summe 1145 die 84 Zähler aus
+dabei eine besondere Bedeutung zukommt, ist unklar.
+Schaltzone 6 abgezogen, so folgt aus [(1145-84) 1091
+Es fällt jedoch auf, dass beim älteren Beispiel die 19
+: (3x12)36] der Wert 29,472 für einen durchschnittli-
+und die 55 nur je einmal auftreten, während auf dem
+Schaft von Avanton Primzahlen mit 1x17, 2x19 und
+chen lunaren Monat. Die Toleranzen betragen (-)
+0,132 für einen solaren und (-)0,059 für einen syn-
+4x23 in sieben von 14 Friesen vertreten sind (vgl.
+odischen Monat (Abb. 39; 42).
+Abb. 20).
+80
+
+
+===== printed page 081 (pdf page 9) =====
+
+Menghin, Der Berliner Goldhut
+Berlin
+Im oberen Teil des Schaftes markieren die Zonen 3
+Der Berliner Goldhut ist ohne die Spitze mit dem
+und 11 mit jeweils 19 Symbolen einen merkmalty-
+Band aus Doppelkreispunkten (6) (Abb. 6) in 19 hori-
+pisch bestimmten Abschnitt mit neun Zonen, die ins-
+zontale Zierzonen gegliedert, die durch Kerbwulst-
+gesamt 815 Ringe aufweisen. Erfaßt wird ein
+und Trennbänder voneinander abgesetzt sind. Es
+24monatiger solarer Zyklus, wenn Zone 6 freige-
+kamen insgesamt 18 verschiedene Punz- und Schei-
+schalteti und mit den verbleibenden acht Zonen nach
+benmuster, in rhythmischer Ordnung prägnant und
+der Formel verfahren wird [(815-84)731 : (3x8)24],
+ohne Überschneidungen gesetzt, zur Anwendung. Die
+was 30,458 für einen solaren Monat ergibt. Einen
+Gliederung des Ornamentschemas ist durch die mehr-
+lunaren 24monatigen Zyklus erfassen die 706 Zähler
+fach wiederkehrenden identischen Symbole eindeutig
+aus Zone 10 bis 19 auf dem Unterteil des Schaftes
+graphisch darstellbar und wird sowohl durch das alter-
+und auf der Kalotte mit acht „regulären" Zonen. Als
+nierende Auftreten von Scheibensymbolen mit drei
+Durchschnittswert für eine Lunation ergeben sich
+bzw. fünf konzentrischen Kreisen auf dem Ober- und
+[706 : (3x8)24] 29,416 Tage (Abb. 24; 43).
+Mittelteil des Schaftes sowie auf der Krempe als auch
+Wie schon die Berechnungen der Zonen 4 bis 16 und
+durch die abschnittsbestimmenden Zahlenwerte 19 in
+10 bis 19 zwischen den Trennbändern 1 und 7 bzw. 3
+der Abfolge der Zonen 5 - 7 - 9-10 - 16 verdeutlicht.
+und 8 zeigen (vgl. Abb. 24; 27), ist das System über-
+Der Oberteil des Schaftes bis Zone 7 und sein unterer
+greifend auf Schaft und Kalotte angelegt. Dabei sind
+Teil mit den Zonen 15 und 16 samt Kalotte besitzen
+die Möglichkeiten von Gruppenbildungen an Schaft-
+eigene Strukturen, bilden aber mit dem Schaft eine
+fuß und Kalotte durch das Fehlen der Muster auf der
+Systemeinheit (vgl. Abb. 2; 14).
+Krempe eingeschränkt.
+Die Punzmuster (4), (5), (6) und (7) treten in hori-
+So können in Zone 10 bis 16 in sechs regulären
+zontaler Ordnung als Bänder oder als Zwickelmuster
+Zonen 18 lunare Monate erfasst werden, die mit 534
+zwischen den Scheibenmotiven in den Zierzonen auf
+(absolut 531,5) Ringen, gleich Tagen, fixiert sind. Der
+(5a, 6a, 7a). Sie werden bei den folgenden rechneri-
+Koeffizient ist [534 : (3x6)18] 29,666 (Abb. 39; 42).
+schen Überlegungen nicht berücksichtigt, weil ihnen,
+Exakt einen Jahreszyklus mit 365 Tagen dagegen
+wie den kleinen Ringmustern in den Zonen 2 und 17
+beschreiben die 344 Ringe zuzüglich der 21 Radsym-
+des Kegels von Ezelsdorf, offenbar ausschließlich
+bole in den Zonen 12 bis 17 zwischen den Trennbän-
+ornamentaler Charakter zu kommt. Eine besondere
+dern 4 und 7 im Mittelteil des Kegelschaftes, von
+Behandlung müssen die oben als „Logo" terminierten
+denen vier als regulär gelten. Die Formel [365 :
+Sondermuster aus liegenden Mondsicheln mit zentra-
+(3x4)12] ergibt den Faktor 30,416 (Abb. 39). Ein
+lem Punktbuckel (16) und Mandelaugen (17) in Zone
+Schaltjahr mit 366 Tagen zeigt sich, wenn zu den 344
+5 erfahren. Zähleinheiten sind sie nur in der Gesamt-
+Ringen aus den regulären Zonen statt der 21 Rad- die
+statistik. Daneben haben, wie beim Goldkegel von
+22 Augenmuster der Zone 15 gezählt werden.
+Ezelsdorf die Zonen 5, 6 und 19, beim Berliner Gold-
+Ebenfalls vier reguläre Zonen mit 302 Zählern sind im
+hut die Zonen 7, 16 und 17 mit den nur jeweils ein-
+Abschnitt mit den sechs Zonen 13 bis 18 vorhanden.
+malig in einem Fries vorkommenden Stempeln (9),
+Ergänzt durch die 52 Ringe der Schaltzone 19 bedeu-
+(11) und (13) offensichtlich eine das System bestim-
+ten sie ein lunares Jahr mit 354 Tagen (Abb. 42).
+mende Schaltfunktion (vgl. Abb. 14). Aufgrund merk-
+Schließlich stellen die 176 Ringe in den Zonen 16 bis
+maltypischer Erscheinungen und der Koppelung in
+18, von denen zwei regulär sind, einen Zeitraum von
+gleichen Abständen auftretender identischer Muster
+sechs Monaten dar. Auch hier greift die Formel für
+kann der Ornamentkanon in sich überlagernde
+den Kontrollwert: 176 : (3x2)6 = 29,333 (Abb. 39).
+Abschnitte gegliedert werden, die Grundlage der empi-
+Aus der Analyse des Musterkanons und seiner Auf-
+rischen Berechnungen sind (Abb. 14; 39; 43).
+schlüsselung nach merkmaltypischen Kriterien ergibt
+Das Berliner Exemplar ist in 18 Friesen (Zonen 3-4,
+sich für den optisch kompliziert wirkenden Goldkegel
+6-21) mit insgesamt 418 Scheibenmotiven verziert,
+von Ezelsdorf eine klare, bestimmten Zeitzyklen ent-
+die nach dem oben aufgezeigten Muster in 1.701
+sprechende Gliederung. Es zeigt sich, dass die Summe
+Kreisringe aufzulösen sind. Dazu kommen noch die
+der Ringe in den merkmaltypisch definierten
+zweimal 19 Sonderzeichen in Zone 5, sodass in 19
+Abschnitten, geteilt durch das Dreifache der erfassten
+Zonen mit insgesamt (1.701 + 38)1.739 Kreisen und
+Zonen, als Konstanten die durchschnittliche Dauer
+Zeichen zu rechnen ist. Aus der Teilung dieser Summe
+eines Mond- oder eines Sonnenmonats mit Werten
+durch das Dreifache der Zonenzahl (1.739:(3x19)57)
+um 29,5 bzw. um 30,4 hat. Im Musterkanon kommt
+folgt die Quote 30,508. Wird hingegen von der
+dabei den Zonen 5 und 6 sowie 19 eine Sonderrolle
+Gesamtzahl der Zeichen in den 19 Zonen der Wert 57
+zu. Ihre sowohl summarisch als auch numerisch alter-
+aus Schaltzone 7 abgezogen, dann ergibt 1.682: (3x19)
+nierend eingesetzten Werte machen das digital ange-
+57 die Zahl 29,508.
+legte System überhaupt erst benutzbar (Abb. 42).
+81
+
+
+===== printed page 082 (pdf page 10) =====
+
+Acta Praehistorica et Archaeologica 32, 2000
+Dem zu Folge werden mit den 1739 bzw. 1682 Rin-
+gen und Zeichen 57 solare Monate, d. h. vier Jahre
+und neun Monate, bzw. 57 lunare Monate erfasst
+(Abb. 43).
+- Ohne die Sonderzeichen sind mit 18 Zonen (3-4; 6-
+21) viereinhalb Jahre bzw. 54 solare Monate mit dem
+Goldhut darstellbar, wenn die 57 Ringe aus Schalt-
+zone 7 nicht zählen. Die Formel [(1701-57) 1644 :
+(3x18)54) ergibt den Kontrollwert 30,444, der bis auf
+eine Differenz von (+)0,007 der absoluten Durch-
+schnittsdauer eines Sonnenmonats mit 30,437 Tagen
+entspricht. Auf den gesamten Zeitraum von vierein-
+halb Jahren bezogen, bedeutet das eine Abweichung
+von gerade einmal 6,349 Stunden.
+54 lunare Monate beschreiben die 18 Zonen bei Eli-
+mination der 38 und 66 Ringe in den Schaltzonen 16
+und 17. Nach der Formel [1644-(38+66)104 = 1597
+: (3x18) 54] ergibt sich der Faktor 29,574. Der Unter-
+schied zum absoluten Durchschnittswert einer Luna-
+tion von 29,531 Tagen beträgt (+)0,043. Auf die
+Gesamtzeit bezogen sind das ca. 56,4 Stunden (Abb.
+39; 43).
+- Einen Zyklus von 48 solaren Monaten mit absolut
+1461 Tagen umfassen die von den Friesen mit dem
+Stempel Nr. 8 (Zone 3 und 20) an der Spitze und am
+Krempenansatz begrenzten 17 Zonen mit 1.466 Rin-
+gen (vgl. Abb. 14). Die Formel greift in diesem merk-
+maltypisch definierten Abschnitt nur, wenn bei der
+Teilung eine der drei Schaltzonen nominell nicht
+gezählt wird. Es ergibt sich dann [1466 : (3x16)48]
+der Kontrollwert 30,541.
+Mit ähnlicher Toleranz sind im selben Abschnitt, bei
+Abzug der 57 Zähler aus Schaltzone 7, 48 lunare
+Monate mit durchschnittlich [(1466-57)1409 :
+(3x16) 48) 29,353 Tagen zu berechnen (Abb. 39).
+Dieser Zeitzyklus kann auch mit den 16 regulären
+Zonen 4 bis 20 erfasst werden. Die 1424 Kinge erge-
+ben bei Teilung durch 48 den Koeffizienten 29,666.
+Bei Addition der 38 Sonderzeichen aus Zone 5 [1424
++ 38] ergeben sich im selben Abschnitt 1462 Zähler,
+die bis auf einen Punkt der Zahl der Tage für vier
+Jahre entsprechen.
+Noch genauer lassen sich die vier Jahre mit 1461
+Tagen dagegen anhand der 16 Zonen 6 bis 21 darstel-
+len. Sie weisen insgesamt 1584 Ringe auf. Abzüglich
+der Zähler aus den Schaltzonen 7 (57 Kreise) und 17
+(66 Kreise) ergibt sich aus [1584-(57+66)] 1461 :
+(3x16)48] der Durchschnittswert eines solaren
+Monats in der astronomischen Vorgabe von 30.437
+Tagen.
+Wenn von der Gesamtzahl der Zähler im selben
+Abschnitt die Summe der Ringe aller drei Schaltzonen
+7, 16 und 17 abgezogen wird, folgt aus 1423 :
+(3x16)48 der Mittelwert 29,654 für einen synodi-
+schen Monat (Abb. 39).
+82
+- Die Zonen 3 bis 18 enthalten die drei Schaltzonen
+7, 16 und 17. Die übrigen 12 „regulären" Zonen wei-
+sen 1005 Ringe auf und bilden die Basis zur Berech-
+nung eines 36monatigen solaren bzw. lunaren Zyklus.
+Bei „Zuschaltung" der Zone 7 mit 57 Ringen ergeben
+sich [(1005+57)1062 : (3x12)36 = 29,500], bis auf
+eine Divergenz von 0,031, gleich 1,116 Tagen zum
+astronomischen Wert, 36 synodische Monate.
+Werden hingegen zu den 1005 Zählern aus den 12
+regulären Zonen die Ringe aus den Schaltzonen 7 und
+16 addiert, so zeitigt die Formel [1005 + (57+38)95 =
+1100 : (3x12)36] den Kontrollwert 30,555 für 36
+Monate, der bei einer Toleranz von (+)0,118 aller-
+dings eine Ungenauigkeit in der Zählung von 4,268
+Tagen bedeutet (Abb. 39).
+Exakter stellt sich der 36monatige Sonnenzyklus in
+den 12 Zonen 9 bis 20 dar (Abb. 39). Sie zählen 1097
+Kreise und ergeben bei Teilung durch das Dreifache
+der Zonenzahl [1097 : (3x12)36] den Faktor 30,472
+für einen Monat, der damit um nur (+)0,035 vom
+astronomischen Wert abweicht.
+Werden von der Summe die 38 Ringe aus Zone 16
+subtrahiert, folgt aus 1059 geteilt durch 36 das Pro-
+dukt 29,416 für einen synodischen Monat. Die relativ
+große Toleranz von (-)0,115 auf den dreijährigen
+Zyklus entspricht mit einer Fehlzählung von (-)4,14
+Tagen in etwa der Überzahl des solaren Zyklus aus
+den Zonen 3 bis 18 (Abb. 39).
+- Im mittleren Abschnitt des Schaftes lassen sich
+Abschnitte für zweijährige Zyklen definieren. Die acht
+regulären Zonen (6, 8 - 14) zwischen dem Band mit
+dem „Logo" und dem erstmaligen Auftreten von
+Scheiben mit sechs Ringen (Nr. 15) in Zone 15 (vgl.
+Abb. 14) beinhalten 672 Zähler. Bei Ergänzung mit
+den 57 Ringen aus Schaltzone 7 folgt aus der Teilung
+von 729 durch (3x8)24 der Mittelwert 30,375. Dieser
+ist identisch mit demjenigen aus den acht Zonen 8
+bis 15 zwischen den Friesen mit jeweils 19 Symbolen
+(Schaltzonen 7 und 16), wenn dort die Zähler aus der
+Schaltzone 7 addiert werden [(672+57)729 :3x8)24 =
+30,3751.
+Ergänzt man jedoch dieselben acht Zonen mit den 38
+Zählern aus Schaltzone 16 [(672+38)710 : (3x8)24),
+so ergeben sich 24 synodische Monate zu 29,583
+Tagen (Abb. 43).
+- Eindeutig merkmaltypisch definiert sind auch die
+Zonen 10 bis 16 in der unteren Hälfte des Schaftes.
+Sie stehen für einen 18monatigen Zyklus mit absolut
+547,5 Tagen. Die sechs regulären Zonen weisen 510
+Ringe auf. Ergänzt durch die Schaltzone 16 (+38) sind
+es 548 Zähler, die, durch (3x6)18 geteilt, in 18 solare
+Monate zu 30,444 Tagen aufgeschlüsselt werden kön-
+nen (Abb. 43).
+- Im oberen Teil des Schaftes zeigen die drei regulären
+Zonen 3 bis 6 insgesamt 264 Ringe. Bei Teilung nach

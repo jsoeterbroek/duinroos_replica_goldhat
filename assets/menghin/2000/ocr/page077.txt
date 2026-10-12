@@ -1,0 +1,372 @@
+Menghin, Der Berliner Goldhut
+8
+7
+5
+4
+3
+2
++ 0,507
+30,944
+Schifferstadt
+18 =
+557 : (3x6)
+- 0.191
+557
+29,722
+18 =
+2 - 11
+535 : (3x6)
++ 0,052
+535
+29,583
+2 - 11
+12 =
+355 : (3x4)
+4
++ 0,024
+355
+29,555
+2-9
+9 =
+266 : (Xx4)
+4
+- 0,215
+30,222
+266
+9 =
+3 - 8
+272 : (3x3)
+272
+9 - 11
++ 0,302
+29,833
+18 =
+537 : (Xx12)
+Avanton
+12
+- 0,437
+537
+30,000
+3 - 14
+12 =
+(Xx9)
+360 :
+- 0,104
+30,333
+12 =
+3-
+364 : (Xx8)
++ 0,052
+29,583
+6 -
+12 =
+13
+: (Xx6)
+355
++ 0,246
+29,777
+04000
+14
+9 =
+268 : (Xx7)
+268
+- 0,326
+30,111
+- 9
+9 =
+271 : (Xx6)
+271
+- 0,031
+29,500
+6 =
+- 14
+177 : (3x2)
+2
+- 0,104
+177
+30,333
+6 =
+12 - 14
+5
+182 : (Xx5)
+182
+3 - 7
++ 0,036
+30,473
+Ezelsdorf
+57 =
+1737 : (3x19)
+(3x19)
+1737
+19
+- 0,005
+3
+1737
+29,526
+3 - 21
+57 =
+1683 : (3x19)
+19
+3
+- 0,030
+1683
+30,407
+3 - 21
+54 =
+1642 : (3x18)
+18
+- 0,124
+29,407
+1642
+- 21
+54 =
+1642 : (3x18)
++ 0,042
+18
+3
+1588
+30,497
+21
+48 =
+1463 : (3x16)
+- 0,136
+16
+29,395
+1463
+3 - 20
+20
+48
+48 =
+1411 : (3x16)
+16
+3
+20
++ 0,000
+30,437
+1411
+3 - 20
+48 =
+1461 : (3x16)
+16
++ 0,010
+21
+3
+1461
+29,541
+6 -
+48 =
+1418 : (3x16)
+1418 : (3x16)
+3
+- 0,132
+16
+1418
+30,305
+36 =
+1091 : (3x12)
+- 0,059
+29,472
+1091
+4-
+4 - 16
+36 =
+1061 : (3x12)
+- 0,104
+30,333
+1061
+4 - 16
+4 -
+36 =
+12
+1092 : (3x12)
+- 0,059
+10
+1092
+29,472
+21
+10 - 21
+36 =
+12
+1061 : (3x12)
++ 0,021
+30,458
+1061
+10 - 21
+24 =
+731 : (3x8)
+- 0,115
+731
+29,416
+3 - 11
+24 =
+706 : (3x8
+706 :(3×8)
+3
++ 0,191
+29,722
+706
+10 - 19
+18 =
+535 : (3x6)
+- 0,021
+535
+30,416
+12 =
+10 - 16
+(3x4)
+365 :
++ 0,063
+365
+30,500
+12 - 16
+12
+12 =
+366 : (3x4)
+366 :(3x4)
+- 0,031
+12
+29,500
+366
+- 16
+12 =
+354 : (3x4)
+- 0,198
+3
+354
+29,333
+6 =
+- 19
+13
+176 : (3x2)
+2
+3
+176
+16 - 18
++ 0.071
+30,508
+57 =
+Berlin
+1739 : (3x19)
+19
+- 0,023
+1739
+29,508
+3 - 21
+57 =
+1682 : (3x19)
++ 0,007
+19
+30,444
+1682
+54 =
+3 - 21
+1644 : (3x18)
+18
++ 0,043
+1644
+29,574
+54 =
+3 - 21
+1597 : (3x18)
+18
++ 0,021
+30,458
+1597
+3 - 21
+48 =
+1462 : (3x16)
+16
++ 0,135
+29,666
+1462
+48 =
+4 - 20
+1424 : (3x16)
+16
++ 0,000
+1424
+30,437
+48 =
+4 - 20
+1462 : (3x16)
+16
++ 0,114
+3
+29,645
+1461
+6 - 21
+48 =
+1423 : (3x16)
+16
++ 0,118
+30,555
+1423
+36 =
+6 - 21
+1100 : (3x12)
+12
+- 0,031
+29,500
+1100
+36 =
+3 - 18
+1062 : (3x12)
+12
++ 0,035
+1062
+30,472
+36 =
+3 - 18
+1097 : (3x12)
+12
+- 0,115
+29,416
+1097
+36 =
+9 - 20
+1059 : (3x12)
+12
+- 0,062
+30,375
+1059
+24 =
+9 - 20
+729 : (3x8)
++ 0,052
+29,583
+729
+6 - 14
+24 =
+710 : (3x8)
++ 0,007
+710
+30,444
+18 =
+8 - 15
+548 : (3x6)
+- 0,021
+30,416
+548
+10 - 15
+12 =
+365 : (3x4)
++ 0,052
+365
+29,583
+12 =
+4 - 9
+355 : (3x4)
+4
+355
+12 - 15
+Abb. 39: Die goldenen Kalenderhüte der europäischen Bronzezeit. Lunare und solare Rechenzyklen als synchrone Systeme in
+tabellarischer Übersicht. Die „Ringe" geben die Zahl der konzentrischen Kreise in den zusammengefassten Zonen und damit die
+Zahl der Tage an. Der „Divisor" bezeichnet den Zyklus in Monaten. Das „Produkt" ist die durchschnittliche Dauer eines luna-
+ren oder solaren Monats. Je geringer die Abweichung von den Werten 29,531 bzw. 30,437 ist, desto genauer stimmen die Ergeb-
+nisse der Zyklendefinition und die vorzeitliche Rechengrundlage mit den astronomischen Vorgaben überein. Toleranzen über
+0,198 sind bei den Objekten aus Ezelsdorf und Berlin ausgesondert. Vgl. aber Abb. 42 - 43.
+1 - Zonen in den Zyklen; 2 - Zahl der konzentrischen Ringe; 3 - „Faktor"; 4 - Zahl der berechneten Zonen; 5 - „Formel"
+(Summe der Ringe dividiert durch das Dreifache der Zahl der erfaßten Zonen); 6 - „Divisor" (Zahl der Monate im berechneten
+Abschnitt); 7 - „Produkt" (Durchschnittswert eines Monats entsprechend Rechenvorgabe); 8 - Toleranz (Abweichung des Mit-
+telwertes eines Monats auf vorgegebener Rechengrundlage vom astronomischen Wert 30,437 (solar) und 29,531 (lunar)).
+77

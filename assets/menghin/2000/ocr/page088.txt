@@ -1,0 +1,142 @@
+Acta Praehistorica et Archaeologica 32, 2000
+Zz Abschnitt
+Toleranz
+Formel
+Faktor
+aZ
+Rz
+MZ
++ 0,071
+1739 :
+57 Mon.
+Zone 3 - 21
+(3x19) 57 = 30,508
+19
+1735
+(3x19) 57=29,508
+- 0,023
+1683
+1682 :
+- S27(57)
+19
+Zone 3 - 21
+1701
+18
+1643,5
+1644 : (3x18) 54=30,444
++ 0,007
+- SZ7 (57)
+54 Mon.
+Zone 3 - 21
+18
+1701
+1594,5
+(3x18) 54=29,574
+1597 :
++ 0,043
+- (SZ16 + SZ17)
+1594,5 1597 : (3×18) 54 = 29,574
+(3x16) 48 = 29,666
+1417,5
+1424 :
+Zone 4 - 20
+1417,5 1424 : (3x16) 48 = 29,666
++ 0,135
+16
++ 0,021
+(3×16) 48 = 30,458
+1462 :
+1461
++ Z5(38)
+Zone 6 - 21
+1584
+48 Mon. 16
+(3x16) 48=30,437
+1461
+‡ 0,000
+1461 :
+- (SZ7 + SZ17)
+1584
+Zone 6 - 21
+16
++ 0,114
+1423 : (3×16) 48 =29,645
+1417,5
+- (SZ7 + SZ16 + SZ17)
+1005
+Zone 3 - 18
+36 Mon. 12
+- 0,031
+(3x12) 36=29,500
++ SZ7(57)
+1063
+1062 :
+Zone 3 - 18
+1005
+12
++ 0,118
+(3x12) 36 = 30,555
+1100 :
+1095
++ (S27 + SZ16)38
+(3x12) 36 = 30,472
+1097 :
++ 0,035
+Zone 9 - 20
+1095
+12
+- 0,115
+(3x12) 36=29,416
+1063
+1059 :
+- SZ16(38)
+672
+Zone 6 - 14
+- 0,062
+(3x8) 24 = 30,375
+729 :
++ SZ7(57)
+24 Mon.
+730,5
+Zone 8 - 15
+672
++ 0,052
+71О : (Зх8) 24 = 29,583
++ SZ16(38)
+709
+510
+Zone 10 - 15
+18 Mon.
++ 0,007
+(3x6) 18= 30,444
+548 :
++ SZ16
+548
+327
+Zone 4 - 9
+4
+- 0,021
+365
+365 :
+(3x4) 12 = 30,416
++ 25(38)
+12 Mon.
++ 0,052
+(3x4) 12 = 29,583
+355 :
+354
+Zone 12 - 15
+4
+(3x3) 9 = 29,333
+- 0,198
+264 :
+266
+Zone 3 - 6
+9 Mon.
+Abb. 43,1: Berliner Goldhut. Tabelle zur Berechnung solarer und lunarer kalendarischer Zyklen von 9 bis 57 Monaten anhand
+der „Formel" (s.S. 71) im Vergleich zur auf- oder abgerundeten absoluten Zahl der Tage und den astronomischen Mittelwerten
+für die Dauer eines solaren bzw. synodischen Monats (vgl. Abb. 43.2).Mz - Zahl der Monate; Zz - Zonenzahl; Abschnitt -
+erfaßte Zonen; aZ - absolute Zahl der Tage eines Zeitzyklus; Rz - Zahl der Ringe und Sonderzeichen; Faktor - Mittelwert eines
+Monats (solar oder lunar) aus der Berechnung der Zähler eines Abschnitts; Toleranz - Abweichung des Mittelwertes von der
+astronomischen Vorgabe.
+88

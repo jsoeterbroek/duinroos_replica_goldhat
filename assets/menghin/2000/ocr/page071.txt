@@ -1,0 +1,111 @@
+(vgl. Abb. 14), ergänzt durch die Zone 13 mit Schei-
+bensymbol 12, das drei konzentrische Kreise besitzt,
+355 Zähler, während die Zonen 15, 18 und 19 mit
+den Musterstempeln 15 insgesamt 354 Kreise zeigen
+(Abb. 33). Aus der Addition der Zonen 3, 7, 9, 11
+und 13 mit den jeweils nur dreifach gefassten Buckeln
+8, 11 und 12, zuzüglich der Zone 15 mit den Buckeln
+mit sechs konzentrischen Kreisen, ergibt sich wie-
+derum die Zahl 366 (Abb. 33). Auffällig ist, dass die
+Zone 5 mit den Sondersymbolen, und noch mehr die
+„Schaltzonen" 16 und 17 sowie die beiden Zonen auf
+der Krempe in diesem Zählschema nicht relevant sind
+(Abb. 34).
+Der kalendarische Bezug des Ornamentkanons des
+Berliner Goldhutes wird auch bei Betrachtung der
+identischen Stempelabdrücke (vgl. Abb. 14) in der
+Summierung nach Zonen deutlich. Die Musterpunze
+12 kam in den Zonen 9, 11 und 13 insgesamt 59 mal
+zum Abdruck. Die Multiplikation mit jeweils drei
+konzentrischen Kreisen ergibt 177, was sechs synodi-
+schen Monaten mit (absolut) 177,5 Tagen entspricht.
+In den Zonen 15, 18 und 19 tritt der Stempel 15 mit
+sechs konzentrischen Kreisen ebenfalls 59 mal auf und
+beschreibt mit 354 Zählern zwölf synodische Monate.
+18 Lunationen werden schließlich mit den in den
+Zonen 10, 12, 14 und 21 enthaltenen insgesamt 535
+Kreisringen aus 107 Abdrücken der Musterpunze 14
+markiert (Abb. 35).
+Solare Zyklen ergeben sich aus dem Abzählen der
+Kreise stempelgleicher Muster und dem Addieren mit
+den jeweils nur in den Schaltzonen vertretenen Sym-
+bolen. So beträgt die Summe der Ringe der Muster-
+punze 10 in den Zonen 4, 6 und 8 insgesamt 270.
+Werden die konzentrischen Kreise aus den Schaltzo-
+nen 7 (57) und 16 (38) hinzugezählt, dann ist das
+Ergebnis 365. Beim Musterstempel 8, der nur in den
+Zonen 3 und 20 mit insgesamt 204 Ringen auftritt
+(vgl. Abb. 14), erbringt die Addition der Kreise aus
+allen drei Schaltzonen 7, 16 und 17 (66) ebenfalls die
+Zahl 365, entsprechend den Tagen eines Sonnenjahres
+(Abb. 36).
+Diese Beobachtungen am Berliner Goldhut können
+nicht anders interpretiert werden, als dass jeweils ein
+Ring aus den Kreissymbolen für einen Tag und die
+Ornamentik für ein komplexes Zahlenwerk stehen,
+welches in seiner einfachsten Nutzungsform die simple
+Auszählung lunarer und solarer Zeitabschnitte ermög-
+licht. Je nach Bedarf und Kenntnis des Anwenders
+können sie entweder nach der rhythmischen Zonenab-
+folge (Abb. 34) oder aufgrund der Zählung identischer
+Stempelmuster in Kombination mit den Schaltzonen
+(Abb. 36) abgerufen werden. Allerdings ist das System
+mit dieser eingeschränkten Nutzung nicht ausgelastet,
+was unter anderem dadurch belegt wird, dass nicht alle
+Zonen und Musterstempel gleichermaßen in das Zähl-
+Menghin, Der Berliner Goldhut
+schema einbezogen und überhaupt nur kurze Zyklen
+bis zu einem solaren Jahr oder bis zu 18 Lunationen
+erfasst werden können. Die Zähleinheiten bilden iso-
+lierte Säulen und sind nicht mit einander konvertier-
+bar, wodurch eine Synchronisierung der lunaren mit
+den solaren Zyklen unmöglich ist.
+Die Analyse der Ornamentik des Berliner Goldhutes
+zeigt in ihrer Gesamtheit eine logisch durchdachte
+und übergreifende Systematik, die weit mehr als die
+punktuelle Zählung von Zeiteinheiten beinhaltet und
+Berechnungen erlaubt, die in astronomische Zusam-
+menhänge verweisen. Dies sollte auch gleichermaßen
+für die drei anderen Goldhüte gelten. Sie haben eine
+im Prinzip vergleichbare rhythmische Gliederung der
+Zonen und damit ein Zählsystem der Buckelscheiben,
+das im Kanon der Sequenz 3-6-9-18 usw. folgt. Auch
+den in bestimmten Abständen identisch wiederkeh-
+renden Zahlen kommt eine definierende Bedeutung
+zu, wobei einfache Abzählbarkeit der Muster partiell
+aber nur bei den Beispielen von Schifferstadt und
+Avanton, nicht aber beim komplizierten Muster des
+Goldkegels von Ezelsdorf vorkommt.
+Auslösendes Moment für den Versuch einer Dechif-
+frierung des Zahlenwerks im Ornament des Berliner
+Goldhutes war einmal die Erkenntnis, dass dort die
+zonenweise Summierung der Kreisringe bzw. der
+identischen Muster in mehreren Varianten die Kon-
+stanten 354/355 und 365/366 ergaben, ohne jedoch
+den gesamten Musterkanon zu erfassen, und zum
+anderen, dass die einzelnen Zonen nicht für sich
+allein, sondern nur in merkmaltypisch bestimmten
+Gruppen zu betrachten sind. Darüber hinaus hat
+schon das Abzählen der Kreisringe nach dem oben
+gegebenen Muster gezeigt, dass plausible und als Zahl
+interpretierbare Rechenprodukte nur bei flexibler
+Handhabung der weiter oben definierten „Schaltzo-
+nen erwartet werden können (Abb. 33-36).
+In zahllosen Rechenversuchen mit der Numerik der
+Muster aller vier Goldhüte stellte sich dabei heraus,
+dass der Schlüssel zur mathematischen Entzifferung
+des Symbolkanons in einer simplen Formel zu
+beschreiben ist: Die Summe der Kreise (Zähler) aus
+einem merkmaltypisch definierten Abschnitt, geteilt
+durch das Dreifache der Anzahl der erfassten Zonen,
+hat als Produkt die Dauer eines synodischen Monats
+mit durchschnittlich 29,5 oder eines solaren Monats
+mit 30,4 Tagen zur Folge.
+Der Rechenfaktor 3 ergibt sich auf rein empirischem
+Wege, ohne dass dafür eine schlüssige Begründung
+durch den Autor angeführt werden könnte. Mögli-
+cherweise resultiert er aus dem bei allen Goldkegeln
+verbindlich nachgewiesenen Zahlenrhythmus, der auf
+einer Verdreifachung der Zahlenwerte aufbaut (vgl.
+Abb. 37).
+71

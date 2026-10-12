@@ -1,0 +1,178 @@
+{
+  "_source": "Menghin, W. (2000) Der Berliner Goldhut und die goldenen Kalendarien der alteuropäischen Bronzezeit. Acta Praehistorica et Archaeologica 32, 31-108. Transcribed from the page images: assets/menghin/2000/jpg/menghin_page045.jpeg (Berlin, Abb. 14), menghin_page050.jpeg (Schifferstadt, Abb. 17), menghin_page053.jpeg (Avanton, Abb. 20), menghin_page061.jpeg (Ezelsdorf, Abb. 27).",
+  "_unit": "A = Anzahl der Symbole (number of punched symbols in the zone, from the figure's right-hand 'A' column); K = Kreis-Anzahl im Symbol (concentric circles per symbol); SK = Summe der Kreise (sum of circles, = A x K). SK is Menghin's 'Zaehler' (day-counter) and is what the calendar arithmetic uses. This is NOT the same unit as Schmidt-Kaler's plain symbol counts (data/readings/schmidt_kaler.json).",
+  "_legend": "The figures' legend reads: ○ Scheibensymbole (disc symbols); filled circle = Symbole in Schaltzonen (symbols in intercalary zones); △ Sondersymbole (special symbols, no ring value); small ring = Musterpunzen (pattern punches / fillers, not counted); Z = Zierzone; TB = Trennband.",
+  "_verified": "Ring sums (SK) reproduced by scripts/verify_menghin2000.py and cross-checked against Menghin's own stated totals on pp. 76-91. Symbol counts (A) of the left-hand graphic column deviate from the right-hand A column in a few Ezelsdorf rows; the right-hand column is transcribed here because SK = A x K holds there for every row. See _open_questions.",
+  "_transcribed": "2026-10-12, from the page images (not from the OCR text layer)",
+  "_caveat": "Menghin 2000's own summary symbol counts (474 / 432 / 505 / 462 for Ezelsdorf; 418 vs 399 for Berlin) do not all reproduce from these per-zone tables. The RING sums do reproduce exactly. Treat the ring/ SK data as verified, the symbol totals as flagged. Do not quote an A total without re-deriving it.",
+  "_open_questions": [
+    "Berlin disc count: p. 81 states 418 Scheibenmotive (18 friezes, zones 3-4, 6-21); pp. 83 and 91 state 399 Buckelscheiben / Scheibensymbole for the same 1701 rings. The table sums to 418. Unresolved internal inconsistency.",
+    "Ezelsdorf: the graphic's left-hand 'A' column gives Z8 = 40 while the right-hand K/A/SK columns give 39 (SK 78). The text (p. 57) says 39. 39 is used here.",
+    "Ezelsdorf zones-3-to-21 symbol totals: table gives 508 'Zeichen' (432 + 22 + 21 + 33), Menghin states 505; table gives 465 disc symbols, Menghin states 462. Both off by 3.",
+    "Ezelsdorf zones-3-to-20 symbol totals: table gives 475 (432 + 22 + 21), Menghin states 474."
+  ],
+
+  "hats": {
+
+    "berlin": {
+      "hat": "Berlin Gold Hat",
+      "figure": "Abb. 14 (p. 45); formal division Abb. 2 (p. 36)",
+      "page_image": "assets/menghin/2000/jpg/menghin_page045.jpeg",
+      "printed_page": 45,
+      "sections": "Spitze Z1-Z2, Schaft Z3-Z16, Kalotte Z17-Z19, Krempe Z20-Z21",
+      "schaltzonen": [7, 16, 17],
+      "sonderzone": 5,
+      "zones": [
+        {"zone": 1, "section": "spitze", "A": 0, "K": 0, "SK": 0, "special": "eight-rayed star on a dotted ground; no counter", "schaltzone": false, "tool_2000": null},
+        {"zone": 2, "section": "spitze", "A": 22, "K": 2, "SK": 44, "special": null, "schaltzone": false, "tool_2000": 6, "name": "Doppelkreispunkt (double-circle punch)"},
+        {"zone": 3, "section": "schaft", "A": 14, "K": 3, "SK": 42, "special": null, "schaltzone": false, "tool_2000": 8},
+        {"zone": 4, "section": "schaft", "A": 15, "K": 5, "SK": 75, "special": null, "schaltzone": false, "tool_2000": 10},
+        {"zone": 5, "section": "schaft", "A": 19, "K": null, "SK": null, "special": "\"logo\": double frieze, 19 lying crescents with central boss over 19 almond-eye symbols; counted as 38 counters (19+19)", "schaltzone": false, "tool_2000": 16, "ring_units": 38},
+        {"zone": 6, "section": "schaft", "A": 18, "K": 5, "SK": 90, "special": null, "schaltzone": false, "tool_2000": 10},
+        {"zone": 7, "section": "schaft", "A": 19, "K": 3, "SK": 57, "special": null, "schaltzone": true, "tool_2000": 11},
+        {"zone": 8, "section": "schaft", "A": 21, "K": 5, "SK": 105, "special": null, "schaltzone": false, "tool_2000": 10},
+        {"zone": 9, "section": "schaft", "A": 19, "K": 3, "SK": 57, "special": null, "schaltzone": false, "tool_2000": 12},
+        {"zone": 10, "section": "schaft", "A": 19, "K": 5, "SK": 95, "special": null, "schaltzone": false, "tool_2000": 14},
+        {"zone": 11, "section": "schaft", "A": 20, "K": 3, "SK": 60, "special": null, "schaltzone": false, "tool_2000": 12},
+        {"zone": 12, "section": "schaft", "A": 20, "K": 5, "SK": 100, "special": null, "schaltzone": false, "tool_2000": 14},
+        {"zone": 13, "section": "schaft", "A": 20, "K": 3, "SK": 60, "special": null, "schaltzone": false, "tool_2000": 12},
+        {"zone": 14, "section": "schaft", "A": 21, "K": 5, "SK": 105, "special": null, "schaltzone": false, "tool_2000": 14},
+        {"zone": 15, "section": "schaft", "A": 15, "K": 6, "SK": 90, "special": null, "schaltzone": false, "tool_2000": 15},
+        {"zone": 16, "section": "schaft", "A": 19, "K": 2, "SK": 38, "special": null, "schaltzone": true, "tool_2000": 9},
+        {"zone": 17, "section": "kalotte", "A": 33, "K": 2, "SK": 66, "special": null, "schaltzone": true, "tool_2000": 13},
+        {"zone": 18, "section": "kalotte", "A": 21, "K": 6, "SK": 126, "special": null, "schaltzone": false, "tool_2000": 15},
+        {"zone": 19, "section": "kalotte", "A": 23, "K": 6, "SK": 138, "special": null, "schaltzone": false, "tool_2000": 15},
+        {"zone": 20, "section": "krempe", "A": 54, "K": 3, "SK": 162, "special": null, "schaltzone": false, "tool_2000": 8},
+        {"zone": 21, "section": "krempe", "A": 47, "K": 5, "SK": 235, "special": null, "schaltzone": false, "tool_2000": 14}
+      ],
+      "published_totals": {
+        "rings_z3_z21": 1701,
+        "rings_z3_z20": 1466,
+        "symbols_z3_z21_incl_Sonderzone5_once": 437,
+        "symbols_18_friezes_z3_4_6_21": 418,
+        "scheibensymbole_alt": 399,
+        "counters_1739": 1739,
+        "note": "1739 = 1701 + 38 (zone 5 counted twice: 19 crescents + 19 eyes). 437 = 418 + 19 (zone 5 counted once)."
+      }
+    },
+
+    "schifferstadt": {
+      "hat": "Golden Hat of Schifferstadt",
+      "figure": "Abb. 17 (p. 50)",
+      "page_image": "assets/menghin/2000/jpg/menghin_page050.jpeg",
+      "printed_page": 50,
+      "sections": "Spitze Z1-Z2 (Z1 undecorated), Schaft Z3-Z6, Kalotte Z7-Z9, Krempe Z10-Z11; Trennbaender TB1-TB4. Text (p. 49) groups the shaft including the plain apex as six zones (Z1-Z6) and the calotte as three.",
+      "schaltzonen": [2, 9],
+      "sonderzonen": [3, 4],
+      "musterpunzen": "2 = plain boss Dm 8.0 mm; 3 = boss with one concentric circle Dm 12.0 mm (Z3, Z4); 4 = boss with one concentric circle Dm 14.0 mm (Z9); 5 = plain almond-shaped boss 12.0 x 0.5 mm (Z3, Z4); 6 = ring circle with central boss Dm 11.5 mm (Z10, Z11).",
+      "zones": [
+        {"zone": 1, "section": "spitze", "A": 0, "K": 0, "SK": 0, "special": "plain, undecorated apex", "schaltzone": false, "tool_2000": null},
+        {"zone": 2, "section": "spitze", "A": 19, "K": 1, "SK": 19, "special": null, "schaltzone": true, "tool_2000": 2, "note": "19 plain bosses; p. 76 says they have no concentric ring (the table prints K=1, SK=19)"},
+        {"zone": 3, "section": "schaft", "A": 22, "K": 1, "SK": 22, "special": "22 almond-eye motifs (Musterpunze 5)", "schaltzone": false, "tool_2000": 3, "note": "text calls Z3 and Z4 'Sonderzeichen' zones with plain almond-eye friezes"},
+        {"zone": 4, "section": "schaft", "A": 22, "K": 1, "SK": 22, "special": "22 almond-eye motifs (Musterpunze 5)", "schaltzone": false, "tool_2000": 3},
+        {"zone": 5, "section": "schaft", "A": 24, "K": 2, "SK": 48, "special": null, "schaltzone": false, "tool_2000": 3},
+        {"zone": 6, "section": "schaft", "A": 25, "K": 2, "SK": 50, "special": null, "schaltzone": false, "tool_2000": 3},
+        {"zone": 7, "section": "kalotte", "A": 27, "K": 2, "SK": 54, "special": null, "schaltzone": false, "tool_2000": 3},
+        {"zone": 8, "section": "kalotte", "A": 35, "K": 2, "SK": 70, "special": null, "schaltzone": false, "tool_2000": 3},
+        {"zone": 9, "section": "kalotte", "A": 35, "K": 2, "SK": 70, "special": null, "schaltzone": true, "tool_2000": 4},
+        {"zone": 10, "section": "krempe", "A": 46, "K": 2, "SK": 92, "special": null, "schaltzone": false, "tool_2000": 6},
+        {"zone": 11, "section": "krempe", "A": 55, "K": 2, "SK": 110, "special": null, "schaltzone": false, "tool_2000": 6}
+      ],
+      "published_totals": {
+        "symbols_z2_z11": 310,
+        "scheibensymbole_8_zones_2_5to11": 266,
+        "rings_total_z2_z11": 557,
+        "rings_6_zones_2_5to9": 311,
+        "symbols_z3_to_8_plus_44": 355,
+        "rings_z2_z9": 355,
+        "rings_6_zones_2_5to9_plus_44_sonders": 355,
+        "krempe_rings_101_motifs_x2": 202,
+        "note": "p. 76: 311 (six disc zones 2,5-9) + 44 (Sondermuster Z3+Z4) = 355; 355 + 202 (101 Krempe motifs x 2 rings) = 557 = the table's total SK. 266 is the plain symbol count of the eight disc zones (2, 5-11), not a ring sum."
+      }
+    },
+
+    "avanton": {
+      "hat": "Cone of Avanton",
+      "figure": "Abb. 20 (p. 53)",
+      "page_image": "assets/menghin/2000/jpg/menghin_page053.jpeg",
+      "printed_page": 53,
+      "sections": "Spitze Z1-Z2 (Z1 = eleven-rayed star), Schaft Z3-Z14. No calotte or rim survives; the object is fragmentary.",
+      "schaltzonen": [12],
+      "zones": [
+        {"zone": 1, "section": "spitze", "A": 0, "K": 0, "SK": 0, "special": "eleven-rayed star on a dotted ground (Musterpunze 1)", "schaltzone": false, "tool_2000": 1},
+        {"zone": 2, "section": "spitze", "A": 23, "K": 2, "SK": 46, "special": null, "schaltzone": false, "tool_2000": 3},
+        {"zone": 3, "section": "schaft", "A": 16, "K": 2, "SK": 32, "special": null, "schaltzone": false, "tool_2000": 4},
+        {"zone": 4, "section": "schaft", "A": 17, "K": 2, "SK": 34, "special": null, "schaltzone": false, "tool_2000": 4},
+        {"zone": 5, "section": "schaft", "A": 19, "K": 2, "SK": 38, "special": null, "schaltzone": false, "tool_2000": 4},
+        {"zone": 6, "section": "schaft", "A": 19, "K": 2, "SK": 38, "special": null, "schaltzone": false, "tool_2000": 5},
+        {"zone": 7, "section": "schaft", "A": 20, "K": 2, "SK": 40, "special": null, "schaltzone": false, "tool_2000": 5},
+        {"zone": 8, "section": "schaft", "A": 21, "K": 2, "SK": 42, "special": null, "schaltzone": false, "tool_2000": 5},
+        {"zone": 9, "section": "schaft", "A": 22, "K": 2, "SK": 44, "special": null, "schaltzone": false, "tool_2000": 5},
+        {"zone": 10, "section": "schaft", "A": 23, "K": 2, "SK": 46, "special": null, "schaltzone": false, "tool_2000": 5},
+        {"zone": 11, "section": "schaft", "A": 23, "K": 2, "SK": 46, "special": null, "schaltzone": false, "tool_2000": 5},
+        {"zone": 12, "section": "schaft", "A": 21, "K": 2, "SK": 42, "special": null, "schaltzone": true, "tool_2000": 6, "reconstructed": true},
+        {"zone": 13, "section": "schaft", "A": 22, "K": 3, "SK": 66, "special": null, "schaltzone": false, "tool_2000": 7, "reconstructed": true},
+        {"zone": 14, "section": "schaft", "A": 23, "K": 3, "SK": 69, "special": null, "schaltzone": false, "tool_2000": 7, "reconstructed": true}
+      ],
+      "published_totals": {
+        "scheibensymbole_z2_z14": 269,
+        "rings_z2_z14": 583,
+        "rings_shaft_all_12_zones": 537,
+        "rings_z3_z11": 360,
+        "rings_z3_z7": 182,
+        "rings_z8_z14": 355,
+        "rings_z9_z14": 271,
+        "rings_z6_z13": 364,
+        "rings_z12_z14": 177,
+        "note": "269 = sum of A over zones 2-14. 583 = sum of SK over zones 2-14. 537 = 583 - 46 (zone 2). Zones 12-14 are reconstructions from the 19th-c. Speyer plaster model (dashed line in Abb. 20). FLAGGED: p. 79 reports a 6-lunation cycle as 177 : (3x2) = 29.5 while saying Schaltzone 12 is dropped; 177 is the sum of zones 12-14, and with zone 12 dropped the sum is 135 (135/6 = 22.5). This row does not close."
+      }
+    },
+
+    "ezelsdorf": {
+      "hat": "Golden Cone of Ezelsdorf-Buch",
+      "figure": "Abb. 27 (p. 61); ornament canon Abb. 24 (p. 58)",
+      "page_image": "assets/menghin/2000/jpg/menghin_page061.jpeg",
+      "printed_page": 61,
+      "sections": "Spitze Z1-Z2 (Z1 = ten-rayed star over a frieze of small bosses, stamp 6), Schaft Z3-Z18, Kalotte Z19-Z20, Krempe Z21 (lost; the rim band Z21 is Menghin's reconstruction, printed with a dotted line at the rim edge).",
+      "schaltzonen": [5, 6, 19],
+      "sonderzonen": [15, 17],
+      "zones": [
+        {"zone": 1, "section": "spitze", "A": 0, "K": 0, "SK": 0, "special": "ten-rayed star over a frieze of small ring bosses (stamp 6); not counted", "schaltzone": false, "tool_2000": null},
+        {"zone": 2, "section": "spitze", "A": 24, "K": 1, "SK": 24, "special": null, "schaltzone": false, "tool_2000": 6},
+        {"zone": 3, "section": "schaft", "A": 19, "K": 3, "SK": 57, "special": null, "schaltzone": false, "tool_2000": 11},
+        {"zone": 4, "section": "schaft", "A": 27, "K": 5, "SK": 135, "special": null, "schaltzone": false, "tool_2000": 15},
+        {"zone": 5, "section": "schaft", "A": 27, "K": 2, "SK": 54, "special": "double frieze; schaltzone", "schaltzone": true, "tool_2000": 9},
+        {"zone": 6, "section": "schaft", "A": 28, "K": 3, "SK": 84, "special": "double frieze; schaltzone", "schaltzone": true, "tool_2000": 11},
+        {"zone": 7, "section": "schaft", "A": 22, "K": 3, "SK": 66, "special": null, "schaltzone": false, "tool_2000": 12},
+        {"zone": 8, "section": "schaft", "A": 39, "K": 2, "SK": 78, "special": null, "schaltzone": false, "tool_2000": 10, "note": "figure prints 40 in its left-hand A column, 39 in its right-hand A/SK columns and in the text (p. 57)"},
+        {"zone": 9, "section": "schaft", "A": 30, "K": 5, "SK": 150, "special": null, "schaltzone": false, "tool_2000": 15},
+        {"zone": 10, "section": "schaft", "A": 32, "K": 3, "SK": 96, "special": null, "schaltzone": false, "tool_2000": 12},
+        {"zone": 11, "section": "schaft", "A": 19, "K": 5, "SK": 95, "special": null, "schaltzone": false, "tool_2000": 15},
+        {"zone": 12, "section": "schaft", "A": 20, "K": 7, "SK": 140, "special": null, "schaltzone": false, "tool_2000": 17},
+        {"zone": 13, "section": "schaft", "A": 45, "K": 1, "SK": 45, "special": null, "schaltzone": false, "tool_2000": 7},
+        {"zone": 14, "section": "schaft", "A": 17, "K": 6, "SK": 102, "special": null, "schaltzone": false, "tool_2000": 16},
+        {"zone": 15, "section": "schaft", "A": 22, "K": null, "SK": null, "special": "eye motifs (Sondermuster, MP 20); 43 Sonderzeichen with Z17", "schaltzone": false, "tool_2000": 20, "symbol_count": 22},
+        {"zone": 16, "section": "schaft", "A": 19, "K": 3, "SK": 57, "special": null, "schaltzone": false, "tool_2000": 11},
+        {"zone": 17, "section": "schaft", "A": 21, "K": null, "SK": null, "special": "eight-spoked wheels (Sondermuster, MP 19)", "schaltzone": false, "tool_2000": 19, "symbol_count": 21},
+        {"zone": 18, "section": "schaft", "A": 14, "K": 7, "SK": 98, "special": null, "schaltzone": false, "tool_2000": 18},
+        {"zone": 19, "section": "kalotte", "A": 52, "K": 1, "SK": 52, "special": "schaltzone", "schaltzone": true, "tool_2000": 7},
+        {"zone": 20, "section": "kalotte", "A": 22, "K": 7, "SK": 154, "special": null, "schaltzone": false, "tool_2000": 18},
+        {"zone": 21, "section": "krempe", "A": 33, "K": 7, "SK": 231, "special": "lost rim, reconstructed by Menghin as 33 x stamp 17 (7 rings)", "schaltzone": false, "tool_2000": 17, "reconstructed": true, "note": "printed A column blank; A = 231/7 = 33 is Menghin's reconstruction (p. 86)"}
+      ],
+      "published_totals": {
+        "rings_z3_z20": 1463,
+        "rings_z3_z21": 1694,
+        "rings_17_zones_with_rings": 1694,
+        "rings_16_zones_6_21": 1448,
+        "rings_16_zones_6_21_plus_SZ5": 1502,
+        "zeichen_z3_z20": 1506,
+        "zeichen_z3_z21_with_rim": 1737,
+        "symbols_z3_z20": 474,
+        "kreissymbole_z3_z20": 432,
+        "symbols_z3_z21": 505,
+        "scheibensymbole_z3_z21": 462,
+        "note": "1737 = 1463 + 21 (Z17) + 22 (Z15) + 231 (Z21). 1694 = 1463 + 231. 1463 + 21 + 22 = 1506 'Zeichen' in zones 3-20. 1502 = 1448 (zones 6-21) + 54 (SZ5). The table reproduces 1463, 1694, 1737, 1502, 1448, 1411, 1506 and 432; it gives 475/508/465 where Menghin prints 474/505/462 (deltas 1/3/3, flagged in _open_questions)."
+      }
+    }
+  }
+}

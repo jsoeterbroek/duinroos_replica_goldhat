@@ -1,0 +1,81 @@
+Acta Praehistorica et Archaeologica 32, 2000
+Jejos
+lunar
+2
+3
+4
+5
+18
+6
+12 9
+9
+12
+18
+7
+8
+9
+9
+10
+11
+Abb. 40: Goldener Hut von Schifferstadt. Zählsystem und kalendarische Rechenzyklen zu 9, 12 und 18 lunaren und 9 und 18
+solaren Monaten. Vgl. Abb. 39. Legende: 1, 2, 3...- Nummerierung der Zonen, 9, 12....- Anzahl der Monate, hellgrau - Schalt-
+zonen, dunkelgrau - rechnerisch nicht relevant.
+Auffällig ist, dass solare Zeitabschnitte beim Goldenen
+So beinhalten die sechs Zonen 3 bis 8 insgesamt 266
+Hut von Schifferstadt nur mit Hilfe der Kreisringe auf
+Chiffren, die neun synodischen Monaten zu durch-
+der nachträglich umgearbeiteten Krempe zu errech-
+schnittlich (266:9) 29,555 Tagen gleichgesetzt werden
+nen sind. Es kann vermutet werden, dass hier eine
+können. Die acht Zonen 2 bis 9 enthalten 355 Zei-
+Erweiterung des ziemlich ungenauen „Rechners"
+chen, die der Dauer eines Mondjahres entsprechen.
+erfolgte, vor allem, weil auch die Zahl der Scheiben-
+Eine formelhafte Darstellung ist nur möglich, wenn
+symbole in den zwei Zonen auf der Krempe (46 bzw.
+die Schaltzonen 2 und 9 sowie die Zonen mit Son-
+55) mit derjenigen auf der Krempe des viel jüngeren
+derzeichen 3 und 4 nominal nicht berücksichtigt und
+Berliner Goldhutes (54 und 47) nahezu identisch ist
+nur die vier „regulären" Zonen 5 bis 8 mit dem kon-
+stanten Faktor 3 multipliziert werden, sodass 355 :
+(Abb. 14;17).
+Demnach könnte es sich beim Goldenen Hut von
+(3x4)12 das Produkt 29,583 für einen synodischen
+Schifferstadt in seiner ursprünglichen Fassung um
+Monat ergibt.
+einen reinen Mondkalender gehandelt haben. Darauf
+Mit demselben Multiplikator 3 sind mit den neun
+Zonen 2, 4 - 11, von denen sechs als „regulär" gewer-
+weisen möglicherweise das Fehlen eines Sterns an der
+Spitze als Zeichen für die Sonne (s. u.), die dem
+tet werden, aus der Summe von 535 Zählern, dividiert
+Mondjahr mit durchschnittlich 355 Tagen entspre-
+durch das Dreifache der sechs Zonen, 18 synodische
+Monate zu 29,722 Tagen zu errechnen [535 : (3x6)18
+chenden Zähleinheiten auf Schaft und Kalotte sowie
+die 19 Buckel in der obersten Zone hin, welche mit
+= 29,722).
+den 19 Jahren des Mondzyklus in Zusammenhang
+Nach derselben Formel ergibt sich aus der Addition
+stehen könnten. Systemimmanent sind auch die bei
+aller Zeichen aus den Zonen 2 bis 11, bei rechneri-
+scher Berücksichtigung nur der sechs „regulären"
+den Berechnungen stets wiederkehrenden Zahlen
+Zonen, aus 557 Zählern dividiert durch drei mal sechs
+(29,555; 29,583; 29,722; 29,888), welche die Dauer
+eines Mondmonats mit durchschnittlich 29,5 Tagen
+Zonen, der Quotient 30,944 für einen allerdings
+anzeigen. Das Sonnenjahr dagegen hat im Schnitt 365
+überlangen solaren Monat [557 : (3x6)18 = 30,944].
+Mit den drei Zonen 9 bis 11 am Kalottenfuß und auf
+und der Monat 30,5 Tage. Entsprechende Quoten
+(30,222 und 30,944) sind bei der Berechnung am
+der Krempe (Schaltzone 9 ist wahlweise durch die
+reguläre Zone 8 zu ersetzen) sind nach der Formel
+Schifferstadter Goldhut erst mit den zugefügten Kreis-
+ornamenten annähernd zu erreichen, womit der
+neun solare Monate zu durchschnittlich 30,222 Tagen
+Goldhut offenbar zu einem lunisolaren System erwei-
+erfaßt [272 : (3x3)9 = 30,222].
+78

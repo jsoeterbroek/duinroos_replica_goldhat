@@ -1,0 +1,54 @@
+Acta Praehistorica et Archaeologica 32, 2000
+TB 12
+00000000000000000
+Z 13
+Z1
+TB 13
+TB 1
+Z 2
+Z 14
+TB 2
+0000000000000000
+Z 3
+TB 14
+TB 3
+Z 15
+Z 4
+TB 4
+TB 15
+Z 5
+Z 16
+TB 5
+0000000000000
+TB 16
+Z 6
+TB 6
+TB 17
+Z 7
+Z 17
+TB 18
+TB 7
+Z 18
+Z 8
+TB 19
+TB 8
+Z 19
+Z 9
+000000
+(O)
+TB 9
+000000C
+Z 10
+TB 10
+Z 11
+Z 20
+TB 11
+TB 20
+0:0
+Z 12
+Z 21
+000000000000000001
+Abb. 2: Der Berliner Goldhut in seiner formalen Gliederung. Schaft mit Trennwülsten (TB) 1-16 und den Zierzonen (Z) 1-16;
+Kalotte mit Zierzonen (Z) 17-19 und Trennbändern (TB) 17-19; Krempe mit Zierzonen (Z) 20-21 und Trennband (TB) 20.
+Schaltzonen gerastert. Graphik K. D. Schwarz.
+36

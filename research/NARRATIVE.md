@@ -146,3 +146,21 @@ The narrative for the write-up, in order, with credits for who had which idea.
   transfer test on the other hats (finding of the previous beat), and the single
   positive signal in the corpus belongs to the one hat whose interpretation has an
   independent check. Finding: `findings/FINDING_2026-10-13_fuls-null-reproduced.md`.
+- **2026-10-13 — T3: a recipe corrected, and an independent model confirmed to
+  include Berlin.** T3 set out to extract Hansen & Rink's Nuncius 8 chapter on
+  calendars and eclipses and to test whether its Pleiades/32-33 mechanism touches a
+  Berlin zone value. It does not get that far: the recipe's claim that the whole
+  volume sits inside `fuls_2008_nuncius8.pdf` turned out to be false — that PDF is a
+  Fuls-only chapter extract (19 pages, pp. 113–129; zero occurrences of
+  Hansen/Rink/Finsternis/Plejad), and the chapter is actually **ch. 9, p. 131 ff.**,
+  not "pp. 401–431". Rather than leave a false "held" line standing, the recipe and
+  T3 are corrected, and the failure mode is added to `lessons.md`: verify a held
+  source with a page count and a keyword grep, not the recipe's word. What *could* be
+  obtained is the authors' open 2013 abstract, and it is informative: their line runs
+  „von der Himmelsscheibe von Nebra über den Sonnenwagen von Trundholm **bis zu dem
+  Berliner Goldhut**", via lunar eclipses, the Saros cycle and the derived Metonic
+  intercalation cycle. So the eclipse/32-33 model is a genuine *independent
+  explanation* that explicitly claims the Berlin hat — but its per-zone arithmetic is
+  not in hand. Per the project author's decision, T3 is recorded as **abstract
+  obtained, chapter outstanding**. Finding:
+  `findings/FINDING_2026-10-13_hansen-rink-abstract.md`.

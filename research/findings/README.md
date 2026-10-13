@@ -13,6 +13,7 @@ on the page image.
 | `FINDING_2026-10-12_menghin-2000-ingested.md` | verified | Menghin 2000 read complete: the four per-zone tables are on record; Ezelsdorf = 499 symbols from the primary source; three of his own totals flagged |
 | `FINDING_2026-10-13_menghin-2010-ingested.md` | verified | Whole Menghin 2010 ingested; he calls the cross-hat transfer only *partial* and says the stamp rule gives no direct values on Ezelsdorf; the Ezelsdorf intercalary set moves between his publications |
 | `FINDING_2026-10-13_fuls-null-reproduced.md` | verified | Fuls's combinatorial null re-implemented (`scripts/fuls_null.py --check` exits 0); run as the cross-hat test, only Schifferstadt method B × synodic month exceeds chance; Berlin/Avanton/Ezelsdorf ≈ chance |
+| `FINDING_2026-10-13_hansen-rink-abstract.md` | abstract held | T3: the Fuls PDF is Fuls-only, Hansen & Rink ch. 9 (p. 131 ff.) is not held; their 2013 abstract confirms the eclipse/Metonic line includes the Berlin hat, but the per-zone 32/33 check is outstanding |
 
 Controls behind these: `../controls/`. Runs: `../runs/RUN_2026-10-10_consolidation.md`,
 `../runs/RUN_2026-10-11_ingest_critique.md`, `../runs/RUN_2026-10-12_ingest_menghin2000.md`,

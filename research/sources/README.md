@@ -18,7 +18,7 @@ copying it.
 | `schlosser_2003.md` | Wolfhard Schlosser, JSMV 86 | **held** (PDF + text in `assets/`) |
 | `peter_roecher_2023.md` | Peter-Röcher, BUFM 106 | **held** (PDF + text in `assets/`) |
 | `randsborg_2006.md` | Randsborg, Acta Archaeologica 77 | no |
-| `hansen_rink_2008.md` | Hansen & Rink, Nuncius 8 | inside the Fuls PDF |
+| `hansen_rink_2008.md` | Hansen & Rink, Nuncius 8 | **not held** — the Fuls PDF is a Fuls-only extract; chapter is ch. 9, p. 131 ff. Abstract held |
 | `wikipedia_and_museum.md` | Wikipedia + Neues Museum text | yes (web) |
 | `phantom_references.md` | the three citations that do not exist | **rejected** |
 

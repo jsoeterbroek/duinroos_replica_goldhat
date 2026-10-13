@@ -33,7 +33,8 @@ Nothing. The T2 round (Fuls null + cross-hat) is complete as of this file.
    - Skim **Menghin 2010 pp. 73–88** (Kalenderhüte / Der Kult / Literatur) — in hand,
      unread.
    - Count **Lorenz's 19 line-bands and 12+7 friezes** on the object (`todo/T4`).
-   - Extract **Hansen & Rink 2008** from the Nuncius 8 PDF (`todo/T3`).
+   - Extract **Hansen & Rink 2008** — abstract held; chapter outstanding (`todo/T3`).
+     Obtain ch. 9 (pp. 131 ff.) or the 2014 Tübingen 32/33 paper.
    - Optional: re-transcribe Ezelsdorf Abb. 27's 16 Muster columns (Ezelsdorf B/D
      currently compare only under our 12-group reading).
    - Obtain **Schauer 1986** (Leiden) and **Menghin 2003** catalogue chapter — no

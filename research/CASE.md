@@ -66,7 +66,7 @@ One recipe per source in `sources/`. Status at 2026-10-10:
 | Schlosser 2003 (Realität bronzezeitlicher Mondkalender, JSMV 86) | `sources/schlosser_2003.md` | **held** (PDF + text in `assets/`) |
 | Peter-Röcher 2023 (astronomy & state structures, BUFM 106) | `sources/peter_roecher_2023.md` | **held** (PDF + text in `assets/`) |
 | Randsborg 2006 (Calendars, Acta Archaeologica 77) | `sources/randsborg_2006.md` | metadata held; paywalled |
-| Hansen & Rink 2008 (Kalender und Finsternisse, Nuncius 8) | `sources/hansen_rink_2008.md` | in the Fuls 2008 proceedings volume; chapter not extracted |
+| Hansen & Rink 2008 (Kalender und Finsternisse, Nuncius 8) | `sources/hansen_rink_2008.md` | **abstract held; chapter outstanding** — recipe corrected: the Fuls PDF is Fuls-only, the chapter is ch. 9, p. 131 ff. |
 | Wikipedia "Berlin Gold Hat" / "Gold hat" + museum text | `sources/wikipedia_and_museum.md` | held |
 
 **References named in the earlier digest that could not be verified — see

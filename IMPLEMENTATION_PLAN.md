@@ -826,6 +826,8 @@ A shallow self-centering register (1.5–2 mm) is an optional secondary locator;
 
 **Data impact.** `registration_lip_mm` and `registration_clearance_mm` in `data/hat_parameters.json` become obsolete once the stack prints; the replacement is a `joint` block (`type: "stacked_spine"`, `hub_bore_mm`, `spine_clearance_mm`, `keyway_w_mm`, `keyway_depth_mm`). `make_registration_lip` and the clearance ladder are superseded by this coupon.
 
+**P4 prototype built — `build_goldhat.build_stacked(band_id)` (`--stacked`).** The real-profile version of the coupon tile: outer wall + hub + 4 profile-following ribs + keyway, all dimensions read from the `joint` block, the zone id engraved on the hidden seat annulus. z13/z03/z17/z18 each build as **one valid 2-manifold solid** in ~1.5 s (z13: 58,232 mm³, ⌀123 × 34 mm; z18: 78,471 mm³, ⌀151 × 38 mm). Two design details worth recording, both consequences of the coupon: (1) the wall/seat section is **horizontally** offset (flat top and bottom) so the seat is bed-flat — the trade-off is that the wall's *normal* thickness is `wall·cos(slope)`, so it is ~2.0 mm on the Schaft but ~1.6 mm on the 39° Kalotte, which matters if the window form (§6.3) is chosen there; (2) the ribs' outer edges **follow r(z)** — a straight box either misses the wall at one end of a tapering band or breaks through the outer surface at the other. The prototype builds the **zone only** and deliberately does not decide which Trennband attaches to which part (the plan states both readings), so it is not yet wired into `build()`.
+
 ---
 
 ## 12. Verification plan
@@ -978,7 +980,7 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 | `data/readings/menghin.json` | day-value per zone | ✅ **created**, verified |
 | `data/readings/schmidt_kaler.json` | ornament count per zone | ✅ **created**, explicitly *not* a day count |
 | `scripts/verify_calendar.py` | 11 assertions over the above, stdlib only | ✅ **created, passing** |
-| `scripts/build_goldhat.py` | the FreeCAD geometry kernel (P3) — band shell, Trennband ridge, registration lip, `export_stl` / `_facets` / `nonmanifold_edges`, and the engraving helpers (`label_shape`, `engrave_label`, `engrave_ring_label`, `fit_ring_label`) | ✅ **created, P3 closed** — z13 builds as one valid solid; the coupon scripts import `_revolve_section` / `export_stl` from it. Every export asserts 2-manifoldness (§11.4) |
+| `scripts/build_goldhat.py` | the FreeCAD geometry kernel (P3/P4) — band shell, Trennband ridge, registration lip, `export_stl` / `_facets` / `nonmanifold_edges`, the engraving helpers (`label_shape`, `engrave_label`, `engrave_ring_label`, `fit_ring_label`), and the P4 `build_stacked` flat-stack band | ✅ **P3 closed**; **P4 prototype** (`--stacked`) builds z13/z03/z17/z18 as one valid 2-manifold solid each |
 | `scripts/verify_geometry.py` | P4 acceptance harness — DATA tier (always) + STL tier (when parts exist); 2-manifold, closed, bed fit, pitch/ligature, sector bbox | ✅ **created (P4)**; `--selftest` passes, data tier passes, STL tier verified on the coupons |
 | `stl/berlin_goldhat_{z01..z19,krempe_a..c}.stl` | 22 printed parts | to create (P4) |
 

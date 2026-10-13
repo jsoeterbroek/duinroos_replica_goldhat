@@ -272,6 +272,134 @@ def build(band_id="z13", out_dir=None, verbose=True):
     return band
 
 
+# --- P4: the flat-stacked band ------------------------------------------------
+# seat (flat) + outer wall + 4-arm spider + hub bore/keyway, driven entirely by
+# data/hat_parameters.json -> "joint". The coupon (scripts/
+# build_stacked_joint_coupon.py) validates the JOINT mechanics at ~1:1 before
+# this is used for the 22 parts; this function is the real profile's version.
+# The wall/seat section is HORIZONTALLY offset (flat top and bottom), unlike
+# the lap band's normal offset, because a flat seat is the whole point of the
+# design: it stacks on a bed-flat face instead of on a protruding lip.
+
+def _box(l, w, h, x, y, z):
+    return Part.makeBox(l, w, h, FreeCAD.Vector(x, y, z))
+
+
+def make_spoke(profile, z0, z1, hub_r, wall, spoke_w, embed_hub=1.0,
+               embed_wall=1.0, n=12):
+    """
+    One radial rib, as a planar-faced solid of constant tangential width.
+
+    The rib's OUTER EDGE follows r(z), at `profile(z) - wall + embed_wall`: past
+    the wall's inner face (so it overlaps and fuses) but always short of the
+    outer surface (so it can never break through). A straight box cannot do
+    that on a tapering band -- it misses the wall at one end and pokes through
+    it at the other. Built flat in the XZ plane and rotated into place, so every
+    boolean is a plane/cylinder intersection (the section 11.2 trick).
+    """
+    r_out = lambda z: profile(z) - wall + embed_wall          # noqa: E731
+    pts = [FreeCAD.Vector(hub_r - embed_hub, 0.0, z1),
+           FreeCAD.Vector(hub_r - embed_hub, 0.0, z0)]
+    for i in range(n + 1):
+        z = z0 + (z1 - z0) * i / n
+        pts.append(FreeCAD.Vector(r_out(z), 0.0, z))
+    face = Part.Face(Part.makePolygon(pts + [pts[0]]))
+    solid = face.extrude(FreeCAD.Vector(0.0, spoke_w, 0.0))
+    solid.translate(FreeCAD.Vector(0.0, -spoke_w / 2.0, 0.0))
+    return solid
+
+
+def build_stacked(band_id="z13", out_dir=None, verbose=True):
+    """
+    One P4 band for ZONE `band_id`: outer wall + hub + spider + keyway.
+
+    This builds the ZONE only -- it does not decide which Trennband belongs to
+    which part (the plan states both readings and leaves the boundary to the
+    operator). The label is engraved on the wall's LOWER annulus (z1), a hidden
+    seat face, so a loose part is identifiable off the plate without reading as
+    ornament from outside.
+    """
+    hp, zj = G.load()
+    profile = G.Profile(hp["profile"])
+    wall = hp["wall_thickness_mm"]
+    z0, z1, kind = G.band_span(hp, band_id)
+    jt = hp["joint"]
+    assert jt["type"] == "stacked_spine", "hat_parameters.joint is not stacked_spine"
+    bore_r = jt["hub_bore_mm"] / 2.0
+    hub_r = bore_r + jt["hub_wall_mm"]
+    n_spokes, spoke_w = jt["spokes"], jt["spoke_w_mm"]
+    kd, kw = jt["keyway_depth_mm"], jt["keyway_w_mm"]
+
+    if verbose:
+        print("building stacked %s: z %.1f .. %.1f (%s), wall %.1f mm"
+              % (band_id, z0, z1, kind, wall))
+
+    # --- outer wall, flat top and bottom (the seat)
+    n = 64
+    zs = [z0 + (z1 - z0) * i / n for i in range(n + 1)]
+    wall_sec = ([(profile(z), z) for z in zs] +
+                [(profile(z) - wall, z) for z in reversed(zs)])
+    parts = [_revolve_section(wall_sec)]
+
+    # --- hub (a tube, so the spine passes through and the wire can too)
+    parts.append(_revolve_section([(bore_r, z0), (hub_r, z0),
+                                   (hub_r, z1), (bore_r, z1)]))
+
+    # --- spider: 4 ribs from hub to wall. Between them is the LED cavity.
+    for k in range(n_spokes):
+        s = make_spoke(profile, z0, z1, hub_r, wall, spoke_w)
+        s.rotate(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1),
+                 360.0 * k / n_spokes)
+        parts.append(s)
+
+    band = parts[0]
+    for p in parts[1:]:
+        band = band.fuse(p)
+    band = band.removeSplitter()
+
+    # --- keyway: a slot in the hub bore, between two spokes. It starts 1 mm
+    # inside the bore void -- a cutter face flush with the bore cylinder is
+    # TANGENT to it and leaves non-manifold edges (section 11.4).
+    key = _box(kd + 1.0, kw, (z1 - z0) + 2.0, bore_r - 1.0, -kw / 2.0, z0 - 1.0)
+    key.rotate(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1),
+               180.0 / n_spokes)
+    band = band.cut(key).removeSplitter()
+
+    # --- label on the hidden seat annulus
+    r_mid = profile(z1) - wall / 2.0
+    size = G.fit_ring_label(band_id, r_mid, wall)
+    if size:
+        band = G.engrave_ring_label(band, band_id, r_mid, z1, size)
+    elif verbose:
+        print("  NOTE: %s does not fit the %.1f mm seat annulus -- unlabelled"
+              % (band_id, wall))
+
+    if verbose:
+        bb = band.BoundBox
+        print("  solid: volume %.1f mm3, solids=%d, bbox %.1f x %.1f x %.1f"
+              % (band.Volume, len(band.Solids), bb.XLength, bb.YLength, bb.ZLength))
+        print("  watertight: %s, hub bore d%.1f, keyway %.1f x %.1f, %d spokes"
+              % (band.isValid(), 2 * bore_r, kw, kd, n_spokes))
+
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
+        path = os.path.join(out_dir, "%s_stacked.stl" % band_id)
+        facets = export_stl(band, path)          # asserts 2-manifold
+        if verbose:
+            print("  wrote %s  (%d facets, %.1f MB)"
+                  % (path, facets, os.path.getsize(path) / 1e6))
+    return band
+
+
 if __name__ == "__main__":
-    out = os.path.join(HERE, "stl", "test")
-    build("z13", out_dir=out)
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("band", nargs="?", default="z13")
+    ap.add_argument("--stacked", action="store_true",
+                    help="build the P4 flat-stacked band instead of the lap band")
+    ap.add_argument("--out", default=os.path.join(HERE, "stl", "test"))
+    a = ap.parse_args()
+    if a.stacked:
+        build_stacked(a.band, out_dir=a.out)
+    else:
+        build(a.band, out_dir=a.out)

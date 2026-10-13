@@ -114,6 +114,8 @@
   "wall_thickness_mm": 2.0,
   "wall_thickness_tb_mm": 3.0,
   "symbol_relief_mm": 0.8,
+  "motif_form": "relief_window",
+  "_motif_form_note": "OPERATOR CHOICE (2026-10-13): RW -- raised repousse profile AND a through-cut recessed field, so the motif reads as relief with the LEDs off and lights through its own recessed field with them on. All three forms remain implemented in motif_features.py; this is a data edit, not a code change.",
   "window_ligature_min_mm": 3.0,
   "registration_lip_mm": 6.0,
   "registration_clearance_mm": 0.25,

@@ -320,20 +320,73 @@ def make_spoke(profile, z0, z1, hub_r, wall, spoke_w, embed_hub=1.0,
     return solid
 
 
-def build_stacked(band_id="z13", out_dir=None, verbose=True):
+def part_span(hp, band_id):
     """
-    One P4 band for ZONE `band_id`: outer wall + hub + spider + keyway.
+    The z-span and rings of PART `band_id`.
 
-    This builds the ZONE only -- it does not decide which Trennband belongs to
-    which part (the plan states both readings and leaves the boundary to the
-    operator). The label is engraved on the wall's LOWER annulus (z1), a hidden
-    seat face, so a loose part is identifiable off the plate without reading as
-    ornament from outside.
+    Operator rule (2026-10-13): the Trennband fuses to the band's **UPPER**
+    edge. z increases downward, so "upper" is the smaller-z side, and part N
+    runs from the end of zone N-1 down to the end of zone N. That includes
+    tb(N-1), any intercalary ring in between (the 18 mm cuff before z17), and
+    zone N -- and leaves zone 1 as the bare apex cone (no Trennband above it).
     """
+    idx = int(band_id[1:])
+    ends, z = {}, 0.0
+    for r in hp["rings"]:
+        z += r["h"]
+        if r["id"].startswith("z") and r["id"] != "z":
+            ends[r["id"]] = z
+    zB = ends["z%02d" % idx]
+    zA = 0.0 if idx == 1 else ends["z%02d" % (idx - 1)]
+    rings, z = [], 0.0
+    for r in hp["rings"]:
+        lo, hi = z, z + r["h"]
+        z = hi
+        if lo >= zA - 1e-9 and hi <= zB + 1e-9:
+            rings.append(r)
+    return zA, zB, rings
+
+
+def _ridge_outer(profile, zA, ridge_h, proud=1.0, blend=1.0):
+    """The outer radius with a 1 mm Trennband ridge over the part's upper
+    `ridge_h` mm, eased back to the profile over `blend` mm (a knife-edge step
+    would be a stress riser and a slicer artefact)."""
+    def r_out(z):
+        if ridge_h <= 0.0:
+            return profile(z)
+        d = z - zA
+        if d <= ridge_h:
+            return profile(z) + proud
+        if d <= ridge_h + blend:
+            return profile(z) + proud * (1.0 - (d - ridge_h) / blend)
+        return profile(z)
+    return r_out
+
+
+def build_stacked(band_id="z13", out_dir=None, verbose=True, motifs=True):
+    """
+    One P4 PART: the zone + its Trennband (upper edge) + any intercalary ring,
+    as outer wall + hub + spider + keyway, with the motif form applied.
+
+    The wall/seat section is HORIZONTALLY offset (flat top and bottom), so the
+    seat is bed-flat: that is the point of the flat stack. The Trennband ridge
+    is an outward bump only -- the inner surface stays at profile(z) - wall, so
+    the ridge reads as a thicker band and the LED cavity does not narrow.
+
+    Motif form comes from data (motif_form); zones whose ornament is a SPECIAL
+    (1, 2, 5 -- star / crescent / eye) have no Fig.21 tool and are built plain
+    for now: motif_features only wires the disc catalogue.
+    """
+    import motifs as MM
     hp, zj = G.load()
     profile = G.Profile(hp["profile"])
     wall = hp["wall_thickness_mm"]
-    z0, z1, kind = G.band_span(hp, band_id)
+    zA, zB, rings = part_span(hp, band_id)
+    ridge_h = rings[0]["h"] if rings and rings[0]["kind"] == "trennband" else 0.0
+    r_out = _ridge_outer(profile, zA, ridge_h)
+    zone = next((z for z in zj["zones"] if z["zone"] == int(band_id[1:])), None)
+    form = hp.get("motif_form") or "relief"
+    relief = hp["symbol_relief_mm"]
     jt = hp["joint"]
     assert jt["type"] == "stacked_spine", "hat_parameters.joint is not stacked_spine"
     bore_r = jt["hub_bore_mm"] / 2.0
@@ -342,45 +395,73 @@ def build_stacked(band_id="z13", out_dir=None, verbose=True):
     kd, kw = jt["keyway_depth_mm"], jt["keyway_w_mm"]
 
     if verbose:
-        print("building stacked %s: z %.1f .. %.1f (%s), wall %.1f mm"
-              % (band_id, z0, z1, kind, wall))
+        print("building %s: z %.1f .. %.1f (%s), wall %.1f mm, ridge %.1f mm"
+              % (band_id, zA, zB, "+ ".join(r["id"] for r in rings), wall, ridge_h))
 
-    # --- outer wall, flat top and bottom (the seat)
-    n = 64
-    zs = [z0 + (z1 - z0) * i / n for i in range(n + 1)]
-    wall_sec = ([(profile(z), z) for z in zs] +
-                [(profile(z) - wall, z) for z in reversed(zs)])
-    parts = [_revolve_section(wall_sec)]
+    # --- outer wall, flat top and bottom (the seat). Zone 1 is a cone from
+    # r=0, so its ring would vanish (inner radius negative) near the tip: build
+    # the apex parts as a SOLID cone with a blind bore for the spine, which is
+    # the plan's "solid or rim-only" apex (section 11.4).
+    zs = [zA + (zB - zA) * i / 64 for i in range(65)]
+    z_hub = next((z for z in zs if profile(z) >= bore_r + 2.0), None)
+    solid_apex = z_hub is None or min(profile(z) for z in zs) - wall < hub_r + 1.0
 
-    # --- hub (a tube, so the spine passes through and the wire can too)
-    parts.append(_revolve_section([(bore_r, z0), (hub_r, z0),
-                                   (hub_r, z1), (bore_r, z1)]))
-
-    # --- spider: 4 ribs from hub to wall. Between them is the LED cavity.
-    for k in range(n_spokes):
-        s = make_spoke(profile, z0, z1, hub_r, wall, spoke_w)
-        s.rotate(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1),
-                 360.0 * k / n_spokes)
-        parts.append(s)
+    if solid_apex:
+        # revolved solid: tip point -> outer profile -> axis at zB
+        sec = [(0.0, zA)] + [(r_out(z), z) for z in zs[1:]] + [(0.0, zB)]
+        parts = [_revolve_section(sec)]
+    else:
+        wall_sec = ([(r_out(z), z) for z in zs] +
+                    [(max(profile(z) - wall, 0.0), z) for z in reversed(zs)])
+        parts = [_revolve_section(wall_sec)]
+        # hub (a tube, so the spine passes through and the wire can too)
+        parts.append(_revolve_section([(bore_r, zA), (hub_r, zA),
+                                       (hub_r, zB), (bore_r, zB)]))
+        # spider: ribs from hub to wall. Between them is the LED cavity.
+        for k in range(n_spokes):
+            s = make_spoke(profile, zA, zB, hub_r, wall, spoke_w)
+            s.rotate(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1),
+                     360.0 * k / n_spokes)
+            parts.append(s)
 
     band = parts[0]
     for p in parts[1:]:
         band = band.fuse(p)
     band = band.removeSplitter()
 
+    # --- motifs (RW etc.), in the order motif_features emits them: the trough
+    # cut / ring add interleaving is load-bearing (section 11.2).
+    if motifs and zone and zone.get("tool") in MM.DISC_TOOLS:
+        import motif_features as F
+        for tag, shape in F.build_motif_ops(profile, zone, wall, form, relief):
+            band = (band.fuse(shape) if tag == "add" else band.cut(shape))
+            band = band.removeSplitter()
+    elif verbose:
+        why = "no Fig.21 disc tool" if zone else "zone not in zones.json"
+        print("  motifs: skipped (%s -- special ornament, not wired yet)" % why)
+
     # --- keyway: a slot in the hub bore, between two spokes. It starts 1 mm
     # inside the bore void -- a cutter face flush with the bore cylinder is
     # TANGENT to it and leaves non-manifold edges (section 11.4).
-    key = _box(kd + 1.0, kw, (z1 - z0) + 2.0, bore_r - 1.0, -kw / 2.0, z0 - 1.0)
+    kz0 = z_hub if solid_apex else zA
+    if solid_apex:
+        bore = Part.makeCylinder(bore_r, zB + 1.0 - kz0,
+                                 FreeCAD.Vector(0.0, 0.0, kz0))
+        band = band.cut(bore).removeSplitter()
+    key = _box(kd + 1.0, kw, (zB - kz0) + 2.0, bore_r - 1.0, -kw / 2.0, kz0 - 1.0)
     key.rotate(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1),
                180.0 / n_spokes)
     band = band.cut(key).removeSplitter()
 
-    # --- label on the hidden seat annulus
-    r_mid = profile(z1) - wall / 2.0
-    size = G.fit_ring_label(band_id, r_mid, wall)
+    # --- label on the hidden seat annulus (wider on a solid apex: bore..rim)
+    if solid_apex:
+        r_mid = 0.5 * (bore_r + profile(zB))
+        width = profile(zB) - bore_r
+    else:
+        r_mid, width = profile(zB) - wall / 2.0, wall
+    size = G.fit_ring_label(band_id, r_mid, width)
     if size:
-        band = G.engrave_ring_label(band, band_id, r_mid, z1, size)
+        band = G.engrave_ring_label(band, band_id, r_mid, zB, size)
     elif verbose:
         print("  NOTE: %s does not fit the %.1f mm seat annulus -- unlabelled"
               % (band_id, wall))
@@ -389,8 +470,12 @@ def build_stacked(band_id="z13", out_dir=None, verbose=True):
         bb = band.BoundBox
         print("  solid: volume %.1f mm3, solids=%d, bbox %.1f x %.1f x %.1f"
               % (band.Volume, len(band.Solids), bb.XLength, bb.YLength, bb.ZLength))
-        print("  watertight: %s, hub bore d%.1f, keyway %.1f x %.1f, %d spokes"
-              % (band.isValid(), 2 * bore_r, kw, kd, n_spokes))
+        print("  watertight: %s, %s"
+              % (band.isValid(),
+                 ("SOLID apex, bore d%.1f, keyway %.1f x %.1f, no spider"
+                  % (2 * bore_r, kw, kd)) if solid_apex else
+                 ("hub bore d%.1f, keyway %.1f x %.1f, %d spokes, form %s"
+                  % (2 * bore_r, kw, kd, n_spokes, form))))
 
     if out_dir:
         os.makedirs(out_dir, exist_ok=True)
@@ -402,6 +487,25 @@ def build_stacked(band_id="z13", out_dir=None, verbose=True):
     return band
 
 
+def build_all(out_dir=None, only=None, verbose=True):
+    """
+    Generate the 19 stacked bands (z01..z19) into `out_dir` (default stl/).
+
+    The Krempe plate (zones 20/21) is NOT here: it is a flat annular sector,
+    not a band, and the 3-sector split needs its own decision -- 47 motifs of
+    15 mm on an 829 mm ring leave only 2.6 mm gaps, so a radial seam lands on a
+    motif unless it is phased into one. That is a design choice, not code.
+    """
+    out = out_dir or os.path.join(HERE, "stl")
+    ids = only or ["z%02d" % i for i in range(1, 20)]
+    built = []
+    for bid in ids:
+        built.append(build_stacked(bid, out_dir=out, verbose=verbose))
+    if verbose:
+        print("\n%d bands written to %s" % (len(built), out))
+    return built
+
+
 if __name__ == "__main__" or __name__ == os.path.splitext(
         os.path.basename(__file__))[0]:
     # freecadcmd sets __name__ to the script's BASENAME, not "__main__"; a plain
@@ -409,6 +513,8 @@ if __name__ == "__main__" or __name__ == os.path.splitext(
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument("band", nargs="?", default="z13")
+    ap.add_argument("--all", action="store_true",
+                    help="build all 19 stacked bands into stl/")
     ap.add_argument("--lap", action="store_true",
                     help="build the SUPERSEDED P3 lap band (registration lip) "
                          "instead of the P4 flat-stacked band")
@@ -416,7 +522,9 @@ if __name__ == "__main__" or __name__ == os.path.splitext(
     a = ap.parse_args([x for x in sys.argv[1:] if not x.endswith(".py")])
     # freecadcmd leaves the script's own path in sys.argv, so a bare positional
     # would be read as the band id; drop *.py before parsing.
-    if a.lap:
+    if a.all:
+        build_all(a.out)
+    elif a.lap:
         build(a.band, out_dir=a.out)
     else:
         build_stacked(a.band, out_dir=a.out)

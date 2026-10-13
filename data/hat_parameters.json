@@ -118,7 +118,7 @@
   "registration_lip_mm": 6.0,
   "registration_clearance_mm": 0.25,
 
-  "_joint_note": "OPERATOR DECISION (IMPLEMENTATION_PLAN.md 11.4): the lap lip above is SUPERSEDED by the flat stacked seat + keyed spine below. The two registration_* keys stay only until stl/test/stacked_joint.stl is printed and judged; do not add new code that reads them.",
+  "_joint_note": "OPERATOR DECISION (IMPLEMENTATION_PLAN.md 11.4), now CONFIRMED: the flat stacked seat + keyed spine is the joint; the lap lip (registration_* keys above) is OBSOLETE and kept only for the P3 record. The stacked-joint coupon was printed and judged on 2026-10-13 -- all five judgements passed (spine aligns < 0.25 mm, key stops rotation, stack straight, seam leak negligible). Do not add new code that reads registration_*.",
   "joint": {
     "type": "stacked_spine",
     "seat": "flat",
@@ -131,7 +131,7 @@
     "keyway_depth_mm": 2.0,
     "spine_hollow_mm": 6.0,
     "register_mm": 0.0,
-    "_status": "provisional - the clearances are confirmed by stl/test/stacked_joint.stl (scripts/build_stacked_joint_coupon.py); set spine_clearance_mm from the tightest pair that still holds"
+    "_status": "CONFIRMED on the print (2026-10-13): three labelled tiles + SJ0.25 spine; spine aligns < 0.25 mm, key stops rotation, 3-stack straight, seam leak negligible. spine_clearance_mm 0.25 is measured, not assumed. Revisit the rim light rebate on the real 22-part stack before Stage 2 (it was downgraded from required)."
   },
   "sections": [
     {

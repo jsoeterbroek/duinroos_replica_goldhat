@@ -182,6 +182,9 @@ def make_registration_lip(profile, z_edge, wall_mm, lip_h=6.0, clearance=0.25,
     The registration spigot: a ring on the INSIDE of the band's LOWER edge
     that slips into the Trennband collar of the band below.
 
+    ⚠️ **SUPERSEDED by the flat stack + keyed spine (§11.4)**, which the printed
+    coupon confirmed on 2026-10-13. Kept only as the P3 record.
+
     `z_edge` is the band's LOWER edge -- the larger-z end, i.e. the plane
     where this band meets the band below.  (The zone loop hands `z0` first,
     but z increases DOWNWARD on this object: z0 is the apex side.  The lip
@@ -214,6 +217,14 @@ def make_registration_lip(profile, z_edge, wall_mm, lip_h=6.0, clearance=0.25,
 
 
 def build(band_id="z13", out_dir=None, verbose=True):
+    """
+    The P3 LAP band: shell + Trennband ridge + registration lip.
+
+    ⚠️ **Superseded** by `build_stacked` (the flat stack, §11.4) once the
+    stacked-joint coupon was printed and judged (2026-10-13). Kept as the P3
+    record and because `build_coupons.py` still uses it for the z13/z14/z15
+    fit trio; new work uses `build_stacked`.
+    """
     hp, zj = G.load()
     profile = G.Profile(hp["profile"])
     wall = hp["wall_thickness_mm"]
@@ -391,15 +402,21 @@ def build_stacked(band_id="z13", out_dir=None, verbose=True):
     return band
 
 
-if __name__ == "__main__":
+if __name__ == "__main__" or __name__ == os.path.splitext(
+        os.path.basename(__file__))[0]:
+    # freecadcmd sets __name__ to the script's BASENAME, not "__main__"; a plain
+    # guard silently does nothing AND freecadcmd still exits 0 (section 11.2).
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument("band", nargs="?", default="z13")
-    ap.add_argument("--stacked", action="store_true",
-                    help="build the P4 flat-stacked band instead of the lap band")
+    ap.add_argument("--lap", action="store_true",
+                    help="build the SUPERSEDED P3 lap band (registration lip) "
+                         "instead of the P4 flat-stacked band")
     ap.add_argument("--out", default=os.path.join(HERE, "stl", "test"))
-    a = ap.parse_args()
-    if a.stacked:
-        build_stacked(a.band, out_dir=a.out)
-    else:
+    a = ap.parse_args([x for x in sys.argv[1:] if not x.endswith(".py")])
+    # freecadcmd leaves the script's own path in sys.argv, so a bare positional
+    # would be read as the band id; drop *.py before parsing.
+    if a.lap:
         build(a.band, out_dir=a.out)
+    else:
+        build_stacked(a.band, out_dir=a.out)

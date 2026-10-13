@@ -16,6 +16,7 @@
       "tool": null,
       "name": "eight-rayed star",
       "primitive": "star8",
+      "_todo": "NOT BUILT (operator decision 2026-10-13). The apex star is CONTINUOUS -- count 0, not a repeated motif -- so motifs.for_tool()/placed_motifs() do not apply, and build_goldhat.build_stacked() prints 'continuous star8 -- no repeatable motifs' and builds the z01 cone plain. To model it later: 8 raised rays on the apex cone (r 0..26.4 over z 0..61), e.g. 8 tapered ribs fused to the outer surface in relief_window form. The band is otherwise complete and verified (see IMPLEMENTATION_PLAN.md section 11.4).",
       "fillers": [],
       "placement": {
         "layout": "even",

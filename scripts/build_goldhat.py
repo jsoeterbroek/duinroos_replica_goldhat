@@ -480,6 +480,10 @@ def build_stacked(band_id="z13", out_dir=None, verbose=True, motifs=True):
         ops = F.build_motif_ops(profile, zone, wall, form, relief)
     else:
         ops = []
+        # TODO(zone1-star): the apex star is CONTINUOUS (count 0), not a
+        # repeated motif, so for_tool()/placed_motifs() do not apply -- see
+        # data/zones.json zone 1 and IMPLEMENTATION_PLAN.md sections 11.4/14.8.
+        # Left plain by operator decision (2026-10-13).
         if verbose:
             why = ("zone not in zones.json" if not zone else
                    "continuous %s -- no repeatable motifs" % zone.get("primitive"))

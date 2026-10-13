@@ -6,39 +6,41 @@ Start here. Keep this current enough that a fresh session can continue.
 
 2026-10-13. **Doc item #6** (novelty + write-up), running.
 
-**Both Menghin monographs are now in the repo, complete and read.** The 2000
-article (83 pages + text, `assets/menghin/2000/`) and the 2010 book (whole book,
-pp. 1–88, `assets/menghin/2010/full/`) are ingested; their per-zone ornament data
-is on record (`data/readings/menghin2000_zones.json`, controls C1/C6). The 2010
-book's **"Der Vergleich"** chapter (pp. 64–72) is the important new material: on
-p. 65 Menghin calls the cross-hat transfer only **partial**, and on p. 68 he states
-that for **Ezelsdorf the stamp-identity rule yields no direct calendar values**.
-The Ezelsdorf intercalary set also **moves between his own publications**
-(`{5,6,19}` in 2000 → six green rows `{5,6,15,16,17,19}` in the 2010 table, five in
-the 2010 text; 12 for Fuls). See
-`findings/FINDING_2026-10-13_menghin-2010-ingested.md`.
+**Both Menghin monographs are now in the repo, complete and read**, and the
+**cross-hat test has been run**. The 2000 article (83 pages + text,
+`assets/menghin/2000/`) and the 2010 book (whole book, pp. 1–88,
+`assets/menghin/2010/full/`) are ingested; their per-zone ornament data is on record
+(`data/readings/menghin2000_zones.json`, controls C1/C6/C7).
+
+Two results now stand. **(1)** Menghin's own 2010 comparison chapter (pp. 64–72)
+calls the transfer *partial* (p. 65) and says the stamp-identity rule gives no direct
+values on Ezelsdorf (p. 68). **(2)** Fuls's combinatorial null is re-implemented
+(`scripts/fuls_null.py --check` exits 0) and run as the cross-hat test: only
+**Schifferstadt, method B, synodic month** is above chance (16.13 % vs 6.77 %);
+Berlin, Avanton and Ezelsdorf lie on the chance line. Findings:
+`findings/FINDING_2026-10-13_menghin-2010-ingested.md`,
+`findings/FINDING_2026-10-13_fuls-null-reproduced.md`.
 
 ## Running now
 
-Nothing. The Menghin 2010 ingest round is complete as of this file.
+Nothing. The T2 round (Fuls null + cross-hat) is complete as of this file.
 
 ## Next
 
 1. Read `CASE.md` → `catalogues/README.md` → the `findings/` files. Then pick the
    top open item.
-2. **Highest value next move** (see `todo/`):
-   - **Re-run Fuls's combinatorial null locally** (`todo/T2`). It is now reproducible
-     from Menghin 2000 data — methods A/C/D for Berlin and B for Schifferstadt land
-     on Fuls's published table (method D reproduces all nine periods exactly, with
-     Z5 counted as 19). Run it as the cross-hat test on all four hats. This is the
-     test Menghin himself calls partial (p. 65) and Peter-Röcher says failed.
-   - Skim **Menghin 2010 pp. 73–88** (Kalenderhüte / Der Kult / Literatur) — now in
-     hand, unread.
-   - Count **Lorenz's 19/12+7 structure** on the object (`todo/T4`).
+2. **Open items** (see `todo/`):
+   - Skim **Menghin 2010 pp. 73–88** (Kalenderhüte / Der Kult / Literatur) — in hand,
+     unread.
+   - Count **Lorenz's 19 line-bands and 12+7 friezes** on the object (`todo/T4`).
    - Extract **Hansen & Rink 2008** from the Nuncius 8 PDF (`todo/T3`).
+   - Optional: re-transcribe Ezelsdorf Abb. 27's 16 Muster columns (Ezelsdorf B/D
+     currently compare only under our 12-group reading).
    - Obtain **Schauer 1986** (Leiden) and **Menghin 2003** catalogue chapter — no
      longer blockers for the counts.
-3. Do **not** restart the archaeology; the question and controls are set.
+3. Do **not** restart the archaeology; the question and controls are set. The
+   Stage-2 exhibit can now show the honest state: counting is real, the calendar
+   reading is a *hypothesis*, selective only on Schifferstadt, and not transferable.
 
 ## Gotchas
 

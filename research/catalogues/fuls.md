@@ -27,6 +27,18 @@ Search-space sizes (Berlin): method A = 1 048 575, B = 1023, C = 210, D = 699.
 - No proof that it does not — Fuls's own caveat: a sparse true encoding could be
   hidden by the large search space.
 
+## Reproduced locally (2026-10-13)
+
+`scripts/fuls_null.py` re-implements methods A–D, the nine periods and formula 8.7,
+and `--check` re-finds this table from the Menghin 2000 per-zone data (control C4).
+Exact cells: Schifferstadt and Avanton A–D, Berlin C/D, Schifferstadt B/D. Two
+documented deviations: Berlin's Mars cell is one hit high in Fuls (his table counts
+the zone-5 sum `19 d` against `M = 0`, which formula 8.1 excludes), and Ezelsdorf
+B/D `G` differ because our Abb. 27 transcription yields 12 stamp groups against
+Fuls's 16. The cross-hat extension (same four methods on all four hats) confirms the
+headline: only Schifferstadt method B × synodic month is above chance. See
+`findings/FINDING_2026-10-13_fuls-null-reproduced.md`.
+
 ## Use
 
 Any future "we found number X on the Berlin hat" claim must either (a) be

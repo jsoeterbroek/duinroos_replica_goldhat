@@ -119,3 +119,30 @@ The narrative for the write-up, in order, with credits for who had which idea.
   and is not a scanning artefact. Credit: **the project author** for the full-book
   scan; the split, the cross-check and the writing-up are this round's work. Finding:
   `findings/FINDING_2026-10-13_menghin-2010-ingested.md`.
+- **2026-10-13 — the null is reproduced, and the cross-hat test is run.** With the
+  Menghin monographs in hand, the case closed its last trust-without-reproduce
+  control. `scripts/fuls_null.py` re-implements Fuls's four combination methods
+  (arbitrary subsets; same-stamp groups; contiguous blocks; contiguous blocks minus
+  the intercalary zones inside them), his nine periods and tolerances, and his chance
+  baseline `w = 2·t_p/p`. `--check` re-finds his published Tables 8.2–8.5 from the
+  Menghin 2000 counters: Berlin A/C/D and Schifferstadt/Avanton A–D reproduce
+  exactly, and the one Berlin cell that did not is explained — Fuls's Mars count
+  includes the single zone-5 sum `19 d` as within ±20 d of *zero* periods, whereas
+  formula 8.1 requires a multiple `M ≥ 1`. The method-D rule had to be recovered (a
+  contiguous block minus any subset of its intercalary zones, counting *distinct*
+  zone sets); with it, Berlin's `G = 699` falls out exactly. On the way, one
+  transcription error surfaced: Schifferstadt's zones 3 and 4 are Musterpunze 5, not
+  3 (Abb. 17), now fixed and control C6 re-run clean. Credit: the recovery and the
+  script are this round's work; the method is Fuls's.
+  The payoff is the **cross-hat test** the case has wanted since day one: apply the
+  Berlin reading blind to every hat and compare the hit rate with chance. The result
+  is a clean reproduction of Fuls's negative. **Only Schifferstadt, method B, for the
+  synodic month is clearly above chance** — 5 hits in 31 combinations against 2.1
+  expected (16.13 % vs 6.77 %), and there it is the *metrology* (the 3:9 and 9:15
+  proportions), not the Berlin rule, that corroborates it. Berlin, Avanton and
+  Ezelsdorf sit on the chance line, and on Berlin the tropical-year rate is *below*
+  chance. So the strong form of the calendar hypothesis is now not merely
+  unproven — it fails Fuls's selectivity test on Berlin, it fails Menghin's own
+  transfer test on the other hats (finding of the previous beat), and the single
+  positive signal in the corpus belongs to the one hat whose interpretation has an
+  independent check. Finding: `findings/FINDING_2026-10-13_fuls-null-reproduced.md`.

@@ -21,8 +21,11 @@ calendar readings is broken.
 - Read on the page image:
   `evidence/2008_wurzburg_fuls_goldhats_stats_conclusions_fuls2008_p123_full.jpg`
   and `…_stats_tables_fuls2008_p121_full.jpg`.
-- **Not yet scripted here.** A committed re-implementation of the combinatorial
-  null is an open `todo/` item.
+- **Reproduced 2026-10-13:** `scripts/fuls_null.py --check` re-finds Fuls's
+  Tables 8.2–8.5 from the Menghin 2000 per-zone data. Berlin A/C/D and
+  Schifferstadt/Schifferstadt B/D reproduce exactly; Berlin A/B differ by one Mars
+  hit (the zone-5 sum 19 d lies within the ±20 d Mars tolerance of M = 0, which
+  formula 8.1 excludes). Finding: `FINDING_2026-10-13_fuls-null-reproduced.md`.
 
 **If missed:** either the re-implementation is wrong or the corpus is wrong. The
 point of the control is that a *negative* must be reachable; a pipeline that

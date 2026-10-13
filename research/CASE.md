@@ -84,7 +84,7 @@ per control in `controls/`.
 | C1 | Menghin's Berlin counts: 418 discs, 1701 rings, 1739 = 1701 + 38; zones 3–21 | `controls/C1_menghin_counts.md` | yes (`scripts/verify_calendar.py`) |
 | C2 | Menghin's 16 scenario blocks and their caveats | `controls/C2_menghin_scenarios.md` | yes (`scripts/verify_scenarios.py`) |
 | C3 | Schmidt-Kaler's sums: 57+235=292, 42+38+66=146, 42+75=117 | `controls/C3_schmidt_kaler_sums.md` | yes (`scripts/verify_venus_hypothesis.py`) |
-| C4 | Fuls 2008's **negative** result: Berlin's hit-rate ≈ random; only Schifferstadt significant | `controls/C4_fuls_null_result.md` | yes — read on the page image (`evidence/…fuls2008_p123_full.jpg`) |
+| C4 | Fuls 2008's **negative** result: Berlin's hit-rate ≈ random; only Schifferstadt significant | `controls/C4_fuls_null_result.md` | yes — **reproduced by script** (`scripts/fuls_null.py --check`, 2026-10-13) |
 | C5 | The Ezelsdorf-Buch symbol total is ≈ 499, **not** 1739 | `controls/C5_ezelsdorf_total.md` | yes — now from the **primary** per-zone table (Menghin 2000, Abb. 27) |
 | C6 | Menghin 2000's four per-zone tables (Berlin, Schifferstadt, Avanton, Ezelsdorf) and their ring identities | `controls/C6_menghin2000_tables.md` | yes (`scripts/verify_menghin2000.py`) |
 

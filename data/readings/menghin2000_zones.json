@@ -68,8 +68,8 @@
       "zones": [
         {"zone": 1, "section": "spitze", "A": 0, "K": 0, "SK": 0, "special": "plain, undecorated apex", "schaltzone": false, "tool_2000": null},
         {"zone": 2, "section": "spitze", "A": 19, "K": 1, "SK": 19, "special": null, "schaltzone": true, "tool_2000": 2, "note": "19 plain bosses; p. 76 says they have no concentric ring (the table prints K=1, SK=19)"},
-        {"zone": 3, "section": "schaft", "A": 22, "K": 1, "SK": 22, "special": "22 almond-eye motifs (Musterpunze 5)", "schaltzone": false, "tool_2000": 3, "note": "text calls Z3 and Z4 'Sonderzeichen' zones with plain almond-eye friezes"},
-        {"zone": 4, "section": "schaft", "A": 22, "K": 1, "SK": 22, "special": "22 almond-eye motifs (Musterpunze 5)", "schaltzone": false, "tool_2000": 3},
+        {"zone": 3, "section": "schaft", "A": 22, "K": 1, "SK": 22, "special": "22 almond-eye motifs (Musterpunze 5)", "schaltzone": false, "tool_2000": 5, "note": "text calls Z3 and Z4 'Sonderzeichen' zones with plain almond-eye friezes; Abb. 17 marks both in the column for Musterpunze 5"},
+        {"zone": 4, "section": "schaft", "A": 22, "K": 1, "SK": 22, "special": "22 almond-eye motifs (Musterpunze 5)", "schaltzone": false, "tool_2000": 5},
         {"zone": 5, "section": "schaft", "A": 24, "K": 2, "SK": 48, "special": null, "schaltzone": false, "tool_2000": 3},
         {"zone": 6, "section": "schaft", "A": 25, "K": 2, "SK": 50, "special": null, "schaltzone": false, "tool_2000": 3},
         {"zone": 7, "section": "kalotte", "A": 27, "K": 2, "SK": 54, "special": null, "schaltzone": false, "tool_2000": 3},

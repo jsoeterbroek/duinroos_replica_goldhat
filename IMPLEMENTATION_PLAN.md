@@ -729,7 +729,7 @@ P0 and P1 are cheap and de-risk everything. P2 is the long pole and the only rea
 
 **2. A 1 mm-proud Trennband ridge cannot simply butt against the wall.** The first build produced **two disjoint solids**. A collar whose inner end stops exactly on the outer surface meets the band along a **single circle** — a line contact, which OCCT cannot fuse into one solid and which would be a knife-edge joint on the print regardless. Fix: `embed=0.6` mm carries the ring *into* the wall so the fuse sees a real overlapping face. The registration lip had the identical defect for the identical reason (its outer face sits only 0.25 mm inside the wall), and the same fix.
 
-> **Reusable rule for the whole generator: every added feature must OVERLAP the wall, never butt it.** A butt joint is a line contact, and OCCT will silently return a multi-solid shape that `isValid()` still calls valid.
+> **Reusable rule for the whole generator: every added feature must OVERLAP the wall, never butt it.** A butt joint is a line contact, and OCCT will silently return a multi-solid shape that `isValid()` still calls valid. **A *cut* obeys the same rule:** a cutter face that is merely *tangent* to a surface is a zero-volume contact that leaves a **non-manifold mesh**, and `isValid()` and `len(Solids) == 1` both still pass it. The first thing that sees it is the slicer (§11.4, Bambu Studio: "3 non-manifold edges"). `export_stl` now asserts 2-manifoldness, so the rule is enforced, not just stated.
 
 **3. The first STL was 23 MB for one band — ~500 MB across 22.** Two causes: the section was 96 segments, and `Shape.exportStl()` takes no tolerance argument, so OCCT fell back to its default circle resolution (≈478 segments around a ⌀123 ring). Now `n=48` plus an explicit `tessellate(0.05)`: **91,704 → 24,754 facets and 23 MB → 1.2 MB**, with the volume unchanged to 0.001 % (33,429.2 vs 33,429.0 mm³), so no geometry was lost. At a 0.16 mm layer a 0.05 mm chord deviation is invisible. `stl/` is **gitignored** — the data files already describe the geometry, so committed binaries would be churn, not provenance.
 
@@ -822,6 +822,8 @@ A shallow self-centering register (1.5–2 mm) is an optional secondary locator;
 
 **Bug found building it — and it affected an existing artifact.** `Mesh.addFacets(shape.tessellate())` — passing the raw (vertices, indices) tuple — is a trap: the **first** call works and every later call is silently dropped. On FreeCAD 1.1.4, two boxes gave 12 facets instead of 24. It is why the committed `stl/test/clearance_ladder.stl` contained only **one** socket, not the 3-row ladder — that script meshed in an `addFacets(tessellate)` loop. Fixed in `build_goldhat._facets` / `export_stl` (expand to point-triples, and **assert the facet count**), which now also serves `build_clearance_coupon.py`; the ladder is regenerated and correct (6 parts, 16.5 g). Single-shape exports (the z15 coupons, the fit trio) were never affected.
 
+**Bug found in the first physical load — the keyway was _tangent_ to the bore (non-manifold).** Bambu Studio rejected the coupon with **"3 non-manifold edges"**. All three sit on the same vertical line per tile, at r = 6.0 mm on the 45° axis — i.e. `BORE_R` at `KEY_ANGLE_DEG`. The keyway cutter was a box whose inner face lay exactly **on** the hub's bore cylinder: a *tangent* contact, zero volume, and one edge-use-4 non-manifold edge per tile. Neither `isValid()` nor `len(Solids) == 1` sees it — this is `export_stl`'s `nonmanifold_edges()` check earning its place on the first print, not the last. Fix: the cutter now starts `KEY_EMBED = 1.0` mm **inside** the bore void, so its face crosses the bore instead of grazing it (the removed crescent is material-free space, and the keyway's functional depth beyond the bore is unchanged). Rebuilt: **0 non-manifold edges**, tile 11,717.9 mm³, 51.3 g. The same rule as §11.1, applied to a cut: **overlap, never coincide.** Reproducing the old tangent keyway in isolation gives exactly 1 bad edge; the current geometry gives 0, so the check and the fix are both demonstrated rather than assumed.
+
 **Data impact.** `registration_lip_mm` and `registration_clearance_mm` in `data/hat_parameters.json` become obsolete once the stack prints; the replacement is a `joint` block (`type: "stacked_spine"`, `hub_bore_mm`, `spine_clearance_mm`, `keyway_w_mm`, `keyway_depth_mm`). `make_registration_lip` and the clearance ladder are superseded by this coupon.
 
 ---
@@ -911,6 +913,9 @@ for each zone: sum(motif pitch) <= min circumference in zone   <-- the P2 pitch 
   (this is the check that forces r(629) = 63.5: zone 17 needs 396 mm of 33 x 12 mm
    and zone 18 needs 441 mm of 21 x 21 mm, against 399.0 and 441.9 available)
 each solid                            watertight, volume > 0, no self-intersection
+every exported mesh                  2-manifold (export_stl -> nonmanifold_edges;
+                                     a tangent cutter face passes isValid() but
+                                     fails this -- see section 11.4)
 every solid's bbox fits 256 x 256 x 256 mm   <-- the printability assertion (§2.3)
 Sum band heights                     == 745 mm   (catches the Q2 class of error)
 dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
@@ -969,7 +974,7 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 | `data/readings/menghin.json` | day-value per zone | ✅ **created**, verified |
 | `data/readings/schmidt_kaler.json` | ornament count per zone | ✅ **created**, explicitly *not* a day count |
 | `scripts/verify_calendar.py` | 11 assertions over the above, stdlib only | ✅ **created, passing** |
-| `scripts/build_goldhat.py` | the FreeCAD geometry kernel (P3) — band shell, Trennband ridge, registration lip, `export_stl` / `_facets`, and the engraving helpers (`label_shape`, `engrave_label`, `engrave_ring_label`, `fit_ring_label`) | ✅ **created, P3 closed** — z13 builds as one valid solid; the coupon scripts import `_revolve_section` / `export_stl` from it |
+| `scripts/build_goldhat.py` | the FreeCAD geometry kernel (P3) — band shell, Trennband ridge, registration lip, `export_stl` / `_facets` / `nonmanifold_edges`, and the engraving helpers (`label_shape`, `engrave_label`, `engrave_ring_label`, `fit_ring_label`) | ✅ **created, P3 closed** — z13 builds as one valid solid; the coupon scripts import `_revolve_section` / `export_stl` from it. Every export asserts 2-manifoldness (§11.4) |
 | `scripts/verify_geometry.py` | STL-level assertions | to create (P4) |
 | `stl/berlin_goldhat_{z01..z19,krempe_a..c}.stl` | 22 printed parts | to create (P4) |
 

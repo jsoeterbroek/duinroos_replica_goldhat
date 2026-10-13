@@ -14,6 +14,7 @@ a FreeCAD problem and a crash there is a maths problem.
 import math
 import os
 import sys
+from collections import Counter
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(HERE, "scripts"))
@@ -64,25 +65,62 @@ def _facets(shape, defl=0.05):
     return [(v[i], v[j], v[k]) for i, j, k in f]
 
 
-def export_stl(shape, path, defl=0.05):
+def _edge_key(p):
+    """A weldable vertex key: coordinates rounded to 1e-4 mm."""
+    return (round(p.x, 4), round(p.y, 4), round(p.z, 4))
+
+
+def nonmanifold_edges(tris):
+    """
+    Edges of a triangle soup that are not shared by exactly two faces.
+
+    ⚠️ **A valid OCCT solid can still tessellate to a non-manifold mesh, and
+    `Shape.isValid()` will not say so.** The case that bit this project: the
+    stacked-joint keyway cutter's face lay exactly ON the hub's bore cylinder
+    -- a TANGENT contact, zero volume, invisible to `isValid()` and the
+    `len(solids) == 1` check, reported by Bambu Studio as "3 non-manifold
+    edges" (one per tile). It is the same failure family as the section
+    11.2 rule, applied to a *cut* instead of a boss: **overlap, never
+    coincide.** A slicer is the first thing that sees it, so the exporter now
+    checks every mesh rather than trusting `isValid()`.
+    """
+    counts = Counter()
+    for tri in tris:
+        k = [_edge_key(p) for p in tri]
+        for a, b in ((0, 1), (1, 2), (2, 0)):
+            counts[tuple(sorted((k[a], k[b])))] += 1
+    return [(e, c) for e, c in counts.items() if c != 2]
+
+
+def export_stl(shape, path, defl=0.05, check=True):
     """Export with an explicit deviation, instead of OCCT's default.
 
     `Shape.exportStl` takes no tolerance, so mesh explicitly and write the
     mesh. This is the difference between ~2 MB and ~23 MB per band.
 
     `shape` may be one shape or a list of them (a coupon plate). Multi-part
-    plates are why the accumulation guard below exists.
+    plates are why the accumulation guard below exists. `check` asserts the
+    mesh is 2-manifold -- see `nonmanifold_edges` for why `isValid()` is not
+    enough.
     """
     import Mesh
     shapes = shape if isinstance(shape, (list, tuple)) else [shape]
     mesh = Mesh.Mesh()
+    tris_all = []
     n = 0
     for s in shapes:
         tris = _facets(s, defl)
         mesh.addFacets(tris)
+        tris_all.extend(tris)
         n += len(tris)
     assert mesh.CountFacets == n, \
         "mesh lost facets: %d of %d (see _facets)" % (mesh.CountFacets, n)
+    if check:
+        bad = nonmanifold_edges(tris_all)
+        assert not bad, (
+            "export_stl: %d non-manifold edge(s) -- the mesh is not 2-manifold "
+            "and a slicer will flag it. First: %s. See nonmanifold_edges()."
+            % (len(bad), bad[0][0]))
     mesh.write(path)
     return mesh.CountFacets
 

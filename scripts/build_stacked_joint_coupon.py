@@ -88,6 +88,11 @@ CLEAR = _J["spine_clearance_mm"]          # radial clearance
 
 SPOKE_EMBED = 2.0    # overlap into the hub and the wall -- NEVER butt (section 11.2)
 KEY_ANGLE_DEG = 45.0  # between two spokes, so the cut cannot graze an arm
+# The keyway cutter must start INSIDE the bore void, not on the bore cylinder.
+# A cutter face flush with the bore is TANGENT to it: zero-volume contact,
+# `isValid()` still True, and one non-manifold edge per tile in the slicer
+# (Bambu Studio). Overlap, never coincide -- the section 11.2 rule for cuts.
+KEY_EMBED = 1.0
 
 N_TILES = 3
 SPINE_LEN = N_TILES * H + 20.0
@@ -131,8 +136,10 @@ def build_tile():
         tile = tile.fuse(p)
     tile = tile.removeSplitter()
 
-    # keyway: a slot in the hub bore, at an angle between two spokes
-    key = _box(KEY_D, KEY_W, H + 2.0, BORE_R, -KEY_W / 2.0, -1.0)
+    # keyway: a slot in the hub bore, at an angle between two spokes. It starts
+    # KEY_EMBED inside the bore so its face is not tangent to the cylinder.
+    key = _box(KEY_D + KEY_EMBED, KEY_W, H + 2.0, BORE_R - KEY_EMBED,
+               -KEY_W / 2.0, -1.0)
     key.rotate(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1), KEY_ANGLE_DEG)
     tile = tile.cut(key).removeSplitter()
     return tile
@@ -160,6 +167,7 @@ def selfcheck():
         "spoke must overlap the wall without protruding through it"
     # the keyway must leave hub material and must not graze a spoke
     assert KEY_D < HUB_R - BORE_R, "keyway cuts through the hub"
+    assert KEY_EMBED > 0.0, "keyway must start inside the bore, not on it (non-manifold)"
     for k in range(SPOKES):
         d = abs((KEY_ANGLE_DEG - 360.0 * k / SPOKES + 180.0) % 360.0 - 180.0)
         assert d > math.degrees(math.atan2(SPOKE_W / 2.0, HUB_R)) + 5.0, \
@@ -239,6 +247,8 @@ def main():
                    SPINE_RIDGE_OUT - (SPINE_R - 1.0), CLEAR))
         f.write("labels: tiles 1..%d engraved on the hub, spine '%s' on its end\n"
                 % (N_TILES, tag))
+        f.write("mesh: 2-manifold (export_stl asserts 0 non-manifold edges; the\n"
+                "      first build's keyway was tangent to the bore -- see section 11.4)\n")
         f.write("\nprint one job. Judgements 1-5 are in "
                 "IMPLEMENTATION_PLAN.md section 11.4.\n")
         f.write("Use matte PLA, not silk.\n")

@@ -1,0 +1,98 @@
+Sternauf- und Sternuntergängen, etwa des Sirius und der
+Venus, kombiniert war, bedurfte der ständigen Überprüfung
+durch Kundige. Zugleich zeigen diese historischen Beispiele
+aber auch, dass die Kalender in den verschiedenen Kulturen
+durch Konventionen bestimmt waren und relativ häufig, vor
+allem wenn längere Zeiträume betroffen waren, im System
+Mängel aufwiesen. Ob und vor allem wie sich im Ornament
+der Goldhüte ein alteuropäisches Kalendersystem verbirgt, ist
+im Folgenden zu untersuchen.
+Zahlensymbolik und Rechensystem • 53
+ein Viertel des 19-jährigen Mondzyklus bzw. 59 synodische
+Monate (astronomisch 1742¾3 d) bedeuten, ist generell eine
+Aufteilung in 1o und 9 Vierteljahre (bzw. 30 und 27 Monate)
+vorgegeben, d. h. die Zahlenwerte für 19 Jahre aus der Schalt-
+zone 17 und Zone 20 sind so zusammenzufassen, dass sich
+alternierend vier Sektoren mit 10 Vierteljahren (30 Sonnen-
+Monate) und 4 Sektoren mit 9 Vierteljahren (27 Sonnen-Mo-
+nate) ergeben, denen in Zone 21 dann 7 Abschnitte mit 7 x 6
+und ein Abschnitt mit 1 x 5 Buckeln mit jeweils fünf Ringen
+für die synodischen Monate gegenüber stehen (Abb. 56):
+a. Innerer Kreis (Schaltzone 17) mit 33 Buckeln zu 2 Ringen
+ergibt:
+3 Sektoren mit 6 Symbolen = 18
+5 Sektoren mit 3 Symbolen = 15
+33 Symbole = 66 Ringe
+Der Mondzyklus im System des Berliner Goldhutes
+Spätestens in der klassischen Antike war bekannt, dass über-
+einstimmende Erscheinungen im Lauf von Sonne und Mond
+nach 19 Jahren mit rund 6940 Tagen entsprechend 228 Son-
+nenmonaten bzw. 235 Lunationen auftreten. Dieser „Mond-
+zyklus" wurde im späten 5. Jahrhundert v. Chr. (432 v. Chr.)
+durch Meton von Athen aufgrund astronomischer Beobach-
+tungen erstmals mathematisch errechnet, wobei erwiesen
+scheint, dass das Phänomen zumindest den mesopotamischen
+Astrologen schon lange vorher bekannt war und auch Ein-
+gang in das Kalenderwesen verschiedener Kulturen gefunden
+hatte (siehe oben).
+Die Annahme, dass im Ornament des Berliner Goldhutes
+aus der Zeit um 1ooo v. Chr. das digitale Zahlensystem eines
+auf der Kenntnis des 19-jährigen Mondzyklus basierenden lu-
+nisolaren Kalenderwerkes verschlüsselt ist, gewinnt durch die
+Interpretation der beiden Zonen auf der Krempe des Kultge-
+genstandes zusätzlich an Plausibilität: Die Zone 21 mit 47
+Buckeln zu je 5 Ringen gibt in der Summe 235 (in diesem Fall
+werden die Ringe der Buckelscheiben nicht als Tage [siehe
+unten], sondern als Zähler für Monate gedeutet) und damit
+exakt die Anzahl der synodischen Monate im ı9jährigen
+Mondzyklus wieder. Die Zone 20 mit 54 Buckeln zu 3 Ringen
+gleich 162 Zähleinheiten stellt, ergänzt durch die Schaltzone
+17 auf der Kalotte des Goldhutes mit 33 Buckeln mit je 2 kon-
+zentrischen Ringen gleich 66 Zählern, die 19 Jahre mit (mo-
+dern) 228 (Sonnen-)Monaten (3 x 19 x 4 = 76 Vierteljahre)
+oder 6939/40 Tagen dar.
+Zweck eines „gebundenen" oder lunisolaren Kalenders ist
+die Synchronisierung des Mondjahres mit 354 Tagen mit dem
+Sonnenjahr mit 365 ¼ Tagen durch den Einschub von 7
+Schaltmonaten im Verlauf von 19 Jahren. Der Jahreslauf wird
+(vgl. S. 49f.), entsprechend der Gliederung durch die Kardi-
+nalpunkte (s. o.) in 4 Vierteljahre mit dreimal 91 und einmal
+92 Tagen geteilt. Nach jedem 16. Vierteljahr wird ein zusätz-
+licher Tag eingeschoben.
+A. Aus der Autopsie der drei als relevant angesehenen
+Zonen ergibt sich, dass die Zähleinheiten auf dem Goldhut
+so angelegt sind, dass sie in logische Bedeutung gesetzt wer-
+den können. Wenn die 1739 (astronomisch 1735) Zeichen 19
+Vierteljahre (modern: 57 Monate) bzw. 4¾ Jahre und damit
+b. Mittlerer Kreis (Zone 20) mit 54 Buckeln zu 3 Ringen
+ergibt:
+3 Sektoren mit 8 Symbolen = 24
+2 Sektoren mit 7 Symbolen = 14
+I Sektor mit6 Symbolen = 6
+2 Sektoren mit 5 Symbolen = 10
+54 Symbole = 162 Ringe
+(für die Grafik relevant)
+c. Außerer Kreis (Zone 21) mit 47 Buckeln zu 5 Ringen ergibt:
+7 Sektoren mit 6 Symbolen = 42
+I Sektor mit
+5 Symbolen = 5
+47 Symbole = 235 Ringe
+B. Im Vergleich mit den Zählungen der synodischen Monate
+in Zone 21 stellt sich dabei heraus, dass die 30 Mondmonate
+mit (15 x 29) + (15 x 30) = 885 Tagen gegenüber den 10 Vier-
+teljahren [(10 x 9I) + 2 ½ = 912 ½ Tage] um 27 ½ Tage hinter
+den Jahreszeiten zurückbleiben. Daher ist der Einschub eines
+Schaltmonats spätestens nach der 30. Lunation erforderlich,
+damit die synodischen Monate sich nicht zu weit von den
+Kardinalpunkten des Jahreslaufs entfernen, sondern mit den
+natürlichen Jahreszeiten Frühling, Sommer, Herbst und Win-
+ter konform bleiben.
+Nach der Schaltung entsprechen dann 31 Lunationen [(16 x
+29) + (I5 x 30)] mit 914 Tagen den I0 Vierteljahren [(r0 x 91) +
+2 ½ Tage = 912 ½] mit 2 ½ Tagen Überschuss. Eine fast ausge-
+glichene Bilanz ergäbe sich beim Vergleich von 32 synodischen
+Monaten (944 Tage) mit 31 Sonnenmonaten bzw. I0 Viertel-
+jahren + 3I Tagen [(t0 x 9I) + 2 ½ = 912 ½ + 31 = 943,5 Tage],
+was im System des Goldhutes jedoch nicht darstellbar ist.
+Die zweite Schaltung erfolgt nach 19 Vierteljahren (mo-
+dern: 57 Monaten). Dieser Schaltrhythmus wiederholt sich

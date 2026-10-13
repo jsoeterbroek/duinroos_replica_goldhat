@@ -1,0 +1,1025 @@
+
+
+===== page058 =====
+Zahlensymbolik und Rechensystem
+58
+zusätzlicher Ring, gleich einem Tag, im Ornament vorhan-
+den. Diese summieren sich im neunmonatigen Ablauf von 4
+Berliner Goldhut
+Vierteljahren (12 Sonnenmonate) bis 18 Vierteljahre (54 Son-
+354 12 L = 11 d
+nenmonate) auf fünf Zähler, so dass ihr Aufschlag auf die
+4/4 J 365
+vierzehnmalige Addition von 91 (14 x 91 = 1274) auf die 365
+- 442 15 L = 16 d
+5/4 J 458
+Tage (365 + 1274 = 1639) im System des Goldhutes die für die
+530 18 L = 18 d
+6/4 J 548 - 530 18 L = 18 d
+6/4 J 548
+Darstellung kalendarischer Zyklen relevante Zahl 1644 (1639
+620 21 L = 19 d
+7/4 J 639
++ 5) ergibt. Werden hierzu wieder 9r Tage oder Zähler hinzu-
+gefügt, entsteht mit 1735 die kalendarische Zahl für 57 Son-
+- 710 24 L = 21 d
+8/4 J 731
+9/4 J 819 - 797 27 L = 22 d
+nenmonate, von der die Zählung auf dem Goldhut mit 1739
+allerdings um +4 Zähler abweicht, was wiederum mit der sys-
+10/4.J 913 - 885 30 L = 28 d
+temimmanenten Absicht der Darstellung eines lunisolaren
+Schalten +1
+Kalenderwerks in Zusammenhang steht. Die Quersumme
+11/4 J 1002 - 1002 34 L = 0 d
+der Differenzen ist +3 (Abb. 58).
+12/4 J 1097 - 1092 37 L = 5 d
+13/4 J 1187 - 1181 40 L = 6 d
+Berliner Goldhut - lunar
+14/4 J 1276 - 1266 43 L = 10 d
+15/4 J 1371 - 1358 46 L = 13 d
+Bei der Zusammenfassung der synodischen Zeitabschnitte
+16/4 J 1461 -. 1447 49 L = 14 d
+(L) im dreimonatigen Rhythmus von 12 bis 57 bzw. 59 Luna-
+tionen entsteht ein, gegenüber der tabellarischen Darstellung
+17/4 J 1556 - 1536 52 L = 20 d
+der solaren Berechnungen, ähnlich dichtes Bild. Drei Lunati-
+18/4 J 1644 - 1622 55 L = 22 d
+onen bestehen aus 88,5 Tagen, weshalb die Zählung im
+19/4 J 1739 - 1713 58 L = 26 d
+dreimonatigen Rhythmus in alter Zeit sicher alternierend je-
+Schalten +2
+weils mit vollen 88 und 89 Tagen vorgenommen wurde.
+Auch bei der Erfassung der Lunationen im dreimonatigen
+19/4 J 1739 1739 59 L= 0 d
+Intervall stimmen die Zahlen in den definierten Zonen weit-
+Summe = 54 d
+gehend mit den kalendarischen Daten überein, wobei die
+Stimmigkeit sich durch den Einschub eines zusätzlichen Mo-
+nats nach der 30. und vor der 59. Lunation ergibt. Abwei-
+Abb. 60: Berliner Goldhut, lunisolar. Die Zahlenwerte der solaren
+chungen um mehr als einen Tag in der Tabelle erklären sich
+Vierteljahresabschnitte im Vergleich mit den Vierteln des Mondjahres
+aus dem Rechnen mit abwechselnd 29 und 30 Tagen für den
+bzw. der Mondumläufe im dreimonatigen Rhythmus und der
+Monat, die je nach Zählschema Toleranzen von +/- I Tag auf-
+Tagesdifferenzen (d) im synchronen Verlauf. Nach der Schaltung
+weisen. Die Quersumme der Differenzen ist -7 (Abb. 59).
+werden die Monate plus 1 gezählt. Der Unterschied an Tagen in der
+Zählung im System des Goldhutes stimmt mit 54 d annähernd mit
+den kalendarischen Daten (51 d) überein.
+Das lunisolare Konzept
+J: Jahre. - L: (synodische) Monate. - d: Tage. - Rot: Annäherung an
+In der Abfolge der Vierteljahresabschnitte im Vergleich zu
+die exakten kalendarischen Werte o bis +/- ½. - Blau: Annäherung
+bis +/-1. - Grün: Annäherung an die kalendarisch relevante Differenz
+den numerisch entsprechenden drei Mondphasen (synodi-
+sche Monate) zeigt sich keine augenscheinliche Systematik.
+an Tagen (d). - Grau unterlegt: im System des Goldhutes nicht
+Der Nutzer wusste offenbar, welche Zonen für den Abgleich
+darstellbar.
+der solaren und lunaren Zyklen relevant sind und wann mit
+den „Schaltzonen" operiert werden musste. Dabei war zu be-
+chronisierung der Mondphasen mit dem durch die Aquinoktien
+rücksichtigen, dass nach zehnmaligem Durchlaufen der Jah-
+und Sonnenwenden bestimmten vier Jahreszeiten abzuleiten.
+reszeiten bzw. mit der I0. Wiederkehr desselben Kardinal-
+Die ungefähr I1 Tage Differenz zwischen dem (Sonnen-)Jahr
+punkts und spätestens nach der 30. Lunation das erste Mal
+mit 365 ¼ und dem Mondjahr mit 354 ⅓ Tagen sowie das Fort-
+und nach weiteren 9 Durchläufen oder vor der 59. Lunation
+schreiten der Differenz im Lauf von 19 Vierteljahren oder vier-
+das zweite Mal ein synodischer Monat mit 30 Tagen einge-
+einhalb Jahren ist dabei im wahrsten Sinn des Wortes digital
+schoben, das heißt zugeschaltet werden musste (vgl. Abb. 52
+(lat. digitus, Finger) im Ornament des Goldhutes ablesbar.
+und Abb. 56).
+Die insgesamt zu vernachlässigenden Ungenauigkeiten re-
+Aus der tabellarischen Gegenüberstellung der Daten ist die
+sultieren aus der Unschärfe einiger Zahlenwerte (in den Ta-
+praktische Nutzung des Goldhutes als Rechenhilfe für die Syn-
+
+
+===== page059 =====
+bellen schwarz) und der Notwendigkeit von zwei Schaltun-
+gen im vorgegebenen Zeitraum, das heißt der Einfügung von
+einem zusätzlichen synodischen Monat nach der 30. und vor
+der 59. Lunation, damit die Tageszahlen der solaren und lu-
+naren Zyklen systemkonform wieder übereinstimmen. Die
+Verschiebungen in den absoluten Differenzen an Tagen zwi-
+schen den solaren und lunaren Zyklen erklären sich aus dem
+Umstand, dass der exakte Schalttermin für einen zusätzlichen
+Monat mit den jeweiligen Erscheinungen des Mondes über-
+einstimmen muss (Abb. 60).
+Wenn der Beginn der Zählung festliegt - besonders bei
+der Verbindung eines Kardinalpunktes mit einer markanten
+Mondphase - können anhand des „Rechners" im Ornament
+des Goldhutes nicht nur die solaren und lunaren Zyklen ge-
+zählt, sondern es kann vor allem auch vorausberechnet und
+gesagt werden, wie sich diese im Jahreslauf und damit die an
+die Mondmonate gebundenen Feste im Zeitraum von 4 ¾
+Jahren verschieben:
+Ist beispielsweise ein Fest X im religiösen Mondkalender
+auf den 7. Tag nach dem ersten Vollmond im Frühlingsmo-
+nat Y zum Zeitpunkt der Tagundnachtgleiche festgelegt, so
+verschiebt sich dieser Termin und alle davon unmittelbar ab-
+hängigen Feste im darauffolgenden Jahr um I1 Tage nach hin-
+ten. Nach zwei Jahren sind es bereits 22 Tage, so dass spätes-
+tens nach zwei weiteren Vierteljahren ein zusätzlicher (Mond-)
+Monat eingeschoben werden muss, damit das Fest X im
+Mondkalender jahreszeitlich gebunden bleibt. Diese ‚Schal-
+tung" ist im Rechenwerk des Goldhutes zweimal angelegt
+und kann, da das System zyklisch funktioniert, in vier Durch-
+läufen insgesamt siebenmal in den vorgegebenen Abständen
+erfolgen, bis nach 19 Jahren oder 235 (Mond-) Monaten die
+Konstellationen von Sonnen- und Mondumlauf wieder so
+übereinstimmen wie am Ausgangspunkt der Zählung.
+Abgesehen von reinen Solar-Kalendern, in denen die Kar-
+dinalpunkte den Jahresanfang festlegen, gilt dieses System
+für alle sogenannten Lunisolar-Kalender, in denen der Um-
+lauf des Mondes und die daraus abgeleiteten „Monate" das
+kalendarische Grundprinzip sind (siehe oben: Historische
+Kalender).
+Zahlensymbolik und Rechensystem • 59
+Die praktische Anwendung
+Bei der theoretisch möglichen praktischen Handhabung des
+„Rechners" war sicher die Oberflächenstruktur mit ihren unter-
+schiedlich gestalteten Trennbändern sowie den verschieden gro-
+ßen Buckelscheiben in den Zierzonen ausschlaggebend. Dass der
+bronzezeitliche Nutzer sowohl das verschlüsselte System im
+Kanon des Ornaments als auch dessen astronomische Grundlagen
+kannte und damit umzugehen wusste, ist dabei vorauszusetzen.
+Im Prinzip, so nach der Vorstellung des Autors, funktio-
+nierte das System ähnlich einem zylindrischen Rechenschie-
+ber bzw. wie ein in einen Konus übertragener Abakus. Dabei
+sind wiederum nicht die einzelnen Scheibensymbole, sondern
+die zu Zeitabschnitten zusammengefassten Zonen Grundlage
+des Vergleichs der solaren mit den lunaren Perioden. Es
+musste also nicht ein x-beliebiges Scheibensymbol als Beginn
+einer wie auch immer gearteten Zählung irgendwie markiert
+werden, sondern man musste nur wissen, welche „Zonenblö-
+ckei die kalendarisch relevante Zahl von Tagen für die jewei-
+ligen Vierteljahre oder drei Mondmonate enthalten. Die Dif-
+ferenzen konnten dann durch die Gegenüberstellung der
+Menge der Zonen für die solaren und lunaren Zeitabschnitte
+ermittelt, das heißt ausgezählt werden.
+Die Goldhüte dürfen dementsprechend auch nicht als Ka-
+lendarien im modernen Sinn aufgefasst werden, in denen Ka-
+lenderdaten für das Jahr, die Monate, Wochen und Tage zur
+Einteilung zeitlicher Abläufe zusammengestellt sind und die
+zudem einen Anfang und ein Ende haben. Vielmehr handelt
+es sich um rechnerische Hilfsmittel für die Erstellung und
+Pflege eines lunisolaren Kalendersystems, dessen kulturelle
+Inhalte und soziologische Parameter uns mangels schriftlicher
+Überlieferung unbekannt sind.
+Eine - mögliche - praktische Verwendung des Berliner Gold-
+hutes als Rechengerät für ein lunisolares Kalendersystem lässt
+sich mit zeichnerischen Mitteln am Beispiel der Zählung der
+Zonen für die Tagesdifferenzen bei numerisch einander entspre-
+chenden solaren und lunaren Zeitabschnitten von vier bis 19
+Vierteljahren () oder 12 bis 57 (Sonnen-)Monaten (M) bzw. 12
+bis 59 (Mond-)Monaten (L) demonstrieren (vgl. Abb. 61-64).
+
+
+===== page060 =====
+Zahlensymbolik und Rechensystem
+60
+Abb. 61,1: 1 Jahr (12 Sonnenmonate: M) mit 365
+Tagen wird mit den fünf Zonen 4-8 im Oberteil
+des Schaftes „abgegriffen" oder sonst irgend-
+wie haptisch erfasst (rot). Der obere Teil des
+Schaftes weist noch weitere spezifische
+Merkmale, wie die Sonderzeichen in Zone 5, die
+Schaltzone 7 und das dreimalige ausschließ-
+liche Vorkommen des Stempels Nr. 10 auf.
+SZ
+Die 12 synodischen Monate (blau) sind in den
+Zonen 15 bis 19 im Unterteil des Schaftes und
+der Kalotte abgebildet, von denen die
+Schaltzonen 16 und 17 (grün) zu eliminieren
+10
+sind. Das Erkennen des lunaren Zeitabschnitts
+11
+ergibt sich daraus, dass die 354 Tage in den
+12
+Zonen 15, 18 und 19 mit dem Stempel Nr. 15
+13
+14
+dargestellt werden, der als einziger sechs
+15
+Ringe aufweist. Die Differenz zwischen den
+SZ
+16
+erfassten Zonen für die solaren und lunaren
+Zeitabschnitte beträgt 11 (Tage = d).
+Abb. 61,2: In der nächsten Phase findet sich
+der solare Block im Unterteil des Schaftes und
+der Kalotte. Die entsprechenden 15 synodi-
+5/4 J, 15 L
+4/4 J, 12 L
+schen Monate werden im Oberteil des
+Schaftes erfasst. Die Differenz beträgt 16 und
+weicht damit um 2 Tage von den absoluten
+kalendarischen Daten ab.
+Abb. 61,3: Bei 18 Lunationen nimmt der solare
+Zonenblock den unteren Teil des Schaftes ein,
+während die Lunationen hauptsächlich mit
+den Zonen auf der Kalotte dargestellt sind. Die
+Differenz 18 folgt aus dem Abgleich der Zonen
+10 bis 15 mit den Zonen 17 bis 20.
+SZ
+Abb. 61,4: Die Blöcke mit 8 Zonen für 7
+Vierteljahre bzw. 9 Zonen für 21 Lunationen,
+von denen eine die Schaltzone 7 ist, erfassen
+den Mittel- und Oberteil des Schaftes. Der
+10
+10
+Unterschied in der Anzahl der Tage ergibt sich
+11
+aus den Summen der Zähler aus den Zonen 4
+12
+bis 6 abzüglich der Schaltzone 7 (146 d), von
+13
+13
+14
+denen der Zonen 13 und 14 (165 d).
+14
+Die Differenz ist 19. Sie zeigt an, dass ab
+15
+SZ
+16
+Beginn X der Zählung die Mondphasen im
+SZ
+Vergleich zum Jahreslauf um 19 Tage zurück-
+17
+liegen.
+SZ
+18
+7/4 J, 21 L
+6/4 J, 18 L
+
+
+===== page061 =====
+Zahlensymbolik und Rechensystem
+61
+Abb. 62,1: Die haptische Zählung der solaren
+und lunaren Zyklen für 8 bis 10 Vierteljahre
+bzw. 24 bis 30 Lunationen setzt sich nach
+demselben Schema fort. Bei 2 Jahren (24
+Monaten) steht auf der solaren Seite die Zone
+18 (126) der Zone 8 (105) auf der lunaren Seite
+gegenüber. Oder anders gezählt: Die Differenz
+SZ
+von 21 Tagen ergibt sich aus dem Abgleich der
+Zonen 9 bis 18 abzüglich der Schaltzone 17 mit
+den für die lunare Zählung relevanten Zonen 8
+bis 16.
+Abb. 62,2: Bei 2 ¼ Jahren, entsprechend 27
+10
+10
+Lunationen, umfasst der solare Block die
+12
+Zonen 6 bis 15 (es wären auch die Zonen 12 bis
+13
+13
+20 ohne die Schaltzone 17 möglich). Die Zahl
+14
+14
+der Tage für 27 synodische Monate wird in den
+15
+15
+Zonen 9 bis 18 erfasst. Die Verschiebung des
+SZ
+16
+SZ
+16
+lunaren Zyklus gegenüber der solaren Zählung
+um 22 Tage ist aus dem Vergleich der Summen
+aus den Zonen 6 bis 8 (252) mit denjenigen der
+Zonen 16, 17 und 18 (230) abzulesen.
+Abb. 62,3: Nach 2 ½ Jahren (30 Monaten), die
+9/4 J, 27 L
+8/4 J, 24 L
+mit den Zonen 4 bis 16 (rot) ausschließlich der
+Schaltzone 7 (grün) abgegriffen werden, wird
+systemtypisch erstmals der gesamte Schaft ab
+Zone 4 mit dem ersten von Punkten konturier-
+ten Trennband erfasst. Den 913 Tagen aus 12
+Zonen für 10 Vierteljahre stehen 885 Tage für 30
+synodische Monate aus den Zonen 12 bis 20
+(blau) gegenüber. Die Differenz von 28 Tagen
+ergibt sich aus dem Abgleich zwischen den
+Zonen 4 bis 11, abzüglich der Schaltzone 7 (520)
+SZ
+und den Zonen 17 bis 20 (492). Das heißt, dass
+im dritten Jahr der Zählung, spätestens nach
+der 30. Lunation, ein zusätzlicher (Mond-)Monat
+eingeschoben werden muss, damit im weiteren
+Verlauf die Mondphasen mit den Jahreszeiten
+wieder annähernd übereinstimmen.
+Abb. 62,4: Die Zählung wird fortgesetzt mit 33
++ 1 = 34 (Einschub des Schaltmonats), wobei
+die Zonenblöcke für 33 Monate (1¼ Jahren) die
+16
+SZ
+16
+Zonen 8 bis 19 auf der Kalotte (möglich ist
+auch die Zusammenfassung der Zonen 10 bis
+17
+18
+SZ
+20 auf der Krempe) bzw. die 34 Lunationen
+19
+den unteren Bereich des Schaftes ab Zone 10,
+20
+auch ohne Schaltzone 16, bis Zone 20
+21
+10/4 J, 30 L
+11/4 J. 34 L
+beanspruchen. Das Konto ist mit jeweils 1002
+Tagen ausgeglichen.
+
+
+===== page062 =====
+62
+Zahlensymbolik und Rechensystem
+12
+13
+14
+15
+16
+12/4 J, 37 L
+20
+14/4 J, 43 L
+SZ
+SZ
+SZ
+19
+13
+14
+15
+16
+13/4 J, 40 L
+15
+16
+15/4 J, 46 L
+Abb. 63,1: Drei Jahre (1¾ Jahre/36 m) mit 1097
+Tagen aus den 12 Zonen 7 bis 19 auf der
+Kalotte (rot) (rechnerisch können auch die
+Zonen 9 bis 20 herangezogen werden)
+entsprechen systemkonform in der Zählung 37
+(36 + 1) Lunationen, die in den 12 Zonen 6 bis
+19 (blau), ohne die Schaltzonen 7 und 16
+(grün), dargestellt sind. Infolge der Schaltung
+eines zusätzlichen Monats nach der 30.
+Lunation ist ein Defizit von 5 Tagen festzustel-
+len, das sich aus dem Abgleich der Zonen 6
+(90) mit der Summe der Zähler in den
+Schaltzonen 7 und 16 (95) ergibt.
+Abb. 63,2: 13 Vierteljahre (39 Sonnenmonate)
+ergeben sich aus der Summierung der Ringe
+in den 12 Zonen 6 bis 19 (1187). 40 Lunationen
+werden in den 17 Zonen 3 bis 19 ohne die
+Schaltzonen 7, 16 und 17 dargestellt (1181). Der
+Rückstand der lunaren auf die solare Zählung
+beträgt 6 Tage.
+Abb. 63,3: Der Unterschied von 10 Tagen
+zwischen 14 Vierteljahren und 43 Lunationen
+ergibt sich aus der Differenz der Tage aus den
+Zonen 20 und 21 (397 im lunaren Bereich) mit
+denen der Zonen 3 bis 8 (407 im solaren
+Bereich).
+Abb. 63,4: 3 ¾ Jahre (15¾ Jahre) mit 1371 Zeichen
+können durch die 14 Zonen 8-21 (rot), ohne die
+Schaltzone 17 (grün), erfasst werden.Die
+numerisch entsprechenden 46 (45 + 1) Lunatio-
+nen mit 1358 Tagen (Zeichen) sind in den, ohne
+die Schaltzonen 16 und 17 (grün), 15 Zonen 4
+bis 20 (blau) enthalten und bedeuten eine
+negative Differenz von 13 Tagen der Mondpha-
+sen gegenüber dem solaren Kalender.
+
+
+===== page063 =====
+63
+Zahlensymbolik und Rechensystem
+Abb. 64,1: Nach 4 Jahren (16 Vierteljahren bzw.
+48 Monate M) mit 1461 Zählern/ Tagen aus den
+Zonen 6 bis 21 (rot), abzüglich der Schaltzonen
+7 und 17 (grün), zeigt sich zu den 1447 Zeichen
+für 49 Lunationen aus den Zonen 3 bis 20
+(blau), ohne die Schaltzone 7 (grün)., ein
+Unterschied von 14 Tagen.
+SZ
+Abb. 64,2: Für 17 Vierteljahre (4 ¼ Jahre) sind
+im Vergleich zu den 52 Lunationen die Zonen 4
+(75) und die Schaltzonen 7 (57) und 16 (38)
+maßgeblich. Die Mondphasen bleiben 20 Tage
+(95-75) hinter dem Jahreslauf zurück.
+10
+10
+Abb. 64,3: Bei der Synchronisierung von 4 ½
+11
+12
+(18 Vierteljahre/54 Monate) Jahren mit der
+13
+gleichen Zahl von synodischen Monaten plus
+14
+14
+ein Schaltmonat (54 + 1) im Ornament des
+15
+Goldhutes stehen im solaren Bereich in den
+SZ
+SZ
+16
+Zonen 3 bis 21 (rot), ohne die Schaltzone 7 und
+16 (grün), 1644 Zeichen den 55 Lunationen mit
+1622 Zeichen aus Zone 5 bis 21 (blau) gegen-
+19
+über. Das Defizit von 22 Tagen ergibt sich
+durch den Vergleich der Summen aus den
+17/4 J, 52 L
+16/4 J, 49 L
+Zonen 3 bis 4 (117) mit denjenigen der
+Schaltzonen 7 und 16 (95).
+Abb. 64,4: 4¾ (19 Vierteljahre) Jahre sind auf
+dem Goldhut in den 19 Zonen 3 bis 21 (rot) mit
+1739 Zeichen dargestellt. Sie stehen 59
+Lunationen aus den Zonen 3 bis 21 (blau), ohne
+die Schaltzone 7 (grün) gegenüber, was heißt,
+dass spätestens nach 1¾ Jahren oder nach der
+58 Lunation und vor der 59. Lunation zum 2.
+Mal ein Monat mit 30 Tagen geschaltet werden
+SZ
+muss (57 + 2), damit die Werte in den Zonen 3
+bis 21 für 4¾ Jahre und 59 Lunationen bis auf
+eine Differenz von drei Tagen ausgeglichen ist.
+12
+13
+15
+15
+16
+SZ
+SZ
+17
+18
+SZ
+19
+19
+20
+19/4 J, 59 L
+18/4 J, 55 L
+
+
+===== page064 =====
+64
+Zahlensymbolik und Rechensystem
+Abb. 65: Die vier goldenen Hüte im Vergleich. Von links nach rechts: Der goldene Hut von Schifferstadt, der Cône d'Avanton, der Berliner
+Goldhut und der Goldkegel von Ezelsdorf-Buch.
+
+
+===== page065 =====
+Der Vergleich
+die scheinbar mit wenig Sorgfalt in den 20 Zierzonen in das
+Die Interpretation des Zahlenwerks in der Ornamentik des
+Goldblech eingeprägt wurden (vgl. Abb. 66).
+Berliner Goldhutes hinsichtlich eines lunisolaren kalendari-
+Im Vergleich mit dem Berliner Goldhut weisen Schaft und
+schen Konzeptes oder eines sogenannten „gebundenen Kalen-
+Kalotte dieses am abwechslungsreichsten „verzierten" Exem-
+ders" lässt sich partiell auf seine drei Vergleichsstücke übertra-
+plaren der kleinen Gruppe, ohne die Spitze mit dem zehnza-
+gen. Allerdings sind beim Goldenen Hut von Schifferstadt
+ckigen Stern und die verlorene Krempe, 18 Zierzonen auf, von
+durch das Auszählen der Ringe und mandelförmigen Muster
+denen sich 16 auf dem Schaft und zwei auf der Kalotte befin-
+nur wenige kalendarisch annähernd verwertbare Zahlen wie
+den. Von diesen sind 16 mit Buckelscheiben und Kreisringen
+355, 266 und 272 zu ermitteln (vgl. Abb. 8).
+verziert, die Zone 15 zeigt das Augenmuster und die Zone 17
+Ähnlich verhält es sich beim Schaft des Cône d'Avanton.
+die Radsymbole. Identische Stempel kommen mit Nr. II in
+Auch hier stimmen nur wenige Zahlen mit den astronomisch
+den Zonen 3 und 6 bzw. mit Nr. I5 in den Zonen 4 und 9
+bedingten Vorgaben überein. Die 364 Ringe in Zone 6 bis 13
+sowie Nr. 18 in den Zonen 18 und 20 vor. Als „Schaltzonen"
+könnten ein Sonnenjahr bedeuten, folgerichtig vertreten die
+sind aufgrund ihrer Merkmale die Zonen 5, 6 und 19 sowie
+182 Ringe in Zone 3 bis 7 dann ein halbes Jahr. Lunare Daten
+die Zonen 15 und 17 mit den Sonderzeichen Nr. 19 und Nr.
+ergeben sich mit 355 Ringen aus den Zonen 8 bis 14, 9 Lu-
+20 definiert (Abb. 67 a-b).
+nationen könnten mit 268 Ringen in Zone 3 bis 9 gemeint
+Der Schaft wird durch 7 manschettenartige Trennbänder
+sein, während die Zonen 12 bis 14 mit 177 Zählern exakt
+in 8 Zierbereiche gegliedert, die wiederum durch Kerbwülste
+sechs lunare Monate erfassen. Dennoch ist, trotz der nume-
+in 17 Zierfriese unterteilt sind. Ein auffälliges Element bilden
+rischen Ungenauigkeiten, wegen der Ornamentgliederung
+zwei Bänder aus einem quer profilierten Kegelmuster, gleich-
+ein auf Zyklenmessung ausgerichtetes System zu erahnen
+sam Goldkegel en miniature, die den unteren Teil des Schaf-
+(vgl. Abb. II).
+tes mit der Zierzone aus achtspeichigen Rädern vor dem
+Mehr als nur erahnen lässt dies die Systematik im Ornament
+Übergang zur Kalotte als besonderen Bereich des Ornament-
+des Goldkegels von Ezelsdorf-Buch. Die Verzierung ist aufwen-
+kanons definieren (vgl. Abb. 73).
+dig und mutet gegenüber den Beispielen von Schifferstadt und
+Bei den Mustern der übrigen Zierzonen auf dem Schaft
+Avanton überreich an. Zur Ornamentierung des Objektes wur-
+und der Kalotte handelt es sich um Buckel, die von einem
+den insgesamt 21 unterschiedliche Musterstempel verwendet,
+12
+9
+10
+- 11
+10
+6
+18
+19
+21
+20
+15
+16
+Abb. 66: Goldkegel von Ezelsdorf-Buch. Die Scheiben- und Sondersymbole im Ornament von Nr. 6 bis 21 mit einem bis sieben konzentri-
+schen Ringen. M. 1:1. Blau: Punze Nr. 6 als Punktreihe oder Zwickelmuster. - Kreise: Scheibensymbole rot, Schaltzonen grün. - Dreiecke grün:
+Sondersymbole als Schaltzonen. - Hellblau: rechnerisch rekonstruierte Krempe mit 33 Scheibensymbolen mit sieben Kreisen Nr. 17.
+
+
+===== page066 =====
+66
+Der Vergleich
+Z1
+Z 14
+Z 15
+Z2
+Z 3
+Z4
+Z5
+Z6
+Z 16
+Z7
+Z 8
+Z9
+Z 17
+Z 18
+Z 10
+Z 11
+Z 19
+Z 12
+Z 20
+Z 13
+Abb. 67 a: Goldkegel von Ezelsdorf-Buch. Spitze mit achtstrahli-
+gem Stern (Zone 1) und Zone 2 mit dem Punktkreismuster (Nr. 6).
+Oberer Teil des Schaftes mit den Zonen 3 bis 13 (vgl. dazu Abb. 66
+und Abb. 68).
+Abb. 67 b: Goldkegel von Ezelsdorf-Buch. Unterer Teil des Schaftes
+mit dem Augenmotiv (Zone 15) sowie die Zonen 17 und 18 mit den
+achtspeichigen Rädern (Abb. 66 Nr. 19) und der großen Buckelscheibe
+(Abb. 66 Nr. 18) mit sieben konzentrischen Ringen und Zwickelmuster
+Nr. 6, das sonst nur in Zone 2 vorkommt, zwischen den Bändern mit
+quer gerieften Kegelmustern, den „Goldkegeln en miniature". Kalotte
+mit den Zonen 19 und 20 und dem - fälschlich - nach innen um den
+Standreif gebörtelten Rest der verlorenen Krempe (Zone 21).
+
+
+===== page067 =====
+Der Vergleich
+67
+13 16 17 8 21 14 7 18 19
+KA
+10
+12
+K
+A
+6
+9
+120
+Nr.
+15
+SPITZE
+Z 1
+Z 2
+Z 3
+19
+3
+TB 1
+Z 4
+| 27
+5
+7
+5
+Z
+2 127
+NOZU
+3 28
+Z 6
+TB 2
+3
+22
+N
+Z 8
+2
+39
+30
+5
+29
+TB 3
+3
+Z 10
+32
+Z 11
+5
+19
+TB 4
+ZMZON N
+7
+20
+Z 12
+Z 13
+45
+1
+TB 5
+Z 14
+17
+6
+1
+22
+Z 15
+TB 6
+19
+3
+Z 16
+1 21
+21
+Z 17
+1
+TB 7
+7 14
+14
+Z 18
+N
+Z 19
+1
+52
+N
+TB 8
+Z 20
+22
+Z 21
+7
+33
+Krempe
+Abb. 68: Goldkegel von Ezelsdorf-Buch. Der Ornamentkanon in grafischer Darstellung nach der Zonenabfolge in Kombination mit der
+Verteilung identischer Muster und rechnerisch rekonstruierter Krempe mit der Zone 21 (hellblau unterlegt).
+Erläuterung: Blau: Buckelmuster als Trennband- oder Zwickelmuster. - Rot: Scheibensymbole. - Grün: Scheibensymbole in Schaltzonen. - Drei-
+ecke grün: Sonderzeichen. - Z: Zone. - TB: Trennbänder, hellbraun hinterlegt. - Nr.: Stempel Nr. - K: Anzahl der Kreise im Symbol. - A: Zahl der
+Symbole pro Zone.
+
+
+===== page068 =====
+Der Vergleich
+68
+hüte - Ezelsdorf-Buch mit 18 gegenüber 16 Zonen auf dem
+Ezelsdorf-Buch
+Schaft bzw. zwei anstatt drei Zonen auf der Kalotte, den zwei
+IV
+separaten Zonen mit Sondermustern im Gegensatz zum Dop-
+pelfries in Zone 5 des Berliner Exemplars und sechs statt drei
+Zone
+Spitze
+Zone 2
+„Schaltzonen" - sowie der stark differierenden Menge der
+57
+19
+Scheibensymbole ist das Zahlensystem im Wesentlichen kon-
+Zone
+27
+5
+135
+Zone 4
+gruent und kann nach dem Muster des Berliner Goldhutes
+2
+27
+54
+Schaltzone
+Zone
+dechiffriert werden. Umso erstaunlicher ist es, dass sich etwa
+28
+84
+Schaltzone
+Zone
+22
+66
+Zone 7
+aus der Addition identischer Stempel oder deren zonenweiser
+2
+78
+8
+40
+Zone
+rhythmischer Abfolge, wie im Fall des Berliner Beispiels, im
+5
+150
+Zone
+30
+9
+Schaft
+96
+32
+Zone 10
+Ornamentkanon des Goldkegels von Ezelsdorf-Buch keine
+19
+95
+Zone 11
+direkten kalendarische Werte ermitteln lassen (Abb. 69). Den-
+20
+140
+Zone 12
+45
+45
+Zone 13
+noch können auf dieser Grundlage, analog zum Berliner
+6
+17
+102
+Zone 14
+Goldhut, auch auf dem Goldkegel von Ezelsdorf-Buch aufei-
+22
+22
+1
+Schaltzone
+Zone 15
+nanderfolgende Zeitabschnitte von Vierteljahren bzw. drei sy-
+19
+57
+Schaltzone
+Zone 16
+21
+Zone 17
+Schaltzone
+21
+nodischen Monaten in einem lunisolaren System errechnet
+14
+Zone 18
+14
+98
+werden. Es hat den Anschein, als ob bei diesem wahrschein-
+Zone 19
+52
+52
+Schaltzone
+lich jüngsten Zeremonialhut von Ezelsdorf-Buch ein, im Ver-
+22
+154
+Kalotte
+Zone 20
+gleich mit dem Berliner Goldhut, noch ausgeklügelteres ma-
+Summe
+1.506
+thematisches Wissen ornamental umgesetzt worden ist. Dies
++
+Krempe
+Zone (21)
+(+231)
+(7)
+(+33)
+zeigt sich im Besonderen bei hypothetischer Ergänzung der
+fehlenden Krempe mit einer Zone 21 mit 33 Buckelscheiben
+Summe
+21-2 = 19
+(+33)
+476
+1.737
+Nr. 17 mit 7 Kreisen, wodurch sich die Gesamtzahl der Zei-
+chen auf 1737 erhöht (Menghin, APA 32, 2000, 83ff.; T. Sprin-
+Abb. 69: Goldkegel von Ezelsdorf-Buch. Das Zahlen- und Zählsys-
+ger, Gold und Kult, S. 244 Abb. 9,4). Die Quersumme der
+tem. I: Nummer der Zone. - II: Anzahl der Symbole pro Zone. - III:
+Differenzen beträgt unter diesen Vorgaben +1 (Abb. 71).
+Zahl der konzentrischen Ringe/Zeichen pro Symbol. - IV: Summe der
+Die Kongruenz der Zahlen in den definierten Zonenblö-
+Ringe/Zeichen pro Zone. - Grün: Schaltzone. - Gelb: die Zahl 19.
+cken mit den entsprechenden kalendarischen Daten ist so-
+- Blau: rechnerisch rekonstruierte Zone 21 auf der verlorenen Krempe.
+wohl für die solaren als auch die lunaren Zyklen gegeben. Die
+Unschärfen in den längeren Zeitabschnitten, vor allem bei
+den synodischen Monaten, können wiederum durch die un-
+oder bis zu sieben konzentrischen Ringen eingefasst werden
+terschiedliche Zählung der Monate mit abwechselnd 29 und
+sowie, im mittleren Abschnitt des Schaftes, um eine schmale
+30 Tagen entstehen. Insgesamt aber beinhaltet das „Orna-
+Zone mit einem Augenmuster. Die Spitze ziert ein zehnstrah-
+ment" des Goldkegels von Ezelsdorf-Buch in der vertikalen
+liger Stern vor gepunktetem Hintergrund (Abb. 67 a-b).
+Zählung der Zonen - auch ohne die rekonstruierte Krempe
+Die Systematik in der Ornamentabfolge und damit der
+- ein lunares und solares Zahlensystem von erstaunlicher Prä-
+Symbolkanon werden in der grafischen Darstellung erkenn-
+bar. Klar ersichtlich ist die vertikale Gliederung des Ezelsdor-
+zision. Die Quersumme der Differenzen beträgt im lunaren
+fer Goldkegels durch die manschettenartigen Trennbänder
+Bereich -4 (Abb. 72).
+Der Wert für 59 lunare Monate ist mit 1737 statt 1742 zwar
+und die Strukturierung der Abschnitte mittels der Kerb-
+schlechter als beim Berliner Goldhut, was allerdings durch die
+wülste. Eine besondere Bedeutung für die Interpretation der
+Übereinstimmung mit exakt 1683 Zählern aus den Zonen 3
+Gesamtsystematik haben die Zonen 5 und 6, 16 und 19 sowie
+bis 21, ohne den Inhalt der „Schaltzone 5" (-54), für die Tage
+die beiden Sonderzeichen „Augenmuster" und „Speichenrä-
+von 57 synodischen Monaten ausgeglichen wird. Die Zahlen
+der" als Schaltzonen, wobei letzteres gleichsam als „Logo" des
+in den beiden Tabellen zeigen, dass das System einerseits auch
+Goldhutes gelten kann (Abb. 68).
+ohne die ergänzte Zone funktioniert und andererseits die
+Die Summe der Kreisringe von Zonen 3 - 14, 16 und 18-20
+rechnerische Rekonstruktion der Krempe schlüssig ist, was
+aus 433 Buckelscheiben beträgt 1463, zuzüglich der Sonderzei-
+sich aus der allerdings rekonstruierten Zahl an Tagen für 57
+chen in den Zonen 15 und 17 (Nr. 19 und Nr. 20) insgesamt
+1506, Zahlen, die bis auf eine Differenz von +2 Zählern den
+synodische und 48 solare Monate ergibt.
+Die Schaltungen erfolgen im selben Rhythmus wie beim
+Werten für 4 Jahre (48 Sonnenmonate) bzw. 51 Lunationen auf
+Berliner Goldhut nach dem 10. Vierteljahr und vor dem 19.
+dem Berliner Goldhut entsprechen. Markante manschetten-
+Vierteljahr durch den Einschub eines zusätzlichen Monats, so
+artige Trennbänder gliedern das Ornament in 9 Abschnitte
+dass die Zählung der Differenzen an Tagen zwischen den so-
+mit drei oder zwei Symbolfriesen. Trotz der Unterschiede in
+laren und lunaren Zyklen mit der 31. und nach der 59. Luna-
+der formalen und ornamentalen Gliederung der beiden Gold-
+
+
+===== page069 =====
+• 69
+Der Vergleich
+näherung von +1 auf die absoluten kalendarischen Daten
+(Abb. 70).
+Ezelsdorf- Buch
+Im Vergleich mit dem Berliner Goldhut, bei dem die Stem-
+pel sorgfältig ohne Uberschneidungen gesetzt sind, wird beim
+4/4 J 365
+354
+12 L
+11 d
+zu
+Goldkegel von Ezelsdorf-Buch deutlich, dass es den „Konst-
+15 L
+16 d
+5/4 J
+442
+5/4 J 458
+458
+zu
+rukteuren" des „digitalen Rechners" nicht so sehr auf die Prä-
+18 L
+6/4 J
+??
+528
+6/4 J ???
+???
+zu
+zision der Muster, sondern vielmehr darauf ankam, dass die
+21 L
+19 d
+714 J
+7/4 J 639/
+639
+620
+zu
+22 d
+Buckelscheiben und Muster in numerisch richtiger Zahl in den
+8/4 J 731
+709
+24 L
+731
+8/4 J
+zu
+23 d
+9/4 J
+9/4 J 821
+27 L
+798
+821
+entsprechenden Zonen angebracht wurden. Das mag umge-
+zu
+10/4 J
+30 L
+30 d
+913
+883
+kehrt auch erklären, weshalb sich die Scheiben und Kreise in
+zu
+Schalten +1
+den Friesen zum Teil völlig unregelmäßig tangieren und über-
+- 1 d
+1004
+34 L
+11/4 J 1003
+zu
+schneiden. Resultat ist jedenfalls, dass im System des Goldke-
+6 d
+12/4 J 1097
+37 L
+1091
+1091 37 L
+gels von Ezelsdorf-Buch ähnlich viele mit den kalendarischen
+zu
+1181 40 L
+13/4 J 1187
+6 d
+40 L
+1181
+zu
+Daten übereinstimmende Rechenwerte auftreten wie beim
+14/4 J 1278
+10 d
+43 L
+1268
+zu
+handwerklich sauberer ausgeführten Berliner Goldhut.
+15/4 J
+1360
+46 L
+10 d
+1370
+zu
+Als Quintessenz der Ausführungen darf konstatiert wer-
+16/4 J 1463
+49 L
+14 d
+1449
+16/4 J 1463
+zu
+den, dass im Ornament der Goldhüte von Berlin und Ezels-
+12 d
+16/4 J 1461 zu
+1461
+1449
+49 L
+1449 49 L
+16/4 J
+zu
+dorf-Buch ein Zahlenwerk verschlüsselt ist, das in der vertika-
+???? 52 L
+17/4 J 1553 zu
+52 L
+?? d
+17/4 J1553
+????
+zu
+len Zählung der eindeutig und exklusiv definierbaren Zonen
+55 L
+1623
+19 d
+18/4 J 1642
+1623 55 L
+zu
+wechselweise Zeitabschnitte erfasst, die in der Kombination
+1715 58 L
+19/4 J 1737
+22 d
+58 L
+1715
+zu
+als „Gebundener Kalender" die Synchronisierung der Mond-
+Schalten +2
+phasen mit dem Sonnenlauf für den Zeitraum von 4 ¾ Jahren
+59 L
+1737
+0 d
+1737 59 L
+19/4 J 1737
+zU
+ermöglicht. Dieses geistige Konzept und seine materielle Um-
+52 d
+Summe
+setzung beruhen auf der Kenntnis des neunzehnjährigen
+Mondzyklus, der sich mittels der drei Zonen 17, 20 und 21 auf
+der Krempe und der Kalotte des Berliner Goldhutes darstellen
+Abb. 70: Ezelsdorf-Buch, lunisolar. Differenzen in der Tageszählung
+lässt. Offen bleibt allerdings, ob das Zahlensystem im Orna-
+zwischen solaren und lunaren Zyklen im Rechensystem des Goldke-
+ment der Goldhüte im Gesamten vollständig dechiffriert ist
+gels unter Berücksichtigung der Schaltungen.
+und die Interpretationsmöglichkeiten gänzlich ausgeschöpft
+J: Jahr. - L: Lunation. - d: Tage - Rot/ Blau: Toleranz der Zahlen zu
+sind. Möglicherweise lassen sich über andere Zahlenkombina-
+den kalendarischen Daten o bis +/- 1. - Grün: Differenz an Tagen (d)
+tionen im Ornament und einer Methodik, die mit dem hier
+zwischen solaren und lunaren Zyklen. - Grau unterlegt: rechnerisch
+vorgelegten System nicht kompatibel ist - so die Zählungen
+rekonstruiertes Programm des Ornamentsystems.
+nach siderischen Monaten oder Sothis-Perioden und den
+Nachweis von zyklisch wiederkehrenden Mondfinsternissen,
+wie dies in jüngster Zeit von anderen Autoren (Rahlf Hansen
+tion jeweils neu begonnen werden kann. Im System von
+und Christine Rink) vorgeschlagen wurde, oder im Rückgriff
+Ezelsdorf-Buch summieren sich die Differenzen im Verlauf
+auf Sternzeiten (Schmidt-Kaler) -, Theorien entwickeln, die
+von 4 ¾ Jahren auf 52 Tage. Dies bedeutet eine Verbesserung
+um zwei Tage gegenüber dem Berliner Goldhut und eine An-
+das bis hier Dargelegte korrigieren, ergänzen oder bereichern.

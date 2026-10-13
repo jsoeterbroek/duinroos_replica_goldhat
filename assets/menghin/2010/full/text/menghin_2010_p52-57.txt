@@ -1,0 +1,664 @@
+
+
+===== page052 =====
+52 • Zahlensymbolik und Rechensystem
+Unter Berücksichtigung religiös bedingter Ausnahmerege-
+lungen ergeben sich im jüdischen Kalender sechs verschie-
+dene Jahreslängen: Ein Gemeinjahr (in diesem Fall Mond-
+jahr) kann 353, 354 oder 355 Tage haben, ein Schaltjahr 383,
+384 oder 385 Tage. Man unterscheidet nach den Regeln für das
+Mond- und Sonnenjahr deshalb nicht nur Gemein- und
+Schaltjahre, sondern auch verminderte (353/383 Tage), regu-
+läre (354/384 Tage) und übermäßige (355/385 Tage) Jahre.
+Durch diese Maßnahmen wird der Kalender dem Lauf der
+Sonne und den Jahreszeiten optimal angepasst, so dass das
+durchschnittliche Kalenderjahr mit 365,24 Tagen mit der Nu-
+merik des tropischen Jahres nahezu identisch ist.
+Das jüdische Neue Jahr beginnt mit dem Neulicht des 7.
+Monats, wobei der Frühlingsmonat Nisan in biblischer Tradi-
+tion als I. Monat benannt ist (nach dem gregorianischen Ka-
+lender September/Oktober bzw. März/April).
+D. Wie in allen antiken Kulturen bestand auch in Grie-
+chenland lange vor der Archaischen Zeit das Bestreben, einen
+brauchbaren Kalender durch die Vereinigung des Sonnenjah-
+res mit dem Mondjahr zu schaffen. Bekannt ist die delphische
+Oktaetris, das „Große Jahr", bei dem 8 Mondjahre (8 x 354)
+durch die Zuschaltung von drei synodischen Monaten mit 30
+Tagen den 8 Jahren mit 2922 Tagen angeglichen wurden. In
+diesem lunisolaren Kalender hatten drei Jahre nicht 12, son-
+dern 13 Monate, was bei zyklischer Fortschaltung der Monate
+zu Ungenauigkeiten führte. Versuche, diesem Problem durch
+Verdoppelung des Zyklus zu begegnen, brachten keine Fort-
+schritte. Diese erzielten erst griechische Astronomen aus der
+Schule des Euktemon im 5. Jahrhundert, die aufgrund lang-
+jähriger Himmelsbeobachtungen und vermutlich in Kenntnis
+der babylonischen Astronomie einen 19-jährigen Schaltzyklus
+entwickelten: 19 Jahre haben 6940 Tage und entsprechen nu-
+merisch 19 Mondjahren plus 7 Monaten. Unter den 235 syn-
+odischen Monaten setzten sie II0 als „hohle Monate" mit 29
+und 125 als „volle Monate" mit 30 Tagen an, woraus sich 3190
+(110 x 29) + 3750 (125 x 30) = 6940 Tage ergaben.
+In diesem Zyklus sind die alternierenden Monatswerte
+richtig verteilt und mit den Himmelserscheinungen in Über-
+einstimmung zu bringen. Damit war es Meton von Athen
+möglich, die Sommersonnenwende für das Jahr 432 v. Chr.
+exakt zu berechnen und den Kalender zu verbessern. Er ließ
+Säulen zu astronomischen Beobachtungen aufstellen und er-
+fand einen Steckkalender.
+Anders als in den Großreichen des Vorderen Orients ist es
+den griechischen Stadtstaaten, trotz aller Bemühungen, nicht
+gelungen, sich auf einen einheitlichen Kalender zu einigen.
+Die Jahresanfänge verteilten sich über das ganze Jahr, nament-
+lich auf die Tage der Kardinalpunkte, wobei das Frühjahrsäqui-
+noktium seltener belegt ist. Die Datierung der Jahre erfolgte
+individuell nach dem Amtsantritt der höchsten Beamten oder
+der Priester der Hauptgottheiten des jeweiligen Gemeinwe-
+sens. Der Schaltmonat erschien an verschiedenen Stellen des
+Jahres und noch dazu waren die Kalendersysteme unterschied-
+lich. Erwiesenermaßen stimmten nur die Kalender Athens
+und Delphis überein. Jahresanfang war die Sommersonnen-
+wende, zum Schalten wurde jeweils der 6. Monat benutzt und
+ab 330 v. Chr. übernahm Delphi auch den Metonschen Zyk-
+lus. Ansonsten mussten die Verträge zwischen mehreren grie-
+chischen Städten oft mit drei oder mehr unterschiedlichen
+Datierungen unterzeichnet werden (nach: Paulys Realenzyk-
+lopädie der Classischen Altertumswissenschaften 20 [1919] s. v.
+„Kalender". - Ebd. I. Halbband [1932] s. v. „Meton*).
+E. Vor Einführung des julianischen Kalenders war in der
+Römischen Republik ein Mondkalender mit einem Solarka-
+lender kombiniert. Das Normaljahr wurde mit 355 Tagen ge-
+rechnet, dem in regelmäßigem Wechsel ein Schaltjahr mit 377
+oder 378 Tagen folgte, so dass sich für einen Zyklus von vier
+Jahren insgesamt eine Länge von 355 + 378 +355 + 377 = 1465
+ergab, was einen Überschuss von vier Tagen gegenüber der
+Länge von vier tropischen Jahren mit 1461 Tagen ergab. Die
+Monatslängen im Normaljahr mit 355 Tagen betrugen 7 x 29
+oder 4 x 31 und im 2. Monat (Februarius) 28 Tage. In den
+Schaltjahren betrug die Länge des Februars nur 23 Tage, dem
+ein zusätzlicher Monat (Intercalaris) mit 27/28 Tagen hinzu-
+gefügt wurde. Der erste Tag eines jeden Monats hieß Kalen-
+dae, der 5., in den Monaten mit 31 Tagen, Nonde und der 13.
+bzw. I5. Tag in der Monatsmitte waren die Idae.
+Da das Jahr nach diesem Kalendersystem um einen Tag zu
+lang war und zudem durch die Einschübe der Schaltmonate
+mit 27/28 Tagen auch die Übereinstimmung mit den Mond-
+phasen verloren ging, legten die Priester (Pontifices) Schaltun-
+gen fest, die, da ohne astronomische Regelung, ins kalendari-
+sche Chaos führten. Vor Einführung des julianischen
+Kalenders im Jahre 46. v. Chr. war der republikanische Kalen-
+der, trotz mehrerer Reformversuche, den Jahreszeiten somit
+um 90 Tage voraus.
+Der von dem alexandrinischen Astronomen Sosigenes im
+Auftrag von Julius Cäsar erarbeitete Kalender ist ein reiner
+Solarkalender, bei dem die Mondphasen keine Berücksich-
+tigung finden. Er hat, in der Tradition des altägyptischen Ka-
+lenders, 12 auf den Tierkreis bezogene Monate und korreliert
+mit den Jahreszeiten, da das Jahr durch den Lauf der Sonne
+zwischen zwei Kardinalpunkten, etwa dem Frühlingsäqui-
+noktium, bestimmt wird. Es umfasst 365 ¼ Tage, so dass jedes
+vierte Jahr ein Schaltjahr mit 366 Tagen sein muss und der
+Zyklus von vier Jahren damit 1461 Tage beinhaltet.
+Bei der Terminierung „beweglicher", an die Mondphasen
+gebundener Feste, wie zum Beispiel Ostern und den damit
+zusammenhängenden Feiertagen, musste man auch im Rah-
+men des solaren julianischen Kalenders auf einen Mondka-
+lender mit seinen Schaltungen zurückgreifen.
+Das hier nur stark vereinfacht und auszugsweise darge-
+stellte antike Kalenderwesen mit seinen divergierenden Zyk-
+len von Mond- und Sonnenumläufen sowie die künstliche
+Einteilung in Sonnenmonate und Wochen, das in allen Kul-
+turen, je nach Entwicklungsstand, auch astronomiosch mit
+
+
+===== page053 =====
+Sternauf- und Sternuntergängen, etwa des Sirius und der
+Venus, kombiniert war, bedurfte der ständigen Überprüfung
+durch Kundige. Zugleich zeigen diese historischen Beispiele
+aber auch, dass die Kalender in den verschiedenen Kulturen
+durch Konventionen bestimmt waren und relativ häufig, vor
+allem wenn längere Zeiträume betroffen waren, im System
+Mängel aufwiesen. Ob und vor allem wie sich im Ornament
+der Goldhüte ein alteuropäisches Kalendersystem verbirgt, ist
+im Folgenden zu untersuchen.
+Zahlensymbolik und Rechensystem • 53
+ein Viertel des 19-jährigen Mondzyklus bzw. 59 synodische
+Monate (astronomisch 1742¾3 d) bedeuten, ist generell eine
+Aufteilung in 1o und 9 Vierteljahre (bzw. 30 und 27 Monate)
+vorgegeben, d. h. die Zahlenwerte für 19 Jahre aus der Schalt-
+zone 17 und Zone 20 sind so zusammenzufassen, dass sich
+alternierend vier Sektoren mit 10 Vierteljahren (30 Sonnen-
+Monate) und 4 Sektoren mit 9 Vierteljahren (27 Sonnen-Mo-
+nate) ergeben, denen in Zone 21 dann 7 Abschnitte mit 7 x 6
+und ein Abschnitt mit 1 x 5 Buckeln mit jeweils fünf Ringen
+für die synodischen Monate gegenüber stehen (Abb. 56):
+a. Innerer Kreis (Schaltzone 17) mit 33 Buckeln zu 2 Ringen
+ergibt:
+3 Sektoren mit 6 Symbolen = 18
+5 Sektoren mit 3 Symbolen = 15
+33 Symbole = 66 Ringe
+Der Mondzyklus im System des Berliner Goldhutes
+Spätestens in der klassischen Antike war bekannt, dass über-
+einstimmende Erscheinungen im Lauf von Sonne und Mond
+nach 19 Jahren mit rund 6940 Tagen entsprechend 228 Son-
+nenmonaten bzw. 235 Lunationen auftreten. Dieser „Mond-
+zyklus" wurde im späten 5. Jahrhundert v. Chr. (432 v. Chr.)
+durch Meton von Athen aufgrund astronomischer Beobach-
+tungen erstmals mathematisch errechnet, wobei erwiesen
+scheint, dass das Phänomen zumindest den mesopotamischen
+Astrologen schon lange vorher bekannt war und auch Ein-
+gang in das Kalenderwesen verschiedener Kulturen gefunden
+hatte (siehe oben).
+Die Annahme, dass im Ornament des Berliner Goldhutes
+aus der Zeit um 1ooo v. Chr. das digitale Zahlensystem eines
+auf der Kenntnis des 19-jährigen Mondzyklus basierenden lu-
+nisolaren Kalenderwerkes verschlüsselt ist, gewinnt durch die
+Interpretation der beiden Zonen auf der Krempe des Kultge-
+genstandes zusätzlich an Plausibilität: Die Zone 21 mit 47
+Buckeln zu je 5 Ringen gibt in der Summe 235 (in diesem Fall
+werden die Ringe der Buckelscheiben nicht als Tage [siehe
+unten], sondern als Zähler für Monate gedeutet) und damit
+exakt die Anzahl der synodischen Monate im ı9jährigen
+Mondzyklus wieder. Die Zone 20 mit 54 Buckeln zu 3 Ringen
+gleich 162 Zähleinheiten stellt, ergänzt durch die Schaltzone
+17 auf der Kalotte des Goldhutes mit 33 Buckeln mit je 2 kon-
+zentrischen Ringen gleich 66 Zählern, die 19 Jahre mit (mo-
+dern) 228 (Sonnen-)Monaten (3 x 19 x 4 = 76 Vierteljahre)
+oder 6939/40 Tagen dar.
+Zweck eines „gebundenen" oder lunisolaren Kalenders ist
+die Synchronisierung des Mondjahres mit 354 Tagen mit dem
+Sonnenjahr mit 365 ¼ Tagen durch den Einschub von 7
+Schaltmonaten im Verlauf von 19 Jahren. Der Jahreslauf wird
+(vgl. S. 49f.), entsprechend der Gliederung durch die Kardi-
+nalpunkte (s. o.) in 4 Vierteljahre mit dreimal 91 und einmal
+92 Tagen geteilt. Nach jedem 16. Vierteljahr wird ein zusätz-
+licher Tag eingeschoben.
+A. Aus der Autopsie der drei als relevant angesehenen
+Zonen ergibt sich, dass die Zähleinheiten auf dem Goldhut
+so angelegt sind, dass sie in logische Bedeutung gesetzt wer-
+den können. Wenn die 1739 (astronomisch 1735) Zeichen 19
+Vierteljahre (modern: 57 Monate) bzw. 4¾ Jahre und damit
+b. Mittlerer Kreis (Zone 20) mit 54 Buckeln zu 3 Ringen
+ergibt:
+3 Sektoren mit 8 Symbolen = 24
+2 Sektoren mit 7 Symbolen = 14
+I Sektor mit6 Symbolen = 6
+2 Sektoren mit 5 Symbolen = 10
+54 Symbole = 162 Ringe
+(für die Grafik relevant)
+c. Außerer Kreis (Zone 21) mit 47 Buckeln zu 5 Ringen ergibt:
+7 Sektoren mit 6 Symbolen = 42
+I Sektor mit
+5 Symbolen = 5
+47 Symbole = 235 Ringe
+B. Im Vergleich mit den Zählungen der synodischen Monate
+in Zone 21 stellt sich dabei heraus, dass die 30 Mondmonate
+mit (15 x 29) + (15 x 30) = 885 Tagen gegenüber den 10 Vier-
+teljahren [(10 x 9I) + 2 ½ = 912 ½ Tage] um 27 ½ Tage hinter
+den Jahreszeiten zurückbleiben. Daher ist der Einschub eines
+Schaltmonats spätestens nach der 30. Lunation erforderlich,
+damit die synodischen Monate sich nicht zu weit von den
+Kardinalpunkten des Jahreslaufs entfernen, sondern mit den
+natürlichen Jahreszeiten Frühling, Sommer, Herbst und Win-
+ter konform bleiben.
+Nach der Schaltung entsprechen dann 31 Lunationen [(16 x
+29) + (I5 x 30)] mit 914 Tagen den I0 Vierteljahren [(r0 x 91) +
+2 ½ Tage = 912 ½] mit 2 ½ Tagen Überschuss. Eine fast ausge-
+glichene Bilanz ergäbe sich beim Vergleich von 32 synodischen
+Monaten (944 Tage) mit 31 Sonnenmonaten bzw. I0 Viertel-
+jahren + 3I Tagen [(t0 x 9I) + 2 ½ = 912 ½ + 31 = 943,5 Tage],
+was im System des Goldhutes jedoch nicht darstellbar ist.
+Die zweite Schaltung erfolgt nach 19 Vierteljahren (mo-
+dern: 57 Monaten). Dieser Schaltrhythmus wiederholt sich
+
+
+===== page054 =====
+Zahlensymbolik und Rechensystem
+54
+30 : 30
+235 - 7= 228
+25 : 27
+30 : 27
+30
+10/4
+30 : 30
+30
+228
+30 : 30
+10/4
+30
+76/4
+10/4
+27
+9/4
+30
+30
+10/4
+30 : 27
+30 : 27
+30 : 30
+Abb. 56: Berliner Goldhut - Mondzyklus. Grafische Umsetzung der Schaltzone 17 mit 33 Buckeln mit 2 Kreisen auf der Kalotte, der Zone 20
+mit 54 Buckeln zu 3 und Zone 21 mit 47 Buckeln mit 5 konzentrischen Kreisen auf der Krempe des Berliner Goldhutes (vgl. Abb. 55). Bei
+achtfacher Teilung der drei imaginären konzentrischen Kreise und der farblichen Kennung der für die kalendarischen Werte in den 8 Segmen-
+ten zusammengefassten Buckelscheiben lässt sich der Schaltrhythmus im 19-jährigen Zyklus demonstrieren.
+- 29), so dass sich in der lunaren und solaren Zählung nach
+siebenmal, wobei sich in der lunaren Zählung im Vergleich
+sieben Schaltungen gerundet 6940 Tage ergeben. Zugleich er-
+mit der solaren Zählung bei 19, 38, 57 und 76 Vierteljahren
+klärt sich aus diesem Zusammenhang, dass die Vervierfa-
+ein Überschuss (astronomisch: 1735 zu 1742 ¼) von jeweils 7
+chung der angenommenen 59 Lunationen im System des Ber-
+¼ Tagen ergibt. Dieser Überschuss summiert sich dabei auf
+liner Goldhutes nicht 236, sondern 236 - I also 235 synodische
+29 Tage, die bei der Vervierfachung der 1742 ¼ Tage für 59
+Monate bedeutet (siehe unten).
+synodische Monate (6969) abgezogen werden müssen (6969
+
+
+===== page055 =====
+C. Zuweisung der Zahlenwerte für die 8 Sektoren in der Schalt-
+zone 17, Zone 20 und Zone 21 alternierend im Verhältnis 10 zu 9
+Vierteljahren (30 : 27 Sonnenmonate) mit dem Schaltrhythmus.
+In der Praxis zeigt sich im Berliner Goldhut somit ein Schaltsys-
+tem, bei dem alternierend alle 2 ½ oder 2 ¼ Jahre, bzw. nach zehn-
+maligem oder neunmaligem Durchlaufen der Kardinalpunkte
+vom Beginn der Zählung an, ein zusätzlicher (Mond-)Monat ein-
+geschoben werden muss. Auf die Mondumläufe bezogen heißt
+das, dass jeweils (spätestens) nach dem 30. und vor dem 59. Monat
+geschaltet werden muss, damit nach siebenmaligem Einschub
+eines zusätzlichen Monats die Zahl der Tage für 19 Jahre oder 235
+synodische Monate übereinstimmt: (30 + I) + (27 + 1) + (30 + I) +
+(27 + I) + (30 + I) + (27 + I) + (30 + I) = 208 + 27 = 235.
+Entsprechend dem 19-Jahreszyklus wird im System des
+Goldhutes nach dem 2. Viertel des 3.-, dem 3. Viertel des 5.-,
+dem 1. Viertel des 8.-, dem 2. Viertel des 10.-, dem 4. Viertel
+des 12.-, dem I. Viertel des 15.- und nach dem 3. Viertel des
+17. Jahres ein zusätzlicher Monat eingeschoben (Abb. 57).
+Zahlensymbolik und Rechensystem
+55
+Beginnt die Zählung z. B. mit dem Neulicht zum Zeit-
+punkt der Frühjahrs-Tagundnachtgleiche, so muss spätestens
+im Herbst des 3. Jahres nach der Tagundnachtgleiche ein 13.
+Monat eingeschoben werden. Im ş. Jahr nach Beginn der
+Zählung erfolgt die Schaltung des 13. Monats nach der Win-
+tersonnenwende usw. Dabei ist der Schaltrhythmus in Bezug
+auf die lunaren Zyklen in Zone 21 mit 7 x 6 und I x 5 Schei-
+benbuckeln am einfachsten über die „Schaltzone 17" zu er-
+mitteln: gemäß den 8 Sektoren, zeigen die Buckel mit zwei
+Kreisen gegenüber denjenigen mit fünf Kreisen in Zone 21 im
+Rhythmus 3:6 - 3:6 - 6:6 - 3:6 - 3:6 - 6:6 - 3:6 - 6:5 an,
+wann in Zone 21 geschaltet werden muss. Der genaue Zeit-
+punkt der Schaltung dürfte dabei über die sichtbaren, jeweils
+7 Tage dauernden Phasen des Mondes (vom Neulicht bis zum
+Neumond) festgelegt worden sein. Im vorgegebenen Fall
+würde das Neulicht dann nach 19 Jahren oder 76 Vierteljah-
+ren wieder mit der Frühjahrs-Tagundnachtgleiche korrelieren
+(vgl. Abb. 56).
+I. (3 x 2) + (8 x 3) = 6 + 24 = 30 (Io Vierteljahre)
+2. (3 x 2) + (7×3) = 6+21=27 (9
+3. (6 x 2) + (6 x 3) = 12 + 18 = 30 (I0
+4. (3 x 2) + (7 x 3) = 6+ 21 = 27 ( 9
+5. (3 x 2) + (8 x 3) = 6+ 24=30
+(IO
+6. (6 x 2) + (5 x 3) = 12 + 15 = 27
+7. (3 x 2) + (8x 3) = 6+24=30
+8. (6x 2) + (5 x 3) = 12 + 15 = 27
+66 + 162 = 228
+(IO
+( 9
+(76 Vierteljahre)
+I, 2, 3, 4. - I, 2, 3, 4.- I, 2, *,
+3, 4. - I, 2, 3, 4. - I, 2, 3, *,
+4. - I, 2, 3, 4. - I, 2, 3, 4. - I, *,
+2, 3, 4. - I, 2, 3, 4. - I, 2, *,
+3, 4. - I, 2, 3, 4. - I, 2, 3, 4, *,
+I, 2, 3, 4. - I, 2, 3, 4. - I, *,
+2, 3, 4. - I, 2, 3, 4. - I, 2, 3, *,
+4. - I, 2, 3, 4, - I, 2, 3, 4.
+I9 Jahre
+*Schaltmonat
+Abb. 57: Der Schaltrhythmus im System des Berliner Goldhutes
+Das Zahlenwerk und seine Entschlüsselung
+Die primäre Funktion des Berliner Goldhutes hat sakralen
+Charakter. Dies verdeutlichen seine Form, das Material und
+die in das Ornament integrierten kosmischen Piktogramme
+als Zeichen für die Sonne, den Mond und den Venusstern.
+Zugleich war die goldene Tiara aber offenbar auch ein Me-
+dium für kalendarische Berechnungen. Hierauf weisen die im
+System der Ornamentik verschlüsselten Zahlen wie 365, 366
+oder 354, 355 und 177 für die Tageszählung solarer und lunarer
+Zyklen bzw. mit 235 auf die Monate des neunzehnjährigen
+Mondzyklus hin. Diese werden erkennbar, wenn nicht die
+Anzahl der Buckelscheiben mit ihren jeweils zwei, drei, fünf
+und sechs konzentrischen Kreisen als Prinzip des Zahlenwer-
+kes angesehen werden, sondern die Summen der Kreisringe
+in den zu Zeitabschnitten zusammengefassten Zonen bzw.
+der 2 x 19 Sondersymbole.
+Die Dechiffrierung des vermutlich absichtlich verschlüs-
+selten Systems ergibt sich aus der empirisch ermittelten, für
+die Darstellung kalendarischer Zyklen relevanten Summe der
+Ringe und Zeichen unmittelbar aufeinanderfolgender Zonen,
+die jeweils einen Block bilden. Von den Io unterschiedlichen
+Buckelmustern (vgl. Abb. 21, Nr. 8-17) definieren dabei die-
+jenigen, die nur einmal im Kanon vertreten sind (Abb. 21, Nr.
+9, II, 13), die drei Schaltzonen 7, 16 und 17 auf dem Schaft
+und der Kalotte des Goldhutes (vgl. Abb. 23). Ihre Berück-
+sichtigung oder Negierung ermöglicht erst die durchgängige
+Synchronisierung der Mondzyklen mit dem Jahreslauf im
+vierteljährlichen Rhythmus von 12 bis 57 Lunationen. Dabei
+sind bei diesem „gebundenen Kalender", anders als bei den
+oben erläuterten historischen lunisolaren Kalendern, nicht
+die synodischen Mondphasen, sondern, wie bei einem solaren
+Kalender, der Jahreslauf mit seiner Vierfachteilung durch die
+Kardinalpunkte dominant.
+
+
+===== page056 =====
+Zahlensymbolik und Rechensystem
+56
+- Schaltzone
+Abb. 58: Berliner Goldhut - solar.
+Symbole
+Berlin solar
+Grafische Darstellung des Systems
+Vierteljahre, solar
+in den 19 Zonen des Ornaments
+Anzahl
+9
+7
+4
+5
+19 18 17 16 15 14 13 12 11 10
+der Ringe
+für die Zählung der Tage im
+Abstand von 4 bis 19 Vierteljahren
+42
+Zone 3
+(4 ¾ Jahre bzw. 57 Monate) im
+75
+Zone
+Vergleich mit den kalendarischen
+38
+Zone
+5
+Zielwerten.
+Rote Punkte: erfasste Zonen. -
+90
+6
+Zone
+Grüne Punkte: abzüglich Schalt-
+57
+7
+Zone
+zone. - Kalendarische Zielwerte:
+105
+8
+auf- bzw. abgerundet +/- 0,5.
+Zone
+Sternchen (*): absolute Überein-
+57
+9
+Zone
+stimmung der Tageszählung.
+95
+Zone 10
+60
+Zone11
+100
+Zone 12
+60
+Zone 13
+105
+Zone 14
+90
+Zone 15
+38
+Zone 16
+66
+Zone 17
+126
+Zone 18
+138
+Zone 19
+162
+Zone 20
+235
+Zone 21
+639
+458
+819
+1187
+1002
+1371
+1739
+1556
+Summe
+1739
+|548
+365
+548
+1097
+913
+731
+1276
+der Ringe
+1644
+1461
+639
+457
+822
+1005
+1187
+1552
+1370
+1735
+kalendarische 1735
+kalendarische
+731
+548
+365
+1278
+1096
+913
+1461
+Zielwerte
+1644
+* -3 * * * +1 *
++4 * +4 * +1-2* +1 - 3
+Differenz
+genstand ein lunisolares Kalendersystem zur Abbildung kom-
+Der Berliner Goldhut weist in den 19 für die kalendari-
+men sollte: Die Zahl 1739 stellt unter dieser Vorgabe den
+schen Berechnungen relevanten Zonen 3 bis 21 auf dem
+Mittelwert zwischen den absolut 1735 Tagen für 57 Sonnen-
+Schaft, der Kalotte und der Krempe 418 Scheibensymbole mit
+monate und absolut (abgerundet) 1742 Tagen für 59 lunare
+1701 Ringen und zweimal 19 Sondersymbolen insgesamt 1739
+Monate dar.
+Zähler auf, die hypothetisch als Tage (d) gerechnet werden
+Dass das System in sich geschlossen ist, erweist sich in der
+(siehe oben). Die Zahl entspricht, bis auf ein Plus von 4, den
+Aufschlüsselung der 19 Zonen 3 bis 21: In Blöcke von fünf bis
+1735 Tagen von 3 x 19 = 57 Sonnenmonaten oder 19 Viertel-
+19 aufeinanderfolgenden Zonen zusammengefasst, erfolgt die
+jahren und damit einem Viertel des neunzehnjährigen Mond-
+Zählung der Tage (d) der solaren und lunaren Zeitabschnitte
+zyklus von 4 x 57 = 228 Sonnenmonaten. Zugleich können
+synchron im vierteljährlichen () bzw. im dreimonatigen
+die 1739 Zähler für 59 Mondmonate mit (abgerundet) 1742
+Rhythmus von 12 bis 57 Monaten (L). Die Zahl der Tage für
+(astronomisch 1742 ⅓) Tagen bei einem Minus von 3 ⅓ Tagen
+die astronomischen Zielwerte sind festgelegt auf der Basis
+stehen.
+30,44 d für den durchschnittlichen Sonnenmonat bzw. 29,53 d
+Weshalb die Schöpfer des Zahlenwerkes auf dem Berliner
+für die durchschnittliche Dauer eines synodischen Monats,
+Goldhut nicht mit 1735. Zeichen für 57 solare Monate gerech-
+wobei eine Auf- oder Abrundung der Zahlen bei +/-0,5 er-
+net haben, kann damit erklärt werden, dass auf dem Kultge-
+
+
+===== page057 =====
+Zahlensymbolik und Rechensystem
+57
+Abb. 59: Berliner Goldhut - lunar.
+Berlin lunar
+- Schaltzone
+Symbole
+Grafische Darstellung des Systems.
+synodische Monate
+Aufsteigende Zählung der Tage im
+27 24 21 18 15 12 Anzahl
+Anzahl
+59 57 55
+57 55 52 49 46 43
+49
+46
+34
+37
+dreimonatigen Rhythmus von 12 bis
+43
+52
+40
+30
+27
+21
+18
+15
+12
+24
+der Ringe
+59 synodischen Monaten,
+42
+Zone
+entsprechend 4¾ Jahren, mit den
+75
+Zone
+Schaltungen nach der 30. und 57.
+Lunation im Vergleich mit den
+38
+Zone
+astronomischen Zielwerten.
+90
+Zone
+Blaue Punkte: erfasste Zonen. -
+57
+Zone
+Grüne Punkte: abzüglich Schalt-
+zone. - Kalendarische Zielwerte:
+8
+105
+Zone
+auf- bzw. abgerundet +/- 0,5. -
+9
+57
+Zone
+Blaue Sternchen (*): absolute
+95
+10
+Zone
+Übereinstimmung der Tageszäh-
+lung. - Rote Vertikalen: Zeitpunkt
+60
+11
+Zone
+der Schaltung eines zusätzlichen
+100
+Zone 12
+Monats.
+60
+Zone 13
+Zone 14
+105
+90
+15
+Zone
+38
+Zone 16
+66
+Zone
+17
+126
+Zone
+18
+138
+19
+Zone
+20
+162
+Zone
+235
+Zone 21
+885
+710
+530
+354
+1447
+1622
+1739
+1266
+1092
+Summe
+1739
+der Ringe
+797
+442
+620
+1002
+1682
+1536
+1181
+1358
+532
+709
+886
+1093
+354
+kalendarische 1742
+1447
+(1270
+1624
+1358
+1004
+1536
+797
+620
+1181
+443
+Zielwerte
+1683
++1 *+1 * +2+1 *
+-1-2 * * * -4 * -1 -2
+-3
+- 1
+Differenz
+Schaltmonat
+Schaltmonat
+folgt. In Brüchen heißt das für das Sonnenjahr 365 ¼ d und
+Berliner Goldhut - solar
+für das Mondjahr 354 ⅓ d.
+In der grafischen Darstellung des Systems stimmt die Zahl
+Die Zusammenfassung der Zonen zu 16 relevanten Zeitab-
+der Ringe in den definierten Zonen bis auf wenige Ausnah-
+schnitten mit der größtmöglichen Annährung an die kalendari-
+men mit den kalendarischen Daten im solaren Bereich für die
+sche Anzahl von Tagen erfolgt im rechnerischen Ausschlussver-
+aufsteigenden Vierteljahresabschnitte von I bis zu 4 ¾ Jahren
+fahren, das zugleich zeigt, dass im vorgegebenen System die
+überein. Die „Ausreißer" bei 9 Vierteljahren (27 Sonnenmo-
+statistischen Möglichkeiten auf die vorgelegten Zahlen beschränkt
+nate), II Vierteljahren (33 Sonnenmonate), 14 Vierteljahren
+sind. Dabei spielen die Zonen 7, 16 und 17 durch ihre solitären
+(42 Sonnenmonate) und 17 Vierteljahren (51 Sonnenmonate)
+Buckelscheiben, ihre Abfolge im Ornamentkanon und aufgrund
+mit Abweichungen von zwei bis vier Zählern relativieren sich
+der Ergebnisse der angestellten Berechnungen, die sie als Schalt-
+vor dem Hintergrund, dass von den Schöpfern des Systems
+zonen" definieren, eine ausschlaggebende Rolle. Erst durch die
+das Jahr nach den Kardinalpunkten in drei Viertel mit 91 und
+Berücksichtigung oder Negierung ihrer Zähler innerhalb des em-
+ein Viertel mit 92 Tagen geteilt wurde. Um bei der aufsteigen-
+pirisch im Ornament definierten Zeitabschnitts werden die Mo-
+den Zählung im System bleiben zu können, ist deshalb nach
+natswerte erfasst und die Synchronisierung der solaren und luna-
+jeweils drei Dreimonatsphasen bzw. einem Dreivierteljahr ein
+ren Zyklen im vierteljährlichen Rhythmus möglich.

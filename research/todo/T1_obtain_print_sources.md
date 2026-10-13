@@ -6,7 +6,7 @@ the raw per-zone ring counts and zone order for Schifferstadt / Ezelsdorf /
 Avanton. Peter-Röcher 2023 now states it *failed* when attempted; we still want the
 raw data to test it ourselves.
 
-**Status of the four items (2026-10-12):**
+**Status of the four items (2026-10-13):**
 
 1. **Peter Schauer, *Die Goldblechkegel der Bronzezeit*, Habelt 1986** —
    *to get from Leiden University Library.* Wanted for the plates and the tool
@@ -19,8 +19,11 @@ raw data to test it ourselves.
    **Abb. 14, p. 45** (Berlin), **Abb. 17, p. 50** (Schifferstadt),
    **Abb. 20, p. 53** (Avanton), **Abb. 27, p. 61** (Ezelsdorf-Buch); each figure
    carries its own stamp/numbering legend, and the Ezelsdorf ornament patterns are
-   itemised in Abb. 25, p. 59 (numbering after M. Fecht). **Menghin 2010, *Der Berliner Goldhut*** — held in part
-   (pp. 20–31, 47–63); pp. 1–19, 26, 32–46, 64–end still missing.
+   itemised in Abb. 25, p. 59 (numbering after M. Fecht).
+2b. **Menghin 2010, *Der Berliner Goldhut*** — ✔ **held COMPLETE** since
+   2026-10-13 (whole book, pp. 1–88 + front matter, in `assets/menghin/2010/full/`;
+   the earlier `assets/menghin/2010/jpg/` phone photos are kept for the STL plan).
+   Finding: `findings/FINDING_2026-10-13_menghin-2010-ingested.md`.
 3. **Wolfhard Schlosser, JSMV 86 (2003)** — ✔ **held**:
    `assets/89612-Artikeltext-237706-1-10-20220629.pdf` (+ text
    `assets/schlosser_2003_jsmv86.txt`). Read → `findings/FINDING_2026-10-11_…`.
@@ -69,15 +72,12 @@ Abb. 17 (Schifferstadt, p. 50), Abb. 20 (Avanton, p. 53) and Abb. 27
 matter); the per-zone tables (Abb. 14, 17, 20, 27) are transcribed into
 `data/readings/menghin2000_zones.json`. No further scan of 2000 is needed.
 
-**B. Menghin 2010 gaps.** Already held: pages **20–25, 27–31, 47–63**. Missing:
-- **pp. 1–19** — front matter, find history, material/technique.
-- **p. 26, pp. 32–46** — likely the ornament catalogue / tool legend / measurements.
-- **pp. 64–end** — likely the comparative chapters on the other hats, plates,
-  bibliography. Highest value for the cross-hat test.
-- the **table of contents** (to map the rest).
-
-→ Scan the TOC first, then pp. 32–46 and pp. 64–end (especially any pages with
-per-zone tables or the other three hats), then the plates.
+**B. Menghin 2010 — ✔ digitised complete 2026-10-13.** The whole book (pp. 1–88 +
+front matter) is held in `assets/menghin/2010/full/` (jpg/ocr/text, 3-digit padded
+names) from the author's 8-batch PDF. The comparison chapter (pp. 64–72) is read:
+Menghin calls the cross-hat transfer *partial* (p. 65) and says the stamp-identity
+rule gives no direct values on Ezelsdorf (p. 68). No further scan of 2010 is needed;
+a 300–400 dpi re-scan of p. 68 would only settle the 6-vs-5 intercalary question.
 
 **C. Everything else** (full books) — nice to have; do it only if the effort is cheap.
 
@@ -91,7 +91,7 @@ enough to pass the control is not good enough.
 
 ---
 
-**Progress (updated 2026-10-12):**
+**Progress (updated 2026-10-13):**
 
 - **Menghin 2000 — ✔ DONE, complete.** The author digitised the whole article.
   83 page images + text are in `assets/menghin/2000/`; the four per-zone tables are
@@ -100,10 +100,10 @@ transcribed into `data/readings/menghin2000_zones.json` and verified by control 
 `sources/menghin_2000_2010.md`. Finding:
 `findings/FINDING_2026-10-12_menghin-2000-ingested.md`. Run:
 `runs/RUN_2026-10-12_ingest_menghin2000.md`.
-- **Menghin 2010 — partly held** (pp. 20–31, 47–63). Still missing pp. 1–19, 26,
-  32–46, 64–end, incl. the table of contents. Priority B below still stands, but is
-  now much less urgent: Menghin 2000 carries the comparative data that 2010 was
-  being scanned for.
+- **Menghin 2010 — ✔ DONE, complete.** Whole book pp. 1–88 + front matter in
+  `assets/menghin/2010/full/` (85 page images + text, 8-batch PDF). The Vergleich
+  chapter is read and written up: `findings/FINDING_2026-10-13_menghin-2010-ingested.md`;
+  run `runs/RUN_2026-10-13_ingest_menghin2010.md`.
 - **Item 1 (Schauer 1986)** and the **2003 catalogue chapter** remain open. Schauer is
   now a *nice to have*, not the blocker: Menghin 2000 reproduces Schauer's per-zone
   data for the other three hats (his Abb. 17, 20, 27 are drawn from Schauer's plates).
@@ -113,12 +113,14 @@ transcribed into `data/readings/menghin2000_zones.json` and verified by control 
 
 ## Status of the digitization plan
 
-**A. Menghin 2000 — ✔ complete.** (This was the priority for the cross-hat test.)
+**A. Menghin 2000 — ✔ complete.** **B. Menghin 2010 — ✔ complete.** The two
+monographs are fully in the repo; the remaining print-only items are Schauer 1986
+and the Menghin 2003 catalogue chapter, neither of which blocks the cross-hat test.
 
 **Done when:** for Ezelsdorf at least, a per-zone table of rings-per-stamp and the
 zone order is transcribed into `data/readings/` with a `_source` field, and the
 cross-hat script runs.
 
-**Status 2026-10-12:** the first half is **DONE** — four per-zone tables, all four
-hats, in `data/readings/menghin2000_zones.json`. The second half (the cross-hat
-script) is `todo/T2`, which is no longer blocked.
+**Status 2026-10-13:** the first half is **DONE** — four per-zone tables, all four
+hats, in `data/readings/menghin2000_zones.json`, cross-checked against Menghin 2010.
+The second half (the cross-hat script) is `todo/T2`, which is no longer blocked.

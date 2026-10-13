@@ -1,0 +1,603 @@
+
+
+===== front_cover =====
+MUSEUM FÜR VOR- UND FRÜHGESCHICHTE
+WILFRIED MENGHIN
+DER BERLINER GOLDHUT
+Macht, Magie und Mathematik in der Bronzezeit
+DIE SAMMLUNGEN DES MUSEUMS
+FÜR VOR- UND FRÜHGESCHICHTE
+BAND II
+Herausgegeben von Matthias Wemhoff
+STAATLICHE MUSEEN ZU BERLIN -
+STIFTUNG PREUSSISCHER KULTURBESITZ
+SCHNELL - STEINER
+
+
+===== imprint =====
+Umschlag:
+Der Berliner Goldhut, Foto Claudia Plamp, Berlin
+Bibliografische Information der Deutschen Nationalbibliothek
+Die Deutsche Nationalbibliothek verzeichnet diese Publikation in der Deutschen
+Nationalbibliografie; detaillierte bibliografische Daten sind im Internet über
+http://dnb.d-nb.de abrufbar.
+Berliner Goldhut / Museum für Vor- und Frühgeschichte,
+Staatliche Museen zu Berlin - Stiftung Preußischer Kulturbesitz.
+Wilfried Menghin. Hrsg. von Matthias Wemhoff. -
+Regensburg: Schnell und Steiner, 2010
+Die Sammlungen des Museums für Vor- und Frühgeschichte: Bd. II
+ISBN 978-3-7954-2389-6 (Museumsausgabe)
+ISBN 978-3-7954-2271-4 (Buchhandelsausgabe)
+© 201o by Staatliche Museen zu Berlin - Stiftung Preußischer Kulturbesitz
+und Verlag Schnell & Steiner
+www.smb.museum.de
+www.museumsshop.smb.museum.de
+Gestaltung: Wilfried Menghin und Florian Knörl
+Umschlaggestaltung: Anna Braungart, Tübingen
+Satz und Druck: Erhardi Druck GmbH, Regensburg
+Fotos: Claudia Plamp, Berlin
+Alle Rechte vorbehalten. Ohne ausdrückliche Genehmigung des Verlages
+ist es nicht gestattet, dieses Buch oder Teile daraus auf fotomechanischem
+oder elektronischem Weg zu vervielfältigen.
+Weitere Informationen zum Verlagsprogramm erhalten Sie unter:
+www.schnell-und-steiner.de
+
+
+===== toc =====
+Inhaltsverzeichnis
+Vorwort des Herausgebers 7
+Vorwort des Autors 9
+Einleitung II
+Urnenfelderzeit I1
+Die goldenen Hüte I5
+Schifferstadt I5
+Cône d'Avanton 17
+Der Goldkegel von Ezelsdorf-Buch 18
+Der Berliner Goldhut 20
+Techniken der Herstellung 25
+Ornamentanalyse 27
+Form, Verzierung und Datierung 31
+Die Funktion 33
+Die kosmischen Piktogramme 39
+Zahlensymbolik und Rechensystem 47
+Die Kalenderthese 49
+Historische Kalender 50
+Der Mondzyklus im System des Berliner Goldhutes 53
+Das Zahlenwerk und seine Entschlüsselung 55
+Berliner Goldhut - solar 57
+Berliner Goldhut - lunar 58
+Das lunisolare Konzept 58
+Die praktische Anwendung59
+Der Vergleich 65
+Die goldenen Kalenderhüte 73
+Der Kult 75
+Literatur 84
+Abbildungsnachweise 88
+
+
+===== page007 =====
+Vorworte
+Vorwort des Herausgebers
+Der Goldhut im Sternensaal des Neuen Museums ist zweifel-
+los einer der Höhepunkte jeden Besuches im Neuen Mu-
+seum. So wie Nofrete die Nordostecke im Nordkuppelsaal
+besetzt, so erwartet der Goldhut im Sternensaal in der Süd-
+westecke des Gebäudes seine Bewunderer.
+Kaum eine andere Objektgruppe der Vor- und Frühge-
+schichte übt eine solche Faszination aus und weckt im lang wir-
+kenden kulturellen Gedächtnis auch noch heute Erinnerungen
+an geheimes Wissen und verborgene Kräfte. Dabei gibt es bis
+heute nur vier Goldhüte in dieser besonderen, langgestreckten
+Form. Der Berliner Goldhut, wie er heute schon wie selbstver-
+ständlich genannt wird, ist dabei erst vor wenigen Jahren be-
+kannt geworden. Leider ist er bislang seiner Fundgeschichte
+beraubt, wir wissen nicht, wann und wo er gefunden wurde,
+und so müssen wir diese Zusammenhänge aus den Auffin-
+dungsumständen der anderen drei, glücklicherweise gut doku-
+mentierten Goldhüte mehr oder weniger sicher erschließen.
+Die Goldhüte sind aufrecht stehend sorgfältig vergraben wor-
+den. Eine kultische Wertschätzung ist dadurch zu erkennen.
+Dieser Aspekt spiegelt sich in der Präsentation im Sternensaal
+wider. Der Goldhut steht frei im Zentrum des Raumes und
+wird von einem kreisförmigen Einbau umgeben, der letzlich an
+seit der Jungsteinzeit bekannte Kultanlagen auf Bergrücken er-
+innern soll. Ist der Berliner Goldhut bei diesen Fundzusam-
+menhängen auf den hilfreichen Vergleich angewiesen, so ist er
+selbst wegweisend bei der weiteren Interpretation. Der Betrach-
+ter wird zunächst von den gleichmäßigen ornamentalen Verzie-
+rungen fasziniert und begreift sie wie selbstverständlich als
+Schmuckornament. Doch ist dies wirklich die gesamte Aus-
+sage? Können wir die Ornamente nicht noch ganz anders ver-
+stehen? Wilfried Menghin hat sich von dieser Frage fesseln las-
+sen und gemeinsam mit Archäoastronomen seit der Erwerbung
+des Goldhutes für das Museum für Vor- und Frühgeschichte an
+der Entschlüsselung des Codes gearbeitet, der den Goldhut
+nicht nur zu einem einzigartigen Repräsentations- und Herr-
+schaftsmonument der Vorgeschichte, sondern auch zu einem
+besonderen Wissensspeicher macht, der es ermöglicht, lang er-
+worbenes kalendarisches Wissen über Generationen weiterzu-
+geben. So kann der Goldhut zu einem Schlüsselfund werden,
+der uns Wege aufzeigt, wie scheinbar schriftlose Kulturen Wis-
+sen überliefern konnten. Dies lässt viele Ornamente auf bron-
+zezeitlichen Funden in einem anderen Licht erscheinen. Es ist
+Wilfried Menghins großes Verdienst, dass er die ersten Jahre
+seines „Ruhestandes" voller Elan der weiteren Erforschung des
+Goldhutes gewidmet hat und bereit war, diese Erkenntnisse,
+die sich noch in der intensiven wissenschaftlichen Diskussion
+befinden, bereits jetzt dem Publikum in dieser allgemeinver-
+ständlichen Publikation vorzulegen. Auch diese Publikation
+fordert den Leser allerdings, denn er muss schon die Bereit-
+schaft mitbringen, den Berechnungen konzentriert zu folgen.
+Dann wird ihm allerdings ein Horizont eröffnet, der die kultu-
+relle Leistungsfähigkeit am Ende der Bronzezeit in einem ganz
+neuen Licht erscheinen lässt.
+Mein Dank als Herausgeber gilt dem Verlag Schnell und
+Steiner, insbesondere dem Verleger Albrecht Weiland. Nur so
+war es möglich, Band 2 der „Sammlungen des Museums für
+Vor- und Frühgeschichte" nur wenige Monate nach Eröff-
+nung des Neuen Museums vorzulegen.
+Matthias Wemhoff
+
+
+===== page009 =====
+Vorwort des Autors
+Der Berliner Goldhut ist allein aufgrund seiner Form, seiner
+Größe und seines Materials das herausragende Objekt in den
+Sammlungen des Museums für Vor- und Frühgeschichte der
+Staatlichen Museen zu Berlin. Der 74,5 cm hohe, mit Punzorna-
+menten reich verzierte, papierdünn in einem Stück aus Gold ge-
+triebene Hohlkörper wiegt nur 490 Gramm. Die hoch aufragende
+Kopfbekrönung ist die vierte bislang bekannte und zugleich die
+am besten erhaltene ihrer Art aus der Bronzezeit Europas.
+Das archäologische Spitzenstück wurde 1996 aus dem
+Kunsthandel erworben. Der Fundort und die Fundumstände
+sind unbekannt. Die Authentizität des Objekts als Produkt
+eines bronzezeitlichen Goldschmiedes ist durch die archäolo-
+gische Autopsie und naturwissenschaftlich-technische Analy-
+sen gesichert. Im Katalog des Museums ist der ‚Berliner
+Goldhut" unter der Nummer II c 6068 „Zeremonialhut.
+Gold, Treibarbeit mit Punzornamenten, Fundort unbekannt,
+Süddeutschland. 10.-9. Jh. v. Chr." inventarisiert.
+Trotz des fehlenden archäologischen Kontextes ist das Ber-
+liner Exemplar der Schlüsselfund für die Interpretation nicht
+nur der kleinen Gruppe der Goldhüte vom sogenannten „Lyp
+Schifferstadt", sondern lässt darüber hinaus die Geisteskultur
+im prähistorischen Mitteleuropa der späten Bronzezeit erah-
+nen. Gleich den Goldgefäßen und anderem Sakralgerät wer-
+den die ungewöhnlichen Objekte, die unter immer gleichar-
+tigen Umständen meist zufällig ausgegraben wurden, in
+Zusammenhang mit den magisch-kultischen Verhaltenswei-
+sen des bronzezeitlichen Menschen gesehen.
+Die Funktion der Goldhüte - bedeckten sie die Spitzen von
+Kultpfählen, waren sie Kopfbekrönungen von Kultbildern oder
+von realen Menschen? - blieb in der Forschung bis zum Be-
+kanntwerden des Berliner Exemplars strittig. Dasselbe gilt für
+die Deutung der Ornamente. Die Punzmuster aus Buckeln mit
+konzentrischen Kreisen als vorherrschendes Dekorelement der
+Goldhüte, wie sie ebenso auf den Goldschalen und Goldschei-
+ben derselben Epoche zu finden sind, wurden rein ornamental
+aufgefasst, und nur archäologische Laien, meist Naturwissen-
+schaftler oder Esoteriker, wollten in den Mustern eine Systema-
+tik mit kosmischer Bedeutung sehen.
+Zum Fragenkomplex um die Goldhüte gehört auch ihre
+kulturmorphologische Ableitung. Sind sie eine originäre mit-
+teleuropäische Schöpfung oder wurden sie aus fremden Kul-
+turen - ex oriente lux! - samt einem Bündel anderer Sitten
+und Gebräuche übernommen?
+Das intensive Studium des Berliner Goldhutes, parallel
+dazu die Untersuchungen und Interpretationen anderer ar-
+chäologischer Objekte wie der bronzezeitlichen Prunkschilde
+und Großgefäße (Jens May), vor allem aber der bekannten
+„Himmelsscheibe von Nebra" (Harald Meller u. a.) sowie die
+Ausgrabungen und Deutungen der neolithischen und bron-
+zezeitlichen sogenannten Erdwerke als Kalenderbauten (zu-
+letzt François Bertemes) brachten eine Forschung wieder in
+Gang, die mit der „Ortungskunde" aus der Zeit vor dem
+Zweiten Weltkrieg in Misskredit geraten war.
+Speziell beim Berliner Goldhut erbrachten die Analyse des
+Ornaments und die Dechiffrierung des darin enthaltenen Re-
+chensystems kulturhistorisch bedeutsame Erkenntnisse: Folgt
+man der Argumentation des Autors, verbirgt sich im Orna-
+ment ein System zur Berechnung eines lunisolaren Kalender-
+werkes, das in unterschiedlicher Intensität auch im Orna-
+ment der drei anderen Vergleichsfunde nachgewiesen werden
+kann. Darüber hinaus machen signifikante Zahlen wahr-
+scheinlich, dass sich das System auch hinsichtlich eines So-
+this-Kalenders zur Berechnung der Finsternisse (Rahlf Han-
+sen) oder eines Venuskalenders (Theodor Schmidt-Kaler)
+interpretieren lässt.
+Die Sachlage ist kompliziert und in der Darstellung nur
+bei eingehender Beschäftigung mit dem Objekt nachvollzieh-
+bar, wenn man nicht gerade Kalenderforscher ist. Das zeigt
+sich vor allem dann, wenn die Frage nach dem Wieso und
+Warum sowie dem Wert und dem praktischen Nutzen der
+Kalenderrechnung aufkommt. Wer waren die Träger der
+Goldhüte? Hohepriester nach alttestamentarischem Muster
+oder Inkarnationen kosmischer Mächte, und für welchen
+Kult waren sie zuständig? In welchen kulturhistorischen Zu-
+sammenhängen sind sie zu sehen?
+Sind die Goldhüte tatsächlich - dahin hat den Autor lang-
+jährige Forschung geführt - bronzezeitliche Minicomputer
+zur Berechnung und Vorhersage kalendarischer Daten? Sind
+sie ins Magische transponierte Speicher astronomischen
+Geheimwissens der bronzezeitlichen Eliten? Hat man den ge-
+heimen Schlüssel zur Deutung der Ornamente in der ausge-
+henden Bronzezeit verloren? Warum wurden die Goldhüte
+intentional vergraben und so der weiteren kultischen oder gar
+profanen Nutzung entzogen? Haben sie nicht mehr funkti-
+oniert oder war ihre rituelle Bestattung die Folge eines radi-
+kalen Kulturbruchs?
+Die Kalenderthese ist nur ein Teil dieses Fragenkomplexes,
+aber ein sehr wichtiger. Denn erst mit der Deutung der gol-
+denen Hüte als sakrale Bekrönungen bronzezeitlicher Pries-
+terkönige, deren Macht sich auf ein (wahrscheinlich) gehei-
+mes Wissen um die kosmische Ordnung gründete, werden
+die Goldhüte, über ihren durch das Material, die Form und
+ihre Seltenheit vorgegebenen Wert hinaus, zu den herausra-
+genden kultur- und religionsgeschichtlichen Zeugnissen.
+Wenn bewiesen werden kann, dass sich im Ornament der
+Goldhüte, insbesondere in denen von Berlin und Ezelsdorf-
+Buch aus der Zeit um 1000 v. Chr. das System zur Berech-
+nung eines gebundenen Kalenders auf der Grundlage des
+19-jährigen Mondzyklus verbirgt, stellen sich Fragen, die weit
+über das Religionsgeschichtliche hinausgehen. Und spätes-
+tens hier wird einem das ausgeprägte abstrakte mathemati-
+sche Denkvermögen der Menschen der Bronzezeit bewusst.
+Wer das kalendarische Zahlensystem im Ornament der Gold-
+hüte konzipiert und damit sein profundes astronomisches
+
+
+===== page010 =====
+Wissen und seine mathematischen Fähigkeiten in der schrift-
+losen europäischen Bronzezeit auf dem Kultgegenstand doku-
+mentiert hat, ist weit entfernt von prälogischem Denken,
+sondern steht geistesgeschichtlich auf dem selben Niveau wie
+die Träger der Hochkulturen des Vorderen Orients.
+Als der Autor vor über einem Jahrzehnt anfing, sich mit
+dem Goldhut und der Entschlüsselung des Ornamentsystems
+zu beschäftigen, ließen seine astronomischen Kenntnisse zu
+Wünschen übrig. Auch jetzt bekennt er sich in dieser Hinsicht
+freimütig immer noch als Laie, obwohl die Staatlichen Mu-
+seen zu Berlin seine zunächst einsamen Forschungen in den
+Jahren 2006 und 2008 in erfreulicher Weise mit zwei wissen-
+schaftlichen Kolloquien zum Thema Archäologie und Kunst-
+wissenschaft - Mathematik und Astronomie im Museum für
+Vorwort des Autors •
+Vor- und Frühgeschichte flankierend unterstützten. Dieser in-
+terdisziplinäre Gedankenaustausch zwischen Natur- und
+Geisteswissenschaften machte deutlich, dass Fortschritte in
+der historischen Kalenderforschung nur aus der Symbiose der
+verschiedenen Disziplinen erwachsen können.
+Was die Publikation betrifft, ist dem Museum für Vor-
+und Frühgeschichte und seinen Mitarbeiterinnen und Mitar-
+beitern zu danken, besonders im Graphik- und Fotoatelier:
+Daniela Hinz-Greinert, Sylvia Nettekoven und Mario Kac-
+ner sowie Claudia Plamp. Der Dank gilt ebenso den beiden
+Prähistorikerinnen Dr. Eva Rosenstock und insbesondere Dr.
+Angelika Hofmann, die den Autor mit ihrer Skepsis und ju-
+gendfrischer Kritik zur Präzisierung seiner Darstellung, im
+Speziellen seiner Kalenderthese, gedrängt haben.
+Berlin, im Februar 2010
+Wilfried Menghin
+
+
+===== page010b =====
+
+
+===== page011 =====
+Einleitung
+Als im Alten Ägypten die Pharaonen der 18. bis 21. Dynastie
+herrschten, in der 2. Hälfte des 1. vorchristlichen Jahrtausends
+in der ägäischen Welt die mykenische Kultur blühte und wieder
+unterging, die Assyrer die bestimmende Macht in Mesopota-
+mien waren und das Großreich der Hethiter das Bindeglied
+zwischen den Kulturen Vorderasiens und der Ägäis bildete,
+bevor es am Ende des 13. Jahrhunderts v. Chr. den überall im
+östlichen Mittelmeerraum wirksamen politischen Umschich-
+tungen zum Opfer fiel, bestanden in der späten Bronzezeit Eu-
+ropas mit dem Atlantischen und dem Nordischen Kreis sowie
+den Urnenfelderkulturen im Wesentlichen drei große Kultur-
+komplexe. Die in den Hochkulturen des Nahen Ostens sowohl
+aus Schriftquellen als auch archäologisch für die Zeit um 1200
+v. Chr. rekonstruierbaren epochalen Vorgänge wirkten offen-
+sichtlich auch auf die Kulturverhältnisse der anonymen Völker
+im weit entfernten schriftlosen Mitteleuropa nachhaltig ein.
+Abb. 1: Detail des Ornaments des Berliner Goldhutes.
+Urnenfelderzeit
+Im Raum von der mittleren Donau bis nach Ostfrankreich
+und von den Alpen bis zum Nordrand der Deutschen Mittel-
+gebirge entwickelte sich aus dem spätbronzezeitlichen Kultur-
+Abb. 2: Spätbronzezeitliche Urnenbestattung in einer Grube mit Resten des Scheiterhaufens. Oberteil der Urne abgepflügt. Erhalten sind im
+Unterteil der Urne Leichenbrand, und unverbrannt ein Satz Tongefäße für Speise- und Trankbeigaben sowie ein Bronzemesser. Grab 293 aus
+dem großen Urnenfeld von Zuchering-Ost, Stadt Ingolstadt in Bayern.
+
+
+===== page012 =====
+12
+Einleitung
+Abb. 3: Urnenfelderzeitliche Höhensiedlung. Zu Wällen verstürzte mehrteilige Befestigungsanlagen gliedern den 668 m hohen Ipf bei
+Bopfingen (Ostalbkreis, Baden-Württemberg) in eine Ober-, Unter- und Vorburg. Neueste archäologische Untersuchungen auf dem Zeugen-
+berg am westlichen Rand des Nördlinger Ries haben mehrere Besiedlungsphasen von der späten Bronzezeit bis in die ältere Eisenzeit ergeben.
+Blick von Norden.
+milieu die sogenannte Urnenfelderzivilisation. Der im 14.
+vorchristlichen Jahrhundert allmählich einsetzende Kultur-
+wandel zeigt sich im archäologischen Befund am augenfälligs-
+ten in der Ablösung der Körperbestattung unter Hügeln
+durch die Leichenverbrennung und Beisetzung der Urnen in
+großen Gräberfeldern (Abb. 2).
+Ein neues, überwiegend religiös motiviertes Kulturphäno-
+men stellen auch die sogenannten „Deponierungen" dar. Die
+in Gewässern und Sümpfen versenkten, in der Erde vergrabe-
+nen oder in Höhlen und Felsspalten verborgenen materiell
+wertvollen Horte werden heute - je nach Zusammensetzung
+ihres Inventars - als profane Schätze, Opfergaben an die un-
+irdischen Mächte (Bernhard Hänsel) oder - im Hinblick auf
+die qualitativ und quantitativ wenigen Metallbeigaben in den
+Gräbern dieser Zeit - als Selbstausstattung der Verstorbenen
+für das Jenseits interpretiert.
+Die Definition der „Urnenfelderkultur" als eigenständige
+vorgeschichtliche Epoche ist darüber hinaus durch ein Bün-
+del von technischen, ökonomischen, gesellschaftlichen und
+rituellen Neuerungen gegeben, die auf eine verstärkte inter-
+kulturelle Kommunikation und den Transfer von Gütern und
+Ideen über große Distanzen zurückzuführen sind.
+Eine ausgeprägte soziale Differenzierung zeigt sich zu Beginn
+und wieder gegen Ende der Urnenfelderzeit vor allem im Be-
+stattungsritus. Überdurchschnittlich qualitätvolle Beigabenaus-
+stattungen und die elitäre Absonderung kleiner Bestattungsge-
+meinschaften von den Urnenfeldern sowie ein besonderer
+Grabbau lassen eine strenge hierarchische Struktur der spätbron-
+zezeitlichen Gesellschaften erkennen. Mit dem Begräbnis in
+einem Tumulus und der zeremoniellen Ausstattung mit Watten
+und Schmuck, Trink- und Essgeschirr sowie, in besonders her-
+ausragenden Fällen, auch der Beigabe von Wagen, imitieren diese
+bronzezeitlichen Eliten offensichtlich Vorbilder aus den Donau-
+ländern und der Ägäis, wobei die aufwendige Selbstdarstellung
+den Reichtum und die Macht einer nach ökonomischen und
+politischen Gesichtspunkten nur vage beschreibbaren Ober-
+schicht über den Tod hinaus dokumentiert (Stefan Winghart).
+Die Formen von Schmuck, Waffen und Gerät unterlagen
+in der rund 400 Jahre dauernden „Urnenfelderzeit" einer
+kontinuierlichen Weiterentwicklung, die sich - abgesehen
+von den sogenannten Fürstengräbern - weniger aus den Bei-
+gaben in den Brandgräbern, sondern in den zahlreichen Waf-
+fen- und Schatzdepots, welche mehrheitlich als Zeugnisse
+spezifischer Opfersitten zu werten sind, nachvollziehen lässt.
+Die Bronzegusstechniken, wie überhaupt das Schmiedehand-
+werk, gelangten zu einer ersten Hochblüte, wobei die offen-
+bare Prosperität von Handel und Handwerk auf einer gesi-
+cherten bäuerlichen Wirtschaft und einer weitgreifenden
+politischen Organisation beruhte.
+Auf markanten Höhen oder in natürlich geschützten Nie-
+derungen entstanden, vom Karpatenbecken bis nach Ostfrank-
+reich, befestigte stadtartige Siedlungen als Herrschafts-, Wirt-
+schafts- und Kultzentren größerer Territorien, deren zu Wällen
+verstürzte Holz-Erde-Mauern vielfach noch heute im Gelände
+
+
+===== page013 =====
+zu sehen sind. Die wenigen archäologisch untersuchten Bei-
+spiele solcher meist großflächigen Anlagen weisen eine dichte
+Innenbebauung auf. Das Fundspektrum bezeugt handwerkli-
+che Tätigkeiten und darüber hinaus verweisen, wie auf dem
+Bullenheimer Berg, zahlreiche intentional verborgene Depo-
+nierungen von Schmuck und Gerät auf die Bedeutung dieser
+zentralen Orte für die Religion und den Kult (Abb. 3).
+Die Gleichförmigkeit der Kulturelemente in den urnenfel-
+derzeitlichen Gesellschaften Mitteleuropas erschwert eine
+geografische oder archäologische Untergliederung. Diese deu-
+ten bestenfalls die Verbreitung bestimmter Keramikgruppen
+an (Lothar Sperber). Darüber hinaus ist nur grob zwischen
+einer westlichen und östlichen Urnenfelderkultur mit fließen-
+den Übergängen zu unterscheiden, wobei in den Randgebie-
+ten zum Nordischen Kreis der Bronzezeit, in Norddeutsch-
+land und Südskandinavien sowie zum westeuropäischen
+Atlantischen Kreis oder auch nach Italien und vor allem nach
+Südosteuropa wechselseitige Beeinflussungen gegeben sind.
+Einleitung
+13
+Echte Gemeinsamkeiten, so die Brandbestattung in Ur-
+nenteldern und die „Hortungssitte" sowie formale Überein-
+stimmungen in den bronzenen Schmuck- und Gebrauchsge-
+genständen, reihen die Lausitzer Kultur im nordöstlichen
+Mitteleuropa dagegen in den Komplex der spätbronzezeitli-
+chen Urnenfelderkulturen ein, wobei gruppenspezifische Be-
+sonderheiten in der Keramik und im Bestattungsbrauch ihre
+Eigenständigkeit betonen (Abb. 4).
+Neben den Begräbnisriten spiegelt sich die Spiritualität
+der urnenfelderzeitlichen Gesellschaften in den zahlreich
+überlieferten Hortfunden. An vielleicht ehemals naturheili-
+gen Plätzen oder individuell bestimmten Stellen vergraben
+oder versenkt, lassen sich aus den regelhaft in Form und Zahl
+kanonisierten Kombinationen von spezifischen Sachtypen, so
+Waffen, Schmuck, Gerät und Pferdegeschirr sowie Kerami-
+ken - im Neuzustand oder intentional zerstört - in den De-
+pots kultische Verhaltensmuster als Ausdrucksformen einer
+uns unbekannten bronzezeitlichen Religion erschließen. Die
+Abb. 4: Lausitzer Keramikensemble. Das Keramikensemble aus Terrinen, Schöpfgefäßen, Kannen sowie zahlreichen Trinkschalen zeittypischer
+Form wurde 1937 beim Bau der Reichsautobahn aus zwei nahe beieinander liegenden Gruben geborgen. Es handelt sich vermutlich um die
+Relikte eines (kultischen) Festes, bei dem das benutzte Geschirr nach der Feier intentional zerschlagen und vergraben wurde, um es einer
+weiteren profanen Verwendung zu entziehen. 10./9. Jahrhundert v. Chr. Höhe des größten Gefäßes: 32,4 cm. Raddusch, Kr. Oberspreewald-
+Lausitz, Brandenburg.
+
+
+===== page014 =====
+14 • Einleitung
+14
+Einleitung
+Die Bilderwelt in der Nordischen Bronzezeit ist demgegen-
+über weitaus differenzierter. Auch hier sind die Sonnenscheibe
+3353355
+00055500055
+100000
+und das Boot/die Barke die dominanten Symbole, doch spielt,
+0000000
+neben dem Vogel, das Pferd eine bedeutende Rolle. Darüber
+hinaus weisen die Bilder von Menschen und szenische Darstel-
+lungen auf Felsbildern und bronzenem Gerät auf andersartige
+.0..0
+religiöse Vorstellungsmuster hin. Auch sie dürften ihre Wurzeln
+ursprünglich im ägäischen Raum oder noch weiter östlich ge-
+habt haben, erfuhren auf ihrem Weg nach Norden aber eine
+0000000000000000000
+andersartige Transformation als diejenigen, die in den Urnen-
+00000001
+10000000000000
+0000000000
+1000000.
+felderkulturen Mitteleuropas adaptiert wurden. Grundsätzli-
+000000000000
+00000000000
+.00.00
+che Gemeinsamkeiten im Kult zeigen sich aber dennoch im
+Phänomen der Deponierungen und in der Dominanz der Sym-
+bole für die Sonne und die Barke.
+Unmittelbare Zeugnisse bronzezeitlicher Religionsaus-
+übung in Europa sind selten. Sie zeigen sich am eindrucks-
+vollsten in den goldenen Hüten, die nur in wenigen Exemp-
+laren überliefert sind. Zusammen mit goldenen Halskragen
+.......
+und goldenen Besätzen von Roben sowie goldenen Trinkbe-
+chern als liturgisches Gerät lassen sie einen komplexen Kult
+erahnen, in dessen Mittelpunkt die kosmischen Kräfte und
+eine mächtige Priesterschaft standen (vgl. Abb. 9).
+Abb. 5: Vogel-Sonnenbarkenmotiv. Umzeichnungen von gepunz-
+ten und getriebenen Bildern des Sonnensymbols und des Vogelbar-
+kenmotivs auf bronzenen Großgefäßen: 1 Unterglauheim (Bayern),
+- 2 Gevelinghausen, Kr. Meschede (Nordrhein-Westfalen), - 3 Vejo,
+Quattro Fontanili, Prov. Viterbo (Italien).
+Hort-, Moor- und Gewässerfunde sind Teil eines Kulturkom-
+Abb. 6: Kultwägelchen von Burg, Umzeichnung. Kultwägelchen
+plexes alteuropäischer Tradition, zu der in der Urnenfelderzeit
+mit Deichsel und Vogelprotomen, Bronze. Burg, Kr. Spree-Neiße,
+neue Elemente hinzutreten, die das Althergebrachte in einem
+von Ost nach West und von Süd nach Nord fortschreitenden
+Brandenburg.
+a. Dreirädriges Kultwägelchen mit starrer Achse. Deichseltülle
+Akkulturationsprozess überlagerten.
+gelocht, je ein Vogel mit angelegten Flügeln auf der Tülle und der
+Vor allem die Ausbreitung einer neuartigen Symbol- und
+Deichselgabel, die, verlötet mit den Manschetten der Achse, in zwei
+Bildwelt kennzeichnet die Verdichtung des Kontaktnetzwerkes
+hoch gestielte Vogelprotome mit aufschlagenden Schwingen enden.
+mit der mediterranen Welt und Südosteuropa, in welches die
+Das mittlere der vierspeichigen Räder ist mittels einer mitgegossenen
+bronzezeitliche Bevölkerung Alteuropas seit dem 14. Jahrhun-
+Nabe um die Achse drehbar. L. 17,6 cm; Br. 17,8 cm. Angeblich bei
+dert eingebunden war. In den ansonsten bilderfeindlichen
+Kanalisierungsarbeiten im Moor östlich des Schlossberges von Burg
+Bronzezeit- und Urnenfelderkulturen Mitteleuropas treten, zei-
+in 1 m Tiefe unter dem Flussbett der Spree gefunden.
+chenhaft verkürzt, vor allem die Sonnenscheibe und der Vogel
+Späte Bronzezeit, 10./9. Jahrhundert v. Chr. Erworben von Rudolf
+auf, die in der Kombination mit einem stilisierten Boot als
+Virchow. Museum für Vor- und Frühgeschichte Berlin. Originale seit
+„Vogel-Sonnenbarke" die bestimmenden religiösen Bildkürzel
+1945 im Puschkin-Museum Moskau.
+sind (Abb. s).
+b. Zweirädriges Kultwägelchen mit starrer Achse und Wasservögeln
+Vögel, aufgrund der Schnabelbildung zoologisch als Was-
+auf der Deichseltülle und der Deichselgabel. Von der Achse aufstei-
+servögel gedeutet, treten im Totenkult als Keramiken auf oder
+gend lang gestielte Vogelprotome mit schlagenden Schwingen.
+sind sinngebende Protomen an den in unterschiedlicher Form
+Vierspeichige Räder mittels Naben um die starre Achse beweglich.
+und Konstruktion aus dem östlichen Kreis der Urnenfelder-
+Fundstelle und Fundumstände unbekannt. Erwerbung Rudolf
+kultur sowie aus der Lausitzer Kultur des nordöstlichen Mit-
+teleuropas überlieferten bronzenen Kultwägelchen (Abb. 6).
+Virchow 1865.
+
+
+===== page015 =====
+Die goldenen Hüte
+der Krempe stehend, schräg an den Schaft gelehnt, fanden
+Schifferstadt
+sich drei bronzene, sogenannte mittelständige Absatzbeile
+westeuropäischen Typs. Bei der amtlichen Nachgrabung wur-
+Lange Zeit rätselhaft blieb die Bedeutung und Funktion der
+Goldkegel vom sogenannten „Typ Schifferstadt", bei denen
+den noch Bruchstücke eines Kupferdrahtes entdeckt, wohl
+es sich wohl um die eindrucksvollsten unmittelbaren Zeug-
+die Reste einer Randseele, über die der Krempenrand ur-
+sprünglich gebörtelt war. Der außergewöhnliche, für die da-
+nisse bronzezeitlicher Religionsausübung in Europa handelt.
+Der namengebende Fund wurde bereits im Jahr 1835 bei
+malige Zeit erstaunlich gut dokumentierte Fund gelangte zu-
+Schifferstadt in der damals noch bayerischen Pfalz bei Feldar-
+erst nach München und später, nach der Loslösung der
+Rheinpfalz von Bayern, zurück in das Historische Museum
+beiten gemacht. Dieser „Goldene Hut von Schifferstadt" ist Rheinpfalz von Bayern, zurück in das Historische Museum
+beiten gemacht. Dieser „Goldene Hut von Schifferstadt" ist
+ein aus Gold dünn ausgetriebener Hohlkörper mit halbrun-
+der Pfalz in Speyer (Abb. 7).
+der Kalotte, breiter Krempe und konischer Spitze von knapp
+Eine jüngste Restaurierung und intensive herstellungs-
+technische Untersuchung des Schifferstädter Goldhutes
+30 cm Höhe. Er war im Boden aufrecht auf einer tonigen
+Unterlage stehend so vergraben, dass sich seine Spitze nur
+wurde 1976 in den Werkstätten des Römisch-Germanischen
+Zentralmuseums Mainz durchgeführt (Maiken Fecht in
+wenig unterhalb der Humusunterkante befand. Senkrecht auf
+2 5 3 4
+2
+4 6
+SK
+Nr.
+5
+KA
+Z 1
+O
+19
+1 19
+Z 2
+1 19
+TB 1
+Z 3
+22
+22
+1 22
+Z 4
+22
+TB 2
+2 24
+Z 5
+48
+Z 6
+2 25
+50
+00000000
+JO G
+TB 3
+10000000
+2 27
+Z7
+54
+2 | 35
+70
+Z 8
+2
+2 35
+35
+70
+Z 9
+0000000
+Z 10
+46
+2
+92
+0000000000
+TB 4
+2 55
+2
+110
+55
+Z 11
+0000enon0•
+Abb. 8: Der Goldener Hut von Schifferstadt. Aufschlüsselung des
+Ornaments nach der Zonenabfolge in Kombination mit der Vertei-
+lung identischer Stempelmuster und deren Zahlenwerte.
+Erläuterung: Z: Zone. - TB: Trennbänder. - Nr.: Stempel Nr. - K: Anzahl
+der Kreise im Symbol. - A: Anzahl der Symbole pro Zone. - SK:
+Summe der Kreise pro Zone. - Grün: Schaltzone. - Gelb: die Zahl 19.
+Abb. 7: Der Goldene Hut von Schifferstadt.

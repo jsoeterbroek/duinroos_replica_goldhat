@@ -1,0 +1,142 @@
+Zahlensymbolik und Rechensystem
+56
+- Schaltzone
+Abb. 58: Berliner Goldhut - solar.
+Symbole
+Berlin solar
+Grafische Darstellung des Systems
+Vierteljahre, solar
+in den 19 Zonen des Ornaments
+Anzahl
+9
+7
+4
+5
+19 18 17 16 15 14 13 12 11 10
+der Ringe
+für die Zählung der Tage im
+Abstand von 4 bis 19 Vierteljahren
+42
+Zone 3
+(4 ¾ Jahre bzw. 57 Monate) im
+75
+Zone
+Vergleich mit den kalendarischen
+38
+Zone
+5
+Zielwerten.
+Rote Punkte: erfasste Zonen. -
+90
+6
+Zone
+Grüne Punkte: abzüglich Schalt-
+57
+7
+Zone
+zone. - Kalendarische Zielwerte:
+105
+8
+auf- bzw. abgerundet +/- 0,5.
+Zone
+Sternchen (*): absolute Überein-
+57
+9
+Zone
+stimmung der Tageszählung.
+95
+Zone 10
+60
+Zone11
+100
+Zone 12
+60
+Zone 13
+105
+Zone 14
+90
+Zone 15
+38
+Zone 16
+66
+Zone 17
+126
+Zone 18
+138
+Zone 19
+162
+Zone 20
+235
+Zone 21
+639
+458
+819
+1187
+1002
+1371
+1739
+1556
+Summe
+1739
+|548
+365
+548
+1097
+913
+731
+1276
+der Ringe
+1644
+1461
+639
+457
+822
+1005
+1187
+1552
+1370
+1735
+kalendarische 1735
+kalendarische
+731
+548
+365
+1278
+1096
+913
+1461
+Zielwerte
+1644
+* -3 * * * +1 *
++4 * +4 * +1-2* +1 - 3
+Differenz
+genstand ein lunisolares Kalendersystem zur Abbildung kom-
+Der Berliner Goldhut weist in den 19 für die kalendari-
+men sollte: Die Zahl 1739 stellt unter dieser Vorgabe den
+schen Berechnungen relevanten Zonen 3 bis 21 auf dem
+Mittelwert zwischen den absolut 1735 Tagen für 57 Sonnen-
+Schaft, der Kalotte und der Krempe 418 Scheibensymbole mit
+monate und absolut (abgerundet) 1742 Tagen für 59 lunare
+1701 Ringen und zweimal 19 Sondersymbolen insgesamt 1739
+Monate dar.
+Zähler auf, die hypothetisch als Tage (d) gerechnet werden
+Dass das System in sich geschlossen ist, erweist sich in der
+(siehe oben). Die Zahl entspricht, bis auf ein Plus von 4, den
+Aufschlüsselung der 19 Zonen 3 bis 21: In Blöcke von fünf bis
+1735 Tagen von 3 x 19 = 57 Sonnenmonaten oder 19 Viertel-
+19 aufeinanderfolgenden Zonen zusammengefasst, erfolgt die
+jahren und damit einem Viertel des neunzehnjährigen Mond-
+Zählung der Tage (d) der solaren und lunaren Zeitabschnitte
+zyklus von 4 x 57 = 228 Sonnenmonaten. Zugleich können
+synchron im vierteljährlichen () bzw. im dreimonatigen
+die 1739 Zähler für 59 Mondmonate mit (abgerundet) 1742
+Rhythmus von 12 bis 57 Monaten (L). Die Zahl der Tage für
+(astronomisch 1742 ⅓) Tagen bei einem Minus von 3 ⅓ Tagen
+die astronomischen Zielwerte sind festgelegt auf der Basis
+stehen.
+30,44 d für den durchschnittlichen Sonnenmonat bzw. 29,53 d
+Weshalb die Schöpfer des Zahlenwerkes auf dem Berliner
+für die durchschnittliche Dauer eines synodischen Monats,
+Goldhut nicht mit 1735. Zeichen für 57 solare Monate gerech-
+wobei eine Auf- oder Abrundung der Zahlen bei +/-0,5 er-
+net haben, kann damit erklärt werden, dass auf dem Kultge-

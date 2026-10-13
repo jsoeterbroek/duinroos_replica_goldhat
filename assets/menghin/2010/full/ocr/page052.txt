@@ -1,0 +1,107 @@
+52 • Zahlensymbolik und Rechensystem
+Unter Berücksichtigung religiös bedingter Ausnahmerege-
+lungen ergeben sich im jüdischen Kalender sechs verschie-
+dene Jahreslängen: Ein Gemeinjahr (in diesem Fall Mond-
+jahr) kann 353, 354 oder 355 Tage haben, ein Schaltjahr 383,
+384 oder 385 Tage. Man unterscheidet nach den Regeln für das
+Mond- und Sonnenjahr deshalb nicht nur Gemein- und
+Schaltjahre, sondern auch verminderte (353/383 Tage), regu-
+läre (354/384 Tage) und übermäßige (355/385 Tage) Jahre.
+Durch diese Maßnahmen wird der Kalender dem Lauf der
+Sonne und den Jahreszeiten optimal angepasst, so dass das
+durchschnittliche Kalenderjahr mit 365,24 Tagen mit der Nu-
+merik des tropischen Jahres nahezu identisch ist.
+Das jüdische Neue Jahr beginnt mit dem Neulicht des 7.
+Monats, wobei der Frühlingsmonat Nisan in biblischer Tradi-
+tion als I. Monat benannt ist (nach dem gregorianischen Ka-
+lender September/Oktober bzw. März/April).
+D. Wie in allen antiken Kulturen bestand auch in Grie-
+chenland lange vor der Archaischen Zeit das Bestreben, einen
+brauchbaren Kalender durch die Vereinigung des Sonnenjah-
+res mit dem Mondjahr zu schaffen. Bekannt ist die delphische
+Oktaetris, das „Große Jahr", bei dem 8 Mondjahre (8 x 354)
+durch die Zuschaltung von drei synodischen Monaten mit 30
+Tagen den 8 Jahren mit 2922 Tagen angeglichen wurden. In
+diesem lunisolaren Kalender hatten drei Jahre nicht 12, son-
+dern 13 Monate, was bei zyklischer Fortschaltung der Monate
+zu Ungenauigkeiten führte. Versuche, diesem Problem durch
+Verdoppelung des Zyklus zu begegnen, brachten keine Fort-
+schritte. Diese erzielten erst griechische Astronomen aus der
+Schule des Euktemon im 5. Jahrhundert, die aufgrund lang-
+jähriger Himmelsbeobachtungen und vermutlich in Kenntnis
+der babylonischen Astronomie einen 19-jährigen Schaltzyklus
+entwickelten: 19 Jahre haben 6940 Tage und entsprechen nu-
+merisch 19 Mondjahren plus 7 Monaten. Unter den 235 syn-
+odischen Monaten setzten sie II0 als „hohle Monate" mit 29
+und 125 als „volle Monate" mit 30 Tagen an, woraus sich 3190
+(110 x 29) + 3750 (125 x 30) = 6940 Tage ergaben.
+In diesem Zyklus sind die alternierenden Monatswerte
+richtig verteilt und mit den Himmelserscheinungen in Über-
+einstimmung zu bringen. Damit war es Meton von Athen
+möglich, die Sommersonnenwende für das Jahr 432 v. Chr.
+exakt zu berechnen und den Kalender zu verbessern. Er ließ
+Säulen zu astronomischen Beobachtungen aufstellen und er-
+fand einen Steckkalender.
+Anders als in den Großreichen des Vorderen Orients ist es
+den griechischen Stadtstaaten, trotz aller Bemühungen, nicht
+gelungen, sich auf einen einheitlichen Kalender zu einigen.
+Die Jahresanfänge verteilten sich über das ganze Jahr, nament-
+lich auf die Tage der Kardinalpunkte, wobei das Frühjahrsäqui-
+noktium seltener belegt ist. Die Datierung der Jahre erfolgte
+individuell nach dem Amtsantritt der höchsten Beamten oder
+der Priester der Hauptgottheiten des jeweiligen Gemeinwe-
+sens. Der Schaltmonat erschien an verschiedenen Stellen des
+Jahres und noch dazu waren die Kalendersysteme unterschied-
+lich. Erwiesenermaßen stimmten nur die Kalender Athens
+und Delphis überein. Jahresanfang war die Sommersonnen-
+wende, zum Schalten wurde jeweils der 6. Monat benutzt und
+ab 330 v. Chr. übernahm Delphi auch den Metonschen Zyk-
+lus. Ansonsten mussten die Verträge zwischen mehreren grie-
+chischen Städten oft mit drei oder mehr unterschiedlichen
+Datierungen unterzeichnet werden (nach: Paulys Realenzyk-
+lopädie der Classischen Altertumswissenschaften 20 [1919] s. v.
+„Kalender". - Ebd. I. Halbband [1932] s. v. „Meton*).
+E. Vor Einführung des julianischen Kalenders war in der
+Römischen Republik ein Mondkalender mit einem Solarka-
+lender kombiniert. Das Normaljahr wurde mit 355 Tagen ge-
+rechnet, dem in regelmäßigem Wechsel ein Schaltjahr mit 377
+oder 378 Tagen folgte, so dass sich für einen Zyklus von vier
+Jahren insgesamt eine Länge von 355 + 378 +355 + 377 = 1465
+ergab, was einen Überschuss von vier Tagen gegenüber der
+Länge von vier tropischen Jahren mit 1461 Tagen ergab. Die
+Monatslängen im Normaljahr mit 355 Tagen betrugen 7 x 29
+oder 4 x 31 und im 2. Monat (Februarius) 28 Tage. In den
+Schaltjahren betrug die Länge des Februars nur 23 Tage, dem
+ein zusätzlicher Monat (Intercalaris) mit 27/28 Tagen hinzu-
+gefügt wurde. Der erste Tag eines jeden Monats hieß Kalen-
+dae, der 5., in den Monaten mit 31 Tagen, Nonde und der 13.
+bzw. I5. Tag in der Monatsmitte waren die Idae.
+Da das Jahr nach diesem Kalendersystem um einen Tag zu
+lang war und zudem durch die Einschübe der Schaltmonate
+mit 27/28 Tagen auch die Übereinstimmung mit den Mond-
+phasen verloren ging, legten die Priester (Pontifices) Schaltun-
+gen fest, die, da ohne astronomische Regelung, ins kalendari-
+sche Chaos führten. Vor Einführung des julianischen
+Kalenders im Jahre 46. v. Chr. war der republikanische Kalen-
+der, trotz mehrerer Reformversuche, den Jahreszeiten somit
+um 90 Tage voraus.
+Der von dem alexandrinischen Astronomen Sosigenes im
+Auftrag von Julius Cäsar erarbeitete Kalender ist ein reiner
+Solarkalender, bei dem die Mondphasen keine Berücksich-
+tigung finden. Er hat, in der Tradition des altägyptischen Ka-
+lenders, 12 auf den Tierkreis bezogene Monate und korreliert
+mit den Jahreszeiten, da das Jahr durch den Lauf der Sonne
+zwischen zwei Kardinalpunkten, etwa dem Frühlingsäqui-
+noktium, bestimmt wird. Es umfasst 365 ¼ Tage, so dass jedes
+vierte Jahr ein Schaltjahr mit 366 Tagen sein muss und der
+Zyklus von vier Jahren damit 1461 Tage beinhaltet.
+Bei der Terminierung „beweglicher", an die Mondphasen
+gebundener Feste, wie zum Beispiel Ostern und den damit
+zusammenhängenden Feiertagen, musste man auch im Rah-
+men des solaren julianischen Kalenders auf einen Mondka-
+lender mit seinen Schaltungen zurückgreifen.
+Das hier nur stark vereinfacht und auszugsweise darge-
+stellte antike Kalenderwesen mit seinen divergierenden Zyk-
+len von Mond- und Sonnenumläufen sowie die künstliche
+Einteilung in Sonnenmonate und Wochen, das in allen Kul-
+turen, je nach Entwicklungsstand, auch astronomiosch mit

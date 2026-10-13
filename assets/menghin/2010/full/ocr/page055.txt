@@ -1,0 +1,95 @@
+C. Zuweisung der Zahlenwerte für die 8 Sektoren in der Schalt-
+zone 17, Zone 20 und Zone 21 alternierend im Verhältnis 10 zu 9
+Vierteljahren (30 : 27 Sonnenmonate) mit dem Schaltrhythmus.
+In der Praxis zeigt sich im Berliner Goldhut somit ein Schaltsys-
+tem, bei dem alternierend alle 2 ½ oder 2 ¼ Jahre, bzw. nach zehn-
+maligem oder neunmaligem Durchlaufen der Kardinalpunkte
+vom Beginn der Zählung an, ein zusätzlicher (Mond-)Monat ein-
+geschoben werden muss. Auf die Mondumläufe bezogen heißt
+das, dass jeweils (spätestens) nach dem 30. und vor dem 59. Monat
+geschaltet werden muss, damit nach siebenmaligem Einschub
+eines zusätzlichen Monats die Zahl der Tage für 19 Jahre oder 235
+synodische Monate übereinstimmt: (30 + I) + (27 + 1) + (30 + I) +
+(27 + I) + (30 + I) + (27 + I) + (30 + I) = 208 + 27 = 235.
+Entsprechend dem 19-Jahreszyklus wird im System des
+Goldhutes nach dem 2. Viertel des 3.-, dem 3. Viertel des 5.-,
+dem 1. Viertel des 8.-, dem 2. Viertel des 10.-, dem 4. Viertel
+des 12.-, dem I. Viertel des 15.- und nach dem 3. Viertel des
+17. Jahres ein zusätzlicher Monat eingeschoben (Abb. 57).
+Zahlensymbolik und Rechensystem
+55
+Beginnt die Zählung z. B. mit dem Neulicht zum Zeit-
+punkt der Frühjahrs-Tagundnachtgleiche, so muss spätestens
+im Herbst des 3. Jahres nach der Tagundnachtgleiche ein 13.
+Monat eingeschoben werden. Im ş. Jahr nach Beginn der
+Zählung erfolgt die Schaltung des 13. Monats nach der Win-
+tersonnenwende usw. Dabei ist der Schaltrhythmus in Bezug
+auf die lunaren Zyklen in Zone 21 mit 7 x 6 und I x 5 Schei-
+benbuckeln am einfachsten über die „Schaltzone 17" zu er-
+mitteln: gemäß den 8 Sektoren, zeigen die Buckel mit zwei
+Kreisen gegenüber denjenigen mit fünf Kreisen in Zone 21 im
+Rhythmus 3:6 - 3:6 - 6:6 - 3:6 - 3:6 - 6:6 - 3:6 - 6:5 an,
+wann in Zone 21 geschaltet werden muss. Der genaue Zeit-
+punkt der Schaltung dürfte dabei über die sichtbaren, jeweils
+7 Tage dauernden Phasen des Mondes (vom Neulicht bis zum
+Neumond) festgelegt worden sein. Im vorgegebenen Fall
+würde das Neulicht dann nach 19 Jahren oder 76 Vierteljah-
+ren wieder mit der Frühjahrs-Tagundnachtgleiche korrelieren
+(vgl. Abb. 56).
+I. (3 x 2) + (8 x 3) = 6 + 24 = 30 (Io Vierteljahre)
+2. (3 x 2) + (7×3) = 6+21=27 (9
+3. (6 x 2) + (6 x 3) = 12 + 18 = 30 (I0
+4. (3 x 2) + (7 x 3) = 6+ 21 = 27 ( 9
+5. (3 x 2) + (8 x 3) = 6+ 24=30
+(IO
+6. (6 x 2) + (5 x 3) = 12 + 15 = 27
+7. (3 x 2) + (8x 3) = 6+24=30
+8. (6x 2) + (5 x 3) = 12 + 15 = 27
+66 + 162 = 228
+(IO
+( 9
+(76 Vierteljahre)
+I, 2, 3, 4. - I, 2, 3, 4.- I, 2, *,
+3, 4. - I, 2, 3, 4. - I, 2, 3, *,
+4. - I, 2, 3, 4. - I, 2, 3, 4. - I, *,
+2, 3, 4. - I, 2, 3, 4. - I, 2, *,
+3, 4. - I, 2, 3, 4. - I, 2, 3, 4, *,
+I, 2, 3, 4. - I, 2, 3, 4. - I, *,
+2, 3, 4. - I, 2, 3, 4. - I, 2, 3, *,
+4. - I, 2, 3, 4, - I, 2, 3, 4.
+I9 Jahre
+*Schaltmonat
+Abb. 57: Der Schaltrhythmus im System des Berliner Goldhutes
+Das Zahlenwerk und seine Entschlüsselung
+Die primäre Funktion des Berliner Goldhutes hat sakralen
+Charakter. Dies verdeutlichen seine Form, das Material und
+die in das Ornament integrierten kosmischen Piktogramme
+als Zeichen für die Sonne, den Mond und den Venusstern.
+Zugleich war die goldene Tiara aber offenbar auch ein Me-
+dium für kalendarische Berechnungen. Hierauf weisen die im
+System der Ornamentik verschlüsselten Zahlen wie 365, 366
+oder 354, 355 und 177 für die Tageszählung solarer und lunarer
+Zyklen bzw. mit 235 auf die Monate des neunzehnjährigen
+Mondzyklus hin. Diese werden erkennbar, wenn nicht die
+Anzahl der Buckelscheiben mit ihren jeweils zwei, drei, fünf
+und sechs konzentrischen Kreisen als Prinzip des Zahlenwer-
+kes angesehen werden, sondern die Summen der Kreisringe
+in den zu Zeitabschnitten zusammengefassten Zonen bzw.
+der 2 x 19 Sondersymbole.
+Die Dechiffrierung des vermutlich absichtlich verschlüs-
+selten Systems ergibt sich aus der empirisch ermittelten, für
+die Darstellung kalendarischer Zyklen relevanten Summe der
+Ringe und Zeichen unmittelbar aufeinanderfolgender Zonen,
+die jeweils einen Block bilden. Von den Io unterschiedlichen
+Buckelmustern (vgl. Abb. 21, Nr. 8-17) definieren dabei die-
+jenigen, die nur einmal im Kanon vertreten sind (Abb. 21, Nr.
+9, II, 13), die drei Schaltzonen 7, 16 und 17 auf dem Schaft
+und der Kalotte des Goldhutes (vgl. Abb. 23). Ihre Berück-
+sichtigung oder Negierung ermöglicht erst die durchgängige
+Synchronisierung der Mondzyklen mit dem Jahreslauf im
+vierteljährlichen Rhythmus von 12 bis 57 Lunationen. Dabei
+sind bei diesem „gebundenen Kalender", anders als bei den
+oben erläuterten historischen lunisolaren Kalendern, nicht
+die synodischen Mondphasen, sondern, wie bei einem solaren
+Kalender, der Jahreslauf mit seiner Vierfachteilung durch die
+Kardinalpunkte dominant.

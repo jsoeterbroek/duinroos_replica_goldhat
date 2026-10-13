@@ -84,3 +84,38 @@ The narrative for the write-up, in order, with credits for who had which idea.
   than 2010 is wrong — 2000 uses `{7,16,17}` too, with zone 5 as a *Sonderzone*
   added for solar cycles; only the bookkeeping of 1597 differs. `lessons.md` and
   `sources/menghin_2000_2010.md` are corrected.
+- **2026-10-13 — the monograph arrives whole, and the author himself calls the
+  transfer partial.** The project author supplied the rest of **Menghin 2010**, *Der
+  Berliner Goldhut — Macht, Magie und Mathematik in der Bronzezeit*: the whole book,
+  pp. 1–88 + front matter, 85 page images and text, now in
+  `assets/menghin/2010/full/` (the older phone-photo selection used by the STL plan
+  is left untouched). The chapter the case needed is **"Der Vergleich" (pp. 64–72)**,
+  where Menghin applies his Berlin reading to the three other hats. It is decisive,
+  and it is the author's own conclusion.
+  *First*, the opening sentence of p. 65: the lunisolar / "bound calendar"
+  interpretation „**lässt sich partiell** auf seine drei Vergleichsstücke übertragen"
+  — it transfers only *partially*. For Schifferstadt he gets "wenige kalendarisch
+  annähernd verwertbare Zahlen wie 355, 266 und 272"; for Avanton likewise only a few
+  (364, 182, 355, 268, 177). *Second*, and stronger, p. 68 on Ezelsdorf-Buch: „Umso
+  erstaunlicher ist es, dass sich etwa aus der Addition identischer Stempel oder
+  deren zonenweiser rhythmischer Abfolge … **keine direkten kalendarische Werte
+  ermitteln lassen**." That is the stamp-identity rule the Berlin reading actually
+  rests on — and Menghin states it fails on Ezelsdorf. He then falls back to
+  *contiguous zone-block sums*, i.e. to the post-hoc block selection the case's hit
+  definition excludes. Peter-Röcher's one-sentence report ("ließ sich leider nicht
+  übertragen") is thereby corroborated from the primary author's pen, and the
+  critique no longer rests on a secondary source.
+  *Third*, a genuine moving target: the **Ezelsdorf intercalary set changes between
+  Menghin's own publications** — `{5,6,19}` in the 2000 article (with Z15 and Z17 as
+  *Sonderzonen*), six green rows `{5,6,15,16,17,19}` in the 2010 table (Abb. 69),
+  five in the 2010 *text* (Z16 omitted), and 12 under Fuls's "unique symbol type"
+  rule. Berlin's `{7,16,17}` + zone 5 stays put; *Ezelsdorf* is where "which zones
+  are intercalary" is under-specified. That is the concrete form of the
+  free-parameter objection, now documented on the page.
+  *Fourth*, the control that passed: Menghin 2010's Berlin table (Abb. 23, p. 30)
+  reproduces the 2000 table (Abb. 14, p. 45) zone for zone and ring for ring, and the
+  2010 Ezelsdorf table (Abb. 69, p. 68) reproduces the 2000 one — including the
+  **Zone 8 `A=40` with `SK=78`** slip, which therefore lives in Menghin's typescript
+  and is not a scanning artefact. Credit: **the project author** for the full-book
+  scan; the split, the cross-check and the writing-up are this round's work. Finding:
+  `findings/FINDING_2026-10-13_menghin-2010-ingested.md`.

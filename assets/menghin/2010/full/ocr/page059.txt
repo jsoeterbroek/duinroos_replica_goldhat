@@ -1,0 +1,78 @@
+bellen schwarz) und der Notwendigkeit von zwei Schaltun-
+gen im vorgegebenen Zeitraum, das heißt der Einfügung von
+einem zusätzlichen synodischen Monat nach der 30. und vor
+der 59. Lunation, damit die Tageszahlen der solaren und lu-
+naren Zyklen systemkonform wieder übereinstimmen. Die
+Verschiebungen in den absoluten Differenzen an Tagen zwi-
+schen den solaren und lunaren Zyklen erklären sich aus dem
+Umstand, dass der exakte Schalttermin für einen zusätzlichen
+Monat mit den jeweiligen Erscheinungen des Mondes über-
+einstimmen muss (Abb. 60).
+Wenn der Beginn der Zählung festliegt - besonders bei
+der Verbindung eines Kardinalpunktes mit einer markanten
+Mondphase - können anhand des „Rechners" im Ornament
+des Goldhutes nicht nur die solaren und lunaren Zyklen ge-
+zählt, sondern es kann vor allem auch vorausberechnet und
+gesagt werden, wie sich diese im Jahreslauf und damit die an
+die Mondmonate gebundenen Feste im Zeitraum von 4 ¾
+Jahren verschieben:
+Ist beispielsweise ein Fest X im religiösen Mondkalender
+auf den 7. Tag nach dem ersten Vollmond im Frühlingsmo-
+nat Y zum Zeitpunkt der Tagundnachtgleiche festgelegt, so
+verschiebt sich dieser Termin und alle davon unmittelbar ab-
+hängigen Feste im darauffolgenden Jahr um I1 Tage nach hin-
+ten. Nach zwei Jahren sind es bereits 22 Tage, so dass spätes-
+tens nach zwei weiteren Vierteljahren ein zusätzlicher (Mond-)
+Monat eingeschoben werden muss, damit das Fest X im
+Mondkalender jahreszeitlich gebunden bleibt. Diese ‚Schal-
+tung" ist im Rechenwerk des Goldhutes zweimal angelegt
+und kann, da das System zyklisch funktioniert, in vier Durch-
+läufen insgesamt siebenmal in den vorgegebenen Abständen
+erfolgen, bis nach 19 Jahren oder 235 (Mond-) Monaten die
+Konstellationen von Sonnen- und Mondumlauf wieder so
+übereinstimmen wie am Ausgangspunkt der Zählung.
+Abgesehen von reinen Solar-Kalendern, in denen die Kar-
+dinalpunkte den Jahresanfang festlegen, gilt dieses System
+für alle sogenannten Lunisolar-Kalender, in denen der Um-
+lauf des Mondes und die daraus abgeleiteten „Monate" das
+kalendarische Grundprinzip sind (siehe oben: Historische
+Kalender).
+Zahlensymbolik und Rechensystem • 59
+Die praktische Anwendung
+Bei der theoretisch möglichen praktischen Handhabung des
+„Rechners" war sicher die Oberflächenstruktur mit ihren unter-
+schiedlich gestalteten Trennbändern sowie den verschieden gro-
+ßen Buckelscheiben in den Zierzonen ausschlaggebend. Dass der
+bronzezeitliche Nutzer sowohl das verschlüsselte System im
+Kanon des Ornaments als auch dessen astronomische Grundlagen
+kannte und damit umzugehen wusste, ist dabei vorauszusetzen.
+Im Prinzip, so nach der Vorstellung des Autors, funktio-
+nierte das System ähnlich einem zylindrischen Rechenschie-
+ber bzw. wie ein in einen Konus übertragener Abakus. Dabei
+sind wiederum nicht die einzelnen Scheibensymbole, sondern
+die zu Zeitabschnitten zusammengefassten Zonen Grundlage
+des Vergleichs der solaren mit den lunaren Perioden. Es
+musste also nicht ein x-beliebiges Scheibensymbol als Beginn
+einer wie auch immer gearteten Zählung irgendwie markiert
+werden, sondern man musste nur wissen, welche „Zonenblö-
+ckei die kalendarisch relevante Zahl von Tagen für die jewei-
+ligen Vierteljahre oder drei Mondmonate enthalten. Die Dif-
+ferenzen konnten dann durch die Gegenüberstellung der
+Menge der Zonen für die solaren und lunaren Zeitabschnitte
+ermittelt, das heißt ausgezählt werden.
+Die Goldhüte dürfen dementsprechend auch nicht als Ka-
+lendarien im modernen Sinn aufgefasst werden, in denen Ka-
+lenderdaten für das Jahr, die Monate, Wochen und Tage zur
+Einteilung zeitlicher Abläufe zusammengestellt sind und die
+zudem einen Anfang und ein Ende haben. Vielmehr handelt
+es sich um rechnerische Hilfsmittel für die Erstellung und
+Pflege eines lunisolaren Kalendersystems, dessen kulturelle
+Inhalte und soziologische Parameter uns mangels schriftlicher
+Überlieferung unbekannt sind.
+Eine - mögliche - praktische Verwendung des Berliner Gold-
+hutes als Rechengerät für ein lunisolares Kalendersystem lässt
+sich mit zeichnerischen Mitteln am Beispiel der Zählung der
+Zonen für die Tagesdifferenzen bei numerisch einander entspre-
+chenden solaren und lunaren Zeitabschnitten von vier bis 19
+Vierteljahren () oder 12 bis 57 (Sonnen-)Monaten (M) bzw. 12
+bis 59 (Mond-)Monaten (L) demonstrieren (vgl. Abb. 61-64).

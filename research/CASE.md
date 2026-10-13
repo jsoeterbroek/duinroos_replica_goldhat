@@ -1,6 +1,7 @@
 # Berlin Gold Hat — does the ornament encode a calendar?
 
-**Status:** active — 2026-10-12. Source base now includes the full Menghin 2000.
+**Status:** active — 2026-10-13. Source base now includes the full Menghin 2000 and
+the full Menghin 2010 monographs.
 **Plan item:** #6 (novelty check and write-up) of the CASE plan below, adapted for a
 small scholarly corpus (see "Pipeline, adapted" below).
 
@@ -42,7 +43,7 @@ One recipe per source in `sources/`. Status at 2026-10-10:
 | Source | Recipe | Status |
 |---|---|---|
 | Menghin 2000 (Berlin + the other three hats, Ornamentanalyse) | `sources/menghin_2000_2010.md` | **held — COMPLETE** (83 page images + text, `assets/menghin/2000/`; four per-zone tables transcribed, control C6) |
-| Menghin 2010 (book) | `sources/menghin_2000_2010.md` | held in part (pp. 20–31, 47–63 scans; pp. 32–46 and 64–end still missing) |
+| Menghin 2010 (book) | `sources/menghin_2000_2010.md` | **held — COMPLETE** (whole book, pp. 1–88, `assets/menghin/2010/full/`; 2026-10-13) |
 | Menghin 2003 (Golden Calendar Hats, catalogue) | `sources/menghin_2000_2010.md` | print-only |
 | Schauer 1986 (Die Goldblechkegel der Bronzezeit) | `sources/schauer_1986.md` | print-only, not yet obtained |
 | Menghin & Schauer 1983 (Ezelsdorf) | `sources/schauer_1986.md` | print-only |
@@ -103,9 +104,12 @@ Doc items. Say which one you are on in every update.
    (Fuls, Amendola, Lorenz, Schlosser, Peter-Röcher, Randsborg, Hansen & Rink),
    check the phantom references, write the findings and the narrative beat.
 
-**Next after #6:** obtain Schauer 1986 and the Menghin 2010 gaps (print-only);
-extract Hansen & Rink 2008; **re-run Fuls's combinatorial null on the per-zone data
-now held for all four hats** (`todo/T2`, no longer blocked).
+**Next after #6:** obtain Schauer 1986 and the Menghin 2003 catalogue chapter
+(print-only); extract Hansen & Rink 2008; **re-run Fuls's combinatorial null on the
+per-zone data now held for all four hats** (`todo/T2`, no longer blocked). Menghin
+2010 is now complete: its "Der Vergleich" chapter (pp. 64–72) records that the author
+himself calls the cross-hat transfer only *partial* — see
+`findings/FINDING_2026-10-13_menghin-2010-ingested.md`.
 
 ## Pipeline, adapted to a small scholarly corpus
 

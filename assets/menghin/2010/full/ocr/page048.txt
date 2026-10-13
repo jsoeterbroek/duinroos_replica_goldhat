@@ -1,0 +1,227 @@
+Zahlensymbolik und Rechensystem
+48
+SK
+Nr.
+K
+SK
+Nr.
+Zone
+Zone
+K
+Nr.
+SK
+Zone
+K
+42
+3
+Z 4
+Z 3
+10
+75
+5
+8
+Z 4
+5
+75
+10
+57
+Z 7
+11
+Z 6
+5
+90
+5
+10
+90
+Z 6
+10
+12
+57
+Z 9
+95
+3
+Z 10
+105
+5
+14
+Z 8
+5
+10
+Z 11
+3
+60
+12
+Z 14
+5
+95
+5
+14
+105
+Z 10
+14
+12
+Z 13
+60
+3
+15
+90
+Z 15
+6
+1 Schaltjahr
+366
+1 Jahr
+365
+365
+1 Jahr
+Abb. 53: Berliner Goldhut. Grafische Darstellung der Zahl der Tage
+K
+Zone
+SK
+K
+Nr.
+SK
+Nr.
+Zone
+für ein Sonnen- bzw. ein Mondjahr mittels der Addition der Zonen
+90
+mit Buckelscheiben aus jeweils 3, 5 und 6 konzentrischen Ringen in
+5
+Z 6
+10
+90
+15
+Z 15
+rhythmischer Abfolge der Zonen. Ein Ring gilt als Zähler für einen
+5
+126
+Z 18
+10
+15
+105
+6
+2 8
+5
+Z 19
+100
+14
+15
+138
+2 12
+Tag!
+Legende: Z: Zone. - Nr.: Scheibenbuckel Nr. (vgl. Abb. 22). - A: Anzahl
+12
+Z 13
+60
+der Symbole. - K: Zahl der Kreise pro Scheibenbuckel. - SK: Summe
+der Kreise pro Zone. - Rot unterlegt: solar. - Blau unterlegt: lunar. -
+355
+354
+12 synodische Monate
+12 synodische Monate
+Grün unterlegt: Schaltzone (SZ).
+Abb. 54: Berliner Goldhut. Grafische Darstellung lunarer Zeitzyklen
+Nr. 15 K6
+Nr. 12K3
+K6
+Nr. 15
+im Ornament mittels der Addition der konzentrischen Ringe der
+SK
+Z
+A
+SK
+Z
+stempelgleichen Muster Nr. 15 in den Zonen 15, 18 und 19. Dabei gilt
+57
+15
+90
+Z 9
+Z 15
+19
+ein Ring als Zähler für einen Tag!
+60
+20
+21
+126
+Z 18
+Z 11
+Die Zahlen für ein Normaljahr bzw. ein Schaltjahr ergeben sich aus
+60
+138
+Z 19
+Z 13
+23
+20
+der Addition der Ringe des Stempels Nr. 10 in den Zonen 4, 6, 8 mit
+den Ringen der jeweils einmalig im Ornament vorkommenden
+Muster in den Schaltzonen SZ 7 und 16 bzw. mit dem Stempel Nr. 8 in
+177
+59
+59
+354
+den Zonen 3 und 20, ergänzt durch die Zahl der Ringe in allen drei
+Schaltzonen 7, 16 und 17 (grün) mit den jeweils nur einmal im
+6 synodische Monate
+12 synodische Monate
+Ornament vorkommenden Mustern.
+Legende: Z: Zone. - Nr.: Scheibenbuckel Nr. (vgl. Abb. 22). - A: Anzahl
+Nr. 8 K5/ K2
+Nr. 10
+K5/ K3/2
+der Symbole. - K: Zahl der Kreise pro Scheibenbuckel. - SK: Summe
+Z
+SK
+A
+SK
+Z
+der Kreise pro Zone. - Rot unterlegt: solar. - Blau unterlegt: lunar. -
+42
+75
+Z 3
+15
+Z4
+14
+Grün unterlegt: Schaltzone (SZ).
+162
+54
+Z 20
+Z 6
+90
+18
+21
+Z8
+105
+(38) gerechnet werden. 365 ergibt sich auch, wenn zur Summe
+68
+204
+54
+270
+der Ringe des Musters Nr. 8, das nur in Zone 3 unterhalb der
+Spitze und in Zone 20 auf der Krempe vorkommt (204), die
+57
+57
+19
+Menge der Kreise der jeweils nur I x im Ornamentkanon in
+19
++ SZ 7
++ SZ 7
+38
+19
++ SZ 16
+19
+38
++ SZ 16
+Zone 7 (57), 16 (38) und 17 (66) auftretenden Muster Nr. II,
+33
+66
++ SZ 17
+13 und 9 hinzugezählt werden (Abb. 54).
+Schließlich ist die Summe der Ringe der 47 Stempel Nr.
+14 (mit fünf Ringen) in Zone 21 auf der Krempe 235. Und
+139
+365
+92
+365
+weiterhin ergibt die Addition der 54 Stempel Nr. 8 mit drei
+12 solare Monate
+12 solare Monate
+Kreisen in Zone 20 (162) mit dem 33-mal gesetzten Muster

@@ -1,0 +1,789 @@
+
+
+===== page070 =====
+Der Vergleich
+70
+- Schaltzone
+Abb. 71: Goldkegel von Ezels-
+Symbole
+rechnerisch ergänzt
+Ezelsdort-Buch solar
+dorf-Buch - solar. Zusammenfas-
+Vierteljahre, solar
+sung der Zonenblöcke mit
+Anzahl
+7
+5
+4
+16 15 14 13 12 11 10
+9
+8
+19
+17
+18
+der Ringe
+kalendarisch relevanten Summen
+an Zeichen (Ringen) für die
+57
+Zone 3
+aufsteigende Zählung der Tage
+135
+Zone
+4
+von 4 bis 19 Vierteljahren für 4 ¾
+54
+5
+Jahre (57 Sonnenmonate) im
+Zone
+Vergleich mit den astronomischen
+84
+6
+Zone
+Zielwerten. Rote Punkte: zu
+66
+Zone 7
+Zeitabschnitten in der Vertikalen
+78
+zusammengefasste Zonen. -
+Zone
+Grüne Punkte: abzüglich Schaltzo-
+150
+9
+Zone
+nen. - Sternchen (*): absolute
+96
+Zone 10
+Übereinstimmung der Werte.
+95
+Zone 11
+- Hellrosa und hellgrün: rechne-
+risch rekonstruierte Werte.
+140
+Zone12
+45
+Zone 13
+102
+Zone 14
+22
+15
+Zone
+57
+Zone 16
+21
+17
+Zone
+98
+Zone 18
+52
+Zone 19
+154
+20
+Zone
+231
+Zone 21
+821
+1003
+458
+1370
+1737
+639
+1553
+1187
+Summe
+1737
+der Ringe
+1463
+731
+913
+551
+365
+1097
+1642
+1463
+1278
+457
+1005
+639
+822
+1552
+1735
+1370
+1187
+kalendarische 1735
+kalendarische
+Zielwerte
+913
+731
+548
+365
+1096
+1461
+1644
+1278
+1 *
+-2 -2 +1+2 ** *+12* 1**+3
+Differenz
+
+
+===== page071 =====
+Der Vergleich • 71
+Abb. 72: Goldkegel von Ezels-
+- Schaltzone
+Ezelsdorf-Buch lunar
+Symbole
+rechnerisch ergänzt
+dorf-Buch - lunar. Zusammenfas-
+synodische Monate
+Anzahl
+sung der Zonen für die aufstei-
+der
+58 57 55 52 49 46 43 40 37 34 30 27 24 21 18 15
+15
+24
+12
+59
+37 34
+27
+gende Zählung der Tage für 59
+18
+49
+46
+43
+57
+52
+40
+30
+21
+58
+1 55
+Ringe
+synodische Monate im dreimonati-
+57
+Zone
+gen Rhythmus für 4¾ Jahre mit
+135
+Zone
+den Schaltungen nach der 30. und
+57. Lunation im Vergleich mit den
+54
+Zone
+astronomischen Zielwerten.
+84
+Zone
+Blau: zu Zeitzonen zusammenge-
+66
+7
+Zone
+fasste Zeitabschnitte. - Grün:
+abzüglich Schaltzone. - Rote
+78
+8
+Zone
+Vertikalen: Einschub eines
+150
+9
+Zone
+zusätzlichen synodischen Monats.
+96
+- Sternchen (*): absolute Überein-
+Zone 10
+stimmung mit den kalendarischen
+95
+Zone 11
+Werten. - Hellblau und hellgrün:
+140
+Zone 12
+rechnerisch rekonstruierte Werte
+45
+Zone 13
+102
+Zone 14
+22
+15
+Zone
+57
+Zone 16
+21
+17
+Zone
+98
+Zone 18
+52
+19
+Zone
+154
+Zone 20
+231
+Zone 21
+354
+709
+530
+883
+1091
+1449
+1268
+1623
+1715
+Summe
+68LL
+620
+442
+799
+1004
+1181
+der Ringe
+1360
+1683
+1539
+1737
+532
+354
+709
+kalen-
+886
+1093
+1447
+1270
+1624
+1713
+darische
+443
+620
+797
+1004
+1181
+1536
+1358
+1683
+1742
+Zielwerte
+*
+- 1
+-2
+-3
+*
+*
++1
++2
+-1 +3 +2 +2-2
+-2
+-2
+*
++2
++2
++3
+-1
+- 5
++2
+Differenz
+Schaltmonat
+Schaltmonat
+
+
+===== page072 =====
+
+
+===== page073 =====
+Die goldenen Kalenderhüte
+Die auf empirischem Weg dechiffrierten kalendarischen Sys-
+teme im Ornamentkanon des Berliner Goldhutes sind auf
+dem Goldenen Hut von Schifferstadt und dem Cône
+d'Avanton in der Grundkonzeption nur ansatzweise nachzu-
+weisen. Das volle Programm ist auf den Goldhüten von Ber-
+lin und Ezelsdorf-Buch vorhanden, wobei die Übereinstim-
+mungen in den Zahlenrelationen und kalendarischen Daten
+überraschen, da sich diese im Ornamentaufbau deutlich von-
+einander unterscheiden.
+Die Auftraggeber und Benutzer dieser beiden Kalender-
+hüte wussten aus langjährigen Beobachtungen der Auf- und
+Untergangspunkte mittels der Horizontastronomie und ein-
+facher Sonnenobservatorien, dass der Umlauf der Sonne 365
+¼ Tage dauert. Ebenso müssen sie das Jahr mit den Früh-
+jahrs- und Herbstnachtgleichheiten sowie Winter- und Som-
+mersonnenwenden nach den Kardinalpunkten in vier Viertel
+und diese gedrittelt in 12 Sonnenmonate mit abwechselnd 30
+und 31 Tagen (willkürlich) geteilt haben. Sie wussten auch,
+dass 12 synodische Monate etwas mehr als 354 Tage dauern
+und das Mondjahr damit gegenüber dem Sonnenjahr um II
+Tage kürzer ist. Ebenso scheint ihnen bekannt gewesen sein,
+dass 19 Sonnenjahre mit rund 6940 Tagen vergehen, ehe be-
+stimmte Konstellationen von Mond- und Sonnenständen
+wieder übereinstimmen. Darüber hinaus wussten sie ganz au-
+genscheinlich, dass in bestimmten Zeitabständen Mondmo-
+nate „geschaltet" werden mussten, damit ihre Zeitrechnung
+nicht ins Chaos geriet.
+Das lunisolare kalendarische Rechensystem im Ornament
+des Berliner Goldhutes weicht in einem Zeitraum 19 Jahren
+- im Vergleich mit manch anderem antiken Kalendersystem
+- um nur +16 Tage von den astronomischen Vorgaben ab und
+ist dabei in sich stimmig: 59 Lunationen beinhalten 1742
+Tage. In der Vervierfachung auf den Neunzehnjahreszyklus
+sind es 6968 Tage. Abzüglich der 4 x 3 Tage in der Minder-
+zählung im System des Goldhutes (1739) bedeutet das 6968
+- 12 = 6956 Tage. Demgegenüber zählen 57 Sonnenmonate
+(19 Vierteljahre) 1735 Tage, die in der Vervierfachung 6940
+ergeben. Zuzüglich der 4 × 4 Tage Überzählung im System
+des Berliner Goldhutes ist die Summe 6940 + 16 = 6956 (1739
+x 4) Tage, womit das Konto solar/lunar sozusagen ausgegli-
+Abb. 73: Goldkegel von Ezelsdorf-Buch. Ausschnitt aus dem
+Ornamentkanon mit den Goldkegeln en miniature und sich über-
+schneidenden Ornamenten.
+chen ist. Die Abweichung von den realen Daten um +16 Tage
+für eine Periode von 19 Jahren oder 235 Mondumläufen ist für
+prähistorische Zeiten unerheblich.
+Im Rückschluss belegen der Berliner Goldhut und sein
+nächstes Vergleichsstück, der Goldkegel von Ezelsdorf-Buch,
+mit hoher Wahrscheinlichkeit - wenn man der Beweisfüh-
+rung des Autors folgen mag -, dass in den prähistorischen
+Kulturen Mitteleuropas in der Zeit um 10oo v. Chr. bereits
+lunisolare, auf dem Prinzip des neunzehnjährigen Mondzyk-
+lus beruhende Kalenderkonzepte bekannt waren und umge-
+setzt wurden, lange bevor dies die Schriftquellen für Mesopo-
+tamien und noch später für die griechische Welt überliefern.
+Das Frappierende aber ist, abgesehen vom handwerkli-
+chen Können der Goldschmiede, dass die Schöpfer der Ka-
+lenderwerke offensichtlich die Fähigkeiten hatten, das über
+Generationen erworbene Wissen über den Lauf der Gestirne
+in ein abstraktes Rechensystem umzusetzen und auf die gol-
+denen Zeremonialhüte zu projizieren, um ihre Kenntnisse
+damit nicht nur zu dokumentieren, sondern auch zu konser-
+vieren und tradieren. Denn bevor der Handwerker das Gold
+austrieb und die Ornamente setzte, musste der eigentliche
+Autor des Werkes seine astronomischen und arithmetischen
+Kenntnisse sozusagen digitalisiert nach genauen Vorausbe-
+rechnungen der Zahl und des Umfangs der Zonen, der An-
+zahl und Auswahl der Punzstempel sowie der Breite der Or-
+namentfriese auf dem dreifach gegliederten, konischen
+Hohlkörper als Programm zur Verfügung stellen.
+Wie das im Einzelnen in einer schriftlosen Kultur zu be-
+werkstelligen war, bleibt der Phantasie überlassen. Nachge-
+wiesen sind Anrisse auf dem Goldkegel von Ezelsdorf-Buch
+und dem Berliner Goldhut, die zeigen, dass die Verzierung
+von einer wie auch immer gearteten Vorlage oder einem Mus-
+ter auf das Goldblech übertragen wurde. Wie diese aussahen,
+ob es sich um plastisches Modelle, plane Ritzzeichnungen im
+Sand oder auf Holz handelte, ist nur spekulativ zu beantwor-
+ten (Fecht/Born).
+Für die Berechnung des Zahlenwerkes, speziell beim Ber-
+liner Goldhut, könnte man sich als Vorstufe aber durchaus
+eine Art Abakus mit 19 Phasen, 8 unterschiedlichen Kugel-
+oder Perlentypen mit 2, 3, 5 und 6 Kennungen sowie zwei
+Kugeln für die astralen Zeichen vorstellen, die deriProgram-
+mierer" aufgrund seiner speziellen Kenntnisse als mechani-
+sche Rechenhilfe benutzte.
+Das vermutlich geheime Wissen um das Kalenderwesen
+wurde über Generationen erworben, oral tradiert und weiter-
+
+
+===== page074 =====
+74
+Die goldenen Kalenderhüte
+entwickelt. Ein Endprodukt dieser elitären Wissensbildung
+sind die Kalenderhüte der späten Bronzezeit, in denen sich in
+Buckeln und Kreisen die kosmische Ordnung manifestiert.
+Es handelt sich dabei nicht um Kalender im modernen Sinn,
+sondern um in die Sphäre des Kults entrückte Medien für
+kalendarische Berechnungen.
+Egal, ob die Goldhüte von Berlin und Ezelsdorf-Buch tat-
+sächlich händisch benutzt wurden oder nicht, die Zeichen
+symbolisieren nicht nur gespeichertes Wissen, sondern waren
+für den Kundigen auch praktisch verwendbare digitale Rech-
+ner der besonderen Art. Der Nutzer musste nur den gehei-
+men Schlüssel kennen, welche Zeichen und Zonen für be-
+stimmte lunare und solare Zyklen „abzugreifen" bzw.
+abzuzählen waren, um die Verschiebung der an Mondphasen
+und Jahreszeiten gebundenen Feste im Jahresablauf zu be-
+rechnen (siehe oben).
+Trotz der grundlegenden Gemeinsamkeiten, in denen sich
+auch die ideellen Zusammenhänge der alteuropäischen Bron-
+zezeit widerspiegeln, zeigen sich in der Abfolge der Friese, im
+Musterschatz, der Zahlenrhythmik und in den handwerklichen
+Details der Goldhüte Eigenarten, die hinsichtlich unterschied-
+licher Zeitstellung oder geografischer Herkunft interpretiert
+werden können. Dass beispielsweise die im Vergleich mit dem
+Berliner Goldhut wenig sorgfältige Ausführung der Verzierung
+des Ezelsdorf-Bucher Goldkegels werkstatt- oder zeitbedingt
+ist, oder dass sich hinter den divergierenden ornamentkonst-
+ruktionen gar unterschiedliche Kulturkreise vermuten lassen,
+scheint wahrscheinlich. Die Überschneidungen der Muster
+beim Goldkegel von Ezelsdorf-Buch belegen aber eindringlich,
+dass es bei der Herstellung der Muster in erster Linie nicht auf
+ein sauber angelegtes Ornament ankam, sondern vielmehr auf
+die Anbringung der vorher theoretisch berechneten richtigen
+Anzahl der Symbole in den jeweiligen Zierzonen.
+Während die beiden Goldhüte von Schifferstadt und
+Avanton mit einiger Sicherheit in das 14. bzw. 13./12. Jahrhun-
+dert v. Chr. zu verweisen sind, gestaltet sich die absolute Da-
+tierung der Beispiele von Ezelsdorf-Buch und Berlin dagegen
+schwierig. Chronologische Anhaltspunkte ergeben sich nur
+über die in der späten Bronzezeit allgemein auf goldenem
+Kultgerät beinahe stereotyp auftretenden Buckel mit konzen-
+trischen Kreisen sowie über die mehrstrahligen Sterne, wie
+einer vergleichbar auf der größten Schale des Goldfundes von
+Eberswalde auftritt, der aufgrund der Form seines tönernen
+Verwahrungsgefäßes in das 10. bis 9. Jahrhundert v. Chr. da-
+tiert wird, oder über die achtspeichigen Räder des Goldkegels
+von Ezelsdorf-Buch, die, im weit gespannten Vergleich, zu
+den ebenfalls achtspeichigen Rädern der Streitwagendarstel-
+lungen auf neuassyrischen Reliefs der ersten Hälfte des 1.
+Jahrtausends v. Chr. führen, aber noch einfacher mit den
+achtspeichigen Sonnenrädern im Vogelbarkenmotiv der bron-
+zenen Großgefäße der späten Urnenfelderzeit zu verbinden
+sind.
+Auch die Augensymbole, die außer im Fall von Avanton
+auf allen anderen Goldhüten vorkommen, gehören nicht zum
+allgemein in der Bronzezeit verbreiteten Symbolgut und,
+noch weniger die, mit Ausnahme von zwei früheisenzeitli-
+chen Belegen aus Etrurien, nur auf dem Berliner Goldhut
+auftretenden liegenden Mondsicheln mit zentralem Punkt.
+Für Datierungsfragen sind sie wenig relevant, wobei zu be-
+merken ist, dass alle Zeichen in der gegebenen Form seltene
+Erscheinungen im Musterschatz der mitteleuropäischen
+Bronzezeit sind.
+Festgehalten werden kann, dass Goldhüte vom 14. Jahr-
+hundert v. Chr. bis ans Ende der Bronzezeit in Zusammen-
+hang mit einem uns unbekannten Kult in Verwendung waren,
+in dieser langen Periode die Rechensysteme bis hin zu den
+Beispielen von Berlin und Ezelsdorf-Buch weiterentwickelt
+wurden und dass der Goldene Hut von Schifferstadt irgend-
+wann in dieser Zeit, aus welchen Gründen auch immer, um-
+gearbeitet wurde, so als ob mit der Erweiterung um die zwei
+Zonen auf der Krempe fortschrittlichere Rechenmöglichkei-
+ten erreicht werden sollten.
+Spekulativ bleibt auch die Beantwortung der Fragen, wie
+lange die Kultgegenstände in Gebrauch waren sowie wann
+und aus welchen Gründen die Goldhüte schließlich rituell
+vergraben wurden. Sicher scheint nur, dass der Kult, mit
+denen sie in Verbindung zu bringen sind, mit dem Ende der
+Bronzezeit abbricht.
+
+
+===== page075 =====
+Der Kult
+In der späten Bronzezeit bilden die Goldhüte und Goldscha-
+len aufgrund der Gleichartigkeit des Materials, der systemati-
+schen Verzierung mit Kreisbuckelscheiben und der jeweiligen
+Fundumstände eine archäologische Fundgruppe, die in einem
+gemeinsamen religiösen Zusammenhang zu sehen ist.
+Von mehr als 20 Fundorten in Mittel-, West- und Nord-
+europa sind kleine getriebene Goldgefäße bekannt, die ein-
+zeln oder zu mehreren in gut klassifizierbaren Horten gefun-
+den wurden und untereinander typologisch und funktional in
+engem Zusammenhang stehen.
+Abb. 74: Schatzfund von Eberswalde. 1913 beim Bau eines Wohnhauses im Messingwerk bei Eberswalde nahe dem Bach Finow am Rande
+einer sandigen flachen Erhebung in 1 m Tiefe beim Ausschachten in einem mit einem Deckel verschlossenen Tongefäß (H. 22 cm; Dm. 13,5 cm)
+gefunden. Darin säuberlich eingeschichtet acht Becher aus dünnem Goldblech mit Punzverzierung in Form von Scheibensymbolen und
+Mustern, wie sie auch bei den Goldhüten und beim Goldornat auftreten, zwei goldene Halsringe und Schmuckfragmente aus Gold, spiralig
+aufgewickelte Golddrähte und zusammengefaltete Goldstreifen, goldene Gusskuchen und Goldbarren im Gesamtgewicht von fast 3 kg. Es
+handelt sich dabei um den größten Goldschatz der Bronzezeit, der jemals in Deutschland gefunden wurde. 9.-8.Jahrhundert v. Chr. Ebers-
+walde, Kr. Barnim, Brandenburg. Tongefäß original (MVF Inv. Nr. 11935), ornamentierte Becher Galvanoplastiken und übrige Funde nach
+Fotografien in vergoldetem Kupfer nachgebildet. Originale seit 1945 als Kriegsbeute im Staatlichen Museum der Schönen Künste A. S. Puschkin
+in Moskau.
+
+
+===== page076 =====
+76 • Der Kult
+Abb. 75: Goldgefäße der Nordischen Bronzezeit. Die zwei Schüsseln aus getriebenem dünnem Goldblech mit glattem Zylinderhals,
+punktverzierter Randlippe und konzentrischen Kreisornamenten auf dem Schulterumbruch wurden 1842 zusammen auf dem Hügel Borgbjerg
+gefunden. Der Boden der Schalen zeigt in einem Ring aus Kreisornamenten ein sternförmiges Muster aus kleinen Ringpunzen und gekerbten
+Linien (H. 9,4 cm; Dm. 19,2 cm). Ein zusammengehöriger Satz von jeweils zwei identischen Bechern und Schöpfgefäßen kam 1874 am selben
+Fundplatz, einem „merkwürdig terrassierten Hügel", zu Tage. Die beiden Fußbecher sind atypisch durch horizontale Kerbwülste und Grate
+verziert. Die planen Standböden zeigen ein achtspeichiges Rad (H. 10,2 cm; Dm. max. 12,2 cm; Randdm. 10,2 cm).
+Bei den beiden „Schöpfgefäßen" handelt es sich um zwei identische Becher mit glattem Zylinderhals und quer geriefter Randlippe. Schulter
+und Schulterumbruch sind mit Punktbändern und Kerbwülsten verziert. Der sphärische Gefäßboden weist in drei Zonen ein Ornament aus
+Buckelscheiben mit jeweils fünf bzw. sechs konzentrischen Ringen zwischen doppelten Kerbwülsten auf (H. 10,3 cm; Dm. 11,5 cm). Die nachträg
+lich an die dünnwandigen Goldschalen mittels Nietung applizierten, hohen rundstabigen Griffe aus Bronze (H. 15,0 cm) enden in Pferdeköpfen
+und sind mit Golddraht umwickelt. 11. bis 9. Jahrhundert v. Chr. Borgbjerg, Gem. Boeslunde, Sorø, Dänemark. Nationalmuseum Kopenhagen.
+
+
+===== page077 =====
+Der reichste und bekannteste Schatz dieser Art kam 1913
+beim Messingwerk von Eberswalde zutage. An einer äußerlich
+durch nichts hervorgehobenen Stelle stieß ein Arbeiter in I m
+Tiefe auf ein 22 cm hohes Tongefäß mit verschließbarem De-
+ckel, das acht getriebene, dünnwandige Goldbecher und wei-
+tere 73 Goldgegenstände - Drahtringe, Bänder, Barren und
+zerbrochener Goldschmuck - im Gesamtgewicht von 2543 g
+enthielt. Die Gefäße sind aus einem Stück getrieben und zei-
+gen in horizontalen Zierbändern Scheibenmuster der Art, wie
+sie entsprechend für die Goldhüte typisch sind. Die kalotten-
+förmigen Böden sind in zwei Fällen sternförmig ornamentiert
+(vgl. Abb. 38; Abb. 39). Nach Form und Abmessung bilden
+die Gefäße einen Satz von drei paarigen Bechern, einer grö-
+Beren Schale mit einem achtzackigen Stern als Bodenmuster
+(Dm. 12 cm; H. 6,0 cm) und einem kleinen Becher. Die Da-
+tierung des „Tempelschatzes" in das 10.-9. Jahrhundert v.
+Chr. erschließt sich aus den Schmuckbruchstücken und der
+Form des Tongefäßes (Abb. 74).
+Der Kult • 77
+Ähnliche Umstände führten auch zur Bergung der meisten
+anderen Funde entsprechender Zusammensetzung. Entweder in
+Tongefäßen oder, wie in Unterglauheim, Bayern, bzw. Maries-
+minde Mose, Fünen, Dänemark (vgl. Abb. 43), in großen, mit
+dem Vogelbarkenmotiv verzierten Bronzeblechgefäßen niederge-
+legt oder auf freiem Felde ungeschützt vergraben, handelt es sich
+in allen Fällen um reine Zufallsfunde ohne kleinräumigen Bezug
+zu anderen archäologischen Fundstätten und Denkmälern.
+Im Material, in den Abmessungen und im Zierstil zeigt
+sich, trotz formaler Unterschiede, eine typologisch-zeitliche
+Verbindung aller spätbronzezeitlichen Goldgefäße. Neben
+einfachen steilwandigen und halbkugeligen Formen kommen
+solche mit Schulterumbruch und mehr oder minder hohen
+Kegel- oder Trichterhälsen vor. Gemeinsam ist ihnen ein
+halbkugeliges bis spitzkonisches Unterteil ohne Standboden.
+Die Abmessungen bewegen sich zwischen 5,2 cm in der Höhe
+und 7,5 bis 12,0 cm im Mündungsdurchmesser. Das Goldge-
+wicht variiert von 26 g bis 94,5 g.
+Abb. 76: Gefäßdepot. Die fünf Gefäße, von denen zwei weitmündige Schalen und zwei Becher mit konischem Unterteil jeweils ein Paar
+bilden, sowie eine Flasche mit stumpf-kegelförmigem Unterteil wurden angeblich in der Nähe einer befestigten bronzezeitlichen Siedlung am
+Rand des Nördlinger Rieses gefunden und über den Kunsthandel von der Archäologischen Staatssammlung in München erworben. Aus den
+Korrosionseigenarten zu schließen, waren die Gefäße ineinandergesteckt verborgen worden. Es handelt sich möglicherweise um den komplet-
+ten Satz eines Ritualgeschirrs. Die Verzierung der Schalen (Randdm. 12,5 cm; H. 7,4 bzw. 6,9 cm) und Tassen (Randdm. 8,9 bzw. 9,2 cm; H. 6,1 cm
+bzw. 5,9 cm) mit dreifach gefassten Scheiben zwischen horizontalen und vertikalen Kerbwulstrippen ist grafisch gegliedert, die Randlippen
+sind glatt. Die Flasche (H. 9,9 cm) weist in horizontaler Reihung Buckelmuster und einfach gefasste Buckel auf. Hals und Trichterrand sind glatt.
+Gesamtgewicht: 320,5 g. 10.-9. Jahrhundert v. Chr. Heroldingen-Huisheim, Kreis Donau-Ries, Bayern. Archäologische Staatssammlung München.
+
+
+===== page078 =====
+78 • Der Kult
+Abb. 77: Goldornat. Die beiden mit Goldfolie belegten Gürtelbleche, die sechs Goldschälchen mit regelmäßig perforiertem Rand und die
+sechs Golddrahtringe wurden, zusammen mit Bronzebeilen unterschiedlichen Typs, Bronzesicheln sowie bronzenen Arm- und Fußringen in
+einem Tongefäß auf dem Bullenheimer Berg, einer urnenfelderzeitlichen Höhensiedlung, im 10. oder 9. Jahrhundert v. Chr. dem Boden
+übergeben. Von Sondengängern illegal ausgegraben, im Kunsthandel auseinandergerissen und 1990 in der Prähistorischen Staatssammlung
+wieder zusammengeführt, ist dieser Hort relativ eindeutig datierbar, wobei die Intention, die seiner Zusammensetzung zugrunde liegt, offen
+bleiben muss. Die Teile des kultischen Ornats, das heißt die beiden goldenen Gürtelbleche mit bronzenem Korpus und die kleinen Goldblech-
+kalotten, sind mit Kreisornamenten der Art verziert, wie sie für die Goldhüte, Goldschalen und Goldscheiben typisch sind. Länge des größeren
+Gürtelblechs 19,9 cm. Bullenheimer Berg, Landkreis Neustadt a. d. Aisch-Bad Windsheim/Landkreis Kitzingen, Bayern. Archäologische Staats-
+sammlung München.
+muster auf. Eine Besonderheit der skandinavischen Goldgefäße
+Die dünnwandigen Becher sind mit horizontal umlaufenden
+sind angenietete, mit Golddraht umwickelte hoch aufschwin-
+Ornamentzonen und Konturbändern verziert. Markantestes
+gende Bronzehenkel mit Pferdekopfenden. Manchmal zeigen
+Motiv sind mehrfach von konzentrischen Kreisrippen gefasste
+nur noch die ausgebrochenen Nietlöcher, dass die Goldgefäße
+Buckel, die von Horizontalrippen und gerieften Treibwülsten
+ehemals Henkel besaßen (Abb. 75-76).
+sowie vereinzelten Wellenbändern gerahmt sind. Das Bodenor-
+Abgesehen von den häufig wiederkehrenden und weit ver-
+nament ist von der Wandung abgesetzt und zeigt in der Regel
+breiteten, aber langlebigen Stilelementen in Form und Toreu-
+kreuzförmig angeordnete Kreismotive um einen Zentralpunkt.
+tik, welche die Funde ganz allgemein der Urnenfelderzeit
+Bisweilen treten als Bodenzier kreuz- bis sternförmige Radial- tik, welche die Funde ganz allgemein der Urnenfelderzeit
+Bisweilen treten als Bodenzier kreuz- bis sternförmige Radial-
+
+
+===== page079 =====
+Der Kult • 79
+oder, in anderer Terminologie, der späten Bronzezeit, d. h. der
+Periode zwischen dem 13. und 8. Jahrhundert v. Chr. zuwei-
+sen, ergeben sich chronologische Anhaltspunkte nur über die
+Analyse der wenigen erhaltenen Fundbehältnisse. So ist das
+eiförmige Tongefäß, das den Goldschatz von Eberswalde
+enthielt, mit Keramikformen der jüngsten Bronzezeit zu ver-
+gleichen, worauf auch die Reste des tordierten Halsreifes hin-
+weisen. In diese späte Phase gehören auch die beiden Becher
+von Unterglauheim, die zusammen mit zwei bronzenen Hän-
+gebecken in einer großen Bronzesitula mit Vogelbarkenmotiv
+gefunden wurden, wobei hier allerdings festzuhalten ist, dass
+es sich nicht um einen Hort-, sondern einen Grabfund aus
+dem Übergang von der Bronze- in die Eisenzeit handelt (Ste-
+fan Wirth). Wie bei den Goldhüten ist auch für die Goldge-
+fäße festzuhalten, dass ihre Verbergung nicht auf einen Hori-
+zont der jüngeren Bronzezeit beschränkt war, sondern
+während des gesamten Zeitraums stattgefunden hat, wobei
+die religiöse Motivation im Dunkeln bleibt. Ob sich in der
+Ornamentik der Becher, vor allem wenn sie als Sätze überlie-
+fert sind, möglicherweise kalendarische Bezüge verbergen,
+scheint unwahrscheinlich. Aber als sicher darf die Verbindung
+mit einer Symbolik gelten, die mit kosmischen Erscheinun-
+gen zu tun hat, bei der die Sonne als Gottheitssymbol eine
+zentrale Rolle innehatte (H. Müller-Karpe).
+In den kultischen Bereich gehören auch die entsprechend
+mit Kreisornamenten verzierten Schmuck- und Kleiderbe-
+sätze aus Deponierungen, die vermutlich dem Ornat elitärer
+Persönlichkeiten im Sinn von Priesterkönigen zugewiesen
+werden können.
+Aus einem der zahlreichen Hort- oder Schatzfunde von
+der urnenfelderzeitlichen Höhensiedlung auf dem Bullenhei-
+mer Berg in Nordbayern stammen zwei goldene Gürtel- oder
+Brustbleche mit Kreisaugenzier auf bronzener Unterlage,
+sechs ebenso verzierte kleine, am Rand perforierte Goldblech-
+kalotten und sechs Goldspiralringe mit eineinhalb Windun-
+gen. Der Kleiderschmuck ist, zusammen mit bronzenen Arm-
+und Fußringen, Knopfsicheln, Meißeln und Beilen, in einem
+Tongefäß zwischen dem 11. und 9. Jahrhundert v. Chr. vergra-
+ben worden (Abb. 77).
+Von unbekanntem Fundort im nördlichen Niederöster-
+reich oder Südmähren stammt ein vom Museum für Vor- und
+Frühgeschichte Berlin aus dem Kunsthandel erworbenes
+Konglomerat aus drei Fundkomplexen mit goldenen Hals-
+kragen, aufwendigen Perlenkolliers, goldenen Lockenringen
+und paillettenartigen, winzigen sphärischen Bronzeknöpfen.
+Angeblich sind die drei Schmuckhorte", in denen die Perlen-
+kolliers um die Halskragen gewickelt waren, beim Rigolen in
+einem Weinberg irgendwo an der Thaya zusammen mit Ton-
+scherben entdeckt worden.
+Der Korpus der Halskragen - ihre Interpretation als Di-
+ademe" ist aufgrund der Form und der Abmessungen unwahr-
+scheinlich - mit perforierten abgerundeten Enden besteht aus
+einem dünnen Bronzeblech. Auf der Schauseite weisen sie ein
+Abb. 78: Goldkragen. Halsberge. Korpus aus dünnem Bronzeblech,
+erhabenes Ornament mitgegossen. Verzierung aus Kreisscheiben
+zwischen horizontal gliedernden dreifachen Perlbändern. Auf der
+Schauseite mit dünner Goldfolie (0,02 mm) so kaschiert, dass der
+Eindruck eines Goldkragens entsteht. Goldfolie um den Rand des
+Bronzekorpus gebörtelt, zungenförmige Enden perforiert. Der
+ursprünglich ergometrisch geformte Goldkragen wurde bei der
+Verbergung verformt. Umfang oben: 27,8 cm; unten: 28,6 cm; größte
+Br. 4,8 cm. Fundort unbekannt, „von der Thaya". Museum für Vor- und
+Frühgeschichte Berlin. Aus Komplex C", Inv. Nr. IV f 3374.
+erhaben mitgegossenes, feines Ornament aus Scheiben mit
+konzentrischen Kreisen zwischen gliedernden Kerbwülsten
+auf, das mit einer dünnen Goldfolie so kaschiert ist, als ob der
+Schmuck gänzlich aus Gold bestünde (Abb. 78).
+Das autwendigste, wohl zusammengehörige Ensemble
+setzt sich aus einem derartigen Goldkragen, goldenen Lo-
+ckenringen, einem siebensträhnigem Brustgehänge mit Bern-
+stein- und Knochenschiebern sowie 178 Bernstein- und 14
+Glasperlen zusammen. 267 kleine, gegossene sphärische Bron-
+zeknöpfe mit winziger rückseitiger Ose bildeten einen Ge-
+wandbesatz (Abb. 79).
+Den beiden anderen, entsprechend mit Kreismustern in
+zonaler Gliederung verzierten Halskragen sind ebenfalls auf-
+wendige Perlenkolliers mit Bernstein-, Muschelkalk-, Glas-
+und Augenperlen zuzuweisen, die im antiquarischen Ver-
+gleich mit Horten vom Westrand des Karpatenbeckens eine
+Datierung des kulturmorphologisch eng zusammengehörigen
+Komplexes von „an der Thaya" in das Io. bis 9. Jahrhundert
+v. Chr. wahrscheinlich machen (Alix Hänsel).
+Ob Schmuck und Kleiderbesätze dieser Art auch für die
+Träger der Goldhüte anzunehmen sind, bleibt der Spekula-
+
+
+===== page080 =====
+80 • Der Kult
+tes, geografisch gebundenes astronomisches Peil- und Mess-
+tion überlassen. Die Kreismuster auf den Goldkragen, Gür-
+gerät gedeutete Scheibe wurde schließlich mit den Insignien
+telplatten und kleinen Goldkalotten sind zwar wie bei den
+magischer Macht auf Bergeshöhe rituell bestattet. Die Frage
+Goldhüten und Goldgefäßen in Zonen angeordnet, dabei
+nach den Gründen und dem Anlass kann auch hier nur spe-
+aber viel feiner gearbeitet und haben keine ausgeprägten Mit-
+kulativ beantwortet werden (F. Bertemes).
+telbuckel. Diese Muster stehen ganz in donauländischer Tra-
+Inwieweit sich das historische Geschehen im Vorderen
+dition und kommen aus einem Raum, aus dem, trotz einer
+Orient und im östlichen Mittelmeerraum seit dem 14. vor-
+Vielzahl von Goldhorten, bislang keine Goldhüte und ver-
+gleichbaren Goldschalen bekannt sind. Dennoch ist die Vor-
+christlichen Jahrhundert auf die Entwicklung im weit ent-
+fernten Europa auswirkte, ist nur zu erahnen (Peter Schauer).
+stellung sicher nicht ganz verfehlt, dass im „Kult mit den
+Jedenfalls ist in dieser Zeit auch hier ein allmählicher Kultur-
+Goldhüten" die Ausführenden mit einem ähnlich prunkvol-
+wandel archäologisch nachweisbar, der viele Bereiche des von
+len Zeremoniengewand angetan waren, wie es sich in den
+religiösen Vorstellungen und kultischen Vorschriften be-
+Funden vom Bullenheimer Berg und von der Thaya rudimen-
+stimmten geistigen und wirtschaftlichen Lebens erfasste und
+tär widerspiegelt.
+zu tiefgreifenden gesellschaftlichen Veränderungen führte.
+Das Kultgeschehen und seine religiösen Inhalte sind nur
+In diesen Zusammenhängen ist auch das Aufkommen
+zu erahnen. Der Priester oder Priesterkönig, als Inkarnation
+neuer bzw. fremder Kulte zu sehen, die, ursprünglich in weit
+oder Vertreter astraler Gottheiten und zentrale Figur einer
+entfernten Regionen entstanden, in den Räumen am Rande
+kultischen und politischen Gemeinschaft, feierte zu bestimm-
+der damaligen Welt adaptiert, transformiert und in einer ei-
+ten Anlässen im Tempel oder - wahrscheinlicher - an natur-
+genen Religion kanonisiert wurden. Dafür steht unter ande-
+heiligen Plätzen die im Ritus festgelegten Feste. Zum liturgi-
+rem der „Kult mit den Goldhüten", der vom 14. bis ins 9./8.
+schen Gerät gehörten die goldenen Gefäße für das Trankopfer,
+Jahrhundert v. Chr. für das sakrale Geschehen in den spät-
+welches der Kultherr, auf erhabenem Platz thronend, in gold-
+bronzezeitlichen Gesellschaften Mitteleuropas zu rekonstru-
+geschmücktem Gewand und mit dem Goldhut bekrönt, im
+ieren ist. Erstaunlicherweise kommt in diesem Kultkomplex
+Kreis seiner Kultgenossen den astralen Mächten darbrachte.
+das sonst im Symbolgut der Urnenfelderzeit dominierende
+Das Ordnende und zugleich Magische im Kult verkörperte
+Vogelbarkenmotiv, mit Ausnahme der Goldflasche von Ca-
+dabei der goldene „Zauberhut". Für den Gläubigen stellte sich
+puth bei Potsdam, Brandenburg, und den iberischen Gold-
+mit der Reihung astraler Muster und göttlicher Embleme auf
+kappen von Axtroki und Leire mit ihren Prozessionen von
+der himmelwärts ragenden Tiara die kosmisch bedingte Ord-
+stilisierten Wasservögeln, auf keinem seiner liturgischen Ge-
+nung ihrer Welt dar. Der Eingeweihte aber wusste um das darin
+rätschaften vor, selbst wenn diese, wie in Mariesminde Mose,
+verschlüsselte Kalenderwerk. Mit seiner Kenntnis konnte er
+Dänemark, oder in Unterglauheim, Bayern, in bronzenen
+nicht nur die Feste und damit das Leben im sakralen Jahres-
+Großgefäßen mit dem Vogelbarkenmotiv der ausgehenden
+ablauf verbindlich regeln, sondern vor allem auch, zumindest
+Bronzezeit niedergelegt wurden. Es scheint, als ob der Kult,
+für den schlichten Gläubigen, in orakelhaft geheimnisvoller
+den dieses Piktogramm samt seinen Bezügen zur ägäischen
+Weise den richtigen Zeitpunkt für Aussaat, Pflanzung und
+Welt symbolisiert, eine ältere kosmologische Religion - näm-
+Ernte sowie die Termine für die Ablieferung der Abgaben an
+lich diejenige mit den Goldhüten - allmählich überlagert
+die Herrschenden und interkulturelle Verabredungen verläss-
+lich bestimmen, die Festtage festlegen und zukünftige Ereig-
+hat.
+Die mehr oder weniger intensiven Kontakte zwischen den
+nisse auf Jahre hinaus voraussagen. Wer den Hut auf dem Kopf
+europäischen Urnenfelderkulturen und dem östlichen Mittel-
+trug und seine Zeichen zu lesen verstand, kommunizierte mit
+meerraum haben während der gesamten Bronzezeit bestan-
+den überirdischen Mächten. Er war der Magier seiner Gemein-
+den und waren sicher mit einem steten Wissenstransfer ver-
+schaft und der „Herr der Zeit" (Abb. 8o).
+bunden. Dennoch kann angenommen werden, dass das
+Wie in den Kulturen Mesopotamiens spielte die Astrologie
+kosmologische Wissen und seine Umsetzung in ein Rechen-
+offensichtlich auch in den Religionen der europäischen Bron-
+medium, wie es die Goldhüte überliefern, Ergebnisse einer
+zezeit eine bedeutende Rolle. Das Wissen um den Lauf der
+originären Entwicklung der einheimischen Bronzezeitkultu-
+Gestirne und die Kenntnis seiner Mechanik sowie deren Ge-
+ren mit einer Elite sind, deren politische Macht sich nicht nur
+setzmäßigkeiten ist sicher nicht zur Gänze aus dem Vorderen
+auf wirtschaftliche Potenz, sondern vor allem auf geheimes
+Orient übernommen, sondern beruht auf den Naturbeobach-
+tungen einheimischer Generationen seit dem Beginn des
+Wissen stützte.
+Hierin mag auch einer der Gründe liegen, warum das
+Neolithikums vor mindestens 7000 Jahren. Hiervon zeugen
+„Magische Gold" nach 3000 Jahren unter stets ähnlichen
+die „Himmelsobservatorien", die in den zahlreichen prähis-
+Umständen an heute unauffälligen Plätzen wieder aufgefun-
+torischen Erdwerken Mitteleuropas nachzuweisen sind und
+den wird. Es ist ein zeitlich und geografisch fassbares Phäno-
+einen ersten Höhepunkt in der frühen Bronzezeit mit der so-
+men, dass Goldgefäße, Goldornate und auch die Goldhüte in
+genannten Himmelsscheibe von Nebra in Mitteldeutschland
+oftenbar ritueller Handlung an geheimen oder ehedem natur-
+fanden. Die als ein offenbar in drei Phasen weiterentwickel-
+
+
+===== page081 =====
+Der Kult
+81
+Abb. 79: Goldkragen und Perlengehänge.
+a. Frontalansicht der Halsberge. Scheibenzier in drei Zonen zwischen
+Trennbändern. Konstruktion wie in Abb. 78. An einem Ende auf der
+Rückseite des Bronzekorpus eine angelötete Bronzedrahtschlaufe.
+Umfang oben 26,1 cm: unten 24,1 cm. Größte Br. 5,1 cm. Goldfolie 0,02 mm.
+b. Pektorale aus sieben Perlschnüren. Zwei Bernsteinschieber mit acht
+Durchbohrungen, L. 6,6 cm und 6,9 cm, davon eine ausgebrochen. Ein
+Knochenschieber mit sieben Durchbohrungen, L. 9,2 cm. 870 scheiben-
+förmige Muschelkalkperlen, 178 doppelkonische Bernsteinperlen, 14
+blaue Glasperlen, 2 Bronzespiralröllchen. Montage des Gehänges
+rezent. Fundort unbekannt, „von der Thaya". Museum für Vor- und
+Frühgeschichte Berlin. Aus Komplex A", Inv. Nr. IV f 3369.

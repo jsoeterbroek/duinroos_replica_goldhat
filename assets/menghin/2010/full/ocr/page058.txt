@@ -1,0 +1,97 @@
+Zahlensymbolik und Rechensystem
+58
+zusätzlicher Ring, gleich einem Tag, im Ornament vorhan-
+den. Diese summieren sich im neunmonatigen Ablauf von 4
+Berliner Goldhut
+Vierteljahren (12 Sonnenmonate) bis 18 Vierteljahre (54 Son-
+354 12 L = 11 d
+nenmonate) auf fünf Zähler, so dass ihr Aufschlag auf die
+4/4 J 365
+vierzehnmalige Addition von 91 (14 x 91 = 1274) auf die 365
+- 442 15 L = 16 d
+5/4 J 458
+Tage (365 + 1274 = 1639) im System des Goldhutes die für die
+530 18 L = 18 d
+6/4 J 548 - 530 18 L = 18 d
+6/4 J 548
+Darstellung kalendarischer Zyklen relevante Zahl 1644 (1639
+620 21 L = 19 d
+7/4 J 639
++ 5) ergibt. Werden hierzu wieder 9r Tage oder Zähler hinzu-
+gefügt, entsteht mit 1735 die kalendarische Zahl für 57 Son-
+- 710 24 L = 21 d
+8/4 J 731
+9/4 J 819 - 797 27 L = 22 d
+nenmonate, von der die Zählung auf dem Goldhut mit 1739
+allerdings um +4 Zähler abweicht, was wiederum mit der sys-
+10/4.J 913 - 885 30 L = 28 d
+temimmanenten Absicht der Darstellung eines lunisolaren
+Schalten +1
+Kalenderwerks in Zusammenhang steht. Die Quersumme
+11/4 J 1002 - 1002 34 L = 0 d
+der Differenzen ist +3 (Abb. 58).
+12/4 J 1097 - 1092 37 L = 5 d
+13/4 J 1187 - 1181 40 L = 6 d
+Berliner Goldhut - lunar
+14/4 J 1276 - 1266 43 L = 10 d
+15/4 J 1371 - 1358 46 L = 13 d
+Bei der Zusammenfassung der synodischen Zeitabschnitte
+16/4 J 1461 -. 1447 49 L = 14 d
+(L) im dreimonatigen Rhythmus von 12 bis 57 bzw. 59 Luna-
+tionen entsteht ein, gegenüber der tabellarischen Darstellung
+17/4 J 1556 - 1536 52 L = 20 d
+der solaren Berechnungen, ähnlich dichtes Bild. Drei Lunati-
+18/4 J 1644 - 1622 55 L = 22 d
+onen bestehen aus 88,5 Tagen, weshalb die Zählung im
+19/4 J 1739 - 1713 58 L = 26 d
+dreimonatigen Rhythmus in alter Zeit sicher alternierend je-
+Schalten +2
+weils mit vollen 88 und 89 Tagen vorgenommen wurde.
+Auch bei der Erfassung der Lunationen im dreimonatigen
+19/4 J 1739 1739 59 L= 0 d
+Intervall stimmen die Zahlen in den definierten Zonen weit-
+Summe = 54 d
+gehend mit den kalendarischen Daten überein, wobei die
+Stimmigkeit sich durch den Einschub eines zusätzlichen Mo-
+nats nach der 30. und vor der 59. Lunation ergibt. Abwei-
+Abb. 60: Berliner Goldhut, lunisolar. Die Zahlenwerte der solaren
+chungen um mehr als einen Tag in der Tabelle erklären sich
+Vierteljahresabschnitte im Vergleich mit den Vierteln des Mondjahres
+aus dem Rechnen mit abwechselnd 29 und 30 Tagen für den
+bzw. der Mondumläufe im dreimonatigen Rhythmus und der
+Monat, die je nach Zählschema Toleranzen von +/- I Tag auf-
+Tagesdifferenzen (d) im synchronen Verlauf. Nach der Schaltung
+weisen. Die Quersumme der Differenzen ist -7 (Abb. 59).
+werden die Monate plus 1 gezählt. Der Unterschied an Tagen in der
+Zählung im System des Goldhutes stimmt mit 54 d annähernd mit
+den kalendarischen Daten (51 d) überein.
+Das lunisolare Konzept
+J: Jahre. - L: (synodische) Monate. - d: Tage. - Rot: Annäherung an
+In der Abfolge der Vierteljahresabschnitte im Vergleich zu
+die exakten kalendarischen Werte o bis +/- ½. - Blau: Annäherung
+bis +/-1. - Grün: Annäherung an die kalendarisch relevante Differenz
+den numerisch entsprechenden drei Mondphasen (synodi-
+sche Monate) zeigt sich keine augenscheinliche Systematik.
+an Tagen (d). - Grau unterlegt: im System des Goldhutes nicht
+Der Nutzer wusste offenbar, welche Zonen für den Abgleich
+darstellbar.
+der solaren und lunaren Zyklen relevant sind und wann mit
+den „Schaltzonen" operiert werden musste. Dabei war zu be-
+chronisierung der Mondphasen mit dem durch die Aquinoktien
+rücksichtigen, dass nach zehnmaligem Durchlaufen der Jah-
+und Sonnenwenden bestimmten vier Jahreszeiten abzuleiten.
+reszeiten bzw. mit der I0. Wiederkehr desselben Kardinal-
+Die ungefähr I1 Tage Differenz zwischen dem (Sonnen-)Jahr
+punkts und spätestens nach der 30. Lunation das erste Mal
+mit 365 ¼ und dem Mondjahr mit 354 ⅓ Tagen sowie das Fort-
+und nach weiteren 9 Durchläufen oder vor der 59. Lunation
+schreiten der Differenz im Lauf von 19 Vierteljahren oder vier-
+das zweite Mal ein synodischer Monat mit 30 Tagen einge-
+einhalb Jahren ist dabei im wahrsten Sinn des Wortes digital
+schoben, das heißt zugeschaltet werden musste (vgl. Abb. 52
+(lat. digitus, Finger) im Ornament des Goldhutes ablesbar.
+und Abb. 56).
+Die insgesamt zu vernachlässigenden Ungenauigkeiten re-
+Aus der tabellarischen Gegenüberstellung der Daten ist die
+sultieren aus der Unschärfe einiger Zahlenwerte (in den Ta-
+praktische Nutzung des Goldhutes als Rechenhilfe für die Syn-

@@ -8,3 +8,10 @@ __pycache__/
 # churn, not provenance.
 stl/
 .DS_Store
+
+# Abandoned attempt: heavy derived exports (STL/3mf/svg). Kept on disk for
+# reference, not tracked -- the .FCStd sources remain in git. See IMPLEMENTATION_PLAN.md A.4.
+reference/cad/freecad_export/
+reference/cad/3mf/
+reference/cad/svg/
+reference/cad/freecad_import/

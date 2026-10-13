@@ -32,6 +32,9 @@ Important files on the background of the object:
 ## Commands
 AI Model in PI <--->  MCP  <---> Freecad running MCP server
 
+## Research folder
+The research folder contains AI-assisted research (using https://github.com/jessewaites/antiquity). Use these a reference.
+
 ## Assets folder
 The assets folder contains images of the real object in Berlin Museum. Use these a reference.
 

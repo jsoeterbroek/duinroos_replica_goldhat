@@ -894,7 +894,7 @@ assert  every residual over 2 mm carries a named cause in the report
 
 ⚠️ What the criterion deliberately no longer asks for: a number in mm *per sample height read off the image*. That is not achievable and the earlier draft's version of this check was unachievable for three separate reasons, all now demonstrated rather than assumed — the view is tilted (so the outline is a smear, not `r(z)`), the hat's own shadowed gold is nearly as dark as the black background (so the extreme edges are segmentation-limited, and the tolerance that keeps the lower shaft carves holes in the upper one), and the *same* photograph at two resolutions disagrees with itself by 2–3 mm. A check that cannot fail for the right reason is not a check.
 
-**`scripts/verify_geometry.py`** — on the exported STLs:
+**`scripts/verify_geometry.py`** — ✅ **created (the P4 harness).** Two tiers, both stdlib-only, `python3 scripts/verify_geometry.py [--stl FILE...]`, `--selftest` for the mesh maths. The **DATA tier runs now** (before any solid): the 745 budget, the per-zone pitch/ligature fit, and the bed fit including the Krempe sector split. The **STL tier runs when parts exist**: parses each mesh, asserts 2-manifold, closed/positive-volume, and bed fit. On the exported STLs it will also enforce:
 ```
 bounding box height of the full stack == 745 ± 3 mm
 outer diameter at each boundary       == r(z) target ± 0.5 mm
@@ -910,8 +910,12 @@ Krempe radial width                   ==  52..55 mm   (Menghin)
 Krempe rise                           ==   7 mm      (745 budget residual)
 minimum ligature between windows      >=   3 mm
 for each zone: sum(motif pitch) <= min circumference in zone   <-- the P2 pitch check
-  (this is the check that forces r(629) = 63.5: zone 17 needs 396 mm of 33 x 12 mm
-   and zone 18 needs 441 mm of 21 x 21 mm, against 399.0 and 441.9 available)
+  (forces r(629) = 63.5: zone 17 needs 396 mm of 33 x 12 mm, zone 18 needs 441 mm
+   of 21 x 21 mm. The row the discs sit on is the binding circumference -- a disc
+   is a point at its top edge -- so verify_geometry asserts on that row and
+   REPORTS the edge. At z18's true narrowest edge, r(653) = 70.04 mm -> 440.1 mm,
+   not the 441.9 stated here, i.e. -0.9 mm total: fine for centred relief, but it
+   forbids a full-height window in z18 (see section 6.4).)
 each solid                            watertight, volume > 0, no self-intersection
 every exported mesh                  2-manifold (export_stl -> nonmanifold_edges;
                                      a tangent cutter face passes isValid() but
@@ -975,7 +979,7 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 | `data/readings/schmidt_kaler.json` | ornament count per zone | ✅ **created**, explicitly *not* a day count |
 | `scripts/verify_calendar.py` | 11 assertions over the above, stdlib only | ✅ **created, passing** |
 | `scripts/build_goldhat.py` | the FreeCAD geometry kernel (P3) — band shell, Trennband ridge, registration lip, `export_stl` / `_facets` / `nonmanifold_edges`, and the engraving helpers (`label_shape`, `engrave_label`, `engrave_ring_label`, `fit_ring_label`) | ✅ **created, P3 closed** — z13 builds as one valid solid; the coupon scripts import `_revolve_section` / `export_stl` from it. Every export asserts 2-manifoldness (§11.4) |
-| `scripts/verify_geometry.py` | STL-level assertions | to create (P4) |
+| `scripts/verify_geometry.py` | P4 acceptance harness — DATA tier (always) + STL tier (when parts exist); 2-manifold, closed, bed fit, pitch/ligature, sector bbox | ✅ **created (P4)**; `--selftest` passes, data tier passes, STL tier verified on the coupons |
 | `stl/berlin_goldhat_{z01..z19,krempe_a..c}.stl` | 22 printed parts | to create (P4) |
 
 ⚠️ `open_questions.md` Q2 asked for ~20 mm spacers between Z9–Z10 and Z16–Z17. **The resolved 745 mm budget says they do not exist** (§2.2): they belong to the prior attempt's table, not to Menghin. The file is left as written because it records what was asked.
@@ -1007,6 +1011,7 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 | ~~`scripts/analyze_cone.py`~~ | OpenCV cone-measurement script, from the prior attempt | ✅ **deleted when P1 closed** — `cv2` is not installed and will not be added; `measure_silhouette.py` replaced it |
 | `scripts/measure_silhouette.py` | PIL + numpy silhouette profiler — **the P1 tool** | ✅ **working and finished.** Border-median segmentation, per-row envelope with despiking, `--dump` (ASCII mask, for a model that cannot accept image content), `--project` (tilt-recovered forward check). See §12 |
 | `scripts/verify_calendar.py` | the data-layer assertions | ✅ passing |
+| `scripts/verify_geometry.py` | the **P4 acceptance harness** — DATA tier (budget, per-zone pitch/ligature, bed fit, Krempe sector bbox) + STL tier (2-manifold, closed, bed fit) | ✅ **new**; stdlib only, no FreeCAD; `--selftest`, `--stl` |
 | `scripts/motif_features.py` | **the three motif forms** (`relief` / `window` / `relief_window`) as ordered prism operations on the cone; `placed_motifs`, `motif_prism_polygons`, `build_motif_ops`, `fuse_all` | ✅ new, self-checking without FreeCAD |
 | `scripts/build_coupons.py` | the P3.5 coupon build — **run under `freecadcmd`**, not the MCP bridge | ✅ emits the 3 coupons + fit-test trio |
 | `scripts/build_clearance_coupon.py` | the lap-joint radial-clearance ladder (⌀35 mm, real joint taper, 0.15/0.25/0.35 mm, each socket rim engraved with its clearance) | ⚠️ **superseded by §11.4**; regenerated correct (6 parts) after the `addFacets` bug — see §11.4 |

@@ -93,13 +93,28 @@ def main():
     shapes = []
     for i, c in enumerate(CLEARANCES):
         x = (i - (len(CLEARANCES) - 1) / 2.0) * 60.0
-        socket = B._revolve_section(socket_section(slope))
+        sec = socket_section(slope)
+        socket = B._revolve_section(sec)
         spigot = B._revolve_section(spigot_section(slope, c))
+
+        # Engrave the clearance on the socket's top annulus. Row order on the
+        # plate is a legend only while the parts sit on it; once separated, a
+        # printed value is what keeps a 0.15 socket from being judged as 0.35.
+        n = len(sec) // 2 - 1
+        r_mid = 0.5 * (sec[n][0] + sec[n + 1][0])
+        ring_w = sec[n][0] - sec[n + 1][0]
+        size = G.fit_ring_label("%.2f" % c, r_mid, ring_w)
+        assert size, "no legible label size for %.2f on a %.1f mm ring" % (c, ring_w)
+        socket = G.engrave_ring_label(socket, "%.2f" % c, r_mid, sec[n][1], size)
+        assert len(socket.Solids) == 1 and socket.isValid(), \
+            "engraving %.2f broke the socket solid" % c
+
         socket.translate(FreeCAD.Vector(x, 0.0, 0.0))
         spigot.translate(FreeCAD.Vector(x, 60.0, 0.0))
         shapes += [socket, spigot]
         print("  %.2f mm: socket vol %6.0f mm3  spigot vol %6.0f mm3  "
-              "radial gap %.2f mm" % (c, socket.Volume, spigot.Volume, c))
+              "radial gap %.2f mm  label %.2f mm tall on the socket rim"
+              % (c, socket.Volume, spigot.Volume, c, size))
 
     path = os.path.join(OUT, "clearance_ladder.stl")
     # ⚠️ use the shared exporter, NOT a local `mesh.addFacets(s.tessellate())`

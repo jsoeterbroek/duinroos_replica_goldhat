@@ -242,6 +242,155 @@ def build_band(hp, zj, band_id, motif_form=None, verbose=True):
             "form": form, "ridge_h": ridge_h, "profile": profile}
 
 
+# --- 5. labelling (human reference on the print) ------------------------------
+# A part id engraved into a hidden face, so a stack of loose parts is
+# self-identifying without going back to the filenames. The prior attempt did
+# this -- the zone number cast into a spoke, reference/cad/printed/ -- and the
+# plan adopts it (section 11.4). Engraved, not raised: a raised label would
+# read as ornament on a 1:1 replica.
+
+DEFAULT_FONTS = (
+    "/System/Library/Fonts/Supplemental/Arial.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+    "C:/Windows/Fonts/arial.ttf",
+)
+
+
+def find_font(fontfile=None):
+    """A usable TTF path, or None. Override with GOLDHAT_FONT or the argument."""
+    cands = ([fontfile] if fontfile else
+             [os.environ.get("GOLDHAT_FONT")] + list(DEFAULT_FONTS))
+    for f in cands:
+        if f and os.path.exists(f):
+            return f
+    return None
+
+
+def label_shape(text, size_mm, fontfile=None, tracking=0.0):
+    """
+    `text` as a planar Part.Shape in the XY plane, CENTRED on the origin,
+    reading +X and facing +Z. Requires FreeCAD.
+
+    Draft.makeShapeString needs a document, so this uses a scratch one and
+    removes the object again -- a bare freecadcmd session has no
+    ActiveDocument.
+    """
+    if not HAVE_OCCT:
+        raise RuntimeError("label_shape needs FreeCAD")
+    import Draft
+    font = find_font(fontfile)
+    if font is None:
+        raise RuntimeError("no usable font; set GOLDHAT_FONT to a .ttf")
+    doc = FreeCAD.ActiveDocument or FreeCAD.newDocument("_goldhat_labels")
+    obj = Draft.makeShapeString(String=text, FontFile=font, Size=size_mm,
+                                Tracking=tracking)
+    doc.recompute()
+    shp = obj.Shape.copy()
+    doc.removeObject(obj.Name)
+    bb = shp.BoundBox
+    shp.translate(FreeCAD.Vector(-0.5 * (bb.XMin + bb.XMax),
+                                 -0.5 * (bb.YMin + bb.YMax), 0.0))
+    return shp
+
+
+def engrave_label(target, text, at, size_mm, depth=0.6, rot_z_deg=0.0,
+                  fontfile=None, tracking=0.0, gap=0.2):
+    """
+    Cut `text` into the horizontal +Z face of `target` at `at` = (x, y, z_top).
+
+    `gap` lifts the cutter clear of the face so the cut is volumetric -- a
+    cutter that stops exactly on the surface is a face contact and can leave
+    two disjoint solids (the section 11.2/11.3 rule). Text reads from above at
+    `rot_z_deg`, centred on `at`, and is `depth` deep.
+    """
+    if not HAVE_OCCT:
+        raise RuntimeError("engrave_label needs FreeCAD")
+    shp = label_shape(text, size_mm, fontfile, tracking)
+    if rot_z_deg:
+        shp.rotate(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1), rot_z_deg)
+    shp.translate(FreeCAD.Vector(at[0], at[1], at[2] + gap))
+    cutter = shp.extrude(FreeCAD.Vector(0, 0, -(depth + gap)))
+    return target.cut(cutter).removeSplitter()
+
+
+def engrave_ring_label(target, text, r_mid, z_top, size_mm, depth=0.6,
+                       angle_deg=90.0, radial=False, fontfile=None,
+                       tracking=0.0):
+    """
+    `engrave_label` for a HORIZONTAL ANNULAR face of mean radius `r_mid`.
+
+    The label is centred on the ring at `angle_deg` (default +Y, the 'top' of
+    the ring when looking down -Z), reading tangentially -- so a ring label
+    reads like the number on a clock face. `radial=True` turns it to read
+    along the radius instead.
+
+    ⚠️ The caller must keep `size_mm` below the annulus's RADIAL width, or the
+    text runs off the ring, and keep the string's width below the chord at
+    `r_mid`, or its ends run off the arc. Both are a `label_shape(...).BoundBox`
+    check away -- see the coupon scripts, which assert them before cutting.
+    """
+    a = math.radians(angle_deg)
+    at = (r_mid * math.cos(a), r_mid * math.sin(a), z_top)
+    rot = angle_deg - 90.0 if radial else 0.0
+    return engrave_label(target, text, at, size_mm, depth=depth,
+                         rot_z_deg=rot, fontfile=fontfile, tracking=tracking)
+
+
+def label_fits_ring(text, size_mm, r_mid, width_mm, fontfile=None,
+                    tracking=0.0, margin_mm=0.15):
+    """
+    True if `engrave_ring_label`'s `text` stays inside a ring face of radial
+    `width_mm` centred at `r_mid`. Uses the real ShapeString outline (needs
+    FreeCAD), so the coupon scripts can assert a label is on the material, not
+    off it.
+
+    The text is a FLAT rectangle at `r_mid`, so the test is on its four
+    corners: the near pair must clear the bore and the far pair the rim. A
+    chord-vs-arc comparison would fail even for a label that fits -- a flat
+    string is a chord, not an arc, and its corners are the extremes.
+    """
+    bb = label_shape(text, size_mm, fontfile, tracking).BoundBox
+    r_in = r_mid - 0.5 * width_mm
+    r_out = r_mid + 0.5 * width_mm
+    hx, hy = 0.5 * bb.XLength, 0.5 * bb.YLength
+    r_near = math.hypot(r_mid - hy, hx)
+    r_far = math.hypot(r_mid + hy, hx)
+    return r_near >= r_in + margin_mm and r_far <= r_out - margin_mm
+
+
+def fit_ring_label(text, r_mid, width_mm, sizes=(3.4, 3.0, 2.6, 2.2, 1.8, 1.6,
+                                                1.4, 1.2), **kw):
+    """The largest size in `sizes` at which `text` fits the ring, or None.
+
+    Largest-first because a print label wants to be as big as the material
+    allows: a 1.6 mm value on a coupon is legible, a 3.0 mm one is obvious.
+    """
+    for s in sizes:
+        if label_fits_ring(text, s, r_mid, width_mm, **kw):
+            return s
+    return None
+
+
+def label_fits_disc(text, size_mm, r_mm, fontfile=None, tracking=0.0,
+                    margin_mm=0.3):
+    """True if `text`'s bounding rectangle's corners stay inside a disc of
+    radius `r_mm` -- the test for a label centred on a solid end face (the
+    spine's top)."""
+    bb = label_shape(text, size_mm, fontfile, tracking).BoundBox
+    return (math.hypot(0.5 * bb.XLength, 0.5 * bb.YLength)
+            <= r_mm - margin_mm)
+
+
+def fit_disc_label(text, r_mm, sizes=(3.4, 3.0, 2.6, 2.2, 1.8, 1.6, 1.4, 1.2),
+                   **kw):
+    """The largest size in `sizes` at which `text` fits the disc, or None."""
+    for s in sizes:
+        if label_fits_disc(text, s, r_mm, **kw):
+            return s
+    return None
+
+
 # --- self-check (no FreeCAD needed) ------------------------------------------
 
 def _selfcheck():

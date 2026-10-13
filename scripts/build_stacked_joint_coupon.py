@@ -188,14 +188,29 @@ def main():
           % (spine.Volume, len(spine.Solids), spine.isValid()))
 
     # --- lay the parts out on one plate (d70 tiles spaced 75 mm, spine below)
+    # Each tile's hub top is engraved with its index: the three tiles are
+    # identical, so without a mark their order (and the stack they came from)
+    # is lost as soon as they leave the plate. The spine end face carries the
+    # coupon tag and the clearance it was cut at -- "SJ" for stacked-joint.
+    hub_rmid = HUB_R - _J["hub_wall_mm"] / 2.0
+    tag = "SJ%.2f" % CLEAR
+    spine_size = G.fit_disc_label(tag, SPINE_R)
+    assert spine_size, "spine end face too small for %r" % tag
+    spine = G.engrave_label(spine, tag, (0.0, 0.0, SPINE_LEN), spine_size)
+    assert len(spine.Solids) == 1 and spine.isValid(), "engraving broke the spine"
+
     shapes = []
     for i in range(N_TILES):
         s = tile.copy()
+        size = G.fit_ring_label(str(i + 1), hub_rmid, _J["hub_wall_mm"])
+        assert size, "hub face too small for tile index %d" % (i + 1)
+        s = G.engrave_ring_label(s, str(i + 1), hub_rmid, H, size)
+        assert len(s.Solids) == 1 and s.isValid(), \
+            "engraving tile %d broke it" % (i + 1)
         s.translate(FreeCAD.Vector((i - (N_TILES - 1) / 2.0) * 75.0, 0.0, 0.0))
         shapes.append(s)
-    s = spine.copy()
-    s.translate(FreeCAD.Vector(0.0, 80.0, 0.0))
-    shapes.append(s)
+    spine.translate(FreeCAD.Vector(0.0, 80.0, 0.0))
+    shapes.append(spine)
 
     # ⚠️ B.export_stl, not a local `mesh.addFacets(s.tessellate())` loop: the
     # tuple form silently keeps only the FIRST shape (build_goldhat._facets),
@@ -222,6 +237,8 @@ def main():
         f.write("spine: d%.2f x %.1f mm, key ridge %.1f x %.1f, clearance %.2f mm\n"
                 % (2 * SPINE_R, SPINE_LEN, SPINE_RIDGE_W,
                    SPINE_RIDGE_OUT - (SPINE_R - 1.0), CLEAR))
+        f.write("labels: tiles 1..%d engraved on the hub, spine '%s' on its end\n"
+                % (N_TILES, tag))
         f.write("\nprint one job. Judgements 1-5 are in "
                 "IMPLEMENTATION_PLAN.md section 11.4.\n")
         f.write("Use matte PLA, not silk.\n")

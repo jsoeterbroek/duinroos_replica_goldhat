@@ -101,15 +101,14 @@ def main():
         print("  %.2f mm: socket vol %6.0f mm3  spigot vol %6.0f mm3  "
               "radial gap %.2f mm" % (c, socket.Volume, spigot.Volume, c))
 
-    import Mesh
-    mesh = Mesh.Mesh()
-    for s in shapes:
-        mesh.addFacets(s.tessellate(0.05))
     path = os.path.join(OUT, "clearance_ladder.stl")
-    mesh.write(path)
+    # ⚠️ use the shared exporter, NOT a local `mesh.addFacets(s.tessellate())`
+    # loop: that tuple form silently keeps only the FIRST part, which is how
+    # this "ladder" was first written as a single socket. See build_goldhat._facets.
+    facets = B.export_stl(shapes, path)
     total = sum(s.Volume for s in shapes)
     print("\nwrote %s  (%d facets, %.1f g PLA)"
-          % (path, mesh.CountFacets, total * 1.24 / 1000.0))
+          % (path, facets, total * 1.24 / 1000.0))
 
 
 if __name__ == "__main__" or __name__ == os.path.splitext(

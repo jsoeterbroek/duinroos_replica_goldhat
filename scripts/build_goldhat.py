@@ -49,15 +49,40 @@ def make_band_solid(profile, z0, z1, wall_mm, n=48, defl=0.05):
     return solid, face
 
 
+def _facets(shape, defl=0.05):
+    """A shape's tessellation as absolute point-triples.
+
+    `Mesh.addFacets(shape.tessellate(...))` -- passing the raw
+    (vertices, indices) tuple -- is a TRAP: the first call works and every
+    later call is silently dropped (verified on FreeCAD 1.1.4: two boxes
+    gave 12 facets instead of 24, with a bbox that had grown but no new
+    triangles). A single-shape export hides it; a multi-part plate does not.
+    It is why stl/test/clearance_ladder.stl contained only ONE part. Expand
+    to point-triples and the accumulation is correct.
+    """
+    v, f = shape.tessellate(defl)
+    return [(v[i], v[j], v[k]) for i, j, k in f]
+
+
 def export_stl(shape, path, defl=0.05):
     """Export with an explicit deviation, instead of OCCT's default.
 
     `Shape.exportStl` takes no tolerance, so mesh explicitly and write the
     mesh. This is the difference between ~2 MB and ~23 MB per band.
+
+    `shape` may be one shape or a list of them (a coupon plate). Multi-part
+    plates are why the accumulation guard below exists.
     """
     import Mesh
+    shapes = shape if isinstance(shape, (list, tuple)) else [shape]
     mesh = Mesh.Mesh()
-    mesh.addFacets(shape.tessellate(defl))
+    n = 0
+    for s in shapes:
+        tris = _facets(s, defl)
+        mesh.addFacets(tris)
+        n += len(tris)
+    assert mesh.CountFacets == n, \
+        "mesh lost facets: %d of %d (see _facets)" % (mesh.CountFacets, n)
     mesh.write(path)
     return mesh.CountFacets
 

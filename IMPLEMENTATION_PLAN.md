@@ -1,6 +1,6 @@
 # Implementation Plan — Berlin Gold Hat Replica
 
-**Status:** nothing here is built yet. **One item remains, and it is a choice, not an unknown:** the **motif form** is deliberately deferred to a print (P3.5, §6.3). The profile `r(z)` — previously the only *unknown* — is now **settled** (P1, §6.1, §12): it is Menghin's **9 documentary constraints** with `pchip` between them, and the photo check has been performed, quantified, and its limits recorded.
+**Status:** nothing here is built yet. **Two items remain, and both are choices, not unknowns:** the **motif form**, deferred to a print (P3.5, §6.3), and the **joint** — a flat stack + keyed spine vs the P3 lap lip (P4/P5, §11.4). The profile `r(z)` — previously the only *unknown* — is now **settled** (P1, §6.1, §12): it is Menghin's **9 documentary constraints** with `pchip` between them, and the photo check has been performed, quantified, and its limits recorded.
 
 | Was | Now |
 |---|---|
@@ -459,6 +459,8 @@ Each *stacked* band (zones 1–19, TBs fused as lips) = `outer_frustum/frustum-b
 - a **Trennband ridge** at its lower edge (§4 Option A), 1 mm proud, 9 mm tall — the relief that separates zones visually.
 - **symbol features** (§6) on the outer surface.
 
+> ⚠️ **Superseded by §11.4 (operator decision).** The flat stacked seat + keyed spine replaces the registration lip; the band becomes `seat + spider + LED cavity + skin` with a **hub bore and keyway** instead of the lip. `make_registration_lip` and `stl/test/clearance_ladder.stl` are kept only until the stacked coupon (§11.4) is printed and judged.
+
 The **Krempe** is a different primitive: `annular_disc(r_inner=94.5, r_outer=150.5, z=738→745)` — a 56 mm radial ribbon rising only 7 mm (7.1°), so it prints flat in its own plane with no supports — with zones 20 and 21 as **concentric** motif rings rather than stacked ones, split into **3 radial sectors** (§2.3). Its two motif rings sit at r ≈ 107 mm (zone 20, 54 × ⌀12 mm, circumference 672 mm) and r ≈ 132 mm (zone 21, 47 × ⌀15 mm, circumference 829 mm), with the twisted bronze rim wire occupying r 144.5–150.5 mm.
 
 ### 5.3 Symbol projection — the one non-obvious bit
@@ -716,7 +718,7 @@ The three green zones are always **{7, 16, 17}** — the once-only disc stamps (
 | **P3 — geometry kernel** | `build_goldhat.py`; one band end-to-end (start with z13) | ✅ **CLOSED.** `scripts/band_geometry.py` (profile, section, projection — no FreeCAD needed, self-checking) + `scripts/build_goldhat.py` (OCCT). **z13 builds as one valid closed solid**: vol 33,429 mm³, ⌀123.0 × 43.1 mm, and every section radius matches `r(z)` to 0.01 mm. Two bugs found and fixed on the way — see below |
 | **P3.5 — motif-form test** | emit the same band three ways (`relief` / `window` / `relief_window`), print all three, **look at them** (§6.3). ⚠️ **Do not wait for the full P3 catalogue to do this** — the coupon needs exactly one primitive (tool 15, the ⌀21 / 6-ring disc) and one zone's placement. Build those two things first and the coupons exist while the other 23 tools are still unwritten. | motif form chosen; `data/hat_parameters.json` ✅ **COUPONS BUILT, print verdict pending.** `scripts/motif_features.py` + `scripts/build_coupons.py` emit `stl/test/z15_{relief,window,relief_window}.stl` plus the fit-test trio, all three single valid solids and measurably different (§11.2). What remains is the **physical print and the five judgements** in §6.3. |
 | **P4 — full generation** | zones 1–19 + the Krempe plate split into 3 sectors → `stl/` | all 22 STLs watertight, `verify_geometry.py` passes |
-| **P5 — print & fit** | 3-band fit test, then full print, assembly | stacked cone is straight, 745 mm ± 3 mm, joints tight |
+| **P5 — print & fit** | 3-band fit test (**flat stacked seat + keyed spine, §11.4** — supersedes the lap), then full print, assembly | stacked cone is straight, 745 mm ± 3 mm, joints tight |
 | **P6 — (later) Stage 2** | LEDs, M5 firmware | out of scope here |
 
 P0 and P1 are cheap and de-risk everything. P2 is the long pole and the only real research effort.
@@ -790,6 +792,35 @@ Because `COLLAR_INSET (0.6) < wall (2.0)`, this radius is *fatter* than the band
 ⚠️ **Before the next print, calibrate the clearance.** 0.25 mm radial is optimistic for FDM and is currently *believed*, not measured. Rather than print 400 g of trio at three clearances, `scripts/build_clearance_coupon.py` emits `stl/test/clearance_ladder.stl` — a ~16 g plate of three independent socket/spigot pairs at **0.15 / 0.25 / 0.35 mm**, each reproducing the joint's *local taper* (`dr/dz = −0.0707` at z=527) rather than a straight cylinder. Row order left→right is 0.15, 0.25, 0.35. It deliberately does **not** put three clearances on three arcs of one band: the lip enters a uniform collar axially, so the tightest arc alone decides whether the band enters — the sectors would not be independent. Keep the loosest pair that still holds, set `registration_clearance_mm` from it, and rebuild.
 
 **Still open at this end:** the same lip logic must be re-checked at the cuff (611–629) and the Kalottenfuß, where the profile turns and `drdz` swings sign — the profile-following form handles it, but the `z1`-adjacency of those rings should be asserted by `verify_geometry.py` before P4.
+
+### 11.4 Joint redesign — flat stack + keyed spine, not a lap (operator decision)
+
+**Evidence — the prior prints, read as evidence only.** `reference/cad/printed/z04_z08_{top,side,bottom}.jpeg` are proof-of-concept prints of the *abandoned* attempt (do not recycle its files, `AGENTS.md`). They show one zone per print: a thin (~1 mm) decorated outer skin, a hollow annulus directly behind the symbols, an inner structural ring, a **4-arm spider** to a central hub, a slot/nub connector at the hub, and the zone number cast into a spoke. The FreeCAD sources are in the same folder: `berlin_goldhut_z04.FCStd` Body007 = 33,406 mm³, bbox **70 × 24 × 70 mm**, plus a separate 9 mm Trennband body (Body008, Ø74); `berlin_goldhut_z08.FCStd` Body007 = 72,622 mm³, **102 × 31 × 102 mm** (Trennband Ø106). The prints match the models, and the models are a spider + cavity + skin per zone.
+
+**What that establishes — adopt the shape.** The annulus-behind-the-skin plus spider is the Stage-2 light path already, and the spider is the "interior ribs" §6.4 asks for; it retires the "removable internal mandrel" *fallback* (risk table, §13) and promotes a central member to the alignment system. Two caveats: (1) a ~1 mm decorated skin is too thin for the 0.8 mm relief and for the P3.5 fin judgement — keep the **2.0 mm structural wall** and treat the thin skin as the *optical* layer, decoupled from structure (this is the plan's own "diffuser sleeve", §6.3, pulled inside-out); (2) the apex zones z01–z02 have no room for a spider (z01 is a cone from Ø0), so they are solid or rim-only.
+
+**What changes — the joint.** P3 joined the bands with a 6 mm registration lip nesting into the collar below (`make_registration_lip`, §5.2). The operator prefers a **flat stack** with **connectors that prevent horizontal misalignment** rather than each band fitting into the next. Agreed, and the plan's own P5 pre-flight (§11.3) is the argument: the lip produced **three defects in one feature and a first print that did not fit**, and a cylindrical lap gives **no rotational constraint** at all.
+
+| | lap-fit lip (§5.2, §11.3) | flat stack + connectors |
+|---|---|---|
+| vertical location | how deep the lip bottoms → tolerance-sensitive | a flat face → determinate, ± one layer |
+| critical printed surface | thin protruding rim (the printer's weakest) | bed-flat face (the printer's best) |
+| height over 22 parts | accumulates lip tolerance | accumulates layer height only |
+| assembly with wiring | press-fit down 745 mm | gravity stack, one band at a time |
+
+**Adopted scheme — three functions, separated.**
+1. **Structure / height** — a flat annular seat. Load path; sets the 745 mm.
+2. **Lateral alignment** — a **keyed central spine**: one rod (ideally a *tube*, doubling as the wire conduit) threaded through a hub bore in every band. Coaxiality is set by one straight part, not by 21 joints → **no tolerance stack**.
+3. **Anti-rotation / clocking** — a **keyway** at a fixed angle in the hub bore, engaged by a ridge on the spine. A circular bore leaves one rotational DOF; the key removes it, and it also clocks the wire bus and any ornament seam.
+A shallow self-centering register (1.5–2 mm) is an optional secondary locator; three tapered dowel pins are the alternative to a spine. Neither is in this coupon.
+
+**Light containment — stated now because a flat stack makes it visible.** A flat seam leaks, and every lit-band scenario in `data/scenarios.json` depends on it not leaking. The outer rim therefore needs an opaque **rebate/labyrinth**, kept loose and independent of the structural seat. The coupon's torch test is where this is judged, not modelled.
+
+**Coupon.** `scripts/build_stacked_joint_coupon.py` (headless: `freecadcmd scripts/build_stacked_joint_coupon.py`) → `stl/test/stacked_joint.stl`: three Ø70 × 12 mm tiles (4-arm spider, hub bore Ø12, 4 × 2 mm keyway at 45°, the real joint taper `dr/dz = −0.0707`) + a keyed Ø11.5 spine, ~51 g PLA, one valid solid each. Judgements: (1) stack three tiles with **no** spine → measure the lateral drift (the control); (2) stack with the spine → drift should be < the 0.25 mm clearance; (3) twist the stack → the key must stop rotation; (4) phone torch inside → the seam leak (expect a leak: this is what motivates the rebate); (5) is the 3-tile stack straight? Print in matte PLA, not silk.
+
+**Bug found building it — and it affected an existing artifact.** `Mesh.addFacets(shape.tessellate())` — passing the raw (vertices, indices) tuple — is a trap: the **first** call works and every later call is silently dropped. On FreeCAD 1.1.4, two boxes gave 12 facets instead of 24. It is why the committed `stl/test/clearance_ladder.stl` contained only **one** socket, not the 3-row ladder — that script meshed in an `addFacets(tessellate)` loop. Fixed in `build_goldhat._facets` / `export_stl` (expand to point-triples, and **assert the facet count**), which now also serves `build_clearance_coupon.py`; the ladder is regenerated and correct (6 parts, 16.5 g). Single-shape exports (the z15 coupons, the fit trio) were never affected.
+
+**Data impact.** `registration_lip_mm` and `registration_clearance_mm` in `data/hat_parameters.json` become obsolete once the stack prints; the replacement is a `joint` block (`type: "stacked_spine"`, `hub_bore_mm`, `spine_clearance_mm`, `keyway_w_mm`, `keyway_depth_mm`). `make_registration_lip` and the clearance ladder are superseded by this coupon.
 
 ---
 
@@ -914,6 +945,7 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 4. **Settle the two residual data questions** (non-blocking): (a) does `tb19` exist? — zone 19 ends at 738 and the Krempe begins there, so the 109 mm reading uses `tb17`+`tb18` only and `tb19` is **not** needed; (b) is zone 9's 34.9 cm measured at its lower edge? — assumed yes, z = 312; anchor D is consistent with the A–B–C curve either way.
 5. Confirm Option **A** for the STL decomposition (§4), Option **C** for the motif form (§6.3), and the **Krempe 3-sector split** (§2.3 — note 2 sectors do *not* fit: the bbox is still 301 mm wide).
 6. Then start P2 (motif catalogue): the 8 primitives as code, then per-zone placement. The **counting** half of P2 is already done (`data/zones.json`, verified); the long pole is now the primitives plus placement, not the research.
+7. **Print the stacked-joint coupon (§11.4)** and run its five judgements — this settles the joint before P4. In parallel, decide the motif form from the P3.5 coupons (§6.3). Both are print-and-look, not code; and both can run in one print session.
 
 ---
 
@@ -970,7 +1002,8 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 | `scripts/verify_calendar.py` | the data-layer assertions | ✅ passing |
 | `scripts/motif_features.py` | **the three motif forms** (`relief` / `window` / `relief_window`) as ordered prism operations on the cone; `placed_motifs`, `motif_prism_polygons`, `build_motif_ops`, `fuse_all` | ✅ new, self-checking without FreeCAD |
 | `scripts/build_coupons.py` | the P3.5 coupon build — **run under `freecadcmd`**, not the MCP bridge | ✅ emits the 3 coupons + fit-test trio |
-| `scripts/build_clearance_coupon.py` | the lap-joint radial-clearance ladder (⌀35 mm, real joint taper, 0.15/0.25/0.35 mm) | ✅ emits `stl/test/clearance_ladder.stl` (~16 g); see §11.3 |
+| `scripts/build_clearance_coupon.py` | the lap-joint radial-clearance ladder (⌀35 mm, real joint taper, 0.15/0.25/0.35 mm) | ⚠️ **superseded by §11.4**; regenerated correct (6 parts) after the `addFacets` bug — see §11.4 |
+| `scripts/build_stacked_joint_coupon.py` | the stacked-joint trial — 3 tiles (spider, hub bore, keyway) + keyed spine; **run under `freecadcmd`** | ✅ **new**; emits `stl/test/stacked_joint.stl` (~51 g); judgements in §11.4 |
 | `scripts/motifs.py` | **the P2 motif primitives and placement** — 2D (u,v) polygons for all 8 boss discs, the Nos. 4–7 fillers and the specials; `for_tool()`, `build()`, `clearance()`, `zone_layout()`, `spandrel_offset()`, `development_svg()` | ✅ **new, self-checking.** `python3 scripts/motifs.py` runs two suites: the primitive checks (ring rule, diameters, nozzle clearance, Menghin's no-overlap constraint) and the **placement checks** (one disc row per zone, one interstice filler per gap at exactly half a pitch, the spandrel lift clearing both neighbours, and `gcd(counts)=1` proving the phase is unconstrained). No FreeCAD, no PIL, no scipy — it runs anywhere |
 
 ### A.4 `reference/` — the abandoned attempt (94 MB, **do not recycle**, `AGENTS.md`)

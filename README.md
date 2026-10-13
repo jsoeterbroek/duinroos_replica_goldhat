@@ -41,6 +41,9 @@ The assets folder contains images of the real object in Berlin Museum. Use these
 ## Reference folder
 An earlier attempt was made to create this, but was abandoned, see reference/ folder. Use for reference but do not recycle the files/code etc.
 
+## Repo size
+What is tracked, why, and the options for shrinking the repo further: `repo_size_cleanup.md`.
+
 ## Architecture
 - LED lights
 - M5 core S3 module for the demo code driving the LEDs (and display)

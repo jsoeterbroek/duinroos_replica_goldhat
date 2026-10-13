@@ -320,6 +320,49 @@ def make_spoke(profile, z0, z1, hub_r, wall, spoke_w, embed_hub=1.0,
     return solid
 
 
+# Fig. 21 tool numbers motifs.py can build (for_tool supports exactly these).
+_SUPPORTED_TOOLS = frozenset({4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17})
+
+
+def _special_ops(profile, zone, wall, form, relief):
+    """
+    Motif operations for a zone whose ornament is a LIST of specials rather
+    than one Fig.21 disc -- today only zone 5 (19 crescent + 19 eye), placed
+    alternately around the zone (Menghin's crescent + eye pairing).
+
+    Same tier batching and order discipline as motif_features.build_motif_ops,
+    so an RW trough/ring interleave still holds. Requires FreeCAD.
+    """
+    import motifs as MM
+    import motif_features as F
+    z0, z1 = zone["z_mm"]
+    h = z1 - z0
+    r_mid = profile(0.5 * (z0 + z1))
+    tools = []
+    for m in zone["motifs"]:
+        tools += [m["tool"]] * m["count"]
+    n = len(tools)
+    tiers = []
+    for j, tool in enumerate(tools):
+        u = (j + 0.5) * 2.0 * math.pi * r_mid / n
+        outer, holes = MM.for_tool(tool)
+        polys = F.motif_prism_polygons(form, outer, holes, relief * 0.6, wall)
+        for k, (poly, r_from, r_to, op) in enumerate(polys):
+            while len(tiers) <= k:
+                tiers.append({"add": [], "cut": []})
+            s = F._polygon_prism(FreeCAD, Part, profile, poly, u, h / 2.0,
+                                 z0, r_mid, r_from, r_to, wall)
+            if s is not None:
+                tiers[k][op].append(s)
+    ops = []
+    for tier in tiers:
+        if tier["cut"]:
+            ops.append(("cut", F.fuse_all(tier["cut"])))
+        if tier["add"]:
+            ops.append(("add", F.fuse_all(tier["add"])))
+    return ops
+
+
 def part_span(hp, band_id):
     """
     The z-span and rings of PART `band_id`.
@@ -374,10 +417,9 @@ def build_stacked(band_id="z13", out_dir=None, verbose=True, motifs=True):
     the ridge reads as a thicker band and the LED cavity does not narrow.
 
     Motif form comes from data (motif_form); zones whose ornament is a SPECIAL
-    (1, 2, 5 -- star / crescent / eye) have no Fig.21 tool and are built plain
-    for now: motif_features only wires the disc catalogue.
+    (1 and 5 -- star and crescent/eye) are handled: zone 5 via its motif list,
+    zone 2 via tool 6; only zone 1's continuous eight-rayed star is still plain.
     """
-    import motifs as MM
     hp, zj = G.load()
     profile = G.Profile(hp["profile"])
     wall = hp["wall_thickness_mm"]
@@ -431,14 +473,20 @@ def build_stacked(band_id="z13", out_dir=None, verbose=True, motifs=True):
 
     # --- motifs (RW etc.), in the order motif_features emits them: the trough
     # cut / ring add interleaving is load-bearing (section 11.2).
-    if motifs and zone and zone.get("tool") in MM.DISC_TOOLS:
+    if motifs and zone and zone.get("motifs"):
+        ops = _special_ops(profile, zone, wall, form, relief)
+    elif motifs and zone and zone.get("tool") in _SUPPORTED_TOOLS:
         import motif_features as F
-        for tag, shape in F.build_motif_ops(profile, zone, wall, form, relief):
-            band = (band.fuse(shape) if tag == "add" else band.cut(shape))
-            band = band.removeSplitter()
-    elif verbose:
-        why = "no Fig.21 disc tool" if zone else "zone not in zones.json"
-        print("  motifs: skipped (%s -- special ornament, not wired yet)" % why)
+        ops = F.build_motif_ops(profile, zone, wall, form, relief)
+    else:
+        ops = []
+        if verbose:
+            why = ("zone not in zones.json" if not zone else
+                   "continuous %s -- no repeatable motifs" % zone.get("primitive"))
+            print("  motifs: skipped (%s)" % why)
+    for tag, shape in ops:
+        band = (band.fuse(shape) if tag == "add" else band.cut(shape))
+        band = band.removeSplitter()
 
     # --- keyway: a slot in the hub bore, between two spokes. It starts 1 mm
     # inside the bore void -- a cutter face flush with the bore cylinder is

@@ -349,20 +349,31 @@ def main():
         print("\nverify_geometry: data checks passed (STL tier not run)")
         return 0
 
-    total_h = 0.0
+    zmin, zmax = 1e9, -1e9
+    names = []
     for p in paths:
         name = os.path.basename(p)
+        names.append(name.split(".")[0].replace("_stacked", ""))
         st = check_stl(p, name)
         dx, dy, dz = st["bbox"]
         z0, z1 = st["z"]
+        zmin, zmax = min(zmin, z0), max(zmax, z1)
         print("  %-22s vol %9.1f mm3  bbox %.1f x %.1f x %.1f  z %.1f..%.1f  "
               "maxR %.1f  2-manifold"
               % (name, st["volume"], dx, dy, dz, z0, z1, st["max_r"]))
-        total_h += dz
-    if paths and all(os.path.basename(p).split(".")[0] in expected_parts(hp)
-                     for p in paths):
-        print("  sum of part heights      %.1f mm (expect %.1f +- %.1f, joints overlap)"
-              % (total_h, HEIGHT_TOTAL_MM, HEIGHT_TOL_MM))
+    # The stack height is the UNION of the parts' z-ranges, not a sum: three
+    # Krempe sectors each 7 mm tall sum to 21, but together they are one 7 mm
+    # plate. Only assert it when all 22 parts are present.
+    expected = set(expected_parts(hp))
+    if expected <= set(names):
+        ext = zmax - zmin
+        print("  stack z extent           %.1f .. %.1f = %.1f mm (expect %.1f +- %.1f)"
+              % (zmin, zmax, ext, HEIGHT_TOTAL_MM, HEIGHT_TOL_MM))
+        assert abs(ext - HEIGHT_TOTAL_MM) <= HEIGHT_TOL_MM, \
+            "stack is %.1f mm, not %.1f +- %.1f" % (ext, HEIGHT_TOTAL_MM, HEIGHT_TOL_MM)
+    else:
+        print("  (%d of %d expected parts present -- stack-height check skipped)"
+              % (len(expected & set(names)), len(expected)))
 
     print("\nverify_geometry: all passed")
     return 0

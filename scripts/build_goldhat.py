@@ -487,6 +487,178 @@ def build_stacked(band_id="z13", out_dir=None, verbose=True, motifs=True):
     return band
 
 
+# --- P4: the Krempe plate (zones 20/21) ---------------------------------------
+
+def _krempe_z(hp, r):
+    """
+    The Krempe's TOP surface at radius r.
+
+    The brim SITS ON the Kalottenfuss: its underside is flush with z19's top
+    (z=738) at the inner edge and rises to 745-thickness at the outer edge, so
+    the top runs 740 -> 745 and the plate never dips below 738. (Making the top
+    run 738 -> 745 with the thickness below it put the underside at 736, 2 mm
+    into z19 -- a real clash when stacked.)
+    """
+    k, t = hp["krempe"], hp["wall_thickness_mm"]
+    return (k["z_inner_mm"] + t + (r - k["r_inner_mm"])
+            / (k["r_outer_mm"] - k["r_inner_mm"])
+            * (k["z_outer_mm"] - k["z_inner_mm"] - t))
+
+
+def _revolve_section_angle(pts, angle_deg, n=64):
+    """Revolve a closed (r, z) polygon about Z by `angle_deg` (a wedge)."""
+    vecs = [FreeCAD.Vector(r, 0.0, z) for r, z in pts]
+    vecs.append(vecs[0])
+    return Part.Face(Part.makePolygon(vecs)).revolve(
+        FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1), angle_deg)
+
+
+def _plate_prism(poly, r_c, phi_rad, r_from, r_to, hp):
+    """
+    One motif prism on the Krempe's nearly-flat top face.
+
+    Same construction as motif_features._polygon_prism (build flat in a local
+    frame, extrude along the local normal, keep every boolean plane/plane), but
+    the frame is a PLATE frame, not the side-cone frame: the Krempe is not on
+    r(z), so G.project does not apply.
+    """
+    k = hp["krempe"]
+    beta = math.atan((_krempe_z(hp, k["r_outer_mm"]) - _krempe_z(hp, k["r_inner_mm"]))
+                     / (k["r_outer_mm"] - k["r_inner_mm"]))
+    rad = FreeCAD.Vector(math.cos(phi_rad), math.sin(phi_rad), 0.0)
+    tan = FreeCAD.Vector(-math.sin(phi_rad), math.cos(phi_rad), 0.0)
+    up = rad * math.cos(beta) + FreeCAD.Vector(0.0, 0.0, math.sin(beta))
+    nrm = rad * (-math.sin(beta)) + FreeCAD.Vector(0.0, 0.0, math.cos(beta))
+    centre = rad * r_c + FreeCAD.Vector(0.0, 0.0, _krempe_z(hp, r_c))
+    lo = [centre + up * pv + tan * pu + nrm * r_from for (pu, pv) in poly]
+    try:
+        prism = Part.Face(Part.makePolygon(lo + [lo[0]])).extrude(
+            nrm * (r_to - r_from))
+    except Exception:
+        return None
+    return prism if prism.Volume > 1e-9 else None
+
+
+def _fuse_shapes(shapes):
+    if len(shapes) == 1:
+        return shapes[0]
+    return shapes[0].multiFuse(shapes[1:])
+
+
+def _orient_for_bed(shape, step_deg=3.0):
+    """
+    Rotate a shape about Z to its smallest footprint.
+
+    A 120-degree sector of this annulus is congruent at every 120 degrees, but
+    its axis-aligned bbox is not: exported in place, sector b measured
+    103 x 261 mm -- 5 mm past the 256 mm bed -- while a and c measured
+    226 x 151. Rotating all three to the same relative minimum fixes it, and
+    is what a slicer's auto-arrange would do anyway. Rotating about Z keeps
+    the plate flat for printing.
+    """
+    best = None
+    d = 0.0
+    while d < 360.0:
+        s = shape.copy()
+        s.rotate(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1), d)
+        bb = s.BoundBox
+        m = max(bb.XLength, bb.YLength)
+        if best is None or m < best[0]:
+            best = (m, s)
+        d += step_deg
+    return best[1]
+
+
+def build_krempe(out_dir=None, verbose=True):
+    """
+    The Krempe plate: zone 20 (54 x d12 @ r107) and zone 21 (47 x d15 @ r132)
+    as concentric RW motif rings on one shallow annular plate (r 94.5->150.5,
+    z 738->745), then SPLIT into `krempe.sectors` radial sectors.
+
+    Operator decision (2026-10-13): a seam is allowed to cut a motif -- the two
+    halves meet when the sectors are assembled. No phase avoids all seams at
+    once (47 x d15 on an 829 mm ring leaves 2.6 mm gaps, 1.15 deg), so option
+    (a) is the honest one. Returns the list of sector shapes.
+    """
+    import motifs as MM
+    import motif_features as F
+    hp, zj = G.load()
+    k = hp["krempe"]
+    sectors = k["sectors"]
+    thickness = hp["wall_thickness_mm"]
+    form = hp.get("motif_form") or "relief"
+    relief = hp["symbol_relief_mm"]
+
+    # --- the full plate (top surface + vertical thickness below)
+    n = 96
+    rs = [k["r_inner_mm"] + (k["r_outer_mm"] - k["r_inner_mm"]) * i / n
+          for i in range(n + 1)]
+    sec = ([(r, _krempe_z(hp, r)) for r in rs] +
+           [(r, _krempe_z(hp, r) - thickness) for r in reversed(rs)])
+    plate = _revolve_section(sec)
+
+    # --- motifs, batched by operation (adds first, then the through-cuts; for
+    # RW the inset only touches its own disc, so the order is equivalent and
+    # 200 individual booleans become a handful)
+    adds, cuts = [], []
+    for ring in k["rings"]:
+        zone = next(z for z in zj["zones"] if z["zone"] == ring["zone"])
+        tool, cnt, r_c = zone["tool"], zone["count"], ring["r_mid_mm"]
+        outer, holes = MM.for_tool(tool)
+        depth = relief if tool in MM.DISC_TOOLS else relief * 0.6
+        polys = F.motif_prism_polygons(form, outer, holes, depth, thickness)
+        for j in range(cnt):
+            phi = 2.0 * math.pi * j / cnt
+            for poly, r_from, r_to, op in polys:
+                pr = _plate_prism(poly, r_c, phi, r_from, r_to, hp)
+                if pr is not None:
+                    (adds if op == "add" else cuts).append(pr)
+        if verbose:
+            print("  ring z%d: %d x tool %d at r=%.1f mm"
+                  % (ring["zone"], cnt, tool, r_c))
+    if adds:
+        plate = plate.multiFuse(adds)
+    if cuts:
+        plate = plate.cut(_fuse_shapes(cuts))
+    plate = plate.removeSplitter()
+
+    # --- split into sectors by intersecting with a wedge
+    rbig, z0 = k["r_outer_mm"] + 20.0, k["z_inner_mm"] - 30.0
+    z1 = k["z_outer_mm"] + 30.0
+    wsec = [(0.0, z0), (rbig, z0), (rbig, z1), (0.0, z1)]
+    out = []
+    label_r = 0.5 * (k["r_inner_mm"] + k["r_outer_mm"])
+    label_z = _krempe_z(hp, label_r) - thickness
+    for s in range(sectors):
+        a0 = 360.0 * s / sectors
+        wedge = _revolve_section_angle(wsec, 360.0 / sectors)
+        wedge.rotate(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1), a0)
+        part = plate.common(wedge).removeSplitter()
+        name = ("krempe_%s" % "abc"[s]) if sectors == 3 else "krempe_%d" % (s + 1)
+        size = G.fit_ring_label(name, label_r, 12.0)
+        if size:
+            part = G.engrave_ring_label(part, name, label_r, label_z, size,
+                                        angle_deg=a0 + 180.0 / sectors,
+                                        from_below=True)
+        part = _orient_for_bed(part)
+        if verbose:
+            bb = part.BoundBox
+            print("  %s: vol %.1f mm3, solids=%d valid=%s, bbox %.1f x %.1f x %.1f, label %s"
+                  % (name, part.Volume, len(part.Solids), part.isValid(),
+                     bb.XLength, bb.YLength, bb.ZLength, size))
+        out.append((name, part))
+
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
+        for name, part in out:
+            path = os.path.join(out_dir, "%s.stl" % name)
+            facets = export_stl(part, path)
+            if verbose:
+                print("  wrote %s  (%d facets, %.1f MB)"
+                      % (path, facets, os.path.getsize(path) / 1e6))
+    return out
+
+
 def build_all(out_dir=None, only=None, verbose=True):
     """
     Generate the 19 stacked bands (z01..z19) into `out_dir` (default stl/).
@@ -501,8 +673,10 @@ def build_all(out_dir=None, only=None, verbose=True):
     built = []
     for bid in ids:
         built.append(build_stacked(bid, out_dir=out, verbose=verbose))
+    if not only:
+        built += [p for _, p in build_krempe(out_dir=out, verbose=verbose)]
     if verbose:
-        print("\n%d bands written to %s" % (len(built), out))
+        print("\n%d parts written to %s" % (len(built), out))
     return built
 
 

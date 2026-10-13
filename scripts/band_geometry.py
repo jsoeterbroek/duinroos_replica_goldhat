@@ -295,28 +295,32 @@ def label_shape(text, size_mm, fontfile=None, tracking=0.0):
 
 
 def engrave_label(target, text, at, size_mm, depth=0.6, rot_z_deg=0.0,
-                  fontfile=None, tracking=0.0, gap=0.2):
+                  fontfile=None, tracking=0.0, gap=0.2, from_below=False):
     """
-    Cut `text` into the horizontal +Z face of `target` at `at` = (x, y, z_top).
+    Cut `text` into a horizontal face of `target` at `at` = (x, y, z_face).
 
     `gap` lifts the cutter clear of the face so the cut is volumetric -- a
     cutter that stops exactly on the surface is a face contact and can leave
     two disjoint solids (the section 11.2/11.3 rule). Text reads from above at
     `rot_z_deg`, centred on `at`, and is `depth` deep.
+
+    `from_below` cuts into a face whose outward normal is -Z (the underside of
+    a plate): the cutter approaches from below instead of above.
     """
     if not HAVE_OCCT:
         raise RuntimeError("engrave_label needs FreeCAD")
     shp = label_shape(text, size_mm, fontfile, tracking)
     if rot_z_deg:
         shp.rotate(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 0, 1), rot_z_deg)
-    shp.translate(FreeCAD.Vector(at[0], at[1], at[2] + gap))
-    cutter = shp.extrude(FreeCAD.Vector(0, 0, -(depth + gap)))
+    sgn = -1.0 if from_below else 1.0
+    shp.translate(FreeCAD.Vector(at[0], at[1], at[2] + sgn * gap))
+    cutter = shp.extrude(FreeCAD.Vector(0, 0, -sgn * (depth + gap)))
     return target.cut(cutter).removeSplitter()
 
 
 def engrave_ring_label(target, text, r_mid, z_top, size_mm, depth=0.6,
                        angle_deg=90.0, radial=False, fontfile=None,
-                       tracking=0.0):
+                       tracking=0.0, from_below=False):
     """
     `engrave_label` for a HORIZONTAL ANNULAR face of mean radius `r_mid`.
 
@@ -334,7 +338,8 @@ def engrave_ring_label(target, text, r_mid, z_top, size_mm, depth=0.6,
     at = (r_mid * math.cos(a), r_mid * math.sin(a), z_top)
     rot = angle_deg - 90.0 if radial else 0.0
     return engrave_label(target, text, at, size_mm, depth=depth,
-                         rot_z_deg=rot, fontfile=fontfile, tracking=tracking)
+                         rot_z_deg=rot, fontfile=fontfile, tracking=tracking,
+                         from_below=from_below)
 
 
 def label_fits_ring(text, size_mm, r_mid, width_mm, fontfile=None,

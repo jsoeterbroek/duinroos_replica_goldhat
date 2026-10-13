@@ -32,7 +32,10 @@ Nothing. The T2 round (Fuls null + cross-hat) is complete as of this file.
 2. **Open items** (see `todo/`):
    - Skim **Menghin 2010 pp. 73–88** (Kalenderhüte / Der Kult / Literatur) — in hand,
      unread.
-   - Count **Lorenz's 19 line-bands and 12+7 friezes** on the object (`todo/T4`).
+   - Count **Lorenz's 19 line-bands and 12+7 friezes** on the object — ✔ **done**
+     (`todo/T4`, `findings/FINDING_2026-10-13_t4-lorenz-structure.md`): 19 holds only
+     as "disc-bearing bands" (measured: 21 zones); the 12+7 split is real (7 five-ring
+     vs 12 other friezes); the 235 is arithmetic.
    - Extract **Hansen & Rink 2008** — abstract held; chapter outstanding (`todo/T3`).
      Obtain ch. 9 (pp. 131 ff.) or the 2014 Tübingen 32/33 paper.
    - Optional: re-transcribe Ezelsdorf Abb. 27's 16 Muster columns (Ezelsdorf B/D

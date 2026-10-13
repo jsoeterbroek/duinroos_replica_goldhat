@@ -23,10 +23,16 @@ arbitrarily", and offers the structural division as the non-arbitrary version.
 
 ## Status
 
-**Candidate, weakly evidenced.** The counts may be correct, but they are **new
-counts not yet verified against the object** (do 19 line-bands and 12 + 7 friezes
-exist as claimed?), and the 235 is Menghin's number reused. It is popular science,
-not a measurement paper.
+**Checked against the object 2026-10-13 — partially reproducible, not independent.**
+The **19** holds only as "disc-bearing bands" (Z2–Z21 minus the crescent zone Z5);
+the measured division is **21 zones**. The **12 + 7** split is real as a ring-count
+partition (7 friezes with 5-ring discs vs 12 others). The **235 is arithmetic**
+(12×12 + 7×13 for any 12+7 split), so the Metonic number is not evidence. Finding:
+`findings/FINDING_2026-10-13_t4-lorenz-structure.md`.
+
+So the counts may be correct, but they are a **re-reading of Menghin's ring counts**,
+not a new measurement, and the 235 adds nothing. It neither confirms nor refutes the
+calendar hypothesis.
 
 ## What would confirm
 
@@ -36,6 +42,12 @@ not a measurement paper.
   construction** (there is only one way to count the bands).
 - Check whether the 5-frieze and 7/12 split are distinguishable from ordinary
   decorative grouping.
+
+**Outcome 2026-10-13:** the 12 + 7 split *does* hold (as the K=5 ring-count division
+of the 19 disc-bearing friezes), but the 19 does not coincide with the measured zones
+(21), and the 235 is arithmetic. So the "selective by construction" hope is not
+realised: the partition is derived from Menghin's data, and the potentially selective
+element (which friezes lack small fillers) is left loose by Lorenz's prose.
 
 ## What would refute
 

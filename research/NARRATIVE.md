@@ -164,3 +164,23 @@ The narrative for the write-up, in order, with credits for who had which idea.
   not in hand. Per the project author's decision, T3 is recorded as **abstract
   obtained, chapter outstanding**. Finding:
   `findings/FINDING_2026-10-13_hansen-rink-abstract.md`.
+- **2026-10-13 — T4: the most falsifiable reading is tested, and it survives only in
+  part.** Lorenz's claim had the virtue of being countable rather than choosable:
+  either the hat has 19 line-bands that split 12 + 7, or it does not. Checked against
+  the object and against Menghin's measured canon, the result is mixed and mostly
+  deflationary. **The measured division is 21 ornament zones**, of which **18** carry
+  disc symbols (Menghin's own count, p. 81). Lorenz's **19** is reproducible only if
+  one counts "the bands that carry a stamped symbol" — Z2–Z21 minus the crescent
+  *Sonderzone* Z5 — i.e. the apex star and the crescent band are dropped, which Lorenz
+  never says. So the headline number is a **redefinition**, not the measured structure.
+  The **12 + 7** split *does* hold, and that is the genuine finding: the 19 disc-bearing
+  friezes divide into the **7 friezes whose discs have five concentric rings** (packed,
+  no filler) and the **12 others** (the smaller discs linked by the little annulets) —
+  visible on the museum close-up `Berlín_Goldhut_04.JPG` as alternating packed and
+  filler-linked bands. Finally, the Metonic payoff evaporates arithmetically:
+  **12 × 12 + 7 × 13 = 235 for any 12+7 split**, so the number is not evidence, and
+  Lorenz reuses Menghin's 19 × 5 = 235 besides. Credit: the check is this round's
+  work; the images are the museum's/author's. Finding:
+  `findings/FINDING_2026-10-13_t4-lorenz-structure.md`. One loose end: whether the
+  three 6-ring friezes (Z15, Z18, Z19) carry fillers decides 7 vs 10, and needs the
+  high-res plates or Schauer 1986.

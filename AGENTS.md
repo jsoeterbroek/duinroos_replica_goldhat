@@ -51,6 +51,121 @@ An earlier attempt was made to create this, but was abandoned, see reference/ fo
 - M5 core S3 dev kit module
 _ BambuLabs 3D printer
 
+## Tooling (build & verify)
+
+Copied from `CLAUDE.md` so this file is the single source of guidance for both the
+project and the build/verify tooling. The short `## Commands` and `## Tech Stack`
+sections above are the product-level view; this is the developer view.
+
+**Verify (no FreeCAD needed)** — verification scripts are stdlib-only:
+```bash
+python3 scripts/verify_calendar.py            # Menghin's identities (418 discs, 1701 day-values)
+python3 scripts/verify_geometry.py            # DATA tier always; STL tier when artifacts exist
+python3 scripts/verify_scenarios.py           # Stage-2 lighting zone mapping
+python3 scripts/band_geometry.py --selfcheck  # Pure-math kernel self-test
+python3 scripts/motifs.py                     # primitives + placement self-check
+python3 scripts/motif_features.py --selfcheck # motif prism/net-profile self-check
+```
+
+**Build (requires FreeCAD):**
+```bash
+freecadcmd scripts/build_goldhat.py z13       # single band -> stl/test/z13_stacked.stl
+freecadcmd scripts/build_goldhat.py --all     # all 22 parts
+freecadcmd scripts/build_clearance_coupon.py
+freecadcmd scripts/build_stacked_joint_coupon.py
+```
+
+### Three-tier kernel
+
+**Data layer (`data/`):**
+- `hat_parameters.json` — Menghin (2010) documentary constraints; the profile r(z) is PCHIP-interpolated from these
+- `zones.json` — 21 decorative zones: symbol counts, ring counts, day-values, tool IDs, z-spans
+- `symbols.json` — punch tool definitions (tools 1–17), ring counts, zone assignments
+- `scenarios.json` — Stage-2 lighting: 16 time blocks, zone-to-color mappings
+
+**Geometry kernel (`scripts/band_geometry.py`):** pure math, testable without FreeCAD. PCHIP interpolation, cone-surface projection of 2D motif coordinates (u=arc length, v=height), band ring/span queries, clearance checks. The `Profile` object and `pchip_slopes()` must be **identical** between `band_geometry.py` and `motifs.py` — a mismatch breaks clearance validation.
+
+**CAD builder (`scripts/build_goldhat.py`):** FreeCAD/OCCT integration. Revolves polyline sections into hollow band solids, attaches Trennband ridges, P4 flat-stacked hubs+spokes, and motifs. Validates mesh topology (`nonmanifold_edges()`) before export. STL tessellation at 0.05 mm deviation.
+
+**Motifs (`scripts/motifs.py`):** primitive punch shapes (`ring_dot`, `disc`, `ring`, `circle_row`, `crescent`, `oval`, `star8`) returning `(outer_polygon, [inner_holes])` in 2D (u, v); placement logic avoids radial seams landing on motifs and lifts interstice fillers into the spandrel.
+
+**Motif features (`scripts/motif_features.py`):** turns the 2D primitives into 3D `relief` / `window` / `relief_window` features on the band surface.
+
+### Validation tiers (always run in order)
+1. **DATA tier** — JSON arithmetic, bed fit (always runs, no FreeCAD)
+2. **STL tier** — 2-manifold, closed, positive volume, bed fit (when artifacts exist)
+3. **OCCT tier** — non-manifold edge check, tangent contact check (during build)
+
+### Critical conventions
+
+**Coordinate system:**
+- All dimensions in mm; z=0 at apex, z=745 at Krempe
+- Profile r = radius; revolve around Z-axis
+- Motif coords: u = arc length (mm, CCW from outside), v = height (mm, +v upward)
+- Relief offset is along the cone's **outward normal**, not horizontal
+
+**Data authority — use these, not `dimensions.txt`:**
+- `data/hat_parameters.json` + `IMPLEMENTATION_PLAN.md` §2.2 for the profile
+- `IMPLEMENTATION_PLAN.md` is the authoritative spec for every derivation, design decision, and photo-residual attribution
+
+**Verified invariants:**
+- 9 profile constraints reproduced exactly by construction
+- 418 bossed discs across 18 zones (zones 1, 2, 5 excluded) — Menghin's exact count
+- 1701 = Σ(count × rings) over disc-bearing zones — verified by `verify_calendar.py`
+- Photo residuals: Krempenrand ≤0.3 mm, z=312 ≤1.2 mm, shaft ≤2.5 mm RMS (§12 of `IMPLEMENTATION_PLAN.md`)
+
+**Known operator decisions:**
+- Zone 1 apex star is left plain (not built); it is continuous geometry, not a repeatable motif
+- P4 flat-stacked joint (hub + 4 spokes + keyway) replaced the P3 lap lip
+- Krempe is split into 3 sectors (a/b/c); seam phasing must land in motif spandrels
+
+### Phase status
+
+| Phase | Status |
+|---|---|
+| P1: Profile r(z) | Done |
+| P2: Zone data | Done |
+| P3: Band geometry | Done |
+| P3.5: Motif form (relief vs window) | Deferred pending print test |
+| P4: Stacked joint | Done |
+| P5: Assembly docs | Next |
+| Stage 2: LED firmware | Planned |
+
+### Key reference files
+
+- `IMPLEMENTATION_PLAN.md` — full derivation of every number, every design choice, all photo analysis
+- `assets/menghin/` — scanned Menghin 2010 source pages and hand-transcribed text
+- `reference/` — earlier abandoned CAD attempt; kept for reference, do not recycle
+
+### Technology stack
+
+| Component | Tech |
+|---|---|
+| 3D geometry | FreeCAD + OpenCASCADE (OCC Part) |
+| Profile interpolation | Fritsch-Carlson PCHIP (hand-coded, stdlib only) |
+| Verification | Python 3 stdlib |
+| Output | Binary STL, 0.05 mm tessellation, 22 parts |
+| Print target | BambuLabs, 256 mm bed, 0.16 mm layers |
+| Stage 2 hardware | ESP32 M5 Core S3 |
+| Stage 2 firmware | PlatformIO + C++ (M5Stack SDK) |
+
+### FreeCAD / MCP gotchas
+
+**Importing a mesh (STL/OBJ) into FreeCAD from `execute_code`.** `Import.insert`
+and `ImportGui.insert` handle the B-rep formats (STEP, IGES, BREP) but **not
+STL** — they raise `OSError: no supported file format`. STL is a *Mesh* format:
+
+```python
+import FreeCAD, Mesh
+doc = FreeCAD.newDocument("z08_proto")
+Mesh.insert(path, doc.Name)          # ← the mesh route (NOT ImportGui)
+# equivalently: m = Mesh.Mesh(path); o = doc.addObject("Mesh::Feature", "z08"); o.Mesh = m
+```
+
+Verified on FreeCAD 1.1.4 macOS: `Import.insert("box.step", …)` → OK;
+`Import.insert("x.stl", …)` → `no supported file format`; `Mesh.insert("x.stl", …)` → OK.
+`Mesh.open()` only loads into memory and does not create a document object.
+
 # Note
 Before starting creating STL files, write an implementation plan first.
 Gold Hat Calendar

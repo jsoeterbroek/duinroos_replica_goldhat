@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+> **Canonical copy:** the tooling sections below are mirrored in `AGENTS.md`
+> (`## Tooling (build & verify)`), which is the repo's canonical agent-guidance
+> file. Update both together.
+
 ## Project Purpose
 
 A 1:1 scale 3D-printable replica of the Berlin Gold Hat — a 745 mm tall cone-shaped Bronze Age artifact with intricate punched decorative patterns. The model is stylized (no dents/creases), not archaeologically exact.

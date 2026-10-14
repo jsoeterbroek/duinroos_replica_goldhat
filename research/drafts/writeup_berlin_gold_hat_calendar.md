@@ -387,31 +387,7 @@ None of this says the ornament is meaningless. It says:
 
 ---
 
-## 10. Implications for the Replica (Stage 2)
-
-The Stage-2 LED display and M5 screen should present the readings as **plural and
-explicitly uncertain**. The research supports:
-
-- Showing **all six readings** (Menghin, Schmidt-Kaler, Lorenz, Hansen & Rink,
-  craft-geometry, and the sceptical position) labelled by author
-  and confidence.
-- A "how sure are we?" mode that displays the statistical basis: the Fuls null
-  result, the cross-hat result, the Menghin transfer admission.
-- **Schifferstadt** as the hat with the strongest calendar signal — it is a better
-  candidate than Berlin for the synodic month story.
-- **Zone 21** as the strongest single fact on Berlin: `47 × 5 = 235 lunations` from
-  one band, no free parameters — though the craft-geometry analysis shows that 47 is
-  also the geometric prediction for the Krempe circumference and tool pitch.
-- A **"craft" mode**: zones light up by tool type, showing the
-  counts as following the circumference and the 12+7 alternation as a design grammar.
-
-The honest exhibit is: *here are the theories, here is the evidence, here is why the
-question is still open*. This is more interesting, and more accurate, than asserting
-a calendar.
-
----
-
-## 11. Sources Held
+## 10. Sources Held
 
 | Source | Role | Notes |
 |---|---|---|

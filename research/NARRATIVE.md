@@ -184,3 +184,24 @@ The narrative for the write-up, in order, with credits for who had which idea.
   `findings/FINDING_2026-10-13_t4-lorenz-structure.md`. One loose end: whether the
   three 6-ring friezes (Z15, Z18, Z19) carry fillers decides 7 vs 10, and needs the
   high-res plates or Schauer 1986.
+- **2026-10-14 — the craft-geometry hypothesis: the counts are explained by the cone,
+  not the calendar.** Starting from the question "can the disc counts be predicted
+  from the circumference and the punch size?", a computation of pitch =
+  circumference / count for every Berlin zone found that each tool has a
+  **characteristic pitch constant to within ~1 mm** (4.5–8.1 % of the mean). Using
+  `round(circumference / mean_pitch)` to predict the count gives **14 of 16 shaft
+  zones exactly** (max |residual| = 1); the Krempe zones are packed 5–12 % tighter
+  than the shaft — the goldsmith fills the available ring. The cross-hat test is a
+  within-tool **monotonicity** check: if the pitch is constant, zones sharing a tool
+  should show non-decreasing counts from apex to base (wider cone = more discs). This
+  holds **perfectly** for Berlin, Schifferstadt and Avanton (11/11 multi-zone tools);
+  Ezelsdorf shows 4/6 (tools 11 and 15 violate, likely due to a non-monotonic profile
+  or uncertain tool assignments on the fragmentary hat). Zone 21's celebrated
+  `47 × 5 = 235` is recovered as a geometric fact: the outer Krempe circumference
+  (~829 mm) / tool 14's Krempe pitch (~17.65 mm) ≈ 47. The hypothesis extends the
+  sceptical position by providing a *mechanism* — the counts are craft-constrained,
+  and the calendar numbers that appear in the sums are a consequence of the cone's
+  dimensions, not a deliberate encoding. Credit: **the project author** posed the
+  question; **the model** ran the computation and wrote
+  `scripts/verify_craft_geometry.py`. Attribution: Soeterbroek/AI, 2026. Finding:
+  `findings/FINDING_2026-10-14_craft-geometry.md`.

@@ -189,6 +189,49 @@ It is recorded as outstanding (`todo/T3`, low priority).
 
 ---
 
+### 4.5 Soeterbroek/AI: craft-geometry — counts determined by circumference / tool pitch (2026)
+
+**The claim.** The disc counts per zone are not calendar encodings but are
+determined by a craft constraint: each punch tool was placed at a characteristic
+centre-to-centre spacing (the *pitch*), and the count in a zone is simply how many
+fit around the circumference at that height. The hat's genuine design content is
+structural and iconographic (axis mundi cone form, 12+7 alternation, 3×7 partition),
+not numerical.
+
+**Evidence (quantitative, reproduced by `scripts/verify_craft_geometry.py`):**
+
+1. *Pitch constancy.* For every tool used in multiple Berlin zones, the pitch is
+   constant to within ~1 mm (4.5–8.1 % of mean). On a hand-beaten Bronze Age gold
+   sheet, this indicates a fixed working practice.
+
+2. *Count prediction.* `round(circumference / mean_pitch)` predicts the disc count
+   for **14 of 16 shaft zones exactly** (max |residual| = 1). The two Krempe zones
+   are packed 5–12 % tighter — the goldsmith filled the brim ring — explaining their
+   larger residuals.
+
+3. *Cross-hat monotonicity.* If the pitch is constant, zones sharing a tool should
+   show non-decreasing counts from apex to base (wider cone = more discs). This
+   holds **perfectly** for Berlin, Schifferstadt, and Avanton (11 of 11 multi-zone
+   tools); Ezelsdorf shows 4 of 6 (the fragmentary hat with uncertain tool
+   assignments).
+
+4. *Zone 21's 235 is geometric.* The outer Krempe ring circumference (~829 mm)
+   divided by tool 14's Krempe pitch (~17.65 mm) gives `round(47) = 47`. That
+   `47 × 5 = 235` is a consequence of the brim diameter and punch spacing, not a
+   deliberate Metonic encoding.
+
+5. *The cross-hat failure is predicted.* Each hat has a different profile and
+   different punches. The counts are geometry-specific, not rule-specific.
+   Structural similarities (all cones, all gold, all sun discs) reflect a shared
+   cosmographic tradition; numerical differences reflect different geometries.
+
+**Confidence: 55–65 %.** The pitch constancy and count prediction are quantitative
+and reproducible. The hypothesis extends the sceptical position by providing a
+*mechanism* for the counts rather than merely arguing that the calendar readings are
+not selective. It has not been peer-reviewed.
+
+---
+
 ## 5. The Statistical Test: Fuls's Combinatorial Null (Reproduced)
 
 Andreas Fuls (2008) built the published quantitative null for the calendar
@@ -315,6 +358,7 @@ None of this says the ornament is meaningless. It says:
 | Lorenz 12+7 structure | 19-band Metonic structure | 25–35 % | "19" is a redefinition; arithmetic is trivial |
 | Hansen & Rink eclipse | Saros/Metonic via eclipses | unassessable | Chapter not yet held |
 | Schifferstadt synodic | Synodic month on Schifferstadt | ~50 % | Method B selective; metrological corroboration |
+| **Soeterbroek/AI craft-geometry** | **Counts = circumference / tool pitch** | **55–65 %** | **Quantitative; predicts cross-hat failure; not yet peer-reviewed** |
 | Sceptical position | Cosmic yes, arithmetic no | ~70 % | Best-supported by held sources |
 
 ---
@@ -348,14 +392,18 @@ None of this says the ornament is meaningless. It says:
 The Stage-2 LED display and M5 screen should present the readings as **plural and
 explicitly uncertain**. The research supports:
 
-- Showing **all five readings** (Menghin, Schmidt-Kaler, Lorenz, Hansen & Rink, and
-  the sceptical position) labelled by author and confidence.
+- Showing **all six readings** (Menghin, Schmidt-Kaler, Lorenz, Hansen & Rink,
+  Soeterbroek/AI craft-geometry, and the sceptical position) labelled by author
+  and confidence.
 - A "how sure are we?" mode that displays the statistical basis: the Fuls null
   result, the cross-hat result, the Menghin transfer admission.
 - **Schifferstadt** as the hat with the strongest calendar signal — it is a better
   candidate than Berlin for the synodic month story.
 - **Zone 21** as the strongest single fact on Berlin: `47 × 5 = 235 lunations` from
-  one band, no free parameters.
+  one band, no free parameters — though the craft-geometry analysis shows that 47 is
+  also the geometric prediction for the Krempe circumference and tool pitch.
+- A **"craft" mode** (Soeterbroek/AI): zones light up by tool type, showing the
+  counts as following the circumference and the 12+7 alternation as a design grammar.
 
 The honest exhibit is: *here are the theories, here is the evidence, here is why the
 question is still open*. This is more interesting, and more accurate, than asserting

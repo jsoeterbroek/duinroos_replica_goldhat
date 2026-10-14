@@ -72,6 +72,16 @@ and Peter-Röcher 2023 (the non-transfer to the other hats).
 - A demonstration that a correction zone is physically marked (spacing,
   orientation, a distinct tool) *before* the arithmetic is applied.
 
+## Relation to craft-geometry (Soeterbroek/AI, 2026)
+
+The craft-geometry hypothesis (`theories/craft_geometry.md`) extends this sceptical
+position by providing a **positive mechanism** for the counts: the disc numbers are
+determined by the circumference at each zone divided by the punch tool's
+characteristic pitch. On Berlin, this predicts 14/16 shaft counts exactly
+(`scripts/verify_craft_geometry.py`). The two positions are complementary: this file
+argues "arithmetic not demonstrated"; craft-geometry explains *why* the counts are
+what they are without invoking calendar intent.
+
 ## What it means for the replica
 
 Show the readings as **readings**, name their authors, and keep the "which is

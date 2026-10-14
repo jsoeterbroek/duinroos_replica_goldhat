@@ -6,7 +6,8 @@ __pycache__/
 #   python3 scripts/build_goldhat.py
 # Committing 22 bands x ~1.2 MB of binary that the data already describes is
 # churn, not provenance.
-stl/
+#stl/
+stl/test/
 .DS_Store
 
 # Abandoned attempt: heavy derived exports (STL/3mf/svg). Kept on disk for

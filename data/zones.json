@@ -1,7 +1,7 @@
 {
   "_source": "Menghin (2010) Ornamentanalyse, assets/menghin/2010/text/. Derived in IMPLEMENTATION_PLAN.md section 2.1.",
   "_purpose": "One row per decorative zone: what is punched, how many, how many rings. day_value = count * rings.",
-  "_status": "counts / rings / day values are DERIVED and verified by scripts/verify_calendar.py. Placement is implemented and verified by scripts/motifs.py: one disc row per zone, one interstice filler per gap at half a pitch, lifted into the spandrel (see spandrel_offset). The angular phase is a declared choice -- gcd of the disc counts is 1, so no rotation aligns the zones and none is privileged.",
+  "_status": "counts / rings / day values are DERIVED and verified by scripts/verify_calendar.py. Placement is implemented and verified by scripts/motifs.py: one disc row per zone, one interstice filler per gap at half a pitch, lifted into the spandrel (see spandrel_offset). The angular phase is a declared choice -- gcd of the disc counts is 1, so no rotation aligns the zones and none is privileged.", "_filler_correction": "2026-10-14: zones 7 and 8 were missing their No. 5 (Punktkreis) interstice fillers. Menghin (2010) p.29: Zone 8 'shows 21 small bumps with five circles (No. 10) ... and dot circles (No. 5) in the intersecting sections'; the same sentence completes the Zone 7 description ('...occur, and dot circles (No. 5) are pressed into the radial intersecting sections'). The museum Abrollung confirms one No. 5 per gap in the upper AND lower spandrel (2 per gap), which is how motifs.placed_motifs already duplicates an 'interstice' filler. No. 5 is a filler, not a disc, so it does not enter the 418/1701 arithmetic.",
   "zones": [
     {
       "zone": 1,
@@ -154,7 +154,12 @@
       "tool": 11,
       "name": "Scheibenbuckel 14/3",
       "primitive": "ring_dot",
-      "fillers": [],
+      "fillers": [
+        {
+          "tool": 5,
+          "where": "interstice"
+        }
+      ],
       "placement": {
         "layout": "even",
         "start_angle_deg": 0,
@@ -174,7 +179,12 @@
       "tool": 10,
       "name": "Scheibenbuckel 13/5",
       "primitive": "ring_dot",
-      "fillers": [],
+      "fillers": [
+        {
+          "tool": 5,
+          "where": "interstice"
+        }
+      ],
       "placement": {
         "layout": "even",
         "start_angle_deg": 0,

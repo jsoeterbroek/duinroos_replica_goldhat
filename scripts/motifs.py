@@ -246,7 +246,12 @@ def for_tool(tool_no):
     if tool_no in (4,):
         return build("circle_row", r_dot=0.9, n=9)
     if tool_no == 5:
-        return build("disc", r=1.6)
+        # Punktkreis: a dot inside a circle (Fig. 21, scale 2:1 legend). Modelled
+        # as a 1-ring ring_dot so the relief form gives a central boss plus one
+        # surrounding ridge; it was previously `disc(r=1.6)`, i.e. a plain dot
+        # that did not match its own name. Diameter 3.2 mm is a stylisation --
+        # Fig. 21 gives no size for the Nos. 4-7 fillers.
+        return build("ring_dot", rings=1, diameter_mm=3.2)
     if tool_no == 6:
         return build("ring_dot", rings=2, diameter_mm=8.0)
     if tool_no == 7:

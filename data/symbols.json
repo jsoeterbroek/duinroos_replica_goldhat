@@ -130,12 +130,21 @@
     },
     {
       "no": 5,
-      "primitive": "disc",
-      "rings": null,
-      "diameter_mm": null,
-      "zones": [],
+      "primitive": "ring_dot",
+      "rings": 1,
+      "diameter_mm": 3.2,
+      "zones": [
+        {
+          "zone": 7,
+          "count": 19
+        },
+        {
+          "zone": 8,
+          "count": 21
+        }
+      ],
       "name": "Punktkreis (dot in circle)",
-      "note": "filler punch"
+      "note": "filler punch; z7/z8 interstice fillers (Menghin 2010 p.29, one per gap in the upper and lower spandrel). diameter is a STYLISATION, not a Fig. 21 measurement (Fig. 21 gives no size for Nos. 4-7). Modelled as a 1-ring ring_dot (central boss + one surrounding ridge), NOT a plain dot, so the name matches the shape. Also forms the narrow dotted-circle band at the cap top (z16/17 junction) per Menghin p.29 -- that band is not yet wired into zones.json."
     },
     {
       "no": 6,

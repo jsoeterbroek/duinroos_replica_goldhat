@@ -5,14 +5,24 @@ Motif features for the Berlin Gold Hat replica — the P3.5 coupon.
 Turns the 2D primitives from motifs.py into 3D cut/added features on a band's
 outer surface, in one of the three forms the plan defers to a print test:
 
-    relief        raised boss + raised rings            (R)
-    window        a hole through the wall               (W)
-    relief_window recessed field cut through, rings kept (RW)
+    relief        raised boss + raised rings                       (R)
+    window        a hole through the wall                          (W)
+    relief_window raised boss + raised rings AND a central
+                  light aperture cut through the wall        (RW, ext.)
 
 All three place the SAME motifs at the SAME coordinates; only the material
 inside a motif's outline differs (plan section 6.3). That is what makes the
 coupon comparison meaningful, so `feature_solids()` is the single entry point
 and the form is a parameter.
+
+EXTENDED relief_window (operator decision 2026-10-14, z08 prototype). The
+earlier RW emitted only the outer footprint plus an *inset* through-cut and
+discarded the ring troughs, so a 5- or 6-ring Scheibenbuckel rendered as a
+plain hole (the `holes` in the motif are the concentric rings). RW now keeps
+the exact `relief` construction -- boss plus every concentric ridge -- and
+adds ONE central through-aperture inside the innermost ridge, so the motif
+reads as a bossed disc with its rings intact AND lights through its own
+centre. Rings + a light path, which is what Stage 2 needs.
 
 Geometry, per the plan's section 5.3:
   - the motif is projected onto the cone in a local frame tangent at its
@@ -81,46 +91,87 @@ def motif_prism_polygons(form, outer, holes, relief_mm=0.8, wall_mm=2.0,
     """
     if form == "relief":
         # A Scheibenbuckel is a boss, then concentric RIDGES separated by narrow
-        # TROUGHS. The `holes` from motifs.py are the TROUGHS (each a 0.35 mm
-        # band), not the ridges. So the correct construction is
-        #     ADD the whole disc, then RECESS each trough.
-        # An earlier version added the disc AND re-added each ring band on top
-        # of it at a lower height -- which buried the rings inside the boss and
-        # made the motif render as a flat plain disc.
-        #
-        # `trough_frac` is how deep the trough sits relative to the ridge tops:
+        # TROUGHS. The `holes` from motifs.py are the ridge bands, so the
+        # construction is: ADD the whole disc, then RECESS every trough.
+        # `trough_frac` is how deep a trough sits relative to the ridge tops:
         # 0.4 means a 0.8 mm relief leaves a 0.32 mm recess, which a 0.16 mm
         # layer renders as 2 layers of visible step.
-        trough_depth = relief_mm * trough_frac
-        out = [(outer, -embed, relief_mm, "add")]
-        for band in holes:                       # band = [outer_ring, inner_ring]
-            # A trough is the annulus BETWEEN the two rings. Two prisms per
-            # trough, in order:
-            #   CUT  the outer ring from well above the boss down to trough
-            #        depth, so material is actually removed (a cut that starts
-            #        above the surface and ends above it does nothing).
-            #   ADD  the inner ring back up to full relief, which restores the
-            #        ridge inside it and leaves the narrow ring recessed.
-            outer_ring, inner_ring = band[0], band[1]
-            out.append((outer_ring, trough_depth, relief_mm + embed, "cut"))
-            out.append((inner_ring, -embed, relief_mm, "add"))
-        return out
+        return _relief_tiers(outer, holes, relief_mm, embed, trough_frac)
 
     if form == "window":
         # a clean hole: wall thickness plus a margin at each end
         return [(outer, -through_margin, wall_mm + through_margin, "cut")]
 
     if form == "relief_window":
-        # RW keeps R's raised profile AND W's light path. The raised disc is
-        # added, then the RECESSED FIELD that remains is cut through: the cut
-        # is the inner ring of each trough, extended to the inner wall. That
-        # leaves the ridges intact and standing, with open slots between them.
-        inset = _inset_polygon(outer, relief_mm * 1.2)
-        out = [(outer, -embed, relief_mm, "add"),
-               (inset, -through_margin, wall_mm + through_margin, "cut")]
+        # EXTENDED RW: keep R's raised profile exactly -- the boss AND every
+        # concentric ridge -- then cut ONE central through-aperture for the
+        # light path. The previous RW used only `outer` plus an inset cut and
+        # threw the `holes` (the ridges) away, so a ring Scheibenbuckel came
+        # out as a plain hole. See the module docstring.
+        out = _relief_tiers(outer, holes, relief_mm, embed, trough_frac)
+        wr = _light_window_radius(outer, holes)
+        out.append((_circle(0.0, 0.0, wr, 48), -through_margin,
+                    wall_mm + through_margin, "cut"))
         return out
 
     raise ValueError("unknown motif form %r" % form)
+
+
+def _relief_tiers(outer, holes, relief_mm, embed, trough_frac):
+    """
+    The boss + concentric-ridge tiers, shared by `relief` and `relief_window`.
+
+    Per trough, two prisms:
+      CUT  the outer ring from well above the boss down to the trough depth,
+           so material is actually removed (a cut that starts above the
+           surface and ends above it does nothing).
+      ADD  the inner ring back up to full relief, which restores the ridge
+           inside it and leaves the narrow annulus between them recessed.
+
+    ⚠️ ORDER IS LOAD-BEARING: the trough cut is a SOLID disc that is then
+    partly re-added as the inner disc, so the bands MUST be processed
+    OUTERMOST-FIRST. Processed inner-first (the original code, and the radial
+    order `ring_dot` returns), each later cut lowers every earlier trough to
+    the trough depth and the following add only restores them to full relief,
+    so all but the LAST ring collapse -- measured on z08's tool 10 as a net
+    profile with 1 trough instead of 5. That is a latent bug the old polygon
+    count never caught; `_selfcheck` now counts the net troughs.
+    """
+    trough_depth = relief_mm * trough_frac
+    out = [(outer, -embed, relief_mm, "add")]
+    for band in reversed(list(holes)):           # band = [outer_ring, inner_ring]
+        outer_ring, inner_ring = band[0], band[1]
+        out.append((outer_ring, trough_depth, relief_mm + embed, "cut"))
+        out.append((inner_ring, -embed, relief_mm, "add"))
+    return out
+
+
+def _circle(cu, cv, r, n=72):
+    """A closed circle as a polygon (mirrors motifs._circle, local copy)."""
+    return [(cu + r * math.cos(2 * math.pi * i / n),
+             cv + r * math.sin(2 * math.pi * i / n)) for i in range(n)]
+
+
+def _light_window_radius(outer, holes):
+    """
+    Radius of the central light aperture cut by the extended relief_window.
+
+    The aperture sits inside the innermost ridge so the boss reads as a raised
+    annulus around a glowing centre. `holes` are the ridge bands, so the
+    innermost solid radius is the smallest radius found on any of their rings;
+    when the motif has no rings (a plain disc), half the motif half-width is
+    used. The result is clamped so the aperture is at least 0.35 mm and never
+    eats more than 55% of the motif's half-width -- a motif must keep a rim.
+    """
+    xs = [p[0] for p in outer]
+    ys = [p[1] for p in outer]
+    half_min = 0.5 * min(max(xs) - min(xs), max(ys) - min(ys))
+    if holes:
+        boss_r = min(math.hypot(u, v)
+                     for band in holes for ring in band for (u, v) in ring)
+    else:
+        boss_r = 0.5 * half_min
+    return max(0.35, min(0.7 * boss_r, 0.55 * half_min))
 
 
 def split_add_subtract(polys):
@@ -129,27 +180,6 @@ def split_add_subtract(polys):
     for poly, a, b, op in polys:
         (add if op == "add" else sub).append((poly, a, b))
     return add, sub
-
-
-def _inset_polygon(poly, amount):
-    """Shrink a convex-ish polygon toward its centroid by `amount` mm.
-
-    Cheap and adequate: the motif outlines are convex or star-shaped about
-    their centre, so a centroid-directed inset is a good approximation and
-    never self-intersects. A full polygon offset would be OCCT's job, and
-    the extra fidelity buys nothing at a 0.16 mm layer.
-    """
-    cx = sum(p[0] for p in poly) / len(poly)
-    cy = sum(p[1] for p in poly) / len(poly)
-    out = []
-    for u, v in poly:
-        du, dv = u - cx, v - cy
-        d = math.hypot(du, dv)
-        if d < 1e-9:
-            out.append((u, v))
-            continue
-        out.append((u - du / d * amount, v - dv / d * amount))
-    return out
 
 
 def placed_motifs(zj, zone, profile, wall_mm, start_angle_deg=None):
@@ -357,25 +387,55 @@ def _selfcheck():
     w = motif_prism_polygons("window", outer, holes, 0.8, wall)
     assert len(w) == 1, "a window should be one clean hole, got %d" % len(w)
     assert w[0][1] < 0 < w[0][2], "the window is not a through-cut"
-    # relief_window must keep a raised rim AND a through field, and the rim
-    # must NOT reach through -- otherwise it is not a rim, it is a wider hole
+    # EXTENDED relief_window: the relief rings are kept (exactly as `relief`)
+    # AND one central light aperture is cut through the wall.
     add_p, sub_p = split_add_subtract(
         motif_prism_polygons("relief_window", outer, holes, 0.8, wall))
-    assert len(add_p) == 1 and len(sub_p) == 1, \
-        "relief_window should be one raised rim + one through core, got %d+%d" \
-        % (len(add_p), len(sub_p))
-    assert add_p[0][1] < 0 <= add_p[0][2] <= 0.8 + 1e-9, \
-        "the relief_window rim must embed (a<0) and not reach through (b<=0.8)"
-    assert sub_p[0][1] < 0, "the relief_window core is not a through-cut"
-    print("  relief_window: rim %+.2f..%+.2f (add), core %+.2f..%+.2f (cut)"
-          % (add_p[0][1], add_p[0][2], sub_p[0][1], sub_p[0][2]))
-    # the rim must be an annulus: the inset core is strictly inside the outline
-    in_u = [p[0] for p in sub_p[0][0]]
-    out_u = [p[0] for p in add_p[0][0]]
-    assert max(in_u) < max(out_u) and min(in_u) > min(out_u), \
-        "the RW core is not inset inside the rim"
-    print("  rim retains %.2f mm of material at each side"
-          % (max(out_u) - max(in_u)))
+    assert len(add_p) == len(holes) + 1, \
+        "extended RW must keep the disc + one ring per trough, got %d adds" \
+        % len(add_p)
+    windows = [c for c in sub_p if c[1] < 0.0]
+    troughs = [c for c in sub_p if c[1] >= 0.0]
+    assert len(troughs) == len(holes), \
+        "extended RW must recess one trough per ring, got %d for %d rings" \
+        % (len(troughs), len(holes))
+    assert len(windows) == 1, \
+        "extended RW must cut exactly one central light aperture, got %d" \
+        % len(windows)
+    assert windows[0][1] < 0 < windows[0][2], \
+        "the RW light aperture is not a through-cut"
+    wr = _light_window_radius(outer, holes)
+    ring_r = min(math.hypot(u, v)
+                 for band in holes for ring in band for (u, v) in ring)
+    assert 0.0 < wr < ring_r < M.DISC_TOOLS[15][1] / 2.0, \
+        "the RW aperture r%.2f is not strictly inside the innermost ridge r%.2f" \
+        % (wr, ring_r)
+    print("  relief_window: %d rings kept + 1 light aperture d%.2f mm through the wall"
+          % (len(holes), 2 * wr))
+    print("  innermost ridge survives: aperture r%.2f < ridge r%.2f"
+          % (wr, ring_r))
+
+    # The NET geometry, not just the polygon count: every ring must actually
+    # be recessed in the fused profile. This is what catches the outer-first
+    # ordering bug (process the trough bands inner-first and all but the last
+    # ring collapse). `_h` simulates the ordered boolean result at radius u.
+    def _h(polys, u):
+        h = 0.0
+        for poly, a, b, op in polys:
+            if u <= max(math.hypot(x, y) for x, y in poly) + 1e-9:
+                h = max(h, b) if op == "add" else (min(h, a) if h > a else h)
+        return h
+
+    for form in ("relief", "relief_window"):
+        polys = motif_prism_polygons(form, outer, holes, 0.8, wall)
+        for band in holes:
+            r0 = max(math.hypot(x, y) for x, y in band[0])
+            r1 = max(math.hypot(x, y) for x, y in band[1])
+            band_r_mid = 0.5 * (r0 + r1)
+            assert abs(_h(polys, band_r_mid) - 0.8 * 0.4) < 1e-9, \
+                "%s: the ring at r=%.2f is not recessed -- the rings collapsed" \
+                % (form, band_r_mid)
+    print("  every ring is recessed in both R and RW (outer-first ordering): OK")
 
     # ⚠️ an ADDITIVE prism that starts exactly at depth 0.0 only TOUCHES the
     # wall: the fused result came back as 31 disjoint solids with a common

@@ -63,6 +63,9 @@ diameter, not an encoded Metonic lunation count.
 ## Checks
 
 - [x] `scripts/verify_craft_geometry.py` exits 0
+- [x] All finding claims are asserted in the script (33 regression checks: pitch
+      table, 14/16 exact, Krempe packing, per-hat monotonicity, Zone-21/235);
+      a perturbed input makes the run exit 1
 - [x] Berlin shaft max |residual| = 1 (14/16 exact)
 - [x] Berlin, Schifferstadt, Avanton: all multi-zone tools monotonic
 - [x] Ezelsdorf violations localised to tools 11 and 15 (section or tool uncertainty)

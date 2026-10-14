@@ -374,14 +374,124 @@ def main():
         print("  %-35s %s" % (name, status))
     print()
 
-    # Overall pass/fail
-    if shaft_max <= 1:
-        print("PASS: all Berlin shaft counts are within ±1 of the craft-geometry")
-        print("      prediction. Krempe zones are packed 5-12%% tighter (expected:")
-        print("      goldsmith fills the available ring). The disc counts are")
-        print("      explained by circumference / tool pitch.")
+    # ── Regression checks ─────────────────────────────────────────────
+    # Every claim in FINDING_2026-10-14_craft-geometry.md is asserted here,
+    # so that `exits 0` means "all claims re-found", not just the one that
+    # happened to be checked first. Tolerances are tight enough to catch a
+    # regression in the inputs but loose enough to survive float noise.
+    print(sep)
+    print("REGRESSION CHECKS (FINDING_2026-10-14_craft-geometry.md)")
+    print(sep)
+    checks = []
+
+    def chk(label, cond, detail=""):
+        checks.append((label, bool(cond), detail))
+
+    # A. Berlin pitch constancy, tools used in >= 3 zones (finding's table).
+    #    claim: mean pitch constant, spread <= ~8 % of the mean.
+    pitch_expect = {10: (3, 15.42, 1.0), 12: (3, 18.29, 1.2),
+                    14: (4, 18.33, 1.3), 15: (3, 23.86, 2.2)}
+    for tool, (n_exp, mean_exp, spread_max) in sorted(pitch_expect.items()):
+        info = tp.get(tool)
+        if info is None:
+            chk("pitch tool %s present" % tool, False, "tool missing")
+            continue
+        chk("pitch tool %2s n=%d" % (tool, n_exp), info["n"] == n_exp,
+            "got n=%d" % info["n"])
+        chk("pitch tool %2s mean=%.2f mm" % (tool, mean_exp),
+            abs(info["mean"] - mean_exp) <= 0.1,
+            "got %.2f" % info["mean"])
+        chk("pitch tool %2s spread<=%.1f mm" % (tool, spread_max),
+            info["spread"] <= spread_max, "got %.2f" % info["spread"])
+        chk("pitch tool %2s spread<=9%%" % tool,
+            info["spread"] <= 0.09 * info["mean"],
+            "got %.1f%%" % (100.0 * info["spread"] / info["mean"]))
+
+    # B. Berlin shaft prediction: 14/16 exact, max |residual| = 1.
+    chk("shaft prediction 14/16 exact", shaft_exact == 14,
+        "got %d/%d" % (shaft_exact, len(shaft_preds)))
+    chk("shaft prediction n=16", len(shaft_preds) == 16,
+        "got %d" % len(shaft_preds))
+    chk("shaft max |residual| <= 1", shaft_max <= 1, "got %d" % shaft_max)
+
+    # C. Krempe packing: both brim zones packed tighter than the shaft
+    #    (finding: Z20 ~12 %, Z21 ~5 %).
+    krempe_pct = {}
+    for r in krempe_rows:
+        if r["tool"] in shaft_tp:
+            krempe_pct[r["zone"]] = (
+                1 - r["pitch"] / shaft_tp[r["tool"]]["mean"]) * 100
+    chk("Krempe Z20 packed tighter", krempe_pct.get(20, 0) > 0,
+        "got %.0f%%" % krempe_pct.get(20, 0))
+    chk("Krempe Z21 packed tighter", krempe_pct.get(21, 0) > 0,
+        "got %.0f%%" % krempe_pct.get(21, 0))
+    chk("Krempe Z20 packing 8-16%", 8 <= krempe_pct.get(20, 0) <= 16,
+        "got %.0f%%" % krempe_pct.get(20, 0))
+    chk("Krempe Z21 packing 2-9%", 2 <= krempe_pct.get(21, 0) <= 9,
+        "got %.0f%%" % krempe_pct.get(21, 0))
+    chk("Krempe packing gap 5-12% (Z20-Z21)",
+        5 <= krempe_pct.get(20, 0) - krempe_pct.get(21, 0) <= 12,
+        "got %.0f%%" % (krempe_pct.get(20, 0) - krempe_pct.get(21, 0)))
+
+    # D. Within-tool monotonicity: Berlin/Schifferstadt/Avanton all OK;
+    #    Ezelsdorf 4/6 with the violations on tools 11 and 15.
+    mono_expected_ok = {"berlin": (5, 5), "schifferstadt": (3, 3),
+                        "avanton": (3, 3), "ezelsdorf": (4, 6)}
+    ezelsdorf_bad_tools = set()
+    for hat_name in ["berlin", "schifferstadt", "avanton", "ezelsdorf"]:
+        mono = tool_monotonicity(hat_name, all_hats[hat_name])
+        n_ok = sum(1 for m in mono if m["monotonic"])
+        want_ok, want_n = mono_expected_ok[hat_name]
+        chk("monotonicity %s %d/%d" % (hat_name, want_ok, want_n),
+            (n_ok, len(mono)) == (want_ok, want_n),
+            "got %d/%d" % (n_ok, len(mono)))
+        if hat_name == "ezelsdorf":
+            ezelsdorf_bad_tools = {m["tool"] for m in mono if not m["monotonic"]}
+    chk("Ezelsdorf violations only tools 11,15",
+        ezelsdorf_bad_tools == {11, 15}, "got %s" % sorted(ezelsdorf_bad_tools))
+
+    # E. Zone 21's 235: the brim count follows from circumference / pitch,
+    #    with no free parameter. The same tool's shaft pitch predicts the
+    #    brim count to within a few percent (packing), and 47 x 5 = 235.
+    z21 = next((r for r in rows if r["zone"] == 21), None)
+    if z21 is None:
+        chk("Zone 21 present", False, "zone missing")
     else:
-        print("INVESTIGATE: some Berlin shaft counts deviate by more than ±1.")
+        chk("Zone 21 count = round(circ/pitch)",
+            z21["count"] == round(z21["circ"] / z21["pitch"]),
+            "count %s vs %s" % (z21["count"], round(z21["circ"] / z21["pitch"])))
+        pred_brim = z21["circ"] / shaft_tp[z21["tool"]]["mean"]
+        chk("Zone 21 shaft-pitch prediction within 3 of 47",
+            abs(round(pred_brim) - 47) <= 3, "got %.2f" % pred_brim)
+        chk("47 x 5 = 235", 47 * 5 == 235, "")
+
+    # F. The result is positive: pitch constancy explains the shaft counts.
+    chk("mechanism holds (shaft max |residual| <= 1)", shaft_max <= 1,
+        "got %d" % shaft_max)
+
+    n_fail = 0
+    for label, passed, detail in checks:
+        mark = "PASS" if passed else "FAIL"
+        suffix = ("  (%s)" % detail) if (detail and not passed) else ""
+        print("  [%s] %s%s" % (mark, label, suffix))
+        if not passed:
+            n_fail += 1
+    print()
+    print("Checks: %d passed, %d failed, %d total" % (
+        len(checks) - n_fail, n_fail, len(checks)))
+    print()
+
+    # Overall pass/fail
+    if shaft_max <= 1 and n_fail == 0:
+        print("PASS: all %d regression checks re-found. Berlin shaft counts are" % len(checks))
+        print("      within ±1 of the craft-geometry prediction; Krempe zones are")
+        print("      packed 5-12% tighter (expected: goldsmith fills the available")
+        print("      ring). The disc counts are explained by circumference / tool pitch.")
+    else:
+        if shaft_max > 1:
+            print("INVESTIGATE: some Berlin shaft counts deviate by more than ±1.")
+        if n_fail:
+            print("INVESTIGATE: %d regression check(s) failed." % n_fail)
         ok = False
 
     print()

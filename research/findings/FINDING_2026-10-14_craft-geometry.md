@@ -87,7 +87,7 @@ diameter, not an encoded Metonic lunation count.
 
 ## Credit
 
-Hypothesis: Soeterbroek/AI (2026-10-14). The pitch-constancy observation arose from
+Hypothesis: craft-geometry (2026-10-14). The pitch-constancy observation arose from
 computing circumference / count per zone from the Berlin profile data; the cross-hat
 monotonicity test followed. The computation, the script, and the write-up are this
 round's work.

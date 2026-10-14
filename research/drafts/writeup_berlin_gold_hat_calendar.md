@@ -189,7 +189,7 @@ It is recorded as outstanding (`todo/T3`, low priority).
 
 ---
 
-### 4.5 Soeterbroek/AI: craft-geometry — counts determined by circumference / tool pitch (2026)
+### 4.5 Craft-geometry — counts determined by circumference / tool pitch (2026)
 
 **The claim.** The disc counts per zone are not calendar encodings but are
 determined by a craft constraint: each punch tool was placed at a characteristic
@@ -358,7 +358,7 @@ None of this says the ornament is meaningless. It says:
 | Lorenz 12+7 structure | 19-band Metonic structure | 25–35 % | "19" is a redefinition; arithmetic is trivial |
 | Hansen & Rink eclipse | Saros/Metonic via eclipses | unassessable | Chapter not yet held |
 | Schifferstadt synodic | Synodic month on Schifferstadt | ~50 % | Method B selective; metrological corroboration |
-| **Soeterbroek/AI craft-geometry** | **Counts = circumference / tool pitch** | **55–65 %** | **Quantitative; predicts cross-hat failure; not yet peer-reviewed** |
+| **Craft-geometry** | **Counts = circumference / tool pitch** | **55–65 %** | **Quantitative; predicts cross-hat failure; not yet peer-reviewed** |
 | Sceptical position | Cosmic yes, arithmetic no | ~70 % | Best-supported by held sources |
 
 ---
@@ -393,7 +393,7 @@ The Stage-2 LED display and M5 screen should present the readings as **plural an
 explicitly uncertain**. The research supports:
 
 - Showing **all six readings** (Menghin, Schmidt-Kaler, Lorenz, Hansen & Rink,
-  Soeterbroek/AI craft-geometry, and the sceptical position) labelled by author
+  craft-geometry, and the sceptical position) labelled by author
   and confidence.
 - A "how sure are we?" mode that displays the statistical basis: the Fuls null
   result, the cross-hat result, the Menghin transfer admission.
@@ -402,7 +402,7 @@ explicitly uncertain**. The research supports:
 - **Zone 21** as the strongest single fact on Berlin: `47 × 5 = 235 lunations` from
   one band, no free parameters — though the craft-geometry analysis shows that 47 is
   also the geometric prediction for the Krempe circumference and tool pitch.
-- A **"craft" mode** (Soeterbroek/AI): zones light up by tool type, showing the
+- A **"craft" mode**: zones light up by tool type, showing the
   counts as following the circumference and the 12+7 alternation as a design grammar.
 
 The honest exhibit is: *here are the theories, here is the evidence, here is why the

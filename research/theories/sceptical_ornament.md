@@ -72,7 +72,7 @@ and Peter-Röcher 2023 (the non-transfer to the other hats).
 - A demonstration that a correction zone is physically marked (spacing,
   orientation, a distinct tool) *before* the arithmetic is applied.
 
-## Relation to craft-geometry (Soeterbroek/AI, 2026)
+## Relation to craft-geometry (2026)
 
 The craft-geometry hypothesis (`theories/craft_geometry.md`) extends this sceptical
 position by providing a **positive mechanism** for the counts: the disc numbers are

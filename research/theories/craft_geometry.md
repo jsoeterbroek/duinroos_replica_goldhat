@@ -1,6 +1,6 @@
 # Theory: craft-geometry — disc counts determined by circumference / tool pitch
 
-**Authors / date:** Soeterbroek/AI, 2026.
+**Authors / date:** Craft-geometry hypothesis, 2026.
 **Sources:** `scripts/verify_craft_geometry.py`; Berlin profile
 `data/hat_parameters.json`; all four hats' per-zone tables
 `data/readings/menghin2000_zones.json`.

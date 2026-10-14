@@ -203,5 +203,5 @@ The narrative for the write-up, in order, with credits for who had which idea.
   and the calendar numbers that appear in the sums are a consequence of the cone's
   dimensions, not a deliberate encoding. Credit: **the project author** posed the
   question; **the model** ran the computation and wrote
-  `scripts/verify_craft_geometry.py`. Attribution: Soeterbroek/AI, 2026. Finding:
+  `scripts/verify_craft_geometry.py`. Finding:
   `findings/FINDING_2026-10-14_craft-geometry.md`.

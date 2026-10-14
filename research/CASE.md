@@ -43,7 +43,7 @@ One recipe per source in `sources/`. Status at 2026-10-10:
 | Source | Recipe | Status |
 |---|---|---|
 | Menghin 2000 (Berlin + the other three hats, Ornamentanalyse) | `sources/menghin_2000_2010.md` | **held — COMPLETE** (83 page images + text, `assets/menghin/2000/`; four per-zone tables transcribed, control C6) |
-| Menghin 2010 (book) | `sources/menghin_2000_2010.md` | **held — COMPLETE** (whole book, pp. 1–88, `assets/menghin/2010/full/`; 2026-10-13) |
+| Menghin 2010 (book) | `sources/menghin_2000_2010.md` | **held — COMPLETE** (whole book, pp. 1–88, `assets/menghin/2010/`; 2026-10-13) |
 | Menghin 2003 (Golden Calendar Hats, catalogue) | `sources/menghin_2000_2010.md` | print-only |
 | Schauer 1986 (Die Goldblechkegel der Bronzezeit) | `sources/schauer_1986.md` | print-only, not yet obtained |
 | Menghin & Schauer 1983 (Ezelsdorf) | `sources/schauer_1986.md` | print-only |

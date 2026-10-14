@@ -23,7 +23,7 @@ History rewritten with `git-filter-repo` and force-pushed. **All commit hashes c
 Result: `.git` 241 MB (pack 240.40 MiB), 82 commits.
 
 **Not touched, on purpose:** `assets/menghin/2000/jpg` (93 MB) and
-`assets/menghin/2010/full/jpg` (111 MB). They are already ~2000 px, so re-encoding them
+`assets/menghin/2010/jpg` (111 MB). They are already ~2000 px, so re-encoding them
 is generation loss for ~18%, and they are the bulk of what remains. See §3.
 
 ---
@@ -32,18 +32,19 @@ is generation loss for ~18%, and they are the bulk of what remains. See §3.
 
 | Path | Tracked size | Files | Note |
 |---|---|---|---|
-| `assets/menghin/2010/full/jpg/**` | ~111 MB | 85 | the full 2010 book, ~2000 px |
+| `assets/menghin/2010/jpg/**` | ~111 MB | 85 | the full 2010 book, ~2000 px |
 | `assets/menghin/2000/jpg/**` | ~93 MB | 83 | ~2000 px |
-| `assets/menghin/2010/jpg/**` | ~24 MB | 28 | **already compressed** 2000 px / q82 |
 | `reference/cad/*.FCStd`, `printed/` | ~10 MB | | CAD sources (kept in git on purpose) |
 | everything else (plan, research, scripts, assets) | ~5 MB | | |
 
 Also on disk but **not in git** (gitignored, ~300 MB): the scanned `assets/menghin/*/pdf/`
 files. Those are fine — they never entered history.
 
-> ⚠️ Note: `2010/jpg` is a **higher-resolution subset** of `2010/full/jpg` (same pages,
-> different naming: `page25` vs `page025`). Worth checking for a real duplicate before
-> doing anything else — see §4, option 0.
+> ℹ️ **2026-10-14 reorg:** the old phone-photo set (`2010/jpg`, 28 files, 24 MB,
+> names like `page25`) and its `ocr/`/`text/` were **superseded and removed**; the
+> full-scan files were moved out of `2010/full/` into `2010/` (names like `page025`).
+> The duplicate/subset question in §4, option 0 is therefore moot — there is now a
+> single 2010 tree.
 
 ---
 
@@ -52,7 +53,7 @@ files. Those are fine — they never entered history.
 ### Option A — downscale the two remaining sets (simplest)
 ```bash
 # 1600 px / q80: roughly halves them (~200 MB -> ~100 MB), best-case saving ~140 MB
-for d in assets/menghin/2000/jpg assets/menghin/2010/full/jpg; do
+for d in assets/menghin/2000/jpg assets/menghin/2010/jpg; do
   for f in "$d"/*.jp*; do sips -Z 1600 -s format jpeg -s formatOptions 80 "$f"; done
 done
 ```
@@ -85,16 +86,8 @@ OCR trade-off → else **B**. Do **C** only if the scans will live somewhere els
 
 ## 4. Before any of this — option 0: check the overlap
 
-```bash
-# are the 2010/jpg pages a resized subset of 2010/full/jpg?
-ls assets/menghin/2010/jpg | sed -E 's/page0*([0-9]+)b?/page\1/' | sort -u > /tmp/subset.txt
-ls assets/menghin/2010/full/jpg | sed -E 's/page0*([0-9]+)b?/page\1/' | sort -u > /tmp/full.txt
-comm -12 /tmp/subset.txt /tmp/full.txt | wc -l   # >0 means overlap
-diff <(sed -E 's/[0-9]+//g' /tmp/subset.txt) <(sed -E 's/[0-9]+//g' /tmp/full.txt)
-```
-If `2010/jpg` is fully contained in `2010/full/jpg` and the extra resolution is not needed,
-`2010/jpg` can be dropped entirely (another ~24 MB) — but it is the one set that is *not*
-re-encoded, so it is also the cleanest copy of those pages.
+**Resolved 2026-10-14.** The overlap was the old phone-photo set, now removed by the
+reorg (see the note in §2). No separate check is needed.
 
 ---
 
@@ -144,5 +137,5 @@ Restore all history: `git clone <backup>/repo.git`.
   `assets/menghin/2010/jpg` images have "EXIF orientation 6 / rotated 90°", but `sips`
   reports **no orientation tag** on the originals and the compressed copies render upright.
   Verify against a full-res copy in the backup and correct the line.
-- `assets/menghin/2010/full/` also carries its own `ocr/` and `text/` — cheap, no action.
+- `assets/menghin/2010/` also carries its own `ocr/` and `text/` — cheap, no action.
 - `stl/` is gitignored (regenerable), correct.

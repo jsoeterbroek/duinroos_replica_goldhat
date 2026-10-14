@@ -6,14 +6,16 @@
   (`assets/menghin/2010/pdf/2026-10-13_menghin_2010_p*.pdf`), ~226 MB, pp. 1–88 +
   cover/imprint/contents.
 - Split into the repo's format **without touching the existing 2010 phone photos**
-  (which `IMPLEMENTATION_PLAN.md` still depends on):
-  - `assets/menghin/2010/full/jpg/` — 85 page images at native scan resolution
+  (which `IMPLEMENTATION_PLAN.md` still depended on). Since the 2026-10-14 reorg these
+  live directly in `assets/menghin/2010/`:
+  - `assets/menghin/2010/jpg/` — 85 page images at native scan resolution
     (`menghin_pageNNN.jpeg`, 3-digit padded; front matter as `front_cover` /
     `imprint` / `toc`).
-  - `assets/menghin/2010/full/ocr/` — 85 per-page text files.
-  - `assets/menghin/2010/full/text/` — 8 per-batch combined text files.
-  - The pre-existing `assets/menghin/2010/jpg/` (28 phone photos, pp. 20–31 and
-    47–63) and `ocr/` were left in place.
+  - `assets/menghin/2010/ocr/` — 85 per-page text files.
+  - `assets/menghin/2010/text/` — 8 per-batch combined text files, plus the two kept
+    English hand-translations (`menghin_pages20-31.txt`, `menghin_pages47-63.txt`).
+- *(2026-10-14 reorg: the files were moved out of `2010/full/`; the older
+  phone-photo set, its OCR, and the pre-existing per-page text files were removed.)*
 - Read the new pages the case needs: **"Der Vergleich" pp. 64–72** (p. 65, p. 68,
   p. 30 control, pp. 64, 69–71), and cross-checked against 2000.
 - Wrote `findings/FINDING_2026-10-13_menghin-2010-ingested.md`.

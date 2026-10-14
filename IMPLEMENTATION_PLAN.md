@@ -55,7 +55,7 @@ These are cross-checks I ran against the existing docs. They are the numeric anc
 
 Menghin's own text (2010, Ornamentanalyse, `assets/menghin/2010/text/`) supplies **four independent arithmetic identities** that `berlin.json` satisfies exactly:
 
-| Menghin's sentence (`text/menghin_page31.txt`) | Arithmetic |
+| Menghin's sentence (`text/menghin_pages20-31.txt`) | Arithmetic |
 |---|---|
 | „If one disregards the apex (Zone 2) … as well as Zone 5 with its 38 ‚special symbols' …" | 21 zones − {1, 2, 5} = **18 disc-bearing zones** ✅ |
 | „…the **418 bossed discs** (Nos. 8–15) are distributed across 18 horizontal ornamental zones …" | Σ counts over those 18 zones = **418 exactly** ✅ |
@@ -66,7 +66,7 @@ The third and fourth rows are two *different routes* to the same 1701 — subtra
 
 **418 and 1701 are not merely *asserted* by Menghin — they are *derivable* from his own per-zone counts.** Take his count and tool number for each of the 21 zones, look up the tool's ring count in his Fig. 21 legend, multiply:
 
-| Zone | Menghin's sentence (`text/menghin_page*.txt`) | count | tool | rings | × = |
+| Zone | Menghin's sentence (`text/menghin_pages20-31.txt`) | count | tool | rings | × = |
 |---|---|---|---|---|---|
 | 1 | „an eight-rayed star set against a dotted background" | — | — | 0 | **0** |
 | 2 | „a 0.85 cm wide band … contains **22** circular punches featuring **two** rings (No. 6)" | 22 | 6 | 2 | **44** |
@@ -137,7 +137,7 @@ intercalary 7 + 16 + 17 =  161   ← the three once-only DISC stamps (Nr. 11/13/
 
 ⚠️ **Correction — Menghin pp. 47–63 (added later) supersede the intercalary reading above.** An earlier draft here carried `intercalary 5 + 16 + 17 = 142 → 1597`, taken from the earlier secondary digest (`research/theories/secondary_digest_2026-10-08.md`). That is wrong on the **zone set**: the intercalary ("Schalt") zones are the zones whose *disc* stamp occurs exactly once in the canon — Nr. 11 in zone 7, Nr. 13 in zone 16, Nr. 9 in zone 17 (independently asserted by `verify_calendar.check_tools_used_once`). **Zone 5 is not a single-use *disc* stamp**: it carries the 38 *special signs* (recumbent crescent + eye, tools Nr. 16/17, 2 × 19) that are counted separately and never enter the 418/1701 disc totals. ⚠️ Its status is itself unstable in Menghin's own corpus: pp. 47's running text and the earlier Menghin (2000, *Acta Praehistorica* 32 — see the Wikipedia transcript) group it with the *Schaltzonen* (`{5,7,16,17}`, giving the 54-month example `1739 − 142 = 1597`), while the 2010 Figs 61.1–64.4 colour only **{7,16,17}** green and place zone 5 inside the red solar blocks. See `research/theories/menghin_lunisolar.md` §6, Result 4. This is not a bookkeeping detail: the intercalary set is the free parameter that makes the arithmetic close, so its instability is a real weakness of the hypothesis. The `1597`/54-lunation example came from the earlier secondary digest and does **not** occur in pp. 47–63, which instead read the 19 zones as **1739 ≈ 1735 d** (57 solar months / 19 quarter-years) or **1742 d** (59 lunations); §10.1. The plan keeps the *derived* identity `1739 = 1701 + 38` as the hard test, not the interpretive period.
 
-**Tool catalogue — all 24 punches.** Menghin's Fig. 21 legend (`text/menghin_page27.txt`) gives the full set; the eight disc bosses (Nos. 8–15) are the ones that carry the calendar arithmetic, and the legend fixes their size, which is what the motif primitives must scale to (§6.2):
+**Tool catalogue — all 24 punches.** Menghin's Fig. 21 legend (`text/menghin_pages20-31.txt`) gives the full set; the eight disc bosses (Nos. 8–15) are the ones that carry the calendar arithmetic, and the legend fixes their size, which is what the motif primitives must scale to (§6.2):
 
 | No. | Motif | Rings | ⌀ | Used in |
 |---|---|---|---|---|
@@ -157,12 +157,12 @@ intercalary 7 + 16 + 17 =  161   ← the three once-only DISC stamps (Nr. 11/13/
 | 17 | eye / almond | — | 11 mm long | z5 (19) |
 | — | 8-rayed star on dotted triangles | — | — | z1 |
 
-Ring counts are **{2, 3, 5, 6} — never 4**, exactly as Menghin says („featuring two, three, five, or six concentric rings"). Nos. 9, 11 and 13 appear in exactly **one** zone each — which is what Menghin's Fig. 23 key means by „Disc symbols appearing **only once** in the ornamental canon: Green" (`text/menghin_page30.txt`), a third independent check on the per-zone table above.
+Ring counts are **{2, 3, 5, 6} — never 4**, exactly as Menghin says („featuring two, three, five, or six concentric rings"). Nos. 9, 11 and 13 appear in exactly **one** zone each — which is what Menghin's Fig. 23 key means by „Disc symbols appearing **only once** in the ornamental canon: Green" (`text/menghin_pages20-31.txt`), a third independent check on the per-zone table above.
 Its byte-identical duplicate `berlin_meghin.json` has been deleted (it was referenced nowhere).
 
 ### 2.2 The sectioned profile — **derived from Menghin** ✅ *(Q5 resolved by this section)*
 
-Menghin describes the Berlin hat as **four** sections — „the apex, the conical shaft, the helmet-like cap, and the brim" (`text/menghin_page27.txt`) — and — this is the part the earlier draft of this plan did not have — he gives the diameter of **every** transition between them. All figures below are quoted from the **human transcription** `assets/menghin/2010/text/menghin_page*.txt` (Appendix C), which is authoritative over the machine OCR;
+Menghin describes the Berlin hat as **four** sections — „the apex, the conical shaft, the helmet-like cap, and the brim" (`text/menghin_pages20-31.txt`) — and — this is the part the earlier draft of this plan did not have — he gives the diameter of **every** transition between them. All figures below are quoted from the **human transcription** `assets/menghin/2010/text/menghin_pages20-31.txt` (Appendix C), which is authoritative over the machine OCR;
 
 | Transition | Menghin, verbatim | ⌀ | z |
 |---|---|---|---|
@@ -196,7 +196,7 @@ The **18 mm cuff is the key to the whole upper profile**: Menghin calls it `vert
 | **physical** (§2.2) | apex 1–2 · Schaft 3–16 · Kalotte 17–19 · Krempe 20–21 |
 | **ornamental** – „divided into three sections—each comprising seven zones—by distinctive bands" | 1–7 · 8–14 · **15–21** |
 
-The third ornamental group straddles the boundary: „the two zones at the base of the shaft (above the cap) overlap with the five zones located on the brim and the cap itself" — i.e. z15+z16 (shaft) + z17–z21 (cap+brim) = 7. Menghin's closing remark is the point of the whole object: the canon „only partially aligns with the formal structural division of the object as a whole" (`text/menghin_page31.txt`). **Stage-2 consequence:** the two partitions are two different, equally defensible lighting scenarios (§10) — the physical one for the form, the ornamental 7+7+7 one for the counting system. Do not hard-code either.
+The third ornamental group straddles the boundary: „the two zones at the base of the shaft (above the cap) overlap with the five zones located on the brim and the cap itself" — i.e. z15+z16 (shaft) + z17–z21 (cap+brim) = 7. Menghin's closing remark is the point of the whole object: the canon „only partially aligns with the formal structural division of the object as a whole" (`text/menghin_pages20-31.txt`). **Stage-2 consequence:** the two partitions are two different, equally defensible lighting scenarios (§10) — the physical one for the form, the ornamental 7+7+7 one for the counting system. Do not hard-code either.
 
 **Four consequences, each of which changes the plan:**
 
@@ -296,8 +296,8 @@ Summing every zone + Trennband + both `tussenstuk` entries in `dimensions.txt` (
 **Resolved from Menghin (primary source — human transcription, Appendix C):**
 1. `z1 = 61 mm` is **correct and is the crown zone alone** — „Die Spitze des Goldhutes hat eine Höhe von **6,1 cm** und einen Basisumfang von **16,6 cm**." Do not add anything.
 2. The **zone heights are Menghin's own** numbers (0,85 / 1,4 / 2,2 / **2,45** / **2,5** / 2,9 / 3,4 / 1,9 / 1,5 / **3,8** cm all verify). So the zone column is not the suspect part. Note the OCR trap: the first pass read zone 5 as „2,5 cm" and „i: 5 cm"; the clean crop read gives **2,45 cm**, exactly `dimensions.txt`'s 24.5 mm. **Ten independent hits**, including the odd 24.5 mm.
-3. `tb* = 7…9 mm` are the **Kerbwülste / Trennbänder**; Menghin's zone widths exclude them, so they are genuinely *additional* height — do not delete them. Menghin confirms their existence and rough size in his closing sentence („18 bands of notched ridges and five bands featuring dots, dotted circles, double-circle dots, and ring-and-dot motifs", `text/menghin_page31.txt`). They set the Z-origin of every band above them, but they no longer change the *total* height — the 745 budget absorbs all sixteen of them (§2.2); earlier drafts treated them as free parameters, which was the mistake.
-4. Menghin's „**19 zones (excluding the tip)**" is now fully resolved and is **not** a 19-vs-18 discrepancy: the „tip" is zones **1 + 2** together („Zone 2 … is also considered part of the apex"), leaving zones **3–21** = **19 zones**. And his other count, „**18 horizontal zones**" (`text/menghin_page25.txt`), is the **18 disc-bearing** zones — 21 total minus {1 star, 2 double-circles, 5 specials} = 18, which is exactly what he says in the closing sentence of p31. **Both numbers are right; they count different things.** The plan's earlier flag of this as a source inconsistency was wrong.
+3. `tb* = 7…9 mm` are the **Kerbwülste / Trennbänder**; Menghin's zone widths exclude them, so they are genuinely *additional* height — do not delete them. Menghin confirms their existence and rough size in his closing sentence („18 bands of notched ridges and five bands featuring dots, dotted circles, double-circle dots, and ring-and-dot motifs", `text/menghin_pages20-31.txt`). They set the Z-origin of every band above them, but they no longer change the *total* height — the 745 budget absorbs all sixteen of them (§2.2); earlier drafts treated them as free parameters, which was the mistake.
+4. Menghin's „**19 zones (excluding the tip)**" is now fully resolved and is **not** a 19-vs-18 discrepancy: the „tip" is zones **1 + 2** together („Zone 2 … is also considered part of the apex"), leaving zones **3–21** = **19 zones**. And his other count, „**18 horizontal zones**" (`text/menghin_pages20-31.txt`), is the **18 disc-bearing** zones — 21 total minus {1 star, 2 double-circles, 5 specials} = 18, which is exactly what he says in the closing sentence of p31. **Both numbers are right; they count different things.** The plan's earlier flag of this as a source inconsistency was wrong.
 5. Menghin says nothing about the two `tussenstuk` (spacer) parts. They are **not attested** by any source — prior-attempt invention. Dropping both frees **40 mm**, i.e. more than the deficit.
 6. **RESOLVED — see §2.2.** Zones 20–21 sit on the **Krempe**, which Menghin measures as „**52–55 mm schmale horizontale** Krempe" with an outer size of 307 × 295 mm. It is a *horizontal plate*, so zones 20 and 21 consume radial width, not height; their stacked height is ≈0 (the plan carries the 7 mm residual left by the 745 mm budget). That is exactly why `dimensions.txt` lists z20/z21 with no height: they are concentric rings on the brim, not stacked bands.
 
@@ -366,7 +366,7 @@ Menghin states the motifs never overlap („The arrangement ensures there is no 
 | 21 (Krempe, outer ring, r≈132) | 738 → 745 | 47 × 15 | 705 | 829.4 | +124.4 |
 | rim bead + plate edge | r 144.5 – 150.5 | — | — | 56 mm radial (25+25+6) | ✓ matches „52–55 mm" |
 
-**Zones 17 and 18 landing on near-exact tangency is a strong cross-validation, not a problem.** Menghin's motif counts and Menghin's diameters were measured independently — one by counting punches, the other with callipers — and they meet at **+3.0 mm and +0.9 mm**. A profile that was too narrow at the cuff would leave zone 18 impossible (21 bosses of ⌀21 mm need 441 mm of circumference and there is nowhere else to put them); a profile that was too wide would contradict the „52–55 mm" brim and the 307 × 295 mm outer measure. **The flare Menghin's motif counts require is exactly the flare his diameters give.** Menghin himself states the correlation as a design principle: „The width of the decorative bands and the number and size of the disc symbols are clearly correlated with the shaft's circumference at any given point" (`text/menghin_page31.txt`) — the pitch check is therefore a *test of our reading of his numbers*, and it passes.
+**Zones 17 and 18 landing on near-exact tangency is a strong cross-validation, not a problem.** Menghin's motif counts and Menghin's diameters were measured independently — one by counting punches, the other with callipers — and they meet at **+3.0 mm and +0.9 mm**. A profile that was too narrow at the cuff would leave zone 18 impossible (21 bosses of ⌀21 mm need 441 mm of circumference and there is nowhere else to put them); a profile that was too wide would contradict the „52–55 mm" brim and the 307 × 295 mm outer measure. **The flare Menghin's motif counts require is exactly the flare his diameters give.** Menghin himself states the correlation as a design principle: „The width of the decorative bands and the number and size of the disc symbols are clearly correlated with the shaft's circumference at any given point" (`text/menghin_pages20-31.txt`) — the pitch check is therefore a *test of our reading of his numbers*, and it passes.
 
 The earlier draft's ⚠️ on zone 17 („33 × 15 mm — tight, needs ≥495 mm") was itself an error: Fig. 21 gives **Nr. 9 = 2 circles, ⌀12 mm** — not ⌀15. Re-reading the tool legend off `text/` (rather than the OCR, which had merged No. 9 with No. 13) turns a 20 % shortfall into a 1 % margin. **This is exactly the class of error the human transcription tier exists to kill** — see Appendix C.
 
@@ -515,7 +515,7 @@ Then read the per-zone motif type + count into `data/zones.json`. **This part is
 
 **1. There is no „correct" angular phase, and that is now proved rather than assumed.** The shaft disc counts are 14, 15, 18, 19, 21, 19, 19, 20, 20, 20, 21, 15, 19, 33, 21, 23 and **`gcd(...) = 1`**. No rotation makes all zones align, so no phase is privileged — the question the earlier draft left open („start angle per zone and the ornament-group offset") has the answer *it is a declared choice with no geometric content*. The check asserts `gcd == 1`, so if a future count edit ever made all zones commensurate, the plan would be told. The single appearance rule worth encoding is the **stagger**: the Fig. 22 plates show z13 and z14 offset rather than stacked, so each odd zone is shifted by half of its *own* pitch (half a pitch is not a constant angle — it is 12.0° in z15 and 7.8° in z19).
 
-**2. The interstice filler cannot sit on the disc centreline — it has to be lifted into the spandrel.** This was a real geometric finding, not a styling choice. At the discs' mid-height the gap between neighbours is only `pitch − disc ⌀`: in **z9 that is 18.12 − 15 = 3.12 mm**, while the Nr. 7 annulet is **⌀4.85 mm**. It physically does not fit there. The first render made the error obvious — the fillers drew straight through the discs. The fix is `spandrel_offset()`, which solves for the height at which the filler clears both neighbours: with the disc centres `p` apart, a point on the bisector at height `y` is `√((p/2)² + y²)` from either centre, so the filler clears once `y ≥ √((R + r_f)² − (p/2)²)`. That gives a **lift of 2.95 mm (z13) to 9.59 mm (z18)**, and the check asserts the resulting clearance. A close reading of `menghin_page29.jpeg` (Z13) then confirmed the *count* too: it is **two annulets per gap, one above and one below**, in the upper and lower spandrels.
+**2. The interstice filler cannot sit on the disc centreline — it has to be lifted into the spandrel.** This was a real geometric finding, not a styling choice. At the discs' mid-height the gap between neighbours is only `pitch − disc ⌀`: in **z9 that is 18.12 − 15 = 3.12 mm**, while the Nr. 7 annulet is **⌀4.85 mm**. It physically does not fit there. The first render made the error obvious — the fillers drew straight through the discs. The fix is `spandrel_offset()`, which solves for the height at which the filler clears both neighbours: with the disc centres `p` apart, a point on the bisector at height `y` is `√((p/2)² + y²)` from either centre, so the filler clears once `y ≥ √((R + r_f)² − (p/2)²)`. That gives a **lift of 2.95 mm (z13) to 9.59 mm (z18)**, and the check asserts the resulting clearance. A close reading of `menghin_page029.jpeg` (Z13) then confirmed the *count* too: it is **two annulets per gap, one above and one below**, in the upper and lower spandrels.
 
 This is a good example of the plan's own rule working: the numbers came from the transcription, the *shape* came from the plate, and the arithmetic that reconciles them is an `assert` in the script rather than a sentence in this document. The Abrollung was not needed for any of it.
 
@@ -683,7 +683,7 @@ Nothing below is implemented now; these are the interfaces Stage 1 must leave op
 
 ### 10.1 Stage-2 lighting scenarios are now data (Menghin pp. 47–63)
 
-The scenario system the LEDs will run comes from Menghin (2010) *Zahlensymbolik und Rechensystem*, pp. 47–63, Figs 61.1–64.4 (`assets/menghin/2010/jpg/menghin_page60..63.jpeg`). For each of **16 time blocks** (4…19 quarter-years / 12…59 lunations) the figures colour the hat:
+The scenario system the LEDs will run comes from Menghin (2010) *Zahlensymbolik und Rechensystem*, pp. 47–63, Figs 61.1–64.4 (`assets/menghin/2010/jpg/menghin_page060..063.jpeg`). For each of **16 time blocks** (4…19 quarter-years / 12…59 lunations) the figures colour the hat:
 
 | colour | meaning | LED meaning |
 |---|---|---|
@@ -714,7 +714,7 @@ The three green zones are always **{7, 16, 17}** — the once-only disc stamps (
 |---|---|---|
 | **P0 — resolve blockers** | Q1 doc rename; **Q2 height reconciliation (done — exact 745, §2.2)**; **Q3 motif arithmetic (done — 418/1701 derived, §2.1)**; Q5 geometry (done — §2.2) | height table sums to 745 mm; sectioned profile in `hat_parameters.json` |
 | **P1 — profile extraction** | Abrollung calibration → refine `r(z)` between Menghin's **four** anchors (A 166 mm @ 61, B 275 mm @ 160, **D 349 mm @ 312**, C 371 mm @ 445); validate against photo silhouette | ✅ **CLOSED.** The Abrollung route is **disproved** (not a development, §6.1); the profile is the **9 documentary constraints + `pchip`**, and the photo only corroborates it. Criterion restated in §12 |
-| **P2 — motif catalogue** | Count and classify motifs from the Abrollung → `symbols.json` + `zones.json`; implement primitives. **Menghin's per-zone tool-and-count table (§2.1) and the Fig. 22.1–22.4 per-zone plate set (`text/menghin_page28/29.txt`) have already given the *counting* half** — `data/symbols.json` and `data/zones.json` exist and verify. What is left is (a) the 8 primitives as code, (b) per-zone **placement** (start angle, ornament offset), with the Abrollung only confirming positions within a zone | `verify_calendar.py` reproduces every Menghin zone value (1783 total, 1739, 1701×2, 418, 21 zones, 745) |
+| **P2 — motif catalogue** | Count and classify motifs from the Abrollung → `symbols.json` + `zones.json`; implement primitives. **Menghin's per-zone tool-and-count table (§2.1) and the Fig. 22.1–22.4 per-zone plate set (`text/menghin_pages20-31.txt`) have already given the *counting* half** — `data/symbols.json` and `data/zones.json` exist and verify. What is left is (a) the 8 primitives as code, (b) per-zone **placement** (start angle, ornament offset), with the Abrollung only confirming positions within a zone | `verify_calendar.py` reproduces every Menghin zone value (1783 total, 1739, 1701×2, 418, 21 zones, 745) |
 | **P3 — geometry kernel** | `build_goldhat.py`; one band end-to-end (start with z13) | ✅ **CLOSED.** `scripts/band_geometry.py` (profile, section, projection — no FreeCAD needed, self-checking) + `scripts/build_goldhat.py` (OCCT). **z13 builds as one valid closed solid**: vol 33,429 mm³, ⌀123.0 × 43.1 mm, and every section radius matches `r(z)` to 0.01 mm. Two bugs found and fixed on the way — see below |
 | **P3.5 — motif-form test** | emit the same band three ways (`relief` / `window` / `relief_window`), print all three, **look at them** (§6.3). ⚠️ **Do not wait for the full P3 catalogue to do this** — the coupon needs exactly one primitive (tool 15, the ⌀21 / 6-ring disc) and one zone's placement. Build those two things first and the coupons exist while the other 23 tools are still unwritten. | motif form chosen; `data/hat_parameters.json` ✅ **COUPONS BUILT, print verdict pending.** `scripts/motif_features.py` + `scripts/build_coupons.py` emit `stl/test/z15_{relief,window,relief_window}.stl` plus the fit-test trio, all three single valid solids and measurably different (§11.2). What remains is the **physical print and the five judgements** in §6.3. |
 | **P4 — full generation** | zones 1–19 + the Krempe plate split into 3 sectors → `stl/` | all 22 STLs watertight, `verify_geometry.py` passes. ✅ **22/22 files built and verified** (below); only zone 1's continuous star ornament is still plain |
@@ -993,9 +993,9 @@ dimensions.txt grand total 769 - 40 (2 x tussenstuk) - 9 (tb19)
 
 | Path | What it is | Use |
 |---|---|---|
-| `assets/menghin/2010/text/menghin_page{20..31}.txt` | **hand transcription / English translation, 12 files, 16,904 B** (page 26 is a 16-byte "page skipped" stub — the book has no such page) | **THE authoritative text tier.** Wins on every conflict. Supplies the four circumference anchors, all 21 zone widths, the Fig. 21 tool legend, the Fig. 22 plate captions, the Fig. 23 key and the alloy analyses |
-| `assets/menghin/2010/ocr/menghin_page*.txt` | German OCR of the above (tesseract 5.5.3, `deu`+`osd`, `--psm 1`), 11 files, 21,847 B | the German verbatim quoted in §2.1/§2.2 **and** the witness that exposed the psm-1 digit-dropping failure. **Never the route for a number** |
-| `assets/menghin/2010/jpg/menghin_page{20..25,27..31}.jpeg` | 11 phone photos of pp. 18–29 (pp. 21–24 and 28 are plates; p. 30 is Fig. 23) | the source itself; **all 11 are rotated 90°** (OSD `Orientation=270`). ⚠️ The 28-file set was downscaled to **2000 px / q82** (98 MB → 24 MB) on 2026-10-13 to keep the repo small; full-res copies are in `../goldhat_precleanup_backup/menghin_fullres/2010_jpg/` |
+| `assets/menghin/2010/text/menghin_pages20-31.txt` | **hand transcription / English translation of pp. 20–31, 16,908 B** (plus `menghin_pages47-63.txt` for pp. 47–63; both kept through the 2026-10-14 reorg) | **THE authoritative text tier.** Wins on every conflict. Supplies the four circumference anchors, all 21 zone widths, the Fig. 21 tool legend, the Fig. 22 plate captions, the Fig. 23 key and the alloy analyses |
+| `assets/menghin/2010/ocr/page*.txt` | per-page text layer of the **full scan**, 85 files (scanner-app OCR, not tesseract) | the German verbatim quoted in §2.1/§2.2; grep only. Tables come out jumbled — **never the route for a number** |
+| `assets/menghin/2010/jpg/menghin_pageNNN.jpeg` | 85 page images of the whole 2010 book, 3-digit padded, native scan resolution | the source itself; ground truth for **shape and layout**, not for text. Replaced the 28-file phone-photo set in the 2026-10-14 reorg |
 | `assets/berliner_goldhut_abrollung.jpg` (648×800) | **not** an unrolled surface view — it is the prior attempt's debug render, and it is the same drawing as `cone_debug.png` (verified: 800×648 both, mean abs difference 0.93/255, i.e. JPEG noise and nothing else) | ❌ **measured and disqualified.** Its width is constant at 382 px across the shaft, where a development must grow ×1.43 (275 → 392 mm). Not used for geometry or for placement, §6.1 |
 | `assets/Berlín_Goldhut_01.JPG` (800×1873) | the earlier draft's "front-on photo" | ❌ **measured and unusable**: mid-grey background (border median 102, tol 42), a second object merges into the left flank, and the brim is cut off at the bottom edge. Only the 250×494 + 800×1581 pair carries a usable silhouette |
 | `assets/Berlín_Goldhut_04.JPG` (800×1200) | detail photo | ⚠️ yields **no foreground at all** under border-median segmentation (bg 129, large MAD). Usable by eye only, not programmatically |
@@ -1070,7 +1070,7 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 | Filament @ 2.0 mm wall | ~584 cm³ ≈ 0.72 kg PLA | area × thickness, before the windows |
 | Gold mass implied by the profile | ≈ **338 g** | 0.292 m² × 0.06 mm × 19.3 g/cm³ — consistent with the stated 490 g incl. bronze |
 | ~~Old straight-cone figure: 293 mm base, 9.94°, 0.385 m²~~ | **superseded** | two-anchor fit (166 mm @ z=61, 275 mm @ z=160) — valid only as a check on the upper Schaft |
-| Punch tools | **24 in total**; the eight disc bosses Nr. 8–15 are ⌀12/3, ⌀12/2, ⌀13/5, ⌀14/3, ⌀15/3, ⌀15/2, ⌀15/5, ⌀21/6 rings | **Menghin, Fig. 21 legend ✅** (`text/menghin_page27.txt`) |
+| Punch tools | **24 in total**; the eight disc bosses Nr. 8–15 are ⌀12/3, ⌀12/2, ⌀13/5, ⌀14/3, ⌀15/3, ⌀15/2, ⌀15/5, ⌀21/6 rings | **Menghin, Fig. 21 legend ✅** (`text/menghin_pages20-31.txt`) |
 | Disc bosses (Nr. 8–15) | **418** over the 18 disc-bearing zones | **derived zone-by-zone from Menghin's counts, §2.1** ✅ — no longer merely "verbatim" |
 | Concentric rings total | **1701** | **derived, §2.1** ✅ = 1783 − 44 − 38 |
 | Discs, all 21 zones | 440 | derived, §2.1 |
@@ -1088,31 +1088,42 @@ Total `assets/` ≈ **40 MB** in git. Flagged rather than acted on: the plan nee
 
 ---
 
-## Appendix C — Menghin (2010) OCR: provenance and reproduction
+## Appendix C — Menghin (2010) text: provenance and reproduction
+
+> ℹ️ **2026-10-14 reorg.** The 2010 assets were flattened (`2010/full/` →
+> `2010/`) and the earlier **partial** tier was removed: the 11/28 phone photos of
+> pp. 18–29, their tesseract `ocr/` output, and the pre-consolidation per-page
+> transcriptions. What survives is the **complete** scan — 85 page images
+> (`jpg/`), 85 per-page text files (`ocr/`), 8 per-batch text files (`text/`) — and
+> the two **hand-translations** (`text/menghin_pages20-31.txt`,
+> `text/menghin_pages47-63.txt`), which remain the authoritative text tier.
+> The sub-sections below that describe the phone-photo tier and its tesseract
+> recipe are kept as the **historical record** of how the transcription was
+> checked; their `pageNN`/`menghin_pageNN` names refer to the removed set.
 
 ### Source — **two tiers, and the human one wins**
 
-`assets/menghin/2010/jpg/menghin_page{20,21,22,23,24,25,27,28,29,30,31}.jpeg` — 11 phone photos of Menghin 2010, book pp. 18–29. Page images are 4032×3024, EXIF orientation 6. **All 11 pages are rotated 90°** (confirmed by `tesseract --psm 0`: every page reports `Orientation in degrees=270 / Rotate=90`); `-auto-orient` handles it.
+`assets/menghin/2010/jpg/menghin_page{020,021,022,023,024,025,027,028,029,030,031}.jpeg` — 11 phone photos of Menghin 2010, book pp. 18–29. Page images are 4032×3024, EXIF orientation 6. **All 11 pages are rotated 90°** (confirmed by `tesseract --psm 0`: every page reports `Orientation in degrees=270 / Rotate=90`); `-auto-orient` handles it.
 
 | Tier | Path | Status |
 |---|---|---|
-| **1 — transcription (authoritative)** | `assets/menghin/2010/text/menghin_page{20..31}.txt` — 12 files, 16,904 B | **Hand-transcribed English translation of Menghin. Wins on every conflict.** |
-| 2 — machine OCR | `assets/menghin/2010/ocr/menghin_page{20,21,22,23,24,25,27,28,29,30,31}.txt` — 11 files, 21,847 B | `tesseract -l deu --psm 1`. Kept: it supplies the **German verbatim** quoted throughout this plan, and it is the independent witness that caught the psm-1 number-dropping failure. |
-| 2 — the human transcriptions | `assets/menghin/2010/text/menghin_page{20..31}.txt` (12 files, 16,904 B; **page 26 does not exist** — the book skips it) | **THE authoritative tier.** Where it and the OCR disagree, this wins. All numbers in this plan come from here |
+| **1 — transcription (authoritative)** | `assets/menghin/2010/text/menghin_pages20-31.txt` — 12 files, 16,904 B | **Hand-transcribed English translation of Menghin. Wins on every conflict.** |
+| 2 — machine OCR | `assets/menghin/2010/ocr/page{020,021,022,023,024,025,027,028,029,030,031}.txt` — 11 files, 21,847 B | `tesseract -l deu --psm 1`. Kept: it supplies the **German verbatim** quoted throughout this plan, and it is the independent witness that caught the psm-1 number-dropping failure. |
+| 2 — the human transcriptions | `assets/menghin/2010/text/menghin_pages20-31.txt` (12 files, 16,904 B; **page 26 does not exist** — the book skips it) | **THE authoritative tier.** Where it and the OCR disagree, this wins. All numbers in this plan come from here |
 | 3 — the photos | `assets/menghin/2010/jpg/*.jpeg` | ground truth for *shapes and layouts*, not for text. **P2 has now used them** — read directly as images (see the note below), which is what confirmed the primitive forms and caught the Fig. 21 legend's `diam. 15 mm` omission for Nr. 13. **P1 used and closed** — and the one believed to be an Abrollung turned out not to be (§6.1). |
 | 4 — the derived data | `data/*.json` + `scripts/verify_calendar.py` + `scripts/motifs.py` | **created** — the machine-readable form of tier 2, with tier 2's arithmetic *and* its geometry as runnable assertions. If tier 2 is ever re-transcribed, re-run both; they will tell you which zone or which tool broke |
 
-**⚠️ Tier 3 note — the plate pages are now readable as images.** `menghin_page28/29.jpeg` (Fig. 22's ornament photographs) and `menghin_page30.jpeg` (Fig. 23's combination table) are **rotated 90°**; rotating by **−90°** puts them right way up. Read this way they are directly informative **about shape**: Fig. 22's close-ups showed the disc structure (central boss + N concentric ridges, with the small annulets No. 7 between discs) that `motifs.py` implements, and Fig. 23's table makes the alternating **three-and-five-circle structure of the shaft** visually obvious — which is the pattern §2.1 derives numerically and `verify_calendar.py` asserts.
+**⚠️ Tier 3 note — the plate pages are now readable as images.** `menghin_page028/029.jpeg` (Fig. 22's ornament photographs) and `menghin_page030.jpeg` (Fig. 23's combination table) are **rotated 90°**; rotating by **−90°** puts them right way up. Read this way they are directly informative **about shape**: Fig. 22's close-ups showed the disc structure (central boss + N concentric ridges, with the small annulets No. 7 between discs) that `motifs.py` implements, and Fig. 23's table makes the alternating **three-and-five-circle structure of the shaft** visually obvious — which is the pattern §2.1 derives numerically and `verify_calendar.py` asserts.
 
 **But the numbers still come from tier 1, and this was tested rather than assumed.** Reading Fig. 23's „K / A" columns off the image and comparing them against `data/zones.json` gave a **row-for-row disagreement**, and on inspection my reading of the plate was off by one row — i.e. the error was in **reading the image**, not in the data. Fig. 23 is a printed table photographed at an angle: its rows are legible as *structure* and unreliable as *values*. So the tier-3 role is **confirmatory for shape and topology only**. A number must come from tier 1, and `verify_calendar.py` is what proves it.
 
 **Second caveat, also learned the hard way:** a model reading these images **mis-identified the object** as the *Golden Hat of Schifferstadt* — a different object in the same family of four. Vision is useful here, and needs the same discipline as OCR: it proposes, the transcription disposes.
 
-`assets/menghin/2010/text/menghin_page26.txt` is a single line, „Page 26 skipped" — page 26 was not photographed. Pages 21, 22 and 28 are **pure plates** (OCR yields ~0 text) — expected, not an OCR failure. `page23` is the Fig. 18 bottom-view plate, `page24` is the Fig. 19 vertical-half plate (`text/`: „Vertical half. Blue: Spandrel pattern. Green: Switch zones"), and `page30` is the Fig. 23 combination-table legend.
+`assets/menghin/2010/text/menghin_pages20-31.txt` is a single line, „Page 26 skipped" — page 26 was not photographed. Pages 21, 22 and 28 are **pure plates** (OCR yields ~0 text) — expected, not an OCR failure. `page23` is the Fig. 18 bottom-view plate, `page24` is the Fig. 19 vertical-half plate (`text/`: „Vertical half. Blue: Spandrel pattern. Green: Switch zones"), and `page30` is the Fig. 23 combination-table legend.
 
 **⚠️ Two source typos found in the transcription**, recorded so nobody re-“fixes” them in the wrong direction:
-1. `text/menghin_page27.txt`: „Zone 6 is **25.0 cm** wide" — must read **2.5 cm**. Confirmed by (a) `dimensions.txt` z6 = 25 mm, (b) the zone order (2.45 cm zone 5 then 2.9 cm zone 7), (c) 25 cm would not fit in a 100 mm cap.
-2. `text/menghin_page27.txt`, Fig. 21 legend: „– No. 16, eye pattern, length 11 mm" — must read **No. 17**; No. 16 is the crescent, as the immediately preceding line says.
+1. `text/menghin_pages20-31.txt`: „Zone 6 is **25.0 cm** wide" — must read **2.5 cm**. Confirmed by (a) `dimensions.txt` z6 = 25 mm, (b) the zone order (2.45 cm zone 5 then 2.9 cm zone 7), (c) 25 cm would not fit in a 100 mm cap.
+2. `text/menghin_pages20-31.txt`, Fig. 21 legend: „– No. 16, eye pattern, length 11 mm" — must read **No. 17**; No. 16 is the crescent, as the immediately preceding line says.
 
 **⚠️ The transcription is an English translation.** German strings are retained in this plan where the OCR tier supplied them, because they are now corroborated by the translation.
 
@@ -1130,22 +1141,22 @@ ls assets/menghin/2010/jpg/*.jpeg | sed 's|.*/menghin_||; s|\.jpeg||' | xargs -P
   "TESSDATA_PREFIX=$T tesseract assets/menghin/2010/jpg/menghin_{}.jpeg assets/menghin/2010/ocr/{} -l deu --psm 1"
 ```
 
-Output: `assets/menghin/2010/ocr/menghin_page*.txt` (~22 kB total). Note the page number is repeated in the filename — `ocr/menghin_page27.txt`, not `ocr/page27.txt`.
+Output: `assets/menghin/2010/ocr/page*.txt` (~22 kB total). Note the page number is repeated in the filename — `ocr/page027.txt`, not `ocr/page27.txt`.
 
-⚠️ **Known failure mode — psm 1 silently drops numbers.** On `menghin_page27.txt` the sentence reads „Die Spitze des Goldhutes hat eine Höhe **an** und einen Basisumfang von 16,6 cm" — the `von 6,1 cm` is *gone*, and even `2,45 cm` came out as `2,5 cm`. Body prose is reliable; **any digit, decimal or number-in-a-table must be re-read from the image** before it is used. The failure is worse on `menghin_page25.txt`, where the entire section-diameter sentence (125 / 108 / 203×175 / 307×295) is garbled in the psm-1 text and only appears on a crop re-read. Cheap verification recipe (grayscale + normalize + 150 % + `--psm 6` recovers the two-column text cleanly on a crop):
+⚠️ **Known failure mode — psm 1 silently drops numbers.** On `ocr/page027.txt` the sentence reads „Die Spitze des Goldhutes hat eine Höhe **an** und einen Basisumfang von 16,6 cm" — the `von 6,1 cm` is *gone*, and even `2,45 cm` came out as `2,5 cm`. Body prose is reliable; **any digit, decimal or number-in-a-table must be re-read from the image** before it is used. The failure is worse on `ocr/page025.txt`, where the entire section-diameter sentence (125 / 108 / 203×175 / 307×295) is garbled in the psm-1 text and only appears on a crop re-read. Cheap verification recipe (grayscale + normalize + 150 % + `--psm 6` recovers the two-column text cleanly on a crop):
 
 ```bash
 # single column, top 55 % — recovers the tip dimensions
-magick assets/menghin/2010/jpg/menghin_page27.jpeg -auto-orient -crop 100%x55%+0+0 +repage \
+magick assets/menghin/2010/jpg/menghin_page027.jpeg -auto-orient -crop 100%x55%+0+0 +repage \
         -colorspace Gray -normalize -resize 150% /tmp/p27.png
 tesseract /tmp/p27.png stdout -l deu --psm 6 | grep -A2 "Goldhutes"
 # → „Die Spitze des Goldhutes hat eine Höhe von 6,1 cm und einen Basisumfang von 16,6 cm."
 # → „Die Zone 5 ist 2,45 cm breit"
 
 # page 25, top 30 % — recovers ALL FOUR section diameters (§2.2)
-# (this is the only way to see them; they are absent from ocr/menghin_page25.txt)
+# (this is the only way to see them; they are absent from ocr/page025.txt)
 for y in 0 25 50; do
-  magick assets/menghin/2010/jpg/menghin_page25.jpeg -auto-orient -crop 100%x30%+0+${y}% +repage \
+  magick assets/menghin/2010/jpg/menghin_page025.jpeg -auto-orient -crop 100%x30%+0+${y}% +repage \
           -colorspace Gray -normalize -resize 150% /tmp/p25_$y.png
   tesseract /tmp/p25_$y.png stdout -l deu --psm 6 | grep -nE "307|295|203|175|125|108|Krempe|Schaft|Kalotte"
 done

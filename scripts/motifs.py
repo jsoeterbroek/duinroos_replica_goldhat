@@ -19,10 +19,10 @@ The physical form (relief / window / relief_window) is NOT decided here -- see
 IMPLEMENTATION_PLAN.md section 6.3, deferred to the P3.5 print test. These are
 the footprint and hole geometry either way.
 
-Authoritative sources, both in assets/menghin/2010/text/:
-  menghin_page27.txt  Fig. 21 legend: tool -> ring count -> diameter
-  menghin_page27..31  per-zone tool attribution
-  Fig. 22 plates (menghin_page28/29.jpeg) for the actual FORM
+Authoritative sources: the English hand-transcription
+assets/menghin/2010/text/menghin_pages20-31.txt (Fig. 21 legend and per-zone
+tool attribution), and the page images in assets/menghin/2010/jpg/:
+  Fig. 22 plates (menghin_page028/029.jpeg) for the actual FORM
 
 Ring counts are 2, 3, 5 or 6. NEVER 4.
 """
@@ -69,7 +69,7 @@ def ring_dot(rings, diameter_mm, ridge_w=None, boss_frac=0.34):
     """
     Scheibenbuckel: the signature motif, 418 of them on the hat.
 
-    Fig. 22 plates (menghin_page29.jpeg, Z13/Z14/Z15) show: one central boss
+    Fig. 22 plates (menghin_page029.jpeg, Z13/Z14/Z15) show: one central boss
     (a dome) surrounded by `rings` concentric circular ridges, and the whole
     thing is `diameter_mm` across.
 
@@ -106,7 +106,7 @@ def disc(r):
 def ring(r_mid, width=0.45):
     """A single annulet (Ringkreis, No. 7) -- the interstitial filler.
 
-    Fig. 22 (menghin_page29.jpeg Z13/Z14) shows these small rings in the four
+    Fig. 22 (menghin_page029.jpeg Z13/Z14) shows these small rings in the four
     gaps between neighbouring boss discs.
     """
     return _circle(0.0, 0.0, r_mid + width / 2.0), [_circle(0.0, 0.0, r_mid - width / 2.0)]
@@ -185,7 +185,7 @@ def oval(length_mm=SPECIAL_LENGTH_MM, thickness=None, rotation=0.0):
 def star8(r=30.0, points=8, inner_frac=0.62):
     """Eight-rayed star, zone 1 (the crown tip). A one-off.
 
-    menghin_page27.txt: 'The smooth-surfaced eight-rayed star features a
+    text/menghin_pages20-31.txt: 'The smooth-surfaced eight-rayed star features a
     freehand outline, while the eight acute-angled triangles between its rays
     display regular dotting arranged in horizontal rows.'
     So: a smooth star, with dots in the eight notches.
@@ -509,7 +509,7 @@ def development_svg(zone_filter=None, out="/tmp/plates/development.svg"):
 #   two neighbours is only `pitch - disc_dia`, which for z9 is **3.12 mm**
 #   (18.12 mm pitch - 15 mm disc), while the Nr. 7 annulet is **\u22484.85 mm**
 #   across -- so it *cannot* physically sit level with the discs; it would
-#   overlap them. The Fig. 22 plate (menghin_page29.jpeg, Z14) shows what
+#   overlap them. The Fig. 22 plate (menghin_page029.jpeg, Z14) shows what
 #   actually happens: the annulets sit in the **spandrel**, vertically offset
 #   from the disc centreline into the lens-shaped notch where two neighbouring
 #   circles part company. `spandrel_offset()` computes that height rather than
@@ -557,7 +557,7 @@ def stagger_deg(zone_index):
     Angular phase for a zone, in degrees.
 
     The Fig. 22 plates show vertically adjacent disc zones staggered by roughly
-    half a pitch (z13 vs z14, menghin_page29.jpeg), which is what stops the
+    half a pitch (z13 vs z14, menghin_page029.jpeg), which is what stops the
     discs reading as continuous vertical columns. Half a pitch is not constant
     in degrees -- pitch = 360/n differs per zone -- so the stagger is applied
     per zone as half of that zone's own angular pitch.

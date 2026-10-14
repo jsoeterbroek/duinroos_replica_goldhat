@@ -5,8 +5,8 @@ cross-check reproduce)
 **Source:** W. Menghin, *Der Berliner Goldhut — Macht, Magie und Mathematik in der
 Bronzezeit* (Die Sammlungen des Museums für Vor- und Frühgeschichte 2), Regensburg
 2010. Whole book, pp. 1–88 + front matter, digitised by the project author.
-Page images `assets/menghin/2010/full/jpg/`, text layer
-`assets/menghin/2010/full/ocr/`, per-batch text `assets/menghin/2010/full/text/`.
+Page images `assets/menghin/2010/jpg/`, text layer
+`assets/menghin/2010/ocr/`, per-batch text `assets/menghin/2010/text/`.
 **Subject:** the monograph itself — and what it says about the transfer of the
 Berlin reading to the other three hats.
 
@@ -110,12 +110,12 @@ object the same way; only the *comparison to the other hats* is new.
 
 ## Evidence
 
-- Pages: `assets/menghin/2010/full/jpg/menghin_page065.jpeg` (p. 65, transfer),
+- Pages: `assets/menghin/2010/jpg/menghin_page065.jpeg` (p. 65, transfer),
   `…page068.jpeg` (p. 68, Ezelsdorf table Abb. 69 + the quote),
   `…page030.jpeg` (p. 30, Berlin Abb. 23, the control),
   `…page064.jpeg` (p. 64, the four hats),
   `…page069.jpeg`–`…page071.jpeg` (Abb. 70–72, Ezelsdorf solar/lunar summary).
-- Whole-book text: `assets/menghin/2010/full/text/`.
+- Whole-book text: `assets/menghin/2010/text/`.
 - Controls: C6 (`verify_menghin2000.py`), C1.
 
 ## Open questions

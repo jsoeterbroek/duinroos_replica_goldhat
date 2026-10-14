@@ -1,6 +1,6 @@
 # Control C7 — Menghin 2010 tables must reproduce the 2000 tables
 
-**What:** the whole of Menghin 2010 is now held (pp. 1–88, `assets/menghin/2010/full/`).
+**What:** the whole of Menghin 2010 is now held (pp. 1–88, `assets/menghin/2010/`).
 Its two published per-zone tables must reproduce the 2000 article's tables, zone by
 zone and ring by ring — otherwise the new scan, the page mapping or the 2000
 transcription is wrong. This is the scan's known-answer control.
@@ -16,7 +16,7 @@ transcription is wrong. This is the scan's known-answer control.
   Z18 98, Z19 52, Z20 154; totals 1506 (Z3–20) and 1737 (with the rebuilt rim).
 
 **How to re-find:** read the page images
-`assets/menghin/2010/full/jpg/menghin_page030.jpeg` and `…page068.jpeg`, and compare
+`assets/menghin/2010/jpg/menghin_page030.jpeg` and `…page068.jpeg`, and compare
 against `data/readings/menghin2000_zones.json` (control C6).
 
 **Result 2026-10-13:** both reproduce. The only discrepancy is the already-known

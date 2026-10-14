@@ -2,7 +2,7 @@
 
 **Status:** verified
 **Source:** Menghin 2010, pp. 47–63 (`assets/menghin/2010/text/`, scans
-`assets/menghin/2010/jpg/menghin_page47..63.jpeg`)
+`assets/menghin/2010/jpg/menghin_page047..063.jpeg`)
 **Subject:** the non-interpretive counts of the Berlin Gold Hat
 
 ## Verbatim / numbers

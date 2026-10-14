@@ -61,7 +61,7 @@ def check_ring_counts():
 
 
 def check_menghin_identities():
-    """The four sentences in text/menghin_page31.txt."""
+    """The four sentences in text/menghin_pages20-31.txt."""
     excl = [z for z in zs if z["zone"] not in EXCLUDED]
     bosses = sum(z["count"] for z in excl)
     assert bosses == 418, f"bossed discs {bosses} != 418"

@@ -9,7 +9,7 @@ Start here. Keep this current enough that a fresh session can continue.
 **Both Menghin monographs are now in the repo, complete and read**, and the
 **cross-hat test has been run**. The 2000 article (83 pages + text,
 `assets/menghin/2000/`) and the 2010 book (whole book, pp. 1–88,
-`assets/menghin/2010/full/`) are ingested; their per-zone ornament data is on record
+`assets/menghin/2010/`) are ingested; their per-zone ornament data is on record
 (`data/readings/menghin2000_zones.json`, controls C1/C6/C7).
 
 Two results now stand. **(1)** Menghin's own 2010 comparison chapter (pp. 64–72)
@@ -48,10 +48,10 @@ Nothing. The T2 round (Fuls null + cross-hat) is complete as of this file.
 
 ## Gotchas
 
-- **Menghin 2010 is complete, in `assets/menghin/2010/full/`** (jpg/ocr/text, 3-digit
-  `pageNNN` names). The older `assets/menghin/2010/jpg/` (28 phone photos, pp. 20–31
-  and 47–63) is kept because `IMPLEMENTATION_PLAN.md` reads it; **use `full/` for the
-  research case.**
+- **Menghin 2010 is complete, in `assets/menghin/2010/`** (jpg/ocr/text, 3-digit
+  `pageNNN` names; flattened from `2010/full/` on 2026-10-14). The older
+  `assets/menghin/2010/jpg/` phone-photo selection (pp. 20–31 and 47–63) was removed
+  in the same reorg — the full scan supersedes it, so use the single tree for everything.
 - **Menghin's counter is rings × symbols, not symbols.** `A`, `K` and `SK` are
   different columns of the same table. Never sum a Menghin `A` with a Menghin `SK`,
   and never sum either with Schmidt-Kaler's plain counts.

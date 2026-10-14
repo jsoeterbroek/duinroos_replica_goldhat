@@ -21,8 +21,8 @@ raw data to test it ourselves.
    carries its own stamp/numbering legend, and the Ezelsdorf ornament patterns are
    itemised in Abb. 25, p. 59 (numbering after M. Fecht).
 2b. **Menghin 2010, *Der Berliner Goldhut*** — ✔ **held COMPLETE** since
-   2026-10-13 (whole book, pp. 1–88 + front matter, in `assets/menghin/2010/full/`;
-   the earlier `assets/menghin/2010/jpg/` phone photos are kept for the STL plan).
+   2026-10-13 (whole book, pp. 1–88 + front matter, in `assets/menghin/2010/`;
+   a lower-resolution phone-photo selection was removed in the 2026-10-14 reorg).
    Finding: `findings/FINDING_2026-10-13_menghin-2010-ingested.md`.
 3. **Wolfhard Schlosser, JSMV 86 (2003)** — ✔ **held**:
    `assets/89612-Artikeltext-237706-1-10-20220629.pdf` (+ text
@@ -73,8 +73,8 @@ matter); the per-zone tables (Abb. 14, 17, 20, 27) are transcribed into
 `data/readings/menghin2000_zones.json`. No further scan of 2000 is needed.
 
 **B. Menghin 2010 — ✔ digitised complete 2026-10-13.** The whole book (pp. 1–88 +
-front matter) is held in `assets/menghin/2010/full/` (jpg/ocr/text, 3-digit padded
-names) from the author's 8-batch PDF. The comparison chapter (pp. 64–72) is read:
+front matter) is held in `assets/menghin/2010/` (jpg/ocr/text, 3-digit padded
+names, flattened out of `2010/full/` on 2026-10-14) from the author's 8-batch PDF. The comparison chapter (pp. 64–72) is read:
 Menghin calls the cross-hat transfer *partial* (p. 65) and says the stamp-identity
 rule gives no direct values on Ezelsdorf (p. 68). No further scan of 2010 is needed;
 a 300–400 dpi re-scan of p. 68 would only settle the 6-vs-5 intercalary question.
@@ -101,7 +101,7 @@ transcribed into `data/readings/menghin2000_zones.json` and verified by control 
 `findings/FINDING_2026-10-12_menghin-2000-ingested.md`. Run:
 `runs/RUN_2026-10-12_ingest_menghin2000.md`.
 - **Menghin 2010 — ✔ DONE, complete.** Whole book pp. 1–88 + front matter in
-  `assets/menghin/2010/full/` (85 page images + text, 8-batch PDF). The Vergleich
+  `assets/menghin/2010/` (85 page images + text, 8-batch PDF). The Vergleich
   chapter is read and written up: `findings/FINDING_2026-10-13_menghin-2010-ingested.md`;
   run `runs/RUN_2026-10-13_ingest_menghin2010.md`.
 - **Item 1 (Schauer 1986)** and the **2003 catalogue chapter** remain open. Schauer is

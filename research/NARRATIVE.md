@@ -88,8 +88,9 @@ The narrative for the write-up, in order, with credits for who had which idea.
   transfer partial.** The project author supplied the rest of **Menghin 2010**, *Der
   Berliner Goldhut — Macht, Magie und Mathematik in der Bronzezeit*: the whole book,
   pp. 1–88 + front matter, 85 page images and text, now in
-  `assets/menghin/2010/full/` (the older phone-photo selection used by the STL plan
-  is left untouched). The chapter the case needed is **"Der Vergleich" (pp. 64–72)**,
+  `assets/menghin/2010/` (the 2026-10-14 reorg moved it out of `2010/full/` and
+  removed the older, lower-resolution phone-photo selection). The chapter the case
+  needed is **"Der Vergleich" (pp. 64–72)**,
   where Menghin applies his Berlin reading to the three other hats. It is decisive,
   and it is the author's own conclusion.
   *First*, the opening sentence of p. 65: the lunisolar / "bound calendar"

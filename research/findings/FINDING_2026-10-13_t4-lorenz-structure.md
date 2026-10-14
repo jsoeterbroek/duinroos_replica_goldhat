@@ -3,7 +3,7 @@
 **Status:** verified (object images read; counts checked against the canonical
 Menghin data)
 **Sources / images:** Menghin 2000 Abb. 14 (`assets/menghin/2000/jpg/menghin_page045.jpeg`)
-and Menghin 2010 Abb. 23 (`assets/menghin/2010/full/jpg/menghin_page030.jpeg`);
+and Menghin 2010 Abb. 23 (`assets/menghin/2010/jpg/menghin_page030.jpeg`);
 `data/readings/menghin2000_zones.json`; Lorenz's afterword
 (`research/evidence/2020_lorenz_goldhut_metonic_nachtrag_lorenz2nd_p170_full.jpg`);
 the object — `assets/Berlín_Goldhut_01.JPG` (upper shaft),
@@ -109,7 +109,7 @@ loose.
   `assets/Berlín_Goldhut_01.JPG`, `assets/Cappello_d'oro_di_berlino,_1000_ac_ca._01.jpg`,
   `assets/berliner_goldhut_abrollung.jpg` (19 bands), `assets/Berlin_Gold_hat_calendar.jpg`.
 - Canon: `assets/menghin/2000/jpg/menghin_page045.jpeg`,
-  `assets/menghin/2010/full/jpg/menghin_page030.jpeg`.
+  `assets/menghin/2010/jpg/menghin_page030.jpeg`.
 - Lorenz: `research/evidence/2020_lorenz_goldhut_metonic_nachtrag_lorenz2nd_p170_full.jpg`.
 
 ## Open questions

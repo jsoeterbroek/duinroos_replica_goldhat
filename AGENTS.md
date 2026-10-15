@@ -135,7 +135,7 @@ freecadcmd scripts/build_stacked_joint_coupon.py
 
 | Phase | Status |
 |---|---|
-| Stage 1: scenario figures | **Active — V0 next (§1.5)** |
+| Stage 1: scenario figures | **Done (V0–V5)** |
 | P1: Profile r(z) | Done |
 | P2: Zone data | Done |
 | P3: Band geometry | Done |

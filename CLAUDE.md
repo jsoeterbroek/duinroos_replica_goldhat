@@ -96,7 +96,7 @@ Primitive punch shapes (`ring_dot`, `double_circle`, `crescent`, `eye`, `star8`)
 
 | Phase | Status |
 |---|---|
-| **Stage 1: scenario figures** | **Active — V0 next (`IMPLEMENTATION_PLAN.md` §1.5)** |
+| **Stage 1: scenario figures** | **Done (V0–V5)** — see `docs/stage1_figures.md` |
 | P1: Profile r(z) | Done |
 | P2: Zone data | Done |
 | P3: Band geometry | Done |

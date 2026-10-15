@@ -8,11 +8,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Purpose
 
-A 1:1 scale 3D-printable replica of the Berlin Gold Hat — a 745 mm tall cone-shaped Bronze Age artifact with intricate punched decorative patterns. The model is stylized (no dents/creases), not archaeologically exact.
+A 1:1 scale replica of the Berlin Gold Hat — a 745 mm tall cone-shaped Bronze Age artifact with intricate punched decorative patterns. The model is stylized (no dents/creases), not archaeologically exact.
 
-**Two stages:**
-- **Stage 1 (active):** 22 printable parts — 19 stacked bands + 3 Krempe (base plate) sectors
-- **Stage 2 (planned):** Interactive LED lighting via M5 Core S3 to demonstrate competing lunisolar calendar theories
+**Three stages (all read `data/*.json` as the single source of truth; restructured 2026-10-14):**
+- **Stage 1 (active):** script-generated visual **scenario figures** (PNG/JPG/SVG) per calendar hypothesis, in the Menghin pp. 60–63 idiom — see `IMPLEMENTATION_PLAN.md` §1.5. No FreeCAD, no printer.
+- **Stage 2 (draft, gated on Stage 1):** the 22 printable parts — 19 stacked bands + 3 Krempe (base plate) sectors.
+- **Stage 3 (planned):** Interactive LED lighting via M5 Core S3 to demonstrate competing lunisolar calendar theories.
 
 ## Commands
 
@@ -22,7 +23,7 @@ All verification scripts are stdlib-only and run without FreeCAD. Build scripts 
 ```bash
 python3 scripts/verify_calendar.py          # Menghin's 4 identities (418 discs, 1701 day-values)
 python3 scripts/verify_geometry.py          # DATA tier always; STL tier when artifacts exist
-python3 scripts/verify_scenarios.py         # Stage-2 lighting zone mapping
+python3 scripts/verify_scenarios.py         # Stage-3 lighting zone mapping
 python3 scripts/band_geometry.py --selfcheck  # Pure-math kernel self-test
 ```
 
@@ -42,7 +43,7 @@ freecadcmd scripts/build_stacked_joint_coupon.py
 - `hat_parameters.json` — 9 Menghin (2010) documentary constraints; the profile r(z) is PCHIP-interpolated from these
 - `zones.json` — 21 decorative zones: symbol counts, ring counts, day-values, tool IDs, z-spans
 - `symbols.json` — punch tool definitions (tools 1–17), ring counts, zone assignments
-- `scenarios.json` — Stage-2 lighting: 16 time blocks, zone-to-color mappings
+- `scenarios.json` — Stage-3 lighting: 16 time blocks, zone-to-color mappings
 
 **Geometry kernel (`scripts/band_geometry.py`):**
 Pure math, testable without FreeCAD. Implements PCHIP interpolation, cone-surface projection of 2D motif coordinates (u=arc length, v=height), band ring/span queries, and clearance checks. The `Profile` object and `pchip_slopes()` must be **identical** between `band_geometry.py` and `motifs.py` — a mismatch breaks clearance validation.
@@ -85,13 +86,14 @@ Primitive punch shapes (`ring_dot`, `double_circle`, `crescent`, `eye`, `star8`)
 
 | Phase | Status |
 |---|---|
+| **Stage 1: scenario figures** | **Active — V0 next (`IMPLEMENTATION_PLAN.md` §1.5)** |
 | P1: Profile r(z) | Done |
 | P2: Zone data | Done |
 | P3: Band geometry | Done |
 | P3.5: Motif form (relief vs window) | Deferred pending print test |
 | P4: Stacked joint | Done |
-| P5: Assembly docs | Next |
-| Stage 2: LED firmware | Planned |
+| P5: Assembly docs | Next (gated on Stage 1) |
+| Stage 3: LED firmware | Planned |
 
 ## Key Reference Files
 
@@ -108,5 +110,5 @@ Primitive punch shapes (`ring_dot`, `double_circle`, `crescent`, `eye`, `star8`)
 | Verification | Python 3 stdlib |
 | Output | Binary STL, 0.05 mm tessellation, 22 parts |
 | Print target | BambuLabs, 256 mm bed, 0.16 mm layers |
-| Stage 2 hardware | ESP32 M5 Core S3 |
-| Stage 2 firmware | PlatformIO + C++ (M5Stack SDK) |
+| Stage 3 hardware | ESP32 M5 Core S3 |
+| Stage 3 firmware | PlatformIO + C++ (M5Stack SDK) |

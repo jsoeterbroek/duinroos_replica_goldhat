@@ -8,10 +8,11 @@ Developed with AI model Deepseek: "deepseek-v4.1-flash:cloud"
 This is a 3D printed replica of the Berlin Goldhat
 
 ## Project Goal
-The goal of this project is to provide a 1-to-1 replica of the Berlin Goldhat:
+The goal of this project is to provide a 1-to-1 replica of the Berlin Goldhat, in three stages that all read the same `data/*.json` as the single source of truth:
 
-- In the first stage, a model representation without LED lights
-- In the second stage, I want to be able to demonstrate the calendar theory (theories) behind this object, using:
+- **Stage 1 — visual scenario figures (active):** script-generated, stylised images (PNG/JPG/SVG) of the object, per calendar scenario/hypothesis, in the style of Menghin (2010) Figs 61.1–64.4 (coloured zone bands, legend, the arithmetic, the caveat). For articles, documentation, the demo, and a later video. No FreeCAD, no printer.
+- **Stage 2 — 3D-printable replica:** separate STL files for 3D printing, one per band, stacking into the full 745 mm model.
+- **Stage 3 — LED demonstration:** the calendar theory (theories) behind the object, using:
   -  LED lights behind the outer surfaces behind the symbols to light any one band showing the corresponding symbols with different colors
   - A esp32 dev kit to drive the scenarios lighting up different sections
   - A screen to display information and calculation of the scenario 
@@ -51,6 +52,7 @@ What is tracked, why, and the options for shrinking the repo further: `repo_size
 ## Tech Stack
 - pio for ESP32 code development
 - Python for scripts to generate STL files
+- matplotlib for the Stage-1 scenario figures (PNG/SVG/PDF)
 - C++ for ESP32 dev kit
 - uv (uvx)
 - FreeCAD with MCP Addon running MCP server

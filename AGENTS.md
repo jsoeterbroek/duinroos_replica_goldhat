@@ -5,10 +5,11 @@ This file provides guidance when working with the code in this repository.
 This is a 3D printed replica of the Berlin Goldhat
 
 ## Project Goal
-The goal of this project is to provide a 1-to-1 replica of the Berlin Goldhat:
+The goal of this project is to provide a 1-to-1 replica of the Berlin Goldhat, in three stages that all read the same `data/*.json` as the single source of truth:
 
-- In the first stage, a model representation without LED lights
-- In the second stage, I want to be able to demonstrate the calendar theory (theories) behind this object, using:
+- **Stage 1 — visual scenario figures (active):** script-generated, stylised images (PNG/JPG/SVG) of the object, per calendar scenario/hypothesis, in the style of Menghin (2010) Figs 61.1–64.4 (coloured zone bands, legend, the arithmetic, the caveat). For articles, documentation, the demo, and a later video. No FreeCAD, no printer.
+- **Stage 2 — 3D-printable replica:** separate STL files for 3D printing, one per band, stacking into the full 745 mm model.
+- **Stage 3 — LED demonstration:** the calendar theory (theories) behind the object, using:
   -  LED lights behind the outer surfaces behind the symbols to light any one band showing the corresponding symbols with different colors
   - A esp32 dev kit to drive the scenarios lighting up different sections
   - A screen to display information and calculation of the scenario 
@@ -45,6 +46,7 @@ An earlier attempt was made to create this, but was abandoned, see reference/ fo
 ## Tech Stack
 - pio for ESP32 code development
 - Python for scripts to generate STL files
+- matplotlib for the Stage-1 scenario figures (PNG/SVG/PDF)
 - C++ for ESP32 dev kit
 - uv (uvx)
 - FreeCAD with MCP Addon running MCP server
@@ -61,7 +63,7 @@ sections above are the product-level view; this is the developer view.
 ```bash
 python3 scripts/verify_calendar.py            # Menghin's identities (418 discs, 1701 day-values)
 python3 scripts/verify_geometry.py            # DATA tier always; STL tier when artifacts exist
-python3 scripts/verify_scenarios.py           # Stage-2 lighting zone mapping
+python3 scripts/verify_scenarios.py           # Stage-3 lighting zone mapping
 python3 scripts/band_geometry.py --selfcheck  # Pure-math kernel self-test
 python3 scripts/motifs.py                     # primitives + placement self-check
 python3 scripts/motif_features.py --selfcheck # motif prism/net-profile self-check
@@ -81,7 +83,7 @@ freecadcmd scripts/build_stacked_joint_coupon.py
 - `hat_parameters.json` — Menghin (2010) documentary constraints; the profile r(z) is PCHIP-interpolated from these
 - `zones.json` — 21 decorative zones: symbol counts, ring counts, day-values, tool IDs, z-spans
 - `symbols.json` — punch tool definitions (tools 1–17), ring counts, zone assignments
-- `scenarios.json` — Stage-2 lighting: 16 time blocks, zone-to-color mappings
+- `scenarios.json` — lighting scenarios: 16 time blocks, zone-to-colour mappings (Stage 3 LEDs; also Stage 1's primary figure input)
 
 **Geometry kernel (`scripts/band_geometry.py`):** pure math, testable without FreeCAD. PCHIP interpolation, cone-surface projection of 2D motif coordinates (u=arc length, v=height), band ring/span queries, clearance checks. The `Profile` object and `pchip_slopes()` must be **identical** between `band_geometry.py` and `motifs.py` — a mismatch breaks clearance validation.
 
@@ -123,13 +125,14 @@ freecadcmd scripts/build_stacked_joint_coupon.py
 
 | Phase | Status |
 |---|---|
+| Stage 1: scenario figures | **Active — V0 next (§1.5)** |
 | P1: Profile r(z) | Done |
 | P2: Zone data | Done |
 | P3: Band geometry | Done |
 | P3.5: Motif form (relief vs window) | Deferred pending print test |
 | P4: Stacked joint | Done |
-| P5: Assembly docs | Next |
-| Stage 2: LED firmware | Planned |
+| P5: Assembly docs | Next (gated on Stage 1) |
+| Stage 3: LED firmware | Planned |
 
 ### Key reference files
 
@@ -146,8 +149,8 @@ freecadcmd scripts/build_stacked_joint_coupon.py
 | Verification | Python 3 stdlib |
 | Output | Binary STL, 0.05 mm tessellation, 22 parts |
 | Print target | BambuLabs, 256 mm bed, 0.16 mm layers |
-| Stage 2 hardware | ESP32 M5 Core S3 |
-| Stage 2 firmware | PlatformIO + C++ (M5Stack SDK) |
+| Stage 3 hardware | ESP32 M5 Core S3 |
+| Stage 3 firmware | PlatformIO + C++ (M5Stack SDK) |
 
 ### FreeCAD / MCP gotchas
 

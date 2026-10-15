@@ -29,8 +29,9 @@ astronomical system? And if so, which one — lunisolar (Menghin), Venus
 
 ## Why it matters
 
-The replica (stages 1–2) must show the calendar theory *or theories* behind the
-object with LED bands and an M5 screen. Which theory, and how confident we are,
+The replica must show the calendar theory *or theories* behind the object:
+**Stage 1** as script-generated scenario figures, **Stage 3** with LED bands and an M5
+screen. Which theory, and how confident we are,
 is a research question. Getting it wrong misleads museum visitors; getting it
 right, and showing the uncertainty honestly, is the more interesting exhibit.
 

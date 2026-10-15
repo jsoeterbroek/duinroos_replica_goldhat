@@ -17,6 +17,7 @@ and everything Stage 2 uses stay dependency-free.
 """
 
 import argparse
+import json
 import os
 import sys
 import textwrap
@@ -302,6 +303,157 @@ def render_development(state, profile, zones, hp, day_value, out_dir, fmt,
     return written
 
 
+GROUP_COLOUR = "#7a5195"       # a hypothesis's own zone grouping (not a solar/lunar colour)
+
+
+def _hat_colours(hyp, zones, states_by_id):
+    """Map zone -> face colour for one hypothesis's hat panel."""
+    if hyp.get("states"):
+        st = states_by_id.get(hyp.get("panel_state"))
+        return {z["zone"]: FG.CATEGORY_COLOURS[FG.classify(st["display"], z["zone"])]
+                for z in zones}
+    grp = FG.zone_set(hyp.get("zone_groups"), zones)
+    return {z["zone"]: (GROUP_COLOUR if z["zone"] in grp
+                         else FG.CATEGORY_COLOURS["off"]) for z in zones}
+
+
+def draw_hyp_hat(ax, colours, zones, profile, hp, numbers=True):
+    sil = FG.silhouette(profile)
+    ax.add_patch(Polygon(sil, closed=True, facecolor=FG.SILHOUETTE_FILL,
+                         edgecolor="none", zorder=1))
+    for zone in zones:
+        for poly in _zone_polygons(zone, profile, hp):
+            ax.add_patch(Polygon(poly, closed=True,
+                                 facecolor=colours[zone["zone"]],
+                                 edgecolor="none", zorder=2))
+    ax.add_patch(Polygon(sil, closed=True, facecolor="none",
+                         edgecolor=FG.OUTLINE_COLOUR, lw=0.7, zorder=3))
+    if numbers:
+        for zone in zones:
+            ax.text(-160, FG.zone_center_z(zone), str(zone["zone"]),
+                    fontsize=5.0, ha="right", va="center")
+
+
+def render_comparison(out_dir, fmt, verbose=True):
+    """
+    F5 - the hypotheses side by side. One row each: a hat panel coloured by what
+    that reading groups (Menghin's state 64.4; Lorenz's 7 five-ring friezes; Fuls's
+    once-only stamps; a plain hat where the reading defines no zone grouping), and
+    a text block with its unit, total, targets and confidence.
+    """
+    hp, zj = G.load()
+    profile = G.Profile(hp["profile"])
+    zones = zj["zones"]
+    sc = json.load(open(os.path.join(HERE, "data", "scenarios.json")))
+    states_by_id = {s["id"]: s for s in sc["states"]}
+    hyps = FG.load_hypotheses()["hypotheses"]
+
+    n = len(hyps)
+    fig = plt.figure(figsize=(12.8, 2.5 * n), dpi=130)
+    grid = fig.add_gridspec(n, 2, width_ratios=[1.0, 2.45], left=0.02, right=0.98,
+                            top=0.90, bottom=0.035, wspace=0.06, hspace=0.10)
+    for i, h in enumerate(hyps):
+        axh = fig.add_subplot(grid[i, 0])
+        axh.set_aspect("equal")
+        axh.set_xlim(-186, 158)
+        axh.set_ylim(800, -50)
+        axh.axis("off")
+        draw_hyp_hat(axh, _hat_colours(h, zones, states_by_id), zones, profile, hp,
+                     numbers=False)
+        grp = h.get("zone_groups")
+        if h.get("states"):
+            label, col = "coloured as state %s" % h["panel_state"], "#666"
+        elif grp:
+            label, col = grp["label"], GROUP_COLOUR
+        else:
+            label, col = "no zone grouping in this reading", "#999"
+        axh.text(0, 776, label, fontsize=6.8, ha="center", color=col)
+
+        axt = fig.add_subplot(grid[i, 1])
+        axt.axis("off")
+        tgt = ", ".join("%g d" % p for p in h["target_periods_days"]) or "none"
+        total = ("  (total %s)" % h["unit_total"]) if h["unit_total"] is not None else ""
+        body = ["unit: %s%s" % (h["unit"], total),
+                "target periods: %s" % tgt,
+                "confidence: %s" % h["confidence"],
+                ""] + textwrap.wrap(h["caveat"], 104) + \
+               ["", "source: %s" % h["source"]]
+        axt.text(0.0, 1.02, h["title"], fontsize=12.0, fontweight="bold", va="top")
+        axt.text(0.0, 0.80, "\n".join(body), fontsize=8.8, va="top",
+                 linespacing=1.5, color="#333")
+
+    fig.suptitle("Four readings of the same object — units, targets and how much "
+                 "to believe", fontsize=14, fontweight="bold", y=0.965)
+    fig.text(0.5, 0.008, "data/hypotheses.json + data/scenarios.json + data/zones.json"
+             "  ·  scripts/render_scenarios.py", ha="center", fontsize=6.2, color="#777")
+
+    written = []
+    compare_dir = os.path.join(os.path.dirname(out_dir.rstrip("/")), "compare")
+    if fmt:
+        os.makedirs(compare_dir, exist_ok=True)
+        for f in fmt:
+            path = os.path.join(compare_dir, "hypotheses.%s" % f)
+            fig.savefig(path, format=f, facecolor="white",
+                        metadata={"Software": None} if f != "pdf" else None)
+            written.append(path)
+    plt.close(fig)
+    if verbose:
+        print("  compare      -> %s" % ", ".join(os.path.basename(p) for p in written))
+    return written
+
+
+def render_caution(out_dir, fmt, verbose=True):
+    """
+    F6 - the honest caveat. Fuls (2008): run the same rule on all four hats and
+    only Schifferstadt beats the chance line. Data: data/readings/fuls_null.json.
+    """
+    d = json.load(open(os.path.join(HERE, "data", "readings", "fuls_null.json")))
+    chance = d["chance_pct"]
+    hats = sorted(d["hats"], key=lambda h: -h["hit_pct"])
+    fig = plt.figure(figsize=(9.0, 5.4), dpi=140)
+    ax = fig.add_axes([0.10, 0.30, 0.86, 0.56])
+    xs = list(range(len(hats)))
+    ax.bar(xs, [h["hit_pct"] for h in hats], width=0.62,
+           color=[("#3f9e5a" if h["selective"] else "#b8b8b8") for h in hats])
+    ax.axhline(chance, ls="--", color="#c0504d", lw=1.3)
+    ax.text(len(hats) - 0.45, chance + 0.35,
+            "chance = %.2f %%  (Fuls formula 8.7)" % chance,
+            ha="right", color="#c0504d", fontsize=8.4)
+    for x, h in zip(xs, hats):
+        ax.text(x, h["hit_pct"] + 0.3, "%.2f %%" % h["hit_pct"],
+                ha="center", fontsize=8.6)
+    ax.set_xticks(xs)
+    ax.set_xticklabels([h["hat"] for h in hats], fontsize=10)
+    ax.set_ylabel("zone groups hitting the synodic month (method B)", fontsize=9.5)
+    ax.set_ylim(0, max(h["hit_pct"] for h in hats) + 3.0)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    fig.suptitle("Is the calendar selective?  Fuls (2008) null model, re-run in-repo",
+                 fontsize=12.5, fontweight="bold", y=0.965)
+    fig.text(0.5, 0.145,
+             "Only Schifferstadt is clearly above chance. Berlin sits on the line,\n"
+             "and Berlin's reading does not transfer to the other hats — so the calendar\n"
+             "is a hypothesis, not a demonstrated function of the object.",
+             ha="center", fontsize=8.8)
+    fig.text(0.5, 0.03, "data/readings/fuls_null.json  ·  scripts/fuls_null.py"
+             "  ·  findings/FINDING_2026-10-13_fuls-null-reproduced.md",
+             ha="center", fontsize=6.0, color="#777")
+
+    written = []
+    caution_dir = os.path.join(os.path.dirname(out_dir.rstrip("/")), "caution")
+    if fmt:
+        os.makedirs(caution_dir, exist_ok=True)
+        for f in fmt:
+            path = os.path.join(caution_dir, "null_model.%s" % f)
+            fig.savefig(path, format=f, facecolor="white",
+                        metadata={"Software": None} if f != "pdf" else None)
+            written.append(path)
+    plt.close(fig)
+    if verbose:
+        print("  caution      -> %s" % ", ".join(os.path.basename(p) for p in written))
+    return written
+
+
 def render_all(out_dir, fmt, only=None, sheets=True, developments=True, verbose=True):
     hp, zj = G.load()
     profile = G.Profile(hp["profile"])
@@ -327,6 +479,9 @@ def render_all(out_dir, fmt, only=None, sheets=True, developments=True, verbose=
         for gid in sorted(groups):
             written += render_sheet(groups[gid], profile, zones, hp, day,
                                     out_dir, fmt, gid, verbose)
+    if sheets and not only:
+        written += render_comparison(out_dir, fmt, verbose)
+        written += render_caution(out_dir, fmt, verbose)
     return written
 
 

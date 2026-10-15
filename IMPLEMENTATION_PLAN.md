@@ -165,8 +165,8 @@ figures/
 | **V0 — kernel + legend** | `figure_geometry.py`; silhouette from `r(z)` + zone bands; the colour legend; render one state (Menghin 61.1) end to end | ✅ **DONE.** `scripts/figure_geometry.py` (stdlib, `--selfcheck` re-derives all 30 stated values) + `scripts/render_scenarios.py`; one PNG in the pp. 60–63 idiom |
 | **V1 — all Menghin states** | render all 16 states + the 4-up contact sheets; captions re-derived, not typed | ✅ **DONE.** 16/16 panels + 4 contact sheets (`figures/menghin/`); `scripts/verify_figures.py` passes (all 30 stated values re-derived, renderer carries no hard-coded numbers, set complete) |
 | **V2 — development (F2)** | unrolled ornament coloured per state, reusing `motifs.development_svg()` | ✅ **DONE.** 16/16 `development_<id>.png`: each zone drawn at its own circumference (the unrolled trapezoid), motifs from `motifs.placed_zone_motifs()` — the same helper the SVG development and the build use; zone 5's crescent/eye rows and the Krempe rings' radial widths included |
-| **V3 — registry + a second hypothesis** | `data/hypotheses.json`; F5 comparison; fill Schmidt-Kaler **only if** its state model is agreed | the renderer is hypothesis-general; at least one non-Menghin hypothesis renders |
-| **V4 — caution (F6)** | the null-model chart from `fuls_null.py` | figures carry the honest confidence statement |
+| **V3 — registry + a second hypothesis** | `data/hypotheses.json`; F5 comparison; fill Schmidt-Kaler **only if** its state model is agreed | ✅ **DONE.** `data/hypotheses.json` (5 hypotheses: Menghin, Schmidt-Kaler, Lorenz, Fuls, sceptical); `figures/compare/hypotheses.png` side-by-sides each reading's unit/total/targets/confidence, with the hat coloured by what that reading groups — Menghin state 64.4, Lorenz's 7 five-ring friezes (derived), Fuls's once-only stamps (derived) |
+| **V4 — caution (F6)** | the null-model chart from `fuls_null.py` | ✅ **DONE.** `data/readings/fuls_null.json` + `figures/caution/null_model.png`: Fuls (2008) method B on the synodic month — only Schifferstadt (16.13 %) beats the 6.77 % chance line; Berlin sits on it |
 | **V5 — pack + docs** | `docs/stage1_figures.md`; the PDF/SVG pack; determinism check | `render_scenarios.py --all` reproduces the set byte-for-byte; Stage 1 **signed off** |
 
 V0 and V1 are the bulk of the value and are FreeCAD-free and fast (seconds). **V5 is the gate to Stage 2.**
@@ -770,8 +770,9 @@ Worth stating before anyone prints a coupon, because it bounds how much this dec
 | `data/zones.json` | per zone: which tool, how many, how many rings, `day_value`, attested `fillers` | ✅ **created** — counts/rings/day-values **derived, not transcribed**; `placement` (start angle, ornament offset) is the still-open part |
 | `data/readings/menghin.json` | day-value per zone (verified, §2.1) | ✅ **created** — reproduces `reference/m5/data/berlin.json` exactly |
 | `data/readings/schmidt_kaler.json` | ornament count per zone | ✅ **created** — marked *not a day count*, must never be summed with Menghin's |
+| `data/readings/fuls_null.json` | Fuls (2008) cross-hat: hit-rate vs chance for the synodic month, per hat | ✅ **created** (V4) — transcription of `scripts/fuls_null.py`; feeds the caution figure |
 | `data/scenarios.json` | the 16 lighting blocks (Figs 61.1–64.4): per state, the red/blue/green zone colouring and Menghin's stated solar/lunar day values | ✅ **created** — transcription of Menghin pp. 47–63; **feeds Stage 1 figures now and Stage 3 LEDs later**, see §10.1 |
-| `data/hypotheses.json` | **Stage 1** registry: one entry per hypothesis (id, title, source, colour rule, states, caption template, confidence label) | 🆕 **to create** (V1, §1.5.4) |
+| `data/hypotheses.json` | **Stage 1** registry: one entry per hypothesis (id, title, source, unit, total, targets, states ref, zone-group rule, confidence, caveat) | ✅ **created** (V3, §1.5.4) — 5 hypotheses |
 | `scripts/verify_calendar.py` | asserts every identity above | ✅ **created & passing** — `python3 scripts/verify_calendar.py`, stdlib only, no FreeCAD |
 | `scripts/verify_scenarios.py` | checks the scenario colouring + 30 stated zone-sums | ✅ **created & passing** — `python3 scripts/verify_scenarios.py`, stdlib only |
 | `scripts/figure_geometry.py` · `scripts/render_scenarios.py` · `scripts/verify_figures.py` | **Stage 1** figure kernel, renderer and verifier | 🆕 **to create** (V2/V3/V5, §1.5) |
@@ -865,8 +866,8 @@ Phases are grouped by stage (§1.1). **Stage 1 (V-phases) is active now.** Stage
 | **V0 — kernel + legend** | `figure_geometry.py`; silhouette + zone bands + legend; one state (Menghin 61.1) end to end | ✅ **done — see §1.5.6** |
 | **V1 — all Menghin states** | all 16 states + the 4-up sheets; captions re-derived | ✅ **done.** 16/16 panels + 4 sheets; `verify_figures.py` passes |
 | **V2 — development (F2)** | unrolled ornament, scenario-coloured, reusing `motifs.development_svg()` | ✅ **done.** 16/16 `development_<id>.png` |
-| **V3 — registry + second hypothesis** | `data/hypotheses.json`; F5 comparison; a non-Menghin hypothesis **only if** its state model is agreed | renderer is hypothesis-general |
-| **V4 — caution (F6)** | the null-model chart from `fuls_null.py` | confidence stated on the figures |
+| **V3 — registry + second hypothesis** | `data/hypotheses.json`; F5 comparison; a non-Menghin hypothesis **only if** its state model is agreed | ✅ **done.** registry + `figures/compare/hypotheses.png` (Lorenz & Fuls groupings derived from data) |
+| **V4 — caution (F6)** | the null-model chart from `fuls_null.py` | ✅ **done.** `figures/caution/null_model.png` |
 | **V5 — pack + docs** | PDF/SVG pack; `docs/stage1_figures.md`; determinism check | byte-identical regenerations; **Stage 1 signed off → unlocks Stage 2** |
 
 **Stage 2 — print (P-phases).**

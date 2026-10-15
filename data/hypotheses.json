@@ -1,0 +1,68 @@
+{
+  "_purpose": "Registry of calendar hypotheses the Stage-1 figures can render. One entry per hypothesis, so the renderer is hypothesis-general rather than Menghin-only.",
+  "_unit_note": "unit_total is the headline count in that hypothesis's OWN unit. Never sum across units: Menghin's days (rings x symbols), Schmidt-Kaler's plain ornaments, and Fuls's circle counter are three different things (IMPLEMENTATION_PLAN.md section 3, Q3).",
+  "_status": "Only menghin_lunisolar has a full state model today (data/scenarios.json). The others are declared with their unit and target so the comparison figure is honest about what is and is not yet in the data.",
+  "hypotheses": [
+    {
+      "id": "menghin_lunisolar",
+      "title": "Menghin (2010) - lunisolar calendar",
+      "source": "assets/menghin/2010/, pp. 47-63",
+      "unit": "days (rings x symbols)",
+      "unit_total": 1783,
+      "target_periods_days": [354, 365, 1739, 1742],
+      "states": "data/scenarios.json:states",
+      "panel_state": "64.4",
+      "zone_groups": null,
+      "confidence": "hypothesis (provisional)",
+      "caveat": "The strong 19-year claim is ~20-30%; the intercalary set moves between publications ({5,7,16,17} in 2000, {7,16,17} in 2010). See research/theories/menghin_lunisolar.md."
+    },
+    {
+      "id": "schmidt_kaler_venus",
+      "title": "Schmidt-Kaler (2012) - Venus synodic cycle",
+      "source": "research/sources/schmidt_kaler_2012.md",
+      "unit": "ornaments (all punched motifs)",
+      "unit_total": 651,
+      "target_periods_days": [292, 584, 2920],
+      "states": null,
+      "zone_groups": null,
+      "confidence": "hypothesis, unproven here",
+      "caveat": "Reuses Menghin's zone counts; the reading itself defines no zone colouring, and the ornament tally is NOT a day count. Not to be summed with Menghin's 1783."
+    },
+    {
+      "id": "lorenz_metonic",
+      "title": "Lorenz - the structure is the Metonic cycle",
+      "source": "research/sources/lorenz_2011.md",
+      "unit": "line-bands / friezes",
+      "unit_total": 235,
+      "target_periods_days": [235],
+      "states": null,
+      "zone_groups": {"rule": "tool_rings", "values": [5], "label": "the 7 five-ring friezes"},
+      "confidence": "re-reading of Menghin's counts",
+      "caveat": "The 19 holds only as disc-bearing bands (measured: 21 zones); the 235 is arithmetic (12x12 + 7x13 for any 12+7 split), so it is not independent evidence."
+    },
+    {
+      "id": "fuls_correction",
+      "title": "Fuls (2004/2008) - pattern-type correction cycles",
+      "source": "research/sources/fuls_2004.md",
+      "unit": "rings x symbols, grouped by shared stamp",
+      "unit_total": null,
+      "target_periods_days": [945, 44415],
+      "states": null,
+      "zone_groups": {"rule": "tool_used_once", "tools": [8, 9, 10, 11, 12, 13, 14, 15], "label": "the once-only stamps (Schaltzonen)"},
+      "confidence": "candidate, refuted as selective on Berlin",
+      "caveat": "The arithmetic is real and reproducible, but Fuls's own combinatorial null shows Berlin's hit-rate is indistinguishable from chance; only Schifferstadt is selective. 945 d = 15x59 + 60."
+    },
+    {
+      "id": "sceptical_null",
+      "title": "Sceptical - ornament, not a demonstrated calendar",
+      "source": "research/theories/sceptical_ornament.md",
+      "unit": "-",
+      "unit_total": null,
+      "target_periods_days": [],
+      "states": null,
+      "zone_groups": null,
+      "confidence": "the null result",
+      "caveat": "The numbers are easy to hit: free choice of blocks and of intercalary zones makes round targets appear at ~chance rate; the unit is not selective (counting plain symbols hits more often than counting rings)."
+    }
+  ]
+}

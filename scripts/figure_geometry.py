@@ -58,6 +58,40 @@ def load():
     return G.load()
 
 
+def load_hypotheses():
+    """The hypothesis registry (data/hypotheses.json)."""
+    return json.load(open(os.path.join(HERE, "data", "hypotheses.json")))
+
+
+def zone_set(group, zones):
+    """
+    Resolve a registry `zone_groups` rule to a set of zone numbers.
+
+    Rules (kept tiny and explicit so data can never drift from the figure):
+      {"rule": "tool_rings",      "values": [5]}  zones whose stamp has N rings
+      {"rule": "tool_used_once"}                    zones whose stamp occurs once (Schalt)
+      {"rule": "explicit", "zones": [..]}          a literal list
+    """
+    if group is None:
+        return set()
+    rule = group["rule"]
+    if rule == "tool_rings":
+        want = set(group["values"])
+        return {z["zone"] for z in zones if z.get("tool") and z["rings"] in want}
+    if rule == "tool_used_once":
+        allowed = set(group.get("tools", [])) or None
+        counts = {}
+        for z in zones:
+            if z.get("tool") and (allowed is None or z["tool"] in allowed):
+                counts[z["tool"]] = counts.get(z["tool"], 0) + 1
+        return {z["zone"] for z in zones
+                if z.get("tool") and (allowed is None or z["tool"] in allowed)
+                and counts[z["tool"]] == 1}
+    if rule == "explicit":
+        return {int(x) for x in group["zones"]}
+    raise ValueError("unknown zone_groups rule %r" % rule)
+
+
 # --- geometry ----------------------------------------------------------------
 
 def _sample_z(z0, z1, n):
@@ -330,6 +364,24 @@ def _selfcheck():
     # 6. the palette is complete and the renderer can iterate it
     assert set(CATEGORY_COLOURS) == set(CATEGORY_ORDER)
     print("  palette covers every category  OK")
+
+    # 7. the hypothesis registry resolves: Menghin's states ref exists and the
+    #    derivable zone-group rules give the counts the theories state
+    hy = load_hypotheses()
+    ids = [h["id"] for h in hy["hypotheses"]]
+    assert len(ids) == len(set(ids)), "duplicate hypothesis id"
+    assert "menghin_lunisolar" in ids, "Menghin must stay in the registry"
+    by_id = {h["id"]: h for h in hy["hypotheses"]}
+    mref = by_id["menghin_lunisolar"]["states"]
+    assert mref == "data/scenarios.json:states" and sc["states"], \
+        "Menghin's states ref does not resolve"
+    lorenz = zone_set(by_id["lorenz_metonic"]["zone_groups"], zones)
+    assert len(lorenz) == 7, "Lorenz five-ring friezes: expected 7, got %d" % len(lorenz)
+    fuls = zone_set(by_id["fuls_correction"]["zone_groups"], zones)
+    assert fuls == {7, 16, 17}, \
+        "Fuls once-only stamps: expected {7,16,17}, got %s" % sorted(fuls)
+    print("  hypothesis registry resolves: %d hypotheses, Lorenz 7, Fuls %s  OK"
+          % (len(ids), sorted(fuls)))
 
     print("\nfigure_geometry self-check: all passed")
 

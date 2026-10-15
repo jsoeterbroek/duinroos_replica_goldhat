@@ -1,0 +1,13 @@
+{
+  "_source": "scripts/fuls_null.py (re-implements Fuls 2008, Nuncius 8, section 8.4-8.6); finding research/findings/FINDING_2026-10-13_fuls-null-reproduced.md",
+  "_method": "Fuls method B (subsets of zones sharing one stamp), synodic month p = 29.53 d, tolerance per Fuls Table 8.1; chance baseline w = 2*t_p/p (formula 8.7)",
+  "_meaning": "hit_pct is the share of the hat's zone-group combinations that land on an integer multiple of the synodic month; chance_pct is the rate a random sum would hit. Selective == clearly above chance.",
+  "chance_pct": 6.77,
+  "hats": [
+    {"hat": "Schifferstadt", "hit_pct": 16.13, "selective": true},
+    {"hat": "Berlin", "hit_pct": 6.26, "selective": false},
+    {"hat": "Avanton", "hit_pct": 6.45, "selective": false},
+    {"hat": "Ezelsdorf", "hit_pct": 6.89, "selective": false}
+  ],
+  "_caveat": "Only Schifferstadt is selective, and its corroboration is metrological (Kalotte:shaft 3:9), not the Berlin rule. Berlin's reading does not transfer to the other hats."
+}

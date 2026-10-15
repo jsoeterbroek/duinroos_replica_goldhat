@@ -82,9 +82,48 @@ def check_rendered(states):
         p = os.path.join(outdir, "sheet_%s.png" % g)
         if not os.path.exists(p):
             missing.append(os.path.basename(p))
+    root = os.path.dirname(outdir)
+    for rel in (os.path.join("compare", "hypotheses.png"),
+                os.path.join("caution", "null_model.png")):
+        if not os.path.exists(os.path.join(root, rel)):
+            missing.append(rel)
     assert not missing, "figure set incomplete: %s" % ", ".join(missing)
-    print("  figure set complete: %d panels + %d developments + 4 contact sheets  OK"
-          % (len(states), len(states)))
+    print("  figure set complete: %d panels + %d developments + 4 sheets + "
+          "comparison + caution  OK" % (len(states), len(states)))
+
+
+def check_hypotheses(zones):
+    """The registry is well-formed and its derivable rules reproduce the sources."""
+    hy = FG.load_hypotheses()
+    hyps = hy["hypotheses"]
+    ids = [h["id"] for h in hyps]
+    assert len(ids) == len(set(ids)), "duplicate hypothesis id"
+    assert "menghin_lunisolar" in ids, "Menghin must stay in the registry"
+    by = {h["id"]: h for h in hyps}
+    for h in hyps:
+        for key in ("title", "source", "unit", "confidence", "caveat"):
+            assert h.get(key), "hypothesis %s missing %s" % (h["id"], key)
+        if h.get("zone_groups"):
+            assert FG.zone_set(h["zone_groups"], zones), \
+                "%s zone_groups resolves to nothing" % h["id"]
+    lorenz = FG.zone_set(by["lorenz_metonic"]["zone_groups"], zones)
+    assert len(lorenz) == 7, "Lorenz five-ring friezes should be 7"
+    fuls = FG.zone_set(by["fuls_correction"]["zone_groups"], zones)
+    assert fuls == {7, 16, 17}, "Fuls Schaltzonen should be {7,16,17}"
+    print("  hypothesis registry valid: %d hypotheses, Lorenz 7, Fuls %s  OK"
+          % (len(ids), sorted(fuls)))
+
+
+def check_caution_data():
+    """The caution panel's numbers are real and show only Schifferstadt selective."""
+    p = os.path.join(HERE, "data", "readings", "fuls_null.json")
+    d = json.load(open(p))
+    assert d["chance_pct"] > 0
+    sel = [h["hat"] for h in d["hats"] if h["selective"]]
+    assert sel == ["Schifferstadt"], \
+        "the null result says only Schifferstadt is selective, got %s" % sel
+    print("  caution data: only %s above the %.2f %% chance line  OK"
+          % (sel[0], d["chance_pct"]))
 
 
 def check_development_bands():
@@ -123,6 +162,8 @@ def main():
     states = check_states(hp, zones, sc)
     check_kernel_matches_renderer()
     check_development_bands()
+    check_hypotheses(zones)
+    check_caution_data()
     check_rendered(states)
     print("\nverify_figures: all checks passed")
 

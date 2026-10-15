@@ -184,8 +184,6 @@ Verified on FreeCAD 1.1.4 macOS: `Import.insert("box.step", …)` → OK;
 `Import.insert("x.stl", …)` → `no supported file format`; `Mesh.insert("x.stl", …)` → OK.
 `Mesh.open()` only loads into memory and does not create a document object.
 
-# Note
-Before starting creating STL files, write an implementation plan first.
 Gold Hat Calendar
 =================
 

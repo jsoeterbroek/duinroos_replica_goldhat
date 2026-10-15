@@ -72,7 +72,7 @@ def _draw_legend(ax, x=196.0, z=640.0, dy=30.0):
         ax.text(x + 28, zz, FG.CATEGORY_LABELS[cat], fontsize=7.4, va="center")
 
 
-def draw_scenario(ax, state, profile, zones, hp, day_value):
+def draw_scenario(ax, state, profile, zones, hp, day_value, legend=True):
     """Draw one state's hat onto `ax` (data coords: x = radius mm, y = z mm)."""
     # silhouette
     sil = FG.silhouette(profile)
@@ -113,7 +113,8 @@ def draw_scenario(ax, state, profile, zones, hp, day_value):
                     color="#2e6b3f", fontweight="bold", zorder=4)
 
     _draw_glyphs(ax)
-    _draw_legend(ax)
+    if legend:
+        _draw_legend(ax)
 
 
 def render_state(state, profile, zones, hp, day_value, out_dir, fmt, verbose=True):
@@ -154,7 +155,59 @@ def render_state(state, profile, zones, hp, day_value, out_dir, fmt, verbose=Tru
     return written
 
 
-def render_all(out_dir, fmt, only=None, verbose=True):
+def render_sheet(states, profile, zones, hp, day_value, out_dir, fmt,
+                 group_id, verbose=True):
+    """
+    One 4-up contact sheet in the source's page layout (2 x 2), like Menghin's
+    pp. 60-63. Four states, a shared legend, a page title, and each panel keeps
+    its own numbers, SZ marks, glyphs and arithmetic caption.
+    """
+    fig = plt.figure(figsize=(12.4, 15.4), dpi=130)
+    grid = fig.add_gridspec(2, 2, left=0.03, right=0.97, top=0.905, bottom=0.035,
+                            wspace=0.04, hspace=0.10)
+    for i, st in enumerate(states[:4]):
+        ax = fig.add_subplot(grid[i // 2, i % 2])
+        ax.set_aspect("equal")
+        ax.set_xlim(-238, 178)
+        ax.set_ylim(848, -46)                # inverted: apex (z=0) at the top
+        ax.axis("off")
+        draw_scenario(ax, st, profile, zones, hp, day_value, legend=False)
+        ax.set_title(FG.state_title(st), fontsize=9.4, fontweight="bold", pad=4)
+        cap = FG.caption(st, day_value)
+        ax.text(0, 812, "\n".join(textwrap.wrap(cap, 52)), fontsize=7.0,
+                ha="center", va="top")
+
+    handles = [Rectangle((0, 0), 1, 1, facecolor=FG.CATEGORY_COLOURS[c],
+                          edgecolor="#8a8a8a", lw=0.5,
+                          label=FG.CATEGORY_LABELS[c]) for c in FG.CATEGORY_ORDER]
+    fig.legend(handles=handles, loc="upper center", ncol=4, frameon=False,
+               fontsize=8.4, bbox_to_anchor=(0.5, 0.972), columnspacing=2.4)
+    fig.suptitle("Menghin (2010) — solar / lunar / intercalary blocks, "
+                 "Abb. %s.x  (%s)" % (group_id,
+                                      ", ".join(s["id"] for s in states[:4])),
+                 fontsize=13.5, fontweight="bold", y=0.988)
+    fig.text(0.5, 0.008,
+             "data/scenarios.json + data/zones.json + data/hat_parameters.json"
+             "  ·  scripts/render_scenarios.py",
+             ha="center", va="bottom", fontsize=6.2, color="#777777")
+
+    written = []
+    if fmt:
+        os.makedirs(out_dir, exist_ok=True)
+        for f in fmt:
+            path = os.path.join(out_dir, "sheet_%s.%s" % (group_id, f))
+            fig.savefig(path, format=f, facecolor="white",
+                        metadata={"Software": None} if f != "pdf" else None)
+            written.append(path)
+    plt.close(fig)
+    if verbose:
+        print("  sheet_%-4s %s -> %s" % (group_id,
+                                         ", ".join(s["id"] for s in states[:4]),
+                                         ", ".join(os.path.basename(p) for p in written)))
+    return written
+
+
+def render_all(out_dir, fmt, only=None, sheets=True, verbose=True):
     hp, zj = G.load()
     profile = G.Profile(hp["profile"])
     zones = zj["zones"]
@@ -166,6 +219,14 @@ def render_all(out_dir, fmt, only=None, verbose=True):
     written = []
     for st in states:
         written += render_state(st, profile, zones, hp, day, out_dir, fmt, verbose)
+    if sheets and not only:
+        # group by the leading figure number: 61.x, 62.x, 63.x, 64.x = 4 sheets
+        groups = {}
+        for st in states:
+            groups.setdefault(st["id"].split(".")[0], []).append(st)
+        for gid in sorted(groups):
+            written += render_sheet(groups[gid], profile, zones, hp, day,
+                                    out_dir, fmt, gid, verbose)
     return written
 
 
@@ -173,12 +234,16 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--state", action="append", default=None,
                     help="scenario id(s), e.g. --state 61.1 (repeatable)")
-    ap.add_argument("--all", action="store_true", help="every state in scenarios.json")
+    ap.add_argument("--all", action="store_true",
+                    help="every state in scenarios.json, plus the 4-up sheets")
+    ap.add_argument("--no-sheets", action="store_true",
+                    help="with --all, skip the 4-up contact sheets")
     ap.add_argument("--out", default=os.path.join(HERE, "figures", "menghin"))
     ap.add_argument("--format", default="png", help="comma list: png,svg,pdf")
     args = ap.parse_args()
     fmts = [f.strip() for f in args.format.split(",") if f.strip()]
     if not args.all and not args.state:
         ap.error("pass --all or at least one --state")
-    written = render_all(args.out, fmts, only=set(args.state or []))
+    written = render_all(args.out, fmts, only=set(args.state or []),
+                         sheets=not args.no_sheets)
     print("\n%d file(s) written to %s" % (len(written), args.out))

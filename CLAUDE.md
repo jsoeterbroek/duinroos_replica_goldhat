@@ -24,7 +24,13 @@ All verification scripts are stdlib-only and run without FreeCAD. Build scripts 
 python3 scripts/verify_calendar.py          # Menghin's 4 identities (418 discs, 1701 day-values)
 python3 scripts/verify_geometry.py          # DATA tier always; STL tier when artifacts exist
 python3 scripts/verify_scenarios.py         # Stage-3 lighting zone mapping
+python3 scripts/verify_figures.py           # Stage-1 figure set: data-derived + complete
 python3 scripts/band_geometry.py --selfcheck  # Pure-math kernel self-test
+```
+
+**Stage-1 figures (no FreeCAD):**
+```bash
+python3 scripts/render_scenarios.py --all   # 16 scenario panels + 4 contact sheets -> figures/
 ```
 
 **Build (requires FreeCAD):**

@@ -67,6 +67,12 @@ python3 scripts/verify_scenarios.py           # Stage-3 lighting zone mapping
 python3 scripts/band_geometry.py --selfcheck  # Pure-math kernel self-test
 python3 scripts/motifs.py                     # primitives + placement self-check
 python3 scripts/motif_features.py --selfcheck # motif prism/net-profile self-check
+python3 scripts/verify_figures.py             # Stage-1 figure set: data-derived + complete
+```
+
+**Stage-1 figures (no FreeCAD):**
+```bash
+python3 scripts/render_scenarios.py --all     # 16 scenario panels + 4 contact sheets -> figures/
 ```
 
 **Build (requires FreeCAD):**

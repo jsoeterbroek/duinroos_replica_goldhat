@@ -5,9 +5,14 @@ __pycache__/
 # Generated geometry. Reproducible from data/ + scripts/ in seconds:
 #   python3 scripts/build_goldhat.py
 # Committing 22 bands x ~1.2 MB of binary that the data already describes is
-# churn, not provenance.
+# churn, not provenance. Stage 1 figures are generated the same way
+# (data/ + scripts/render_scenarios.py).
 #stl/
 stl/test/
+
+# Stage-1 generated figures -- reproducible from data/ + scripts/render_scenarios.py
+# (see IMPLEMENTATION_PLAN.md 1.5). Remove this line to track the PNG/SVG pack.
+figures/
 .DS_Store
 
 # Abandoned attempt: heavy derived exports (STL/3mf/svg). Kept on disk for

@@ -162,8 +162,8 @@ figures/
 
 | Phase | Work | Exit criterion |
 |---|---|---|
-| **V0 — kernel + legend** | `figure_geometry.py`; silhouette from `r(z)` + zone bands; the colour legend; render **one** state (Menghin 61.1) end to end | one valid PNG that visibly matches the pp. 60–63 idiom; `figure_geometry.py --selfcheck` passes |
-| **V1 — all Menghin states** | render all 16 states + the 4-up contact sheets; captions re-derived, not typed | 16 F1 + 4 F3, every zone colour ∈ `scenarios.json`, `verify_figures.py` passes |
+| **V0 — kernel + legend** | `figure_geometry.py`; silhouette from `r(z)` + zone bands; the colour legend; render one state (Menghin 61.1) end to end | ✅ **DONE.** `scripts/figure_geometry.py` (stdlib, `--selfcheck` re-derives all 30 stated values) + `scripts/render_scenarios.py`; one PNG in the pp. 60–63 idiom |
+| **V1 — all Menghin states** | render all 16 states + the 4-up contact sheets; captions re-derived, not typed | ✅ 16/16 individual states rendered (`figures/menghin/`); **4-up sheets + `verify_figures.py` still to do** |
 | **V2 — development (F2)** | unrolled ornament coloured per state, reusing `motifs.development_svg()` | F2 for every state; the motifs are the real ones from `symbols.json` |
 | **V3 — registry + a second hypothesis** | `data/hypotheses.json`; F5 comparison; fill Schmidt-Kaler **only if** its state model is agreed | the renderer is hypothesis-general; at least one non-Menghin hypothesis renders |
 | **V4 — caution (F6)** | the null-model chart from `fuls_null.py` | figures carry the honest confidence statement |
@@ -862,8 +862,8 @@ Phases are grouped by stage (§1.1). **Stage 1 (V-phases) is active now.** Stage
 
 | Phase | Work | Exit criterion |
 |---|---|---|
-| **V0 — kernel + legend** | `figure_geometry.py`; silhouette + zone bands + legend; one state (Menghin 61.1) end to end | one valid PNG in the pp. 60–63 idiom; `figure_geometry.py --selfcheck` passes |
-| **V1 — all Menghin states** | all 16 states + the 4-up sheets; captions re-derived | 16 F1 + 4 F3; every zone colour ∈ `scenarios.json`; `verify_figures.py` passes |
+| **V0 — kernel + legend** | `figure_geometry.py`; silhouette + zone bands + legend; one state (Menghin 61.1) end to end | ✅ **done — see §1.5.6** |
+| **V1 — all Menghin states** | all 16 states + the 4-up sheets; captions re-derived | ✅ 16/16 individual states; 4-up sheets + `verify_figures.py` next |
 | **V2 — development (F2)** | unrolled ornament, scenario-coloured, reusing `motifs.development_svg()` | F2 per state, from the real motifs in `symbols.json` |
 | **V3 — registry + second hypothesis** | `data/hypotheses.json`; F5 comparison; a non-Menghin hypothesis **only if** its state model is agreed | renderer is hypothesis-general |
 | **V4 — caution (F6)** | the null-model chart from `fuls_null.py` | confidence stated on the figures |

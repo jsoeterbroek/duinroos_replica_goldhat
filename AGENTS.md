@@ -2,13 +2,18 @@
 This file provides guidance when working with the code in this repository.
 
 ## Project Overview
-This is a 3D printed replica of the Berlin Goldhat
+A 1:1 scale replica of the Berlin Gold Hat — a 745 mm tall cone-shaped Bronze Age
+artifact with intricate punched decorative patterns. The model is stylized (no
+dents/creases), not archaeologically exact.
+
+**This file is the single source of truth for agent guidance.** `CLAUDE.md` only
+imports it (`@AGENTS.md`); edit this file, not that one.
 
 ## Project Goal
 The goal of this project is to provide a 1-to-1 replica of the Berlin Goldhat, in three stages that all read the same `data/*.json` as the single source of truth:
 
-- **Stage 1 — visual scenario figures (active):** script-generated, stylised images (PNG/JPG/SVG) of the object, per calendar scenario/hypothesis, in the style of Menghin (2010) Figs 61.1–64.4 (coloured zone bands, legend, the arithmetic, the caveat). For articles, documentation, the demo, and a later video. No FreeCAD, no printer.
-- **Stage 2 — 3D-printable replica:** separate STL files for 3D printing, one per band, stacking into the full 745 mm model.
+- **Stage 1 — visual scenario figures (done, V0–V5):** script-generated, stylised images (PNG/JPG/SVG) of the object, per calendar scenario/hypothesis, in the style of Menghin (2010) Figs 61.1–64.4 (coloured zone bands, legend, the arithmetic, the caveat). For articles, documentation, the demo, and a later video. No FreeCAD, no printer. See `docs/stage1_figures.md`.
+- **Stage 2 — 3D-printable replica (next):** separate STL files for 3D printing, one per band, stacking into the full 745 mm model.
 - **Stage 3 — LED demonstration:** the calendar theory (theories) behind the object, using:
   -  LED lights behind the outer surfaces behind the symbols to light any one band showing the corresponding symbols with different colors
   - A esp32 dev kit to drive the scenarios lighting up different sections
@@ -55,9 +60,9 @@ _ BambuLabs 3D printer
 
 ## Tooling (build & verify)
 
-Copied from `CLAUDE.md` so this file is the single source of guidance for both the
-project and the build/verify tooling. The short `## Commands` and `## Tech Stack`
-sections above are the product-level view; this is the developer view.
+This file is the single source of guidance for the project and its tooling;
+`CLAUDE.md` just imports it (`@AGENTS.md`). The short `## Commands` and
+`## Tech Stack` sections above are the product-level view; this is the developer view.
 
 **Verify (no FreeCAD needed)** — verification scripts are stdlib-only:
 ```bash

@@ -118,6 +118,7 @@ freecadcmd scripts/build_stacked_joint_coupon.py
 
 **Known operator decisions:**
 - Zone 1 apex star is left plain (not built); it is continuous geometry, not a repeatable motif
+- **Apex (z 0–61) is a rounded dome, not a sharp cone** (2026-10-15; see `data/hat_parameters.json` `_profile_apex_note` and plan §11.6). The overhang test is signed, not `|slope|`.
 - P4 flat-stacked joint (hub + 4 spokes + keyway) replaced the P3 lap lip
 - Krempe is split into 3 sectors (a/b/c); seam phasing must land in motif spandrels
 

@@ -441,19 +441,38 @@ def _selfcheck():
     for i in range(len(hp["zone_boundaries_mm"]) - 1):
         assert hp["zone_boundaries_mm"][i] < hp["zone_boundaries_mm"][i + 1]
 
-    # 4. every band is support-free: wall angle < 45 deg from vertical
-    print("\n  band        z span        wall angle (max)  support-free")
+    # 4. every band is support-free. The overhang criterion is SIGNED, not the
+    #    magnitude of the wall slope. Printed apex-up (the brim is the base), a
+    #    wall whose radius SHRINKS upward -- r'(z) > 0 in this z-down frame -- is
+    #    self-supporting: each layer rests on a wider one. Only r'(z) < 0 grows
+    #    upward and needs support. A rounded apex dome is the former, so a large
+    #    |wall| there is NOT an overhang; the steepest wall is reported for
+    #    surface-finish information only. (This distinction was forced by the
+    #    2026-10-15 rounded-apex change: the old |slope| < 45 test wrongly failed
+    #    the blunt tip, which is a supported dome.)
+    print("\n  band        z span        max |wall|   overhang   support-free")
     worst = (0.0, None)
+    worst_abs = (0.0, None)
     for r in hp["rings"]:
         if r["kind"] == "krempe":
             continue
         _, rb, zb, zt = band_ring(hp["rings"], r["id"])
-        angs = [profile.slope_deg(zb + (zt - zb) * i / 20) for i in range(21)]
-        mx = max(angs)
-        if mx > worst[0]:
-            worst = (mx, r["id"])
-        assert mx < 45.0, "%s needs supports: %.1f deg" % (r["id"], mx)
-    print("  worst: %s at %.1f deg from vertical (< 45 -> zero supports)" % (worst[1], worst[0]))
+        zs = [zb + (zt - zb) * i / 20 for i in range(21)]
+        overhang = max(math.degrees(math.atan(max(0.0, -profile.drdz(z)))) for z in zs)
+        wall_abs = max(abs(profile.slope_deg(z)) for z in zs)
+        if overhang > worst[0]:
+            worst = (overhang, r["id"])
+        if wall_abs > worst_abs[0]:
+            worst_abs = (wall_abs, r["id"])
+        print("  %-10s  %6.1f..%-6.1f  %6.1f       %6.1f      %s"
+              % (r["id"], zb, zt, wall_abs, overhang,
+                 "yes" if overhang < 45 else "NO"))
+        assert overhang < 45.0, \
+            "%s needs supports: overhang %.1f deg" % (r["id"], overhang)
+    print("  worst overhang: %s at %.1f deg from vertical (< 45 -> zero supports)"
+          % (worst[1], worst[0]))
+    print("  steepest wall (finish, not support): %s at %.1f deg"
+          % (worst_abs[1], worst_abs[0]))
 
     # 5. the section polyline is closed, sane, and wall-thickness correct.
     #    polyline = [outer_0..outer_n] + [inner_n..inner_0], so outer[i] and

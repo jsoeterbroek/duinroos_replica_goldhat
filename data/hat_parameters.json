@@ -8,6 +8,34 @@
       "r": 0.0
     },
     {
+      "z": 3.0,
+      "r": 5.9
+    },
+    {
+      "z": 7.0,
+      "r": 9.0
+    },
+    {
+      "z": 12.0,
+      "r": 11.7
+    },
+    {
+      "z": 19.0,
+      "r": 14.8
+    },
+    {
+      "z": 28.0,
+      "r": 17.9
+    },
+    {
+      "z": 38.0,
+      "r": 20.9
+    },
+    {
+      "z": 49.0,
+      "r": 23.7
+    },
+    {
       "z": 61.0,
       "r": 26.42
     },
@@ -68,6 +96,7 @@
     }
   },
   "profile_interp": "pchip",
+  "_profile_apex_note": "The apex (z 0..61) is ROUNDED, not a sharp cone. Operator decision 2026-10-15: a straight cone from (0,0) to (61,26.42) is visibly too pointed against the object photo (assets/Berlín_Goldhut_01.JPG). The intermediate control points give r(z) ~ 26.42*(z/61)^0.5 -- a blunt rounded tip -- while keeping both anchors r(0)=0 and r(61)=26.42. Measured from the photo the object is marginally blunter still (exponent ~0.4); 0.5 is the adopted pass. The two zone-1 endpoints are hard constraints (verify_calendar.check_profile); the shape between them is a stylisation.",
   "_profile_warning": "Between the four anchors the shape is INTERPOLATED and is the only open geometric unknown (plan P1). Do not treat r(312) as measured to better than +-5 mm.",
   "zone_boundaries_mm": [
     0.0,

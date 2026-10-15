@@ -75,12 +75,30 @@ def check_rendered(states):
         p = os.path.join(outdir, s["id"].replace(".", "_") + ".png")
         if not os.path.exists(p):
             missing.append(os.path.basename(p))
+        p = os.path.join(outdir, "development_%s.png" % s["id"].replace(".", "_"))
+        if not os.path.exists(p):
+            missing.append(os.path.basename(p))
     for g in ("61", "62", "63", "64"):
         p = os.path.join(outdir, "sheet_%s.png" % g)
         if not os.path.exists(p):
             missing.append(os.path.basename(p))
     assert not missing, "figure set incomplete: %s" % ", ".join(missing)
-    print("  figure set complete: %d panels + 4 contact sheets  OK" % len(states))
+    print("  figure set complete: %d panels + %d developments + 4 contact sheets  OK"
+          % (len(states), len(states)))
+
+
+def check_development_bands():
+    """Ring motifs must reach the renderer as BANDS, not flattened discs."""
+    import motifs as M
+    hp, zj = FG.load()
+    z8 = next(z for z in zj["zones"] if z["zone"] == 8)   # tool 10, 5 rings
+    circ, h, motifs = M.placed_zone_motifs(z8, hp["profile"], hp)
+    assert motifs, "zone 8 placed no motifs"
+    _, _, _, holes = motifs[0]
+    assert holes, "zone 8 motif has no holes"
+    assert all(isinstance(band[0][0], (list, tuple)) for band in holes), \
+        "ring bands were flattened -- the renderer would fill them as solid discs"
+    print("  ring bands preserved for the renderer (%d trough bands)  OK" % len(holes))
 
 
 def check_kernel_matches_renderer():
@@ -104,6 +122,7 @@ def main():
     sc = json.load(open(os.path.join(HERE, "data", "scenarios.json")))
     states = check_states(hp, zones, sc)
     check_kernel_matches_renderer()
+    check_development_bands()
     check_rendered(states)
     print("\nverify_figures: all checks passed")
 

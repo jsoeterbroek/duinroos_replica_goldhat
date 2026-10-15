@@ -414,6 +414,51 @@ def _selfcheck():
 
 # --- development renderer (visual check, no FreeCAD) --------------------------
 
+def placed_zone_motifs(zone, profile, hp=None):
+    """
+    Placed motif polygons for ONE zone's development strip.
+
+    Returns (circ_mm, height_mm, motifs), where motifs is a list of
+    (u_left_mm, v_off_mm, outer_polygon, [hole_polygons]) with `u` measured from
+    the strip's centre -- so the strip runs -circ/2 .. +circ/2 -- `v_off` the
+    motif row's vertical offset from the strip centre, and every polygon in
+    (u, v) mm centred on its own motif.
+
+    Handles both the usual one-row disc zones and the special zones that carry a
+    `motifs` LIST (today only zone 5: 19 crescent + 19 eye in two rows). Shared
+    by `development_svg` and the Stage-1 scenario figures, so the two can never
+    disagree about where a motif sits. The Krempe zones (20, 21) are concentric
+    rings: their strip follows the ring radius from data/hat_parameters.json.
+    """
+    z0, z1 = zone["z_mm"]
+    if zone.get("section") == "krempe" and hp is not None:
+        r = next(k["r_mid_mm"] for k in hp["krempe"]["rings"]
+                 if k["zone"] == zone["zone"])
+    else:
+        r = (profile((z0 + z1) / 2.0) if callable(profile)
+             else _pchip_r((z0 + z1) / 2.0, profile))
+    circ = 2 * math.pi * r
+    out = []
+
+    rows = zone.get("motifs")
+    if rows:                                 # special zones (zone 5): one row per motif
+        for k, spec in enumerate(rows):
+            outer, hs = for_tool(spec["tool"])
+            cnt = spec["count"]
+            pitch = circ / cnt
+            v_off = (z1 - z0) * ((len(rows) - 1) / 2.0 - k) / len(rows)
+            for i in range(cnt):
+                out.append(((i + 0.5) * pitch - circ / 2.0, v_off, outer, list(hs)))
+    else:
+        n, tool = zone["count"], zone.get("tool")
+        if n and tool is not None:
+            outer, hs = for_tool(tool)
+            pitch = circ / n
+            for i in range(n):
+                out.append(((i + 0.5) * pitch - circ / 2.0, 0.0, outer, list(hs)))
+    return circ, z1 - z0, out
+
+
 def _svg_zone(z, profile, scale=1.0):
     """
     Render one zone as an unrolled strip: a check that the motifs FILL the
@@ -422,31 +467,22 @@ def _svg_zone(z, profile, scale=1.0):
 
     Returns SVG path data for (outline, holes) accumulated over all motifs.
     """
-    z0, z1 = z["z_mm"]
-    r = _pchip_r((z0 + z1) / 2.0, profile)
-    circ = 2 * math.pi * r
-    n, tool = z["count"], z.get("tool")
-
+    circ, h, motifs = placed_zone_motifs(z, profile)
     path, holes = [], []
-    if n and tool is not None:
-        outer, hs = for_tool(tool)
-        pitch = circ / n
-        v0 = -(z1 - z0) / 2.0
+    for cu, v_off, outer, hs in motifs:
         flat = []
         for h in hs:
-            # a hole is either one ring (list of points) or a trough given as
-            # [outer_ring, inner_ring] -- unwrap the latter.
+            # a hole is either one ring (points) or a trough given as
+            # [outer_ring, inner_ring] -- unwrap the latter into two rings.
             if h and isinstance(h[0][0], (list, tuple)):
                 flat.extend(h)
             else:
                 flat.append(h)
-        for i in range(n):
-            cu = i * pitch
-            for pts, dest in [(outer, path)] + [(h, holes) for h in flat]:
-                d = "M " + " L ".join("%.3f,%.3f" % (cu + u, v0 + v + (z1 - z0) / 2.0)
-                                      for u, v in pts) + " Z"
-                dest.append(d)
-    return circ, z1 - z0, path, holes
+        for pts, dest in [(outer, path)] + [(hh, holes) for hh in flat]:
+            d = "M " + " L ".join("%.3f,%.3f" % (cu + u, v_off + v)
+                                  for u, v in pts) + " Z"
+            dest.append(d)
+    return circ, h, path, holes
 
 
 def development_svg(zone_filter=None, out="/tmp/plates/development.svg"):
@@ -472,7 +508,7 @@ def development_svg(zone_filter=None, out="/tmp/plates/development.svg"):
             dx = rep * circ
             body.append('<rect x="%.2f" y="%.2f" width="%.2f" height="%.2f" '
                         'fill="#f0e2c8" stroke="#bbb" stroke-width="0.3"/>'
-                        % (dx, y, circ, h))
+                        % (dx - circ / 2.0, y, circ, h))
             for d in path:
                 body.append('<path d="%s" transform="translate(%.2f,%.2f)" '
                             'fill="#c9a227" stroke="#8a6d1a" stroke-width="0.25"/>'

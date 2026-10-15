@@ -31,6 +31,7 @@ from matplotlib.patches import Polygon, Rectangle, Circle, Wedge     # noqa: E40
 
 import band_geometry as G                                            # noqa: E402
 import figure_geometry as FG                                         # noqa: E402
+import motifs as M                                                   # noqa: E402
 
 Z_TOP = 745.0
 
@@ -207,7 +208,101 @@ def render_sheet(states, profile, zones, hp, day_value, out_dir, fmt,
     return written
 
 
-def render_all(out_dir, fmt, only=None, sheets=True, verbose=True):
+def draw_development(ax, state, zones, hp, profile, day_value, maxcirc):
+    """
+    Unrolled ornament (Abrollung), coloured by the scenario.
+
+    Unlike the F1 silhouette, each zone is drawn at its OWN circumference, so
+    the strips form the unrolled trapezoid and every motif appears exactly once
+    -- the number attached to a zone becomes visible AS the ornaments it counts.
+    Motifs come from motifs.placed_zone_motifs(), the same placement the SVG
+    development and (in placement terms) the 3D build use. The two Krempe zones
+    are concentric rings on a flat plate, so they are drawn as their real RADIAL
+    widths (25 mm and 31 mm), not as the 7 mm stack height.
+    """
+    krempe_ids = [k["zone"] for k in hp["krempe"]["rings"]]
+    split = FG.krempe_split_radius(hp)
+    k0 = hp["krempe"]
+    krempe_y = min(z["z_mm"][0] for z in zones if z.get("section") == "krempe")
+    for zone in zones:
+        cat = FG.classify(state["display"], zone["zone"])
+        circ, h, motifs = M.placed_zone_motifs(zone, profile, hp)
+        if zone.get("section") == "krempe":
+            idx = krempe_ids.index(zone["zone"])
+            width = (split - k0["r_inner_mm"]) if idx == 0 else (k0["r_outer_mm"] - split)
+            y0, y1 = krempe_y, krempe_y + width
+            krempe_y = y1
+        else:
+            y0, y1 = zone["z_mm"]
+        zc = 0.5 * (y0 + y1)
+
+        ax.add_patch(Rectangle((-circ / 2.0, y0), circ, y1 - y0,
+                               facecolor=FG.CATEGORY_COLOURS[cat],
+                               edgecolor="#b8b8b8", lw=0.3, zorder=1))
+        for cu, v_off, outer, holes in motifs:
+            ax.add_patch(Polygon([(cu + u, zc + v_off + v) for (u, v) in outer],
+                                 closed=True, facecolor="#c9a227",
+                                 edgecolor="#8a6d1a", lw=0.12, zorder=2))
+            for hh in holes:
+                if hh and isinstance(hh[0][0], (list, tuple)):
+                    # a ring band (trough): outline its two circles so the
+                    # concentric rings read, instead of filling a solid disc
+                    for ring in hh:
+                        ax.add_patch(Polygon(
+                            [(cu + u, zc + v_off + v) for (u, v) in ring],
+                            closed=True, facecolor="none",
+                            edgecolor="#8a6d1a", lw=0.22, zorder=3))
+                else:
+                    ax.add_patch(Polygon(
+                        [(cu + u, zc + v_off + v) for (u, v) in hh],
+                        closed=True, facecolor="#fff6e0",
+                        edgecolor="#b99a3a", lw=0.1, zorder=3))
+        ax.text(-maxcirc / 2.0 - 6.0, zc, "Z%d" % zone["zone"],
+                fontsize=5.6, ha="right", va="center")
+
+
+def render_development(state, profile, zones, hp, day_value, out_dir, fmt,
+                        maxcirc, verbose=True):
+    fig = plt.figure(figsize=(11.6, 10.8), dpi=140)
+    ax = fig.add_axes([0.055, 0.115, 0.92, 0.82])
+    ax.set_aspect("equal")
+    ax.set_xlim(-maxcirc / 2.0 - 52, maxcirc / 2.0 + 10)
+    dev_bottom = hp["krempe"]["z_inner_mm"] + \
+        (hp["krempe"]["r_outer_mm"] - hp["krempe"]["r_inner_mm"])
+    ax.set_ylim(dev_bottom + 36, -46)
+    ax.axis("off")
+    draw_development(ax, state, zones, hp, profile, day_value, maxcirc)
+
+    fig.suptitle("Unrolled ornament (Abrollung) — %s" % FG.state_title(state),
+                 fontsize=12.0, fontweight="bold", y=0.972)
+    fig.text(0.5, 0.062, "\n".join(textwrap.wrap(FG.caption(state, day_value), 104)),
+             ha="center", va="bottom", fontsize=8.2)
+    handles = [Rectangle((0, 0), 1, 1, facecolor=FG.CATEGORY_COLOURS[c],
+                          edgecolor="#8a8a8a", lw=0.5,
+                          label=FG.CATEGORY_LABELS[c]) for c in FG.CATEGORY_ORDER]
+    fig.legend(handles=handles, loc="lower center", ncol=4, frameon=False,
+               fontsize=8.0, bbox_to_anchor=(0.5, 0.022), columnspacing=2.4)
+    fig.text(0.5, 0.006, "data/*.json  ·  scripts/render_scenarios.py  ·  "
+             "motifs by data/symbols.json", ha="center", va="bottom",
+             fontsize=6.0, color="#777777")
+
+    written = []
+    if fmt:
+        os.makedirs(out_dir, exist_ok=True)
+        for f in fmt:
+            path = os.path.join(out_dir,
+                                "development_%s.%s" % (state["id"].replace(".", "_"), f))
+            fig.savefig(path, format=f, facecolor="white",
+                        metadata={"Software": None} if f != "pdf" else None)
+            written.append(path)
+    plt.close(fig)
+    if verbose:
+        print("  dev %-6s -> %s" % (state["id"],
+                                    ", ".join(os.path.basename(p) for p in written)))
+    return written
+
+
+def render_all(out_dir, fmt, only=None, sheets=True, developments=True, verbose=True):
     hp, zj = G.load()
     profile = G.Profile(hp["profile"])
     zones = zj["zones"]
@@ -219,6 +314,11 @@ def render_all(out_dir, fmt, only=None, sheets=True, verbose=True):
     written = []
     for st in states:
         written += render_state(st, profile, zones, hp, day, out_dir, fmt, verbose)
+    if developments:
+        maxcirc = max(M.placed_zone_motifs(z, profile, hp)[0] for z in zones)
+        for st in states:
+            written += render_development(st, profile, zones, hp, day, out_dir,
+                                          fmt, maxcirc, verbose)
     if sheets and not only:
         # group by the leading figure number: 61.x, 62.x, 63.x, 64.x = 4 sheets
         groups = {}
@@ -238,6 +338,8 @@ if __name__ == "__main__":
                     help="every state in scenarios.json, plus the 4-up sheets")
     ap.add_argument("--no-sheets", action="store_true",
                     help="with --all, skip the 4-up contact sheets")
+    ap.add_argument("--no-developments", action="store_true",
+                    help="with --all, skip the scenario-coloured developments (F2)")
     ap.add_argument("--out", default=os.path.join(HERE, "figures", "menghin"))
     ap.add_argument("--format", default="png", help="comma list: png,svg,pdf")
     args = ap.parse_args()
@@ -245,5 +347,6 @@ if __name__ == "__main__":
     if not args.all and not args.state:
         ap.error("pass --all or at least one --state")
     written = render_all(args.out, fmts, only=set(args.state or []),
-                         sheets=not args.no_sheets)
+                         sheets=not args.no_sheets,
+                         developments=not args.no_developments)
     print("\n%d file(s) written to %s" % (len(written), args.out))

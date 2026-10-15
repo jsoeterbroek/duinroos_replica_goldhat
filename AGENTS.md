@@ -72,8 +72,11 @@ python3 scripts/verify_figures.py             # Stage-1 figure set: data-derived
 
 **Stage-1 figures (no FreeCAD):**
 ```bash
-python3 scripts/render_scenarios.py --all     # 16 scenario panels + 4 contact sheets -> figures/
+python3 scripts/render_scenarios.py --all               # 16 panels + 16 developments + 4 sheets + comparison + caution
+python3 scripts/render_scenarios.py --all --pack        # also figures/_pack.pdf (all panels, comparison, caution)
+python3 scripts/render_scenarios.py --check-deterministic  # assert PNG+SVG reproduce byte-for-byte
 ```
+See `docs/stage1_figures.md`.
 
 **Build (requires FreeCAD):**
 ```bash

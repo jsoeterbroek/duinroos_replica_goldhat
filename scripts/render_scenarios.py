@@ -36,6 +36,20 @@ import motifs as M                                                   # noqa: E40
 
 Z_TOP = 745.0
 
+# Deterministic SVG element ids, so two runs produce identical files.
+matplotlib.rcParams["svg.hashsalt"] = "goldhat"
+
+
+def _savefig(fig, path, f):
+    """Save with per-format metadata: reproducible where the format allows.
+
+    PNG accepts a Software key; SVG takes a Date key (removing it makes the file
+    byte-identical run to run); PDF stamps a creation date and is therefore NOT
+    byte-reproducible -- only the rendered pixels are.
+    """
+    md = {"Software": None} if f == "png" else ({"Date": None} if f == "svg" else None)
+    fig.savefig(path, format=f, facecolor="white", metadata=md)
+
 
 # --- scene -------------------------------------------------------------------
 
@@ -119,7 +133,8 @@ def draw_scenario(ax, state, profile, zones, hp, day_value, legend=True):
         _draw_legend(ax)
 
 
-def render_state(state, profile, zones, hp, day_value, out_dir, fmt, verbose=True):
+def render_state(state, profile, zones, hp, day_value, out_dir, fmt, pdf=None,
+                 verbose=True):
     title = FG.state_title(state)
     cap = FG.caption(state, day_value)
 
@@ -142,18 +157,19 @@ def render_state(state, profile, zones, hp, day_value, out_dir, fmt, verbose=Tru
              ha="center", va="bottom", fontsize=6.2, color="#777777")
 
     written = []
+    if pdf is not None:
+        pdf.savefig(fig)
     if fmt:
         os.makedirs(out_dir, exist_ok=True)
         for f in fmt:
             path = os.path.join(out_dir, state["id"].replace(".", "_") + "." + f)
-            fig.savefig(path, format=f, facecolor="white",
-                        metadata={"Software": None} if f != "pdf" else None)
+            _savefig(fig, path, f)
             written.append(path)
     plt.close(fig)
     if verbose:
         print("  %-6s %-30s -> %s" % (state["id"], title,
                                       ", ".join(os.path.basename(p) for p in written)
-                                      or "(no file)"))
+                                      or "(pack only)"))
     return written
 
 
@@ -334,7 +350,7 @@ def draw_hyp_hat(ax, colours, zones, profile, hp, numbers=True):
                     fontsize=5.0, ha="right", va="center")
 
 
-def render_comparison(out_dir, fmt, verbose=True):
+def render_comparison(out_dir, fmt, pdf=None, verbose=True):
     """
     F5 - the hypotheses side by side. One row each: a hat panel coloured by what
     that reading groups (Menghin's state 64.4; Lorenz's 7 five-ring friezes; Fuls's
@@ -389,12 +405,13 @@ def render_comparison(out_dir, fmt, verbose=True):
 
     written = []
     compare_dir = os.path.join(os.path.dirname(out_dir.rstrip("/")), "compare")
+    if pdf is not None:
+        pdf.savefig(fig)
     if fmt:
         os.makedirs(compare_dir, exist_ok=True)
         for f in fmt:
             path = os.path.join(compare_dir, "hypotheses.%s" % f)
-            fig.savefig(path, format=f, facecolor="white",
-                        metadata={"Software": None} if f != "pdf" else None)
+            _savefig(fig, path, f)
             written.append(path)
     plt.close(fig)
     if verbose:
@@ -402,7 +419,7 @@ def render_comparison(out_dir, fmt, verbose=True):
     return written
 
 
-def render_caution(out_dir, fmt, verbose=True):
+def render_caution(out_dir, fmt, pdf=None, verbose=True):
     """
     F6 - the honest caveat. Fuls (2008): run the same rule on all four hats and
     only Schifferstadt beats the chance line. Data: data/readings/fuls_null.json.
@@ -441,17 +458,71 @@ def render_caution(out_dir, fmt, verbose=True):
 
     written = []
     caution_dir = os.path.join(os.path.dirname(out_dir.rstrip("/")), "caution")
+    if pdf is not None:
+        pdf.savefig(fig)
     if fmt:
         os.makedirs(caution_dir, exist_ok=True)
         for f in fmt:
             path = os.path.join(caution_dir, "null_model.%s" % f)
-            fig.savefig(path, format=f, facecolor="white",
-                        metadata={"Software": None} if f != "pdf" else None)
+            _savefig(fig, path, f)
             written.append(path)
     plt.close(fig)
     if verbose:
         print("  caution      -> %s" % ", ".join(os.path.basename(p) for p in written))
     return written
+
+
+def render_pack(out_dir, verbose=True):
+    """One multi-page PDF: every F1 panel, then the comparison and the caution."""
+    from matplotlib.backends.backend_pdf import PdfPages
+    hp, zj = G.load()
+    profile = G.Profile(hp["profile"])
+    zones = zj["zones"]
+    day = {z["zone"]: z["day_value"] for z in zones}
+    sc = json.load(open(os.path.join(HERE, "data", "scenarios.json")))
+    root = os.path.dirname(out_dir.rstrip("/"))
+    os.makedirs(root, exist_ok=True)
+    path = os.path.join(root, "_pack.pdf")
+    with PdfPages(path) as pdf:
+        for st in sc["states"]:
+            render_state(st, profile, zones, hp, day, out_dir, [], pdf=pdf,
+                         verbose=False)
+        render_comparison(out_dir, [], pdf=pdf, verbose=False)
+        render_caution(out_dir, [], pdf=pdf, verbose=False)
+    if verbose:
+        print("  pack         -> %s (%d pages)"
+              % (os.path.basename(path), len(sc["states"]) + 2))
+    return [path]
+
+
+def check_deterministic(verbose=True):
+    """Render one panel twice and assert the bytes match (reproducible figures)."""
+    import hashlib
+    import shutil
+    import tempfile
+    hp, zj = G.load()
+    profile = G.Profile(hp["profile"])
+    zones = zj["zones"]
+    day = {z["zone"]: z["day_value"] for z in zones}
+    sc = json.load(open(os.path.join(HERE, "data", "scenarios.json")))
+    st = next(s for s in sc["states"] if s["id"] == "61.1")
+    dirs = [tempfile.mkdtemp() for _ in range(2)]
+    try:
+        for d in dirs:
+            render_state(st, profile, zones, hp, day, d, ["png", "svg"], verbose=False)
+        ok = True
+        for f in ("61_1.png", "61_1.svg"):
+            h = [hashlib.md5(open(os.path.join(d, f), "rb").read()).hexdigest()
+                 for d in dirs]
+            same = h[0] == h[1]
+            ok = ok and same
+            if verbose:
+                print("  %-9s %s  %s" % (f, h[0][:12],
+                                         "identical" if same else "DIFFERENT"))
+        return ok
+    finally:
+        for d in dirs:
+            shutil.rmtree(d)
 
 
 def render_all(out_dir, fmt, only=None, sheets=True, developments=True, verbose=True):
@@ -465,7 +536,7 @@ def render_all(out_dir, fmt, only=None, sheets=True, developments=True, verbose=
         states = [s for s in states if s["id"] in only]
     written = []
     for st in states:
-        written += render_state(st, profile, zones, hp, day, out_dir, fmt, verbose)
+        written += render_state(st, profile, zones, hp, day, out_dir, fmt, verbose=verbose)
     if developments:
         maxcirc = max(M.placed_zone_motifs(z, profile, hp)[0] for z in zones)
         for st in states:
@@ -480,8 +551,8 @@ def render_all(out_dir, fmt, only=None, sheets=True, developments=True, verbose=
             written += render_sheet(groups[gid], profile, zones, hp, day,
                                     out_dir, fmt, gid, verbose)
     if sheets and not only:
-        written += render_comparison(out_dir, fmt, verbose)
-        written += render_caution(out_dir, fmt, verbose)
+        written += render_comparison(out_dir, fmt, verbose=verbose)
+        written += render_caution(out_dir, fmt, verbose=verbose)
     return written
 
 
@@ -495,13 +566,22 @@ if __name__ == "__main__":
                     help="with --all, skip the 4-up contact sheets")
     ap.add_argument("--no-developments", action="store_true",
                     help="with --all, skip the scenario-coloured developments (F2)")
+    ap.add_argument("--pack", action="store_true",
+                    help="also write figures/_pack.pdf (all panels + comparison + caution)")
+    ap.add_argument("--check-deterministic", action="store_true",
+                    help="render one panel twice and assert the bytes match")
     ap.add_argument("--out", default=os.path.join(HERE, "figures", "menghin"))
     ap.add_argument("--format", default="png", help="comma list: png,svg,pdf")
     args = ap.parse_args()
     fmts = [f.strip() for f in args.format.split(",") if f.strip()]
+    if args.check_deterministic:
+        ok = check_deterministic()
+        sys.exit(0 if ok else 1)
     if not args.all and not args.state:
         ap.error("pass --all or at least one --state")
     written = render_all(args.out, fmts, only=set(args.state or []),
                          sheets=not args.no_sheets,
                          developments=not args.no_developments)
+    if args.pack:
+        written += render_pack(args.out)
     print("\n%d file(s) written to %s" % (len(written), args.out))

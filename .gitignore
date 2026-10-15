@@ -11,8 +11,9 @@ __pycache__/
 stl/test/
 
 # Stage-1 generated figures -- reproducible from data/ + scripts/render_scenarios.py
-# (see IMPLEMENTATION_PLAN.md 1.5). Remove this line to track the PNG/SVG pack.
-figures/
+# (see IMPLEMENTATION_PLAN.md 1.5). Removed this line to track the PNG/SVG pack.
+#figures/
+
 .DS_Store
 
 # Abandoned attempt: heavy derived exports (STL/3mf/svg). Kept on disk for
